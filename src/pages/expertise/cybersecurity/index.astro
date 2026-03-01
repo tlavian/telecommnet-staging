@@ -1,0 +1,309 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://telecommnet.com/expertise/cybersecurity/",
+      "name": "Network Security Expert Witness Services",
+      "description": "Expert witness services for network security and cybersecurity matters including firewalls, VPN, SSL/TLS, IPSec, tunneling, content filtering, and security gateway design.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Tal Lavian",
+        "url": "https://telecommnet.com",
+        "telephone": "+1-408-209-9112",
+        "email": "tlavian@telecommnet.com"
+      },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/expertise/cybersecurity/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://telecommnet.com/expertise/cybersecurity/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What network security expertise does Dr. Lavian provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Lavian provides expert analysis on network security architectures, firewalls, VPN implementations, SSL/TLS encryption, IPSec protocols, tunneling technologies, content filtering, and security gateway design. His expertise covers network perimeter security, encryption protocols, and authentication mechanisms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a firewall and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A firewall is a network security device that monitors and controls incoming and outgoing network traffic. Dr. Lavian has deep expertise in firewall architecture, stateful inspection, packet filtering, access control lists, and firewall rule design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Dr. Lavian explain VPN security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Lavian has comprehensive expertise in VPN security mechanisms including encryption protocols, authentication, key exchange, and how VPNs securely establish connections over untrusted networks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SSL/TLS and how does it protect communications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SSL/TLS are cryptographic protocols that establish secure connections over networks. Dr. Lavian has expert knowledge of SSL/TLS handshake procedures, certificate management, cipher suites, and how SSL/TLS protects data transmission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can cybersecurity expertise support my case?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Network security expert testimony supports various cases: security architecture disputes, breach analysis, encryption standards compliance, firewall design disputes, patent claims in security technologies, and cases involving security protocol implementation or vulnerability analysis."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Network Security Expert Witness"
+  description="Expert witness services for network security and cybersecurity matters. Dr. Tal Lavian provides analysis on firewalls, VPN, SSL/TLS, IPSec, tunneling, content filtering, and security architectures."
+  schema={schema}
+>
+  <style define:vars={{
+    primaryColor: '#1a365d',
+    accentColor: '#2b6cb0',
+    lightGray: '#f7fafc',
+  }}>
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; }
+    .breadcrumb a { color: var(--accentColor); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .expertise-section { margin-bottom: 3rem; }
+    .expertise-section h2 { color: var(--primaryColor); border-bottom: 3px solid var(--accentColor); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .expertise-highlight { background-color: var(--lightGray); padding: 1.5rem; border-left: 4px solid var(--accentColor); border-radius: 4px; margin-bottom: 2rem; }
+    .expertise-highlight h3 { margin-top: 0; color: var(--primaryColor); }
+    .expertise-list { list-style: none; padding: 0; }
+    .expertise-list li { padding: 0.75rem 0; padding-left: 2rem; position: relative; line-height: 1.6; }
+    .expertise-list li:before { content: "▸"; position: absolute; left: 0; color: var(--accentColor); font-weight: bold; font-size: 1.2rem; }
+    .related-pages { background-color: var(--lightGray); padding: 2rem; border-radius: 8px; margin-top: 3rem; }
+    .related-pages h3 { color: var(--primaryColor); margin-top: 0; margin-bottom: 1.5rem; }
+    .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .related-links a { display: block; padding: 1rem; background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; color: var(--accentColor); text-decoration: none; font-weight: 500; transition: all 0.3s ease; }
+    .related-links a:hover { border-color: var(--accentColor); background-color: #f0f4f8; text-decoration: none; }
+    .faq-section { margin-top: 3rem; }
+    .faq-item { background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; margin-bottom: 1.5rem; overflow: hidden; }
+    .faq-question { background-color: var(--lightGray); padding: 1.5rem; cursor: pointer; font-weight: 600; color: var(--primaryColor); display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-question:hover { background-color: #e6eef5; }
+    .faq-toggle { color: var(--accentColor); font-size: 1.5rem; transition: transform 0.3s ease; }
+    .faq-item.open .faq-toggle { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 1.5rem; color: #4a5568; line-height: 1.8; }
+    .faq-item.open .faq-answer { display: block; }
+    .cta-section { background: linear-gradient(135deg, var(--primaryColor) 0%, var(--accentColor) 100%); color: white; padding: 2.5rem; border-radius: 8px; text-align: center; margin-top: 3rem; }
+    .cta-section h2 { color: white; margin-top: 0; margin-bottom: 1rem; }
+    .cta-section p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .cta-button { display: inline-block; background-color: white; color: var(--primaryColor); padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; }
+    .cta-button:hover { background-color: var(--lightGray); text-decoration: none; }
+    @media (max-width: 768px) { .related-links { grid-template-columns: 1fr; } .cta-section { padding: 1.5rem; } }
+  </style>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / <a href="/expertise/">Areas of Expertise</a> / Network Security
+  </nav>
+
+  <h1>Network Security Expert Witness</h1>
+
+  <p>Dr. Tal Lavian provides expert witness services in network security, with deep expertise in firewalls, VPN systems, SSL/TLS encryption, IPSec protocols, tunneling technologies, content filtering, and security gateway design. With 35+ years of experience and a PhD in Computer Science with specialization in network communications, Dr. Lavian brings authoritative technical knowledge to network security disputes.</p>
+
+  <section class="expertise-section">
+    <h2>Firewall Technologies & Architecture</h2>
+
+    <div class="expertise-highlight">
+      <h3>Network Firewalls</h3>
+      <p>Expert knowledge of firewall architecture, packet filtering, stateful inspection, access control lists, and firewall rule design for securing network perimeters.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Firewall Architecture:</strong> Comprehensive understanding of firewall design, packet processing, and security policies</li>
+      <li><strong>Packet Filtering:</strong> Deep expertise in firewall-based packet filtering rules and access control lists (ACLs)</li>
+      <li><strong>Stateful Inspection:</strong> Knowledge of stateful firewalls that track connection state and allow return traffic</li>
+      <li><strong>NAT & IP Masquerading:</strong> Understanding of Network Address Translation for both security and address management</li>
+      <li><strong>Protocol Filtering:</strong> Expertise in filtering specific protocols and services at the firewall</li>
+      <li><strong>Firewall Performance:</strong> Understanding of firewall throughput, latency, and performance optimization</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>SSL/TLS & Encryption Protocols</h2>
+
+    <div class="expertise-highlight">
+      <h3>Secure Sockets Layer (SSL) & Transport Layer Security (TLS)</h3>
+      <p>Comprehensive expertise in SSL/TLS protocols, cryptography, certificate management, and secure communication establishment.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>SSL/TLS Handshake:</strong> Expert knowledge of the SSL/TLS handshake procedure, key exchange, and authentication</li>
+      <li><strong>Cryptographic Protocols:</strong> Deep understanding of symmetric and asymmetric encryption, hash functions, and digital signatures</li>
+      <li><strong>Certificate Management:</strong> Knowledge of X.509 certificates, certificate authorities, digital signatures, and certificate validation</li>
+      <li><strong>Cipher Suites:</strong> Understanding of cipher suite selection, encryption algorithms, and modern TLS versions (1.2, 1.3)</li>
+      <li><strong>Perfect Forward Secrecy:</strong> Expertise in Diffie-Hellman ephemeral (DHE/ECDHE) and session key management</li>
+      <li><strong>TLS Performance & Security:</strong> Analysis of TLS implementation, performance overhead, and security effectiveness</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>IPSec & Tunneling Protocols</h2>
+
+    <div class="expertise-highlight">
+      <h3>Internet Protocol Security (IPSec)</h3>
+      <p>Deep expertise in IPSec protocol suite, encryption modes, authentication, key exchange, and secure tunnel establishment.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>IPSec Architecture:</strong> Complete understanding of IPSec components including AH (Authentication Header) and ESP (Encapsulating Security Payload)</li>
+      <li><strong>IPSec Modes:</strong> Expert knowledge of transport mode and tunnel mode IPSec implementations</li>
+      <li><strong>Key Exchange:</strong> Understanding of Internet Key Exchange (IKE/IKEv2) protocols for secure key negotiation</li>
+      <li><strong>Encryption & Authentication:</strong> Knowledge of IPSec encryption algorithms (AES, DES, 3DES) and authentication methods (HMAC, SHA)</li>
+      <li><strong>Security Associations:</strong> Expertise in IPSec Security Associations (SAs) and policy management</li>
+      <li><strong>IPSec Implementations:</strong> Real-world understanding of IPSec in VPN gateways and implementations</li>
+    </ul>
+
+    <div class="expertise-highlight" style="margin-top: 2rem;">
+      <h3>VPN Tunneling Technologies</h3>
+      <p>Expert analysis of various tunneling protocols and VPN implementations including GRE, L2TP, PPTP, and related technologies.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>GRE Tunneling:</strong> Knowledge of Generic Routing Encapsulation and tunnel setup for non-encrypted encapsulation</li>
+      <li><strong>L2TP & PPTP:</strong> Understanding of Layer 2 Tunneling Protocol and Point-to-Point Tunneling Protocol for remote access</li>
+      <li><strong>Tunnel Security:</strong> Knowledge of how tunneling protocols combine with encryption for VPN security</li>
+      <li><strong>Tunnel Performance:</strong> Analysis of tunneling overhead and performance optimization</li>
+      <li><strong>Site-to-Site VPNs:</strong> Expertise in VPN gateways and inter-site encrypted connections</li>
+      <li><strong>Remote Access VPNs:</strong> Understanding of remote access VPN architectures and client configurations</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Content Filtering & Security Gateways</h2>
+
+    <div class="expertise-highlight">
+      <h3>Web & Content Filtering</h3>
+      <p>Expert knowledge of content filtering systems, URL filtering, malware protection, and unified threat management architectures.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Web Filtering:</strong> Understanding of URL categorization, web content filtering, and web usage policies</li>
+      <li><strong>Intrusion Detection/Prevention:</strong> Knowledge of IDS/IPS systems, signature-based detection, and anomaly-based detection</li>
+      <li><strong>Malware Detection:</strong> Expertise in malware analysis, sandboxing, and threat detection in security gateways</li>
+      <li><strong>DLP (Data Loss Prevention):</strong> Understanding of data loss prevention technologies and content inspection</li>
+      <li><strong>Application Control:</strong> Knowledge of application-layer filtering and control technologies</li>
+      <li><strong>Security Gateway Architecture:</strong> Comprehensive understanding of unified threat management (UTM) and next-generation firewall (NGFW) designs</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Authentication & Access Control</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Authentication Protocols:</strong> Knowledge of RADIUS, TACACS+, Kerberos, and LDAP for network authentication</li>
+      <li><strong>Multi-Factor Authentication:</strong> Understanding of 2FA/MFA mechanisms including OTP, biometrics, and hardware tokens</li>
+      <li><strong>Access Control Lists (ACLs):</strong> Expertise in rule-based access control and policy definition</li>
+      <li><strong>Role-Based Access Control (RBAC):</strong> Knowledge of RBAC implementation for scalable access management</li>
+      <li><strong>Public Key Infrastructure (PKI):</strong> Understanding of certificate-based authentication and PKI systems</li>
+      <li><strong>Single Sign-On (SSO):</strong> Knowledge of federated authentication and centralized access management</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Network Security Monitoring & Incident Response</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Security Information & Event Management (SIEM):</strong> Knowledge of centralized security monitoring and log analysis</li>
+      <li><strong>Network Traffic Analysis:</strong> Understanding of traffic analysis, flow analysis, and anomaly detection</li>
+      <li><strong>Security Incident Investigation:</strong> Expertise in incident analysis and forensic investigation of security breaches</li>
+      <li><strong>Vulnerability Assessment:</strong> Knowledge of vulnerability scanning, exploitation analysis, and remediation</li>
+      <li><strong>Penetration Testing:</strong> Understanding of authorized penetration testing and security assessment methodologies</li>
+      <li><strong>Security Policy Development:</strong> Knowledge of information security policies and frameworks (NIST, ISO 27001)</li>
+    </ul>
+  </section>
+
+  <div class="related-pages">
+    <h3>Related Areas of Expertise</h3>
+    <div class="related-links">
+      <a href="/expertise/networking/">Computer Networking Expert Witness</a>
+      <a href="/expertise/cloud/">Cloud Computing Expert Witness</a>
+      <a href="/expertise/standards/">Technology Standards Expert Witness</a>
+      <a href="/expertise/">Back to All Expertise Areas</a>
+    </div>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What network security expertise does Dr. Lavian provide?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Dr. Lavian provides expert analysis on network security architectures, firewalls, VPN implementations, SSL/TLS encryption, IPSec protocols, tunneling technologies, content filtering, and security gateway design. His expertise covers network perimeter security, encryption protocols, and authentication mechanisms.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What is a firewall and how does it work?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        A firewall is a network security device that monitors and controls incoming and outgoing network traffic. Dr. Lavian has deep expertise in firewall architecture, stateful inspection, packet filtering, access control lists, and firewall rule design.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Can Dr. Lavian explain VPN security?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Dr. Lavian has comprehensive expertise in VPN security mechanisms including encryption protocols, authentication, key exchange, and how VPNs securely establish connections over untrusted networks.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What is SSL/TLS and how does it protect communications?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        SSL/TLS are cryptographic protocols that establish secure connections over networks. Dr. Lavian has expert knowledge of SSL/TLS handshake procedures, certificate management, cipher suites, and how SSL/TLS protects data transmission.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        How can cybersecurity expertise support my case?
+        <span class="faq-answer">
+        Network security expert testimony supports various cases: security architecture disputes, breach analysis, encryption standards compliance, firewall design disputes, patent claims in security technologies, and cases involving security protocol implementation or vulnerability analysis.
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-section">
+    <h2>Need Network Security Expert Testimony?</h2>
+    <p>Contact Dr. Tal Lavian to discuss how his expertise can support your cybersecurity litigation.</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+      const faqItem = this.parentElement;
+      faqItem.classList.toggle('open');
+    });
+  });
+</script>

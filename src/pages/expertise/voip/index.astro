@@ -1,0 +1,310 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://telecommnet.com/expertise/voip/",
+      "name": "VoIP Expert Witness Services",
+      "description": "Expert witness services for Voice over IP systems, protocols, implementation, performance, and litigation. Expertise in SIP, RTP, VoIP quality of service, interoperability, and PSTN integration.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Tal Lavian",
+        "url": "https://telecommnet.com",
+        "telephone": "+1-408-209-9112",
+        "email": "tlavian@telecommnet.com"
+      },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/expertise/voip/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://telecommnet.com/expertise/voip/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What VoIP systems and protocols does Dr. Lavian provide expert testimony about?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Lavian provides expert analysis on Voice over IP systems, SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), RTCP, VoIP quality of service, voice codecs, jitter and latency issues, VoIP devices and phones, call signaling, media transport, VoIP-PSTN gateway design, and the convergence of voice and data networks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SIP and how does it relate to VoIP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Session Initiation Protocol (SIP) is the primary protocol used to establish, manage, and terminate VoIP calls. Dr. Lavian has deep expertise in SIP protocol design, call flow procedures, SIP message structure, proxy servers, registrar functions, and how SIP integrates with media transport protocols like RTP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Dr. Lavian explain VoIP quality of service (QoS)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Lavian has comprehensive expertise in VoIP quality factors including delay, jitter, packet loss, voice codec selection, and network provisioning. He can explain how QoS mechanisms ensure voice quality and analyze cases where VoIP quality issues arose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between VoIP and PSTN?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VoIP (Voice over Internet Protocol) transmits voice as data packets over IP networks, while PSTN (Public Switched Telephone Network) uses circuit switching. Dr. Lavian explains these fundamentally different architectures, the transition between them, interoperability mechanisms, and technical implications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can VoIP expertise support my litigation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VoIP expert testimony supports various litigation types: equipment disputes, service quality claims, patent infringement in VoIP technologies, interoperability issues, emergency services (E911) compliance, protocol disputes, and cases involving convergence of traditional voice and data networks."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="VoIP Expert Witness"
+  description="Expert witness services for Voice over IP systems, protocols, quality, and implementation. Dr. Tal Lavian provides analysis on SIP, RTP, VoIP quality of service, interoperability, and PSTN integration."
+  schema={schema}
+>
+  <style define:vars={{
+    primaryColor: '#1a365d',
+    accentColor: '#2b6cb0',
+    lightGray: '#f7fafc',
+  }}>
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; }
+    .breadcrumb a { color: var(--accentColor); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .expertise-section { margin-bottom: 3rem; }
+    .expertise-section h2 { color: var(--primaryColor); border-bottom: 3px solid var(--accentColor); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .expertise-highlight { background-color: var(--lightGray); padding: 1.5rem; border-left: 4px solid var(--accentColor); border-radius: 4px; margin-bottom: 2rem; }
+    .expertise-highlight h3 { margin-top: 0; color: var(--primaryColor); }
+    .expertise-list { list-style: none; padding: 0; }
+    .expertise-list li { padding: 0.75rem 0; padding-left: 2rem; position: relative; line-height: 1.6; }
+    .expertise-list li:before { content: "▸"; position: absolute; left: 0; color: var(--accentColor); font-weight: bold; font-size: 1.2rem; }
+    .related-pages { background-color: var(--lightGray); padding: 2rem; border-radius: 8px; margin-top: 3rem; }
+    .related-pages h3 { color: var(--primaryColor); margin-top: 0; margin-bottom: 1.5rem; }
+    .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .related-links a { display: block; padding: 1rem; background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; color: var(--accentColor); text-decoration: none; font-weight: 500; transition: all 0.3s ease; }
+    .related-links a:hover { border-color: var(--accentColor); background-color: #f0f4f8; text-decoration: none; }
+    .faq-section { margin-top: 3rem; }
+    .faq-item { background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; margin-bottom: 1.5rem; overflow: hidden; }
+    .faq-question { background-color: var(--lightGray); padding: 1.5rem; cursor: pointer; font-weight: 600; color: var(--primaryColor); display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-question:hover { background-color: #e6eef5; }
+    .faq-toggle { color: var(--accentColor); font-size: 1.5rem; transition: transform 0.3s ease; }
+    .faq-item.open .faq-toggle { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 1.5rem; color: #4a5568; line-height: 1.8; }
+    .faq-item.open .faq-answer { display: block; }
+    .cta-section { background: linear-gradient(135deg, var(--primaryColor) 0%, var(--accentColor) 100%); color: white; padding: 2.5rem; border-radius: 8px; text-align: center; margin-top: 3rem; }
+    .cta-section h2 { color: white; margin-top: 0; margin-bottom: 1rem; }
+    .cta-section p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .cta-button { display: inline-block; background-color: white; color: var(--primaryColor); padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; }
+    .cta-button:hover { background-color: var(--lightGray); text-decoration: none; }
+    @media (max-width: 768px) { .related-links { grid-template-columns: 1fr; } .cta-section { padding: 1.5rem; } }
+  </style>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / <a href="/expertise/">Areas of Expertise</a> / VoIP
+  </nav>
+
+  <h1>VoIP Expert Witness</h1>
+
+  <p>Dr. Tal Lavian provides expert witness services in Voice over IP (VoIP), with comprehensive expertise in VoIP architectures, SIP protocols, RTP media transport, PSTN integration, voice codecs, quality of service, and the technical convergence of voice and data networks. With a PhD in Computer Science specializing in network communications and 35+ years of experience, Dr. Lavian brings deep technical knowledge to VoIP-related disputes.</p>
+
+  <section class="expertise-section">
+    <h2>VoIP Protocols & Architecture</h2>
+
+    <div class="expertise-highlight">
+      <h3>Session Initiation Protocol (SIP)</h3>
+      <p>Expert knowledge of SIP, the primary signaling protocol for VoIP call establishment, management, and termination. Includes SIP message structure, call flow procedures, SIP servers, proxy functions, and SIP integration with other systems.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>SIP Protocol Design:</strong> Complete understanding of SIP protocol structure, methods (INVITE, BYE, REGISTER, etc.), status codes, and headers</li>
+      <li><strong>SIP Call Flow:</strong> Expert knowledge of SIP call establishment, connection management, call termination, and error handling</li>
+      <li><strong>SIP Infrastructure:</strong> Understanding of SIP proxy servers, registrar functions, redirect servers, and user agent types</li>
+      <li><strong>SIP Extensions:</strong> Knowledge of SIP extensions for additional functionality including SUBSCRIBE/NOTIFY, MESSAGE, and OPTIONS methods</li>
+      <li><strong>SIP Security:</strong> Expertise in SIP security mechanisms, authentication, encryption, and secure communication setup</li>
+      <li><strong>SIP Interoperability:</strong> Understanding of SIP interoperability with other signaling protocols and legacy systems</li>
+    </ul>
+
+    <div class="expertise-highlight" style="margin-top: 2rem;">
+      <h3>Real-time Transport Protocol (RTP)</h3>
+      <p>Deep expertise in RTP, the protocol used to transport voice and other real-time media in VoIP systems, including timing, synchronization, and quality management.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>RTP Packet Format:</strong> Expert understanding of RTP packet structure, sequence numbers, timestamps, and synchronization source (SSRC) fields</li>
+      <li><strong>Media Stream Management:</strong> Knowledge of RTP stream setup, media negotiation, payload format specifications, and media stream handling</li>
+      <li><strong>RTCP (RTP Control Protocol):</strong> Understanding of RTCP for quality monitoring, sending reports, and feedback mechanisms</li>
+      <li><strong>Timing & Synchronization:</strong> Expertise in RTP timing, clock synchronization, and jitter management</li>
+      <li><strong>Quality Metrics:</strong> Knowledge of RTCP metrics for measuring voice quality and network performance</li>
+      <li><strong>RTP Performance:</strong> Analysis of RTP stream quality, loss detection, and performance optimization</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Voice Codecs & Media Handling</h2>
+
+    <div class="expertise-highlight">
+      <h3>Voice Codecs & Compression</h3>
+      <p>Comprehensive expertise in voice codecs used in VoIP, including codec selection, bandwidth requirements, voice quality, and interoperability between different codec implementations.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Common Codecs:</strong> Expert knowledge of G.711, G.723.1, G.726, G.729, iLBC, Opus, and other voice codecs</li>
+      <li><strong>Codec Characteristics:</strong> Understanding of codec bandwidth requirements, compression ratios, voice quality (MOS scores), and computational complexity</li>
+      <li><strong>Codec Selection:</strong> Knowledge of factors in codec selection including bandwidth, quality requirements, and legacy compatibility</li>
+      <li><strong>Voice Quality Metrics:</strong> Understanding of Mean Opinion Score (MOS), PESQ, and other voice quality measurements</li>
+      <li><strong>Jitter Buffers:</strong> Expertise in jitter buffer design, playout buffering, and adaptive playout mechanisms</li>
+      <li><strong>Echo Cancellation:</strong> Knowledge of echo cancellation techniques and echo control in VoIP systems</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>VoIP Quality of Service (QoS)</h2>
+
+    <div class="expertise-highlight">
+      <h3>Voice Quality Factors</h3>
+      <p>Expert analysis of factors affecting VoIP call quality including delay, jitter, packet loss, and the network provisioning required to maintain acceptable voice quality.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Delay/Latency:</strong> Understanding of one-way delay, round-trip delay, and recommended limits for voice communications</li>
+      <li><strong>Jitter:</strong> Expert knowledge of packet timing variation (jitter), its effects on voice quality, and jitter management techniques</li>
+      <li><strong>Packet Loss:</strong> Analysis of packet loss impact on voice quality and packet loss concealment techniques</li>
+      <li><strong>Bandwidth Provisioning:</strong> Understanding of bandwidth requirements for VoIP including codec bandwidth and protocol overhead</li>
+      <li><strong>QoS Mechanisms:</strong> Knowledge of DiffServ, IntServ, priority queuing, and other QoS techniques for voice</li>
+      <li><strong>Network Monitoring:</strong> Expertise in monitoring VoIP quality metrics and identifying performance issues</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>VoIP Systems & Devices</h2>
+
+    <ul class="expertise-list">
+      <li><strong>VoIP Phones & Endpoints:</strong> Knowledge of SIP phones, softphones, and IP-based communication devices</li>
+      <li><strong>PBX Systems:</strong> Understanding of IP-PBX systems, call control, and feature implementation</li>
+      <li><strong>VoIP Gateways:</strong> Expertise in VoIP-PSTN gateways that interconnect VoIP and traditional telephone networks</li>
+      <li><strong>Call Signaling:</strong> Knowledge of call establishment, routing, and connection management in VoIP systems</li>
+      <li><strong>Emergency Services:</strong> Understanding of E911 (Enhanced 911) for VoIP and location identification requirements</li>
+      <li><strong>VoIP Security:</strong> Expertise in VoIP security threats, authentication, encryption, and secure VoIP deployment</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>VoIP & PSTN Convergence</h2>
+
+    <div class="expertise-highlight">
+      <h3>Voice Network Convergence</h3>
+      <p>Expert analysis of how VoIP technologies integrate with and transition from traditional circuit-switched PSTN systems, including gateway design and interoperability requirements.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>VoIP vs. PSTN:</strong> Understanding the architectural differences between packet-switched VoIP and circuit-switched PSTN</li>
+      <li><strong>Gateway Design:</strong> Knowledge of VoIP-PSTN gateway architecture, media translation, and signaling conversion</li>
+      <li><strong>Signaling Translation:</strong> Expertise in translating between SIP/RTP and PSTN signaling protocols (SS7)</li>
+      <li><strong>Legacy Interoperability:</strong> Understanding of how modern VoIP systems interwork with legacy PSTN equipment</li>
+      <li><strong>Number Portability:</strong> Knowledge of telephone number portability and VoIP number management</li>
+      <li><strong>Regulatory Compliance:</strong> Understanding of FCC regulations and requirements for VoIP service providers</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>VoIP Patent & Performance Disputes</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Patent Infringement Analysis:</strong> Expertise in evaluating patent claims related to VoIP technologies, call signaling, media transport, and quality mechanisms</li>
+      <li><strong>Prior Art:</strong> Knowledge of early VoIP systems, protocols, and implementations for prior art analysis</li>
+      <li><strong>Performance Claims:</strong> Analysis of VoIP performance specifications, quality claims, and actual system performance</li>
+      <li><strong>Interoperability Claims:</strong> Evaluation of claims about VoIP system compatibility and interoperability</li>
+      <li><strong>Standards Compliance:</strong> Assessment of VoIP system compliance with published standards and RFCs</li>
+      <li><strong>Technical Feasibility:</strong> Expert opinion on whether specific VoIP features or capabilities are technically feasible</li>
+    </ul>
+  </section>
+
+  <div class="related-pages">
+    <h3>Related Areas of Expertise</h3>
+    <div class="related-links">
+      <a href="/expertise/telecommunications/">Telecommunications Expert Witness</a>
+      <a href="/expertise/networking/">Computer Networking Expert Witness</a>
+      <a href="/expertise/standards/">Technology Standards Expert Witness</a>
+      <a href="/expertise/cybersecurity/">Network Security Expert Witness</a>
+      <a href="/expertise/">Back to All Expertise Areas</a>
+    </div>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What VoIP systems and protocols does Dr. Lavian provide expert testimony about?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Dr. Lavian provides expert analysis on Voice over IP systems, SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), RTCP, VoIP quality of service, voice codecs, jitter and latency issues, VoIP devices and phones, call signaling, media transport, VoIP-PSTN gateway design, and the convergence of voice and data networks.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What is SIP and how does it relate to VoIP?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Session Initiation Protocol (SIP) is the primary protocol used to establish, manage, and terminate VoIP calls. Dr. Lavian has deep expertise in SIP protocol design, call flow procedures, SIP message structure, proxy servers, registrar functions, and how SIP integrates with media transport protocols like RTP.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Can Dr. Lavian explain VoIP quality of service (QoS)?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Dr. Lavian has comprehensive expertise in VoIP quality factors including delay, jitter, packet loss, voice codec selection, and network provisioning. He can explain how QoS mechanisms ensure voice quality and analyze cases where VoIP quality issues arose.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What is the difference between VoIP and PSTN?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        VoIP (Voice over Internet Protocol) transmits voice as data packets over IP networks, while PSTN (Public Switched Telephone Network) uses circuit switching. Dr. Lavian explains these fundamentally different architectures, the transition between them, interoperability mechanisms, and technical implications.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        How can VoIP expertise support my litigation?
+        <span class="faq-answer">
+        VoIP expert testimony supports various litigation types: equipment disputes, service quality claims, patent infringement in VoIP technologies, interoperability issues, emergency services (E911) compliance, protocol disputes, and cases involving convergence of traditional voice and data networks.
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-section">
+    <h2>Need VoIP Expert Testimony?</h2>
+    <p>Contact Dr. Tal Lavian to discuss how his expertise can support your VoIP-related litigation.</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+      const faqItem = this.parentElement;
+      faqItem.classList.toggle('open');
+    });
+  });
+</script>

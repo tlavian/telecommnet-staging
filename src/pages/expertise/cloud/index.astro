@@ -1,0 +1,196 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://telecommnet.com/expertise/cloud/",
+      "name": "Cloud Computing Expert Witness Services",
+      "description": "Expert witness services for cloud computing including AWS, GCP, cloud architecture, SDN, virtualization, cloud networking, data centers, and cloud system design.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Tal Lavian",
+        "url": "https://telecommnet.com",
+        "telephone": "+1-408-209-9112",
+        "email": "tlavian@telecommnet.com"
+      },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/expertise/cloud/"
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Cloud Computing Expert Witness"
+  description="Expert witness services for cloud computing. Dr. Tal Lavian provides analysis on AWS, GCP, cloud architecture, SDN, virtualization, cloud networking, and data centers."
+  schema={schema}
+>
+  <style define:vars={{
+    primaryColor: '#1a365d',
+    accentColor: '#2b6cb0',
+    lightGray: '#f7fafc',
+  }}>
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; }
+    .breadcrumb a { color: var(--accentColor); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .expertise-section { margin-bottom: 3rem; }
+    .expertise-section h2 { color: var(--primaryColor); border-bottom: 3px solid var(--accentColor); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .expertise-highlight { background-color: var(--lightGray); padding: 1.5rem; border-left: 4px solid var(--accentColor); border-radius: 4px; margin-bottom: 2rem; }
+    .expertise-highlight h3 { margin-top: 0; color: var(--primaryColor); }
+    .expertise-list { list-style: none; padding: 0; }
+    .expertise-list li { padding: 0.75rem 0; padding-left: 2rem; position: relative; line-height: 1.6; }
+    .expertise-list li:before { content: "▸"; position: absolute; left: 0; color: var(--accentColor); font-weight: bold; font-size: 1.2rem; }
+    .related-pages { background-color: var(--lightGray); padding: 2rem; border-radius: 8px; margin-top: 3rem; }
+    .related-pages h3 { color: var(--primaryColor); margin-top: 0; margin-bottom: 1.5rem; }
+    .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .related-links a { display: block; padding: 1rem; background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; color: var(--accentColor); text-decoration: none; font-weight: 500; transition: all 0.3s ease; }
+    .related-links a:hover { border-color: var(--accentColor); background-color: #f0f4f8; text-decoration: none; }
+    .cta-section { background: linear-gradient(135deg, var(--primaryColor) 0%, var(--accentColor) 100%); color: white; padding: 2.5rem; border-radius: 8px; text-align: center; margin-top: 3rem; }
+    .cta-section h2 { color: white; margin-top: 0; margin-bottom: 1rem; }
+    .cta-section p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .cta-button { display: inline-block; background-color: white; color: var(--primaryColor); padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; }
+    .cta-button:hover { background-color: var(--lightGray); text-decoration: none; }
+    @media (max-width: 768px) { .related-links { grid-template-columns: 1fr; } .cta-section { padding: 1.5rem; } }
+  </style>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / <a href="/expertise/">Areas of Expertise</a> / Cloud Computing
+  </nav>
+
+  <h1>Cloud Computing Expert Witness</h1>
+
+  <p>Dr. Tal Lavian provides expert witness services in cloud computing, with deep expertise in cloud platforms (AWS, GCP), cloud architecture design, Software-Defined Networking (SDN), virtualization technologies, cloud networking, and data center infrastructure. Dr. Lavian has hands-on experience deploying systems on AWS and GCP, and conducted cloud research at UC Berkeley's RAD Lab, bringing both theoretical knowledge and practical implementation experience to cloud-related disputes.</p>
+
+  <section class="expertise-section">
+    <h2>Cloud Platforms & Services</h2>
+
+    <div class="expertise-highlight">
+      <h3>Amazon Web Services (AWS) & Google Cloud Platform (GCP)</h3>
+      <p>Hands-on expertise with major cloud platforms including AWS and GCP, with knowledge of compute services, storage systems, networking, and cloud architecture patterns.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>AWS Services:</strong> Understanding of EC2, S3, VPC, RDS, Lambda, and other core AWS services</li>
+      <li><strong>GCP Services:</strong> Knowledge of Google Compute Engine, Google Cloud Storage, App Engine, and GCP services</li>
+      <li><strong>Compute Abstraction:</strong> Understanding of virtual machines, containers, and serverless computing models</li>
+      <li><strong>Storage Services:</strong> Expertise in cloud storage systems, databases, and data management services</li>
+      <li><strong>Networking Services:</strong> Knowledge of cloud virtual networks, load balancing, and network configuration</li>
+      <li><strong>Cloud Economics:</strong> Understanding of cloud pricing models, cost optimization, and resource utilization</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Cloud Architecture & Design</h2>
+
+    <div class="expertise-highlight">
+      <h3>Designing Scalable Cloud Systems</h3>
+      <p>Expert knowledge of cloud architecture principles, including scalability, reliability, security, and performance optimization in cloud environments.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Scalable Architecture:</strong> Understanding of horizontal and vertical scaling, auto-scaling, and load distribution in clouds</li>
+      <li><strong>High Availability:</strong> Knowledge of availability zones, replication, and fault tolerance in cloud systems</li>
+      <li><strong>Disaster Recovery:</strong> Expertise in backup, recovery strategies, and business continuity in cloud deployments</li>
+      <li><strong>Multi-Tier Architecture:</strong> Understanding of web tier, application tier, and data tier design patterns</li>
+      <li><strong>Microservices Architecture:</strong> Knowledge of service-oriented design and containerized microservices deployments</li>
+      <li><strong>Hybrid Cloud:</strong> Understanding of hybrid architectures combining on-premises and cloud infrastructure</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Software-Defined Networking (SDN)</h2>
+
+    <div class="expertise-highlight">
+      <h3>Programmable Networks & Network Virtualization</h3>
+      <p>Expert knowledge of Software-Defined Networking, programmable network infrastructure, and the separation of control and data planes.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>SDN Architecture:</strong> Understanding of SDN principles including control plane, data plane, and network application layers</li>
+      <li><strong>OpenFlow Protocol:</strong> Expertise in OpenFlow protocol for controlling switches and routers</li>
+      <li><strong>Network Controllers:</strong> Knowledge of SDN controllers and network orchestration platforms</li>
+      <li><strong>Network Virtualization:</strong> Understanding of virtual networks and network function virtualization (NFV)</li>
+      <li><strong>Traffic Engineering:</strong> Knowledge of how SDN enables dynamic traffic optimization and routing</li>
+      <li><strong>Cloud Network Integration:</strong> Understanding of SDN in cloud environments for flexible network management</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Virtualization Technologies</h2>
+
+    <div class="expertise-highlight">
+      <h3>Server & Network Virtualization</h3>
+      <p>Deep expertise in virtualization technologies including hypervisors, virtual machines, containers, and orchestration platforms.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Hypervisors:</strong> Knowledge of Type 1 and Type 2 hypervisors, virtual machine management, and resource allocation</li>
+      <li><strong>Container Technology:</strong> Expertise in containerization (Docker) and container orchestration (Kubernetes)</li>
+      <li><strong>Virtual Machines:</strong> Understanding of virtual machine architecture, memory management, and CPU scheduling</li>
+      <li><strong>Storage Virtualization:</strong> Knowledge of virtual storage systems and storage area networks (SAN)</li>
+      <li><strong>Network Virtualization:</strong> Understanding of virtual networks, virtual switches, and virtual network functions</li>
+      <li><strong>Performance Optimization:</strong> Knowledge of performance considerations in virtualized environments</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Cloud Networking & Data Centers</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Data Center Architecture:</strong> Understanding of data center infrastructure, facilities, and network topology</li>
+      <li><strong>High-Speed Interconnects:</strong> Knowledge of 10 Gbps, 40 Gbps, and 100 Gbps networking in data centers</li>
+      <li><strong>Load Balancing:</strong> Expertise in load balancing algorithms and distribution mechanisms</li>
+      <li><strong>Content Delivery Networks (CDN):</strong> Understanding of CDN architecture and geographic distribution strategies</li>
+      <li><strong>Network Security in Cloud:</strong> Knowledge of cloud security groups, firewalls, and access control</li>
+      <li><strong>Traffic Management:</strong> Understanding of congestion control, quality of service, and traffic optimization</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Cloud Research & Innovation</h2>
+
+    <div class="expertise-highlight">
+      <h3>UC Berkeley RAD Lab & Cloud Computing Research</h3>
+      <p>Research experience in cloud computing from UC Berkeley's Recovery-Oriented Computing (RAD) Lab, providing deep understanding of cloud system design principles and research directions.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Cloud Research:</strong> Understanding of current research directions in cloud computing and distributed systems</li>
+      <li><strong>System Design Principles:</strong> Knowledge of principles underlying modern cloud infrastructure</li>
+      <li><strong>Performance Analysis:</strong> Expertise in analyzing and measuring cloud system performance</li>
+      <li><strong>Reliability & Availability:</strong> Deep understanding of achieving reliability in large-scale distributed systems</li>
+      <li><strong>Emerging Technologies:</strong> Awareness of new cloud computing technologies and approaches</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Cloud Security & Compliance</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Cloud Security Architecture:</strong> Understanding of security design in cloud systems and multi-tenant environments</li>
+      <li><strong>Data Protection:</strong> Knowledge of encryption, access control, and data protection in cloud storage</li>
+      <li><strong>Compliance Requirements:</strong> Understanding of regulatory requirements (HIPAA, PCI-DSS, GDPR) in cloud deployments</li>
+      <li><strong>Identity & Access Management:</strong> Knowledge of authentication and authorization in cloud environments</li>
+      <li><strong>Audit & Logging:</strong> Understanding of cloud audit trails and compliance monitoring</li>
+    </ul>
+  </section>
+
+  <div class="related-pages">
+    <h3>Related Areas of Expertise</h3>
+    <div class="related-links">
+      <a href="/expertise/networking/">Computer Networking Expert Witness</a>
+      <a href="/expertise/cybersecurity/">Network Security Expert Witness</a>
+      <a href="/expertise/iot/">IoT & Connected Devices Expert Witness</a>
+      <a href="/expertise/">Back to All Expertise Areas</a>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Need Cloud Computing Expert Testimony?</h2>
+    <p>Contact Dr. Tal Lavian to discuss how his cloud computing expertise can support your litigation.</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>

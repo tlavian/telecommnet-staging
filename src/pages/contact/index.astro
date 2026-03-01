@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPoint",
+  "contactType": "Expert Witness Inquiries",
+  "telephone": "+1-408-209-9112",
+  "email": "tlavian@telecommnet.com",
+  "availableLanguage": "en"
+};
+---
+
+<BaseLayout
+  title="Contact Dr. Tal Lavian - Expert Witness"
+  description="Contact Dr. Tal Lavian for expert witness services in telecommunications, networking, and technology litigation. Phone, email, and contact form available."
+  schema={contactSchema}
+>
+  <style>
+    .contact-intro {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .contact-method {
+      padding: 2rem;
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .contact-method h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .contact-method a {
+      display: inline-block;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-method a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .form-row .form-group {
+      margin-bottom: 0;
+    }
+
+    .submit-button {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #1e4d7b;
+    }
+
+    .submit-button:active {
+      transform: scale(0.98);
+    }
+
+    .location-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .location-section h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+
+    .profile-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .profile-link {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      text-align: center;
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .profile-link:hover {
+      background-color: var(--light-gray);
+      border-color: var(--accent-color);
+    }
+
+    .response-time {
+      background-color: #fef5e7;
+      padding: 1.5rem;
+      border-left: 4px solid #d4af37;
+      border-radius: 4px;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <h1>Contact Dr. Tal Lavian</h1>
+
+  <div class="contact-intro">
+    <p>For expert witness services, consulting inquiries, or technical analysis in telecommunications, networking, and data communications, please contact Dr. Tal Lavian using any of the methods below. We respond promptly to all inquiries regarding litigation support and expert witness engagement.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-method">
+      <h3>Phone</h3>
+      <p>For immediate inquiries or urgent matter discussion</p>
+      <a href="tel:+14082099112">+1 (408) 209-9112</a>
+    </div>
+
+    <div class="contact-method">
+      <h3>Email</h3>
+      <p>Detailed information and case inquiries</p>
+      <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a>
+    </div>
+
+    <div class="contact-method">
+      <h3>Location</h3>
+      <p>Based in Encino, California</p>
+      <p style="color: #4a5568; margin-top: 0.5rem;">Serving clients nationwide and internationally</p>
+    </div>
+  </div>
+
+  <div class="response-time">
+    <strong>Response Time:</strong> We typically respond to inquiries within 24 business hours. For urgent litigation matters, please call directly at the number above.
+  </div>
+
+  <h2>Contact Form</h2>
+  <div class="contact-form-section">
+    <form method="POST" action="/contact/success/">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="form-group">
+          <label for="company">Law Firm / Company</label>
+          <input type="text" id="company" name="company" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <select id="subject" name="subject" required>
+          <option value="">-- Select a subject --</option>
+          <option value="expert-witness">Expert Witness Inquiry</option>
+          <option value="consulting">Consulting Services</option>
+          <option value="litigation-support">Litigation Support</option>
+          <option value="technical-analysis">Technical Analysis</option>
+          <option value="general">General Inquiry</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="case-details">Case Details / Inquiry Description *</label>
+        <textarea
+          id="case-details"
+          name="case-details"
+          placeholder="Please provide details about your inquiry, including the technical area, timeline, and relevant background information."
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="expertise-areas">Areas of Expertise Needed</label>
+        <input
+          type="text"
+          id="expertise-areas"
+          name="expertise-areas"
+          placeholder="e.g., Network Communications, VoIP, Wireless Technologies, Patent Infringement"
+        />
+      </div>
+
+      <button type="submit" class="submit-button">Send Inquiry</button>
+    </form>
+
+    <p style="margin-top: 1.5rem; color: #4a5568; font-size: 0.9rem;">
+      * Required fields. We respect your privacy and will not share your information without consent.
+    </p>
+  </div>
+
+  <h2>Location</h2>
+  <div class="location-section">
+    <h3>Encino, California</h3>
+    <p>Dr. Tal Lavian is based in Encino, California, and provides expert witness and consulting services to clients nationwide and internationally. Available for depositions, trial testimony, and consulting work across the United States and Canada.</p>
+  </div>
+
+  <h2>Professional Profiles</h2>
+  <p>Learn more about Dr. Lavian's credentials, publications, and patents through his professional profiles:</p>
+
+  <div class="profile-links">
+    <a href="https://scholar.google.com" class="profile-link">Google Scholar</a>
+    <a href="https://www.linkedin.com" class="profile-link">LinkedIn</a>
+    <a href="https://patents.google.com" class="profile-link">Google Patents</a>
+    <a href="https://www.researchgate.net" class="profile-link">ResearchGate</a>
+    <a href="https://www.ieee.org" class="profile-link">IEEE</a>
+    <a href="https://www.acm.org" class="profile-link">ACM</a>
+  </div>
+
+  <h2>What to Expect</h2>
+  <div class="contact-intro">
+    <p><strong>Initial Consultation:</strong> Upon contacting Dr. Lavian, you'll discuss your case requirements, technical issues involved, timeline, and engagement scope.</p>
+    <p><strong>Expert Analysis:</strong> Dr. Lavian will provide detailed technical analysis, opinions, and expert testimony based on his extensive experience and credentials.</p>
+    <p><strong>Professional Engagement:</strong> All work is conducted with strict adherence to professional standards, ethical guidelines, and attorney-client privilege requirements.</p>
+  </div>
+
+  <div style="background-color: var(--light-gray); padding: 2rem; border-radius: 8px; text-align: center; margin: 2rem 0;">
+    <h3>Ready to Get Expert Witness Services?</h3>
+    <p>Contact Dr. Tal Lavian today for authoritative expert testimony and consulting in telecommunications, networking, and data communications technology.</p>
+    <p><strong style="font-size: 1.2rem; color: var(--primary-color);">+1 (408) 209-9112</strong></p>
+    <p><strong style="font-size: 1.2rem; color: var(--primary-color);">tlavian@telecommnet.com</strong></p>
+  </div>
+</BaseLayout>

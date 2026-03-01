@@ -1,0 +1,286 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Tal Lavian",
+  "url": "https://telecommnet.com",
+  "jobTitle": "Expert Witness in Telecommunications",
+  "description": "PhD in Computer Science from UC Berkeley, 35+ years experience, 120+ patents, 25+ publications",
+  "education": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "PhD",
+    "name": "PhD in Computer Science - Network Communications",
+    "url": "https://www.berkeley.edu",
+    "name_of_institution": "University of California, Berkeley"
+  },
+  "workLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Encino",
+      "addressRegion": "California",
+      "addressCountry": "US"
+    }
+  }
+};
+---
+
+<BaseLayout
+  title="About Dr. Tal Lavian - Expert Witness in Telecommunications"
+  description="Learn about Dr. Tal Lavian's background, education, research, and experience as a leading expert witness in telecommunications and networking technology."
+  schema={personSchema}
+>
+  <style>
+    .intro-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .section-box {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .experience-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .experience-list li {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-color);
+      line-height: 1.7;
+    }
+
+    .experience-list li:last-child {
+      border-bottom: none;
+    }
+
+    .experience-list strong {
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .profile-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .profile-link {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      text-align: center;
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .profile-link:hover {
+      background-color: var(--light-gray);
+      border-color: var(--accent-color);
+    }
+
+    .highlight-box {
+      background-color: #fef5e7;
+      padding: 1.5rem;
+      border-left: 4px solid #d4af37;
+      border-radius: 4px;
+      margin: 1.5rem 0;
+    }
+
+    .research-group {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
+
+    .research-group h4 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .research-group p {
+      margin: 0.5rem 0;
+      color: #4a5568;
+    }
+
+    @media (max-width: 768px) {
+      .profile-links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <h1>About Dr. Tal Lavian</h1>
+
+  <div class="intro-section">
+    <p>Dr. Tal Lavian is an accomplished expert witness, researcher, and technology professional with over 35 years of experience in telecommunications, data communications, computer networks, and Internet protocols. With a PhD from UC Berkeley, 120+ patents, and 25+ peer-reviewed publications, Dr. Lavian brings unparalleled expertise to complex technology litigation and expert witness engagements.</p>
+  </div>
+
+  <h2>Education & Research Foundation</h2>
+  <div class="section-box">
+    <h3>Ph.D. in Computer Science - University of California, Berkeley</h3>
+    <p>Dr. Lavian earned his doctorate from UC Berkeley with specialization in network communications. His doctoral research established the foundation for his career-long focus on telecommunications infrastructure, data communications protocols, and networking systems.</p>
+  </div>
+
+  <h2>Academic Career & Research Leadership</h2>
+  <div class="section-box">
+    <h3>Research at UC Berkeley</h3>
+    <p>Over 20 years of cutting-edge research at UC Berkeley, including leadership roles in several pioneering research initiatives:</p>
+    <div class="research-group">
+      <h4>RAD Lab (Reliable Adaptive Distributed systems)</h4>
+      <p>Research on data center networking, distributed systems reliability, and infrastructure optimization.</p>
+    </div>
+    <div class="research-group">
+      <h4>SAHARA Project (Scalable Architecture for High-Assurance Reliable Networks)</h4>
+      <p>Telecom infrastructure research focusing on reliability, scalability, and network architecture.</p>
+    </div>
+    <div class="research-group">
+      <h4>ICEBERG (Internet Communications Engineering Beyond Edge Routing and Gateway)</h4>
+      <p>Wireless systems research advancing mobile and wireless network technologies.</p>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <h3>UC Berkeley Faculty Roles</h3>
+    <p><strong>Industry Fellow and Lecturer</strong> at UC Berkeley's Industrial Engineering and Operations Research (IEOR) department and the Sutardja Center for Entrepreneurship and Technology (SCET). These positions reflect his ongoing contributions to academic research while maintaining deep industry engagement.</p>
+  </div>
+
+  <h2>Industry Experience</h2>
+  <div class="section-box">
+    <h3>Nortel Networks Research Labs - 10+ Years</h3>
+    <p>Dr. Lavian spent over a decade at Nortel Networks (formerly Northern Telecom), one of the world's leading telecommunications equipment manufacturers. During this period, he:</p>
+    <ul class="experience-list">
+      <li>
+        <strong>Led Network Resource Scheduling Research</strong>
+        <p>Pioneered the first network resource-scheduling service for Grid computing, enabling dynamic allocation of computational resources across distributed networks.</p>
+      </li>
+      <li>
+        <strong>Demonstrated 10Gbps Lambda Allocation</strong>
+        <p>First to successfully demonstrate dynamic transatlantic allocation of 10Gbps optical wavelengths (Lambdas), advancing high-speed international telecommunications.</p>
+      </li>
+      <li>
+        <strong>Wire-Speed Active Networking</strong>
+        <p>Created the first wire-speed active network device on commercial hardware, enabling real-time packet processing at network line rates.</p>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Government & Research Programs</h2>
+  <div class="section-box">
+    <h3>Principal Investigator - DARPA Projects</h3>
+    <p>Dr. Lavian has led cutting-edge research projects funded by the Defense Advanced Research Projects Agency (DARPA), including work with the U.S. Air Force Research Lab on telecommunications and network security technologies.</p>
+    <p>These programs have focused on advanced telecommunications infrastructure, secure communications, and network resilience under challenging conditions.</p>
+  </div>
+
+  <h2>Entrepreneurial Ventures</h2>
+  <div class="section-box">
+    <h3>CRadar.Ai - Wireless RF for Autonomous Vehicles</h3>
+    <p><strong>Chief Technology Officer</strong> - Leading development of wireless RF (radio frequency) technologies for autonomous vehicle communications and perception systems.</p>
+
+    <h3 style="margin-top: 2rem;">Aybell/VisuMenu - Smartphone IVR Digitization</h3>
+    <p><strong>CEO/CTO and Co-Founder</strong> - Founded and led technology development for innovative smartphone-based interactive voice response (IVR) systems, modernizing telecommunications interface technology for mobile devices.</p>
+  </div>
+
+  <div class="highlight-box">
+    <h3>Technical Innovation Track Record</h3>
+    <p>Dr. Lavian's entrepreneurial experience demonstrates his ability to identify emerging technologies, lead research and development, and bring innovations to market in telecommunications and wireless technologies.</p>
+  </div>
+
+  <h2>Professional Recognition & Memberships</h2>
+  <div class="section-box">
+    <ul class="experience-list">
+      <li>
+        <strong>Senior Member, IEEE</strong>
+        <p>Recognized professional status in the Institute of Electrical and Electronics Engineers.</p>
+      </li>
+      <li>
+        <strong>Active Member, ACM</strong>
+        <p>Association for Computing Machinery involvement in computer networking research community.</p>
+      </li>
+      <li>
+        <strong>Active Member, IEEE-CNSV</strong>
+        <p>IEEE Communications, Networking and Systems Security & Virtualization technical committee participation.</p>
+      </li>
+      <li>
+        <strong>Patent Authority</strong>
+        <p>Over 120 issued patents demonstrating extensive innovation in telecommunications and networking technologies.</p>
+      </li>
+      <li>
+        <strong>Published Researcher</strong>
+        <p>25+ peer-reviewed publications in leading telecommunications and computer networking journals.</p>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Academic & Professional Profiles</h2>
+  <p>Dr. Lavian maintains active profiles on leading academic and professional networks, documenting his research contributions, patents, and professional activities:</p>
+
+  <div class="profile-links">
+    <a href="https://scholar.google.com" class="profile-link">Google Scholar</a>
+    <a href="https://www.academia.edu" class="profile-link">Academia.edu</a>
+    <a href="https://www.researchgate.net" class="profile-link">ResearchGate</a>
+    <a href="https://patents.google.com" class="profile-link">Google Patents</a>
+    <a href="https://www.acm.org" class="profile-link">ACM</a>
+    <a href="https://www.ieee.org" class="profile-link">IEEE</a>
+    <a href="https://dblp.uni-trier.de" class="profile-link">DBLP Computer Science</a>
+    <a href="https://www.justia.com/inventors" class="profile-link">Justia Patents</a>
+  </div>
+
+  <h2>Expert Witness & Consulting Services</h2>
+  <div class="section-box">
+    <p>Dr. Lavian's extensive background in academic research, industry innovation, and entrepreneurial ventures positions him as a leading expert witness in telecommunications and technology litigation. He has provided testimony and consulting services on:</p>
+    <ul class="experience-list">
+      <li>
+        <strong>Patent Infringement Cases</strong>
+        <p>Complex disputes involving telecommunications, networking, and data communications patents.</p>
+      </li>
+      <li>
+        <strong>Technology Standards</strong>
+        <p>Disputes regarding standards compliance, technical feasibility, and technology standards development.</p>
+      </li>
+      <li>
+        <strong>Network Architecture & Design</strong>
+        <p>Technical disputes regarding network design, implementation, and telecommunications infrastructure.</p>
+      </li>
+      <li>
+        <strong>Wireless & Mobile Technologies</strong>
+        <p>Expert analysis of wireless systems, mobile networks, and RF technologies.</p>
+      </li>
+      <li>
+        <strong>Regulatory & Licensing Matters</strong>
+        <p>Technical expertise for regulatory proceedings and technology licensing disputes.</p>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Why Dr. Lavian?</h2>
+  <div class="highlight-box">
+    <p><strong>Unmatched Expertise:</strong> PhD in network communications from UC Berkeley with 35+ years spanning academic research, industry leadership, government programs, and entrepreneurial ventures.</p>
+    <p><strong>Proven Innovation:</strong> 120+ patents demonstrating continuous innovation and technical leadership in telecommunications and networking.</p>
+    <p><strong>Research Authority:</strong> 25+ peer-reviewed publications and 20+ years at UC Berkeley research institutions.</p>
+    <p><strong>Industry Credibility:</strong> Senior member of IEEE, active in ACM and IEEE-CNSV, with recognition across academic and industry communities.</p>
+  </div>
+
+  <h2>Ready to Work with Dr. Lavian?</h2>
+  <p>If you need expert witness services, consulting expertise, or technical analysis in telecommunications, networking, or data communications, contact Dr. Tal Lavian today.</p>
+  <p><strong>Phone:</strong> <a href="tel:+14082099112">+1 (408) 209-9112</a></p>
+  <p><strong>Email:</strong> <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></p>
+</BaseLayout>

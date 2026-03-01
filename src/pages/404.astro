@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found - 404">
+  <style>
+    .error-container {
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .error-code {
+      font-size: 6rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin: 0;
+      line-height: 1;
+    }
+
+    .error-title {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin: 1rem 0;
+    }
+
+    .error-message {
+      font-size: 1.1rem;
+      color: #4a5568;
+      margin: 1.5rem 0;
+      line-height: 1.8;
+    }
+
+    .navigation-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+      padding: 2rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+    }
+
+    .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid var(--border-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .nav-link:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(26, 54, 93, 0.15);
+      border-color: var(--accent-color);
+    }
+
+    .nav-link-title {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-link-desc {
+      color: #4a5568;
+      font-size: 0.9rem;
+    }
+
+    .cta-section {
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 8px;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary-color);
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .cta-button:hover {
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 4rem;
+      }
+
+      .error-title {
+        font-size: 1.5rem;
+      }
+
+      .navigation-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="error-container">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Page Not Found</h2>
+    <p class="error-message">
+      The page you're looking for doesn't exist or may have been moved. Please check the URL and try again, or use the navigation below to find what you need.
+    </p>
+
+    <h2 style="color: var(--primary-color); margin-top: 2rem;">Explore TelecommNet</h2>
+
+    <div class="navigation-section">
+      <a href="/" class="nav-link">
+        <span class="nav-link-title">Home</span>
+        <span class="nav-link-desc">Return to homepage</span>
+      </a>
+
+      <a href="/about/" class="nav-link">
+        <span class="nav-link-title">About Dr. Lavian</span>
+        <span class="nav-link-desc">Learn about expertise</span>
+      </a>
+
+      <a href="/expertise/" class="nav-link">
+        <span class="nav-link-title">Areas of Expertise</span>
+        <span class="nav-link-desc">Technical specialties</span>
+      </a>
+
+      <a href="/case-studies/" class="nav-link">
+        <span class="nav-link-title">Case Studies</span>
+        <span class="nav-link-desc">Expert witness work</span>
+      </a>
+
+      <a href="/publications/" class="nav-link">
+        <span class="nav-link-title">Publications</span>
+        <span class="nav-link-desc">Research & papers</span>
+      </a>
+
+      <a href="/credentials/" class="nav-link">
+        <span class="nav-link-title">Credentials</span>
+        <span class="nav-link-desc">Qualifications</span>
+      </a>
+
+      <a href="/contact/" class="nav-link">
+        <span class="nav-link-title">Contact</span>
+        <span class="nav-link-desc">Get in touch</span>
+      </a>
+
+      <a href="/law-firm-clients/" class="nav-link">
+        <span class="nav-link-title">For Law Firms</span>
+        <span class="nav-link-desc">Professional services</span>
+      </a>
+    </div>
+
+    <div class="cta-section">
+      <h3 style="margin-top: 0; margin-bottom: 1rem;">Need Expert Witness Services?</h3>
+      <p>Contact Dr. Tal Lavian for expert testimony in telecommunications, networking, and patent litigation.</p>
+      <a href="/contact/" class="cta-button">Schedule a Consultation</a>
+    </div>
+  </div>
+</BaseLayout>

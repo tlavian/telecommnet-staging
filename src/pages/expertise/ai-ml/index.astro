@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://telecommnet.com/expertise/ai-ml/",
+      "name": "AI & Machine Learning Expert Witness Services",
+      "description": "Expert witness services for artificial intelligence and machine learning including system design, algorithms, data science, NLP, neural networks, and AI implementation.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Tal Lavian",
+        "url": "https://telecommnet.com",
+        "telephone": "+1-408-209-9112",
+        "email": "tlavian@telecommnet.com"
+      },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/expertise/ai-ml/"
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="AI & Machine Learning Expert Witness"
+  description="Expert witness services for artificial intelligence and machine learning. Dr. Tal Lavian provides analysis on AI systems, algorithms, neural networks, NLP, and data science."
+  schema={schema}
+>
+  <style define:vars={{
+    primaryColor: '#1a365d',
+    accentColor: '#2b6cb0',
+    lightGray: '#f7fafc',
+  }}>
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; }
+    .breadcrumb a { color: var(--accentColor); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .expertise-section { margin-bottom: 3rem; }
+    .expertise-section h2 { color: var(--primaryColor); border-bottom: 3px solid var(--accentColor); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .expertise-highlight { background-color: var(--lightGray); padding: 1.5rem; border-left: 4px solid var(--accentColor); border-radius: 4px; margin-bottom: 2rem; }
+    .expertise-highlight h3 { margin-top: 0; color: var(--primaryColor); }
+    .expertise-list { list-style: none; padding: 0; }
+    .expertise-list li { padding: 0.75rem 0; padding-left: 2rem; position: relative; line-height: 1.6; }
+    .expertise-list li:before { content: "▸"; position: absolute; left: 0; color: var(--accentColor); font-weight: bold; font-size: 1.2rem; }
+    .related-pages { background-color: var(--lightGray); padding: 2rem; border-radius: 8px; margin-top: 3rem; }
+    .related-pages h3 { color: var(--primaryColor); margin-top: 0; margin-bottom: 1.5rem; }
+    .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .related-links a { display: block; padding: 1rem; background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; color: var(--accentColor); text-decoration: none; font-weight: 500; transition: all 0.3s ease; }
+    .related-links a:hover { border-color: var(--accentColor); background-color: #f0f4f8; text-decoration: none; }
+    .cta-section { background: linear-gradient(135deg, var(--primaryColor) 0%, var(--accentColor) 100%); color: white; padding: 2.5rem; border-radius: 8px; text-align: center; margin-top: 3rem; }
+    .cta-section h2 { color: white; margin-top: 0; margin-bottom: 1rem; }
+    .cta-section p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .cta-button { display: inline-block; background-color: white; color: var(--primaryColor); padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; }
+    .cta-button:hover { background-color: var(--lightGray); text-decoration: none; }
+    @media (max-width: 768px) { .related-links { grid-template-columns: 1fr; } .cta-section { padding: 1.5rem; } }
+  </style>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / <a href="/expertise/">Areas of Expertise</a> / AI & Machine Learning
+  </nav>
+
+  <h1>AI & Machine Learning Expert Witness</h1>
+
+  <p>Dr. Tal Lavian provides expert witness services in artificial intelligence and machine learning, with expertise in machine learning systems, neural networks, deep learning, natural language processing (NLP), data science analytics, statistical learning, and AI implementation across distributed and networked systems. With 35+ years of technical experience and academic background from UC Berkeley, Dr. Lavian brings authoritative knowledge to AI and ML-related disputes.</p>
+
+  <section class="expertise-section">
+    <h2>Machine Learning Fundamentals</h2>
+
+    <div class="expertise-highlight">
+      <h3>Core Machine Learning Concepts</h3>
+      <p>Expert knowledge of machine learning paradigms including supervised learning, unsupervised learning, reinforcement learning, and fundamental ML algorithms and concepts.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Supervised Learning:</strong> Understanding of regression and classification algorithms including linear models, decision trees, and ensemble methods</li>
+      <li><strong>Unsupervised Learning:</strong> Knowledge of clustering algorithms, dimensionality reduction, and pattern discovery</li>
+      <li><strong>Reinforcement Learning:</strong> Expertise in reward-based learning, Markov decision processes, and Q-learning approaches</li>
+      <li><strong>Feature Engineering:</strong> Understanding of feature selection, feature extraction, and feature representation</li>
+      <li><strong>Model Evaluation:</strong> Knowledge of evaluation metrics, cross-validation, and performance assessment</li>
+      <li><strong>Overfitting & Regularization:</strong> Understanding of bias-variance tradeoff and techniques to prevent overfitting</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Neural Networks & Deep Learning</h2>
+
+    <div class="expertise-highlight">
+      <h3>Deep Neural Networks & Modern ML</h3>
+      <p>Expert knowledge of neural network architectures, deep learning systems, and modern approaches to building sophisticated AI systems.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Neural Network Architecture:</strong> Understanding of feedforward networks, recurrent neural networks (RNN), and long short-term memory (LSTM) networks</li>
+      <li><strong>Convolutional Neural Networks (CNN):</strong> Deep expertise in CNNs for image processing and computer vision tasks</li>
+      <li><strong>Attention Mechanisms:</strong> Knowledge of attention-based architectures and transformer models</li>
+      <li><strong>Backpropagation & Training:</strong> Understanding of gradient descent, backpropagation algorithms, and optimization techniques</li>
+      <li><strong>GPU Acceleration:</strong> Knowledge of GPU-based training and distributed neural network training</li>
+      <li><strong>Transfer Learning:</strong> Understanding of using pre-trained models and fine-tuning for new tasks</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Natural Language Processing (NLP)</h2>
+
+    <div class="expertise-highlight">
+      <h3>Language Understanding & Text Analysis</h3>
+      <p>Comprehensive expertise in natural language processing techniques, text analysis, and building systems that understand and generate human language.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Text Preprocessing:</strong> Knowledge of tokenization, stemming, lemmatization, and text normalization</li>
+      <li><strong>Word Embeddings:</strong> Understanding of word2vec, GloVe, and other word embedding techniques</li>
+      <li><strong>Language Models:</strong> Knowledge of statistical language models and neural language models</li>
+      <li><strong>Sequence Models:</strong> Expertise in sequence-to-sequence models, machine translation, and sequence labeling</li>
+      <li><strong>Sentiment Analysis:</strong> Understanding of sentiment classification and opinion mining</li>
+      <li><strong>Named Entity Recognition:</strong> Knowledge of identifying and classifying named entities in text</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Data Science & Analytics</h2>
+
+    <div class="expertise-highlight">
+      <h3>Data Analysis & Statistical Learning</h3>
+      <p>Expert knowledge of data science methodologies, statistical analysis, and extracting insights from data to build and validate machine learning systems.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Data Exploration & Visualization:</strong> Understanding of exploratory data analysis and data visualization techniques</li>
+      <li><strong>Statistical Analysis:</strong> Knowledge of hypothesis testing, probability distributions, and statistical inference</li>
+      <li><strong>Regression Analysis:</strong> Expertise in linear regression, logistic regression, and advanced regression techniques</li>
+      <li><strong>Time Series Analysis:</strong> Understanding of forecasting, seasonality, and temporal patterns in data</li>
+      <li><strong>Anomaly Detection:</strong> Knowledge of identifying outliers and unusual patterns in data</li>
+      <li><strong>A/B Testing:</strong> Understanding of experimental design and statistical testing for comparing ML models</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>AI Systems & Implementation</h2>
+
+    <ul class="expertise-list">
+      <li><strong>ML Pipeline Architecture:</strong> Understanding of end-to-end machine learning pipelines from data collection to model deployment</li>
+      <li><strong>Model Training & Validation:</strong> Knowledge of training procedures, hyperparameter tuning, and model validation strategies</li>
+      <li><strong>ML Frameworks:</strong> Experience with popular ML libraries and frameworks (TensorFlow, PyTorch, scikit-learn)</li>
+      <li><strong>Model Deployment:</strong> Understanding of deploying ML models into production systems</li>
+      <li><strong>Scalability & Performance:</strong> Knowledge of scaling ML systems and optimizing performance for production use</li>
+      <li><strong>Interpretability & Explainability:</strong> Understanding of making ML model decisions interpretable and explainable</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>AI Ethics, Fairness & Bias</h2>
+
+    <div class="expertise-highlight">
+      <h3>Responsible AI & Bias Mitigation</h3>
+      <p>Expert knowledge of ethical considerations in AI systems, bias detection and mitigation, fairness in machine learning, and responsible AI deployment.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Algorithmic Bias:</strong> Understanding of bias sources in machine learning and techniques to detect bias</li>
+      <li><strong>Fairness Metrics:</strong> Knowledge of fairness definitions and metrics for evaluating algorithmic fairness</li>
+      <li><strong>Privacy in ML:</strong> Understanding of privacy-preserving machine learning and differential privacy</li>
+      <li><strong>Model Transparency:</strong> Knowledge of techniques for understanding and explaining model decisions</li>
+      <li><strong>Adversarial Robustness:</strong> Understanding of adversarial examples and techniques to improve model robustness</li>
+      <li><strong>Regulatory Compliance:</strong> Knowledge of regulations affecting AI systems (GDPR, algorithmic accountability)</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Computer Vision & Image Processing</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Image Classification:</strong> Understanding of image classification tasks and CNN-based approaches</li>
+      <li><strong>Object Detection:</strong> Knowledge of detecting and localizing objects in images (YOLO, R-CNN approaches)</li>
+      <li><strong>Semantic Segmentation:</strong> Understanding of pixel-level image segmentation and semantic understanding</li>
+      <li><strong>Image Processing:</strong> Knowledge of image preprocessing, filtering, and enhancement techniques</li>
+      <li><strong>Computer Vision Applications:</strong> Understanding of practical applications in surveillance, medical imaging, and autonomous systems</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>AI Litigation Support</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Patent Disputes:</strong> Analysis of AI/ML patent claims, prior art, and infringement in AI technologies</li>
+      <li><strong>Performance Claims:</strong> Evaluation of claimed AI system capabilities and actual performance</li>
+      <li><strong>Fairness & Discrimination:</strong> Analysis of bias and discriminatory outcomes in AI systems</li>
+      <li><strong>Technical Feasibility:</strong> Assessment of whether claimed AI capabilities are technically feasible</li>
+      <li><strong>Standards Compliance:</strong> Evaluation of AI system compliance with relevant standards and best practices</li>
+    </ul>
+  </section>
+
+  <div class="related-pages">
+    <h3>Related Areas of Expertise</h3>
+    <div class="related-links">
+      <a href="/expertise/cloud/">Cloud Computing Expert Witness</a>
+      <a href="/expertise/standards/">Technology Standards Expert Witness</a>
+      <a href="/expertise/patent-litigation/">Patent Litigation Expert Witness</a>
+      <a href="/expertise/">Back to All Expertise Areas</a>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Need AI & Machine Learning Expert Testimony?</h2>
+    <p>Contact Dr. Tal Lavian to discuss how his AI and machine learning expertise can support your litigation.</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>

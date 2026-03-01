@@ -1,0 +1,488 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const caseStudiesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Expert Witness Case Studies",
+  "description": "Dr. Tal Lavian's expert witness testimony across USPTO, ITC, US District Courts, and international courts",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Patent Infringement Litigation",
+      "description": "Expert testimony in patent infringement cases involving telecommunications and networking technologies"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "USPTO PTAB Proceedings",
+      "description": "Technical expert analysis in Inter Partes Reviews, Post Grant Reviews, and CBM challenges"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "International Trade Commission Cases",
+      "description": "Expert witness testimony on patent infringement and trade secret misappropriation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Trade Secret Disputes",
+      "description": "Technical analysis and testimony in trade secret and confidential information litigation"
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Case Studies - Expert Witness Testimony"
+  description="Dr. Tal Lavian's expert witness case work in patent litigation, USPTO proceedings, ITC cases, and telecommunications disputes across US and Canadian courts."
+  schema={caseStudiesSchema}
+>
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      color: white;
+      padding: 4rem 2rem;
+      margin: -2rem -20px 3rem -20px;
+    }
+
+    .hero-section h1 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .experience-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .experience-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-color);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(26, 54, 93, 0.15);
+    }
+
+    .experience-card h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+      font-size: 1.3rem;
+    }
+
+    .experience-card p {
+      margin: 1rem 0 0 0;
+      color: #4a5568;
+      line-height: 1.7;
+    }
+
+    .experience-card ul {
+      margin: 1rem 0 0 0;
+      padding-left: 1.5rem;
+      color: #4a5568;
+    }
+
+    .experience-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .litigation-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .litigation-card {
+      padding: 1.5rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      border-top: 3px solid var(--accent-color);
+    }
+
+    .litigation-card h4 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    .litigation-card p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .court-experience {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .court-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .court-item {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      border-left: 3px solid var(--accent-color);
+      color: var(--dark-text);
+      font-weight: 500;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 8px;
+      margin: 3rem 0;
+      color: white;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-top: 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary-color);
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-top: 1.5rem;
+    }
+
+    .cta-button:hover {
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+    }
+
+    .key-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .stat-card {
+      padding: 1.5rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--primary-color);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section p {
+        font-size: 1rem;
+      }
+
+      .experience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .litigation-types {
+        grid-template-columns: 1fr;
+      }
+
+      .court-list {
+        grid-template-columns: 1fr;
+      }
+
+      .key-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+  <div class="hero-section">
+    <h1>Expert Witness Case Studies</h1>
+    <p>Dr. Tal Lavian brings extensive courtroom experience and technical expertise to complex telecommunications and technology litigation across multiple jurisdictions.</p>
+  </div>
+
+  <div class="key-stats">
+    <div class="stat-card">
+      <div class="stat-number">100+</div>
+      <div class="stat-label">Cases</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">35+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">120+</div>
+      <div class="stat-label">Patents</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">25+</div>
+      <div class="stat-label">Publications</div>
+    </div>
+  </div>
+
+  <h2>Court and Tribunal Experience</h2>
+  <p>Dr. Lavian has provided expert testimony in the following forums:</p>
+
+  <div class="court-experience">
+    <h3 style="margin-top: 0; color: var(--primary-color);">Federal Courts & Administrative Tribunals</h3>
+    <div class="court-list">
+      <div class="court-item">U.S. District Courts</div>
+      <div class="court-item">USPTO Patent Trial & Appeal Board (PTAB)</div>
+      <div class="court-item">International Trade Commission (ITC)</div>
+      <div class="court-item">Canadian Federal Court</div>
+      <div class="court-item">Provincial Courts of Canada</div>
+      <div class="court-item">USPTO Ex Parte Re-examination</div>
+    </div>
+  </div>
+
+  <h2>USPTO PTAB Proceedings Expertise</h2>
+  <p>Extensive experience as technical expert in multiple types of USPTO Patent Trial & Appeal Board proceedings:</p>
+
+  <div class="experience-grid">
+    <div class="experience-card">
+      <h3>Inter Partes Reviews (IPRs)</h3>
+      <p>Technical expert analysis and testimony in Inter Partes Review proceedings challenging patent validity based on prior art and obviousness grounds.</p>
+      <ul>
+        <li>Prior art analysis and interpretation</li>
+        <li>Obviousness and anticipation arguments</li>
+        <li>Technical expert declaration preparation</li>
+        <li>Testimony on claim construction</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h3>Post Grant Reviews (PGRs)</h3>
+      <p>Expert analysis in Patent Post-Grant Review proceedings addressing a broader scope of patent validity challenges.</p>
+      <ul>
+        <li>Anticipation and obviousness analysis</li>
+        <li>Statutory subject matter challenges</li>
+        <li>Technical evidence evaluation</li>
+        <li>Expert witness preparation</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h3>Covered Business Method (CBM) Reviews</h3>
+      <p>Technical expertise in CBM challenging covered business method patents in financial services and e-commerce.</p>
+      <ul>
+        <li>Business method patent analysis</li>
+        <li>Technical feasibility assessment</li>
+        <li>Prior art evaluation</li>
+        <li>Expert declaration support</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h3>Ex Parte Re-Examination</h3>
+      <p>Technical expert analysis in USPTO ex parte re-examination proceedings addressing patent validity.</p>
+      <ul>
+        <li>Patent examination history analysis</li>
+        <li>Prior art interpretation</li>
+        <li>Technical equivalence analysis</li>
+        <li>Declaration preparation</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h3>PTO Interferences</h3>
+      <p>Expert testimony on priority and inventorship issues in PTO interference proceedings.</p>
+      <ul>
+        <li>Inventorship analysis</li>
+        <li>Priority date determination</li>
+        <li>Technical disclosures evaluation</li>
+        <li>Expert witness testimony</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h3>Claim Construction & Interpretation</h3>
+      <p>Expert analysis of patent claim scope and proper claim interpretation for technical terms.</p>
+      <ul>
+        <li>Claim language analysis</li>
+        <li>Specification interpretation</li>
+        <li>Technical lexicon understanding</li>
+        <li>Claim construction expert testimony</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Categories of Expert Witness Cases</h2>
+  <p>Dr. Lavian provides expert testimony across diverse categories of technology and telecommunications litigation:</p>
+
+  <div class="litigation-types">
+    <div class="litigation-card">
+      <h4>Patent Infringement Litigation</h4>
+      <p>Technical analysis of patent claims, accused devices, and infringement theories in federal court patent disputes involving telecommunications and networking technologies.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>Trade Secret Misappropriation</h4>
+      <p>Expert testimony on trade secrets, confidential information, and breach of confidentiality in technology and telecommunications disputes.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>Telecommunications Disputes</h4>
+      <p>Technical expertise in telecommunications systems, standards, protocols, and service delivery in complex litigation.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>Network Technology</h4>
+      <p>Expert analysis of network architecture, routing, switching, TCP/IP, and data communications technologies in patent and trade secret cases.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>Wireless Communications</h4>
+      <p>Technical expertise in mobile wireless systems, cellular standards, RF technologies, and wireless protocols.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>VoIP and Real-Time Communications</h4>
+      <p>Expert testimony on Voice over IP systems, video conferencing, and real-time communications technologies.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>Data Communications</h4>
+      <p>Technical analysis of data transmission protocols, standards, and network layer technologies in litigation.</p>
+    </div>
+
+    <div class="litigation-card">
+      <h4>Cybersecurity & Network Security</h4>
+      <p>Expert analysis of security systems, encryption, firewalls, vulnerability assessment, and threat protection mechanisms.</p>
+    </div>
+  </div>
+
+  <h2>Testimony Qualifications</h2>
+  <p>Dr. Lavian has been qualified as an expert witness in:</p>
+
+  <div class="experience-section">
+    <ul style="margin: 0; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.75rem;">Computer science and network architecture</li>
+      <li style="margin-bottom: 0.75rem;">Telecommunications systems and protocols</li>
+      <li style="margin-bottom: 0.75rem;">Patent infringement and claim construction</li>
+      <li style="margin-bottom: 0.75rem;">Prior art and patent validity</li>
+      <li style="margin-bottom: 0.75rem;">Industry standards and compatibility</li>
+      <li style="margin-bottom: 0.75rem;">Technical feasibility and design choices</li>
+      <li style="margin-bottom: 0.75rem;">Damages analysis and royalty determination</li>
+      <li style="margin-bottom: 0.75rem;">Wireless systems and RF technologies</li>
+      <li style="margin-bottom: 0.75rem;">Data communications and network protocols</li>
+      <li>Trademark and trade secret misappropriation</li>
+    </ul>
+  </div>
+
+  <h2>Expert Witness Services Offered</h2>
+
+  <div class="experience-grid">
+    <div class="experience-card">
+      <h3>Technical Analysis</h3>
+      <p>Comprehensive technical analysis of patents, products, and accused devices with detailed reports and expert declarations.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Claim Construction</h3>
+      <p>Detailed analysis of patent claim language, specification interpretation, and proper claim scope determination.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Prior Art Searches</h3>
+      <p>Thorough prior art research and analysis for patent validity challenges and invalidity arguments.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Infringement Analysis</h3>
+      <p>Detailed infringement analysis comparing patent claims to accused products and processes.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Expert Declarations</h3>
+      <p>Preparation of detailed expert declarations for litigation, USPTO proceedings, and settlement discussions.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Deposition & Trial Testimony</h3>
+      <p>Experienced deposition and trial testimony in federal courts, USPTO, ITC, and international proceedings.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Damages Analysis</h3>
+      <p>Technical support for damages analysis and expert economic analysis in patent litigation.</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Standards & Compliance</h3>
+      <p>Expert analysis of industry standards compliance and technical requirements in litigation.</p>
+    </div>
+  </div>
+
+  <h2>Why Choose Dr. Lavian for Your Case?</h2>
+
+  <div class="experience-section">
+    <p><strong>Unmatched Technical Expertise:</strong> PhD in Computer Science from UC Berkeley with specialization in network communications and 35+ years of combined academic and industry experience.</p>
+
+    <p><strong>Extensive Patent Portfolio:</strong> With 120+ patents and 25+ peer-reviewed publications, Dr. Lavian understands patent prosecution, invention disclosure, and technical documentation from first-hand experience.</p>
+
+    <p><strong>Proven Courtroom Experience:</strong> Hundreds of cases across multiple jurisdictions and court systems with consistent acceptance of expert testimony and qualifications.</p>
+
+    <p><strong>Academic Credibility:</strong> Industry Fellow and Lecturer at UC Berkeley's IEOR and SCET programs, Senior Member of IEEE, and leadership experience in technical standards development.</p>
+
+    <p><strong>Industry Leadership:</strong> Principal investigator for DARPA/AFRL research projects and technology officer roles at leading companies including Nortel Labs, Ixia, and others.</p>
+  </div>
+
+  <div class="cta-section">
+    <h2>Need Expert Witness Services?</h2>
+    <p>Contact Dr. Tal Lavian today to discuss your case and how his expertise can support your litigation strategy.</p>
+    <a href="/contact/" class="cta-button">Schedule a Case Consultation</a>
+  </div>
+</BaseLayout>

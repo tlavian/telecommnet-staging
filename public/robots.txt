@@ -1,0 +1,65 @@
+# TelecommNet robots.txt - Allow all bots and search engines
+
+# Default rules for all bots
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /expertise/
+Allow: /case-studies/
+Allow: /publications/
+Allow: /credentials/
+Allow: /contact/
+Allow: /law-firm-clients/
+Allow: /privacy-policy/
+Allow: /terms-and-conditions/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /*.json$
+Crawl-delay: 1
+
+# AI search engine bots - full access
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 1
+
+User-agent: Anthropic
+Allow: /
+Crawl-delay: 1
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Other major search engines
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Sitemap reference
+Sitemap: https://telecommnet.com/sitemap-index.xml
+Sitemap: https://telecommnet.com/sitemap.xml

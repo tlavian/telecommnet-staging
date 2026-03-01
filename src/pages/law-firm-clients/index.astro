@@ -1,0 +1,376 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Expert Witness Services for Law Firms",
+  "description": "Expert witness and litigation support services in telecommunications, networking, and data communications for law firms",
+  "provider": {
+    "@type": "Person",
+    "name": "Dr. Tal Lavian"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  }
+};
+---
+
+<BaseLayout
+  title="Expert Witness Services for Law Firms - Dr. Tal Lavian"
+  description="Dr. Tal Lavian provides expert witness testimony and litigation support services to leading law firms in patent infringement, technology disputes, and telecommunications litigation."
+  schema={serviceSchema}
+>
+  <style>
+    .intro-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .law-firm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .law-firm-card {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary-color);
+      font-size: 0.95rem;
+    }
+
+    .services-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .service-card {
+      padding: 1.5rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      border-top: 3px solid var(--accent-color);
+    }
+
+    .service-card h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      margin: 0.5rem 0;
+      color: #4a5568;
+      font-size: 0.95rem;
+    }
+
+    .courts-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .courts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .court-item {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    .court-item strong {
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .court-item p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.9rem;
+    }
+
+    .proceedings-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .proceedings-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .proceedings-list li {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      border-left: 3px solid var(--accent-color);
+      color: #4a5568;
+    }
+
+    .highlight-box {
+      background-color: #fef5e7;
+      padding: 1.5rem;
+      border-left: 4px solid #d4af37;
+      border-radius: 4px;
+      margin: 2rem 0;
+    }
+
+    .engagement-process {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      margin: 2rem 0;
+    }
+
+    .engagement-step {
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      background-color: var(--light-gray);
+      border-radius: 6px;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .engagement-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .engagement-step h4 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .engagement-step p {
+      margin: 0;
+      color: #4a5568;
+    }
+
+    .cta-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .cta-button:hover {
+      background-color: #1e4d7b;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .law-firm-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services-section {
+        grid-template-columns: 1fr;
+      }
+
+      .courts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .proceedings-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <h1>Expert Witness Services for Law Firms</h1>
+
+  <div class="intro-section">
+    <p>Dr. Tal Lavian provides comprehensive expert witness and litigation support services to leading law firms nationwide. With a PhD from UC Berkeley, 120+ patents, 25+ publications, and 35+ years of experience in telecommunications and networking, Dr. Lavian delivers authoritative expert testimony in complex technology disputes, patent infringement cases, and telecommunications litigation.</p>
+  </div>
+
+  <h2>Trusted by Leading Law Firms</h2>
+  <p>Dr. Lavian has worked with top-tier law firms on complex patent litigation, technology disputes, and expert witness engagements:</p>
+
+  <div class="law-firm-grid">
+    <div class="law-firm-card">Fish Richardson</div>
+    <div class="law-firm-card">Cooley</div>
+    <div class="law-firm-card">Oblon</div>
+    <div class="law-firm-card">Irell & Manella</div>
+    <div class="law-firm-card">McKool Smith</div>
+    <div class="law-firm-card">Keker Van Nest</div>
+    <div class="law-firm-card">Finnegan</div>
+    <div class="law-firm-card">Holland & Knight</div>
+    <div class="law-firm-card">Perkins Coie</div>
+    <div class="law-firm-card">Kirkland & Ellis</div>
+    <div class="law-firm-card">Desmarais</div>
+    <div class="law-firm-card">Morgan Lewis</div>
+    <div class="law-firm-card">Kenyon & Kenyon</div>
+    <div class="law-firm-card">Durie Tangri</div>
+    <div class="law-firm-card">Greenberg Traurig</div>
+    <div class="law-firm-card">Ropes & Gray</div>
+    <div class="law-firm-card">McGuireWoods</div>
+    <div class="law-firm-card">Paul Hastings</div>
+    <div class="law-firm-card">Skadden</div>
+    <div class="law-firm-card">Winston & Strawn</div>
+    <div class="law-firm-card">Gibson Dunn</div>
+    <div class="law-firm-card">Simpson Thacher</div>
+    <div class="law-firm-card">Foley & Lardner</div>
+  </div>
+
+  <h2>Expert Witness Services</h2>
+  <p>Dr. Lavian provides comprehensive expert witness and litigation support services across the full spectrum of telecommunications and networking technology matters:</p>
+
+  <div class="services-section">
+    <div class="service-card">
+      <h3>Patent Infringement Analysis</h3>
+      <p>Detailed analysis of patent validity, infringement, and non-obviousness in telecommunications and networking patents. Expert opinions on technical aspects and industry standards.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Depositions & Trial Testimony</h3>
+      <p>Authoritative expert testimony in depositions and trial proceedings. Preparation of detailed expert reports and responsive testimony under cross-examination.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Technical Analysis & Reports</h3>
+      <p>Comprehensive technical analysis, detailed expert reports, and technical explanations for complex telecommunications and networking disputes.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Standards Compliance</h3>
+      <p>Expert analysis of technical standards compliance, standards-essential patents, and licensing disputes involving telecommunications standards.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Technology Licensing Disputes</h3>
+      <p>Expert opinions on reasonable royalty rates, technology licensing terms, and valuation of telecommunications and networking technologies.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Regulatory & Licensing Matters</h3>
+      <p>Technical expertise for regulatory proceedings, FCC matters, and technology licensing and approval processes.</p>
+    </div>
+  </div>
+
+  <h2>Courtroom Experience</h2>
+  <div class="courts-section">
+    <p>Dr. Lavian has provided expert testimony and support in multiple court jurisdictions and proceedings:</p>
+    <div class="courts-grid">
+      <div class="court-item">
+        <strong>US District Courts</strong>
+        <p>Federal litigation involving patent infringement, technology disputes, and complex telecommunications matters across multiple circuits.</p>
+      </div>
+      <div class="court-item">
+        <strong>US Patent and Trademark Office (USPTO)</strong>
+        <p>Patent examination proceedings, inter partes review (IPR), post-grant review, and patent validity disputes.</p>
+      </div>
+      <div class="court-item">
+        <strong>International Trade Commission (ITC)</strong>
+        <p>Section 337 investigations involving patent infringement and technology disputes with international implications.</p>
+      </div>
+      <div class="court-item">
+        <strong>State & Provincial Courts</strong>
+        <p>Technology and licensing disputes in state courts and Canadian provincial courts.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>USPTO & Administrative Proceedings</h2>
+  <div class="proceedings-section">
+    <p>Dr. Lavian provides expert support and technical analysis across a wide range of USPTO and administrative proceedings:</p>
+    <ul class="proceedings-list">
+      <li><strong>Inter Partes Review (IPR)</strong> - Patent validity challenges post-grant</li>
+      <li><strong>Covered Business Method (CBM) Reviews</strong> - Technology-related business method patents</li>
+      <li><strong>Post-Grant Review (PGR)</strong> - Early challenge to newly issued patents</li>
+      <li><strong>Ex Parte Re-Examinations</strong> - Patent office reexamination proceedings</li>
+      <li><strong>Interferences</strong> - Patent precedence disputes between inventors</li>
+    </ul>
+  </div>
+
+  <div class="highlight-box">
+    <h3>Technical Expertise Across All Areas</h3>
+    <p>Network Communications, Routing & Switching, TCP/IP, Data Communications, VoIP, Streaming Media, Telecommunications, Network Management, Network Security, Mobile & Wireless, Messaging & Chat, and Computer Networks.</p>
+  </div>
+
+  <h2>Expert Engagement Process</h2>
+  <div class="engagement-process">
+    <div class="engagement-step">
+      <h4>1. Initial Consultation</h4>
+      <p>Discuss your case, technical issues involved, timeline, and whether Dr. Lavian can provide expert services. Confidential discussion under attorney-client privilege.</p>
+    </div>
+
+    <div class="engagement-step">
+      <h4>2. Document Review</h4>
+      <p>Review relevant patents, prior art, technical specifications, product documentation, and other evidence related to the technical issues.</p>
+    </div>
+
+    <div class="engagement-step">
+      <h4>3. Technical Analysis</h4>
+      <p>Conduct detailed technical analysis, research, and formulation of expert opinions based on facts, evidence, and applicable standards and principles.</p>
+    </div>
+
+    <div class="engagement-step">
+      <h4>4. Expert Report</h4>
+      <p>Prepare detailed, comprehensive expert report setting forth methodology, analysis, findings, and expert opinions with detailed technical explanations.</p>
+    </div>
+
+    <div class="engagement-step">
+      <h4>5. Deposition & Trial Testimony</h4>
+      <p>Provide deposition testimony, trial preparation, and trial testimony, including detailed responses to cross-examination and opposing expert testimony.</p>
+    </div>
+  </div>
+
+  <h2>Why Choose Dr. Tal Lavian?</h2>
+  <div class="highlight-box">
+    <p><strong>Unmatched Credentials:</strong> PhD in Computer Science from UC Berkeley with specialization in network communications. 120+ patents and 25+ publications demonstrate deep technical expertise.</p>
+    <p><strong>35+ Years Experience:</strong> Spanning industry research labs, academic institutions, government programs, and commercial technology companies.</p>
+    <p><strong>Academic Leadership:</strong> Industry Fellow and Lecturer at UC Berkeley. 20+ years of research at UC Berkeley's leading laboratories.</p>
+    <p><strong>Professional Recognition:</strong> Senior member IEEE, active in ACM and IEEE-CNSV. Recognized authority in telecommunications and networking technology.</p>
+    <p><strong>Proven Track Record:</strong> Hundreds of expert witness engagements across complex patent litigation, technology disputes, and telecommunications matters.</p>
+  </div>
+
+  <div class="cta-section">
+    <h2>Ready to Engage Dr. Lavian?</h2>
+    <p>For expert witness services, litigation support, or technical analysis in your telecommunications or technology case, contact Dr. Tal Lavian today.</p>
+    <p><strong>Phone:</strong> <a href="tel:+14082099112">+1 (408) 209-9112</a></p>
+    <p><strong>Email:</strong> <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></p>
+    <a href="/contact/" class="cta-button">Schedule Expert Consultation</a>
+  </div>
+</BaseLayout>

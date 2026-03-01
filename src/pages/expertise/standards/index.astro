@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://telecommnet.com/expertise/standards/",
+      "name": "Technology Standards Expert Witness Services",
+      "description": "Expert witness services for standards-related matters including IEEE, IETF, ITU-T standards, RFCs, 802.x protocols, standards compliance, and standards development.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Tal Lavian",
+        "url": "https://telecommnet.com",
+        "telephone": "+1-408-209-9112",
+        "email": "tlavian@telecommnet.com"
+      },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/expertise/standards/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://telecommnet.com/expertise/standards/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What technology standards expertise does Dr. Lavian provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Lavian provides expert analysis on IEEE standards, IETF standards and RFCs, ITU-T recommendations, 802.x protocols (802.3 Ethernet, 802.11 Wi-Fi, etc.), standards compliance evaluation, and technical interpretation of standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are IEEE standards and what does 802 mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IEEE 802 refers to IEEE standards for local and metropolitan area networks. 802.3 covers Ethernet, 802.11 covers Wi-Fi, 802.1 covers bridging and management. Dr. Lavian has comprehensive expertise in all major 802 standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Dr. Lavian explain IETF RFCs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Lavian has deep expertise in Internet Engineering Task Force (IETF) standards documented as Requests for Comments (RFCs). He can explain RFCs covering TCP/IP, routing protocols, DNS, security protocols, and many other Internet technologies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is ITU-T and what standards do they develop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ITU-T (International Telecommunications Union - Telecommunication Standardization Sector) develops international telecommunications standards. Dr. Lavian has expertise in ITU-T standards covering transmission, signaling, and telecommunications systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can standards expertise support my litigation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standards expert testimony supports various cases: standards compliance disputes, interoperability issues, interpretation of technical standards, patent disputes involving standards-based technologies, and cases where standards understanding is critical."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Technology Standards Expert Witness"
+  description="Expert witness services for technology standards including IEEE, IETF, ITU-T, RFCs, 802.x standards, and standards compliance."
+  schema={schema}
+>
+  <style define:vars={{
+    primaryColor: '#1a365d',
+    accentColor: '#2b6cb0',
+    lightGray: '#f7fafc',
+  }}>
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; }
+    .breadcrumb a { color: var(--accentColor); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .expertise-section { margin-bottom: 3rem; }
+    .expertise-section h2 { color: var(--primaryColor); border-bottom: 3px solid var(--accentColor); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .expertise-highlight { background-color: var(--lightGray); padding: 1.5rem; border-left: 4px solid var(--accentColor); border-radius: 4px; margin-bottom: 2rem; }
+    .expertise-highlight h3 { margin-top: 0; color: var(--primaryColor); }
+    .expertise-list { list-style: none; padding: 0; }
+    .expertise-list li { padding: 0.75rem 0; padding-left: 2rem; position: relative; line-height: 1.6; }
+    .expertise-list li:before { content: "▸"; position: absolute; left: 0; color: var(--accentColor); font-weight: bold; font-size: 1.2rem; }
+    .related-pages { background-color: var(--lightGray); padding: 2rem; border-radius: 8px; margin-top: 3rem; }
+    .related-pages h3 { color: var(--primaryColor); margin-top: 0; margin-bottom: 1.5rem; }
+    .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .related-links a { display: block; padding: 1rem; background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; color: var(--accentColor); text-decoration: none; font-weight: 500; transition: all 0.3s ease; }
+    .related-links a:hover { border-color: var(--accentColor); background-color: #f0f4f8; text-decoration: none; }
+    .faq-section { margin-top: 3rem; }
+    .faq-item { background-color: white; border: 1px solid #e2e8f0; border-radius: 4px; margin-bottom: 1.5rem; overflow: hidden; }
+    .faq-question { background-color: var(--lightGray); padding: 1.5rem; cursor: pointer; font-weight: 600; color: var(--primaryColor); display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-question:hover { background-color: #e6eef5; }
+    .faq-toggle { color: var(--accentColor); font-size: 1.5rem; transition: transform 0.3s ease; }
+    .faq-item.open .faq-toggle { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 1.5rem; color: #4a5568; line-height: 1.8; }
+    .faq-item.open .faq-answer { display: block; }
+    .cta-section { background: linear-gradient(135deg, var(--primaryColor) 0%, var(--accentColor) 100%); color: white; padding: 2.5rem; border-radius: 8px; text-align: center; margin-top: 3rem; }
+    .cta-section h2 { color: white; margin-top: 0; margin-bottom: 1rem; }
+    .cta-section p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .cta-button { display: inline-block; background-color: white; color: var(--primaryColor); padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; }
+    .cta-button:hover { background-color: var(--lightGray); text-decoration: none; }
+    @media (max-width: 768px) { .related-links { grid-template-columns: 1fr; } .cta-section { padding: 1.5rem; } }
+  </style>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / <a href="/expertise/">Areas of Expertise</a> / Technology Standards
+  </nav>
+
+  <h1>Technology Standards Expert Witness</h1>
+
+  <p>Dr. Tal Lavian provides expert witness services in technology standards, with deep expertise in IEEE standards, IETF standards and RFCs, ITU-T recommendations, 802.x protocol standards, standards compliance evaluation, and technical standards interpretation. With 35+ years of experience, published research, and extensive patent portfolio, Dr. Lavian brings authoritative knowledge of technology standards to disputes involving standards-based systems.</p>
+
+  <section class="expertise-section">
+    <h2>IEEE Standards & 802 Protocols</h2>
+
+    <div class="expertise-highlight">
+      <h3>IEEE 802 Local & Metropolitan Area Network Standards</h3>
+      <p>Comprehensive expertise in IEEE 802 standards for LAN and MAN technologies, including Ethernet, Wi-Fi, bridging, and network management standards.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>802.3 Ethernet:</strong> Complete knowledge of IEEE 802.3 Ethernet standards from original to modern variants (Gigabit, 10 Gigabit, etc.)</li>
+      <li><strong>802.1 Bridging & Management:</strong> Expertise in 802.1d spanning tree, 802.1Q VLANs, 802.1w rapid spanning tree, and management standards</li>
+      <li><strong>802.11 Wi-Fi:</strong> Deep understanding of 802.11 wireless LAN standards from 802.11a/b/g through 802.11n/ac/ax</li>
+      <li><strong>802.15 Personal Area Networks:</strong> Knowledge of 802.15 standards including Bluetooth wireless personal area networks</li>
+      <li><strong>802.16 Broadband Wireless:</strong> Understanding of 802.16 WiMAX and broadband wireless access standards</li>
+      <li><strong>Standards Development Process:</strong> Understanding of IEEE standardization procedures and how standards are developed and updated</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>IETF Standards & Internet Protocols</h2>
+
+    <div class="expertise-highlight">
+      <h3>IETF Requests for Comments (RFCs)</h3>
+      <p>Expert knowledge of Internet Engineering Task Force standards documented as RFCs, covering TCP/IP protocols, routing, DNS, SMTP, HTTP, security protocols, and many other Internet technologies.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Core Internet Protocols:</strong> Deep expertise in IP (RFC 791), TCP (RFC 793), UDP (RFC 768), ICMP (RFC 792), and fundamental Internet protocols</li>
+      <li><strong>Routing Protocols:</strong> Knowledge of RIP, OSPF, BGP, and other routing protocols documented in RFCs</li>
+      <li><strong>DNS Standards:</strong> Complete understanding of Domain Name System (DNS) protocols (RFC 1035 and updates)</li>
+      <li><strong>Email Protocols:</strong> Expertise in SMTP (RFC 5321), POP3 (RFC 1939), IMAP (RFC 3501), and email standards</li>
+      <li><strong>HTTP & Web Standards:</strong> Knowledge of HTTP protocols (RFC 7230-7235) and related web technologies</li>
+      <li><strong>Security Protocols:</strong> Expertise in TLS (RFC 5246), IPSec (RFC 4301-4309), and other security-related RFCs</li>
+      <li><strong>Other Standards:</strong> Knowledge of SIP (RFC 3261), RTP (RFC 3550), and numerous other IETF standards</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>ITU-T Telecommunications Standards</h2>
+
+    <div class="expertise-highlight">
+      <h3>International Telecommunications Union Standards</h3>
+      <p>Deep expertise in ITU-T standards covering telecommunications systems, signaling protocols, transmission systems, and international telecom recommendations.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Transmission Standards:</strong> Knowledge of ITU-T recommendations for transmission systems including G-series recommendations for codecs and voice quality</li>
+      <li><strong>Signaling Standards:</strong> Expertise in ITU-T signaling standards including SS7, H.323, and related signaling protocols</li>
+      <li><strong>Switching & Routing:</strong> Understanding of ITU-T standards for telecom switching systems and routing</li>
+      <li><strong>Network Architecture:</strong> Knowledge of ITU-T recommendations for network architecture and design</li>
+      <li><strong>Voice Quality Standards:</strong> Expertise in ITU-T voice quality recommendations and measurement standards</li>
+      <li><strong>International Regulatory Compliance:</strong> Understanding of how ITU-T standards align with international regulatory requirements</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Standards Compliance & Interpretation</h2>
+
+    <div class="expertise-highlight">
+      <h3>Technical Standards Compliance Assessment</h3>
+      <p>Expert evaluation of whether systems, devices, or implementations comply with published standards and proper interpretation of technical standard requirements.</p>
+    </div>
+
+    <ul class="expertise-list">
+      <li><strong>Compliance Assessment:</strong> Detailed analysis of product or system compliance with applicable technical standards</li>
+      <li><strong>Standards Interpretation:</strong> Expert interpretation of ambiguous, complex, or disputed standard language and requirements</li>
+      <li><strong>Conformance Testing:</strong> Understanding of how standards conformance is tested and validated</li>
+      <li><strong>Interoperability Analysis:</strong> Assessment of whether standards-compliant systems can interoperate with each other</li>
+      <li><strong>Standards Evolution:</strong> Understanding of how standards have evolved over time and implications for older vs. newer systems</li>
+      <li><strong>Optional vs. Mandatory Features:</strong> Expert guidance on which standard features are mandatory vs. optional and implementation implications</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Standards-Based Technology Areas</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Network Protocols:</strong> Expert understanding of standards-based network protocols and how they implement standards requirements</li>
+      <li><strong>Wireless Technologies:</strong> Knowledge of how wireless systems implement IEEE 802.11 and other wireless standards</li>
+      <li><strong>VoIP Standards:</strong> Expertise in VoIP standards including SIP (RFC 3261), RTP (RFC 3550), and VoIP-related ITU-T recommendations</li>
+      <li><strong>Telecommunications Systems:</strong> Understanding of how telecom systems implement PSTN, SS7, and other telecom standards</li>
+      <li><strong>Security Standards:</strong> Knowledge of security standards including encryption algorithms and security protocols</li>
+      <li><strong>Emerging Standards:</strong> Awareness of new and emerging standards in technology fields</li>
+    </ul>
+  </section>
+
+  <section class="expertise-section">
+    <h2>Standards Documentation & Analysis</h2>
+
+    <ul class="expertise-list">
+      <li><strong>Standards Reading & Analysis:</strong> Ability to read, understand, and analyze complex technical standards documents</li>
+      <li><strong>Standards Comparison:</strong> Detailed comparison of different standards addressing similar technologies</li>
+      <li><strong>Standards History:</strong> Understanding of standards development history and how standards have evolved</li>
+      <li><strong>Standards Communities:</strong> Knowledge of IEEE, IETF, ITU-T, and other standards development organizations</li>
+      <li><strong>Standards Documentation:</strong> Clear explanation of technical standards concepts to non-specialists</li>
+    </ul>
+  </section>
+
+  <div class="related-pages">
+    <h3>Related Areas of Expertise</h3>
+    <div class="related-links">
+      <a href="/expertise/networking/">Computer Networking Expert Witness</a>
+      <a href="/expertise/telecommunications/">Telecommunications Expert Witness</a>
+      <a href="/expertise/voip/">VoIP Expert Witness</a>
+      <a href="/expertise/wireless/">Wireless & Mobile Expert Witness</a>
+      <a href="/expertise/">Back to All Expertise Areas</a>
+    </div>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What technology standards expertise does Dr. Lavian provide?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Dr. Lavian provides expert analysis on IEEE standards, IETF standards and RFCs, ITU-T recommendations, 802.x protocols (802.3 Ethernet, 802.11 Wi-Fi, etc.), standards compliance evaluation, and technical interpretation of standards.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What are IEEE standards and what does 802 mean?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        IEEE 802 refers to IEEE standards for local and metropolitan area networks. 802.3 covers Ethernet, 802.11 covers Wi-Fi, 802.1 covers bridging and management. Dr. Lavian has comprehensive expertise in all major 802 standards.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Can Dr. Lavian explain IETF RFCs?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Dr. Lavian has deep expertise in Internet Engineering Task Force (IETF) standards documented as Requests for Comments (RFCs). He can explain RFCs covering TCP/IP, routing protocols, DNS, security protocols, and many other Internet technologies.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What is ITU-T and what standards do they develop?
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        ITU-T (International Telecommunications Union - Telecommunication Standardization Sector) develops international telecommunications standards. Dr. Lavian has expertise in ITU-T standards covering transmission, signaling, and telecommunications systems.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        How can standards expertise support my litigation?
+        <span class="faq-answer">
+        Standards expert testimony supports various cases: standards compliance disputes, interoperability issues, interpretation of technical standards, patent disputes involving standards-based technologies, and cases where standards understanding is critical.
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-section">
+    <h2>Need Technology Standards Expert Testimony?</h2>
+    <p>Contact Dr. Tal Lavian to discuss how his standards expertise can support your litigation.</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+      const faqItem = this.parentElement;
+      faqItem.classList.toggle('open');
+    });
+  });
+</script>

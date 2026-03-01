@@ -1,0 +1,23 @@
+{
+  "name": "telecommnet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TelecommNet.com - Dr. Tal Lavian's Expert Witness & Technology Consulting",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "author": "Dr. Tal Lavian",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.18.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.69.0"
+  }
+}

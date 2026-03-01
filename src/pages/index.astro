@@ -1,0 +1,322 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Tal Lavian",
+  "url": "https://telecommnet.com",
+  "image": "https://telecommnet.com/images/dr-tal-lavian.jpg",
+  "jobTitle": "Expert Witness in Telecommunications & Networking",
+  "description": "PhD Computer Science, 35+ years experience, 120+ patents, 25+ publications",
+  "education": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "PhD",
+    "name": "PhD in Computer Science",
+    "url": "https://www.berkeley.edu"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=tal-lavian",
+    "https://www.linkedin.com/in/tallavian/",
+    "https://patents.google.com/?inventor=tal+lavian"
+  ],
+  "knowsAbout": [
+    "Telecommunications",
+    "Data Communications",
+    "Computer Networks",
+    "TCP/IP",
+    "Network Security",
+    "VoIP",
+    "Wireless Systems",
+    "Expert Witness"
+  ]
+};
+---
+
+<BaseLayout
+  title="Expert Witness in Telecommunications & Networking - Dr. Tal Lavian"
+  description="Dr. Tal Lavian provides expert witness services in telecommunications, data communications, and networking with 35+ years experience, PhD from UC Berkeley, and 120+ patents."
+  schema={personSchema}
+>
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      color: white;
+      padding: 4rem 2rem;
+      margin: -2rem -20px 3rem -20px;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 2rem;
+    }
+
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+      padding: 2rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+    }
+
+    .credential-card {
+      padding: 1.5rem;
+      background: white;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .credential-card strong {
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .credential-card p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.95rem;
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .expertise-item {
+      padding: 1.5rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      text-align: center;
+      border-top: 3px solid var(--accent-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .expertise-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(26, 54, 93, 0.15);
+    }
+
+    .expertise-item h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .clients-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .client-logo {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary-color);
+      font-size: 0.95rem;
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 1.5rem;
+    }
+
+    .cta-button:hover {
+      background-color: #1e4d7b;
+      text-decoration: none;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      margin: 3rem 0;
+    }
+
+    .answer-first {
+      background-color: #fef5e7;
+      padding: 1.5rem;
+      border-left: 4px solid #d4af37;
+      border-radius: 4px;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .credentials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Expert Witness in Telecommunications & Networking</h1>
+      <p>Over 35 years of experience providing authoritative expert testimony in complex technology and telecommunications litigation</p>
+    </div>
+  </div>
+
+  <div class="answer-first">
+    <h3>Why Choose Dr. Tal Lavian?</h3>
+    <p><strong>Unparalleled Expertise:</strong> Dr. Lavian holds a PhD in Computer Science from UC Berkeley with specialization in network communications, backed by 35+ years of industry and academic experience. His credentials include 120+ patents, 25+ peer-reviewed publications, and 20+ years of cutting-edge research at UC Berkeley.</p>
+  </div>
+
+  <h2>Key Credentials & Qualifications</h2>
+  <div class="credentials-grid">
+    <div class="credential-card">
+      <strong>PhD Computer Science</strong>
+      <p>UC Berkeley - Specialization in Network Communications. 20+ years of research leadership at UC Berkeley's renowned laboratories.</p>
+    </div>
+    <div class="credential-card">
+      <strong>120+ Patents</strong>
+      <p>Extensive patent portfolio in telecommunications, networking, and data communications technologies.</p>
+    </div>
+    <div class="credential-card">
+      <strong>25+ Publications</strong>
+      <p>Peer-reviewed academic publications in leading telecommunications and computer networking journals.</p>
+    </div>
+    <div class="credential-card">
+      <strong>35+ Years Experience</strong>
+      <p>Spanning industry research labs, academic institutions, and commercial technology companies.</p>
+    </div>
+  </div>
+
+  <h2>Areas of Expertise</h2>
+  <p>Dr. Lavian provides expert witness services across the full spectrum of telecommunications and networking technologies:</p>
+
+  <div class="expertise-grid">
+    <div class="expertise-item">
+      <h3>Network Communications</h3>
+      <p>Fundamental principles and protocols for data transmission across networks</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Routing & Switching</h3>
+      <p>Network architecture, routing algorithms, and switching technologies</p>
+    </div>
+    <div class="expertise-item">
+      <h3>TCP/IP</h3>
+      <p>Internet protocol suite, standards, and implementation</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Data Communications</h3>
+      <p>Data transmission protocols and network layer technologies</p>
+    </div>
+    <div class="expertise-item">
+      <h3>VoIP & Real-Time</h3>
+      <p>Voice over IP, video conferencing, and real-time communications</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Streaming Media</h3>
+      <p>Multimedia streaming, Quality of Service, and content delivery</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Telecommunications</h3>
+      <p>Telecom infrastructure, standards, and service delivery</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Network Management</h3>
+      <p>Network monitoring, management systems, and operations</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Network Security</h3>
+      <p>Cybersecurity, encryption, firewalls, and threat protection</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Mobile & Wireless</h3>
+      <p>Wireless systems, cellular networks, and RF technologies</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Messaging & Chat</h3>
+      <p>Messaging protocols, instant communications, and collaboration platforms</p>
+    </div>
+    <div class="expertise-item">
+      <h3>Computer Networks</h3>
+      <p>Network architecture, design, and implementation across all scales</p>
+    </div>
+  </div>
+
+  <h2>Notable Corporate Clients</h2>
+  <div class="clients-section">
+    <p>Dr. Lavian has provided expert witness and consulting services to leading technology companies in patent litigation, regulatory proceedings, and complex technology disputes:</p>
+    <div class="clients-grid">
+      <div class="client-logo">Google</div>
+      <div class="client-logo">Facebook</div>
+      <div class="client-logo">Apple</div>
+      <div class="client-logo">Microsoft</div>
+      <div class="client-logo">Amazon</div>
+      <div class="client-logo">Intel</div>
+      <div class="client-logo">Cisco</div>
+      <div class="client-logo">Qualcomm</div>
+      <div class="client-logo">AT&T</div>
+      <div class="client-logo">Verizon</div>
+      <div class="client-logo">Nortel</div>
+      <div class="client-logo">Motorola</div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Ready to Work with an Expert Witness?</h2>
+    <p>If you need authoritative expert testimony or consulting services in telecommunications, networking, or data communications technology, contact Dr. Lavian today.</p>
+    <a href="/contact/" class="cta-button">Schedule a Consultation</a>
+  </div>
+
+  <h2>What Clients Say</h2>
+  <p><strong>Trusted by Leading Law Firms:</strong> Dr. Lavian has worked with top-tier law firms including Fish Richardson, Cooley, Irell & Manella, and many others on complex patent litigation and technology disputes.</p>
+
+  <p><strong>Proven Track Record:</strong> His testimony has been accepted in U.S. District Courts, the USPTO, the ITC, and courts in the United States and Canada across hundreds of cases involving patent infringement, technology licensing, and telecommunications disputes.</p>
+
+  <div class="cta-section">
+    <h3>Get Expert Witness Services from Dr. Tal Lavian</h3>
+    <p>Call +1 (408) 209-9112 or email tlavian@telecommnet.com for immediate consultation on your case</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>

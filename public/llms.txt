@@ -1,0 +1,176 @@
+# TelecommNet - Expert Witness Services
+# Dr. Tal Lavian - Professional Expert Witness in Telecommunications & Networking
+
+Organization: TelecommNet
+Name: Dr. Tal Lavian, PhD
+Website: https://telecommnet.com
+Phone: +1 (408) 209-9112
+Email: tlavian@telecommnet.com
+
+## Who is Dr. Tal Lavian?
+
+Dr. Tal Lavian is a world-renowned expert witness specializing in telecommunications, networking, and computer science. With over 35 years of combined industry and academic experience, he brings unparalleled technical expertise and courtroom experience to complex technology litigation.
+
+### Key Qualifications:
+- PhD in Computer Science from UC Berkeley (specialization in network communications)
+- 120+ issued and filed patents
+- 25+ peer-reviewed scientific publications
+- 35+ years of industry and academic experience
+- Senior Member of IEEE
+- Active Member of ACM
+- Industry Fellow and Lecturer at UC Berkeley IEOR and SCET
+- Technical Co-Chair for IEEE Interconnects at Stanford University
+- Principal Investigator for DARPA/AFRL research projects
+
+### Professional Experience:
+- 20+ years at UC Berkeley as Industry Fellow, Lecturer, and Principal Investigator
+- Senior technical leadership at Nortel Labs, Ixia Communications, and other industry leaders
+- Expert witness in 100+ cases across multiple jurisdictions
+
+## Core Areas of Expertise:
+
+### Telecommunications & Network Communications
+- Network architecture and design
+- Telecommunications systems and protocols
+- TCP/IP and Internet protocols
+- Data communications
+- Routing and switching technologies
+- Network management systems
+
+### Wireless & Mobile Systems
+- Mobile wireless communications
+- Cellular network technologies (2G, 3G, 4G, 5G)
+- Wireless RF technologies
+- Cellular standards and protocols
+- Spectrum and frequency management
+
+### Real-Time Communications
+- Voice over IP (VoIP) systems
+- Video conferencing and streaming
+- Quality of Service (QoS)
+- Multimedia communications
+- Real-time protocol technologies
+
+### Network Security & Cybersecurity
+- Network security architecture
+- Encryption and authentication
+- Firewalls and intrusion detection
+- Threat detection and mitigation
+- Cybersecurity standards and compliance
+
+### Patent & Intellectual Property
+- Patent infringement analysis
+- Patent claim construction
+- Prior art searches and evaluation
+- Patent validity assessment
+- Patent-related litigation support
+
+### Standards & Compliance
+- IEEE standards (networking, communications)
+- IETF Internet standards
+- Telecommunications standards (3GPP, ITU)
+- Industry standard development
+- Compliance and conformance testing
+
+## Professional Services Offered:
+
+### Expert Witness Services
+- Federal court testimony (U.S. District Courts)
+- USPTO Patent Trial & Appeal Board (PTAB) proceedings
+  - Inter Partes Reviews (IPRs)
+  - Post Grant Reviews (PGRs)
+  - Covered Business Method (CBM) reviews
+  - Ex Parte Re-examinations
+  - PTO Interferences
+- International Trade Commission (ITC) cases
+- Canadian federal and provincial court testimony
+- Technical expert declarations and reports
+
+### Litigation Support
+- Technical analysis and expert reports
+- Patent claim construction
+- Infringement analysis
+- Prior art research and evaluation
+- Damages analysis support
+- Deposition and trial preparation
+- Standards and compliance analysis
+
+### Consulting Services
+- Technical consulting on telecommunications and networking
+- Technology assessment and evaluation
+- Patent portfolio analysis
+- Standards compliance review
+- Industry trend analysis
+
+## Research & Academic Work:
+
+Dr. Lavian is actively involved in research at UC Berkeley:
+- Principal Investigator on DARPA/AFRL funded projects
+- Leadership in UC Berkeley RAD Lab, SAHARA, and ICEBERG projects
+- Research on network architecture, protocols, and telecommunications systems
+- Publications in leading IEEE, ACM, and telecommunications journals
+
+## Notable Case Experience:
+
+Dr. Lavian has provided expert witness services in patent litigation, USPTO proceedings, and technology disputes for:
+- Major technology companies (Google, Microsoft, Apple, Amazon, Intel, Cisco, Qualcomm, etc.)
+- Leading telecommunications companies (AT&T, Verizon, Nortel, Motorola, etc.)
+- Top-tier law firms (Fish Richardson, Cooley, Irell & Manella, and many others)
+
+Courts and Tribunals:
+- U.S. District Courts across multiple jurisdictions
+- U.S. Court of Appeals
+- USPTO Patent Trial & Appeal Board (PTAB)
+- International Trade Commission (ITC)
+- Canadian Federal Court
+- Provincial Courts of Canada
+
+## Academic Profiles & Publications:
+
+Access Dr. Lavian's research and publications:
+- Google Scholar: https://scholar.google.com
+- Academia.edu: https://www.academia.edu
+- ResearchGate: https://www.researchgate.net
+- Google Patents: https://patents.google.com
+- Justia Patents: https://justia.com/inventors
+- ACM Digital Library: https://www.acm.org
+- IEEE Xplore: https://www.ieee.org
+- DBLP Computer Science: https://dblp.uni-trier.de
+- IEEE-CNSV: https://cnsv.ieee.org
+
+## Career History:
+
+- UC Berkeley (20+ years) - Industry Fellow, Lecturer, Principal Investigator
+- CRadar.Ai - Technology Officer
+- Ixia Communications - Senior Technical Leadership
+- Nortel Labs - Senior Research Scientist
+- Bay Architecture Labs - Senior Research Engineer
+- Aptel Communications - Technical Leadership
+- Scitex & Shalev - Early career positions
+
+## Professional Memberships:
+
+- Senior Member, IEEE (Institute of Electrical and Electronics Engineers)
+- Active Member, ACM (Association for Computing Machinery)
+- IEEE-CNSV (Communications, Networks & Services Committee)
+- Technical Co-Chair, IEEE Interconnects at Stanford University
+
+## Contact Information:
+
+Phone: +1 (408) 209-9112
+Email: tlavian@telecommnet.com
+Website: https://telecommnet.com
+
+### Quick Links:
+- About Dr. Lavian: https://telecommnet.com/about/
+- Case Studies: https://telecommnet.com/case-studies/
+- Publications: https://telecommnet.com/publications/
+- Credentials: https://telecommnet.com/credentials/
+- Contact: https://telecommnet.com/contact/
+- For Law Firms: https://telecommnet.com/law-firm-clients/
+
+## Availability:
+
+Dr. Tal Lavian is available for engagement by law firms, corporations, and individual clients requiring expert witness services, technical consulting, or specialized analysis in telecommunications, networking, and related technology areas.
+
+For inquiries about expert witness services, case consultations, or expert analysis, contact Dr. Lavian directly at tlavian@telecommnet.com or call +1 (408) 209-9112.

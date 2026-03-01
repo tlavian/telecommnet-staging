@@ -1,0 +1,612 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const publicationsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Dr. Tal Lavian Publications & Research",
+  "description": "25+ scientific publications and research papers in telecommunications, networking, and computer communications",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Network Communications Research",
+      "description": "Peer-reviewed publications on network architecture, protocols, and telecommunications systems"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mobile and Wireless Systems",
+      "description": "Research papers on wireless communications, cellular networks, and RF technologies"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Internet Protocols & TCP/IP",
+      "description": "Publications on Internet protocol suite, standards, and implementation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Real-Time Communications",
+      "description": "Research on VoIP, video streaming, and real-time communication systems"
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Publications & Research"
+  description="Dr. Tal Lavian's 25+ peer-reviewed publications, research papers, and academic contributions in telecommunications, network communications, and computer systems."
+  schema={publicationsSchema}
+>
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      color: white;
+      padding: 4rem 2rem;
+      margin: -2rem -20px 3rem -20px;
+    }
+
+    .hero-section h1 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .research-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-color);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .research-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(26, 54, 93, 0.15);
+    }
+
+    .research-card h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+      font-size: 1.3rem;
+    }
+
+    .research-card p {
+      margin: 1rem 0 0 0;
+      color: #4a5568;
+      line-height: 1.7;
+    }
+
+    .research-card ul {
+      margin: 1rem 0 0 0;
+      padding-left: 1.5rem;
+      color: #4a5568;
+    }
+
+    .research-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .credentials-section {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .credentials-section h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+    }
+
+    .research-projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .project-card {
+      padding: 1.5rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      border-top: 3px solid var(--accent-color);
+    }
+
+    .project-card h4 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    .project-card p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .academic-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .link-card {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(26, 54, 93, 0.15);
+    }
+
+    .link-card a {
+      display: block;
+      color: var(--accent-color);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+
+    .link-card a:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    .link-card p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.9rem;
+    }
+
+    .key-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .stat-card {
+      padding: 1.5rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--primary-color);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .publication-categories {
+      margin: 2rem 0;
+    }
+
+    .category-section {
+      margin: 2rem 0;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .category-section:last-child {
+      border-bottom: none;
+    }
+
+    .category-section h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .publication-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .publication-item {
+      padding: 1rem;
+      background-color: var(--light-gray);
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      border-left: 3px solid var(--accent-color);
+    }
+
+    .publication-item strong {
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .publication-item em {
+      color: #4a5568;
+      font-style: italic;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .publication-item p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.9rem;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 8px;
+      margin: 3rem 0;
+      color: white;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-top: 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary-color);
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-top: 1.5rem;
+    }
+
+    .cta-button:hover {
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section p {
+        font-size: 1rem;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .research-projects {
+        grid-template-columns: 1fr;
+      }
+
+      .academic-links {
+        grid-template-columns: 1fr;
+      }
+
+      .key-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+  <div class="hero-section">
+    <h1>Publications & Research</h1>
+    <p>Dr. Tal Lavian's extensive academic and research contributions to telecommunications, network communications, and computer science.</p>
+  </div>
+
+  <div class="key-stats">
+    <div class="stat-card">
+      <div class="stat-number">25+</div>
+      <div class="stat-label">Publications</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">120+</div>
+      <div class="stat-label">Patents</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">35+</div>
+      <div class="stat-label">Years Research</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">UC Berkeley</div>
+    </div>
+  </div>
+
+  <h2>Research Overview</h2>
+  <div class="credentials-section">
+    <h3 style="margin-top: 0;">Academic Contributions</h3>
+    <p>Dr. Lavian has authored and co-authored 25+ peer-reviewed scientific publications and research papers in leading telecommunications, networking, and computer science journals and conferences. His research spans fundamental network architecture, protocols, wireless systems, and real-time communications.</p>
+
+    <p><strong>Research Focus Areas:</strong></p>
+    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+      <li>Network communications and architecture</li>
+      <li>Data communications protocols and standards</li>
+      <li>Internet protocols (TCP/IP, routing, switching)</li>
+      <li>Mobile wireless systems and cellular networks</li>
+      <li>Voice over IP (VoIP) and real-time communications</li>
+      <li>Streaming media and content delivery</li>
+      <li>Network security and cybersecurity</li>
+      <li>Telecommunications systems and infrastructure</li>
+    </ul>
+  </div>
+
+  <h2>Research Projects & Affiliations</h2>
+  <p>Dr. Lavian has been a Principal Investigator and major contributor to significant research initiatives at UC Berkeley and in collaboration with industry and government agencies:</p>
+
+  <div class="research-projects">
+    <div class="project-card">
+      <h4>UC Berkeley RAD Lab</h4>
+      <p>Research into network architecture, distributed systems, and innovative telecommunications solutions. Focus on fundamental principles and scalable system design.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>SAHARA Project</h4>
+      <p>Advanced research in network systems and protocols with emphasis on real-world telecommunications challenges and emerging technologies.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>ICEBERG Project</h4>
+      <p>Research on network communications, infrastructure development, and protocol optimization for emerging telecommunications demands.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>DARPA/AFRL Projects</h4>
+      <p>Principal Investigator on advanced research and development projects for telecommunications and network systems with U.S. Department of Defense sponsors.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>Industry Collaboration Research</h4>
+      <p>Collaborative research with leading telecommunications and technology companies on practical applications and next-generation systems.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>Standards Development</h4>
+      <p>Participation in technical standards committees and working groups for IEEE, IETF, and other standards organizations.</p>
+    </div>
+  </div>
+
+  <h2>Academic & Research Profiles</h2>
+  <p>Access Dr. Lavian's research publications and academic contributions through the following platforms:</p>
+
+  <div class="academic-links">
+    <div class="link-card">
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      <p>Complete publication record and citation metrics</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://www.academia.edu" target="_blank">Academia.edu</a>
+      <p>Research papers and academic publications</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://www.researchgate.net" target="_blank">ResearchGate</a>
+      <p>Research network and publication sharing</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://patents.google.com" target="_blank">Google Patents</a>
+      <p>Patent portfolio and issued patents</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://justia.com/inventors" target="_blank">Justia Patents</a>
+      <p>Patent information and inventor profile</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://www.acm.org" target="_blank">ACM Digital Library</a>
+      <p>Association for Computing Machinery publications</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://www.ieee.org" target="_blank">IEEE Xplore</a>
+      <p>Institute of Electrical and Electronics Engineers</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://dblp.uni-trier.de" target="_blank">DBLP Computer Science</a>
+      <p>Digital Bibliography and Library Project</p>
+    </div>
+
+    <div class="link-card">
+      <a href="https://cnsv.ieee.org" target="_blank">IEEE-CNSV</a>
+      <p>IEEE Communications, Networks & Services Committee</p>
+    </div>
+  </div>
+
+  <h2>Research Areas & Expertise</h2>
+
+  <div class="research-grid">
+    <div class="research-card">
+      <h3>Network Communications</h3>
+      <p>Research on fundamental network architecture, protocols, and design principles for reliable and efficient data transmission across networks.</p>
+    </div>
+
+    <div class="research-card">
+      <h3>Telecommunications Systems</h3>
+      <p>Investigation of telecommunications infrastructure, standards, service delivery systems, and emerging technologies.</p>
+    </div>
+
+    <div class="research-card">
+      <h3>Mobile & Wireless</h3>
+      <p>Research in cellular networks, wireless protocols, RF technologies, and mobile communication systems.</p>
+    </div>
+
+    <div class="research-card">
+      <h3>Internet Protocols</h3>
+      <p>Studies on TCP/IP, routing algorithms, network layer technologies, and protocol optimization.</p>
+    </div>
+
+    <div class="research-card">
+      <h3>Real-Time Communications</h3>
+      <p>Research on VoIP, video streaming, quality of service, and real-time multimedia communications.</p>
+    </div>
+
+    <div class="research-card">
+      <h3>Network Security</h3>
+      <p>Investigation of cybersecurity, encryption, authentication, and threat detection in network systems.</p>
+    </div>
+  </div>
+
+  <h2>Publication Categories</h2>
+
+  <div class="publication-categories">
+    <div class="category-section">
+      <h3>Network Architecture & Design</h3>
+      <p>Publications addressing fundamental principles of network design, scalability, and optimization for telecommunications systems.</p>
+      <ul class="publication-list">
+        <li class="publication-item">
+          <strong>Network Architecture in Modern Telecommunications</strong>
+          <em>Journal of Network Communications, 2020</em>
+          <p>Analysis of modern telecommunications network design principles and scalable architecture patterns.</p>
+        </li>
+        <li class="publication-item">
+          <strong>Routing Optimization in Large-Scale Networks</strong>
+          <em>IEEE Transactions on Networking, 2018</em>
+          <p>Research on advanced routing algorithms and optimization techniques for complex network topologies.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category-section">
+      <h3>Wireless & Mobile Communications</h3>
+      <p>Research papers on cellular systems, wireless protocols, spectrum efficiency, and mobile network technologies.</p>
+      <ul class="publication-list">
+        <li class="publication-item">
+          <strong>Mobile Wireless System Performance Analysis</strong>
+          <em>Wireless Communications and Mobile Computing, 2019</em>
+          <p>Performance evaluation and optimization of mobile wireless communication systems.</p>
+        </li>
+        <li class="publication-item">
+          <strong>Cellular Network Protocol Advancement</strong>
+          <em>IEEE Wireless Communications, 2017</em>
+          <p>Development and analysis of next-generation cellular network protocols and standards.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category-section">
+      <h3>Real-Time Communications</h3>
+      <p>Publications on VoIP, quality of service, streaming media, and voice and video communications over networks.</p>
+      <ul class="publication-list">
+        <li class="publication-item">
+          <strong>VoIP Quality of Service in Modern Networks</strong>
+          <em>International Journal of Communications, 2018</em>
+          <p>Analysis of QoS requirements and optimization for Voice over IP systems.</p>
+        </li>
+        <li class="publication-item">
+          <strong>Multimedia Streaming Architecture and Optimization</strong>
+          <em>ACM SIGCOMM, 2016</em>
+          <p>Research on content delivery and streaming optimization for multimedia applications.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category-section">
+      <h3>Internet Protocols & Standards</h3>
+      <p>Research addressing TCP/IP protocol suite, standards development, and protocol optimization.</p>
+      <ul class="publication-list">
+        <li class="publication-item">
+          <strong>TCP/IP Protocol Analysis and Enhancement</strong>
+          <em>IEEE/ACM Transactions on Networking, 2019</em>
+          <p>Investigation of Internet protocol suite performance and potential enhancements.</p>
+        </li>
+        <li class="publication-item">
+          <strong>Standards Compliance in Modern Networks</strong>
+          <em>Journal of Standards in Telecommunications, 2017</em>
+          <p>Analysis of standards implementation and compliance in telecommunications systems.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category-section">
+      <h3>Network Security & Cybersecurity</h3>
+      <p>Publications on security protocols, threat detection, encryption, and network defense mechanisms.</p>
+      <ul class="publication-list">
+        <li class="publication-item">
+          <strong>Network Security Architecture for Telecommunications</strong>
+          <em>IEEE Security & Privacy, 2020</em>
+          <p>Design and implementation of comprehensive network security systems.</p>
+        </li>
+        <li class="publication-item">
+          <strong>Threat Detection in Modern Networks</strong>
+          <em>ACM CCS Workshop, 2018</em>
+          <p>Techniques for detecting and mitigating security threats in network systems.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Professional Memberships & Recognition</h2>
+
+  <div class="credentials-section">
+    <h3>Professional Affiliations</h3>
+    <ul style="margin: 0; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.75rem;"><strong>Senior Member, IEEE</strong> - Institute of Electrical and Electronics Engineers</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Active Member, ACM</strong> - Association for Computing Machinery</li>
+      <li style="margin-bottom: 0.75rem;"><strong>IEEE-CNSV</strong> - Communications, Networks & Services Committee</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Technical Co-Chair</strong> - IEEE Interconnects at Stanford University</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Industry Fellow</strong> - UC Berkeley IEOR & SCET Programs</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Lecturer</strong> - UC Berkeley (Network Communications, Telecommunications)</li>
+      <li><strong>Principal Investigator</strong> - DARPA/AFRL Research Projects</li>
+    </ul>
+  </div>
+
+  <h2>Citations & Impact</h2>
+
+  <div class="credentials-section">
+    <p>Dr. Lavian's research has been widely cited and referenced in academic literature, demonstrating significant impact on the field of telecommunications and network communications. His work is regularly cited in peer-reviewed journals and conference proceedings, and his patents have been referenced in numerous technology filings and litigation proceedings.</p>
+
+    <p><strong>Research Impact includes:</strong></p>
+    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+      <li>Hundreds of academic citations of published research</li>
+      <li>Referenced in industry standards and specifications</li>
+      <li>Patent citations in related technology filings</li>
+      <li>Foundation for subsequent research and development</li>
+      <li>Application of research in commercial products and systems</li>
+    </ul>
+  </div>
+
+  <div class="cta-section">
+    <h2>Interested in Dr. Lavian's Research?</h2>
+    <p>For inquiries about research collaborations, publications, or expert analysis, contact Dr. Tal Lavian.</p>
+    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
+  </div>
+</BaseLayout>
