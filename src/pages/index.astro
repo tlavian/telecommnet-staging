@@ -5,318 +5,208 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Dr. Tal Lavian",
+  "jobTitle": "Telecommunications Expert Witness Consultant",
   "url": "https://telecommnet.com",
-  "image": "https://telecommnet.com/images/dr-tal-lavian.jpg",
-  "jobTitle": "Expert Witness in Telecommunications & Networking",
-  "description": "PhD Computer Science, 35+ years experience, 120+ patents, 25+ publications",
-  "education": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "PhD",
-    "name": "PhD in Computer Science",
-    "url": "https://www.berkeley.edu"
-  },
-  "sameAs": [
-    "https://scholar.google.com/citations?user=tal-lavian",
-    "https://www.linkedin.com/in/tallavian/",
-    "https://patents.google.com/?inventor=tal+lavian"
-  ],
-  "knowsAbout": [
-    "Telecommunications",
-    "Data Communications",
-    "Computer Networks",
-    "TCP/IP",
-    "Network Security",
-    "VoIP",
-    "Wireless Systems",
-    "Expert Witness"
-  ]
+  "telephone": "+1-408-209-9112",
+  "email": "tlavian@telecommnet.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Encino", "addressRegion": "CA", "addressCountry": "US" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of California, Berkeley" },
+  "knowsAbout": ["Telecommunications", "Network Communications", "Computer Networks", "Internet Protocols", "TCP/IP", "VoIP", "Mobile Wireless"]
 };
 ---
 
-<BaseLayout
-  title="Expert Witness in Telecommunications & Networking - Dr. Tal Lavian"
-  description="Dr. Tal Lavian provides expert witness services in telecommunications, data communications, and networking with 35+ years experience, PhD from UC Berkeley, and 120+ patents."
-  schema={personSchema}
->
-  <style>
-    .hero-section {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-      color: white;
-      padding: 4rem 2rem;
-      margin: -2rem -20px 3rem -20px;
-      text-align: center;
-    }
+<BaseLayout title="Telecommunications Expert Witness Consulting - Dr. Tal Lavian" schema={personSchema}>
 
-    .hero-content h1 {
-      color: white;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <h1>Dr. Lavian - Telecommunications Consulting</h1>
+  </div>
 
-    .hero-content p {
-      font-size: 1.25rem;
-      color: rgba(255, 255, 255, 0.95);
-      margin-bottom: 2rem;
-    }
+  <div class="container" style="padding-top:40px;padding-bottom:20px;">
 
-    .credentials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin: 3rem 0;
-      padding: 2rem;
-      background-color: var(--light-gray);
-      border-radius: 8px;
-    }
+    <h2 style="font-size:1.8rem;line-height:1.3;margin-bottom:20px;">Telecommunications expert specializing in communications systems, mobile wireless, and Internet technologies (TCP/IP)</h2>
 
-    .credential-card {
-      padding: 1.5rem;
-      background: white;
-      border-left: 4px solid var(--accent-color);
-      border-radius: 4px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+    <p>Dr. Tal Lavian is a <a href="/communications-expert-witness/network-communications-expert-witness/">telecommunications</a> expert specializing in <a href="/communications-expert-witness/data-communications-expert/">data communications</a>, <a href="/communications-expert-witness/computer-networking-expert-witness/">computer networks</a>, and <a href="/communications-expert-witness/internet-expert-witness/">internet protocols (TCP/IP)</a>. With over 35 years of experience as a scientist, educator, and technologist, Dr. Lavian offers expert consulting services in <a href="/communications-expert-witness/network-communications-expert-witness/">telecommunications</a>, network <a href="/communications-expert-witness/network-communications-expert-witness/">communications</a>, computer communications, and internet protocols. His expertise includes computer networks, data communications, LAN/WAN, TCP/IP, UDP, VPN, <a href="/communications-expert-witness/voice-over-ip-voip-expert/">voice over IP (VoIP)</a>, streaming media, chat, SMS, <a href="/communications-expert-witness/network-communications-expert-witness/">network security</a>, <a href="/communications-expert-witness/mobile-wireless-expert/">mobile wireless</a>, Ethernet, <a href="/communications-expert-witness/routing-switching-expert/">routing</a>, switching, the internet, web technologies, and communication standards.</p>
 
-    .credential-card strong {
-      color: var(--primary-color);
-      display: block;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
+    <p>Dr. Lavian has spent 20 years researching, studying, and lecturing at UC Berkeley's College of Engineering. His research focuses on telecommunications systems, data networks, network services, software, network protocols, and communications frameworks. He holds a Ph.D. in <a href="https://cs.berkeley.edu/" target="_blank" rel="noopener">Computer Science</a> from <a href="https://eecs.berkeley.edu/" target="_blank" rel="noopener">UC Berkeley</a>, specializing in <a href="https://www2.eecs.berkeley.edu/Research/Areas/IDNCS/" target="_blank" rel="noopener">network communications</a>.</p>
 
-    .credential-card p {
-      margin: 0;
-      color: #4a5568;
-      font-size: 0.95rem;
-    }
+    <p>While at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">UC Berkeley</a>, Dr. Lavian conducted research projects in data centers (RAD Labs), network communication service architecture (SAHARA), and wireless systems (ICEBERG); he also served as an industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET) and as a scientific liaison between Nortel Research Lab and UC Berkeley. Dr. Lavian was also part of UC Berkeley's SkyDeck start-ups, where he worked on technology research and implementation.</p>
 
-    .expertise-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
+    <p>Dr. Lavian has co-authored over 25 <a href="/scientific-publications/">scientific publications, journal articles, and peer-reviewed papers</a> and has <a href="/talks-presentations/">presented his work at conferences</a>. He is also the <a href="https://patents.justia.com/inventor/tal-lavian" target="_blank" rel="noopener">inventor</a> of over 120 <a href="/patents/">issued and filed patents</a>.</p>
 
-    .expertise-item {
-      padding: 1.5rem;
-      background-color: var(--light-gray);
-      border-radius: 8px;
-      text-align: center;
-      border-top: 3px solid var(--accent-color);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+    <!-- Social + CV -->
+    <div class="social-inline">
+      <a href="https://www.facebook.com/tal.lavianwork" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+      <a href="https://x.com/tlavian" class="tw" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://www.linkedin.com/in/tallavian" class="li" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+    </div>
 
-    .expertise-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(26, 54, 93, 0.15);
-    }
+    <p><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf" style="display:inline-flex;align-items:center;gap:8px;color:#2d3e6f;font-weight:500;">📄 Curriculum Vitae</a></p>
 
-    .expertise-item h3 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
+  </div>
 
-    .clients-section {
-      background-color: var(--light-gray);
-      padding: 2rem;
-      border-radius: 8px;
-      margin: 2rem 0;
-    }
+  <!-- Selected Corporate Clients -->
+  <div class="container">
+    <div class="bordered-section">
+      <h2>Selected Corporate Clients</h2>
+    </div>
+    <div class="client-logos">
+      <div class="client-logo-item"><a href="https://www.google.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/250px-Google_2015_logo.svg.png" alt="Google" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/200px-Facebook_Logo_%282019%29.svg.png" alt="Facebook" loading="lazy" style="background:#1877f2;padding:6px 10px;border-radius:4px;"></a></div>
+      <div class="client-logo-item"><a href="https://www.apple.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png" alt="Apple" loading="lazy" style="max-height:40px;"></a></div>
+      <div class="client-logo-item"><a href="https://www.microsoft.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.amazon.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" alt="Amazon" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.juniper.net/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Juniper_Networks_logo.svg/200px-Juniper_Networks_logo.svg.png" alt="Juniper Networks" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.cisco.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/200px-Cisco_logo_blue_2016.svg.png" alt="Cisco Systems" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.zte.com.cn/global/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ZTE_logo.svg/200px-ZTE_logo.svg.png" alt="ZTE" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.huawei.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Huawei_Logo.svg/200px-Huawei_Logo.svg.png" alt="Huawei" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.ericsson.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ericsson_logo.svg/200px-Ericsson_logo.svg.png" alt="Ericsson" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.rpxcorp.com" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/RPX_Corporation_logo.svg/200px-RPX_Corporation_logo.svg.png" alt="RPX" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.avaya.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Avaya_Logo.svg/200px-Avaya_Logo.svg.png" alt="Avaya" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.whatsapp.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" alt="WhatsApp" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.fedex.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/200px-FedEx_Corporation_-_2016_Logo.svg.png" alt="FedEx" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://corporate.comcast.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comcast_Logo.svg/200px-Comcast_Logo.svg.png" alt="Comcast" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/200px-LinkedIn_Logo.svg.png" alt="LinkedIn" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.netflix.com" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/200px-Netflix_2015_logo.svg.png" alt="Netflix" loading="lazy"></a></div>
+      <div class="client-logo-item"><a href="https://www.arista.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Arista-networks-logo.svg/200px-Arista-networks-logo.svg.png" alt="Arista" loading="lazy"></a></div>
+    </div>
+    <a href="/corporate-clients/" class="more-link">More Corporate Clients</a>
+  </div>
 
-    .clients-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
+  <!-- Areas of Expertise -->
+  <div class="container" style="padding:40px 20px;">
+    <h2 style="font-size:2rem;">Areas of Expertise:</h2>
+    <p>Dr. Lavian has academic and industrial experience with <a href="/communications-expert-witness/network-communications-expert-witness/">network communications</a>, data communications components, and Internet architecture. In this role, he is a <a href="/communications-expert-witness/network-communications-expert-witness/">network communications</a> and telecommunications expert. Areas of expertise include:</p>
 
-    .client-logo {
-      padding: 1rem;
-      background: white;
-      border-radius: 6px;
-      text-align: center;
-      font-weight: 600;
-      color: var(--primary-color);
-      font-size: 0.95rem;
-      border: 1px solid var(--border-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 80px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: var(--accent-color);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-      margin-top: 1.5rem;
-    }
-
-    .cta-button:hover {
-      background-color: #1e4d7b;
-      text-decoration: none;
-    }
-
-    .cta-section {
-      text-align: center;
-      padding: 2rem;
-      background-color: var(--light-gray);
-      border-radius: 8px;
-      margin: 3rem 0;
-    }
-
-    .answer-first {
-      background-color: #fef5e7;
-      padding: 1.5rem;
-      border-left: 4px solid #d4af37;
-      border-radius: 4px;
-      margin: 2rem 0;
-    }
-
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-
-      .hero-content p {
-        font-size: 1rem;
-      }
-
-      .credentials-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .clients-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  </style>
-
-  <div class="hero-section">
-    <div class="hero-content">
-      <h1>Expert Witness in Telecommunications & Networking</h1>
-      <p>Over 35 years of experience providing authoritative expert testimony in complex technology and telecommunications litigation</p>
+    <div class="expertise-cards">
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/network-communications-expert-witness/">Network Communications</a></h3>
+        <p>Network communication, LAN, WAN, VPN, MAC, Ethernet, network protocols, packet switching, and computer networks.</p>
+      </div>
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/routing-switching-expert/">Routing And Switching</a></h3>
+        <p>Routing and switching systems, architectures, and protocols, including routing protocols, MPLS, OSPF, QoS, and priority queuing.</p>
+      </div>
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/internet-expert-witness/">Internet Protocols (TCP/IP)</a></h3>
+        <p>The Internet Protocol Suite (TCP/IP), including TCP, UDP, IP, MAC, HTTP, VPN, SSH, SNMP, SIP, IPv4, and IPv6.</p>
+      </div>
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/data-communications-expert/">Data Communications</a></h3>
+        <p>Connecting devices and computers to share data and resources. Data transmissions. IEEE and IETF RFCs standards.</p>
+      </div>
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/voice-over-ip-voip-expert/">Voice Over IP (VoIP)</a></h3>
+        <p>Voice over IP (VoIP) protocols, traditional PSTN infrastructures, SIP, RTP, devices, and protocols.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Streaming Media & Video</h3>
+        <p>Streaming media, video/audio conferencing, multimedia, and video/audio streaming.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Telecommunications</h3>
+        <p>Telecommunications, PSTN, circuit switching, SS7, SONET, TDM, telecom architecture, and network infrastructure.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Network Management</h3>
+        <p>The Network Management Systems (NMS), Device Management, SNMPv2, SNMPv3, MIB, Alarms, Alerts, Traps, and Reporting.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Network Security</h3>
+        <p>Network security architecture, Firewalls, VPN, SSL, TLS, HTTP, IPSec, Tunneling, Content Filtering, and Security Gateways.</p>
+      </div>
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/mobile-wireless-expert/">Mobile & Wireless</a></h3>
+        <p>Mobile wireless networks include Wi-Fi, 802.11, Wireless LAN (WLAN), mobile devices, and smartphones.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Messaging & Chat</h3>
+        <p>Short messages service, SMS, MMS, Instant Messages (IM), chat, and chat applications.</p>
+      </div>
+      <div class="expertise-card">
+        <h3><a href="/communications-expert-witness/computer-networking-expert-witness/">Computer Networks</a></h3>
+        <p>Communications network devices, routers, switches, gateway — hardware and software system, architecture, and design.</p>
+      </div>
     </div>
   </div>
 
-  <div class="answer-first">
-    <h3>Why Choose Dr. Tal Lavian?</h3>
-    <p><strong>Unparalleled Expertise:</strong> Dr. Lavian holds a PhD in Computer Science from UC Berkeley with specialization in network communications, backed by 35+ years of industry and academic experience. His credentials include 120+ patents, 25+ peer-reviewed publications, and 20+ years of cutting-edge research at UC Berkeley.</p>
+  <!-- Long-form content sections -->
+  <div class="container" style="padding-bottom:40px;">
+
+    <h2>Exploring Advanced Network Communications and Internet Protocols</h2>
+    <p>Dr. Lavian brings a wealth of academic and industrial experience to network communications and internet protocols. As a distinguished expert in the field, his knowledge extends to various components and architectures that form the backbone of our digital age. This space is dedicated to unraveling the intricacies of advanced network communications, delving into protocols, architectures, and technologies that power our interconnected world.</p>
+
+    <h3>Network Communications</h3>
+    <p>Expertise in network communication involves unraveling the complexities of LAN (Local Area Network) and WAN (Wide Area Network) technologies. Specialization extends to implementing and optimizing VPNs (Virtual Private Networks), leveraging in-depth knowledge of MAC (Media Access Control) addressing and Ethernet standards.</p>
+
+    <h3>Routing And Switching</h3>
+    <p>Navigating the routing and switching systems realm encompasses exploring the architectures and protocols underpinning modern data transmission. Proficiency extends to routing protocols, including MPLS (Multi-Protocol Label Switching), OSPF (Open Shortest Path First), and Quality of Service (QoS) techniques, ensuring seamless data flow. Priority queuing mechanisms are meticulously designed to prioritize data for efficient routing.</p>
+
+    <h3>Internet Protocols (TCP/IP)</h3>
+    <p>The Internet Protocol Suite, TCP/IP, is at the core of contemporary communication. Within this domain, one uncovers the intricacies of TCP (Transmission Control Protocol), UDP (User Datagram Protocol), IP (Internet Protocol), MAC address, HTTP (Hypertext Transfer Protocol), VPNs, SSH (Secure Shell), SNMP (Simple Network Management Protocol), SIP (Session Initiation Protocol), and both IPv4 and IPv6 standards.</p>
+
+    <h3>Data Communications</h3>
+    <p>Data communications are pivotal in our interconnected world, facilitating the connection of devices and computers for seamless data sharing and resource utilization. Expertise aligns with IEEE (Institute of Electrical and Electronics Engineers) and IETF RFCs (Internet Engineering Task Force Request for Comments) standards, ensuring robust data transmissions.</p>
+
+    <h3>Voice Over IP (VoIP)</h3>
+    <p>VoIP technologies revolutionize voice communication, delving into VoIP protocols, traditional PSTN (Public Switched Telephone Network) infrastructures, SIP, RTP (Real-time Transport Protocol), and the intricate world of VoIP devices and protocols, ensuring crystal-clear communication channels.</p>
+
+    <h3>Streaming Media & Video</h3>
+    <p>The era of streaming media beckons, with specialization spanning video/audio conferencing, multimedia, and seamless video/audio streaming, enabling high-quality content delivery.</p>
+
+    <h3>Telecommunications</h3>
+    <p>The foundation of telecommunications is well-explored, encompassing traditional circuit switching, SS7 (Signaling System No. 7), SONET (Synchronous Optical Networking), TDM (Time-Division Multiplexing), and telecom architecture. This ensures a deep understanding of network infrastructure for resilient telecommunication systems.</p>
+
+    <h3>Network Management</h3>
+    <p>Effective management of intricate networks is paramount. This delves into Network Management Systems (NMS), device management, SNMPv2, SNMPv3, MIBs (Management Information Bases), alarms, alerts, traps, and comprehensive reporting for optimized network performance.</p>
+
+    <h3>Network Security</h3>
+    <p>Safeguarding data and communication is a priority, with expertise in designing robust network security architectures. This includes firewalls, VPNs, SSL (Secure Sockets Layer), TLS (Transport Layer Security), HTTP security, IPSec (Internet Protocol Security), tunneling, content filtering, and security gateways to protect sensitive information.</p>
+
+    <h3>Mobile & Wireless</h3>
+    <p>The ever-evolving world of mobile wireless networks is extensively explored, delving into Wi-Fi, 802.11 standards, Wireless LAN (WLAN), and the intricacies of mobile devices and smartphones to enable seamless connectivity.</p>
+
+    <h3>Messaging & Chat</h3>
+    <p>Efficient communication in the digital age is analyzed, encompassing short message services (SMS), multimedia messaging (MMS), instant messages (IM), and chat applications.</p>
+
+    <h3>Computer Networks</h3>
+    <p>The intricate world of communications network devices, including routers, switches, gateways, and their hardware and software systems, forms the research canvas, delving into network architecture and design to ensure efficient data flow.</p>
+
+    <h2>Telecommunications Expert – Academic and Technology Experience</h2>
+    <p>As a telecommunications expert, Dr. Lavian has a wide range of technical knowledge and expertise. Some of the specific areas of expertise in which he has particular expertise include:</p>
+
+    <p><strong>Network protocols:</strong> Dr. Lavian has experience working with various protocols, including TCP/IP, HTTP, DNS, FTP, SMTP, and more. He profoundly understands how these protocols work and are used in network communications.</p>
+
+    <p><strong>Network architectures:</strong> Dr. Lavian has experience designing and implementing network architectures for various applications and environments. This includes experience with local area networks (LANs), wide area networks (WANs), and other types of networks.</p>
+
+    <p><strong>Network configurations:</strong> Dr. Lavian has experience configuring networks to support various applications and requirements. This includes experience configuring network devices such as routers, switches, and firewalls and configuring network services such as DHCP, DNS, and VPNs.</p>
+
+    <p><strong>Network installations:</strong> Dr. Lavian has experience installing networks in various environments, including corporate offices, data centers, and other facilities. He has experience with wired and wireless network installations and can ensure that networks are installed correctly and efficiently.</p>
+
+    <p><strong>Network testing:</strong> Dr. Lavian has experience testing networks to ensure that they function correctly and meet performance and reliability requirements. This includes experience with many network testing tools and techniques, such as network performance testing, network security testing, and network interoperability testing.</p>
+
+    <h2>Telecommunications Expert and Expertise</h2>
+    <p>Dr. Lavian is a highly skilled and experienced network communications and telecommunications expert with a strong background in both academic and industrial settings. He has in-depth knowledge of various aspects of network communications, including local area networks (LANs), wide area networks (WANs), virtual private networks (VPNs), media access control (MAC) addresses, Ethernet, and various network protocols such as packet switching.</p>
+
+    <p>In the area of routing and switching, Dr. Lavian is well-versed in systems, architectures, and protocols such as routing protocols, multiprotocol label switching (MPLS), open shortest path first (OSPF), quality of service (QoS), priority queuing. He is also highly knowledgeable about the Internet Protocol Suite (TCP/IP), including TCP, UDP, IP, MAC, HTTP, VPN, SSH, SNMP, SIP, IPv4, and IPv6.</p>
+
+    <p>Dr. Lavian has experience with data communications, including connecting devices and computers to share data and resources and transmitting data according to standards set by organizations such as the IEEE and IETF RFCs. He is also skilled in voice-over IP (VoIP) protocols, including those used in traditional public switched telephone network (PSTN) infrastructures, SIP, RTP, and various devices and protocols.</p>
+
+    <p>In addition, Dr. Lavian has expertise in streaming media and video, including video and audio conferencing, multimedia, and video and audio streaming. He knows telecommunications, including circuit switching, SS7, synchronous optical networking (SONET), time-division multiplexing (TDM), telecom architecture, and network infrastructure.</p>
+
+    <p>Dr. Lavian is also well-versed in network management, including Network Management Systems (NMS), device management, SNMPv2 and SNMPv3, management information bases (MIB), alarms, alerts, traps, and reporting. He has experience with network security architecture, including firewalls, VPNs, SSL and TLS, HTTP, IPSec, tunneling, content filtering, and security gateways.</p>
+
+    <p>In the mobile and wireless networks field, Dr. Lavian is an expert in Wi-Fi, 802.11, wireless LANs (WLANs), and mobile devices and smartphones. He is also proficient in messaging and chat, including short message service (SMS), multimedia messaging service (MMS), instant messaging (IM), chat, and chat applications. Finally, he profoundly understands computer networks, including communication network devices such as routers and switches, hardware and software systems, architecture, and design.</p>
+
+    <h2>Telecommunications and Network Communications Technologies</h2>
+    <p>Telecommunications is the technology field that deals with transmitting information over long distances, typically through electronic devices. This can include various forms of communication, such as phone calls, cellular, wireless, and Internet connectivity. The field of telecommunications has undergone rapid development in recent years, driven by advances in digital technology and the proliferation of mobile devices.</p>
+
+    <p>Network communications services are the technologies and methodologies that facilitate communication and data exchange over a computer network. These services include Web, email, instant messaging, social networking, file sharing, and voice and video conferencing. They enable individuals and organizations to connect and communicate with one another, regardless of their physical location.</p>
+
+    <p>The Transmission Control Protocol/Internet Protocol (TCP/IP) is a suite of communication protocols that interconnect network devices. It is the foundation of modern networking and is used by almost all devices connected to the internet, including computers, smartphones, and IoT devices. One example of a network communications service is the Transmission Control Protocol (TCP), a fundamental protocol used to establish and maintain connections between networked devices. TCP ensures that data is delivered reliably and in the correct order by breaking it up into smaller packets, transmitting each packet individually, and then reassembling them at the destination.</p>
+
+    <p>Telecommunications and network communications services are essential to modern life, enabling people to connect, communicate, and share information in real time.</p>
+
   </div>
 
-  <h2>Key Credentials & Qualifications</h2>
-  <div class="credentials-grid">
-    <div class="credential-card">
-      <strong>PhD Computer Science</strong>
-      <p>UC Berkeley - Specialization in Network Communications. 20+ years of research leadership at UC Berkeley's renowned laboratories.</p>
-    </div>
-    <div class="credential-card">
-      <strong>120+ Patents</strong>
-      <p>Extensive patent portfolio in telecommunications, networking, and data communications technologies.</p>
-    </div>
-    <div class="credential-card">
-      <strong>25+ Publications</strong>
-      <p>Peer-reviewed academic publications in leading telecommunications and computer networking journals.</p>
-    </div>
-    <div class="credential-card">
-      <strong>35+ Years Experience</strong>
-      <p>Spanning industry research labs, academic institutions, and commercial technology companies.</p>
-    </div>
-  </div>
-
-  <h2>Areas of Expertise</h2>
-  <p>Dr. Lavian provides expert witness services across the full spectrum of telecommunications and networking technologies:</p>
-
-  <div class="expertise-grid">
-    <div class="expertise-item">
-      <h3>Network Communications</h3>
-      <p>Fundamental principles and protocols for data transmission across networks</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Routing & Switching</h3>
-      <p>Network architecture, routing algorithms, and switching technologies</p>
-    </div>
-    <div class="expertise-item">
-      <h3>TCP/IP</h3>
-      <p>Internet protocol suite, standards, and implementation</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Data Communications</h3>
-      <p>Data transmission protocols and network layer technologies</p>
-    </div>
-    <div class="expertise-item">
-      <h3>VoIP & Real-Time</h3>
-      <p>Voice over IP, video conferencing, and real-time communications</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Streaming Media</h3>
-      <p>Multimedia streaming, Quality of Service, and content delivery</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Telecommunications</h3>
-      <p>Telecom infrastructure, standards, and service delivery</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Network Management</h3>
-      <p>Network monitoring, management systems, and operations</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Network Security</h3>
-      <p>Cybersecurity, encryption, firewalls, and threat protection</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Mobile & Wireless</h3>
-      <p>Wireless systems, cellular networks, and RF technologies</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Messaging & Chat</h3>
-      <p>Messaging protocols, instant communications, and collaboration platforms</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Computer Networks</h3>
-      <p>Network architecture, design, and implementation across all scales</p>
-    </div>
-  </div>
-
-  <h2>Notable Corporate Clients</h2>
-  <div class="clients-section">
-    <p>Dr. Lavian has provided expert witness and consulting services to leading technology companies in patent litigation, regulatory proceedings, and complex technology disputes:</p>
-    <div class="clients-grid">
-      <div class="client-logo">Google</div>
-      <div class="client-logo">Facebook</div>
-      <div class="client-logo">Apple</div>
-      <div class="client-logo">Microsoft</div>
-      <div class="client-logo">Amazon</div>
-      <div class="client-logo">Intel</div>
-      <div class="client-logo">Cisco</div>
-      <div class="client-logo">Qualcomm</div>
-      <div class="client-logo">AT&T</div>
-      <div class="client-logo">Verizon</div>
-      <div class="client-logo">Nortel</div>
-      <div class="client-logo">Motorola</div>
-    </div>
-  </div>
-
-  <div class="cta-section">
-    <h2>Ready to Work with an Expert Witness?</h2>
-    <p>If you need authoritative expert testimony or consulting services in telecommunications, networking, or data communications technology, contact Dr. Lavian today.</p>
-    <a href="/contact/" class="cta-button">Schedule a Consultation</a>
-  </div>
-
-  <h2>What Clients Say</h2>
-  <p><strong>Trusted by Leading Law Firms:</strong> Dr. Lavian has worked with top-tier law firms including Fish Richardson, Cooley, Irell & Manella, and many others on complex patent litigation and technology disputes.</p>
-
-  <p><strong>Proven Track Record:</strong> His testimony has been accepted in U.S. District Courts, the USPTO, the ITC, and courts in the United States and Canada across hundreds of cases involving patent infringement, technology licensing, and telecommunications disputes.</p>
-
-  <div class="cta-section">
-    <h3>Get Expert Witness Services from Dr. Tal Lavian</h3>
-    <p>Call +1 (408) 209-9112 or email tlavian@telecommnet.com for immediate consultation on your case</p>
-    <a href="/contact/" class="cta-button">Contact Dr. Lavian</a>
-  </div>
 </BaseLayout>
