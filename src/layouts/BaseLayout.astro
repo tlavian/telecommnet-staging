@@ -56,6 +56,29 @@ const currentPath = Astro.url.pathname;
     .hero-banner { background: linear-gradient(135deg, #1a365d 0%, #2d4a8a 50%, #3a6bc5 100%); color: #fff; padding: 50px 0; text-align: center; position: relative; overflow: hidden; }
     .hero-banner h1 { font-size: 2.4rem; font-weight: 600; position: relative; z-index: 1; max-width: 800px; margin: 0 auto; color: #fff; }
 
+    /* Hero with background image (homepage) */
+    .hero-banner-img { position: relative; background: url('https://telecommnet.com/wp-content/uploads/2022/10/header-banner.webp') center center / cover no-repeat; min-height: 200px; display: flex; align-items: center; justify-content: center; }
+    .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgb(22, 22, 63); opacity: 0.5; }
+    .hero-content { position: relative; z-index: 1; text-align: center; padding: 50px 20px; width: 100%; }
+    .hero-content h1 { font-size: 2.4rem; font-weight: 600; color: #fff; max-width: 800px; margin: 0 auto; }
+
+    /* Bio with sidebar layout (homepage) */
+    .bio-with-sidebar { display: grid; grid-template-columns: 1fr 200px; gap: 30px; padding: 10px 0 30px; }
+    .bio-main { min-width: 0; }
+    .bio-sidebar { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding-top: 30px; }
+    .bio-social-icons { display: flex; gap: 10px; }
+    .bio-social-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; color: #fff; text-decoration: none; transition: opacity 0.2s; }
+    .bio-social-btn:hover { opacity: 0.85; text-decoration: none; }
+    .bio-social-btn.fb { background: #1877f2; }
+    .bio-social-btn.tw { background: #333; }
+    .bio-social-btn.li { background: #0a66c2; }
+    .cv-download-link { display: flex; align-items: center; gap: 10px; color: #333; text-decoration: none; font-size: 14px; font-weight: 500; }
+    .cv-download-link:hover { color: #2d3e6f; text-decoration: none; }
+    .cv-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: #f0fff4; }
+
+    /* Expertise section with light blue background */
+    .expertise-section { background: #eef8ff; padding: 10px 0; }
+
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
     .content-with-sidebar { display: grid; grid-template-columns: 1fr 280px; gap: 40px; padding: 40px 0; }
@@ -125,7 +148,10 @@ const currentPath = Astro.url.pathname;
       .dropdown { position: static; box-shadow: none; border: none; border-top: 1px solid #f0f0f0; }
       .content-with-sidebar { grid-template-columns: 1fr; }
       .sidebar { border-left: none; padding-left: 0; border-top: 1px solid #e2e8f0; padding-top: 20px; }
+      .bio-with-sidebar { grid-template-columns: 1fr; }
+      .bio-sidebar { flex-direction: row; flex-wrap: wrap; padding-top: 0; }
       .expertise-cards { grid-template-columns: 1fr; }
+      .hero-content h1 { font-size: 1.6rem; }
       .client-logos { grid-template-columns: repeat(3, 1fr); }
       .footer-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
