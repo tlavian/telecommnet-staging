@@ -43,11 +43,13 @@ import Sidebar from '../../components/Sidebar.astro';
         <div class="bordered-section">
           <h3>UC Berkeley</h3>
         </div>
-        <img src="/wp-content/uploads/2022/10/Berkeley-300x109.png" alt="UC Berkeley" width="300" height="109" style="margin-bottom:20px;" />
+        <div class="rd-section">
+          <img src="/wp-content/uploads/2022/10/Berkeley-300x109.png" alt="UC Berkeley" width="300" height="109" class="rd-float-img" />
 
-        <p>For 20 years, Dr. Lavian has researched, studied, and lectured at U.C. Berkeley, Engineering.</p>
+          <p>For 20 years, Dr. Lavian has researched, studied, and lectured at U.C. Berkeley, Engineering.</p>
 
-        <p>Dr. Lavian has served as an Industry Fellow and Lecturer at U.C. Berkeley&rsquo;s Industrial Engineering and Operations Research (IEOR) Department and U.C. Berkeley Engineering&rsquo;s Sutardja Center for Entrepreneurship and Technology (SCET). He has taken part in U.C. Berkeley&rsquo;s startup accelerator, SkyDeck, as principal investigator of the wireless RF signal startup company CRadar.Ai, and co-founder, CEO, and CTO of smartphone wireless telecommunicators service integrator, Aybell, previously known as VisuMenu Inc.</p>
+          <p>Dr. Lavian has served as an Industry Fellow and Lecturer at U.C. Berkeley&rsquo;s Industrial Engineering and Operations Research (IEOR) Department and U.C. Berkeley Engineering&rsquo;s Sutardja Center for Entrepreneurship and Technology (SCET). He has taken part in U.C. Berkeley&rsquo;s startup accelerator, SkyDeck, as principal investigator of the wireless RF signal startup company CRadar.Ai, and co-founder, CEO, and CTO of smartphone wireless telecommunicators service integrator, Aybell, previously known as VisuMenu Inc.</p>
+        </div>
 
         <ul>
           <li>U.C. Berkeley SkyDeck startups &ndash; advanced technology research, business, market, and implementation. Mobile wireless cloud network services; Wireless RF and Radar for AV, AWS/GCP cloud software.</li>
@@ -61,24 +63,30 @@ import Sidebar from '../../components/Sidebar.astro';
         <div class="bordered-section">
           <h3>CRadar.Ai</h3>
         </div>
-        <img src="/wp-content/uploads/2022/10/CRadarAi-300x134.jpg" alt="CRadar.Ai" width="220" height="98" style="margin-bottom:20px;" />
+        <div class="rd-section">
+          <img src="/wp-content/uploads/2022/10/CRadarAi-300x134.jpg" alt="CRadar.Ai" width="220" height="98" class="rd-float-img" />
 
-        <p>He has served as the CTO and principal investigator of CRadar.Ai. A company whose technology improves wireless radio signal phase noise purity by about 100x. Moreover, this clean wireless radio frequency signal enables a pioneering <a href="/ep-3311493-ulpn-frequency-synthesize/">radar</a>-based object detection system for autonomous vehicles. The startup&rsquo;s high-accuracy imaging radar complements existing detection systems by sensing objects under poor weather and lighting conditions&mdash;fog, rain, snow, direct sun, total darkness&mdash;where conventional camera- and lidar-based autonomous driving systems often fail. CRadar.Ai incubated in U.C. Berkeley&rsquo;s startup accelerator, SkyDeck.</p>
+          <p>He has served as the CTO and principal investigator of CRadar.Ai. A company whose technology improves wireless radio signal phase noise purity by about 100x. Moreover, this clean wireless radio frequency signal enables a pioneering <a href="/ep-3311493-ulpn-frequency-synthesize/">radar</a>-based object detection system for autonomous vehicles. The startup&rsquo;s high-accuracy imaging radar complements existing detection systems by sensing objects under poor weather and lighting conditions&mdash;fog, rain, snow, direct sun, total darkness&mdash;where conventional camera- and lidar-based autonomous driving systems often fail. CRadar.Ai incubated in U.C. Berkeley&rsquo;s startup accelerator, SkyDeck.</p>
+        </div>
 
         <div class="bordered-section">
           <h3>Aybell</h3>
         </div>
-        <img src="/wp-content/uploads/2022/10/Aybell-logo-300x285.png" alt="Aybell" width="150" height="143" style="margin-bottom:20px;" />
+        <div class="rd-section">
+          <img src="/wp-content/uploads/2022/10/Aybell-logo-300x285.png" alt="Aybell" width="150" height="143" class="rd-float-img" />
 
-        <p>A part of UC Berkeley&rsquo;s SkyDeck, Aybell is focused on creating a new way of connecting smartphone users to any company and service by digitizing interactive voice systems. As CEO, CTO, and co-founder of Aybell, Dr. Lavian developed a way to transform mobile wireless devices and smartphones into visual menu systems that empower consumers to receive more rapid customer service using mobile applications, social media platforms, chatbots, and browsers.</p>
+          <p>A part of UC Berkeley&rsquo;s SkyDeck, Aybell is focused on creating a new way of connecting smartphone users to any company and service by digitizing interactive voice systems. As CEO, CTO, and co-founder of Aybell, Dr. Lavian developed a way to transform mobile wireless devices and smartphones into visual menu systems that empower consumers to receive more rapid customer service using mobile applications, social media platforms, chatbots, and browsers.</p>
+        </div>
 
         <p>Dr. Lavian led the design and implementation of the company&rsquo;s service architecture and the voice menu search engine. Aybell is the branding and marketing name of VisuMenu Inc., advanced technologies, a cloud <a href="/communications-expert-witness/telecommunications-expert-witness/">telecommunications system</a> that provides network communications integration with a service provider&rsquo;s telephone system.</p>
 
         <ul>
           <li>Aybell transforms smartphones into visual menu systems, making the phone a frictionless point for user interactions with all features of customer service platforms. It empowers consumers to reach the right agents in call centers, overcoming customer service barriers.</li>
           <li>Architecture, design, and implementation of a cloud data center for connecting any smartphone user to any company and/or service by digitizing interactive voice systems and exposing through cloud-service APIs to other applications.</li>
-          <li>The system has been deployed as a cloud networking and cloud computing service on Amazon Web Services (AWS) and Google Cloud Platform (GCP). Technologies include Data Science Analytics, Machine Learning (ML), Artificial Intelligence (AI), and Statistical Learning (SL). Building an NLP and other NLP libraries and modules.</li>
+          <li>The system has been deployed as a cloud networking and cloud computing service on Amazon Web Services (AWS) and Google Cloud Platform (GCP).</li>
         </ul>
+
+        <p>Technologies include Data Science Analytics, Machine Learning (ML), Artificial Intelligence (AI), and Statistical Learning (SL). Building an NLP and other NLP libraries and modules.</p>
 
         <div class="bordered-section">
           <h3>VisuMenu Inc.</h3>
@@ -104,8 +112,16 @@ import Sidebar from '../../components/Sidebar.astro';
       margin: 0 0 15px 20px;
       max-width: 300px;
     }
+    .rd-section {
+      overflow: hidden;
+    }
+    .rd-float-img {
+      float: right;
+      margin: 0 0 15px 20px;
+    }
     @media (max-width: 768px) {
-      .experience-img {
+      .experience-img,
+      .rd-float-img {
         float: none;
         display: block;
         margin: 0 auto 15px;
