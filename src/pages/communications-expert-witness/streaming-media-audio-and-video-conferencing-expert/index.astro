@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import Sidebar from '../../../components/Sidebar.astro';
 ---
 
 <BaseLayout title="Audio and Video Conferencing - Streaming Media Expert Witness">
@@ -10,8 +9,7 @@ import Sidebar from '../../../components/Sidebar.astro';
   </div>
 
   <div class="container">
-    <div class="content-with-sidebar">
-      <div class="content-main">
+    <div class="content-full">
 
         <h2>Streaming media expert</h2>
 
@@ -64,8 +62,6 @@ import Sidebar from '../../../components/Sidebar.astro';
         <p>The RTP standard defines Real-Time Transport Protocol (RTP) and RTP Control Protocol (RTCP). RTP is utilized to exchange multimedia data. At the same time, RTCP is the control protocol used to periodically obtain feedback control information regarding the quality of transmission associated with data flows. Unlike TCP, the RTP and RTCP are UDP-based protocols, meaning no session is maintained. RTP provides end-to-end network transport for applications transmitting real-time data, such as audio and video, over multicast or unicast network services. In conclusion, RTCP is based on the periodic transmission of control packets to all participants in the session.</p>
       </div>
 
-  <Sidebar />
-    </div>
   </div>
 
 </BaseLayout>
