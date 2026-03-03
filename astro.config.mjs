@@ -8,4 +8,7 @@ export default defineConfig({
   ],
   output: 'static',
   trailingSlash: 'always',
+  redirects: {
+    '/case/': '/cases-expert-witness-testimony/',
+  },
 });
