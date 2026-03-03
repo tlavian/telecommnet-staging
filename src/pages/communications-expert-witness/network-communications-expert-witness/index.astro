@@ -167,6 +167,11 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
   </div>
 
   <style is:global>
+    /* Override global blue H2 border — production doesn't have it on this page */
+    .content-full > h2 {
+      border-left: none;
+      padding-left: 0;
+    }
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

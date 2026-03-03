@@ -109,4 +109,16 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 
   </div>
 
+<style is:global>
+/* Override global blue H2/H3 borders — production doesn't have them on this page */
+.content-full > h2 {
+  border-left: none;
+  padding-left: 0;
+}
+.content-full > h3 {
+  border-left: none;
+  padding-left: 0;
+}
+</style>
+
 </BaseLayout>
