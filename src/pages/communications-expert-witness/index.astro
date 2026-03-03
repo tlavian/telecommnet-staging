@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
 ---
 
-<BaseLayout title="Communications Expert Witness Services - Dr. Tal Lavian">
+<BaseLayout title="Communications Expert Witness Services">
   <div class="hero-banner">
     <h1>Expert Witness Services</h1>
   </div>
@@ -11,9 +12,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div class="content-main">
         <h2>Expert Witness Services:</h2>
 
-        <p>A seasoned expert witness in patent litigation, Dr. Lavian brings <a href="/telecommunications-expert-witness-services/">experience</a> in <a href="/about-dr-lavian/">academic and industrial research</a> and a Ph.D. from UC Berkeley specializing in <a href="/us-20180130102-reliable-rating-system-and-method-thereof/">telecommunications</a> and network <a href="/us-10348313-radar-target-detection-system/">communications</a> to his consulting work.</p>
+        <p>A seasoned expert witness in patent litigation, Dr. Lavian brings <a href="/communications-expert-witness/">experience</a> in <a href="/about-dr-lavian/">academic and industrial research</a> and a Ph.D. from UC Berkeley specializing in <a href="/us-20180130102-reliable-rating-system-and-method-thereof/">telecommunications</a> and network <a href="/us-10348313-radar-target-detection-system/">communications</a> to his consulting work.</p>
 
-        <p>His expertise extends to <a href="/telecommunications-expert-witness-services/mobile-wireless-expert/">computer networks</a>, data communications, <a href="/telecommunications-expert-witness-services/internet-expert-witness/">LAN/WAN, TCP/IP, UDP, VPN</a>, VoIP, streaming media, chat, SMS, <a href="/us-10598764-radar-target-detection-and-imaging-system-for-autonomous-car/">mobile wireless</a>, Ethernet, <a href="/communications-expert-witness/routing-switching-expert/">routing</a>, switching, Internet, and web techs. Dr. Lavian offers expert witness services in patent cases, including expert testimony, expert witness reports, and patent analysis of Internet techs, standards, and protocols.</p>
+        <p>His expertise extends to <a href="/communications-expert-witness/mobile-wireless-expert/">computer networks</a>, data communications, <a href="/communications-expert-witness/internet-expert-witness/">LAN/WAN, TCP/IP, UDP, VPN</a>, VoIP, streaming media, chat, SMS, <a href="/us-10598764-radar-target-detection-and-imaging-system-for-autonomous-car/">mobile wireless</a>, Ethernet, <a href="/communications-expert-witness/routing-switching-expert/">routing</a>, switching, Internet, and web techs. Dr. Lavian offers expert witness services in patent cases, including expert testimony, expert witness reports, and patent analysis of Internet techs, standards, and protocols.</p>
 
         <p>Moreover, he offers expert witness services and provides courtroom presence, clear testimony, and the ability to quickly distill complex concepts into the basics.</p>
 
@@ -26,6 +27,33 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <p>Dr. Lavian presents technical material in plain English common sense and uses terminology understandable by technical and lay audiences alike.</p>
 
         <h3>Selected Law Firms</h3>
+
+        <div class="client-logos">
+          <img src="/wp-content/uploads/2022/05/fish-richardson-logo.svg" alt="Fish Richardson" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/winston-strawn.svg" alt="Winston &amp; Strawn LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/cooley.svg" alt="Cooley" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/finnegan.svg" alt="Finnegan" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/gibson-dunn.svg" alt="Gibson Dunn" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/ropes-gray.svg" alt="Ropes Gray" loading="lazy">
+          <img src="/wp-content/uploads/2022/11/bblogo2x.webp" alt="bakerbotts" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/Irell-manella-logo.svg" alt="Irell Manella LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/kirkland-ellis.svg" alt="Kirkland Ellis" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/morgan-lewis.svg" alt="Morgan Lewis" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/holland-knight-LLP.svg" alt="Holland Knight LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/oblon-LLP.svg" alt="Oblon LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/skadden.svg" alt="Skadden" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/keker.svg" alt="Keker" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/perkins-coie.svg" alt="Perkings Coie" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/mcguirewoods.svg" alt="Mcguire Woods" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/wolf-greenfield-LLP.svg" alt="Wolf Greenfield LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/desmarais-LLP.svg" alt="Desmarais LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/foley-lardner.svg" alt="Foley Lardner LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/durie-tangri.svg" alt="Durie Tangri" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/greenberg-trauring.svg" alt="Greenberg Trauring" loading="lazy">
+          <img src="/wp-content/uploads/2022/11/Duane_Morris_LLP_logo.webp" alt="duanemorris" loading="lazy">
+          <img src="/wp-content/uploads/2022/05/pepper-hamilton.svg" alt="Pepper Hamilton LLP" loading="lazy">
+          <img src="/wp-content/uploads/2022/11/venable.webp" alt="Venable LLP" loading="lazy">
+        </div>
 
         <h5><a href="/law-firm-clients/">More Law Firms Clients</a></h5>
 
@@ -80,97 +108,84 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
         <h2>Expert Services</h2>
 
-        <p>Dr. Lavian is an expert in network communications and telecommunications. His extensive knowledge and expertise in these areas allow him to provide valuable insights and testimony in patent cases involving these topics. Dr. Lavian is also skilled at providing technical education for claim constructions and Markman hearings. This involves explaining the technical details of patents and other legal documents to judges and other legal professionals, helping them understand a case's technical aspects.</p>
+        <p>Dr. Lavian is an expert in network communications and telecommunications. His extensive knowledge and expertise in these areas allow him to provide valuable insights and testimony in patent cases involving these topics. Dr. Lavian is also skilled at providing technical education for claim constructions and Markman hearings. This involves explaining the technical details of patents and other legal documents to judges and other legal professionals, helping them understand a case&rsquo;s technical aspects.</p>
 
-        <p>Dr. Lavian has also written expert reports for a range of corporate clients. These reports typically include detailed analyses of the technical aspects of the case, definitions of key technical terms, and an explanation of the claim construction process. This helps to provide a clear and comprehensive understanding of the technical aspects of the case. Dr. Lavian's ability to communicate complex technical information to audiences with varying technical expertise is precious in this role.</p>
+        <p>Dr. Lavian has also written expert reports for a range of corporate clients. These reports typically include detailed analyses of the technical aspects of the case, definitions of key technical terms, and an explanation of the claim construction process. This helps to provide a clear and comprehensive understanding of the technical aspects of the case. Dr. Lavian&rsquo;s ability to communicate complex technical information to audiences with varying technical expertise is precious in this role.</p>
 
-        <p>Dr. Lavian's expertise in network communications and telecommunications and his ability to communicate complex technical information effectively make him a valuable resource for corporate clients. Whether providing expert testimony in legal cases, offering technical education, or conducting technical analyses, Dr. Lavian is well-equipped to help companies and organizations navigate the complex world of technology and networking.</p>
+        <p>Dr. Lavian&rsquo;s expertise in network communications and telecommunications and his ability to communicate complex technical information effectively make him a valuable resource for corporate clients. Whether providing expert testimony in legal cases, offering technical education, or conducting technical analyses, Dr. Lavian is well-equipped to help companies and organizations navigate the complex world of technology and networking.</p>
 
         <h2>Telecommunications and Network Communications Expertise</h2>
 
         <h3>Telecommunications Expert Witness</h3>
         <h4>Telecommunications</h4>
-        <p>Dr. Lavian's proficiency in the telecommunications sector is comprehensive. He is equipped with insights and experiences that span the entire spectrum of this field. From designing to implementing and maintaining complex telecommunications infrastructures, his expertise stands out. Having a solid grasp of transmitting data across various mediums &ndash; be it telephone lines, cables, satellite links, or radio waves, his role as a telecommunications expert witness encompasses consultation, research, and education on foundational systems like PSTN to more modern frameworks such as VoIP and wireless communication systems.</p>
+        <p>Dr. Lavian&rsquo;s proficiency in the telecommunications sector is comprehensive. He is equipped with insights and experiences that span the entire spectrum of this field. From designing to implementing and maintaining complex telecommunications infrastructures, his expertise stands out. Having a solid grasp of transmitting data across various mediums &ndash; be it telephone lines, cables, satellite links, or radio waves, his role as a <a href="/">telecommunications expert witness</a> encompasses consultation, research, and education on foundational systems like PSTN to more modern frameworks such as VoIP and wireless communication systems.</p>
 
         <h3>Network Communications Expert Witness</h3>
         <h4>Network Communications</h4>
-        <p>Network communications, the crux of data exchange between devices, is another domain in which Dr. Lavian's expertise is evident. With a solid understanding of technologies and protocols that ensure seamless data communication, he is a go-to expert for systems such as TCP/IP, routing protocols, switching mechanisms, and network security and management. As a network communications expert witness, he lends his vast knowledge to ensure data is transmitted efficiently, securely, and without compromise across various networks.</p>
+        <p>Network communications, the crux of data exchange between devices, is another domain in which Dr. Lavian&rsquo;s expertise is evident. With a solid understanding of technologies and protocols that ensure seamless data communication, he is a go-to expert for systems such as TCP/IP, routing protocols, switching mechanisms, and network security and management. As a <a href="/communications-expert-witness/network-communications-expert-witness/">network communications expert witness</a>, he lends his vast knowledge to ensure data is transmitted efficiently, securely, and without compromise across various networks.</p>
 
         <h3>Computer Networks Expert Witness</h3>
         <h4>Computer Networks</h4>
-        <p>Dr. Lavian's deep insights benefit the interconnected world of computer networks, both local (LANs) and wide area (WANs). His know-how spans various aspects of these systems, from design to implementation and maintenance. Whether it's the wired intricacies of corporate setups or the wireless connections modern devices bank on, his capacity as a computer networks expert witness focuses on ensuring these networks are primed for efficiency and reliability.</p>
+        <p>Dr. Lavian&rsquo;s deep insights benefit the interconnected world of computer networks, both local (LANs) and wide area (WANs). His know-how spans various aspects of these systems, from design to implementation and maintenance. Whether it&rsquo;s the wired intricacies of corporate setups or the wireless connections modern devices bank on, his capacity as a <a href="/communications-expert-witness/computer-networking-expert-witness/">computer networks expert witness</a> focuses on ensuring these networks are primed for efficiency and reliability.</p>
 
         <h3>Internet Protocols Expert Witness</h3>
         <h4>Internet Protocols</h4>
-        <p>In the realm of the Internet, protocols play a pivotal role in ensuring structured and efficient data transmission. Dr. Lavian, with his extensive understanding of these protocols, especially pillars like TCP/IP, solidifies his position as an invaluable internet protocols expert witness. His expertise facilitates comprehensive research, consultation, and education, ensuring organizations maintain optimal online data transmissions.</p>
+        <p>In the realm of the Internet, protocols play a pivotal role in ensuring structured and efficient data transmission. Dr. Lavian, with his extensive understanding of these protocols, especially pillars like TCP/IP, solidifies his position as an invaluable <a href="/communications-expert-witness/internet-expert-witness/">internet protocols expert witness</a>. His expertise facilitates comprehensive research, consultation, and education, ensuring organizations maintain optimal online data transmissions.</p>
 
         <h3>Internet and Web Expert Witness</h3>
         <h4>Internet and Web</h4>
-        <p>Beyond traditional networking, Dr. Lavian's acumen extends to the technologies and systems that power the Internet and web. His comprehensive knowledge includes web services, applications, technologies, internet routing, and switching protocols. As an internet and web expert witness, his insights bring clarity to the complexities of these domains, aiding in enhanced understanding and application.</p>
+        <p>Beyond traditional networking, Dr. Lavian&rsquo;s acumen extends to the technologies and systems that power the Internet and web. His comprehensive knowledge includes web services, applications, technologies, internet routing, and switching protocols. As an <a href="/communications-expert-witness/internet-expert-witness/">internet and web expert witness</a>, his insights bring clarity to the complexities of these domains, aiding in enhanced understanding and application.</p>
 
         <h3>Routing and Switching Expert Witness</h3>
         <h4>Routing and Switching</h4>
-        <p>The mechanics of data flow within networks hinge significantly on routing and switching. Dr. Lavian, with his in-depth understanding of how routing discerns the best path for data packets and how switching ensures their optimal movement, offers unparalleled expertise. As a routing and switching expert witness, his knowledge ensures efficient and secure data communication within intricate network setups.</p>
+        <p>The mechanics of data flow within networks hinge significantly on routing and switching. Dr. Lavian, with his in-depth understanding of how routing discerns the best path for data packets and how switching ensures their optimal movement, offers unparalleled expertise. As a <a href="/communications-expert-witness/routing-switching-expert/">routing and switching expert witness</a>, his knowledge ensures efficient and secure data communication within intricate network setups.</p>
 
         <h3>Voice Over IP (VoIP) Expert Witness</h3>
         <h4>Voice Over IP (VoIP)</h4>
-        <p>The transition of voice communication over the internet, commonly known as VoIP, has seen a revolution, and Dr. Lavian's expertise in this domain is vast. His grasp of the underlying technologies and protocols, including SIP and RTP, ensures a thorough understanding of this sector. As a VoIP expert witness, he offers in-depth consultation, insights, and research, providing robust and efficient VoIP systems.</p>
+        <p>The transition of voice communication over the internet, commonly known as VoIP, has seen a revolution, and Dr. Lavian&rsquo;s expertise in this domain is vast. His grasp of the underlying technologies and protocols, including SIP and RTP, ensures a thorough understanding of this sector. As a <a href="/communications-expert-witness/voice-over-ip-voip-expert/">VoIP expert witness</a>, he offers in-depth consultation, insights, and research, providing robust and efficient VoIP systems.</p>
 
         <h3>Mobile Wireless Expert Witness</h3>
         <h4>Mobile Wireless</h4>
-        <p>Mobile wireless technology encompasses an array of devices and systems, from smartphones to tablets, all relying on seamless data and voice communication. Dr. Lavian's expertise here is profound, covering cellular communication nuances, advanced wireless networking, Bluetooth technology, and more. As a mobile wireless expert witness, he's adept at providing consultation, research, and education on modern technologies like Wi-Fi, 802.11, and WLAN, ensuring optimized mobile wireless systems.</p>
+        <p>Mobile wireless technology encompasses an array of devices and systems, from smartphones to tablets, all relying on seamless data and voice communication. Dr. Lavian&rsquo;s expertise here is profound, covering cellular communication nuances, advanced wireless networking, Bluetooth technology, and more. As a <a href="/">mobile wireless expert witness</a>, he&rsquo;s adept at providing consultation, research, and education on modern technologies like Wi-Fi, 802.11, and WLAN, ensuring optimized mobile wireless systems.</p>
 
         <h3>Streaming Media Expert Witness</h3>
         <h4>Streaming Media</h4>
-        <p>In today's digital age, multimedia content consumption primarily relies on streaming technologies. Dr. Lavian's expertise encapsulates the intricacies of streaming, understanding the underlying technologies and protocols that facilitate seamless audio and video streaming over the Internet. As a streaming media expert witness, he can delve into the details of various streaming platforms, protocols, and challenges, offering insights and consultations that ensure optimal streaming experiences.</p>
+        <p>In today&rsquo;s digital age, multimedia content consumption primarily relies on streaming technologies. Dr. Lavian&rsquo;s expertise encapsulates the intricacies of streaming, understanding the underlying technologies and protocols that facilitate seamless audio and video streaming over the Internet. As a <a href="/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/">streaming media expert witness</a>, he can delve into the details of various streaming platforms, protocols, and challenges, offering insights and consultations that ensure optimal streaming experiences.</p>
 
         <h3>Network Systems Expert Witness</h3>
         <h4>Network Systems</h4>
-        <p>Complex infrastructures that drive our connected world come under the umbrella of network systems. Dr. Lavian's expertise spans these systems' spectrum, understanding their architecture, operations, and potential pitfalls. Whether designing robust systems or troubleshooting issues, his role as a network systems expert witness provides clarity, guidance, and in-depth research into these extensive frameworks.</p>
+        <p>Complex infrastructures that drive our connected world come under the umbrella of network systems. Dr. Lavian&rsquo;s expertise spans these systems&rsquo; spectrum, understanding their architecture, operations, and potential pitfalls. Whether designing robust systems or troubleshooting issues, his role as a <a href="/communications-expert-witness/computer-networking-expert-witness/">network systems expert witness</a> provides clarity, guidance, and in-depth research into these extensive frameworks.</p>
 
         <h3>LAN/WAN Expert Witness</h3>
         <h4>LAN/WAN Technologies</h4>
-        <p>Local Area Networks (LAN) and Wide Area Networks (WAN) form the backbone of most organizational and global communications. Dr. Lavian's vast experience encompasses LAN setups, often used within single premises, and WANs, which span larger geographical areas. As a LAN/WAN expert witness, his depth of knowledge in these specific network types ensures that systems are designed, implemented, and maintained with proficiency.</p>
+        <p>Local Area Networks (LAN) and Wide Area Networks (WAN) form the backbone of most organizational and global communications. Dr. Lavian&rsquo;s vast experience encompasses LAN setups, often used within single premises, and WANs, which span larger geographical areas. As a <a href="/communications-expert-witness/computer-networking-expert-witness/">LAN/WAN expert witness</a>, his depth of knowledge in these specific network types ensures that systems are designed, implemented, and maintained with proficiency.</p>
 
         <h3>Cloud Computing Expert Witness</h3>
         <h4>Cloud Computing</h4>
-        <p>The shift to cloud-based solutions in modern computing is undeniable. Dr. Lavian's insights into cloud computing cover various facets, from cloud infrastructure, platforms, and software services to security concerns and best practices. As a cloud computing expert witness, he offers consultation, research, and education on optimizing cloud resources and ensuring secure and efficient operations.</p>
+        <p>The shift to cloud-based solutions in modern computing is undeniable. Dr. Lavian&rsquo;s insights into cloud computing cover various facets, from cloud infrastructure, platforms, and software services to security concerns and best practices. As a <a href="/communications-expert-witness/data-communications-expert/">cloud computing expert witness</a>, he offers consultation, research, and education on optimizing cloud resources and ensuring secure and efficient operations.</p>
 
         <h3>Cellular Technology Expert Witness</h3>
         <h4>Cellular Technology</h4>
-        <p>With the advent of mobile communication, cellular technology has become paramount. Dr. Lavian is versed in the multiple generations of cellular technology, understanding their evolution, strengths, and weaknesses. As a cellular technology expert witness, he covers areas from 2G to the latest 5G networks, including the underlying architecture, protocols, and implementation strategies.</p>
+        <p>With the advent of mobile communication, cellular technology has become paramount. Dr. Lavian is versed in the multiple generations of cellular technology, understanding their evolution, strengths, and weaknesses. As a <a href="/communications-expert-witness/mobile-wireless-expert/">cellular technology expert witness</a>, he covers areas from 2G to the latest 5G networks, including the underlying architecture, protocols, and implementation strategies.</p>
 
         <h3>Web Technologies and Applications Expert Witness</h3>
         <h4>Web Technologies and Applications</h4>
-        <p>Another domain where Dr. Lavian's expertise shines is the dynamic landscape of web-based applications and technologies. Understanding front-end and back-end systems, he can dissect the complexities of modern web technologies, platforms, and frameworks. As a web technologies and applications expert witness, he ensures robust, secure, and efficient web-based solutions.</p>
+        <p>Another domain where Dr. Lavian&rsquo;s expertise shines is the dynamic landscape of web-based applications and technologies. Understanding front-end and back-end systems, he can dissect the complexities of modern web technologies, platforms, and frameworks. As a <a href="/communications-expert-witness/internet-expert-witness/">web technologies and applications expert witness</a>, he ensures robust, secure, and efficient web-based solutions.</p>
 
         <h3>Internet Technology Patents Expert Witness</h3>
         <h4>Internet Technology Patents</h4>
-        <p>Navigating the intricate realm of internet technology patents requires a deep understanding of both the technological and legal aspects. Dr. Lavian, with his extensive knowledge of internet technologies and their applications, is adept at comprehending and analyzing these patents. As an Internet technology patent expert witness, he provides insights, research, and consultations on patent claims, infringements, and defenses.</p>
+        <p>Navigating the intricate realm of internet technology patents requires a deep understanding of both the technological and legal aspects. Dr. Lavian, with his extensive knowledge of internet technologies and their applications, is adept at comprehending and analyzing these patents. As an <a href="/">Internet technology patent expert witness</a>, he provides insights, research, and consultations on patent claims, infringements, and defenses.</p>
 
         <h3>Networks and Protocols Expert Witness</h3>
         <h4>Networks and Protocols</h4>
-        <p>The foundational layer upon which other network functions and applications operate, known as underlay networks, is crucial. Dr. Lavian's expertise delves into these networks' specifics and associated protocols. Serving as an underlay networks and protocols expert witness, he ensures that these base layers are optimally designed, implemented, and managed for top-tier performance.</p>
+        <p>The foundational layer upon which other network functions and applications operate, known as underlay networks, is crucial. Dr. Lavian&rsquo;s expertise delves into these networks&rsquo; specifics and associated protocols. Serving as an underlay <a href="/">networks and protocols expert witness</a>, he ensures that these base layers are optimally designed, implemented, and managed for top-tier performance.</p>
 
         <h3>Telecommunication and Network Management Expert Witness</h3>
         <h4>Telecommunication and Network Management</h4>
-        <p>Effective management and maintenance of telecommunication and network systems are vital for efficient operation. Dr. Lavian's expertise encompasses the tools, strategies, and best practices for managing these vast and intricate systems. As a telecommunication and network management expert witness, he provides insights into ensuring these systems are operated, monitored, and maintained effectively.</p>
+        <p>Effective management and maintenance of telecommunication and network systems are vital for efficient operation. Dr. Lavian&rsquo;s expertise encompasses the tools, strategies, and best practices for managing these vast and intricate systems. As a telecommunication and <a href="/communications-expert-witness/network-management-expert-witness/">network management expert witness</a>, he provides insights into ensuring these systems are operated, monitored, and maintained effectively.</p>
 
       </div>
-      <aside class="sidebar">
-        <h3>Dr. Tal Lavian<br>Ph.D., UC Berkeley</h3>
-        <ul class="profile-links">
-          <li><a href="https://scholar.google.com/citations?user=Do_JNPQAAAAJ" target="_blank" rel="noopener"><span class="profile-icon" style="background:#4285f4;color:#fff;">GS</span> Google Scholar</a></li>
-          <li><a href="https://patents.justia.com/inventor/tal-lavian" target="_blank" rel="noopener"><span class="profile-icon" style="background:#e8590c;color:#fff;">JP</span> Justia Patents</a></li>
-          <li><a href="https://www.linkedin.com/in/tallavian" target="_blank" rel="noopener"><span class="profile-icon" style="background:#0a66c2;color:#fff;">in</span> LinkedIn</a></li>
-          <li><a href="https://www.researchgate.net/profile/Tal-Lavian" target="_blank" rel="noopener"><span class="profile-icon" style="background:#00d0af;color:#fff;">RG</span> ResearchGate</a></li>
-          <li><a href="https://dblp.org/pid/44/2547.html" target="_blank" rel="noopener"><span class="profile-icon" style="background:#004f9f;color:#fff;">DB</span> DBLP</a></li>
-          <li><a href="https://ieeexplore.ieee.org/author/37265692400" target="_blank" rel="noopener"><span class="profile-icon" style="background:#00629b;color:#fff;">IE</span> IEEE Xplore</a></li>
-          <li><a href="https://dl.acm.org/profile/81100233823" target="_blank" rel="noopener"><span class="profile-icon" style="background:#0085ca;color:#fff;">ACM</span> ACM Digital Library</a></li>
-          <li><a href="https://www.semanticscholar.org/author/Tal-Lavian/2577129" target="_blank" rel="noopener"><span class="profile-icon" style="background:#1857b6;color:#fff;">S2</span> Semantic Scholar</a></li>
-          <li><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf"><span class="profile-icon" style="background:#e53e3e;color:#fff;">CV</span> Curriculum Vitae</a></li>
-        </ul>
-      </aside>
+  <Sidebar />
     </div>
   </div>
 </BaseLayout>

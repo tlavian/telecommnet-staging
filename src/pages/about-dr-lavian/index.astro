@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
 ---
 
 <BaseLayout title="About Dr. Lavian - Network Communications, Telecommunications">
@@ -39,17 +40,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
         <h5>Experience</h5>
 
-        <p>Dr. Lavian&rsquo;s career has been marked by his tenure in senior technical positions at Shalev, Scitex, Aptel Communication, Bay Architecture Labs, Java User Group&mdash;Mountain View /Silicon Valley, Nortel Labs, Ixia, CRadar.Ai, VisuMenu.inc, Aybell, and UC Berkeley, California. This wealth of experience has honed his skills and knowledge in the telecommunications industry.</p>
+        <div class="experience-box">
+          <img src="https://telecommnet.com/wp-content/uploads/2022/10/Globe-Communications-Image1-300x300.jpg" alt="Globe Communications" class="experience-img" width="300" height="300" />
+          <p>Dr. Lavian&rsquo;s career has been marked by his tenure in senior technical positions at Shalev, Scitex, Aptel Communication, Bay Architecture Labs, Java User Group&mdash;Mountain View /Silicon Valley, Nortel Labs, Ixia, CRadar.Ai, VisuMenu.inc, Aybell, and UC Berkeley, California. This wealth of experience has honed his skills and knowledge in the telecommunications industry.</p>
 
-        <p>During his over ten years at Nortel Networks&rsquo; Research Labs, Dr. Lavian was a trailblazer in the telecommunications field. He led the development of the first network resource-scheduling service for Grid computing and was the first to demonstrate the dynamic transatlantic allocation of 10Gbs Lambdas as a grid service. His creation of the first wire-speed active network device on commercial hardware is a testament to his innovative spirit. His senior membership in IEEE and active participation in ACM and IEEE-CNSV further underscore his pioneering work.</p>
+          <p>During his over ten years at Nortel Networks&rsquo; Research Labs, Dr. Lavian was a trailblazer in the telecommunications field. He led the development of the first network resource-scheduling service for Grid computing and was the first to demonstrate the dynamic transatlantic allocation of 10Gbs Lambdas as a grid service. His creation of the first wire-speed active network device on commercial hardware is a testament to his innovative spirit. His senior membership in IEEE and active participation in ACM and IEEE-CNSV further underscore his pioneering work.</p>
 
-        <p>He has also served as Principal Investigator for projects at the Defense Advanced Research Projects Agency (<a href="https://www.darpa.mil/" target="_blank" rel="noopener">DARPA</a>) of the U.S. Department of Defense, including a research project for the U.S. Air Force Research Lab (<a href="https://www.afrl.af.mil/" target="_blank" rel="noopener">AFRL</a>) involving <a href="/communications-expert-witness/routing-switching-expert/">routing</a> and switching optical SONET and DWDM high-speed networks.</p>
+          <p>He has also served as Principal Investigator for projects at the Defense Advanced Research Projects Agency (<a href="https://www.darpa.mil/" target="_blank" rel="noopener">DARPA</a>) of the U.S. Department of Defense, including a research project for the U.S. Air Force Research Lab (<a href="https://www.afrl.af.mil/" target="_blank" rel="noopener">AFRL</a>) involving <a href="/communications-expert-witness/routing-switching-expert/">routing</a> and switching optical SONET and DWDM high-speed networks.</p>
 
-        <p>Above all, Dr. Lavian, an expert with decades of experience, provides expert consulting services utilizing his intimate telecommunications industry knowledge. He has been awarded multiple patents for his developments in network security, network management, network selection, device provisioning, network/system architecture, mobility management, and access control. Moreover, he has co-authored over 25 scientific publications, journal articles, and peer-reviewed papers. Therefore, he is an inventor of over 120 patents and over 60 prosecuted pro-se. Dr. Lavian brings both academic and industry experience to his vibrant expert consulting services practice.</p>
+          <p>Above all, Dr. Lavian, an expert with decades of experience, provides expert consulting services utilizing his intimate telecommunications industry knowledge. He has been awarded multiple patents for his developments in network security, network management, network selection, device provisioning, network/system architecture, mobility management, and access control. Moreover, he has co-authored over 25 scientific publications, journal articles, and peer-reviewed papers. Therefore, he is an inventor of over 120 patents and over 60 prosecuted pro-se. Dr. Lavian brings both academic and industry experience to his vibrant expert consulting services practice.</p>
+        </div>
 
         <h2>Research and Development</h2>
 
-        <h3>UC Berkeley</h3>
+        <div class="bordered-section">
+          <h3>UC Berkeley</h3>
+        </div>
+        <img src="https://telecommnet.com/wp-content/uploads/2022/10/Berkeley-300x109.png" alt="UC Berkeley" width="300" height="109" style="margin-bottom:20px;" />
 
         <p>For 20 years, Dr. Lavian has researched, studied, and lectured at U.C. Berkeley, Engineering.</p>
 
@@ -64,11 +71,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <li>Developed long-term technology for the enterprise market, integrating communication and computing technologies.</li>
         </ul>
 
-        <h3>CRadar.Ai</h3>
+        <div class="bordered-section">
+          <h3>CRadar.Ai</h3>
+        </div>
+        <img src="https://telecommnet.com/wp-content/uploads/2022/10/CRadarAi-300x134.jpg" alt="CRadar.Ai" width="220" height="98" style="margin-bottom:20px;" />
 
         <p>He has served as the CTO and principal investigator of CRadar.Ai. A company whose technology improves wireless radio signal phase noise purity by about 100x. Moreover, this clean wireless radio frequency signal enables a pioneering <a href="/ep-3311493-ulpn-frequency-synthesize/">radar</a>-based object detection system for autonomous vehicles. The startup&rsquo;s high-accuracy imaging radar complements existing detection systems by sensing objects under poor weather and lighting conditions&mdash;fog, rain, snow, direct sun, total darkness&mdash;where conventional camera- and lidar-based autonomous driving systems often fail. CRadar.Ai incubated in U.C. Berkeley&rsquo;s startup accelerator, SkyDeck.</p>
 
-        <h3>Aybell</h3>
+        <div class="bordered-section">
+          <h3>Aybell</h3>
+        </div>
+        <img src="https://telecommnet.com/wp-content/uploads/2022/10/Aybell-logo-300x285.png" alt="Aybell" width="150" height="143" style="margin-bottom:20px;" />
 
         <p>A part of UC Berkeley&rsquo;s SkyDeck, Aybell is focused on creating a new way of connecting smartphone users to any company and service by digitizing interactive voice systems. As CEO, CTO, and co-founder of Aybell, Dr. Lavian developed a way to transform mobile wireless devices and smartphones into visual menu systems that empower consumers to receive more rapid customer service using mobile applications, social media platforms, chatbots, and browsers.</p>
 
@@ -80,27 +93,37 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <li>The system has been deployed as a cloud networking and cloud computing service on Amazon Web Services (AWS) and Google Cloud Platform (GCP). Technologies include Data Science Analytics, Machine Learning (ML), Artificial Intelligence (AI), and Statistical Learning (SL). Building an NLP and other NLP libraries and modules.</li>
         </ul>
 
-        <h3>VisuMenu Inc.</h3>
+        <div class="bordered-section">
+          <h3>VisuMenu Inc.</h3>
+        </div>
 
         <p>VisuMenu Inc. provides an innovative visual search engine for automated phone menus from mobile wireless devices and smartphones. As co-founder and CTO of the company, Dr. Lavian led its software development and search engine design for IVR/PBX using Asterisk, SIP, and VoIP. Above all, VisuMenu&rsquo;s systems are deployed as a front-end mobile device interacting with Web services. Its back end is based on cloud network communications, telecommunications, and cloud computing services via Amazon Web Services (AWS) and Google Cloud Platform (GCP). VisuMenu Inc. has since been re-branded as Aybell.</p>
 
       </div>
 
-      <aside class="sidebar">
-        <h3>Dr. Tal Lavian<br>Ph.D., UC Berkeley</h3>
-        <ul class="profile-links">
-          <li><a href="https://scholar.google.com/citations?user=Do_JNPQAAAAJ" target="_blank" rel="noopener"><span class="profile-icon" style="background:#4285f4;color:#fff;">GS</span> Google Scholar</a></li>
-          <li><a href="https://patents.justia.com/inventor/tal-lavian" target="_blank" rel="noopener"><span class="profile-icon" style="background:#e8590c;color:#fff;">JP</span> Justia Patents</a></li>
-          <li><a href="https://www.linkedin.com/in/tallavian" target="_blank" rel="noopener"><span class="profile-icon" style="background:#0a66c2;color:#fff;">in</span> LinkedIn</a></li>
-          <li><a href="https://www.researchgate.net/profile/Tal-Lavian" target="_blank" rel="noopener"><span class="profile-icon" style="background:#00d0af;color:#fff;">RG</span> ResearchGate</a></li>
-          <li><a href="https://dblp.org/pid/44/2547.html" target="_blank" rel="noopener"><span class="profile-icon" style="background:#004f9f;color:#fff;">DB</span> DBLP</a></li>
-          <li><a href="https://ieeexplore.ieee.org/author/37265692400" target="_blank" rel="noopener"><span class="profile-icon" style="background:#00629b;color:#fff;">IE</span> IEEE Xplore</a></li>
-          <li><a href="https://dl.acm.org/profile/81100233823" target="_blank" rel="noopener"><span class="profile-icon" style="background:#0085ca;color:#fff;">ACM</span> ACM Digital Library</a></li>
-          <li><a href="https://www.semanticscholar.org/author/Tal-Lavian/2577129" target="_blank" rel="noopener"><span class="profile-icon" style="background:#1857b6;color:#fff;">S2</span> Semantic Scholar</a></li>
-          <li><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf"><span class="profile-icon" style="background:#e53e3e;color:#fff;">CV</span> Curriculum Vitae</a></li>
-        </ul>
-      </aside>
+      <Sidebar />
     </div>
   </div>
+
+  <style is:global>
+    .experience-box {
+      background: #f5f5f5;
+      padding: 25px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+    .experience-img {
+      float: right;
+      margin: 0 0 15px 20px;
+      max-width: 300px;
+    }
+    @media (max-width: 768px) {
+      .experience-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+      }
+    }
+  </style>
 
 </BaseLayout>
