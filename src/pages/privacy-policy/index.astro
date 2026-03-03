@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Sidebar from '../../components/Sidebar.astro';
 ---
 
 <BaseLayout title="Privacy Policy - telecommnet.com">
@@ -10,10 +9,9 @@ import Sidebar from '../../components/Sidebar.astro';
   </div>
 
   <div class="container">
-    <div class="content-with-sidebar">
-      <div class="content-main">
+    <div class="content-full">
 
-        <h2>Who we are</h2>
+      <h2>Who we are</h2>
         <p>Our website address is <a href="https://telecommnet.com">https://telecommnet.com</a>.</p>
         <p>For any administrative questions, challenges, or complaints, please get in touch with <a href="mailto:info@telecommnet.com">info@telecommnet.com</a></p>
 
@@ -47,9 +45,6 @@ import Sidebar from '../../components/Sidebar.astro';
         <h2>Where do we send your data?</h2>
         <p>Visitor comments may be checked through an automated spam detection service.</p>
 
-      </div>
-
-      <Sidebar />
     </div>
   </div>
 
