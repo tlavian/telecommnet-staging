@@ -55,17 +55,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
         <h5><a href="/law-firm-clients/">More Law Firms Clients</a></h5>
 
-        <h2>Expert testimony services and litigation support, including:</h2>
+        <div class="testimony-box">
+          <h2>Expert testimony services and litigation support, including:</h2>
 
-        <p>Dr. Lavian provides expert testimony and litigation support services, including:</p>
-        <ul>
-          <li>Testifying as an expert in cases filed with the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), and other courts in the United States and Canada.</li>
-          <li>Serving as an expert witness in USPTO PTAB proceedings, including Inter partes reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.</li>
-          <li>Providing technical education for claim constructions and Markman hearings.</li>
-          <li>Writing expert reports, including analyses, claim term definitions, and claim construction.</li>
-          <li>Communicating technical information effectively to audiences of varying levels of technical expertise.</li>
-          <li>Providing product and technical analyses related to patent portfolios, claim charts, prior art investigation, and patentability research.</li>
-        </ul>
+          <ul>
+            <li>Dr. Lavian provides expert testimony and litigation support services, including:
+              <ul>
+                <li>Testifying as an expert in cases filed with the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), and other courts in the United States and Canada.</li>
+                <li>Serving as an expert witness in USPTO PTAB proceedings, including Inter partes reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.</li>
+                <li>Providing technical education for claim constructions and Markman hearings.</li>
+                <li>Writing expert reports, including analyses, claim term definitions, and claim construction.</li>
+                <li>Communicating technical information effectively to audiences of varying levels of technical expertise.</li>
+                <li>Providing product and technical analyses related to patent portfolios, claim charts, prior art investigation, and patentability research.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
         <h2>Examples of past expert witness cases:</h2>
         <ul>
@@ -106,11 +111,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
         <h2>Expert Services</h2>
 
-        <p>Dr. Lavian is an expert in network communications and telecommunications. His extensive knowledge and expertise in these areas allow him to provide valuable insights and testimony in patent cases involving these topics. Dr. Lavian is also skilled at providing technical education for claim constructions and Markman hearings. This involves explaining the technical details of patents and other legal documents to judges and other legal professionals, helping them understand a case&rsquo;s technical aspects.</p>
+        <ul>
+          <li>Dr. Lavian is an expert in network communications and telecommunications. His extensive knowledge and expertise in these areas allow him to provide valuable insights and testimony in patent cases involving these topics. Dr. Lavian is also skilled at providing technical education for claim constructions and Markman hearings. This involves explaining the technical details of patents and other legal documents to judges and other legal professionals, helping them understand a case&rsquo;s technical aspects.</li>
 
-        <p>Dr. Lavian has also written expert reports for a range of corporate clients. These reports typically include detailed analyses of the technical aspects of the case, definitions of key technical terms, and an explanation of the claim construction process. This helps to provide a clear and comprehensive understanding of the technical aspects of the case. Dr. Lavian&rsquo;s ability to communicate complex technical information to audiences with varying technical expertise is precious in this role.</p>
+          <li>Dr. Lavian has also written expert reports for a range of corporate clients. These reports typically include detailed analyses of the technical aspects of the case, definitions of key technical terms, and an explanation of the claim construction process. This helps to provide a clear and comprehensive understanding of the technical aspects of the case. Dr. Lavian&rsquo;s ability to communicate complex technical information to audiences with varying technical expertise is precious in this role.</li>
 
-        <p>Dr. Lavian&rsquo;s expertise in network communications and telecommunications and his ability to communicate complex technical information effectively make him a valuable resource for corporate clients. Whether providing expert testimony in legal cases, offering technical education, or conducting technical analyses, Dr. Lavian is well-equipped to help companies and organizations navigate the complex world of technology and networking.</p>
+          <li>Dr. Lavian&rsquo;s expertise in network communications and telecommunications and his ability to communicate complex technical information effectively make him a valuable resource for corporate clients. Whether providing expert testimony in legal cases, offering technical education, or conducting technical analyses, Dr. Lavian is well-equipped to help companies and organizations navigate the complex world of technology and networking.</li>
+        </ul>
 
         <h2>Telecommunications and Network Communications Expertise</h2>
 
@@ -184,4 +191,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     </div>
   </div>
+
+<style is:global>
+  .testimony-box {
+    background: #f0f4f8;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  .testimony-box ul ul {
+    list-style-type: circle;
+  }
+</style>
+
 </BaseLayout>
