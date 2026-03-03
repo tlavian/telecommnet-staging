@@ -120,20 +120,22 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
         </div>
       </div>
 
-      <!-- Section 5: Full width - Role of Expert Witness -->
-      <h3>The Role of an Expert Witness in Telecommunications Patent Litigation</h3>
+      <!-- Section 5: Full width - Role of Expert Witness (card container) -->
+      <div class="role-block">
+        <h3>The Role of an Expert Witness in Telecommunications Patent Litigation</h3>
 
-      <h4>Comprehensive Patent Analysis</h4>
+        <h4>Comprehensive Patent Analysis</h4>
 
-      <p>Dr. Lavian approaches telecommunications patents with an analytical eye, meticulously unpacking each claim to uncover its technological essence. His thorough analysis offers precise, unbiased evaluations that significantly bolster the legal team&rsquo;s ability to strategize and construct persuasive arguments.</p>
+        <p>Dr. Lavian approaches telecommunications patents with an analytical eye, meticulously unpacking each claim to uncover its technological essence. His thorough analysis offers precise, unbiased evaluations that significantly bolster the legal team&rsquo;s ability to strategize and construct persuasive arguments.</p>
 
-      <h5>Intellectual Property and Infringement Investigations</h5>
+        <h5>Intellectual Property and Infringement Investigations</h5>
 
-      <p>He delves deeply into intellectual property issues, meticulously comparing technical features with patent claims to ascertain potential infringement or validate an invention&rsquo;s uniqueness. Dr. Lavian&rsquo;s detailed scrutiny is essential for prosecuting and defending patent litigation cases.</p>
+        <p>He delves deeply into intellectual property issues, meticulously comparing technical features with patent claims to ascertain potential infringement or validate an invention&rsquo;s uniqueness. Dr. Lavian&rsquo;s detailed scrutiny is essential for prosecuting and defending patent litigation cases.</p>
 
-      <h5>Efficacious Deposition and Trial Testimony</h5>
+        <h5>Efficacious Deposition and Trial Testimony</h5>
 
-      <p>Armed with profound technical insight and a gift for simplifying complex subjects, Dr. Lavian delivers compelling depositions and testimony in court. His ability to clarify the nuances of telecommunications technology ensures that judges and juries understand the critical technical details involved.</p>
+        <p>Armed with profound technical insight and a gift for simplifying complex subjects, Dr. Lavian delivers compelling depositions and testimony in court. His ability to clarify the nuances of telecommunications technology ensures that judges and juries understand the critical technical details involved.</p>
+      </div>
 
       <!-- Section 6: Closing -->
       <h3>&ndash; Dr. Lavian &ndash; Telecommunications Expert Witness</h3>
@@ -142,5 +144,20 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 
     </div>
   </div>
+
+<style is:global>
+/* Role of Expert Witness section — card container matching production */
+.content-full .role-block {
+  background: #f8f9fa;
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+.content-full .role-block > h3 {
+  border-left: 4px solid #4267B2;
+  padding-left: 20px;
+  margin-top: 0;
+}
+</style>
 
 </BaseLayout>
