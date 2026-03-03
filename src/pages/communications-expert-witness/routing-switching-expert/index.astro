@@ -30,9 +30,12 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 
         <p>Network infrastructure is Telecomm NET&rsquo;s primary area of expertise, which is grounded in academic knowledge and hands-on industry experience in product development and innovation.</p>
 
-        <h3>Routing &amp; Switching Protocols</h3>
+        <!-- Routing & Switching Protocols — gray card container -->
+        <div class="routing-card-block">
+          <h3>Routing &amp; Switching Protocols</h3>
 
-        <p>Routing and switching protocols manage data flow within a computer network. Routing protocols determine the best path for data to travel between devices on a network while switching protocols control data flow within a network. Routing protocols use algorithms to determine the most efficient route for data travel based on network congestion and available bandwidth. Some examples of routing protocols include the Border Gateway Protocol (BGP) and Open Shortest Path First (OSPF). On the other hand, they are switching protocols direct data to its destination within a network. They operate at the data link layer of the OSI model and use MAC addresses to identify and switch data between devices. Some examples of switching protocols include Ethernet and Asynchronous Transfer Mode (ATM). Routing and switching protocols are essential for modern computer networks&rsquo; efficient and reliable operation.</p>
+          <p>Routing and switching protocols manage data flow within a computer network. Routing protocols determine the best path for data to travel between devices on a network while switching protocols control data flow within a network. Routing protocols use algorithms to determine the most efficient route for data travel based on network congestion and available bandwidth. Some examples of routing protocols include the Border Gateway Protocol (BGP) and Open Shortest Path First (OSPF). On the other hand, they are switching protocols direct data to its destination within a network. They operate at the data link layer of the OSI model and use MAC addresses to identify and switch data between devices. Some examples of switching protocols include Ethernet and Asynchronous Transfer Mode (ATM). Routing and switching protocols are essential for modern computer networks&rsquo; efficient and reliable operation.</p>
+        </div>
 
         <h3>Routers and Switches Hardware Technologies</h3>
 
@@ -64,15 +67,23 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
           <li>IPv4, IPv6, LAN, WAN, VPN, tunneling, routing protocols, RIP, BGP, MPLS, OSPF, multicast, DNS, QoS, switching, packet switching, layer-2 switching, layer-3 switching, layer-4 switching, application switching, load balancing, and firewalls.</li>
         </ul>
 
-        <h3>Network Architecture</h3>
+        <!-- Two-col: Network Architecture + OSI Communication Layers -->
+        <div class="two-col">
+          <div>
+            <h3>Network Architecture</h3>
 
-        <p>Networks may be wired or wireless. A wireless network is a computer network that uses wireless <a href="/communications-expert-witness/data-communications-expert/" target="_blank" rel="noopener">data connections</a> between network nodes. Wireless networking eliminates cables and wires while providing the same capabilities as a wired network. There are two primary uses for wireless networking: private use within a single building or group of buildings and public use, for example, connecting to public access points, most often in urban areas. However, wireless networking is found in homes, enterprise campuses, and service provider carrier networks.</p>
+            <p>Networks may be wired or wireless. A wireless network is a computer network that uses wireless <a href="/communications-expert-witness/data-communications-expert/" target="_blank" rel="noopener">data connections</a> between network nodes. Wireless networking eliminates cables and wires while providing the same capabilities as a wired network. There are two primary uses for wireless networking: private use within a single building or group of buildings and public use, for example, connecting to public access points, most often in urban areas. However, wireless networking is found in homes, enterprise campuses, and service provider carrier networks.</p>
 
-        <p>Moreover, The broadband cable network is a typical universally used internet-to-home technology. The term distinguishes old <a href="/communications-expert-witness/computer-networking-expert-witness/" target="_blank" rel="noopener">network architectures</a>, especially the &rsquo;wired pair&rsquo; telephone line systems. Broadband cable has the infrastructure for delivering high-speed data and digital services to subscriber locations. It is sometimes described as &rsquo;always on&rsquo; because it uses a point-to-multipoint topology.</p>
+            <p>Moreover, The broadband cable network is a typical universally used internet-to-home technology. The term distinguishes old <a href="/communications-expert-witness/computer-networking-expert-witness/" target="_blank" rel="noopener">network architectures</a>, especially the &rsquo;wired pair&rsquo; telephone line systems. Broadband cable has the infrastructure for delivering high-speed data and digital services to subscriber locations. It is sometimes described as &rsquo;always on&rsquo; because it uses a point-to-multipoint topology.</p>
+          </div>
+          <div>
+            <h3>OSI Communication Layers</h3>
 
-        <h3>OSI Communication Layers</h3>
+            <img src="/wp-content/uploads/2022/06/Networks-router.svg" alt="Networks Router" />
 
-        <p>Computer Networks use the OSI model to allow hardware and software to communicate effectively. The OSI model is utilized to communicate, organize, and run information through the network. Therefore, This model lays out separate layers for networking functions such as flow control and error recovery. Layer 1 &ndash; Physical Layer; Layer 2 &ndash; Data Link; Layer 3 &ndash; Network; Layer 4 &ndash; Transport; Layer 5 &ndash; Session; Layer 6 &ndash; Presentation; and Layer 7 &ndash; Application. However, each model layer performs a specific function, allowing disparate hardware and software communications systems to interact effectively.</p>
+            <p>Computer Networks use the OSI model to allow hardware and software to communicate effectively. The OSI model is utilized to communicate, organize, and run information through the network. Therefore, This model lays out separate layers for networking functions such as flow control and error recovery. Layer 1 &ndash; Physical Layer; Layer 2 &ndash; Data Link; Layer 3 &ndash; Network; Layer 4 &ndash; Transport; Layer 5 &ndash; Session; Layer 6 &ndash; Presentation; and Layer 7 &ndash; Application. However, each model layer performs a specific function, allowing disparate hardware and software communications systems to interact effectively.</p>
+          </div>
+        </div>
 
         <h3>Navigating the World of Routing and Switching Expertise</h3>
 
@@ -91,5 +102,20 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
       </div>
 
   </div>
+
+<style is:global>
+/* Routing & Switching page — gray card container for protocols section */
+.content-full .routing-card-block {
+  background: #f8f9fa;
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+.content-full .routing-card-block > h3 {
+  border-left: 4px solid #4267B2;
+  padding-left: 20px;
+  margin-top: 0;
+}
+</style>
 
 </BaseLayout>
