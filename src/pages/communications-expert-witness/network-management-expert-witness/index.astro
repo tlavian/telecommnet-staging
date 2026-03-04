@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Network Management Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in network management including NMS, SNMP, MIBs, FCAPS, network automation, and device management for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/network-management-expert-witness/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What network management technologies does Dr. Lavian cover?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian covers Network Management Systems (NMS), SNMP, MIBs, FCAPS framework, network automation, device management for routers, switches, gateways, and firewalls." } },
+        { "@type": "Question", "name": "How does a network management expert assist in patent litigation?", "acceptedAnswer": { "@type": "Answer", "text": "A network management expert analyzes patent claims related to network monitoring, configuration, and automation technologies, provides claim construction opinions, and testifies on infringement and validity." } },
+        { "@type": "Question", "name": "What network management standards is Dr. Lavian familiar with?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is familiar with SNMP v1/v2c/v3, NETCONF, YANG, RESTCONF, CLI-based management, and the ISO/OSI FCAPS network management framework." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Network Management Expert Witness Services">
+<BaseLayout
+  title="Network Management Expert Witness Services"
+  description="Network management expert witness. NMS, SNMP, network automation expertise for patent litigation. PhD UC Berkeley."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Network Management", url: "/communications-expert-witness/network-management-expert-witness/"}]}
+>
 
   <div class="hero-banner">
     <h1>Network Management Expert Witness Consultant</h1>

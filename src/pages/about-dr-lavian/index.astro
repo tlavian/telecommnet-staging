@@ -1,9 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Dr. Tal Lavian",
+  "description": "About Dr. Tal Lavian, telecommunications and network communications expert witness with PhD from UC Berkeley and 120+ patents.",
+  "mainEntity": { "@id": "https://telecommnet.com/#person" },
+  "url": "https://telecommnet.com/about-dr-lavian/"
+};
 ---
 
-<BaseLayout title="About Dr. Lavian - Network Communications, Telecommunications">
+<BaseLayout
+  title="About Dr. Lavian - Network Communications, Telecommunications"
+  description="About Dr. Tal Lavian. Telecommunications and network communications expert witness. PhD UC Berkeley. 120+ patents. Silicon Valley industry experience."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "About", url: "/about-dr-lavian/"}]}
+>
 
   <div class="hero-banner">
     <h1>About Me</h1>

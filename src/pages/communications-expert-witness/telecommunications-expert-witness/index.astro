@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Telecommunications Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in telecommunications including PSTN, circuit switching, cellular systems, and network communications for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What qualifications does Dr. Lavian have as a telecommunications expert witness?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian holds a PhD in Computer Science from UC Berkeley specializing in network communications, has 120+ patents, 25+ peer-reviewed publications, and 20+ years of research and lecturing at UC Berkeley's College of Engineering." } },
+        { "@type": "Question", "name": "What telecommunications technologies does Dr. Lavian cover?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian covers PSTN, circuit switching, SS7, cellular systems, VoIP, SIP, Internet protocols, network architecture, wireless communications, and unified communications systems." } },
+        { "@type": "Question", "name": "In what legal proceedings does Dr. Lavian provide testimony?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian provides expert testimony in federal court patent litigation, USPTO PTAB proceedings, ITC investigations, and arbitration involving telecommunications technologies." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Telecommunications Expert Witness services">
+<BaseLayout
+  title="Telecommunications Expert Witness Services"
+  description="Telecommunications expert witness for patent litigation. PSTN, cellular, VoIP, network communications expertise. PhD UC Berkeley, 120+ patents."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Telecommunications", url: "/communications-expert-witness/telecommunications-expert-witness/"}]}
+>
 
   <div class="hero-banner">
     <h1>Telecommunications Expert Witness Consultant</h1>

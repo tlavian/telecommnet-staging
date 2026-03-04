@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Data Communications Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in data communications including data networks, LANs, WANs, Internet protocols, and networking standards for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/data-communications-expert/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What data communications areas does Dr. Lavian specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian specializes in data networks, computer networks, LANs, WANs, Internet protocols, networking standards (IEEE, IETF RFCs), and the design and implementation of communication services." } },
+        { "@type": "Question", "name": "How does a data communications expert assist in patent litigation?", "acceptedAnswer": { "@type": "Answer", "text": "A data communications expert analyzes patent claims related to data transmission technologies, evaluates network protocol implementations, provides claim construction opinions, and testifies on infringement and validity." } },
+        { "@type": "Question", "name": "What data communications standards is Dr. Lavian familiar with?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is familiar with IEEE 802.3, IETF RFCs, TCP/IP, Ethernet, data link protocols, and standards governing LAN, WAN, and Internet data communications." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Data Communications Expert Witness services">
+<BaseLayout
+  title="Data Communications Expert Witness Services"
+  description="Data communications expert witness. Data networks, LANs, WANs, Internet protocols expertise for patent litigation. PhD UC Berkeley."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Data Communications", url: "/communications-expert-witness/data-communications-expert/"}]}
+>
 
   <div class="hero-banner">
     <h1>Data Communications Expert Witness Consultant</h1>

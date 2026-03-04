@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Networking Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in networking including network communications, TCP/IP, Ethernet, data communications, and Internet architecture for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/networking-expert/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What networking areas does Dr. Lavian specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian specializes in network communications, data communications, computer networks, Internet protocols (TCP/IP, UDP, IP), Ethernet (IEEE 802.3), and wireless networking applications." } },
+        { "@type": "Question", "name": "How does a networking expert assist in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "A networking expert analyzes patent claims related to network architectures and protocols, evaluates network equipment implementations, provides claim construction opinions, and testifies on infringement and validity." } },
+        { "@type": "Question", "name": "What networking standards is Dr. Lavian proficient in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is proficient in TCP/IP, IEEE 802.3 (Ethernet), IEEE 802.11 (Wi-Fi), IETF RFCs, OSI model layers 1-7, and standards governing Internet and enterprise network architectures." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Networking Expert Witness Services">
+<BaseLayout
+  title="Networking Expert Witness Services"
+  description="Networking expert witness. Network communications, TCP/IP, Ethernet, Internet architecture expertise for patent litigation. PhD UC Berkeley."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Networking", url: "/communications-expert-witness/networking-expert/"}]}
+>
 
   <div class="hero-banner">
     <h1>Networking Expert Witness Consultant</h1>

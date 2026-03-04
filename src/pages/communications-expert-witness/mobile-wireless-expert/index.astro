@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Mobile and Wireless Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in mobile and wireless technologies including Wi-Fi, cellular networks, wireless protocols, and mobile device communications for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What mobile and wireless technologies does Dr. Lavian cover?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian covers Wi-Fi (IEEE 802.11), cellular networks (3G/4G/5G), Bluetooth, WLAN, wireless access points, mobile device architectures, and wireless communication protocols." } },
+        { "@type": "Question", "name": "How does a mobile wireless expert assist in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "A mobile wireless expert analyzes patent claims involving wireless technologies, evaluates wireless protocol implementations, provides opinions on claim construction and infringement, and testifies in federal court and PTAB proceedings." } },
+        { "@type": "Question", "name": "What wireless standards is Dr. Lavian proficient in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is proficient in IEEE 802.11 (Wi-Fi), IEEE 802.15 (Bluetooth/WPAN), cellular standards (3GPP), LTE, 5G NR, and wireless security protocols including WPA2/WPA3." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Telecommunications Mobile Wireless Expert">
+<BaseLayout
+  title="Mobile and Wireless Expert Witness Services"
+  description="Mobile and wireless expert witness. Wi-Fi, cellular, wireless protocols expertise for patent litigation. PhD UC Berkeley."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Mobile & Wireless", url: "/communications-expert-witness/mobile-wireless-expert/"}]}
+>
 
   <div class="hero-banner">
     <h1>Mobile and Wireless Consulting</h1>

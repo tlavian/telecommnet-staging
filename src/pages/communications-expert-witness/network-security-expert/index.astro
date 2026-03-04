@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Network Security Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in network security including firewalls, VPNs, IPSec, intrusion detection, and cybersecurity for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/network-security-expert/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What network security technologies does Dr. Lavian cover?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian covers firewalls, VPNs, IPSec, tunneling, content filtering, security gateways, intrusion detection systems (IDS), intrusion prevention systems (IPS), encryption, and access control." } },
+        { "@type": "Question", "name": "How does a network security expert witness assist in patent litigation?", "acceptedAnswer": { "@type": "Answer", "text": "A network security expert analyzes patent claims involving security architectures, evaluates firewall and VPN implementations, provides opinions on claim construction and infringement, and testifies in federal court and PTAB proceedings." } },
+        { "@type": "Question", "name": "What network security standards is Dr. Lavian familiar with?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is familiar with IPSec, SSL/TLS, SSH, SNMP security, IEEE 802.1X, network access control standards, and security frameworks used in enterprise and service provider networks." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Network Security Expert Witness Services">
+<BaseLayout
+  title="Network Security Expert Witness Services"
+  description="Network security expert witness. Firewalls, VPNs, IPSec, cybersecurity expertise for patent litigation. Federal court and PTAB testimony."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Network Security", url: "/communications-expert-witness/network-security-expert/"}]}
+>
 
   <div class="hero-banner">
     <h1>Network Security Expert</h1>

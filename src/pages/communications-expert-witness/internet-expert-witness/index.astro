@@ -1,8 +1,36 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Internet Protocols Expert Witness",
+      "serviceType": "Expert Witness Consulting",
+      "description": "Expert witness services in Internet protocols including TCP/IP, HTTP, DNS, web technologies for patent litigation.",
+      "provider": { "@id": "https://telecommnet.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://telecommnet.com/communications-expert-witness/internet-expert-witness/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What Internet protocols are commonly at issue in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "Common Internet protocols in patent litigation include TCP/IP, HTTP/HTTPS, DNS, FTP, SMTP, SSH, TLS/SSL, IPv4, IPv6, and application-layer protocols used in web services and cloud computing." } },
+        { "@type": "Question", "name": "How does an Internet expert witness help in patent litigation?", "acceptedAnswer": { "@type": "Answer", "text": "An Internet expert witness analyzes patent claims related to web technologies, evaluates prior art in Internet protocols, provides claim construction opinions, and testifies on infringement and validity in federal court and PTAB proceedings." } },
+        { "@type": "Question", "name": "What web technologies does Dr. Lavian have expertise in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian has expertise in TCP/IP, UDP, HTTP, DNS, VPN, SSH, SNMP, SIP, IPv4, IPv6, web application architectures, and Internet infrastructure with a PhD from UC Berkeley in network communications." } }
+      ]
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Internet Protocols Expert Witness - TCP/IP &amp; Web Technologies">
+<BaseLayout
+  title="Internet Protocols Expert Witness - TCP/IP &amp; Web Technologies"
+  description="Internet protocols expert witness. TCP/IP, HTTP, DNS, web technologies expertise for patent litigation. PhD UC Berkeley in network communications."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Internet Protocols", url: "/communications-expert-witness/internet-expert-witness/"}]}
+>
 
   <div class="hero-banner">
     <h1>Internet Expert Witness Consultant</h1>

@@ -1,8 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Corporate Clients",
+  "description": "Corporate clients who have retained Dr. Lavian for expert witness consulting in telecommunications and network communications patent litigation.",
+  "url": "https://telecommnet.com/corporate-clients/"
+};
 ---
 
-<BaseLayout title="Corporate Clients Expert Witness Telecommunications">
+<BaseLayout
+  title="Corporate Clients Expert Witness Telecommunications"
+  description="Corporate clients of Dr. Tal Lavian. Technology companies retaining telecommunications expert witness services for patent litigation."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Corporate Clients", url: "/corporate-clients/"}]}
+>
 
   <div class="hero-banner">
     <h1>Corporate Clients</h1>
