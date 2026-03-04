@@ -15,30 +15,35 @@ Allow: /contact/
 Allow: /site-map/
 Allow: /privacy-policy/
 Allow: /terms-and-conditions/
+Allow: /llms.txt
 Disallow: /private/
 Disallow: /admin/
-Disallow: /*.json$
 Crawl-delay: 1
 
-# AI search engine bots - full access
+# AI search engine bots - full access including structured data
 User-agent: GPTBot
 Allow: /
+Allow: /llms.txt
 Crawl-delay: 1
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /llms.txt
 Crawl-delay: 1
 
 User-agent: Claude-Web
 Allow: /
+Allow: /llms.txt
 Crawl-delay: 1
 
 User-agent: Anthropic
 Allow: /
+Allow: /llms.txt
 Crawl-delay: 1
 
 User-agent: Google-Extended
 Allow: /
+Allow: /llms.txt
 Crawl-delay: 1
 
 User-agent: Googlebot
