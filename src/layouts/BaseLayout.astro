@@ -3,10 +3,45 @@ interface Props {
   title: string;
   description?: string;
   schema?: object;
+  ogImage?: string;
+  ogType?: string;
+  breadcrumbs?: Array<{name: string; url: string}>;
 }
 
-const { title, description = "Dr. Tal Lavian - Telecommunications Expert Witness Consulting. Expert in network communications, data communications, computer networks, and internet protocols (TCP/IP).", schema } = Astro.props;
+const { title, description = "Dr. Tal Lavian - Telecommunications Expert Witness Consulting. Expert in network communications, data communications, computer networks, and internet protocols (TCP/IP).", schema, ogImage, ogType, breadcrumbs } = Astro.props;
 const currentPath = Astro.url.pathname;
+const canonicalURL = `https://telecommnet.com${currentPath}`;
+const defaultOgImage = "https://telecommnet.com/wp-content/uploads/2024/01/Dr-Tal-Lavian-Expert-Witness.jpg";
+const resolvedOgImage = ogImage || defaultOgImage;
+
+// Generate BreadcrumbList schema from breadcrumbs prop
+const breadcrumbSchema = breadcrumbs ? {
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbs.map((crumb, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": crumb.name,
+    "item": `https://telecommnet.com${crumb.url}`
+  }))
+} : null;
+
+// Merge breadcrumb schema into existing schema @graph, or create standalone
+function buildFullSchema(pageSchema: any, bcSchema: any) {
+  if (!pageSchema && !bcSchema) return null;
+  if (!pageSchema && bcSchema) return { "@context": "https://schema.org", ...bcSchema };
+  if (pageSchema && !bcSchema) return pageSchema;
+  // If page schema has @graph, add breadcrumb to it
+  if (pageSchema["@graph"]) {
+    return { ...pageSchema, "@graph": [...pageSchema["@graph"], bcSchema] };
+  }
+  // Otherwise create @graph with both
+  return {
+    "@context": "https://schema.org",
+    "@graph": [pageSchema["@type"] ? pageSchema : undefined, bcSchema].filter(Boolean)
+  };
+}
+
+const fullSchema = buildFullSchema(schema, breadcrumbSchema);
 ---
 
 <!DOCTYPE html>
@@ -18,17 +53,53 @@ const currentPath = Astro.url.pathname;
   <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="sitemap" href="/sitemap-index.xml" />
-  <link rel="canonical" href={`https://telecommnet.com${currentPath}`} />
+  <link rel="canonical" href={canonicalURL} />
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:site_name" content="TelecommNet" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content={ogType || "website"} />
+  <meta property="og:image" content={resolvedOgImage} />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tlavian" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={resolvedOgImage} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+  {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
   <style is:global>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Roboto', sans-serif; color: #333; font-size: 18px; line-height: 1.5; background: #fff; }
     a { color: #000081; text-decoration: underline; }
     a:hover { text-decoration: underline; }
     img { max-width: 100%; height: auto; }
+
+    /* Skip-to-content accessibility link (WCAG 2.2 AA) */
+    .skip-to-content {
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a365d;
+      color: #fff;
+      padding: 12px 24px;
+      z-index: 9999;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 0 0 4px 4px;
+      transition: top 0.2s;
+    }
+    .skip-to-content:focus {
+      top: 0;
+      outline: 3px solid #4267B2;
+      outline-offset: 2px;
+    }
 
     .top-bar { background: #4267B2; color: #fff; padding: 8px 0; font-size: 14px; }
     .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
@@ -208,6 +279,9 @@ const currentPath = Astro.url.pathname;
 </head>
 <body>
 
+  <!-- Skip to main content (WCAG 2.2 AA accessibility) -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
@@ -262,7 +336,7 @@ const currentPath = Astro.url.pathname;
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
     <slot />
   </main>
 
