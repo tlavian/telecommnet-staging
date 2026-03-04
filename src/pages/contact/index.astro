@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
 ---
 
 <BaseLayout title="Contact - Dr. Tal Lavian TelecommNet.com">
@@ -9,49 +10,138 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 
   <div class="container">
-    <div class="content-full">
+    <div class="content-with-sidebar">
+      <div class="content-main">
 
-      <h2>Contact</h2>
+        <h2>Contact</h2>
 
         <p>Contact Dr. Tal Lavian &ndash; <a href="/">Telecommunications</a>, <a href="/communications-expert-witness/network-communications-expert-witness/">Network Communications</a>, <a href="/communications-expert-witness/internet-expert-witness/">Internet Protocols (TCP/IP)</a>, <a href="/communications-expert-witness/data-communications-expert/">Data Communications</a>, <a href="/communications-expert-witness/mobile-wireless-expert/">mobile wireless</a>, and <a href="/communications-expert-witness/computer-networking-expert-witness/">Computer Networking</a></p>
 
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/tal.lavianwork" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://x.com/tlavian" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/tallavian" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
+        <div class="contact-social-icons">
+          <a href="https://www.facebook.com/tal.lavianwork" target="_blank" rel="noopener" class="social-btn social-facebook" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 320 512" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+          </a>
+          <a href="https://x.com/tlavian" target="_blank" rel="noopener" class="social-btn social-x" aria-label="X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tallavian" target="_blank" rel="noopener" class="social-btn social-linkedin" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.83-48.3 93.96 0 111.32 61.9 111.32 142.3V448z"/></svg>
+          </a>
+        </div>
 
-        <p>Encino, California</p>
+        <div class="contact-grid">
+          <div class="contact-icon-box">
+            <div class="contact-icon">
+              <img src="/wp-content/uploads/2022/05/map-1.svg" alt="Location" width="90" height="90" />
+            </div>
+            <div class="contact-icon-content">
+              <h3>Encino, California</h3>
+            </div>
+          </div>
 
-        <p><a href="tel:14082099112">+1 (408) 209-9112</a></p>
+          <div class="contact-icon-box">
+            <div class="contact-icon">
+              <img src="/wp-content/uploads/2022/05/1.New-Phone-NO..svg" alt="Phone" width="90" height="90" />
+            </div>
+            <div class="contact-icon-content">
+              <h3><a href="tel:14082099112">+1 (408) 209-9112</a></h3>
+            </div>
+          </div>
 
-        <h3><a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></h3>
+          <div class="contact-icon-box">
+            <div class="contact-icon">
+              <img src="/wp-content/uploads/2022/05/email.svg" alt="Email" width="90" height="90" />
+            </div>
+            <div class="contact-icon-content">
+              <h3><a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></h3>
+            </div>
+          </div>
 
-        <h3><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf">Curriculum Vitae</a></h3>
+          <div class="contact-icon-box">
+            <div class="contact-icon">
+              <img src="/wp-content/uploads/2022/12/curriculum-Vitae-icon-1.svg" alt="Curriculum Vitae" width="60" height="60" />
+            </div>
+            <div class="contact-icon-content">
+              <h3><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf">Curriculum Vitae</a></h3>
+            </div>
+          </div>
+        </div>
 
-        <h5>Publications, Academic, and Professional Profiles</h5>
-
-        <h3><a href="https://scholar.google.com/citations?user=DDVtnHEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar Google</a></h3>
-
-        <h3><a href="https://berkeley.academia.edu/TalLavian" target="_blank" rel="noopener">Academia</a></h3>
-
-        <h3><a href="https://www.researchgate.net/profile/Tal-Lavian" target="_blank" rel="noopener">Rresearch Gate</a></h3>
-
-        <h3><a href="https://patents.justia.com/inventor/tal-lavian" target="_blank" rel="noopener">Justia Patents</a></h3>
-
-        <h3><a href="https://dl.acm.org/profile/81100233720" target="_blank" rel="noopener">ACM</a></h3>
-
-        <h3><a href="https://ieee-collabratec.ieee.org/app/myprofile/about" target="_blank" rel="noopener">IEEE</a></h3>
-
-        <h3><a href="https://dblp.org/search?q=Tal+Lavian" target="_blank" rel="noopener">dblp</a></h3>
-
-        <h3><a href="https://californiaconsultants.org/members/tal-lavian/" target="_blank" rel="noopener">IEEE-CNSV</a></h3>
-
-        <h3><a href="https://www.ratemyprofessors.com/professor/1813887" target="_blank" rel="noopener">RateMyProfessors</a></h3>
-
-        <h3><a href="https://scholargps.com/scholars/98050981746055/tal-lavian" target="_blank" rel="noopener">ScholarGPS</a></h3>
-
+      </div>
+      <Sidebar />
     </div>
   </div>
 
 </BaseLayout>
+
+<style is:global>
+  /* Contact page social icons */
+  .contact-social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 30px;
+  }
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  .social-btn:hover {
+    opacity: 0.85;
+  }
+  .social-facebook {
+    background-color: #3b5998;
+  }
+  .social-x {
+    background-color: #000000;
+  }
+  .social-linkedin {
+    background-color: #0077b5;
+  }
+
+  /* Contact page icon-box grid */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .contact-icon-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .contact-icon {
+    flex-shrink: 0;
+  }
+  .contact-icon img {
+    display: block;
+  }
+  .contact-icon-content h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    border-left: none;
+    padding-left: 0;
+  }
+  .contact-icon-content h3 a {
+    color: #4267B2;
+    text-decoration: none;
+  }
+  .contact-icon-content h3 a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
