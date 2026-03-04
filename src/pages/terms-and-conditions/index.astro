@@ -1,8 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Terms and Conditions",
+  "description": "Terms and conditions for using TelecommNet.com — telecommunications expert witness services by Dr. Tal Lavian.",
+  "url": "https://telecommnet.com/terms-and-conditions/"
+};
 ---
 
-<BaseLayout title="Terms and Conditions - telecommnet.com">
+<BaseLayout
+  title="Terms and Conditions - TelecommNet.com"
+  description="Terms and conditions for using TelecommNet.com. Telecommunications expert witness services by Dr. Tal Lavian."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Terms and Conditions", url: "/terms-and-conditions/"}]}
+>
 
   <div class="hero-banner">
     <h1>Terms and Conditions</h1>

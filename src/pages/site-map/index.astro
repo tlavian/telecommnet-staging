@@ -1,8 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Site Map",
+  "description": "Complete site map for TelecommNet.com — telecommunications expert witness services by Dr. Tal Lavian.",
+  "url": "https://telecommnet.com/site-map/"
+};
 ---
 
-<BaseLayout title="Site Map - Telecommunications expert witness services">
+<BaseLayout
+  title="Site Map - Telecommunications Expert Witness Services"
+  description="Complete site map for TelecommNet.com. Navigate all pages for telecommunications expert witness services by Dr. Tal Lavian."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Site Map", url: "/site-map/"}]}
+>
 
   <div class="hero-banner">
     <h1>Site Map</h1>

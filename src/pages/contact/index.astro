@@ -1,9 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Dr. Tal Lavian",
+  "description": "Contact Dr. Tal Lavian for telecommunications expert witness consulting, patent litigation support, and technical analysis services.",
+  "mainEntity": { "@id": "https://telecommnet.com/#person" },
+  "url": "https://telecommnet.com/contact/"
+};
 ---
 
-<BaseLayout title="Contact - Dr. Tal Lavian TelecommNet.com">
+<BaseLayout
+  title="Contact Dr. Tal Lavian - Telecommunications Expert Witness"
+  description="Contact Dr. Tal Lavian for telecommunications expert witness consulting, patent litigation support, and technical analysis services."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Contact", url: "/contact/"}]}
+>
 
   <div class="hero-banner">
     <h1>Contact</h1>

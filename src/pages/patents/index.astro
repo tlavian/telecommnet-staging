@@ -1,7 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Patents by Dr. Tal Lavian",
+  "description": "Over 120 patents invented by Dr. Tal Lavian in telecommunications, network communications, VoIP, streaming media, and Internet protocols.",
+  "mainEntity": { "@id": "https://telecommnet.com/#person" },
+  "url": "https://telecommnet.com/patents/"
+};
 ---
-<BaseLayout title="List of patents by Dr. Tal Lavian -">
+<BaseLayout
+  title="Patents by Dr. Tal Lavian - Telecommunications Inventions"
+  description="120+ patents by Dr. Tal Lavian. Inventions in telecommunications, network communications, VoIP, streaming media, and Internet protocols."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Patents", url: "/patents/"}]}
+>
   <div class="hero-banner">
     <h1>Patents</h1>
   </div>

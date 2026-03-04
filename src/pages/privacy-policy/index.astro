@@ -1,8 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy",
+  "description": "Privacy policy for TelecommNet.com — how we collect, use, and protect your personal information.",
+  "url": "https://telecommnet.com/privacy-policy/"
+};
 ---
 
-<BaseLayout title="Privacy Policy - telecommnet.com">
+<BaseLayout
+  title="Privacy Policy - TelecommNet.com"
+  description="Privacy policy for TelecommNet.com. How we collect, use, and protect your personal information."
+  schema={pageSchema}
+  breadcrumbs={[{name: "Home", url: "/"}, {name: "Privacy Policy", url: "/privacy-policy/"}]}
+>
 
   <div class="hero-banner">
     <h1>Privacy Policy</h1>
