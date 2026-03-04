@@ -3,13 +3,16 @@
 # Default rules for all bots
 User-agent: *
 Allow: /
-Allow: /about/
-Allow: /expertise/
-Allow: /case-studies/
-Allow: /publications/
-Allow: /credentials/
-Allow: /contact/
+Allow: /about-dr-lavian/
+Allow: /communications-expert-witness/
+Allow: /cases-expert-witness-testimony/
+Allow: /scientific-publications/
+Allow: /talks-presentations/
+Allow: /patents/
+Allow: /corporate-clients/
 Allow: /law-firm-clients/
+Allow: /contact/
+Allow: /site-map/
 Allow: /privacy-policy/
 Allow: /terms-and-conditions/
 Disallow: /private/

@@ -128,15 +128,16 @@ Courts and Tribunals:
 ## Academic Profiles & Publications:
 
 Access Dr. Lavian's research and publications:
-- Google Scholar: https://scholar.google.com
-- Academia.edu: https://www.academia.edu
-- ResearchGate: https://www.researchgate.net
-- Google Patents: https://patents.google.com
-- Justia Patents: https://justia.com/inventors
-- ACM Digital Library: https://www.acm.org
-- IEEE Xplore: https://www.ieee.org
-- DBLP Computer Science: https://dblp.uni-trier.de
-- IEEE-CNSV: https://cnsv.ieee.org
+- Google Scholar: https://scholar.google.com/citations?user=Do_JNPQAAAAJ
+- Academia.edu: https://berkeley.academia.edu/TalLavian
+- ResearchGate: https://www.researchgate.net/profile/Tal-Lavian
+- Justia Patents: https://patents.justia.com/inventor/tal-lavian
+- ACM Digital Library: https://dl.acm.org/profile/81100233720
+- IEEE Collabratec: https://ieee-collabratec.ieee.org/app/myprofile/about
+- DBLP Computer Science: https://dblp.org/search
+- IEEE-CNSV: https://californiaconsultants.org/members/tal-lavian/
+- ScholarGPS: https://scholargps.com/scholars/98050981746055/tal-lavian
+- RateMyProfessors: https://www.ratemyprofessors.com/professor/1813887
 
 ## Career History:
 
@@ -162,12 +163,14 @@ Email: tlavian@telecommnet.com
 Website: https://telecommnet.com
 
 ### Quick Links:
-- About Dr. Lavian: https://telecommnet.com/about/
-- Case Studies: https://telecommnet.com/case-studies/
-- Publications: https://telecommnet.com/publications/
-- Credentials: https://telecommnet.com/credentials/
+- About Dr. Lavian: https://telecommnet.com/about-dr-lavian/
+- Expert Witness Services: https://telecommnet.com/communications-expert-witness/
+- Cases & Testimony: https://telecommnet.com/cases-expert-witness-testimony/
+- Scientific Publications: https://telecommnet.com/scientific-publications/
+- Patents: https://telecommnet.com/patents/
 - Contact: https://telecommnet.com/contact/
 - For Law Firms: https://telecommnet.com/law-firm-clients/
+- For Corporations: https://telecommnet.com/corporate-clients/
 
 ## Availability:
 
