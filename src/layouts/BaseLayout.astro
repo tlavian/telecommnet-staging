@@ -72,6 +72,15 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
+  <!-- Google Analytics (GA4 + Universal Analytics via gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCHFJ79Q1P"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GCHFJ79Q1P');
+    gtag('config', 'UA-116833237-1');
+  </script>
   <style is:global>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Roboto', sans-serif; color: #333; font-size: 18px; line-height: 1.5; background: #fff; }
