@@ -3,13 +3,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import { termsSchema, termsTitle, termsDescription } from '../../lib/remaining-schemas';
 
-const title = "Terms and Conditions – TelecommNet.com | Dr. Tal Lavian";
-const description = "Terms and Conditions for TelecommNet.com, the professional expert witness website of Dr. Tal Lavian, Telecommunications and Network Communications Expert Witness.";
+const title = termsTitle;
+const description = termsDescription;
 const lastUpdated = "March 2026";
 const effectiveDate = "March 1, 2026";
 ---
 
-<BaseLayout title={title} description={description} schema={termsSchema}>
+<BaseLayout title={title} description={description} schema={termsSchema} robots="noindex, follow">
   <section class="hero-banner">
     <h1>Terms and Conditions</h1>
   </section>
@@ -160,9 +160,18 @@ const effectiveDate = "March 1, 2026";
           <li><strong>Name:</strong> Dr. Tal Lavian</li>
           <li><strong>Organization:</strong> TelecommNet Engineering, Inc.</li>
           <li><strong>Location:</strong> Encino, California</li>
-          <li><strong>Email:</strong> <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></li>
-          <li><strong>Phone:</strong> <a href="tel:+14082099112">+1 (408) 209-9112</a></li>
+          <li><strong>Email:</strong> <a href="mailto:tlavian@telecommnet.com" aria-label="Email Dr. Lavian at tlavian@telecommnet.com">tlavian@telecommnet.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+14082099112" aria-label="Call Dr. Lavian at +1 (408) 209-9112">+1 (408) 209-9112</a></li>
         </ul>
+
+        <section class="related-resources" aria-label="Related pages">
+          <h2>Related Pages</h2>
+          <div class="resource-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/contact/">Contact Dr. Lavian</a>
+            <a href="/about-dr-lavian/">About Dr. Tal Lavian</a>
+          </div>
+        </section>
 
         <p class="policy-footer">
           &copy; {new Date().getFullYear()} TelecommNet Engineering, Inc. All rights reserved.<br />

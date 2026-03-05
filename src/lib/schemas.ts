@@ -90,13 +90,13 @@ export const PERSON_ENTITY = {
   ],
   sameAs: [
     'https://www.linkedin.com/in/tallavian',
-    'https://scholar.google.com/citations?user=tal-lavian',
+    'https://scholar.google.com/citations?user=Do_JNPQAAAAJ',
     'https://www.researchgate.net/profile/Tal-Lavian',
-    'https://www.academia.edu/TalLavian',
+    'https://berkeley.academia.edu/TalLavian',
     'https://patents.justia.com/inventor/tal-lavian',
-    'https://dl.acm.org/profile/tal-lavian',
-    'https://ieeexplore.ieee.org/author/tal-lavian',
-    'https://dblp.org/pid/tal-lavian',
+    'https://dl.acm.org/profile/81100233720',
+    'https://ieee-collabratec.ieee.org/app/myprofile/about',
+    'https://dblp.org/search',
   ],
 };
 
@@ -180,6 +180,10 @@ export const buildSchema = {
           url: BASE_URL,
           publisher: PERSON_REF,
           inLanguage: 'en-US',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.hero-banner h1', '.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+          },
         },
         breadcrumbs([]),
       ],
@@ -194,6 +198,10 @@ export const buildSchema = {
         {
           ...PERSON_ENTITY,
           mainEntityOfPage: `${BASE_URL}/about-dr-lavian/`,
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+          },
         },
         breadcrumbs([{ name: 'About Dr. Lavian', url: '/about-dr-lavian/' }]),
       ],
@@ -213,6 +221,10 @@ export const buildSchema = {
           description:
             'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
           areaServed: { '@type': 'Country', name: 'United States' },
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+          },
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
             name: 'Expert Witness Practice Areas',
@@ -298,6 +310,88 @@ export const buildSchema = {
 
   /** Publications: CollectionPage + ScholarlyArticle[] + BreadcrumbList */
   publications() {
+    const publicationEntries = [
+      {
+        position: 1,
+        name: 'Communications Architecture — Grid Computing',
+        datePublished: '2013',
+        publisher: "Scholar's Press",
+        isbn: '978-3-639-51098-0',
+      },
+      {
+        position: 2,
+        name: 'Understanding Six Models of Advanced R&D',
+        datePublished: '2015-06',
+        publisher: 'ASEE Annual Conference and Exposition',
+        coAuthors: ['Ikhlaq Sidhu', 'Victoria Howell'],
+      },
+      {
+        position: 3,
+        name: 'Applications Drive Secure Lightpath Creation Across Heterogeneous Domains',
+        datePublished: '2006-03',
+        publisher: 'IEEE Communications Magazine',
+        volumeNumber: '44',
+        issueNumber: '3',
+      },
+      {
+        position: 4,
+        name: 'Data Communications Architecture Grid Computing',
+        datePublished: '2006-01',
+        publisher: 'University of California, Berkeley',
+        coAuthors: ['Randy H. Katz'],
+      },
+      {
+        position: 5,
+        name: 'Information Switching Networks',
+        datePublished: '2005-12',
+        publisher: 'WITSP 2005 — 4th Workshop on Internet, Telecommunications and Signal Processing',
+        coAuthors: ['Doan B. Hoang'],
+      },
+      {
+        position: 6,
+        name: 'Grid Network Services',
+        datePublished: '2005',
+        publisher: 'Global Grid Forum (GGF)',
+      },
+      {
+        position: 7,
+        name: 'Grid Computing — Impact on Network Operators',
+        datePublished: '2005',
+        publisher: 'IEEE Hot Interconnects, Stanford University',
+      },
+      {
+        position: 8,
+        name: 'Project DRAC: Creating an Applications-Aware Network',
+        datePublished: '2005-02',
+        publisher: 'Nortel Technical Journal',
+        coAuthors: ['Franco Travostino', 'Robert Keates', 'Inder Monga', 'Bill Schofield'],
+      },
+      {
+        position: 9,
+        name: 'Data Intensive Grid Service on Optical Networks',
+        datePublished: '2004',
+        publisher: 'IEEE/ACM CCGrid 2004',
+      },
+      {
+        position: 10,
+        name: 'Quality of Control Loop on Programmable Routers',
+        datePublished: '2004-11',
+        publisher: 'IEEE ICON 2004 — 12th IEEE International Conference on Networks',
+      },
+      {
+        position: 11,
+        name: 'Large-Scale Grid Data Networks',
+        datePublished: '2004-10',
+        publisher: 'GridNets 2004',
+      },
+      {
+        position: 12,
+        name: 'Optical Network Infrastructure for Grid',
+        datePublished: '2004-08',
+        publisher: 'Global Grid Forum (GGF) GHPN Standard GFD-I.036',
+      },
+    ];
+
     return {
       '@context': 'https://schema.org',
       '@graph': [
@@ -310,30 +404,128 @@ export const buildSchema = {
           author: PERSON_REF,
           about: 'Telecommunications and Network Communications Research',
           inLanguage: 'en-US',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
+          },
         },
         {
           '@type': 'ItemList',
           name: 'Publications by Dr. Tal Lavian',
           description: '25+ peer-reviewed publications in IEEE, ACM, and related venues.',
           numberOfItems: 25,
-          itemListElement: [
-            {
-              '@type': 'ScholarlyArticle',
-              position: 1,
-              name: 'Research Publication',
-              author: PERSON_REF,
-              publisher: { '@type': 'Organization', name: 'IEEE / ACM' },
-              about: 'Telecommunications and Network Communications',
-            },
-          ],
+          itemListElement: publicationEntries.map(pub => ({
+            '@type': 'ScholarlyArticle',
+            position: pub.position,
+            headline: pub.name,
+            name: pub.name,
+            author: PERSON_REF,
+            datePublished: pub.datePublished,
+            publisher: { '@type': 'Organization', name: pub.publisher },
+            about: 'Telecommunications and Network Communications',
+            inLanguage: 'en-US',
+          })),
         },
         breadcrumbs([{ name: 'Scientific Publications', url: '/scientific-publications/' }]),
       ],
     };
   },
 
-  /** Talks: CollectionPage + Event[] + BreadcrumbList */
+  /** Talks: CollectionPage + EducationEvent[] + BreadcrumbList */
   talks() {
+    const presentationEntries = [
+      {
+        position: 1,
+        name: 'Lambda Data Grid: An Agile Optical Platform for Grid Computing and Data-intensive Applications',
+        organizer: 'IEEE / DARPA',
+        about: 'Grid Computing, Optical Networks',
+      },
+      {
+        position: 2,
+        name: 'Workflow Integrated Network Resource Orchestration',
+        organizer: 'Global Grid Forum (GGF)',
+        about: 'Network Resource Orchestration, Workflow Integration',
+      },
+      {
+        position: 3,
+        name: 'DWDM-RAM: DARPA-Sponsored Research for Data Intensive Service on Demand',
+        organizer: 'DARPA / SLAC National Accelerator Laboratory',
+        about: 'DWDM, Optical Networks, Data-Intensive Services',
+      },
+      {
+        position: 4,
+        name: 'Impact of Grid Computing on Network Operators and HW Vendors',
+        organizer: 'IEEE Hot Interconnects, Stanford University',
+        about: 'Grid Computing, Network Operators',
+      },
+      {
+        position: 5,
+        name: 'Web Services and OGSA',
+        organizer: 'Grid Computing Conference',
+        about: 'Web Services, Open Grid Services Architecture',
+      },
+      {
+        position: 6,
+        name: 'A Platform for Large-Scale Grid Data Service on Dynamic High-Performance Networks',
+        organizer: 'GridNets Conference',
+        about: 'Grid Data Services, High-Performance Networks',
+      },
+      {
+        position: 7,
+        name: 'Grid Optical Network Service Architecture for Data Intensive Applications',
+        organizer: 'OFC Conference',
+        about: 'Optical Network Services, Grid Computing',
+      },
+      {
+        position: 8,
+        name: 'Optical Networking and DWDM',
+        organizer: 'Industry Conference',
+        about: 'Optical Networking, Dense Wavelength Division Multiplexing',
+      },
+      {
+        position: 9,
+        name: 'A Platform for Data Intensive Services Enabled by Next Generation Dynamic Optical Networks',
+        organizer: 'IEEE Globecom',
+        about: 'Data-Intensive Services, Next-Generation Optical Networks',
+      },
+      {
+        position: 10,
+        name: 'Optical Networks — UC Berkeley Seminar',
+        organizer: 'University of California, Berkeley',
+        about: 'Optical Networks, Telecommunications',
+      },
+      {
+        position: 11,
+        name: 'Application-engaged Dynamic Orchestration of Optical Network Resources',
+        organizer: 'Optical Workshop',
+        about: 'Dynamic Orchestration, Optical Network Resources',
+      },
+      {
+        position: 12,
+        name: 'A Grid Proxy Architecture for Network Resources',
+        organizer: 'Global Grid Forum (GGF)',
+        about: 'Grid Proxy, Network Resource Management',
+      },
+      {
+        position: 13,
+        name: 'Technologies Shaped Our Society — UC Berkeley Seminar',
+        organizer: 'University of California, Berkeley',
+        about: 'Technology and Society, Telecommunications History',
+      },
+      {
+        position: 14,
+        name: 'Open Programmable Architecture for Java-enabled Network Devices',
+        organizer: 'IEEE / Industry Conference',
+        about: 'Programmable Networks, Java, Active Networking',
+      },
+      {
+        position: 15,
+        name: 'Active Nets Technology Transfer through High-Performance Network Devices',
+        organizer: 'DARPA',
+        about: 'Active Networks, Technology Transfer',
+      },
+    ];
+
     return {
       '@context': 'https://schema.org',
       '@graph': [
@@ -344,21 +536,28 @@ export const buildSchema = {
             'Conference presentations and technical talks by Dr. Tal Lavian at IEEE, ACM, UC Berkeley, DARPA events, and industry conferences on telecommunications and networking.',
           url: `${BASE_URL}/talks-presentations/`,
           author: PERSON_REF,
+          about: 'Telecommunications and Network Communications Research Presentations',
+          inLanguage: 'en-US',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
+          },
         },
         {
           '@type': 'ItemList',
           name: 'Presentations by Dr. Tal Lavian',
-          itemListElement: [
-            {
-              '@type': 'Event',
-              position: 1,
-              name: 'Technical Presentation',
-              performer: PERSON_REF,
-              organizer: { '@type': 'Organization', name: 'IEEE / ACM / DARPA' },
-              about: 'Telecommunications and Network Communications',
-              location: { '@type': 'Place', name: 'Academic / Industry Conference' },
-            },
-          ],
+          description: '30+ conference presentations and technical talks at IEEE, ACM, DARPA, and UC Berkeley.',
+          numberOfItems: 30,
+          itemListElement: presentationEntries.map(pres => ({
+            '@type': 'EducationEvent',
+            position: pres.position,
+            name: pres.name,
+            performer: PERSON_REF,
+            organizer: { '@type': 'Organization', name: pres.organizer },
+            about: pres.about,
+            eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+            inLanguage: 'en-US',
+          })),
         },
         breadcrumbs([{ name: 'Talks & Presentations', url: '/talks-presentations/' }]),
       ],
