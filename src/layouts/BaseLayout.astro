@@ -88,6 +88,57 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     gtag('config', 'G-GCHFJ79Q1P');
     gtag('config', 'UA-116833237-1');
   </script>
+  <!-- GA4 Event Tracking -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Track phone link clicks
+      document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'phone_click', {
+            event_category: 'engagement',
+            event_label: link.getAttribute('href')
+          });
+        });
+      });
+      // Track email link clicks
+      document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'email_click', {
+            event_category: 'engagement',
+            event_label: link.getAttribute('href')
+          });
+        });
+      });
+      // Track CTA button clicks
+      document.querySelectorAll('.cta-button, .hero-cta').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          gtag('event', 'cta_click', {
+            event_category: 'engagement',
+            event_label: btn.textContent.trim()
+          });
+        });
+      });
+      // Track contact form submissions
+      var contactForm = document.querySelector('form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function() {
+          gtag('event', 'contact_form_submit', {
+            event_category: 'conversion',
+            event_label: window.location.pathname
+          });
+        });
+      }
+      // Track CV download clicks
+      document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'file_download', {
+            event_category: 'engagement',
+            event_label: link.getAttribute('href')
+          });
+        });
+      });
+    });
+  </script>
   <style is:global>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Roboto', sans-serif; color: #333; font-size: 18px; line-height: 1.5; background: #fff; }
