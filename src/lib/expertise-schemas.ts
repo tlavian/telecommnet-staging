@@ -100,11 +100,11 @@ const internetTitle = "Internet Expert Witness — Dr. Tal Lavian | TelecommNet"
 const internetDescription = "Internet protocols expert witness. TCP/IP, HTTP, DNS, web technologies expertise for patent litigation. Ph.D. UC Berkeley in network communications. PTAB & ITC testimony.";
 
 // ─── 4. VOIP EXPERT WITNESS ───────────────────────────────────────────────
-// File: src/pages/communications-expert-witness/voip-expert-witness/index.astro
+// File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
 
 const voipSchema = buildSchema.expertisePage({
   name: 'VoIP Expert Witness',
-  slug: 'voip-expert-witness',
+  slug: 'voice-over-ip-voip-expert',
   description: 'Expert witness in VoIP and unified communications for patent litigation. SIP, RTP, H.323, voice-over-IP systems, and unified communications expertise for federal courts and PTAB.',
   serviceType: 'VoIP Expert Witness',
   keywords: ['VoIP expert witness', 'SIP protocol expert', 'RTP patent litigation', 'voice over IP PTAB', 'unified communications expert', 'H.323 patent'],
@@ -129,11 +129,11 @@ const voipTitle = "VoIP Expert Witness — Dr. Tal Lavian | TelecommNet";
 const voipDescription = "VoIP expert witness for patent litigation. SIP, RTP, H.323, unified communications expertise. Federal court and USPTO PTAB testimony. Ph.D. UC Berkeley.";
 
 // ─── 5. NETWORK SECURITY EXPERT WITNESS ──────────────────────────────────
-// File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
+// File: src/pages/communications-expert-witness/network-security-expert/index.astro
 
 const networkSecuritySchema = buildSchema.expertisePage({
   name: 'Network Security Expert Witness',
-  slug: 'network-security-expert-witness',
+  slug: 'network-security-expert',
   description: 'Expert witness in network security for patent litigation. Encryption, authentication, firewalls, intrusion detection, and cybersecurity standards expertise for federal courts and PTAB.',
   serviceType: 'Network Security Expert Witness',
   keywords: ['network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent'],
@@ -158,11 +158,11 @@ const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian
 const networkSecurityDescription = "Network security expert witness. Encryption, authentication, firewalls, intrusion detection, cybersecurity standards expertise for patent litigation. Federal court & PTAB.";
 
 // ─── 6. STREAMING MEDIA EXPERT WITNESS ───────────────────────────────────
-// File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
+// File: src/pages/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/index.astro
 
 const streamingSchema = buildSchema.expertisePage({
   name: 'Streaming Media Expert Witness',
-  slug: 'streaming-media-expert-witness',
+  slug: 'streaming-media-audio-and-video-conferencing-expert',
   description: 'Expert witness in streaming media for patent litigation. Audio/video streaming protocols, conferencing systems, QoS, adaptive bitrate, and multimedia communications expertise.',
   serviceType: 'Streaming Media Expert Witness',
   keywords: ['streaming media expert witness', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert'],
