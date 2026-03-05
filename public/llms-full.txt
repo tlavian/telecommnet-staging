@@ -80,12 +80,12 @@ Each expertise area has a dedicated page with detailed information:
 - Network management systems (SNMP, MIB, RMON)
 - Software-Defined Networking (SDN, OpenFlow, NFV)
 
-### Wireless & Mobile Systems
-- Mobile wireless communications (2G GSM, 3G UMTS, 4G LTE, 5G NR)
-- Cellular network technologies and 3GPP standards
+### Wireless & Mobile Communications
 - Wi-Fi (IEEE 802.11a/b/g/n/ac/ax) and Bluetooth
+- Wireless LAN protocols and wireless networking
+- Mobile communications systems and architectures
 - Wireless RF technologies and spectrum management
-- Cellular standards and protocols (LTE-A, NR, VoLTE)
+- Wireless network security and access control
 
 ### Real-Time Communications
 - Voice over IP (VoIP) systems (SIP, RTP, SRTP, H.323)
@@ -118,7 +118,7 @@ Each expertise area has a dedicated page with detailed information:
 ### Standards & Compliance
 - IEEE standards (networking, communications)
 - IETF Internet standards (RFC documents)
-- Telecommunications standards (3GPP, ITU)
+- Telecommunications standards (ITU, ETSI)
 - Industry standard development and participation
 - Compliance and conformance testing
 
@@ -276,8 +276,8 @@ A: Dr. Lavian is an expert in VoIP technologies including SIP, RTP, H.323, SRTP,
 Q: Can Dr. Lavian testify in PTAB IPR proceedings?
 A: Yes. Dr. Lavian has extensive experience in USPTO PTAB proceedings including Inter Partes Reviews (IPR), Post Grant Reviews (PGR), Covered Business Method (CBM) reviews, and Ex Parte Reexaminations. He has been retained for PTAB cases involving major technology companies.
 
-Q: What is Dr. Lavian's experience with 5G and wireless technology?
-A: Dr. Lavian has expertise in mobile wireless technologies spanning 2G GSM through 5G NR, including LTE, 3GPP standards, Wi-Fi (IEEE 802.11), Bluetooth, and spectrum management. He has patents and publications in wireless communications. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/
+Q: What is Dr. Lavian's experience with wireless communications technology?
+A: Dr. Lavian has expertise in wireless communications technologies including Wi-Fi (IEEE 802.11), Bluetooth, wireless LAN protocols, mobile communications systems, and spectrum management. He has patents and publications in wireless networking. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/
 
 Q: Does Dr. Lavian have experience with network security cases?
 A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL, IPsec), authentication (PKI, RADIUS), firewalls, intrusion detection (IDS/IPS), DDoS mitigation, and cybersecurity standards (NIST, ISO 27001). He holds patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert/

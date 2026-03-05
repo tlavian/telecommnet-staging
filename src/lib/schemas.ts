@@ -80,7 +80,7 @@ export const PERSON_ENTITY = {
     'Streaming Media and Video Conferencing',
     'Computer Networking (LAN, WAN, Ethernet)',
     'Data Communications and Cloud Computing',
-    'Mobile Wireless (2G, 3G, 4G LTE, 5G NR)',
+    'Wireless Communications and Wi-Fi',
     'Routing and Switching (BGP, OSPF, MPLS)',
     'Network Management (SNMP, MIB)',
     'Software-Defined Networking (SDN/NFV)',

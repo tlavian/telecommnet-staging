@@ -80,12 +80,12 @@ Each expertise area has a dedicated page with detailed information:
 - Network management systems (SNMP, MIB, RMON)
 - Software-Defined Networking (SDN, OpenFlow, NFV)
 
-### Wireless & Mobile Systems
-- Mobile wireless communications (2G GSM, 3G UMTS, 4G LTE, 5G NR)
-- Cellular network technologies and 3GPP standards
+### Wireless & Mobile Communications
 - Wi-Fi (IEEE 802.11a/b/g/n/ac/ax) and Bluetooth
+- Wireless LAN protocols and wireless networking
+- Mobile communications systems and architectures
 - Wireless RF technologies and spectrum management
-- Cellular standards and protocols (LTE-A, NR, VoLTE)
+- Wireless network security and access control
 
 ### Real-Time Communications
 - Voice over IP (VoIP) systems (SIP, RTP, SRTP, H.323)
@@ -111,7 +111,7 @@ Each expertise area has a dedicated page with detailed information:
 ### Standards & Compliance
 - IEEE standards (networking, communications)
 - IETF Internet standards
-- Telecommunications standards (3GPP, ITU)
+- Telecommunications standards (ITU, ETSI)
 - Industry standard development
 - Compliance and conformance testing
 

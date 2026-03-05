@@ -1,8 +1,13 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { messagingChatSchema, messagingChatTitle, messagingChatDescription } from '../../../lib/expertise-schemas';
 ---
 
-<BaseLayout title="Messaging & Chat Expert Witness — Dr. Tal Lavian | TelecommNet" description="Messaging and chat expert witness. SMS, MMS, instant messaging, chat protocols expertise for patent litigation. Federal court & USPTO PTAB testimony. Ph.D. UC Berkeley.">
+<BaseLayout
+  title={messagingChatTitle}
+  description={messagingChatDescription}
+  schema={messagingChatSchema}
+>
 
   <div class="hero-banner">
     <h1>Messaging and Chats Expert</h1>
