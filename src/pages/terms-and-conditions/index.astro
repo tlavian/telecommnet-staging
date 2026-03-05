@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
+import { termsSchema, termsTitle, termsDescription } from '../../lib/remaining-schemas';
 
 const title = "Terms and Conditions – TelecommNet.com | Dr. Tal Lavian";
 const description = "Terms and Conditions for TelecommNet.com, the professional expert witness website of Dr. Tal Lavian, Telecommunications and Network Communications Expert Witness.";
@@ -8,7 +9,7 @@ const lastUpdated = "March 2026";
 const effectiveDate = "March 1, 2026";
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} schema={termsSchema}>
   <section class="hero-banner">
     <h1>Terms and Conditions</h1>
   </section>

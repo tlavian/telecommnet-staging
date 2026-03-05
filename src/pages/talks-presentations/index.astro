@@ -1,21 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Talks and Presentations",
-  "description": "Conference talks and presentations by Dr. Tal Lavian on telecommunications, network communications, and Internet technologies.",
-  "mainEntity": { "@id": "https://telecommnet.com/#person" },
-  "url": "https://telecommnet.com/talks-presentations/"
-};
+import { talksSchema, talksTitle, talksDescription } from '../../lib/remaining-schemas';
 ---
 
 <BaseLayout
-  title="Talks and Presentations by Dr. Lavian - Telecommunications"
-  description="Talks and presentations by Dr. Tal Lavian. Conference presentations on telecommunications, network communications, and Internet technologies."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Talks & Presentations", url: "/talks-presentations/"}]}
+  title={talksTitle}
+  description={talksDescription}
+  schema={talksSchema}
 >
 
   <div class="hero-banner">

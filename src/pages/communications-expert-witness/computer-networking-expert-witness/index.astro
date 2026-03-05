@@ -1,35 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "Computer Networking Expert Witness",
-      "serviceType": "Expert Witness Consulting",
-      "description": "Expert witness services in computer networking including network protocols, routers, switches, LAN/WAN, and network architecture for patent litigation.",
-      "provider": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "url": "https://telecommnet.com/communications-expert-witness/computer-networking-expert-witness/"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "What computer networking areas does Dr. Lavian specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian specializes in network protocols, routers, switches, LAN/WAN architectures, network management, network automation, and the design and implementation of enterprise and service provider networks." } },
-        { "@type": "Question", "name": "How does a computer networking expert help in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "A computer networking expert analyzes patent claims related to networking hardware and software, evaluates network protocol implementations, provides claim construction opinions, and testifies on infringement and validity." } },
-        { "@type": "Question", "name": "What networking standards and protocols is Dr. Lavian proficient in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is proficient in TCP/IP, Ethernet (IEEE 802.3), Wi-Fi (IEEE 802.11), OSPF, BGP, MPLS, VLAN, QoS, SNMP, and OSI layers 1-7 standards and implementations." } }
-      ]
-    }
-  ]
-};
+import { computerNetworkingSchema, computerNetworkingTitle, computerNetworkingDescription } from '../../../lib/expertise-schemas';
 ---
 
 <BaseLayout
-  title="Computer Networking Expert Witness Services"
-  description="Computer networking expert witness. Network protocols, routers, switches, LAN/WAN expertise for patent litigation. PhD UC Berkeley."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Computer Networking", url: "/communications-expert-witness/computer-networking-expert-witness/"}]}
+  title={computerNetworkingTitle}
+  description={computerNetworkingDescription}
+  schema={computerNetworkingSchema}
 >
 
   <div class="hero-banner">

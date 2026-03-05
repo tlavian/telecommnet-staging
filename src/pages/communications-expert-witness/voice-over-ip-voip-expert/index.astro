@@ -1,35 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "VoIP Expert Witness",
-      "serviceType": "Expert Witness Consulting",
-      "description": "Expert witness services in Voice over IP (VoIP) including SIP, RTP, voice-over-IP systems, and unified communications for patent litigation.",
-      "provider": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "url": "https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "What VoIP protocols are commonly at issue in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "VoIP patent cases commonly involve SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), H.323, SRTP, codec technologies, and unified communications platforms." } },
-        { "@type": "Question", "name": "How does a VoIP expert witness assist in patent litigation?", "acceptedAnswer": { "@type": "Answer", "text": "A VoIP expert witness analyzes patent claims related to voice-over-IP systems, evaluates SIP/RTP implementations, provides opinions on claim construction and infringement, and testifies in federal court and PTAB proceedings." } },
-        { "@type": "Question", "name": "What VoIP technologies does Dr. Lavian specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian specializes in SIP, RTP, H.323, VoIP gateway architectures, PSTN-to-IP migration, unified communications, and quality of service for voice networks, with 120+ patents in telecommunications." } }
-      ]
-    }
-  ]
-};
+import { voipSchema, voipTitle, voipDescription } from '../../../lib/expertise-schemas';
 ---
 
 <BaseLayout
-  title="Voice Over IP (VoIP) Expert Witness Services"
-  description="VoIP expert witness for patent litigation. SIP, RTP, voice-over-IP systems, unified communications expertise. Federal court and PTAB testimony."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "VoIP", url: "/communications-expert-witness/voice-over-ip-voip-expert/"}]}
+  title={voipTitle}
+  description={voipDescription}
+  schema={voipSchema}
 >
 
   <div class="hero-banner">

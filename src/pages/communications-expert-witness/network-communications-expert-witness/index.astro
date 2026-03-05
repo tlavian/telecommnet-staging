@@ -1,35 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "Network Communications Expert Witness",
-      "serviceType": "Expert Witness Consulting",
-      "description": "Expert witness services in network communications including computer networks, data communications, and Internet protocols for patent litigation.",
-      "provider": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "url": "https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "What network communications areas does Dr. Lavian specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian specializes in computer networks, data communications, Internet protocols (TCP/IP), network architectures, routers, switches, gateways, packet switching, and communication systems." } },
-        { "@type": "Question", "name": "How does a network communications expert assist in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "A network communications expert analyzes patent claims related to networking technologies, evaluates prior art in network protocols and architectures, provides claim construction opinions, and testifies in federal court and PTAB proceedings." } },
-        { "@type": "Question", "name": "What is Dr. Lavian's background in network communications?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian has a PhD from UC Berkeley in computer science specializing in network communications, with extensive hands-on experience in software development, system architecture, and network protocol design." } }
-      ]
-    }
-  ]
-};
+import { networkCommsSchema, networkCommsTitle, networkCommsDescription } from '../../../lib/expertise-schemas';
 ---
 
 <BaseLayout
-  title="Network Communications Expert Witness Services"
-  description="Network communications expert witness. Computer networks, data communications, TCP/IP expertise for patent litigation. PhD UC Berkeley."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Network Communications", url: "/communications-expert-witness/network-communications-expert-witness/"}]}
+  title={networkCommsTitle}
+  description={networkCommsDescription}
+  schema={networkCommsSchema}
 >
 
   <div class="hero-banner">

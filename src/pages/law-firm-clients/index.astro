@@ -1,20 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Law Firm Clients",
-  "description": "Law firms that have retained Dr. Lavian for expert witness services in telecommunications and network communications patent cases.",
-  "url": "https://telecommnet.com/law-firm-clients/"
-};
+import { lawFirmClientsSchema, lawFirmClientsTitle, lawFirmClientsDescription } from '../../lib/remaining-schemas';
 ---
 
 <BaseLayout
-  title="Law Firm Clients Expert Witness Telecommunications"
-  description="Law firm clients of Dr. Tal Lavian. Leading IP litigation firms retaining telecommunications expert witness for patent cases."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Law Firm Clients", url: "/law-firm-clients/"}]}
+  title={lawFirmClientsTitle}
+  description={lawFirmClientsDescription}
+  schema={lawFirmClientsSchema}
 >
 
   <div class="hero-banner">

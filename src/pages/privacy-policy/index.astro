@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
+import { privacySchema, privacyTitle, privacyDescription } from '../../lib/remaining-schemas';
 
 const title = "Privacy Policy – TelecommNet.com | Dr. Tal Lavian";
 const description = "Privacy Policy for TelecommNet.com. Learn how we handle visitor information, our use of Google Analytics, and Cloudflare infrastructure.";
@@ -8,7 +9,7 @@ const lastUpdated = "March 2026";
 const effectiveDate = "March 1, 2026";
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} schema={privacySchema}>
   <section class="hero-banner">
     <h1>Privacy Policy</h1>
   </section>

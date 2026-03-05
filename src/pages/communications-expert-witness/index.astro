@@ -1,46 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildSchema } from '../../lib/schemas';
 
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://telecommnet.com/communications-expert-witness/#service",
-      "name": "Communications Expert Witness Services",
-      "description": "Expert witness consulting services in telecommunications, networking, Internet protocols, VoIP, and data communications for patent litigation.",
-      "url": "https://telecommnet.com/communications-expert-witness/",
-      "provider": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Expert Witness Specialty Areas",
-        "itemListElement": [
-          { "@type": "Service", "name": "Telecommunications Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/" },
-          { "@type": "Service", "name": "Network Communications Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/" },
-          { "@type": "Service", "name": "Internet Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/internet-expert-witness/" },
-          { "@type": "Service", "name": "VoIP Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/" },
-          { "@type": "Service", "name": "Network Security Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/network-security-expert/" },
-          { "@type": "Service", "name": "Streaming Media Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/" },
-          { "@type": "Service", "name": "Computer Networking Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/computer-networking-expert-witness/" },
-          { "@type": "Service", "name": "Data Communications Expert", "url": "https://telecommnet.com/communications-expert-witness/data-communications-expert/" },
-          { "@type": "Service", "name": "Mobile Wireless Expert", "url": "https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/" },
-          { "@type": "Service", "name": "Routing & Switching Expert", "url": "https://telecommnet.com/communications-expert-witness/routing-switching-expert/" },
-          { "@type": "Service", "name": "Network Management Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/network-management-expert-witness/" },
-          { "@type": "Service", "name": "Networking Expert", "url": "https://telecommnet.com/communications-expert-witness/networking-expert/" },
-          { "@type": "Service", "name": "Messaging and Chat Expert Witness", "url": "https://telecommnet.com/communications-expert-witness/messaging-and-chat-expert-witness/" }
-        ]
-      }
-    }
-  ]
-};
+const schema = buildSchema.expertWitnessHub();
 ---
 
 <BaseLayout
   title="Communications Expert Witness Services"
   description="Communications expert witness services. Telecommunications, networking, Internet protocols, VoIP, data communications expertise for patent litigation. PhD UC Berkeley."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}]}
+  schema={schema}
 >
   <div class="hero-banner">
     <h1>Expert Witness Services</h1>

@@ -1,21 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Scientific Publications",
-  "description": "Peer-reviewed scientific publications by Dr. Tal Lavian in telecommunications, network communications, and Internet protocols.",
-  "mainEntity": { "@id": "https://telecommnet.com/#person" },
-  "url": "https://telecommnet.com/scientific-publications/"
-};
+import { publicationsSchema, publicationsTitle, publicationsDescription } from '../../lib/remaining-schemas';
 ---
 
 <BaseLayout
-  title="Scientific Publications by Dr. Tal Lavian - Telecommunications"
-  description="Scientific publications by Dr. Tal Lavian. Peer-reviewed research in telecommunications, network communications, and Internet protocols."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Publications", url: "/scientific-publications/"}]}
+  title={publicationsTitle}
+  description={publicationsDescription}
+  schema={publicationsSchema}
 >
 
   <div class="hero-banner">

@@ -1,21 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Expert Witness Cases and Testimony",
-  "description": "Patent cases and expert witness testimony by Dr. Tal Lavian in telecommunications, networking, and Internet protocol disputes.",
-  "mainEntity": { "@id": "https://telecommnet.com/#person" },
-  "url": "https://telecommnet.com/cases-expert-witness-testimony/"
-};
+import { casesSchema, casesTitle, casesDescription } from '../../lib/remaining-schemas';
 ---
 
 <BaseLayout
-  title="List of patent cases by Dr. Lavian - Cases - telecommnet.com"
-  description="Expert witness cases by Dr. Tal Lavian. Patent litigation testimony in telecommunications, networking, and Internet protocol disputes."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Cases", url: "/cases-expert-witness-testimony/"}]}
+  title={casesTitle}
+  description={casesDescription}
+  schema={casesSchema}
 >
 
   <div class="hero-banner">

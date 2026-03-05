@@ -1,35 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "Routing and Switching Expert Witness",
-      "serviceType": "Expert Witness Consulting",
-      "description": "Expert witness services in routing and switching including routers, switches, routing protocols, OSPF, BGP, and network infrastructure for patent litigation.",
-      "provider": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "url": "https://telecommnet.com/communications-expert-witness/routing-switching-expert/"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "What routing and switching technologies does Dr. Lavian cover?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian covers routing protocols (OSPF, BGP, RIP, EIGRP), switch architectures, router design, LAN/WAN infrastructure, VLANs, spanning tree, and network equipment architectures." } },
-        { "@type": "Question", "name": "How does a routing and switching expert assist in patent litigation?", "acceptedAnswer": { "@type": "Answer", "text": "A routing and switching expert analyzes patent claims related to router and switch architectures, evaluates protocol implementations, provides claim construction opinions, and testifies on infringement and validity." } },
-        { "@type": "Question", "name": "What routing and switching standards is Dr. Lavian familiar with?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is familiar with OSPF (RFC 2328), BGP (RFC 4271), IEEE 802.1Q (VLANs), IEEE 802.1D (Spanning Tree), MPLS, and standards governing Layer 2/3 forwarding and routing." } }
-      ]
-    }
-  ]
-};
+import { routingSwitchingSchema, routingSwitchingTitle, routingSwitchingDescription } from '../../../lib/expertise-schemas';
 ---
 
 <BaseLayout
-  title="Routing and Switching Expert Witness Services"
-  description="Routing and switching expert witness. Routers, switches, OSPF, BGP, network infrastructure expertise for patent litigation. PhD UC Berkeley."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Routing & Switching", url: "/communications-expert-witness/routing-switching-expert/"}]}
+  title={routingSwitchingTitle}
+  description={routingSwitchingDescription}
+  schema={routingSwitchingSchema}
 >
 
   <div class="hero-banner">

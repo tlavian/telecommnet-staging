@@ -1,73 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildSchema } from '../lib/schemas';
 
-const homeSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://telecommnet.com/#person",
-      "name": "Dr. Tal Lavian",
-      "jobTitle": "Telecommunications Expert Witness Consultant",
-      "url": "https://telecommnet.com",
-      "telephone": "+1-408-209-9112",
-      "email": "tlavian@telecommnet.com",
-      "image": "https://telecommnet.com/wp-content/uploads/2024/01/Dr-Tal-Lavian-Expert-Witness.jpg",
-      "description": "World-renowned telecommunications expert witness with PhD from UC Berkeley, 120+ patents, and 25+ peer-reviewed publications. Expert testimony in federal courts, USPTO PTAB, and ITC.",
-      "address": { "@type": "PostalAddress", "addressLocality": "Encino", "addressRegion": "CA", "addressCountry": "US" },
-      "alumniOf": { "@type": "CollegeOrUniversity", "@id": "https://berkeley.edu", "name": "University of California, Berkeley" },
-      "hasCredential": [{
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "PhD",
-        "name": "PhD in Computer Science",
-        "educationalLevel": "Doctoral",
-        "recognizedBy": { "@id": "https://berkeley.edu" }
-      }],
-      "knowsAbout": ["Telecommunications", "Network Communications", "Computer Networks", "Internet Protocols", "TCP/IP", "VoIP", "Mobile Wireless", "Network Security", "Routing and Switching", "Data Communications", "Streaming Media", "Network Management"],
-      "sameAs": [
-        "https://www.linkedin.com/in/tallavian",
-        "https://scholar.google.com/citations?user=Do_JNPQAAAAJ",
-        "https://www.researchgate.net/profile/Tal-Lavian",
-        "https://berkeley.academia.edu/TalLavian",
-        "https://patents.justia.com/inventor/tal-lavian",
-        "https://dl.acm.org/profile/81100233720",
-        "https://scholargps.com/scholars/98050981746055/tal-lavian",
-        "https://www.ratemyprofessors.com/professor/1813887",
-        "https://californiaconsultants.org/members/tal-lavian/",
-        "https://x.com/tlavian",
-        "https://www.facebook.com/tal.lavianwork"
-      ]
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://telecommnet.com/#business",
-      "name": "TelecommNet - Dr. Tal Lavian Expert Witness Consulting",
-      "url": "https://telecommnet.com",
-      "telephone": "+1-408-209-9112",
-      "email": "tlavian@telecommnet.com",
-      "description": "Telecommunications expert witness consulting for patent litigation, ITC proceedings, and federal court cases.",
-      "founder": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "serviceType": "Expert Witness Consulting",
-      "knowsAbout": ["Telecommunications", "Network Communications", "Internet Protocols", "VoIP", "Network Security", "Mobile Wireless"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://telecommnet.com/#website",
-      "name": "TelecommNet",
-      "url": "https://telecommnet.com",
-      "publisher": { "@id": "https://telecommnet.com/#person" },
-      "description": "Telecommunications expert witness consulting by Dr. Tal Lavian"
-    }
-  ]
-};
+const schema = buildSchema.homepage();
 ---
 
 <BaseLayout
   title="Telecommunications Expert Witness Consulting - Dr. Tal Lavian"
   description="Dr. Tal Lavian — Telecommunications expert witness with 120+ patents, PhD UC Berkeley. Expert testimony in federal courts, USPTO PTAB, and ITC."
-  schema={homeSchema}
-  breadcrumbs={[{name: "Home", url: "/"}]}
+  schema={schema}
 >
 
   <!-- Hero Banner with background image + dark overlay (matches production) -->

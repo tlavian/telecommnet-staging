@@ -1,35 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-
-const pageSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "Streaming Media and Video Conferencing Expert Witness",
-      "serviceType": "Expert Witness Consulting",
-      "description": "Expert witness services in streaming media, audio/video conferencing, SIP, RTP, H.323, and unified communications for patent litigation.",
-      "provider": { "@id": "https://telecommnet.com/#person" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "url": "https://telecommnet.com/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "What streaming media technologies does Dr. Lavian cover?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian covers multimedia streaming, audio/video conferencing, SIP, RTP, RTCP, H.323, MGCP, codecs, and unified communications over TCP/IP protocol stack." } },
-        { "@type": "Question", "name": "How does a streaming media expert assist in patent cases?", "acceptedAnswer": { "@type": "Answer", "text": "A streaming media expert analyzes patent claims related to real-time communications, evaluates streaming protocol implementations, provides claim construction opinions, and testifies on infringement and validity." } },
-        { "@type": "Question", "name": "What conferencing protocols is Dr. Lavian proficient in?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lavian is proficient in SIP, H.323, RTP/RTCP, MGCP, WebRTC, and related protocols for session management, media transport, and quality of service in real-time communications." } }
-      ]
-    }
-  ]
-};
+import { streamingSchema, streamingTitle, streamingDescription } from '../../../lib/expertise-schemas';
 ---
 
 <BaseLayout
-  title="Streaming Media and Video Conferencing Expert Witness Services"
-  description="Streaming media and video conferencing expert witness. SIP, RTP, H.323, unified communications expertise for patent litigation. PhD UC Berkeley."
-  schema={pageSchema}
-  breadcrumbs={[{name: "Home", url: "/"}, {name: "Expert Witness", url: "/communications-expert-witness/"}, {name: "Streaming Media", url: "/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/"}]}
+  title={streamingTitle}
+  description={streamingDescription}
+  schema={streamingSchema}
 >
 
   <div class="hero-banner">
