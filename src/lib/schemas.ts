@@ -100,6 +100,12 @@ export const PERSON_ENTITY = {
     'https://patents.justia.com/inventor/tal-lavian',
     'https://dl.acm.org/profile/81100233720',
     'https://dblp.org/pid/55/6412.html',
+    'https://californiaconsultants.org/members/tal-lavian/',
+    'https://www.ratemyprofessors.com/professor/1813887',
+  ],
+  memberOf: [
+    { '@type': 'Organization', name: 'IEEE', url: 'https://www.ieee.org' },
+    { '@type': 'Organization', name: 'ACM', url: 'https://www.acm.org' },
   ],
 };
 
@@ -109,7 +115,9 @@ export const ORG_ENTITY = {
   name: 'TelecommNet Engineering, Inc.',
   url: BASE_URL,
   founder: PERSON_REF,
-  logo: `${BASE_URL}/wp-content/uploads/telecommnet-logo.png`,
+  logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+  hasMap: 'https://maps.app.goo.gl/YKkzUgJggPWzsDjX6',
+  areaServed: { '@type': 'Country', name: 'United States' },
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+1-408-209-9112',
