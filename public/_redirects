@@ -1,0 +1,6 @@
+# WordPress admin redirects — send to wp.telecommnet.com
+/wp-admin          https://wp.telecommnet.com/wp-admin          301
+/wp-admin/*        https://wp.telecommnet.com/wp-admin/:splat   301
+/wp-login.php      https://wp.telecommnet.com/wp-login.php      301
+/wp-content/*      https://wp.telecommnet.com/wp-content/:splat 301
+/xmlrpc.php        https://wp.telecommnet.com/xmlrpc.php        301
