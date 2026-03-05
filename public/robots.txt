@@ -70,4 +70,3 @@ Allow: /
 
 # Sitemap reference
 Sitemap: https://telecommnet.com/sitemap-index.xml
-Sitemap: https://telecommnet.com/sitemap.xml

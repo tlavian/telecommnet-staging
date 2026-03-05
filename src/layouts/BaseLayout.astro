@@ -50,6 +50,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
+  <meta name="robots" content="index, follow" />
   <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="sitemap" href="/sitemap-index.xml" />
@@ -183,6 +184,17 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
 
     .bordered-section { border-left: 4px solid #4267B2; padding-left: 20px; margin: 30px 0; }
 
+    /* Related resources silo navigation */
+    .related-resources { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid #D6E4F0; }
+    .related-resources h2 { font-size: 1.15rem; color: #1F4E79; margin-bottom: 1rem; font-weight: 600; }
+    .resource-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .resource-links a {
+      display: inline-block; padding: 6px 14px; font-size: 0.9rem;
+      background: #F2F7FC; color: #1F4E79; border: 1px solid #D6E4F0;
+      border-radius: 4px; text-decoration: none; transition: background 0.2s, color 0.2s;
+    }
+    .resource-links a:hover { background: #1F4E79; color: #fff; text-decoration: none; }
+
     /* Expertise page layouts (no sidebar, multi-column) */
     .content-full { padding: 40px 0; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px; }
@@ -253,20 +265,20 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .footer-content { padding: 35px 0; }
     .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
     .footer-col h3 { font-size: 20px; font-weight: 500; margin-bottom: 16px; color: #fff; }
-    .footer-col a { display: block; color: rgba(255,255,255,0.8); font-size: 14px; padding: 4px 0; transition: color 0.2s; }
+    .footer-col a { display: block; color: rgba(255,255,255,0.9); font-size: 14px; padding: 4px 0; transition: color 0.2s; }
     .footer-col a { text-decoration: none; }
     .footer-col a:hover { color: #fff; text-decoration: none; }
-    .footer-contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: rgba(255,255,255,0.85); }
-    .footer-contact-item a { display: inline; color: rgba(255,255,255,0.85); text-decoration: none; }
+    .footer-contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: rgba(255,255,255,0.9); }
+    .footer-contact-item a { display: inline; color: rgba(255,255,255,0.9); text-decoration: none; }
     .footer-contact-item a:hover { text-decoration: none; color: #fff; }
     .footer-contact-icon { width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
-    .footer-bottom { background: #2d4a8a; text-align: center; padding: 16px 0; font-size: 13px; color: rgba(255,255,255,0.7); }
+    .footer-bottom { background: #2d4a8a; text-align: center; padding: 16px 0; font-size: 13px; color: rgba(255,255,255,0.85); }
 
     h1 { font-size: 2rem; color: #1a1a1a; margin-bottom: 16px; }
     h2 { font-size: 2.1rem; color: #16163F; margin-bottom: 14px; font-weight: 500; }
     h3 { font-size: 1.55rem; color: #16163F; margin-bottom: 10px; font-weight: 500; }
     p { margin-bottom: 14px; }
-    .more-link { color: #6EC1E4; font-weight: 500; font-size: 20px; text-align: right; display: block; margin-top: 10px; text-decoration: none; }
+    .more-link { color: #2E75B6; font-weight: 500; font-size: 20px; text-align: right; display: block; margin-top: 10px; text-decoration: none; }
     .more-link:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
@@ -300,12 +312,12 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     <div class="container">
       <div class="top-bar-left">
         <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 150 150" fill="none"><circle cx="75" cy="75" r="75" fill="white"/><circle cx="75" cy="75" r="52" fill="#36C836"/><path d="M101.304 88.193l-6.893-6.895a4.876 4.876 0 0 0-6.895 0l-2.758 2.758a38.953 38.953 0 0 1-10.809-10.81l2.758-2.757a4.876 4.876 0 0 0 0-6.895l-6.895-6.894a4.876 4.876 0 0 0-6.895 0l-4.137 4.137c-3.244 3.244-3.935 8.208-1.863 13.13 2.484 5.903 7.38 12.22 13.784 17.81 5.59 4.884 11.907 8.452 17.81 10.054 4.922 1.337 9.886.268 13.13-2.976l4.137-4.137a4.876 4.876 0 0 0 .526-6.525z" fill="white"/></svg>
-          <a href="tel:14082099112">+1 (408) 209-9112</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 150 150" fill="none" aria-hidden="true"><circle cx="75" cy="75" r="75" fill="white"/><circle cx="75" cy="75" r="52" fill="#36C836"/><path d="M101.304 88.193l-6.893-6.895a4.876 4.876 0 0 0-6.895 0l-2.758 2.758a38.953 38.953 0 0 1-10.809-10.81l2.758-2.757a4.876 4.876 0 0 0 0-6.895l-6.895-6.894a4.876 4.876 0 0 0-6.895 0l-4.137 4.137c-3.244 3.244-3.935 8.208-1.863 13.13 2.484 5.903 7.38 12.22 13.784 17.81 5.59 4.884 11.907 8.452 17.81 10.054 4.922 1.337 9.886.268 13.13-2.976l4.137-4.137a4.876 4.876 0 0 0 .526-6.525z" fill="white"/></svg>
+          <a href="tel:14082099112" aria-label="Call +1 (408) 209-9112">+1 (408) 209-9112</a>
         </span>
         <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 151 151" fill="none"><circle cx="75.5" cy="75.5" r="75" fill="white"/><path d="M103 48.5H48v54.75h55V48.5z" fill="#F1F1F1"/><path d="M75.5 82.875L48 63.25v40h55v-40L75.5 82.875z" fill="#D54B3D"/><path d="M75.5 78.125L48 58.5v4.75l27.5 19.625L103 63.25V58.5L75.5 78.125z" fill="#B63524"/><path d="M103 48.5H48l27.5 29.625L103 48.5z" fill="#DE5B49"/></svg>
-          <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 151 151" fill="none" aria-hidden="true"><circle cx="75.5" cy="75.5" r="75" fill="white"/><path d="M103 48.5H48v54.75h55V48.5z" fill="#F1F1F1"/><path d="M75.5 82.875L48 63.25v40h55v-40L75.5 82.875z" fill="#D54B3D"/><path d="M75.5 78.125L48 58.5v4.75l27.5 19.625L103 63.25V58.5L75.5 78.125z" fill="#B63524"/><path d="M103 48.5H48l27.5 29.625L103 48.5z" fill="#DE5B49"/></svg>
+          <a href="mailto:tlavian@telecommnet.com" aria-label="Email tlavian@telecommnet.com">tlavian@telecommnet.com</a>
         </span>
       </div>
       <div class="top-bar-right">
@@ -323,9 +335,9 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   </div>
 
   <!-- Main Navigation -->
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="Main navigation">
     <div class="container">
-      <ul class="nav-links" id="navMenu">
+      <ul class="nav-links" id="navMenu" role="menubar">
         <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
         <li><a href="/about-dr-lavian/" class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
         <li><a href="/communications-expert-witness/network-communications-expert-witness/" class={currentPath.includes('network-communications') ? 'active' : ''}>Expertise</a></li>
@@ -354,7 +366,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-logo-bar">
       <div class="container">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
@@ -387,7 +399,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
           </div>
           <div class="footer-col">
             <h3>Expertise</h3>
-            <a href="/communications-expert-witness/network-communications-expert-witness/">Telecommunications</a>
+            <a href="/communications-expert-witness/telecommunications-expert-witness/">Telecommunications</a>
             <a href="/communications-expert-witness/network-communications-expert-witness/">Network communications</a>
             <a href="/communications-expert-witness/internet-expert-witness/">Internet & web</a>
             <a href="/communications-expert-witness/data-communications-expert/">Data Communications</a>
@@ -399,28 +411,28 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
           <div class="footer-col">
             <h3>Contact Information</h3>
             <div class="footer-contact-item">
-              <span class="footer-contact-icon" style="background:#e53e3e;color:#fff;">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span class="footer-contact-icon" style="background:#e53e3e;color:#fff;" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="white" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
               </span>
               Encino, California
             </div>
             <div class="footer-contact-item">
-              <span class="footer-contact-icon" style="background:#48bb78;color:#fff;">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span class="footer-contact-icon" style="background:#48bb78;color:#fff;" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="white" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
               </span>
-              <a href="tel:14082099112">+1 (408) 209-9112</a>
+              <a href="tel:14082099112" aria-label="Call +1 (408) 209-9112">+1 (408) 209-9112</a>
             </div>
             <div class="footer-contact-item">
-              <span class="footer-contact-icon" style="background:#e53e3e;color:#fff;">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="white"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span class="footer-contact-icon" style="background:#e53e3e;color:#fff;" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="white" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               </span>
-              <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a>
+              <a href="mailto:tlavian@telecommnet.com" aria-label="Email tlavian@telecommnet.com">tlavian@telecommnet.com</a>
             </div>
             <div class="footer-contact-item">
-              <span class="footer-contact-icon" style="background:#48bb78;color:#fff;">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="white"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              <span class="footer-contact-icon" style="background:#48bb78;color:#fff;" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="white" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
               </span>
-              <a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf">Curriculum Vitae</a>
+              <a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf" aria-label="Download Dr. Lavian's Curriculum Vitae (PDF)">Curriculum Vitae</a>
             </div>
           </div>
         </div>
