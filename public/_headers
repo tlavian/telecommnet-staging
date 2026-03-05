@@ -14,3 +14,9 @@
 
 /
   Cache-Control: public, max-age=3600, s-maxage=86400
+
+/privacy-policy/
+  X-Robots-Tag: noindex, follow
+
+/terms-and-conditions/
+  X-Robots-Tag: noindex, follow
