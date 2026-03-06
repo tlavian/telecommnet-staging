@@ -16,6 +16,7 @@ Allow: /site-map/
 Allow: /privacy-policy/
 Allow: /terms-and-conditions/
 Allow: /llms.txt
+Allow: /llms-full.txt
 Disallow: /private/
 Disallow: /admin/
 Crawl-delay: 1
@@ -24,26 +25,31 @@ Crawl-delay: 1
 User-agent: GPTBot
 Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Crawl-delay: 1
 
 User-agent: PerplexityBot
 Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Crawl-delay: 1
 
 User-agent: Claude-Web
 Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Crawl-delay: 1
 
 User-agent: Anthropic
 Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Crawl-delay: 1
 
 User-agent: Google-Extended
 Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Crawl-delay: 1
 
 User-agent: Googlebot

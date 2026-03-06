@@ -1,6 +1,6 @@
-# TelecommNet - Expert Witness Services (Extended)
+# TelecommNet - Expert Witness Services (Extended Reference)
 # Dr. Tal Lavian - Professional Expert Witness in Telecommunications & Networking
-# This is the extended version of llms.txt with comprehensive detail.
+# llms-full.txt — Comprehensive reference for AI systems (see also: llms.txt for summary)
 
 Organization: TelecommNet Engineering, Inc.
 Name: Dr. Tal Lavian, PhD
@@ -43,6 +43,7 @@ Dr. Lavian's 120+ patents span the following technology areas:
 - Network security and access control
 - Streaming media and multimedia delivery
 - Grid computing and optical networks
+- Interactive Voice Response (IVR) systems
 - RADAR systems and autonomous vehicle technology
 
 ## How to Cite:
@@ -74,173 +75,241 @@ Each expertise area has a dedicated page with detailed information:
 ### Telecommunications & Network Communications
 - Network architecture and design (OSI model, TCP/IP stack)
 - Telecommunications systems and protocols (PSTN, SONET/SDH, DWDM)
-- TCP/IP and Internet protocols (HTTP, DNS, DHCP, ARP, ICMP)
-- Data communications (Ethernet, Frame Relay, ATM)
-- Routing and switching technologies (BGP, OSPF, MPLS, VLAN)
-- Network management systems (SNMP, MIB, RMON)
-- Software-Defined Networking (SDN, OpenFlow, NFV)
+- TCP/IP and Internet protocols (HTTP/1.1, HTTP/2, HTTP/3, DNS, DHCP, ARP, ICMP)
+- Data communications (Ethernet 802.3, Frame Relay, ATM, MPLS)
+- Routing and switching technologies (BGP, OSPF, MPLS, VLAN, IS-IS, EIGRP, RIP)
+- Network management systems (SNMP v1/v2c/v3, MIB, RMON, NetFlow, sFlow)
+- Software-Defined Networking (SDN, OpenFlow, NFV, NETCONF, YANG)
+- 5G NR and LTE cellular architecture (3GPP standards)
 
 ### Wireless & Mobile Communications
-- Wi-Fi (IEEE 802.11a/b/g/n/ac/ax) and Bluetooth
+- Wi-Fi (IEEE 802.11a/b/g/n/ac/ax/be) and Bluetooth (BLE, Mesh)
 - Wireless LAN protocols and wireless networking
-- Mobile communications systems and architectures
+- Mobile communications systems (GSM, CDMA, UMTS, LTE, 5G NR)
 - Wireless RF technologies and spectrum management
-- Wireless network security and access control
+- Wireless network security and access control (WPA2, WPA3, 802.1X)
 
 ### Real-Time Communications
-- Voice over IP (VoIP) systems (SIP, RTP, SRTP, H.323)
-- Video conferencing and streaming (RTSP, HLS, WebRTC)
-- Quality of Service (QoS) and traffic engineering
-- Multimedia communications (codec technologies, transcoding)
-- Unified communications platforms
+- Voice over IP (VoIP) systems (SIP, RTP, SRTP, H.323, MGCP)
+- Video conferencing and streaming (RTSP, HLS, DASH, WebRTC, RTMP)
+- Quality of Service (QoS) and traffic engineering (DiffServ, IntServ, RSVP)
+- Multimedia communications (codec technologies: G.711, G.729, H.264, H.265, VP9, AV1)
+- Unified communications platforms (UCaaS, CPaaS)
+- Interactive Voice Response (IVR) systems
 
 ### Network Security & Cybersecurity
-- Network security architecture (firewalls, IDS/IPS, WAF)
-- Encryption and authentication (TLS/SSL, IPsec, PKI, RADIUS)
-- Firewalls and intrusion detection systems
-- Threat detection, DDoS mitigation
-- Cybersecurity standards and compliance (NIST, ISO 27001)
+- Network security architecture (firewalls, IDS/IPS, WAF, SIEM)
+- Encryption and authentication (TLS/SSL 1.2/1.3, IPsec, PKI, RADIUS, TACACS+)
+- Firewalls and intrusion detection systems (stateful inspection, DPI, NGFW)
+- Threat detection, DDoS mitigation (BGP Flowspec, scrubbing centers)
+- Cybersecurity standards and compliance (NIST CSF, ISO 27001, SOC 2)
 
 ### Messaging & Chat Systems
 - Short Message Service (SMS) and Multimedia Messaging Service (MMS)
-- Instant messaging (IM) protocols and systems
-- Chat platforms and protocols (XMPP, IRC)
+- Rich Communication Services (RCS)
+- Instant messaging protocols (XMPP, MQTT, WebSocket)
+- Chat platforms and enterprise collaboration
+- Push notification systems (APNs, FCM, WebPush)
 - Messaging integration with telecommunications systems
 
 ### Patent & Intellectual Property
-- Patent infringement analysis
-- Patent claim construction
+- Patent infringement analysis (literal and doctrine of equivalents)
+- Patent claim construction (Markman analysis)
 - Prior art searches and evaluation
-- Patent validity assessment
-- Patent-related litigation support
+- Patent validity assessment (anticipation, obviousness under 35 U.S.C. sections 102/103)
+- Patent-related litigation support (IPR, PGR, CBM petitions and responses)
 - 60+ patents prosecuted pro-se before USPTO
 
 ### Standards & Compliance
-- IEEE standards (networking, communications)
+- IEEE standards (802.3, 802.11, 802.1Q, 802.1X)
 - IETF Internet standards (RFC documents)
-- Telecommunications standards (ITU, ETSI)
+- Telecommunications standards (ITU-T, ETSI, 3GPP)
 - Industry standard development and participation
 - Compliance and conformance testing
 
-## Notable Cases and Engagements:
+## Named Case Experience (Complete List):
 
-### Major Technology Company Cases:
-- Emblaze v. Apple (13 patents)
-- Walker Digital v. Google
-- Motorola Mobility, Inc. v. Microsoft
-- Backweb Technologies v. Microsoft
-- Software Research Inc. v. HP
-- HP v. Alacritech
-- Fortinet v. Palo Alto Networks
-- Proxyconn, Inc. v. Microsoft et al.
-- Ericsson v. Samsung (ITC)
-- IXI Mobile v. Apple Inc.
-- Site Update Solutions v. Accor America
-- Facebook Inc./Instagram LLC v. SKKY LLC
-- Spherix v. Cisco Systems
-- Rockstar Technologies v. Cisco Systems
-- Juniper Networks, Inc. v. Brixham Solutions
-- EIT v. YELP! INC.
+### ServiceNow v. BMC Software (Multiple Proceedings)
+- US 8,646,093; US 7,617,073; US 7,600,007; US 8,674,992; US 6,169,534; US 6,816,898
 
-### Telecommunications Company Cases:
-- Comcast Cable Communications v. BT
-- Brilliant Optical Solutions LLC v. Comcast
-- High Point SARL v. Sprint Nextel
-- M2M Solutions LLC vs. Sierra Wireless
+### ServiceNow v. HP (Multiple Proceedings)
+- US 7,945,860; US 7,925,981; US 6,891,930; US 7,392,300; US 5,796,951; US 6,256,635; US 5,717,934; US 7,027,411; US 6,701,327; US 5,821,937
 
-### USPTO PTAB Proceedings (IPR/CBM):
-- ServiceNow, Inc. v. BMC Software, Inc. (multiple IPRs)
-- ServiceNow, Inc. v. Hewlett-Packard (multiple IPRs)
-- DIRECTV v. Qurio Holdings
-- FedEx Corporation v. Loramax, LLC
-- RPX v. MD Security Solutions LLC
-- Teradici – USPTO Reexamination
-- NetAirus Systems LLC v. Kappos
+### Major Technology Company Cases
+- IXI Mobile v. Apple Inc. — US 7,426,398; US 7,295,532; US 7,039,033; US 7,016,648
+- Emblaze v. Apple — 13 patents including US 6,397,230; US 6,389,473; US 6,151,632; US 5,751,968; US 5,659,539
+- Motorola Mobility, Inc. v. Microsoft — US 7,725,584; US 7,493,130; US 7,275,116; US 7,024,214; US 6,219,694; US 5,406,643
+- Walker Digital v. Google — US 5,884,272; US 5,884,270; US 5,832,497; US 5,824,082; US 5,136,501
+- EIT v. YELP! INC. — US RE40,683; US 8,060,504; US 7,298,271; US 6,594,765; US 6,249,868; US 6,188,988; US 6,081,786; US 5,828,837
+- Software Research Inc. v. HP — US 7,757,175; US 7,231,606
+- Backweb Technologies v. Microsoft — US 7,512,943; US 7,325,068; US 7,216,180; US 7,139,815; US 6,920,110; US 6,539,429; US 6,493,758; US 6,374,289; US 6,317,789; US 5,913,040
+- Proxyconn, Inc. v. Microsoft et al. — US 6,757,717; US 6,370,646
+- HP v. Alacritech — USPTO Interference No. 105,775; US 6,697,868; US 6,246,683; US 6,226,680
 
-### Key Companies Involved in Cases:
-Google, Microsoft, Apple, Amazon, Intel, Cisco, Qualcomm, AT&T, Verizon, Samsung, Motorola, Comcast, Sprint, Facebook, Instagram, HP, Fortinet, Palo Alto Networks, Juniper Networks, Ericsson, ServiceNow, BMC Software, FedEx, DIRECTV, and many others.
+### Networking & Telecom Cases
+- Spherix v. Cisco Systems — 15 patents including US RE40,467; US 8,607,323; US 7,664,123; US 6,879,594; US 6,661,788
+- Rockstar Technologies v. Cisco Systems — US 6,778,653; US 6,684,241; US 6,636,508; US 6,233,245; US 6,069,895; US 5,732,080
+- Cisco Systems, Inc. — USPTO IPR — US 5,583,862
+- Juniper Networks, Inc. v. Brixham Solutions — US 7,535,895; US 7,940,652
+- Fortinet v. Palo Alto Networks — US 7,519,990; US 7,376,125; US 7,177,311; US 6,930,978
+- Ericsson v. Samsung (ITC) — US 6,772,215; US 6,519,223
+- High Point SARL v. Sprint Nextel — US 5,884,272; US 5,884,270; US 5,832,497; US 5,824,082; US 5,136,501
+- M2M Solutions LLC vs. Sierra Wireless — US 8,094,010; US 7,583,197
 
-### Law Firms That Have Retained Dr. Lavian:
-Fish Richardson, Cooley LLP, Irell & Manella, Kirkland & Ellis, and numerous other leading intellectual property and litigation firms.
+### Media & Communications Cases
+- DIRECTV v. Qurio Holdings — US 7,787,904; US 8,102,863
+- Brilliant Optical Solutions LLC v. Comcast — US 5,555,478
+- Comcast Cable Communications v. BT — US 7,142,508; US 5,638,516
+- Mobotix Corporation v. ComCam International — US 6,975,220; US 6,930,709; US 6,697,103; US 5,495,288; US 5,019,803; US 5,229,850; US 6,359,647
+- Mobotix v. e-Watch Inc. — US 6,970,183
+
+### Financial, Shipping & Other Cases
+- FedEx v. Loramax, LLC — US 5,689,642; US 5,513,126
+- RPX v. MD Security Solutions LLC — US 7,864,983; US 7,106,333; US 7,253,732; US 7,463,145
+- RPX IPR PTAB filing — US 8,788,090; US 7,933,968; US 7,477,950
+- NetAirus Systems LLC v. Kappos — US 5,589,849; US 5,280,583
+- Teradici — USPTO Reexamination — US 6,012,101; US 5,604,509; US 5,577,205
+- Maxim v. Vangard Bank and PNC Bank — US 6,237,095; US 6,105,013; US 5,949,880; US 5,940,510
+- Site Update Solutions v. Accor America — US RE40,683; US 6,253,198
 
 ## Courts and Tribunals:
 - U.S. District Courts across multiple jurisdictions (E.D. Tex., N.D. Cal., D. Del., S.D.N.Y., C.D. Cal., and others)
 - U.S. Court of Appeals for the Federal Circuit
-- USPTO Patent Trial & Appeal Board (PTAB) — IPR, PGR, CBM, Ex Parte Reexamination
+- USPTO Patent Trial & Appeal Board (PTAB) — IPR, PGR, CBM, Ex Parte Reexamination, PTO Interferences
 - International Trade Commission (ITC) — Section 337 Investigations
 - Canadian Federal Court
 - Provincial Courts of Canada (Ontario, British Columbia)
 
-## Scientific Publications:
+## Corporate Clients (48 companies):
 
-Dr. Lavian has authored 25+ peer-reviewed publications in leading IEEE, ACM, and telecommunications journals and conferences:
+### Major Technology Companies
+Google, Apple, Microsoft, Amazon, Facebook, Instagram, WhatsApp, LinkedIn, Netflix, Cisco Systems, Juniper Networks, Huawei, Broadcom, Arista, Palo Alto Networks, ServiceNow
 
-1. Information Switching Networks
-2. Applications Drive Secure Lightpath Creation Across Heterogeneous Domains (IEEE Communications Magazine)
-3. Communications Architecture in Support of Grid Computing
-4. DWDM-RAM: A Data-Intensive Grid Service Architecture
-5. Grid Network Services (Draft-ggf-ghpn-netservices-1.0)
-6. Impact of Grid Computing on Network Operators and HW Vendors (Hot Interconnects)
-7. Lambda Data Grid — Communications Architecture in Support of Grid Computing
-8. Project DRAC — Creating an Applications-Aware Network
-9. R&D Models for Advanced Development (Corporate Research)
-10. Implementation of Quality of Service Feedback Control Loop on Programmable Routers
-11. Large-Scale Grid Data Service on Dynamic High-Performance Networks
-12. Active Networking on a Programmable Networking Platform
-13. Open Networking — Better Networking Through Programmability
-14. Dangerous Liaisons: Software Combinations as Derivative Works
-15. Dynamic Classification in Silicon-Based Forwarding Engine Environments (IEEE LANMAN)
-16. Java-Based Open Service Interface Architecture
-17. DWDM-RAM: Enabling Grid Services with Dynamic Optical Networks (IEEE CCGRID)
-18. Edge Device Multi-Unicasting for Video Streaming
-19. An Extensible Programmable Commercial Grade Platform for Internet Service Architecture (IEEE Trans. SMC)
-20. Enabling Active Flow Manipulation in Silicon-Based Network Forwarding Engines (J. Communications Networks)
-21. Enabling Active Networks Services on a Gigabit Routing Switch
-22. The SAHARA Model for Service Composition Across Multiple Providers (Pervasive Computing)
-23. Practical Active Network Services Within Content-Aware Gateways
-24. POPEYE: Using Fine-Grained Network Access Control to Support Mobile Users
-25. Optical Network Infrastructure for Grid (Draft-ggf-ghpn-opticalnets-1)
-26. Open Programmable Architecture for Java-Enabled Network Devices
-27. Intelligent Network Services Through Active Flow Manipulation
+### Telecommunications Companies
+AT&T, T-Mobile, Ericsson, Motorola Mobility, ZTE, Avaya, Polycom, Comcast, DirecTV, GTT
 
-## Selected Patents (from 120+):
+### Financial, Shipping & Other
+FedEx, Morgan Stanley, Vanguard Bank, Guaranteed Rate
 
-- US-8572303: Portable Universal Communication Device
-- US-8619793: Assignment of classes of traffic — priority queue
-- US-8341257: Grid proxy architecture for network resources
-- US-8161139: Network element includes intelligent interface
-- US-8146090: Using time-value curves for resource management
-- US-8078708: Grid applications to access resources
-- US-7944827: Content-aware dynamic optical bandwidth allocation
-- US-7860999: Distributed computation in network devices
-- US-8745573: Platform independent development framework
-- US-9762251: Frequency synthesizer for advanced communication systems
-- US-10764264: Evaluating security context for network authentication
-- US-10205457: Target detection and imaging system — RADAR
-- US-10348313: Radar frequency synthesizer for autonomous car
-- US-10404261: Radar target detection system for autonomous vehicles
-- US-10598764: Autonomous vehicles with ultra-low phase noise frequency
-- EP-1142213: Dynamic assignment of traffic classes to priority queue
-- EP-1671460: Scheduling resources on switched underlay network
-- EP-1905211: Prevent unauthorized access to authenticate users
+### Additional Companies
+LG, Samsung, Alacritech, Aten, Backweb, Emblaze, Human Eyes, IP Innovation, IXI Mobile, Linksmart Technologies, Mobotix, Nomadix, Avi Networks, RPX, TCL, Ticket Network, Unified Patents, Walker Digital, Ymax Corp, Government of Canada
+
+## Law Firm Clients (52 firms):
+
+### AmLaw 100 / Major IP Firms
+Fish Richardson, Cooley, Finnegan, Gibson Dunn, Ropes Gray, Baker Botts, Irell & Manella LLP, Kirkland & Ellis, Morgan Lewis, Skadden, Simpson Thacher & Bartlett LLP, Hogan Lovells LLP, Perkins Coie, Winston & Strawn LLP, Greenberg Traurig
+
+### Specialty IP Litigation Firms
+Holland & Knight LLP, Oblon LLP, Venable LLP, Keker Van Nest, Wolf Greenfield LLP, Desmarais LLP, Durie Tangri, Duane Morris, Pepper Hamilton LLP, McGuireWoods, McKool Smith, Sterne Kessler Goldstein & Fox, Knobbe Martens LLP
+
+### Regional & Boutique Firms
+Foley Lardner LLP, Hopkins Carley, Akerman, Hausfeld, Hovey Williams LLP, Kenyon & Kenyon, Klarquist Sparkman LLP, Mei & Mark LLP, Niro Scavone Haller Niro, Nixon Peabody, Novack Macey, Faegre Baker Daniels, Warner Norcross & Judd, Armstrong Teasdale LLP, SlaterMatsil LLP, The Simon Law Firm, The WEBB Law Firm, Fisch Sigler LLP, White and Williams LLP, Devlin Law Firm LLC, Hosie Rice LLP, Erise IP, Cozen O'Connor, Unified Patents
+
+## Patent Portfolio (133 Inventions):
+
+### Network Communications & Programmable Networks (~30 patents)
+US 8,341,257 (Grid proxy architecture), US 8,161,139 (Intelligent network interface), US 7,944,827 (Content-aware optical bandwidth), US 7,860,999 (Distributed computation), US 7,433,941 (SNMP network access), US 7,359,993 (External resources interface), US 7,313,608 (Markup language network config), US 7,260,621 (OO network management), US 7,237,012 (Java RMI traffic classification), US 7,127,526 (Dynamic software services), US 7,047,536 (DiffServ traffic classification), US 7,039,724 (Programmable CLI API), US 6,976,054 (Low-level resource access), US 6,970,943 (High-speed routing architecture), US 6,850,989 (Auto-configuring data ports), US 6,845,397 (Network protocol interface), US 6,842,781 (Network management app), US 6,772,205 (Proxy network device), US 6,175,868 (Auto-configuring network switch), US 6,170,015 (Network switch with co-processor)
+
+### Interactive Voice Response (IVR) Systems (~25 patents)
+US 9,521,255; US 9,001,819; US 8,929,517; US 8,903,073; US 8,880,120; US 8,879,703; US 8,879,698; US 8,867,708; US 8,787,536; US 8,731,148; US 8,687,777; US 8,681,951; US 8,625,756; US 8,594,280; US 8,548,135; US 8,548,131; US 8,537,989; US 8,406,388; US 8,345,835; US 8,223,931; US 8,160,215; US 8,155,280; US 8,054,952; US 8,000,454
+
+### Network Security (~10 patents)
+US 10,764,264 (Security context evaluation), US 6,950,932 (Security association mediator), US 6,564,325 (Multi-level security access), EP 1,905,211 (Authentication), WO 2006/063052 (Network immunization)
+
+### Traffic Management & QoS (~10 patents)
+US 8,619,793 (Traffic class assignment), US 8,949,846 (Time-value curves for QoS), US 8,146,090 (Resource management), US 7,710,871 (Dynamic priority queue), EP 1,142,213 (Dynamic priority assignment), CA 2,358,525 (Packet flow through networks)
+
+### Grid Computing & Optical Networks (~10 patents)
+US 8,898,274 (Grid proxy resources), US 9,184,989 (Network domain discovery), US 9,021,130 (Photonic line sharing), US 8,078,708 (Grid shared communication), US 7,580,349 (Optical bandwidth allocation), EP 1,671,460 (Scheduling on underlay network)
+
+### RADAR & Autonomous Vehicles (~8 patents)
+US 10,598,764 (Autonomous vehicles ULPN), US 10,404,261 (Radar target detection), US 10,348,313 (Radar frequency synthesizer), US 10,205,457 (Target detection imaging), US 9,831,881 (Radar ULPN synthesizer), US 9,762,251 (Frequency synthesizer), US 9,705,511 (Fractional-N PLL), US 9,660,655 (Set frequency band)
+
+### Communications & Mobile Devices (~8 patents)
+US 9,690,877 (Electronic communications), US 9,083,728 (Support sharing in network), US 8,782,230 (XML encoded request), US 8,762,963 (CLDC translation), US 8,762,962 (Auto code translation), US 8,745,573 (Platform independent framework), US 8,688,796 (Rating system social network), US 8,572,303 (Portable universal communication device)
+
+### International Patents
+EP 3,311,493 (ULPN synthesizers), EP 1,905,211 (Authentication), EP 1,671,460 (Underlay network scheduling), EP 1,142,213 (Traffic class assignment), CA 2,989,752 (Ultra low phase-noise synthesizer), CA 2,358,525 (Packet flow), WO 2006/063052 (Network immunization), WO 2005/033899 (Underlay network data transfers), WO 2000/041368 (Dynamic traffic assignment), WO 2000/054460 (Network device information access)
+
+## Scientific Publications (31 peer-reviewed works):
+
+### Books
+1. "Communications Architecture - Grid Computing" — Tal Lavian, Scholar's Press, 2013, ISBN 978-3-639-51098-0
+
+### Doctoral Thesis
+2. "Data communications architecture grid computing" — Tal Lavian, Randy H. Katz, University of California at Berkeley, January 2006
+
+### Journal Articles
+3. "Secure Lightpath Creation Across Heterogeneous Domains" — IEEE Communications Magazine, vol. 44, no. 3, March 2006, pp. 100-106
+4. "Programmable Internet Service Architecture" — IEEE Transactions on Systems, Man, and Cybernetics, Volume 34, Issue 1, Feb. 2004, pp. 58-68
+5. "Silicon-based Network Forwarding Engine" — Journal of Communications and Networks, March 2001, pp. 78-87
+6. "Dangerous Liaisons - Software Combinations as Derivative Works?" — Berkeley Technology Law Journal, Volume 21, Issue 4, Fall 2006
+
+### Conference Papers (IEEE, ACM)
+7. "Information Switching Networks" — WITSP 2005
+8. "Grid Computing - Network Operators" — IEEE Hot Interconnects at Stanford 2005, pp. 89-90
+9. "Project DRAC: Creating an applications-aware network" — Nortel Technical Journal, Feb 2005, pp. 23-26
+10. "Data intensive Grid service - Optical networks" — CCGRID 2004, pp. 762-764
+11. "Quality of control loop on programmable routers" — IEEE ICON 2004, Singapore
+12. "Large-Scale Grid Data Networks" — GridNets 2004, San Jose, CA
+13. "Enabling Grid Services with Dynamic Optical Networks" — IEEE/ACM Cluster Computing and the Grid 2004
+14. "Edge device multi-unicasting for video streaming" — ICT 2003, Tahiti, Vol 2, pp. 1441-1447
+15. "Service Composition Across Multiple Providers" — ACM Pervasive 2002, pp. 1-14
+16. "Active Flow Network Forwarding Engines" — DANCE 2002, pp. 65-76
+17. "Active Network Services Content Gateways" — DANCE 2002, pp. 344-354
+18. "Active Networks on A Programmable Network Platform" — IEEE OPENARCH 2002
+19. "Active networking - programmable networking platform" — IEEE Open Architectures 2001, pp. 95-103
+20. "Intelligent Network Active Flow Manipulation" — IEEE Intelligent Network Workshop 2001, pp. 73-82
+21. "Active Networks on a Gigabit Routing Switch" — Active Middleware Services Workshop 2000
+22. "Dynamic Classification Forwarding Engine Environments" — IEEE LANMAN 1999, pp. 103-109
+23. "Programmable Architecture Java Network" — IEEE Hot Interconnects Stanford 1999, pp. 265-277
+24. "Java-Based Open Service Interface Architecture" — BAL Technical Report 1998
+25. "Parallel SIMD Architecture for Color Image Processing" — Tel Aviv University, 1995
+26. "Fine-grained Network Access Control for Mobile Users" — December 2000
+27. "R&D Models for Advanced Development" — Understanding Six Models of Advanced R&D
+
+### Standards Documents
+28. "Grid Network Services, Draft-ggf-ghpn-netservices-1.0" — Global Grid Forum (GGF)
+29. "Optical Network ggf-ghpn-opticalnets standard" — Global Grid Forum GFD-I.036, August 2004
+
+## Talks & Presentations (64 presentations at IEEE, ACM, Stanford, UC Berkeley, and other venues):
+
+Notable presentations include:
+- Lambda Data Grid: An Agile Optical Platform for Grid Computing and Data-intensive Applications
+- Workflow Integrated Network Resource Orchestration (WINER)
+- DWDM-RAM: DARPA-Sponsored Research for Data Intensive Service on Demand (multiple venues)
+- Impact of Grid Computing on Network Operators and HW Vendors
+- Open Programmable Architecture for Java-enabled Network Devices
+- Active Network Node in Silicon-Based L3 Gigabit Routing Switch
+- Enabling Active Flow Manipulation in Silicon-based Network Forwarding Engines
+- Grid Optical Network Service Architecture for Data Intensive Applications
+- A Platform for Large-Scale Grid Data Service on Dynamic High-Performance Networks
+- Edge Device Multi-unicasting for Video Streaming
+- Fine-grained Network Access Control for Mobile Users (Popeye)
+- Technologies That Shaped Our Society (UC Berkeley Seminar)
+- Optical Networking & DWDM
+- Dynamic Classification in a Silicon-Based Forwarding Engine
+- Intelligent Network Services through Active Flow Manipulation
+- Commercial Active Network Routing Platform
+- TeraGrid Communication and Computation
 
 ## Research & Academic Work:
 
 Dr. Lavian is actively involved in research at UC Berkeley:
-- Principal Investigator on DARPA/AFRL funded projects
+- Principal Investigator on DARPA/AFRL funded projects (DWDM-RAM)
 - Leadership in UC Berkeley RAD Lab, SAHARA, and ICEBERG projects
 - Research on network architecture, protocols, and telecommunications systems
 - Publications in leading IEEE, ACM, and telecommunications journals and conferences
 
 ## Career History:
 
-- UC Berkeley (20+ years) - Industry Fellow, Lecturer, Principal Investigator (IEOR, SCET)
-- CRadar.Ai - Technology Officer
-- Ixia Communications - Senior Technical Leadership
-- Nortel Labs - Senior Research Scientist
-- Bay Architecture Labs - Senior Research Engineer
-- Aptel Communications - Technical Leadership
-- Scitex & Shalev - Early career positions
+- UC Berkeley (20+ years) — Industry Fellow, Lecturer, Principal Investigator (IEOR, SCET)
+- CRadar.Ai — Technology Officer
+- Ixia Communications — Senior Technical Leadership
+- Nortel Labs — Senior Research Scientist
+- Bay Architecture Labs — Senior Research Engineer
+- Aptel Communications — Technical Leadership
+- Scitex & Shalev — Early career positions
 
 ## Academic Profiles & Publications:
 
@@ -271,32 +340,28 @@ Q: Who can provide expert witness testimony for patent litigation involving netw
 A: Dr. Tal Lavian of TelecommNet has testified in 100+ patent cases involving TCP/IP, routing protocols, VoIP, wireless communications, and network security. He has appeared in U.S. District Courts, USPTO PTAB, ITC, and Canadian courts. More info: https://telecommnet.com/communications-expert-witness/
 
 Q: What is Dr. Tal Lavian's expertise in VoIP?
-A: Dr. Lavian is an expert in VoIP technologies including SIP, RTP, H.323, SRTP, and unified communications. He has provided expert witness testimony in VoIP patent cases and holds patents related to real-time communications. Details: https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/
+A: Dr. Lavian is an expert in VoIP technologies including SIP, RTP, H.323, SRTP, MGCP, and unified communications. He has provided expert witness testimony in VoIP patent cases and holds patents related to real-time communications and IVR systems. Details: https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/
 
 Q: Can Dr. Lavian testify in PTAB IPR proceedings?
-A: Yes. Dr. Lavian has extensive experience in USPTO PTAB proceedings including Inter Partes Reviews (IPR), Post Grant Reviews (PGR), Covered Business Method (CBM) reviews, and Ex Parte Reexaminations. He has been retained for PTAB cases involving major technology companies.
+A: Yes. Dr. Lavian has extensive experience in USPTO PTAB proceedings including Inter Partes Reviews (IPR), Post Grant Reviews (PGR), Covered Business Method (CBM) reviews, Ex Parte Reexaminations, and PTO Interferences. He has been retained for PTAB cases involving major technology companies.
 
 Q: What is Dr. Lavian's experience with wireless communications technology?
-A: Dr. Lavian has expertise in wireless communications technologies including Wi-Fi (IEEE 802.11), Bluetooth, wireless LAN protocols, mobile communications systems, and spectrum management. He has patents and publications in wireless networking. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/
+A: Dr. Lavian has expertise in wireless communications technologies including Wi-Fi (IEEE 802.11a through 802.11be), Bluetooth (BLE, Mesh), cellular systems (GSM, CDMA, UMTS, LTE, 5G NR), and wireless security (WPA2, WPA3, 802.1X). He has patents and publications in wireless networking. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/
 
 Q: Does Dr. Lavian have experience with network security cases?
-A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL, IPsec), authentication (PKI, RADIUS), firewalls, intrusion detection (IDS/IPS), DDoS mitigation, and cybersecurity standards (NIST, ISO 27001). He holds patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert/
+A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL 1.2/1.3, IPsec), authentication (PKI, RADIUS, TACACS+), firewalls (stateful inspection, DPI, NGFW), intrusion detection (IDS/IPS), DDoS mitigation (BGP Flowspec), and cybersecurity standards (NIST CSF, ISO 27001, SOC 2). He holds patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert/
 
-## Contact Information:
+Q: What law firms have retained Dr. Lavian?
+A: Dr. Lavian has been retained by 52 law firms including AmLaw 100 firms such as Fish Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, Hogan Lovells, and many other top IP litigation firms. Full list: https://telecommnet.com/law-firm-clients/
 
-Phone: +1 (408) 209-9112
-Email: tlavian@telecommnet.com
-Website: https://telecommnet.com
+Q: What companies has Dr. Lavian worked with or against?
+A: Dr. Lavian has been involved in cases involving Google, Apple, Microsoft, Amazon, Cisco, Samsung, Intel, Qualcomm, AT&T, Verizon, Huawei, Ericsson, Facebook, Netflix, and 30+ other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
 
-### Quick Links:
-- About Dr. Lavian: https://telecommnet.com/about-dr-lavian/
-- Expert Witness Services: https://telecommnet.com/communications-expert-witness/
-- Cases & Testimony: https://telecommnet.com/cases-expert-witness-testimony/
-- Scientific Publications: https://telecommnet.com/scientific-publications/
-- Patents: https://telecommnet.com/patents/
-- Contact: https://telecommnet.com/contact/
-- For Law Firms: https://telecommnet.com/law-firm-clients/
-- For Corporations: https://telecommnet.com/corporate-clients/
+Q: What is Dr. Lavian's background in messaging and chat technology?
+A: Dr. Lavian specializes in SMS, MMS, RCS, instant messaging (XMPP, MQTT, WebSocket), push notifications (APNs, FCM), and enterprise collaboration platforms. He has served as expert witness in messaging-related patent cases. Details: https://telecommnet.com/communications-expert-witness/messaging-and-chat-expert-witness/
+
+Q: What is Dr. Lavian's experience with routing and switching technologies?
+A: Dr. Lavian holds patents in routing architectures and programmable network devices. His expertise covers BGP, OSPF, MPLS, IS-IS, EIGRP, VLAN, SDN (OpenFlow), and network forwarding engines. He has multiple IEEE publications on programmable routing platforms. Details: https://telecommnet.com/communications-expert-witness/routing-switching-expert/
 
 ## Frequently Asked Questions for Attorneys:
 
@@ -323,6 +388,28 @@ An expert witness interprets patent claims based on their understanding of the t
 
 ### What is the Daubert standard and how does it apply to expert witnesses?
 The Daubert standard (Daubert v. Merrell Dow Pharmaceuticals) requires that expert testimony be based on sufficient facts, reliable principles and methods, and that those principles are reliably applied. Dr. Lavian's testimony has been consistently admitted under the Daubert standard across 100+ engagements.
+
+### What is PTAB and how does it relate to expert witnesses?
+The Patent Trial and Appeal Board (PTAB) is a body within the USPTO that conducts Inter Partes Reviews (IPRs), Post Grant Reviews (PGRs), and other patent proceedings. Expert witnesses provide technical declarations and may testify at oral hearings. Dr. Lavian has extensive PTAB experience.
+
+### What is an ITC investigation and when is a telecom expert needed?
+International Trade Commission (ITC) Section 337 investigations address unfair trade practices including patent infringement by imported goods. Telecommunications experts are needed when the patents involve networking, wireless, or communications technologies. Dr. Lavian has served as expert in ITC proceedings including Ericsson v. Samsung.
+
+## Contact Information:
+
+Phone: +1 (408) 209-9112
+Email: tlavian@telecommnet.com
+Website: https://telecommnet.com
+
+### Quick Links:
+- About Dr. Lavian: https://telecommnet.com/about-dr-lavian/
+- Expert Witness Services: https://telecommnet.com/communications-expert-witness/
+- Cases & Testimony: https://telecommnet.com/cases-expert-witness-testimony/
+- Scientific Publications: https://telecommnet.com/scientific-publications/
+- Patents: https://telecommnet.com/patents/
+- Contact: https://telecommnet.com/contact/
+- For Law Firms: https://telecommnet.com/law-firm-clients/
+- For Corporations: https://telecommnet.com/corporate-clients/
 
 ## Availability:
 

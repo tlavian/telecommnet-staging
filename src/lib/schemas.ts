@@ -247,23 +247,36 @@ export const buildSchema = {
     };
   },
 
-  /** Expert Witness hub: ProfessionalService + Service[] + BreadcrumbList */
+  /** Expert Witness hub: Person + WebPage + ProfessionalService + Service[] + BreadcrumbList */
   expertWitnessHub() {
+    const hubUrl = `${BASE_URL}/communications-expert-witness/`;
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
         {
-          '@type': 'ProfessionalService',
+          '@type': 'WebPage',
+          '@id': hubUrl,
+          url: hubUrl,
           name: 'Expert Witness Services — Dr. Tal Lavian',
-          provider: PERSON_REF,
-          url: `${BASE_URL}/communications-expert-witness/`,
-          description:
-            'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
-          areaServed: { '@type': 'Country', name: 'United States' },
+          description: 'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
+          inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
+          about: PERSON_REF,
           speakable: {
             '@type': 'SpeakableSpecification',
             cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
           },
+        },
+        {
+          '@type': 'ProfessionalService',
+          name: 'Expert Witness Services — Dr. Tal Lavian',
+          provider: PERSON_REF,
+          url: hubUrl,
+          mainEntityOfPage: { '@id': hubUrl },
+          description:
+            'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
+          areaServed: { '@type': 'Country', name: 'United States' },
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
             name: 'Expert Witness Practice Areas',
@@ -289,7 +302,7 @@ export const buildSchema = {
     };
   },
 
-  /** Expertise sub-page: Service + FAQPage + BreadcrumbList */
+  /** Expertise sub-page: Person + WebPage + Service + FAQPage + BreadcrumbList */
   expertisePage(opts: {
     name: string;
     slug: string;
@@ -303,6 +316,21 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
+        {
+          '@type': 'WebPage',
+          '@id': pageUrl,
+          url: pageUrl,
+          name: opts.name,
+          description: opts.description,
+          inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
+          about: PERSON_REF,
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.hero-banner h1', '.content-full > h2:first-of-type', '.content-full > p:first-of-type'],
+          },
+        },
         {
           '@type': 'Service',
           name: opts.name,
@@ -310,6 +338,7 @@ export const buildSchema = {
           description: opts.description,
           provider: PERSON_REF,
           url: pageUrl,
+          mainEntityOfPage: { '@id': pageUrl },
           areaServed: { '@type': 'Country', name: 'United States' },
           keywords: opts.keywords.join(', '),
           about: PERSON_REF,

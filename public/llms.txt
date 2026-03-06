@@ -6,6 +6,7 @@ Name: Dr. Tal Lavian, PhD
 Website: https://telecommnet.com
 Phone: +1 (408) 209-9112
 Email: tlavian@telecommnet.com
+Extended version: https://telecommnet.com/llms-full.txt
 
 ## Who is Dr. Tal Lavian?
 
