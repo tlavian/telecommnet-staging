@@ -76,6 +76,29 @@
 /20170302282-radar-target-detection-system-for-autonomous-vehicles/  /patents/  301
 /us-8572303-portable-universal-communication-device/  /patents/  301
 
+# Old patent slugs — pages exist with corrected slugs
+/7237012-classifying-java-remote-method-invocation-transport-traffic/  /7237012-classifying-java-remote-method-invocations/  301
+/7580349-performing-content-aware-optical-bandwidth-allocation/  /7580349-traffic-classes-on-a-packet-by-packet-basis/  301
+/8223931-system-for-enhancing-user-interaction-with-ivr/  /8223931-ivr-menu-system-which-may-include-advertising-to-calling-party/  301
+/8548135-communication-device-comprises-a-database-of-visual-ivr-menus/  /8548135-visual-ivr-menu-system-to-a-calling-party/  301
+
+# Old patent slugs — no matching page, redirect to patents index
+/20100146112-improving-the-efficiency-of-communication-network/  /patents/  301
+/20120063574-enhancing-user-interaction-with-ivr/  /patents/  301
+/20130022181-ivr-technology-to-detect-voice-and-key-inputs/  /patents/  301
+/20130022183-system-for-generating-interactive-voice-response-database/  /patents/  301
+/20130022191-generating-an-interactive-voice-response-ivr-database/  /patents/  301
+/20160373117-advance-communication-system-comprise-frequency-synthesizer/  /patents/  301
+/20180019755-ultra-low-phase-noise-frequency-generation-for-radar-applications/  /patents/  301
+/7313608-markup-language-to-access-and-configure-network-elements/  /patents/  301
+/7359993-interfacing-external-resources-with-a-network-element/  /patents/  301
+/8161139-network-element-includes-an-intelligent-interface/  /patents/  301
+/9021130-photonic-line-sharing-for-high-speed-routers/  /patents/  301
+/9083728-support-sharing-and-exchanging-in-a-network/  /patents/  301
+/9690877-systems-and-methods-for-electronic-communications/  /patents/  301
+/us-8745573-platform-independent-development-framework-for-applications/  /patents/  301
+/wo-2005033899-data-transfers-over-switched-underlay-networks/  /patents/  301
+
 # Cloudflare email protection — not a real page, redirect to homepage
 /cdn-cgi/l/email-protection  /  301
 
