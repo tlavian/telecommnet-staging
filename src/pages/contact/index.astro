@@ -11,14 +11,14 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
 >
 
   <div class="hero-banner">
-    <h1>Contact</h1>
+    <h1>Contact Dr. Tal Lavian — Telecom Expert Witness</h1>
   </div>
 
   <div class="container">
     <div class="content-with-sidebar">
       <div class="content-main">
 
-        <h2>Contact</h2>
+        <h2>Expert Witness Consulting Services</h2>
 
         <p>Contact Dr. Tal Lavian &ndash; <a href="/">Telecommunications</a>, <a href="/communications-expert-witness/network-communications-expert-witness/">Network Communications</a>, <a href="/communications-expert-witness/internet-expert-witness/">Internet Protocols (TCP/IP)</a>, <a href="/communications-expert-witness/data-communications-expert/">Data Communications</a>, <a href="/communications-expert-witness/mobile-wireless-expert/">mobile wireless</a>, and <a href="/communications-expert-witness/computer-networking-expert-witness/">Computer Networking</a></p>
 
@@ -34,40 +34,40 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
           </a>
         </div>
 
-        <div class="contact-grid">
-          <div class="contact-icon-box">
+        <div class="contact-grid" role="list" aria-label="Contact methods">
+          <div class="contact-icon-box" role="listitem">
             <div class="contact-icon">
-              <img src="/wp-content/uploads/2022/05/map-1.svg" alt="Location" width="90" height="90" />
+              <img src="/wp-content/uploads/2022/05/map-1.svg" alt="" width="90" height="90" aria-hidden="true" />
             </div>
             <div class="contact-icon-content">
-              <h3>Encino, California</h3>
+              <p class="contact-label">Encino, California</p>
             </div>
           </div>
 
-          <div class="contact-icon-box">
+          <div class="contact-icon-box" role="listitem">
             <div class="contact-icon">
-              <img src="/wp-content/uploads/2022/05/1.New-Phone-NO..svg" alt="Phone" width="90" height="90" />
+              <img src="/wp-content/uploads/2022/05/1.New-Phone-NO..svg" alt="" width="90" height="90" aria-hidden="true" />
             </div>
             <div class="contact-icon-content">
-              <h3><a href="tel:14082099112">+1 (408) 209-9112</a></h3>
+              <p class="contact-label"><a href="tel:14082099112" aria-label="Call Dr. Lavian at +1 (408) 209-9112">+1 (408) 209-9112</a></p>
             </div>
           </div>
 
-          <div class="contact-icon-box">
+          <div class="contact-icon-box" role="listitem">
             <div class="contact-icon">
-              <img src="/wp-content/uploads/2022/05/email.svg" alt="Email" width="90" height="90" />
+              <img src="/wp-content/uploads/2022/05/email.svg" alt="" width="90" height="90" aria-hidden="true" />
             </div>
             <div class="contact-icon-content">
-              <h3><a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></h3>
+              <p class="contact-label"><a href="mailto:tlavian@telecommnet.com" aria-label="Email Dr. Lavian at tlavian@telecommnet.com">tlavian@telecommnet.com</a></p>
             </div>
           </div>
 
-          <div class="contact-icon-box">
+          <div class="contact-icon-box" role="listitem">
             <div class="contact-icon">
-              <img src="/wp-content/uploads/2022/12/curriculum-Vitae-icon-1.svg" alt="Curriculum Vitae" width="60" height="60" />
+              <img src="/wp-content/uploads/2022/12/curriculum-Vitae-icon-1.svg" alt="" width="60" height="60" aria-hidden="true" />
             </div>
             <div class="contact-icon-content">
-              <h3><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf">curriculum vitae</a></h3>
+              <p class="contact-label"><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf" aria-label="Download Dr. Lavian's Curriculum Vitae (PDF)">curriculum vitae</a></p>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
   .contact-icon img {
     display: block;
   }
-  .contact-icon-content h3 {
+  .contact-icon-content .contact-label {
     margin: 0;
     font-size: 17px;
     font-weight: 600;
@@ -133,11 +133,11 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
     border-left: none;
     padding-left: 0;
   }
-  .contact-icon-content h3 a {
+  .contact-icon-content .contact-label a {
     color: #4267B2;
     text-decoration: none;
   }
-  .contact-icon-content h3 a:hover {
+  .contact-icon-content .contact-label a:hover {
     text-decoration: underline;
   }
 

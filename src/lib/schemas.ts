@@ -100,6 +100,8 @@ export const PERSON_ENTITY = {
   ],
   sameAs: [
     'https://www.linkedin.com/in/tallavian',
+    'https://x.com/tlavian',
+    'https://www.facebook.com/tal.lavianwork',
     'https://scholar.google.com/citations?user=Do_JNPQAAAAJ',
     'https://www.researchgate.net/profile/Tal-Lavian',
     'https://berkeley.academia.edu/TalLavian',
@@ -794,7 +796,7 @@ export const buildSchema = {
           url: `${BASE_URL}/${opts.slug}/`,
           isPartOf: { '@id': `${BASE_URL}/#website` },
           inLanguage: 'en-US',
-          dateModified: new Date().toISOString().split('T')[0],
+          dateModified: '2025-01-15',
         },
         breadcrumbs([{ name: opts.breadcrumbLabel, url: `/${opts.slug}/` }]),
       ],
