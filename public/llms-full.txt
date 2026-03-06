@@ -298,6 +298,32 @@ Website: https://telecommnet.com
 - For Law Firms: https://telecommnet.com/law-firm-clients/
 - For Corporations: https://telecommnet.com/corporate-clients/
 
+## Frequently Asked Questions for Attorneys:
+
+### How do I find a telecommunications expert witness for my patent case?
+Dr. Tal Lavian is a leading telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 100+ case engagements across U.S. federal district courts, USPTO PTAB, ITC, and Canadian courts. Contact him at tlavian@telecommnet.com or +1 (408) 209-9112.
+
+### What should I look for when hiring a telecom expert witness?
+Key qualifications include: relevant Ph.D., patent portfolio in the technology area, peer-reviewed publications, extensive courtroom experience (depositions and trial testimony), and familiarity with the specific technology at issue. Dr. Lavian uniquely combines all of these credentials.
+
+### How much does a telecommunications expert witness cost?
+Expert witness fees depend on case complexity, scope, and timeline. Contact Dr. Lavian directly for a confidential fee discussion and case evaluation.
+
+### Can an expert witness testify on both plaintiff and defendant sides?
+Yes. Qualified expert witnesses provide independent, unbiased technical analysis. Dr. Lavian has been retained by both plaintiffs and defendants in over 100 cases.
+
+### What is the difference between a consulting expert and a testifying expert witness?
+A consulting expert advises the legal team confidentially without testifying. A testifying expert provides written expert reports (per FRCP Rule 26(a)(2)(B)) and testimony at depositions and trial. Dr. Lavian serves in both capacities.
+
+### What types of cases require a telecommunications expert witness?
+Patent infringement cases (both offensive and defensive), ITC Section 337 investigations, PTAB Inter Partes Reviews (IPRs), trade secret disputes, breach of contract cases involving technology, and standards-essential patent (SEP) disputes all commonly require telecommunications expert witnesses.
+
+### How does an expert witness help with patent claim construction?
+An expert witness interprets patent claims based on their understanding of the technology and relevant prior art, providing claim construction opinions (Markman hearing testimony) that help the court determine the scope and meaning of patent claims.
+
+### What is the Daubert standard and how does it apply to expert witnesses?
+The Daubert standard (Daubert v. Merrell Dow Pharmaceuticals) requires that expert testimony be based on sufficient facts, reliable principles and methods, and that those principles are reliably applied. Dr. Lavian's testimony has been consistently admitted under the Daubert standard across 100+ engagements.
+
 ## Availability:
 
 Dr. Tal Lavian is available for engagement by law firms, corporations, and individual clients requiring expert witness services, technical consulting, or specialized analysis in telecommunications, networking, and related technology areas.

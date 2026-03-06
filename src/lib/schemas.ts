@@ -181,6 +181,7 @@ export const buildSchema = {
               'Routing & Switching Expert',
               'Network Management Expert Witness',
               'Networking Expert',
+              'Messaging & Chat Expert Witness',
             ],
           },
         },
@@ -252,6 +253,7 @@ export const buildSchema = {
               { '@type': 'Service', name: 'Routing & Switching Expert', url: `${BASE_URL}/communications-expert-witness/routing-switching-expert/` },
               { '@type': 'Service', name: 'Network Management Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-management-expert-witness/` },
               { '@type': 'Service', name: 'Networking Expert', url: `${BASE_URL}/communications-expert-witness/networking-expert/` },
+              { '@type': 'Service', name: 'Messaging & Chat Expert Witness', url: `${BASE_URL}/communications-expert-witness/messaging-and-chat-expert-witness/` },
             ],
           },
         },
@@ -283,6 +285,11 @@ export const buildSchema = {
           url: pageUrl,
           areaServed: { '@type': 'Country', name: 'United States' },
           keywords: opts.keywords.join(', '),
+          about: PERSON_REF,
+          audience: {
+            '@type': 'Audience',
+            audienceType: 'Attorneys and law firms seeking expert witness services',
+          },
         },
         {
           '@type': 'FAQPage',
