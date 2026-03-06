@@ -71,3 +71,13 @@
 /wo-2016203460-ultra-low-phase-noise-frequency-synthesizer/  /patents/  301
 /wo-2000041368-dynamic-assignment-of-classes-of-traffic-to-a-priority-queue/  /patents/  301
 /9705511-ultra-low-phase-noise-frequency-synthesizers-using-fractional-n-pll/  /patents/  301
+/20140012991-network-services-to-utilize-network-resources/  /patents/  301
+/20170099058-provide-a-frequency-output-signal-to-other-parts-of-the-transmitter/  /patents/  301
+/20170302282-radar-target-detection-system-for-autonomous-vehicles/  /patents/  301
+/us-8572303-portable-universal-communication-device/  /patents/  301
+
+# Cloudflare email protection — not a real page, redirect to homepage
+/cdn-cgi/l/email-protection  /  301
+
+# Missing PDF — redirect to the case page that references it
+/files/cases/DECLARATION-OF-TAL-LAVIAN.pdf  /cases-expert-witness-testimony/  301
