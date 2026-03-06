@@ -182,7 +182,7 @@ export const buildSchema = {
           '@id': `${BASE_URL}/#service`,
           name: 'TelecommNet Expert Witness Services',
           description:
-            'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC.',
+            'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Google, Apple, Microsoft, Amazon, Cisco, Huawei, Ericsson, Qualcomm, Samsung, Netflix, and other major technology companies.',
           provider: PERSON_REF,
           url: BASE_URL,
           areaServed: { '@type': 'Country', name: 'United States' },
@@ -205,6 +205,11 @@ export const buildSchema = {
               'Networking Expert',
               'Messaging & Chat Expert Witness',
             ],
+          },
+          potentialAction: {
+            '@type': 'AskAction',
+            name: 'Request Expert Witness Engagement',
+            target: `${BASE_URL}/contact/`,
           },
         },
         {
@@ -625,6 +630,52 @@ export const buildSchema = {
 
   /** Patents: CollectionPage + CreativeWork[] + BreadcrumbList */
   patents() {
+    const patentEntries = [
+      // Network Switch & Router Architecture
+      { position: 1, number: 'US 6,170,015', name: 'Automatically Configuring a Network Switch with a Co-processor', about: 'Network Switch Architecture' },
+      { position: 2, number: 'US 6,175,868', name: 'Automatically Configuring a Network Switch', about: 'Network Switch Configuration' },
+      { position: 3, number: 'US 6,408,006', name: 'Automatically Configuring Network Switch', about: 'Network Switch Architecture' },
+      { position: 4, number: 'US 6,970,943', name: 'Routing Architecture for High-Speed Packet Processing', about: 'Packet Switching and Routing' },
+      { position: 5, number: 'US 6,976,054', name: 'Accessing Low-Level Resources in a Network Device', about: 'Network Device Programming' },
+      { position: 6, number: 'US 7,039,724', name: 'Programmable Command-Line Interface API for Managing Operation', about: 'Network Management' },
+      // Network Security
+      { position: 7, number: 'US 6,564,325', name: 'Providing Multi-Level Security Access to System', about: 'Network Security' },
+      { position: 8, number: 'US 6,950,932', name: 'Security Association Mediator for Java-Enabled Devices', about: 'Network Security' },
+      { position: 9, number: 'US 7,587,492', name: 'Method and Apparatus for Network Immunization', about: 'Network Security' },
+      { position: 10, number: 'US 8,190,739', name: 'Providing Multi-Level Data Security Across a Distributed Network System', about: 'Network Security' },
+      { position: 11, number: 'US 10,764,264', name: 'Authenticating Network Users', about: 'Network Authentication' },
+      // Network Management & QoS
+      { position: 12, number: 'US 7,275,115', name: 'Dynamic Assignment of Traffic Classes to a Priority Queue', about: 'Quality of Service' },
+      { position: 13, number: 'US 7,283,469', name: 'Network Element Management System', about: 'Network Management' },
+      { position: 14, number: 'US 7,433,941', name: 'SNMP Accessing Network Information on a Network Device', about: 'Network Management (SNMP)' },
+      { position: 15, number: 'US 7,570,592', name: 'Flow Control of Packets Through Packet-Switched Networks', about: 'Packet Switching and QoS' },
+      { position: 16, number: 'US 8,090,868', name: 'Time Value Curves to Provide Dynamic QoS for Time-Sensitive File Transfer', about: 'Quality of Service' },
+      // VoIP & IVR Systems
+      { position: 17, number: 'US 7,720,087', name: 'Display of IVR Menu', about: 'VoIP and IVR Systems' },
+      { position: 18, number: 'US 7,933,968', name: 'IVR Visual Menu of a Called Party', about: 'VoIP and IVR Systems' },
+      { position: 19, number: 'US 8,000,454', name: 'Displaying Graphical Elements on the Device of the Caller', about: 'VoIP and IVR Systems' },
+      { position: 20, number: 'US 8,548,135', name: 'Visual IVR Menu System to a Calling Party', about: 'VoIP and IVR Systems' },
+      { position: 21, number: 'US 8,731,148', name: 'Visual Presentation and Selection of IVR Menu', about: 'VoIP and IVR Systems' },
+      { position: 22, number: 'US 9,143,609', name: 'Video Conferencing System Providing Video of Call Takers', about: 'Video Conferencing' },
+      // Grid Computing & Resource Allocation
+      { position: 23, number: 'US 7,310,335', name: 'Scheduling Resources on a Switched Underlay Network', about: 'Grid Computing and Network Resources' },
+      { position: 24, number: 'US 7,447,208', name: 'Switched Underlay Network', about: 'Grid Computing and Network Architecture' },
+      { position: 25, number: 'US 7,944,827', name: 'Content-Aware Dynamic Optical Bandwidth Allocation', about: 'Optical Networks' },
+      { position: 26, number: 'US 8,078,708', name: 'Grid Applications to Access Resources Shared in Communication Network', about: 'Grid Computing' },
+      { position: 27, number: 'US 8,131,853', name: 'Grid Proxy Architecture for Network Resources', about: 'Grid Computing' },
+      // Communication Protocols & Web Services
+      { position: 28, number: 'US 7,321,926', name: 'Exchange of Data Between Communication Devices', about: 'Data Communications' },
+      { position: 29, number: 'US 7,636,365', name: 'System and Method for Delivering Web Services', about: 'Web Technologies' },
+      { position: 30, number: 'US 7,788,086', name: 'Text and Voice Data Aggregation on the Internet', about: 'Internet Communications' },
+      { position: 31, number: 'US 8,762,962', name: 'Automatic Translation of a Computer Program Language Code', about: 'Software Engineering' },
+      { position: 32, number: 'US 9,883,039', name: 'Managing Network Communication Between Network Devices', about: 'Network Communications' },
+      // Frequency Synthesizer & Wireless
+      { position: 33, number: 'US 9,762,251', name: 'Ultra-Low Phase Noise Frequency Synthesizer', about: 'Wireless Communications' },
+      // Streaming & Multimedia
+      { position: 34, number: 'US 7,587,487', name: 'Real-Time Web Sharing System', about: 'Streaming Media' },
+      { position: 35, number: 'US 7,640,350', name: 'Method for Real-Time Web Sharing', about: 'Streaming Media' },
+    ];
+
     return {
       '@context': 'https://schema.org',
       '@graph': [
@@ -632,24 +683,22 @@ export const buildSchema = {
           '@type': 'CollectionPage',
           name: 'Patents — Dr. Tal Lavian',
           description:
-            '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions.',
+            '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions before the USPTO.',
           url: `${BASE_URL}/patents/`,
           author: PERSON_REF,
         },
         {
           '@type': 'ItemList',
           name: 'Patent Portfolio — Dr. Tal Lavian',
+          description: '120+ patents spanning network switch architecture, network security, VoIP/IVR systems, grid computing, QoS, streaming media, and wireless communications.',
           numberOfItems: 120,
-          itemListElement: [
-            {
-              '@type': 'CreativeWork',
-              position: 1,
-              '@id': `${BASE_URL}/patents/#portfolio`,
-              name: 'Patent Portfolio',
-              creator: PERSON_REF,
-              about: 'Telecommunications and Network Communications Innovations',
-            },
-          ],
+          itemListElement: patentEntries.map(pat => ({
+            '@type': 'CreativeWork',
+            position: pat.position,
+            name: `${pat.number} — ${pat.name}`,
+            creator: PERSON_REF,
+            about: pat.about,
+          })),
         },
         breadcrumbs([{ name: 'Patents', url: '/patents/' }]),
       ],
