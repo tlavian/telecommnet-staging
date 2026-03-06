@@ -107,6 +107,27 @@ export const PERSON_ENTITY = {
     { '@type': 'Organization', name: 'IEEE', url: 'https://www.ieee.org' },
     { '@type': 'Organization', name: 'ACM', url: 'https://www.acm.org' },
   ],
+  award: [
+    'Nortel Networks Top Talent Award',
+    'Nortel Networks Top Inventor Award',
+    'IEEE Certified Wireless Communications Engineer (WCET)',
+    'Toastmasters International Best Speaker Award',
+    'IEEE & ICE Best Paper Award',
+  ],
+  inventorOf: {
+    '@type': 'ItemList',
+    name: 'Patent Portfolio — Dr. Tal Lavian',
+    url: `${BASE_URL}/patents/`,
+    numberOfItems: 120,
+    description: '120+ patents in telecommunications, network communications, and computer science.',
+  },
+  authorOf: {
+    '@type': 'ItemList',
+    name: 'Scientific Publications — Dr. Tal Lavian',
+    url: `${BASE_URL}/scientific-publications/`,
+    numberOfItems: 25,
+    description: '25+ peer-reviewed publications in IEEE, ACM, and related venues.',
+  },
 };
 
 export const ORG_ENTITY = {
@@ -124,6 +145,7 @@ export const ORG_ENTITY = {
     email: 'tlavian@telecommnet.com',
     contactType: 'Expert Witness Engagement',
     areaServed: 'US',
+    availableLanguage: 'English',
   },
 };
 
