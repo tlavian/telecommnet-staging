@@ -129,7 +129,7 @@ const internetSchema = buildSchema.expertisePage({
 });
 
 const internetTitle = "Internet Expert Witness — Dr. Tal Lavian | TelecommNet";
-const internetDescription = "Internet expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. TCP/IP, HTTP, DNS, BGP, web technologies, Internet protocols expertise for patent litigation. Federal courts, PTAB & ITC.";
+const internetDescription = "Internet & Internet protocols expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. TCP/IP, HTTP, DNS, BGP, web technologies expertise for patent litigation. Federal court, USPTO PTAB & ITC testimony.";
 
 // ─── 4. VOIP EXPERT WITNESS ───────────────────────────────────────────────
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
@@ -289,7 +289,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
 });
 
 const computerNetworkingTitle = "Computer Networking Expert Witness — Dr. Tal Lavian | TelecommNet";
-const computerNetworkingDescription = "Computer networking expert witness with Ph.D. from UC Berkeley and 120+ patents. LAN/WAN, Ethernet, SDN, network architecture expertise. 100+ patent cases in federal courts & PTAB.";
+const computerNetworkingDescription = "Computer networking & computer networks expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. LAN/WAN, Ethernet, SDN, network architecture, computer communications expertise for patent litigation. Federal court, PTAB & ITC testimony.";
 
 // ─── 8. DATA COMMUNICATIONS EXPERT ───────────────────────────────────────
 // File: src/pages/communications-expert-witness/data-communications-expert/index.astro
@@ -371,7 +371,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
 });
 
 const mobileWirelessTitle = "Wireless Expert Witness — Dr. Tal Lavian | TelecommNet";
-const mobileWirelessDescription = "Wireless expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. Wi-Fi, Bluetooth, wireless networking, mobile communications, WLAN expertise for patent litigation. Federal court, PTAB & ITC testimony.";
+const mobileWirelessDescription = "Wireless & mobile communications expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. Wi-Fi, Bluetooth, cellular, wireless communication, 5G, WLAN expertise for patent litigation. Federal court, PTAB & ITC testimony.";
 
 // ─── 10. ROUTING & SWITCHING EXPERT ──────────────────────────────────────
 // File: src/pages/communications-expert-witness/routing-switching-expert/index.astro
@@ -494,7 +494,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
 });
 
 const networkingExpertTitle = "Networking Expert Witness — Dr. Tal Lavian | TelecommNet";
-const networkingExpertDescription = "Networking expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. Comprehensive networking and communications expertise across all protocols and architectures for patent litigation. Federal court, PTAB & ITC.";
+const networkingExpertDescription = "Networking expert witness — Ph.D. UC Berkeley, 120+ patents, 100+ cases. TCP/IP, LAN/WAN, routing, switching, network security, and protocol architecture expertise for patent litigation. Federal court, PTAB & ITC testimony.";
 
 // ─── 13. MESSAGING AND CHAT EXPERT WITNESS ──────────────────────────────
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
