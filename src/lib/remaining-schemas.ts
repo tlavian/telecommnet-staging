@@ -13,33 +13,33 @@ import { buildSchema } from './schemas';
 // File: src/pages/corporate-clients/index.astro
 
 export const corporateClientsSchema = buildSchema.clientPage({
-  name: 'Corporate Clients — Dr. Tal Lavian Expert Witness Services',
+  name: 'Telecom Consulting Expert for Corporate Counsel & Enterprises',
   slug: 'corporate-clients',
   description:
-    'Corporate and technology company clients for whom Dr. Tal Lavian has provided expert witness and consulting services in patent litigation involving telecommunications and network communications.',
+    'Strategic telecommunications consulting, FCC compliance advisory, and technical due diligence for corporate legal teams and telecom enterprises.',
   breadcrumbLabel: 'Corporate Clients',
 });
 
 export const corporateClientsTitle =
-  "Corporate Clients — Dr. Tal Lavian Expert Witness | TelecommNet";
+  "Telecom Expert for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Corporate clients of Dr. Tal Lavian: Google, Microsoft, Apple, Amazon, Cisco, Netflix, T-Mobile & 50+ tech leaders. Telecommunications expert witness services for patent litigation.";
+  "Strategic telecommunications consulting, FCC compliance advisory, and technical due diligence for corporate legal teams and telecom enterprises.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
 
 export const lawFirmClientsSchema = buildSchema.clientPage({
-  name: 'Law Firm Clients — Dr. Tal Lavian Expert Witness Services',
+  name: 'Telecommunications Expert Witness for Law Firms — Patent & IP Litigation',
   slug: 'law-firm-clients',
   description:
-    'Law firm clients that have retained Dr. Tal Lavian as a telecommunications and network communications expert witness in patent litigation matters in federal courts, USPTO PTAB, and the ITC.',
+    'Retain a premier telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Daubert-qualified technical testimony and forensic analysis.',
   breadcrumbLabel: 'Law Firm Clients',
 });
 
 export const lawFirmClientsTitle =
-  "Law Firm Clients — Dr. Tal Lavian Expert Witness | TelecommNet";
+  "Telecom Expert Witness for Law Firms | TelecommNet";
 export const lawFirmClientsDescription =
-  "Law firm clients of Dr. Tal Lavian: Fish Richardson, Gibson Dunn, Cooley, Kirkland Ellis, Finnegan, Winston Strawn & 25+ leading IP firms. Telecommunications expert witness services.";
+  "Retain a premier telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Daubert-qualified technical testimony and forensic analysis.";
 
 // ─── 18. SCIENTIFIC PUBLICATIONS ─────────────────────────────────────────
 // File: src/pages/scientific-publications/index.astro
@@ -47,9 +47,9 @@ export const lawFirmClientsDescription =
 export const publicationsSchema = buildSchema.publications();
 
 export const publicationsTitle =
-  "Scientific Publications — Dr. Tal Lavian | TelecommNet";
+  "Scientific Publications | Dr. Tal Lavian";
 export const publicationsDescription =
-  "25+ peer-reviewed scientific publications by Dr. Tal Lavian in IEEE, ACM journals on telecommunications, network communications, and computer science. Ph.D. UC Berkeley.";
+  "Peer-reviewed telecommunications research, academic whitepapers, and scientific publications supporting expert witness testimony in complex IP and infrastructure litigation.";
 
 // ─── 19. TALKS & PRESENTATIONS ───────────────────────────────────────────
 // File: src/pages/talks-presentations/index.astro
@@ -57,9 +57,9 @@ export const publicationsDescription =
 export const talksSchema = buildSchema.talks();
 
 export const talksTitle =
-  "Talks & Presentations — Dr. Tal Lavian | TelecommNet";
+  "Talks & Presentations | Dr. Tal Lavian";
 export const talksDescription =
-  "Talks and presentations by Dr. Tal Lavian at IEEE, ACM, UC Berkeley, DARPA events, and industry conferences on telecommunications and networking topics.";
+  "View keynote presentations, CLE training sessions, and technical lectures. Demonstrating clear communication of complex telecom technology to judges and juries.";
 
 // ─── 20. CASES / EXPERT WITNESS TESTIMONY ────────────────────────────────
 // File: src/pages/cases-expert-witness-testimony/index.astro
@@ -67,7 +67,7 @@ export const talksDescription =
 export const casesSchema = buildSchema.cases();
 
 export const casesTitle =
-  "Cases — Expert Witness Testimony | Dr. Tal Lavian | TelecommNet";
+  "Expert Witness Cases | Dr. Tal Lavian";
 export const casesDescription =
   "Expert witness testimony cases by Dr. Tal Lavian. 100+ cases in U.S. federal courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.";
 
@@ -93,7 +93,7 @@ export const siteMapDescription =
 export const contactSchema = buildSchema.contact();
 
 export const contactTitle =
-  "Contact Dr. Tal Lavian — Telecommunications Expert Witness | TelecommNet";
+  "Contact Dr. Tal Lavian | Telecom Expert Witness";
 export const contactDescription =
   "Contact Dr. Tal Lavian for telecommunications and network communications expert witness services. Phone: +1 (408) 209-9112. Based in Encino, California.";
 
@@ -101,33 +101,33 @@ export const contactDescription =
 // File: src/pages/privacy-policy/index.astro
 
 export const privacySchema = buildSchema.webPage({
-  name: 'Privacy Policy — TelecommNet.com',
+  name: 'Privacy Policy & Data Security Protocols — TelecommNet',
   slug: 'privacy-policy',
   description:
-    'Privacy Policy for TelecommNet.com. Learn how this website uses Google Analytics for anonymous traffic analysis. No personal information is collected or shared.',
+    'TelecommNet\'s privacy policy outlining rigorous data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.',
   breadcrumbLabel: 'Privacy Policy',
 });
 
 export const privacyTitle =
-  "Privacy Policy — TelecommNet.com | Dr. Tal Lavian";
+  "Privacy Policy & Data Security Protocols | TelecommNet";
 export const privacyDescription =
-  "Privacy Policy for TelecommNet.com. Learn how this site uses Google Analytics for anonymous traffic analysis. No personal data is collected, stored, or shared.";
+  "TelecommNet's privacy policy outlining rigorous data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.";
 
 // ─── 24. TERMS AND CONDITIONS ─────────────────────────────────────────────
 // File: src/pages/terms-and-conditions/index.astro
 
 export const termsSchema = buildSchema.webPage({
-  name: 'Terms and Conditions — TelecommNet.com',
+  name: 'Terms and Conditions of Use — TelecommNet Expert Witness Services',
   slug: 'terms-and-conditions',
   description:
-    'Terms and Conditions for TelecommNet.com, the professional expert witness website of Dr. Tal Lavian, Telecommunications and Network Communications Expert Witness.',
+    'Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet\'s telecommunications expert witness website.',
   breadcrumbLabel: 'Terms and Conditions',
 });
 
 export const termsTitle =
-  "Terms and Conditions — TelecommNet.com | Dr. Tal Lavian";
+  "Terms and Conditions | TelecommNet";
 export const termsDescription =
-  "Terms and conditions for TelecommNet.com. Usage terms, intellectual property, and legal notices for Dr. Tal Lavian's telecommunications expert witness consulting website.";
+  "Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet's telecommunications expert witness website.";
 
 // ─── 25. PATENTS ──────────────────────────────────────────────────────────
 // File: src/pages/patents/index.astro
@@ -137,7 +137,7 @@ export const patentsSchema = buildSchema.patents();
 export const patentsTitle =
   "Patents — Dr. Tal Lavian | TelecommNet";
 export const patentsDescription =
-  "120+ patents by Dr. Tal Lavian in telecommunications, network communications, and computer science. Patent portfolio spanning network communications innovation. 60+ pro-se prosecutions.";
+  "120+ patents by Dr. Tal Lavian in telecommunications, network communications, and computer science. 60+ pro-se prosecutions before the USPTO.";
 
 // ─── 26. PUBLICATION (single page template) ───────────────────────────────
 // File: src/pages/publication/[slug].astro or src/pages/publication/index.astro

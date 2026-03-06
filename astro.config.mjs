@@ -4,7 +4,11 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://telecommnet.com',
   integrations: [
-    sitemap(),
+    sitemap({
+      filter: (page) =>
+        !page.includes('/privacy-policy/') &&
+        !page.includes('/terms-and-conditions/'),
+    }),
   ],
   output: 'static',
   trailingSlash: 'always',
