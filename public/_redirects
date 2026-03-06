@@ -4,3 +4,21 @@
 /wp-login.php      https://wp.telecommnet.com/wp-login.php      301
 /wp-content/*      https://wp.telecommnet.com/wp-content/:splat 301
 /xmlrpc.php        https://wp.telecommnet.com/xmlrpc.php        301
+
+# Sitemap aliases — redirect common variants to actual sitemap
+/sitemap.xml       /sitemap-index.xml  301
+/wp-sitemap.xml    /sitemap-index.xml  301
+
+# WordPress legacy URLs — redirect to closest matching page
+/feed/             /  301
+/comments/feed/    /  301
+/author/admin/     /about-dr-lavian/  301
+/author/tlavian/   /about-dr-lavian/  301
+/category/         /communications-expert-witness/  301
+/category/*        /communications-expert-witness/  301
+/tag/              /communications-expert-witness/  301
+/tag/*             /communications-expert-witness/  301
+/page/*            /  301
+
+# WordPress API endpoints — return 410 Gone via redirect to homepage
+/wp-json/*         /  301
