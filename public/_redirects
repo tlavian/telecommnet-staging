@@ -104,3 +104,6 @@
 
 # Missing PDF — redirect to the case page that references it
 /files/cases/DECLARATION-OF-TAL-LAVIAN.pdf  /cases-expert-witness-testimony/  301
+
+# Category stub page — redirect to main patents page
+/category/patents/  /patents/  301
