@@ -69,7 +69,7 @@ export const casesSchema = buildSchema.cases();
 export const casesTitle =
   "Expert Witness Cases | Dr. Tal Lavian";
 export const casesDescription =
-  "Expert witness testimony cases by Dr. Tal Lavian. 100+ cases in U.S. federal courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.";
+  "Expert witness testimony cases by Dr. Tal Lavian. 80+ cases in U.S. federal courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.";
 
 // ─── 21. SITE MAP ─────────────────────────────────────────────────────────
 // File: src/pages/site-map/index.astro
