@@ -388,7 +388,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 14px; transition: all var(--transition-fast); text-decoration: none; }
     .footer-social a:hover { background: var(--color-gold); border-color: var(--color-gold); text-decoration: none; }
     .footer-content { padding: 40px 0; }
-    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr 1.2fr; gap: 40px; }
     .footer-col h3 { font-family: var(--font-heading); font-size: 18px; font-weight: 700; margin-bottom: 18px; color: #fff; position: relative; padding-bottom: 12px; }
     .footer-col h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 30px; height: 2px; background: var(--color-gold); }
     .footer-col a { display: block; color: rgba(255,255,255,0.8); font-size: 14px; padding: 5px 0; transition: color var(--transition-fast); }
@@ -436,10 +436,13 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       .hero-stat-number { font-size: 1.8rem; }
       .hero-cta { font-size: 15px; padding: 14px 30px; }
       .client-logos { grid-template-columns: repeat(3, 1fr); }
-      .footer-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       .hero-banner h1 { font-size: 1.6rem; }
       .two-col, .three-col, .two-col-text-img { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -543,6 +546,16 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
             <a href="/terms-and-conditions/">Terms and Conditions</a>
             <a href="/privacy-policy/">Privacy Policy</a>
             <a href="/site-map/">Site Map</a>
+          </div>
+          <div class="footer-col">
+            <h3>Resources</h3>
+            <a href="/cases-expert-witness-testimony/">Cases</a>
+            <a href="/corporate-clients/">Corporate Clients</a>
+            <a href="/communications-expert-witness/">Expert Witness Services</a>
+            <a href="/law-firm-clients/">Law Firm Clients</a>
+            <a href="/patents/">Patents</a>
+            <a href="/talks-presentations/">Presentations</a>
+            <a href="/scientific-publications/">Scientific Publications</a>
           </div>
           <div class="footer-col">
             <h3>Expertise</h3>
