@@ -78,15 +78,27 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta name="twitter:image" content={resolvedOgImage} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/wp-content/uploads/2022/10/header-banner.webp" fetchpriority="high" />}
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet" /></noscript>
   {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
-  <!-- Google Analytics (GA4 + Universal Analytics via gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCHFJ79Q1P"></script>
+  <!-- Google Analytics (deferred for performance — loads after browser idle) -->
   <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GCHFJ79Q1P');
+    (function(){
+      function loadGA(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-GCHFJ79Q1P';
+        s.async=true;
+        document.head.appendChild(s);
+        gtag('js',new Date());
+        gtag('config','G-GCHFJ79Q1P');
+      }
+      if('requestIdleCallback' in window){requestIdleCallback(loadGA);}
+      else{setTimeout(loadGA,2000);}
+    })();
   </script>
   <!-- GA4 Event Tracking -->
   <script is:inline>
