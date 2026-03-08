@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
+  <!-- Broadcom infinity/connection symbol (centered, top) -->
+  <g transform="translate(100,24)">
+    <path d="M-18,0 C-18,-12 -6,-12 0,-4 C6,-12 18,-12 18,0 C18,12 6,12 0,4 C-6,12 -18,12 -18,0 Z" fill="#CC092F"/>
+  </g>
+  <!-- Broadcom wordmark (centered, bottom) -->
+  <text x="100" y="68" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a" letter-spacing="2">BROADCOM</text>
+</svg>
