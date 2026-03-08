@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
   <!-- Microsoft four-color squares symbol (centered, top) -->
-  <rect x="76" y="2" width="22" height="22" fill="#F25022"/>
-  <rect x="101" y="2" width="22" height="22" fill="#7FBA00"/>
-  <rect x="76" y="27" width="22" height="22" fill="#00A4EF"/>
-  <rect x="101" y="27" width="22" height="22" fill="#FFB900"/>
-  <!-- Microsoft wordmark (centered, bottom) -->
-  <text x="100" y="72" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="400" fill="#737373">Microsoft</text>
+  <rect x="72" y="0" width="26" height="26" fill="#F25022"/>
+  <rect x="101" y="0" width="26" height="26" fill="#7FBA00"/>
+  <rect x="72" y="29" width="26" height="26" fill="#00A4EF"/>
+  <rect x="101" y="29" width="26" height="26" fill="#FFB900"/>
+  <!-- Microsoft wordmark (centered, bottom, dark text) -->
+  <text x="100" y="76" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#2b2b2b">Microsoft</text>
 </svg>
