@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-  <!-- ScholarGPS icon -->
-  <rect width="28" height="28" rx="4" fill="#2E7D32"/>
-  <!-- Location pin / GPS marker -->
-  <path d="M14 5 C10 5 7 8 7 12 C7 17 14 24 14 24 C14 24 21 17 21 12 C21 8 18 5 14 5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-  <circle cx="14" cy="12" r="3" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
-</svg>

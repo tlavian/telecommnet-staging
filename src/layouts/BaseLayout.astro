@@ -363,7 +363,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .client-logos a, .client-logo-item a { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
     .client-logos a:hover, .client-logo-item a:hover { text-decoration: none; opacity: 0.8; transition: opacity 0.2s; }
     .client-logos img { max-width: 130px; max-height: 50px; object-fit: contain; }
-    /* Ericsson logo now uses clean vector SVG that fills canvas — no scale needed */
+    /* Scale up Ericsson logo whose graphic is smaller within the SVG canvas */
+    img[src*="ericsson.svg"] { transform: scale(1.4); }
 
     .expertise-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 30px 0; }
     .expertise-card { background: #fff; box-shadow: var(--shadow-card); padding: 22px; padding-left: 26px; border-left: 4px solid var(--color-gold); border-radius: 4px; transition: all var(--transition-medium); }
