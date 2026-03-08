@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80" fill="none">
+  <!-- Teradici - Remote workstation technology (now HP Anyware) -->
+  <!-- Monitor/display symbol -->
+  <rect x="80" y="8" width="40" height="26" rx="3" fill="none" stroke="#00539B" stroke-width="2.5"/>
+  <rect x="84" y="12" width="32" height="18" rx="1" fill="#00539B"/>
+  <!-- Monitor stand -->
+  <line x1="100" y1="34" x2="100" y2="40" stroke="#00539B" stroke-width="2.5"/>
+  <line x1="90" y1="40" x2="110" y2="40" stroke="#00539B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Screen content - streaming pixels -->
+  <rect x="88" y="16" width="4" height="4" fill="#4FC3F7" opacity="0.8"/>
+  <rect x="94" y="16" width="4" height="4" fill="#29B6F6" opacity="0.6"/>
+  <rect x="100" y="16" width="4" height="4" fill="#4FC3F7" opacity="0.8"/>
+  <rect x="106" y="16" width="4" height="4" fill="#29B6F6" opacity="0.6"/>
+  <rect x="88" y="22" width="4" height="4" fill="#29B6F6" opacity="0.6"/>
+  <rect x="94" y="22" width="4" height="4" fill="#4FC3F7" opacity="0.8"/>
+  <rect x="100" y="22" width="4" height="4" fill="#29B6F6" opacity="0.6"/>
+  <rect x="106" y="22" width="4" height="4" fill="#4FC3F7" opacity="0.8"/>
+  <!-- Company name -->
+  <text x="100" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#00539B" letter-spacing="2">TERADICI</text>
+</svg>

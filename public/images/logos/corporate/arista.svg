@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80" fill="none">
+  <!-- Arista Networks - Cloud networking -->
+  <!-- Leaf/network symbol -->
+  <path d="M92 8 Q100 8 108 16 Q116 24 108 32 Q100 40 92 32 Q84 24 92 16 Z" fill="#E8621C"/>
+  <path d="M96 14 Q100 14 104 18 Q108 22 104 26 Q100 30 96 26 Q92 22 96 18 Z" fill="#FFFFFF"/>
+  <line x1="100" y1="8" x2="100" y2="40" stroke="#E8621C" stroke-width="1.5"/>
+  <line x1="84" y1="24" x2="116" y2="24" stroke="#E8621C" stroke-width="1.5"/>
+  <!-- Company name -->
+  <text x="100" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#333333" letter-spacing="3">ARISTA</text>
+</svg>
