@@ -19,6 +19,21 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 Disallow: /private/
 Disallow: /admin/
+# Block legacy WordPress AMP URLs (GSC: "Referenced AMP URL is not an AMP")
+Disallow: /amp/
+Disallow: /*?amp
+Disallow: /*/*/amp/
+# Block legacy WordPress sitemaps that no longer exist
+Disallow: /case-sitemap.xml
+Disallow: /post-sitemap.xml
+Disallow: /page-sitemap.xml
+Disallow: /patent-sitemap.xml
+Disallow: /publication-sitemap.xml
+# Block WordPress admin/feed/internal paths
+Disallow: /wp-admin/
+Disallow: /wp-json/
+Disallow: /feed/
+Disallow: /comments/
 Crawl-delay: 1
 
 # AI search engine bots - full access including structured data
