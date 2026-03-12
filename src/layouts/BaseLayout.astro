@@ -12,8 +12,11 @@ interface Props {
 const { title, description = "Dr. Tal Lavian - Telecommunications Expert Witness Consulting. Expert in network communications, data communications, computer networks, and internet protocols (TCP/IP).", schema, ogImage, ogType, breadcrumbs, robots = "index, follow" } = Astro.props;
 const currentPath = Astro.url.pathname;
 const canonicalURL = `https://telecommnet.com${currentPath}`;
-const defaultOgImage = "https://telecommnet.com/wp-content/uploads/2024/01/Dr-Tal-Lavian-Expert-Witness.jpg";
-const resolvedOgImage = ogImage || defaultOgImage;
+const defaultOgImage = "/images/og-default.jpg";
+// OG images must be absolute URLs for social crawlers
+const resolvedOgImage = ogImage
+  ? (ogImage.startsWith('http') ? ogImage : `https://telecommnet.com${ogImage}`)
+  : `https://telecommnet.com${defaultOgImage}`;
 
 // Generate BreadcrumbList schema from breadcrumbs prop
 const breadcrumbSchema = breadcrumbs ? {
@@ -56,6 +59,11 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta name="ahrefs-site-verification" content="a828a830be2be72c8535b41be85d1f3e970eb6d7d52ff5e10761f0fb293c8a78">
   <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0B1D3A" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="canonical" href={canonicalURL} />
   <!-- Open Graph -->
