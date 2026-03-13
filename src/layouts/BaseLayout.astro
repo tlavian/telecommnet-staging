@@ -321,6 +321,41 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     }
     .resource-links a:hover { background: var(--color-navy-light); color: #fff; text-decoration: none; border-color: var(--color-navy-light); }
 
+    /* Credential trust bar */
+    .credential-bar {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+      background: var(--color-bg-section); border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-gold); border-radius: 4px;
+      padding: 18px 24px; margin: 30px 0; text-align: center;
+    }
+    .credential-bar .cred-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.92rem; color: var(--color-navy-light); font-weight: 600;
+    }
+    .credential-bar .cred-item .cred-num {
+      font-size: 1.15rem; font-weight: 800; color: var(--color-gold-hover);
+    }
+    .credential-bar .cred-item a { color: var(--color-navy-light); text-decoration: none; }
+    .credential-bar .cred-item a:hover { color: var(--color-gold-hover); text-decoration: underline; }
+    @media (max-width: 600px) {
+      .credential-bar { gap: 12px; padding: 14px 16px; }
+      .credential-bar .cred-item { font-size: 0.85rem; }
+    }
+
+    /* CTA block */
+    .cta-block {
+      background: var(--color-navy); color: #fff; border-radius: 6px;
+      padding: 30px 36px; margin: 35px 0; text-align: center;
+    }
+    .cta-block h3 { color: #fff; font-family: var(--font-heading); font-size: 1.25rem; margin: 0 0 10px 0; border: none; padding: 0; }
+    .cta-block p { color: #cbd5e0; margin: 0 0 18px 0; font-size: 0.95rem; }
+    .cta-block .cta-button {
+      display: inline-block; background: var(--color-gold); color: var(--color-navy);
+      padding: 12px 28px; border-radius: 4px; font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; transition: all var(--transition-fast);
+    }
+    .cta-block .cta-button:hover { background: var(--color-gold-hover); color: #fff; text-decoration: none; }
+
     /* Expertise page layouts (no sidebar, multi-column) */
     .content-full { padding: 40px 0; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px; }

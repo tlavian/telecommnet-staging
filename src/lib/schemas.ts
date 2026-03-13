@@ -320,7 +320,7 @@ export const buildSchema = {
     };
   },
 
-  /** Expertise sub-page: Person + WebPage + Service + FAQPage + BreadcrumbList */
+  /** Expertise sub-page: Person + Organization + WebPage + Service + FAQPage + BreadcrumbList */
   expertisePage(opts: {
     name: string;
     slug: string;
@@ -335,6 +335,7 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        ORG_ENTITY,
         {
           '@type': 'WebPage',
           '@id': pageUrl,
