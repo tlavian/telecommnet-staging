@@ -342,6 +342,8 @@ export const buildSchema = {
           url: pageUrl,
           name: opts.name,
           description: opts.description,
+          datePublished: '2023-06-01',
+          dateModified: '2026-03-13',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,

@@ -43,6 +43,18 @@ const telecomSchema = buildSchema.expertisePage({
       q: 'What companies has Dr. Lavian served as a telecom expert witness for?',
       a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Cisco, AT&T, Verizon, Motorola, T-Mobile, Qualcomm, Ericsson, Huawei, and ZTE, among many others, providing analysis and testimony on telecom protocols and systems.',
     },
+    {
+      q: 'How is a telecommunications expert witness qualified under Daubert?',
+      a: 'Under the Daubert standard, a telecommunications expert witness must demonstrate reliable methodology and relevant expertise. Dr. Lavian qualifies through his Ph.D. from UC Berkeley, 120+ patents, 25+ peer-reviewed publications, and 80+ cases where his methodology and opinions have been accepted by federal courts, PTAB panels, and the ITC.',
+    },
+    {
+      q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
+      a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies — PSTN, VoIP, cellular systems, signaling protocols, and telecom standards (ITU-T, 3GPP). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
+    },
+    {
+      q: 'How much does a telecommunications expert witness cost?',
+      a: 'Telecommunications expert witness fees vary based on case complexity, scope of analysis, and whether testimony is needed at deposition or trial. Dr. Lavian provides competitive expert witness rates commensurate with his credentials (Ph.D. UC Berkeley, 120+ patents, 80+ cases). Contact Dr. Lavian directly for a fee schedule and case evaluation.',
+    },
   ],
 });
 
@@ -84,6 +96,14 @@ const networkCommsSchema = buildSchema.expertisePage({
       q: 'What courts has Dr. Lavian testified in as a network communications expert?',
       a: 'Dr. Lavian has provided expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), and courts in Canada.',
     },
+    {
+      q: 'What is a network communications expert witness and when do you need one?',
+      a: 'A network communications expert witness is a technical specialist who provides analysis and testimony in legal disputes involving network protocols, data transmission systems, and communication architectures. You need one in patent infringement cases, trade secret disputes, or regulatory matters where network protocol behavior, packet routing, or network architecture is at issue.',
+    },
+    {
+      q: 'How does a network communications expert witness help in patent claim construction?',
+      a: 'A network communications expert witness helps courts interpret technical patent terms — such as "packet header," "routing table," "protocol stack," and "network interface" — by providing definitions grounded in industry standards (IEEE, IETF RFCs) and the OSI model. Dr. Lavian\'s 120+ patents in networking give him firsthand insight into how these terms are used by inventors.',
+    },
   ],
 });
 
@@ -124,6 +144,14 @@ const internetSchema = buildSchema.expertisePage({
     {
       q: 'Can Dr. Lavian testify on Internet of Things (IoT) patent cases?',
       a: 'Yes. Dr. Lavian\'s expertise in Internet protocols, network communications, and embedded systems enables him to provide expert testimony on IoT patent cases, including device-to-cloud architectures, IoT communication protocols, smart device networking, and Internet-connected systems.',
+    },
+    {
+      q: 'What is an Internet expert witness and what cases require one?',
+      a: 'An Internet expert witness is a technical specialist with deep knowledge of Internet protocols (TCP/IP, HTTP, DNS), web technologies, and network architecture who provides testimony in legal proceedings. Cases requiring an Internet expert include patent infringement involving web technologies, cybersecurity breaches, Internet service disputes, and e-commerce platform litigation.',
+    },
+    {
+      q: 'How does an Internet technologies expert witness analyze protocol-level patent claims?',
+      a: 'An Internet technologies expert witness analyzes patent claims by mapping claim elements to specific protocol behaviors — such as TCP handshake sequences, HTTP request/response flows, DNS resolution steps, or BGP route advertisements. Dr. Lavian\'s 120+ patents and academic research in TCP/IP enable him to provide protocol-level infringement and validity analyses.',
     },
   ],
 });
@@ -289,6 +317,14 @@ const computerNetworkingSchema = buildSchema.expertisePage({
       q: 'What courts has Dr. Lavian testified in as a computer networks expert witness?',
       a: 'Dr. Lavian has provided computer networks expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), and courts in Canada.',
     },
+    {
+      q: 'What is the role of a computer networking expert witness in patent litigation?',
+      a: 'A computer networking expert witness analyzes patent claims involving network hardware (routers, switches, NICs), network protocols (Ethernet, TCP/IP, OSPF, BGP), and network architectures (LAN/WAN, SDN, cloud networking). They provide claim construction opinions, infringement analyses, and validity assessments, and testify at depositions, PTAB hearings, and trials.',
+    },
+    {
+      q: 'How does a computer networking expert witness explain technical concepts to a jury?',
+      a: 'An effective computer networking expert witness translates complex networking concepts — like packet switching, routing algorithms, and protocol handshakes — into clear, relatable explanations for judges and juries. Dr. Lavian\'s 20 years of teaching at UC Berkeley and experience in 80+ cases equip him to present network technology concepts accessibly and persuasively.',
+    },
   ],
 });
 
@@ -329,6 +365,14 @@ const dataCommsSchema = buildSchema.expertisePage({
     {
       q: 'Can Dr. Lavian testify on enterprise software and API communication patents?',
       a: 'Yes. Dr. Lavian\'s expertise extends to enterprise software architectures, RESTful API communications, microservices patterns, message queuing systems, and data serialization protocols — all common subjects in modern data communications patent litigation.',
+    },
+    {
+      q: 'What is a data communications expert witness and when is one needed?',
+      a: 'A data communications expert witness is a specialist in data transmission technologies, networking protocols, and communication system architectures who provides testimony in legal proceedings. One is needed in patent disputes involving data networking equipment, cloud computing infrastructure, data center technologies, protocol implementations, and enterprise communication systems.',
+    },
+    {
+      q: 'How does a data communications expert witness differ from a networking expert witness?',
+      a: 'While both fields overlap, a data communications expert focuses specifically on data transmission methods, protocol stacks, data encoding/decoding, and end-to-end data delivery mechanisms. A networking expert has broader scope including network hardware and topology. Dr. Lavian covers both areas with 120+ patents spanning data communications protocols and computer networking technologies.',
     },
   ],
 });
