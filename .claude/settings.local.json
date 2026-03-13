@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\tlavian\\\\Documents\\\\Claude\\\\telecommnet-git\" log --oneline -10)",
+      "Bash(git -C \"C:\\\\Users\\\\tlavian\\\\Documents\\\\Claude\\\\telecommnet-git\" log --oneline | wc -l)"
+    ]
+  }
+}
