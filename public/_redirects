@@ -105,5 +105,12 @@
 # Missing PDF — redirect to the case page that references it
 /files/cases/DECLARATION-OF-TAL-LAVIAN.pdf  /cases-expert-witness-testimony/  301
 
+# Old expertise sub-page slugs — redirect to correct pages
+/communications-expert-witness/streaming-media-expert-witness/  /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/  301
+/communications-expert-witness/network-security-expert-witness/  /communications-expert-witness/network-security-expert/  301
+
+# Missing PDF — redirect to cases page
+/files/cases/IPR2015-00716/Harold-XML-in-a-Nutshell.pdf  /cases-expert-witness-testimony/  301
+
 # Category stub page — redirect to main patents page
 /category/patents/  /patents/  301
