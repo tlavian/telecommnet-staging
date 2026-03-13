@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Delivering Web Service - TelecommNet">
+<BaseLayout title="Delivering Web Service - TelecommNet" description="U.S. Patent 8843914: Delivering Web Service. Invented by Dr. Tal Lavian, telecommunications and networking technology expert.">
 
   <div class="hero-banner">
     <h1>Delivering Web Service</h1>
@@ -12,21 +12,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div class="content-with-sidebar">
       <div class="content-main">
 
-        <p class="patent-number"><strong>Patent Number:</strong> US 8843914</p>
+        <p class="patent-number"><strong>Patent Number:</strong> US 8,843,914</p>
 
         <h4>ABSTRACT</h4>
         <h2>Delivering Web Service</h2>
-        <p>Delivering Web Service. This patent describes innovations developed by Dr. Tal Lavian in the field of distributed computing and web services.</p>
+        <p>This patent describes a distributed update service architecture where host computing devices with local management components periodically request version status from a central management component. The central component compares current versions against desired target versions and facilitates updates accordingly, enabling scalable software deployment across large-scale networked computing environments.</p>
 
         <h4>An Inventor: Dr. Tal Lavian</h4>
 
         <h4>FIELD</h4>
-        <h3>Embodiments of the present disclosure are generally related to distributed computing and web services, and in particular to methods and systems for delivering web service.</h3>
+        <h3>Embodiments of the present disclosure are generally related to distributed computing, software deployment, and version management in networked computing environments, and in particular to methods and systems for delivering updates and web services across data center infrastructure.</h3>
 
         <h4>BACKGROUND</h4>
-        <p>Distributed computing and web services enable efficient resource sharing and service delivery across network environments. Grid computing architectures and proxy-based systems provide scalable frameworks for accessing and managing shared resources in complex network topologies.</p>
+        <p>Large-scale computing environments, including data centers and cloud infrastructure, require efficient methods for deploying and managing software updates across hundreds or thousands of computing devices. Traditional centralized approaches to software distribution face challenges in scalability, network bandwidth consumption, and the need to handle heterogeneous device configurations. The ability to manage staged rollouts and selective updates becomes critical as infrastructure grows in size and complexity.</p>
 
-        <p>Dr. Tal Lavian is a named inventor on this patent, which covers innovations in telecommunications and network communications technology. Dr. Lavian's work spans multiple areas including network architecture, security, interactive communications, frequency synthesis, and autonomous vehicle sensing systems.</p>
+        <h4>TECHNICAL DESCRIPTION</h4>
+        <p>The invention introduces a distributed architecture for managing software updates across multiple computing devices. Local agents on each device independently initiate version checks based on configurable timing criteria. A central management component maintains version filter information defining desired goal states for device configurations. The version comparison process determines whether updates are needed by matching current system versions against target specifications.</p>
+
+        <p>The system supports staged rollout capability through techniques including random distribution, weighted selection for test groups, and time-based staggering across device populations. This approach is designed to handle large-scale infrastructure where not all devices are continuously tracked, allowing devices to report in and receive appropriate updates based on their characteristics.</p>
+
+        <p>Dr. Tal Lavian is a named inventor on this patent, which covers innovations in distributed computing and network communications technology. Dr. Lavian's work spans multiple areas including network architecture, grid computing, web services, interactive communications, and data center infrastructure management.</p>
 
         <p>For more details about this patent and Dr. Lavian's extensive patent portfolio, please visit the <a href="/patents/">Patents</a> page or contact Dr. Lavian directly.</p>
 
