@@ -111,6 +111,7 @@ export const PERSON_ENTITY = {
     'https://californiaconsultants.org/members/tal-lavian/',
     'https://www.ratemyprofessors.com/professor/1813887',
   ],
+  knowsLanguage: ['en', 'he'],
   memberOf: [
     { '@type': 'Organization', name: 'IEEE', url: 'https://www.ieee.org' },
     { '@type': 'Organization', name: 'ACM', url: 'https://www.acm.org' },
@@ -345,6 +346,7 @@ export const buildSchema = {
         },
         {
           '@type': 'Service',
+          '@id': `${pageUrl}#service`,
           name: opts.name,
           serviceType: opts.serviceType,
           description: opts.description,
@@ -353,7 +355,6 @@ export const buildSchema = {
           mainEntityOfPage: { '@id': pageUrl },
           areaServed: { '@type': 'Country', name: 'United States' },
           keywords: opts.keywords.join(', '),
-          about: PERSON_REF,
           priceRange: '$$$$',
           audience: {
             '@type': 'Audience',
