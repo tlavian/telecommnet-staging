@@ -39,7 +39,7 @@ export const lawFirmClientsSchema = buildSchema.clientPage({
 export const lawFirmClientsTitle =
   "Telecom Expert Witness for Law Firms | TelecommNet";
 export const lawFirmClientsDescription =
-  "Retain a premier telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Daubert-qualified technical testimony and forensic analysis.";
+  "Retain a telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Daubert-qualified testimony.";
 
 // ─── 18. SCIENTIFIC PUBLICATIONS ─────────────────────────────────────────
 // File: src/pages/scientific-publications/index.astro
@@ -49,7 +49,7 @@ export const publicationsSchema = buildSchema.publications();
 export const publicationsTitle =
   "Scientific Publications | Dr. Tal Lavian";
 export const publicationsDescription =
-  "Peer-reviewed telecommunications research, academic whitepapers, and scientific publications supporting expert witness testimony in complex IP and infrastructure litigation.";
+  "Peer-reviewed telecommunications research and scientific publications by Dr. Tal Lavian. IEEE, ACM journals. Supporting expert witness testimony.";
 
 // ─── 19. TALKS & PRESENTATIONS ───────────────────────────────────────────
 // File: src/pages/talks-presentations/index.astro
@@ -69,7 +69,7 @@ export const casesSchema = buildSchema.cases();
 export const casesTitle =
   "Expert Witness Cases | Dr. Tal Lavian";
 export const casesDescription =
-  "Expert witness testimony cases by Dr. Tal Lavian. 80+ cases in U.S. federal courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.";
+  "Expert witness cases by Dr. Tal Lavian. 80+ cases in U.S. federal courts, USPTO PTAB, and ITC. Telecommunications patent disputes.";
 
 // ─── 21. SITE MAP ─────────────────────────────────────────────────────────
 // File: src/pages/site-map/index.astro

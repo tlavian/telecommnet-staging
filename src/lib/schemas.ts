@@ -193,6 +193,7 @@ export const buildSchema = {
           url: BASE_URL,
           areaServed: { '@type': 'Country', name: 'United States' },
           serviceType: 'Expert Witness Consulting',
+          priceRange: '$$$$',
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
             name: 'Expert Witness Practice Areas',
@@ -287,6 +288,7 @@ export const buildSchema = {
           description:
             'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
           areaServed: { '@type': 'Country', name: 'United States' },
+          priceRange: '$$$$',
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
             name: 'Expert Witness Practice Areas',
@@ -352,6 +354,7 @@ export const buildSchema = {
           areaServed: { '@type': 'Country', name: 'United States' },
           keywords: opts.keywords.join(', '),
           about: PERSON_REF,
+          priceRange: '$$$$',
           audience: {
             '@type': 'Audience',
             audienceType: 'Attorneys and law firms seeking expert witness services',
@@ -389,6 +392,7 @@ export const buildSchema = {
           url: `${BASE_URL}/${opts.slug}/`,
           areaServed: { '@type': 'Country', name: 'United States' },
           serviceType: 'Expert Witness Consulting',
+          priceRange: '$$$$',
         },
         breadcrumbs([{ name: opts.breadcrumbLabel, url: `/${opts.slug}/` }]),
       ],
