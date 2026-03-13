@@ -1,116 +1,17 @@
-# WordPress admin redirects — send to wp.telecommnet.com
-/wp-admin          https://wp.telecommnet.com/wp-admin          301
-/wp-admin/*        https://wp.telecommnet.com/wp-admin/:splat   301
-/wp-login.php      https://wp.telecommnet.com/wp-login.php      301
-/wp-content/*      https://wp.telecommnet.com/wp-content/:splat 301
-/xmlrpc.php        https://wp.telecommnet.com/xmlrpc.php        301
+# Redirects from old WordPress URLs to new Astro staging URLs
+# Format: /old-path /new-path [status-code]
 
-# Sitemap aliases — redirect common variants to actual sitemap
-/sitemap.xml       /sitemap-index.xml  301
-/wp-sitemap.xml    /sitemap-index.xml  301
+# VoIP Expert Witness - old production URL returned 404 in Neil Patel audit
+/communications-expert-witness/voip-expert-witness/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/communications-expert-witness/voip-expert-witness /communications-expert-witness/voice-over-ip-voip-expert/ 301
 
-# WordPress legacy URLs — redirect to closest matching page
-/feed/             /  301
-/comments/feed/    /  301
-/author/admin/     /about-dr-lavian/  301
-/author/tlavian/   /about-dr-lavian/  301
-/category/         /communications-expert-witness/  301
-/category/*        /communications-expert-witness/  301
-/tag/              /communications-expert-witness/  301
-/tag/*             /communications-expert-witness/  301
-/page/*            /  301
+# Network Security Expert - URL slug changed
+/communications-expert-witness/network-security-expert-witness/ /communications-expert-witness/network-security-expert/ 301
+/communications-expert-witness/network-security-expert-witness /communications-expert-witness/network-security-expert/ 301
 
-# WordPress API endpoints — return 410 Gone via redirect to homepage
-/wp-json/*         /  301
+# Streaming Media Expert - URL slug changed
+/communications-expert-witness/streaming-media-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/communications-expert-witness/streaming-media-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 
-# Old expertise hub URLs — three legacy path patterns
-/expert-witness-services/             /communications-expert-witness/  301
-/expert-witness-services/*            /communications-expert-witness/  301
-/communications-expert-witness-services/   /communications-expert-witness/  301
-/communications-expert-witness-services/*  /communications-expert-witness/  301
-/telecommunications-expert-witness-services/   /communications-expert-witness/  301
-/telecommunications-expert-witness-services/*  /communications-expert-witness/  301
-
-# Old standalone pages
-/patents-list/  /patents/  301
-
-# Old patent slugs — pages exist on disk with different description text
-/8345835-visual-presentation-and-selection-of-telephone-menu/  /8345835-ivr-menu-to-a-mobile-handset/  301
-/8594280-technology-to-display-ivr-menu-graphically-on-a-device/  /8594280-technology-to-display-ivr-menu-on-the-caller-phone/  301
-/8879698-enhanced-communication-device-for-providing-enhanced-telephony/  /8879698-enhanced-communications-over-a-network/  301
-/20050074529-live-streaming-media-replication-in-a-communication-network/  /20050074529-transporting-visualization-information-on-a-switched-underlay-network/  301
-
-# Old patent slugs — no matching page exists, redirect to patents index
-/8341257-grid-proxy-architecture-for-network-resources/  /patents/  301
-/7734748-enhanced-management-opportunities-to-enable-network-element/  /patents/  301
-/9521255-enable-a-user-at-the-device-to-interact-with-the-visual-ivr-menu/  /patents/  301
-/20100146492-translation-of-programming-code/  /patents/  301
-/8553859-device-and-method-for-providing-enhanced-telephony/  /patents/  301
-/20150058490-grid-applications-to-access-resources/  /patents/  301
-/9660655-system-to-operate-at-the-set-frequency-band/  /patents/  301
-/9831881-radar-target-detection-system-with-ulpn-system/  /patents/  301
-/20170269797-systems-and-methods-for-electronic-communication/  /patents/  301
-/20140105012-dynamic-dssignment-priority-queue/  /patents/  301
-/20170322687-enhancing-user-interaction-with-objects/  /patents/  301
-/20140379784-command-design-pattern-to-access-network-elements/  /patents/  301
-/8160215-web-interface-for-displaying-the-ivr-menus/  /patents/  301
-/20090313613-translation-of-computer-programming-language-code/  /patents/  301
-/8155280-enable-caller-to-directly-interact-with-visual-ivr-menu/  /patents/  301
-/20170085708-converting-the-audible-menus-to-visual-ivr-menus/  /patents/  301
-/8406388-ivr-detecting-voice-and-key-inputs-from-a-caller/  /patents/  301
-/20140156758-enhancing-the-reliability-of-ratings-provided-to-users/  /patents/  301
-/9184989-network-domains-to-discover-and-allocate-network-resources/  /patents/  301
-/20170289332-ivr-menu-in-a-visual-form-to-the-caller/  /patents/  301
-/8548131-systems-and-methods-for-communicating-with-an-ivr-system/  /patents/  301
-/8146090-using-time-value-curves-for-resource-management/  /patents/  301
-/8537989-technology-used-to-detect-voice-and-key-inputs-from-a-caller/  /patents/  301
-/20140105025-traffic-classes-in-a-packet-forwarding-device/  /patents/  301
-/20150010136-visual-selection-of-ivr-option/  /patents/  301
-/7860999-distributed-computation-in-network-devices/  /patents/  301
-/wo-2007008976-authenticating-network-users-prevent-unauthorized-access/  /patents/  301
-/wo-2016203460-ultra-low-phase-noise-frequency-synthesizer/  /patents/  301
-/wo-2000041368-dynamic-assignment-of-classes-of-traffic-to-a-priority-queue/  /patents/  301
-/9705511-ultra-low-phase-noise-frequency-synthesizers-using-fractional-n-pll/  /patents/  301
-/20140012991-network-services-to-utilize-network-resources/  /patents/  301
-/20170099058-provide-a-frequency-output-signal-to-other-parts-of-the-transmitter/  /patents/  301
-/20170302282-radar-target-detection-system-for-autonomous-vehicles/  /patents/  301
-/us-8572303-portable-universal-communication-device/  /patents/  301
-
-# Old patent slugs — pages exist with corrected slugs
-/7237012-classifying-java-remote-method-invocation-transport-traffic/  /7237012-classifying-java-remote-method-invocations/  301
-/7580349-performing-content-aware-optical-bandwidth-allocation/  /7580349-traffic-classes-on-a-packet-by-packet-basis/  301
-/8223931-system-for-enhancing-user-interaction-with-ivr/  /8223931-ivr-menu-system-which-may-include-advertising-to-calling-party/  301
-/8548135-communication-device-comprises-a-database-of-visual-ivr-menus/  /8548135-visual-ivr-menu-system-to-a-calling-party/  301
-
-# Old patent slugs — no matching page, redirect to patents index
-/20100146112-improving-the-efficiency-of-communication-network/  /patents/  301
-/20120063574-enhancing-user-interaction-with-ivr/  /patents/  301
-/20130022181-ivr-technology-to-detect-voice-and-key-inputs/  /patents/  301
-/20130022183-system-for-generating-interactive-voice-response-database/  /patents/  301
-/20130022191-generating-an-interactive-voice-response-ivr-database/  /patents/  301
-/20160373117-advance-communication-system-comprise-frequency-synthesizer/  /patents/  301
-/20180019755-ultra-low-phase-noise-frequency-generation-for-radar-applications/  /patents/  301
-/7313608-markup-language-to-access-and-configure-network-elements/  /patents/  301
-/7359993-interfacing-external-resources-with-a-network-element/  /patents/  301
-/8161139-network-element-includes-an-intelligent-interface/  /patents/  301
-/9021130-photonic-line-sharing-for-high-speed-routers/  /patents/  301
-/9083728-support-sharing-and-exchanging-in-a-network/  /patents/  301
-/9690877-systems-and-methods-for-electronic-communications/  /patents/  301
-/us-8745573-platform-independent-development-framework-for-applications/  /patents/  301
-/wo-2005033899-data-transfers-over-switched-underlay-networks/  /patents/  301
-
-# Cloudflare email protection — not a real page, redirect to homepage
-/cdn-cgi/l/email-protection  /  301
-
-# Missing PDF — redirect to the case page that references it
-/files/cases/DECLARATION-OF-TAL-LAVIAN.pdf  /cases-expert-witness-testimony/  301
-
-# Old expertise sub-page slugs — redirect to correct pages
-/communications-expert-witness/streaming-media-expert-witness/  /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/  301
-/communications-expert-witness/network-security-expert-witness/  /communications-expert-witness/network-security-expert/  301
-
-# Missing PDF — redirect to cases page
-/files/cases/IPR2015-00716/Harold-XML-in-a-Nutshell.pdf  /cases-expert-witness-testimony/  301
-
-# Category stub page — redirect to main patents page
-/category/patents/  /patents/  301
+# Cloudflare email protection artifact - redirect to contact page
+/cdn-cgi/l/email-protection /contact/ 301
