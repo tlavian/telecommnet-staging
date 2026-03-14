@@ -14,7 +14,7 @@ import { buildSchema } from "./schemas";
 const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN, VoIP & Cellular Systems Expert',
   slug: 'pstn-voip-cellular-expert',
-  description: 'PSTN, VoIP, and cellular systems expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in SONET/SDH, DWDM, telecom switching, signaling protocols (SS7), and carrier network architectures with 70+ cases and 120+ patents.',
+  description: 'PSTN, VoIP & cellular systems expert witness for patent litigation. SONET/SDH, DWDM, telecom switching, SS7 signaling. 70+ cases, 120+ patents.',
   serviceType: 'PSTN, VoIP & Cellular Systems Expert Witness',
   keywords: ['PSTN expert witness', 'VoIP expert witness', 'cellular systems expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
   breadcrumbLabel: 'PSTN, VoIP & Cellular',
@@ -67,7 +67,7 @@ const telecomDescription = "PSTN, VoIP & cellular systems expert witness. Dr. Ta
 const networkCommsSchema = buildSchema.expertisePage({
   name: 'Network Communications Expert Witness',
   slug: 'network-communications-expert-witness',
-  description: 'Network communications expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in TCP/IP, routing protocols, LAN/WAN architecture, OSI model, and distributed network systems with 70+ cases and 120+ patents.',
+  description: 'Network communications expert witness for patent litigation. TCP/IP, routing protocols, LAN/WAN, OSI model. 70+ cases, 120+ patents.',
   serviceType: 'Network Communications Expert Witness',
   keywords: ['network communications expert witness', 'TCP/IP expert witness', 'routing protocols litigation', 'LAN WAN patent expert', 'network architecture expert witness', 'OSI model patent', 'network protocol expert', 'distributed systems expert witness'],
   breadcrumbLabel: 'Network Comms',
@@ -116,7 +116,7 @@ const networkCommsDescription = "Network communications expert witness — 120+ 
 const internetSchema = buildSchema.expertisePage({
   name: 'Internet Technologies Expert Witness',
   slug: 'internet-expert-witness',
-  description: 'Internet technologies expert witness for patent litigation — TCP/IP, HTTP, DNS, BGP, web technologies, and Internet protocols expertise for federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian, Ph.D. UC Berkeley.',
+  description: 'Internet technologies expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies. 70+ cases, 120+ patents. Ph.D. UC Berkeley.',
   serviceType: 'Internet Technologies Expert Witness',
   keywords: ['internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'internet protocols expert witness', 'TCP/IP patent litigation', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
   breadcrumbLabel: 'Internet & TCP/IP',
@@ -165,7 +165,7 @@ const internetDescription = "Internet technologies expert witness — TCP/IP, pr
 const voipSchema = buildSchema.expertisePage({
   name: 'VoIP Expert Witness',
   slug: 'voice-over-ip-voip-expert',
-  description: 'VoIP expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in SIP, RTP, H.323, unified communications, IP telephony, and voice codec technologies with 70+ cases and 120+ patents.',
+  description: 'VoIP expert witness for patent litigation. SIP, RTP, H.323, unified communications, IP telephony, voice codecs. 70+ cases, 120+ patents.',
   serviceType: 'VoIP Expert Witness',
   keywords: ['VoIP expert witness', 'SIP protocol expert', 'RTP patent litigation', 'voice over IP PTAB', 'unified communications expert', 'H.323 patent', 'IP telephony expert witness', 'voice codec patent expert', 'SIP trunking patent', 'WebRTC expert witness'],
   breadcrumbLabel: 'VoIP',
@@ -206,7 +206,7 @@ const voipDescription = "VoIP expert witness — 120+ patents, 70+ cases. SIP, R
 const networkSecuritySchema = buildSchema.expertisePage({
   name: 'Network Security Expert Witness',
   slug: 'network-security-expert',
-  description: 'Expert witness in network security for patent litigation. Encryption, authentication, firewalls, intrusion detection, and cybersecurity standards expertise for federal courts and PTAB.',
+  description: 'Network security expert witness for patent litigation. Encryption, firewalls, IDS/IPS, authentication, cybersecurity. 70+ cases, 120+ patents.',
   serviceType: 'Network Security Expert Witness',
   keywords: ['network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'network access control expert', 'cybersecurity expert witness'],
   breadcrumbLabel: 'Network Security',
@@ -247,7 +247,7 @@ const networkSecurityDescription = "Network security expert witness — 120+ pat
 const streamingSchema = buildSchema.expertisePage({
   name: 'Streaming Media Expert Witness',
   slug: 'streaming-media-audio-and-video-conferencing-expert',
-  description: 'Streaming media expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in video/audio streaming, adaptive bitrate, WebRTC, conferencing systems, CDN architectures, and QoS with 70+ cases and 120+ patents.',
+  description: 'Streaming media expert witness for patent litigation. Video/audio streaming, adaptive bitrate, WebRTC, CDN, QoS. 70+ cases, 120+ patents.',
   serviceType: 'Streaming Media Expert Witness',
   keywords: ['streaming media expert witness', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert', 'CDN patent expert', 'WebRTC expert witness', 'video conferencing patent', 'HLS DASH streaming expert'],
   breadcrumbLabel: 'Streaming Media',
@@ -288,7 +288,7 @@ const streamingDescription = "Streaming media expert witness — 120+ patents, 7
 const computerNetworkingSchema = buildSchema.expertisePage({
   name: 'Computer Networks Expert Witness',
   slug: 'computer-networking-expert-witness',
-  description: 'Computer networks expert witness for patent litigation. LAN/WAN architecture, Ethernet, network switches and routers, SDN, cloud networking, and distributed systems expertise for federal courts, USPTO PTAB, and ITC.',
+  description: 'Computer networks expert witness for patent litigation. LAN/WAN, Ethernet, routers, switches, SDN, cloud networking. 70+ cases, 120+ patents.',
   serviceType: 'Computer Networks Expert Witness',
   keywords: ['computer networks expert witness', 'computer networking expert witness', 'computer network expert witness', 'LAN WAN patent expert', 'Ethernet patent litigation', 'network architecture expert witness', 'distributed systems patent', 'cloud networking expert', 'network infrastructure expert witness', 'SDN expert witness'],
   breadcrumbLabel: 'Computer Networks',
@@ -337,7 +337,7 @@ const computerNetworkingDescription = "Computer networks expert witness — 120+
 const dataCommsSchema = buildSchema.expertisePage({
   name: 'Data Communications Expert Witness',
   slug: 'data-communications-expert',
-  description: 'Data communications expert witness consultant for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in data networking, cloud computing, data center networking, protocol stacks, enterprise systems, and storage networking with 70+ cases and 120+ patents.',
+  description: 'Data communications expert witness for patent litigation. Data networking, cloud computing, data centers, protocol stacks. 70+ cases, 120+ patents.',
   serviceType: 'Data Communications Expert Witness',
   keywords: ['data communications expert witness', 'data communications expert', 'data networking expert witness', 'data network expert witness', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
   breadcrumbLabel: 'Data Communications',
@@ -386,7 +386,7 @@ const dataCommsDescription = "Data communications expert witness — 120+ patent
 const mobileWirelessSchema = buildSchema.expertisePage({
   name: 'Mobile & Wireless Expert Witness',
   slug: 'mobile-wireless-expert',
-  description: 'Wireless expert witness for patent litigation. Wi-Fi, Bluetooth, wireless networking, mobile communications, WLAN, and RF technology expertise for federal courts, ITC Section 337, and USPTO PTAB.',
+  description: 'Wireless & mobile expert witness for patent litigation. Wi-Fi, Bluetooth, cellular, 5G, WLAN, RF technology. 70+ cases, 120+ patents.',
   serviceType: 'Wireless Expert Witness',
   keywords: ['wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'Bluetooth patent expert', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness', 'RF technology patent expert'],
   breadcrumbLabel: 'Mobile Wireless',
@@ -427,7 +427,7 @@ const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ pat
 const routingSwitchingSchema = buildSchema.expertisePage({
   name: 'Routing & Switching Expert',
   slug: 'routing-switching-expert',
-  description: 'Routing and switching expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in BGP, OSPF, MPLS, packet switching, router/switch architectures, and SDN with 70+ cases and 120+ patents.',
+  description: 'Routing & switching expert witness for patent litigation. BGP, OSPF, MPLS, packet switching, SDN, router/switch architectures. 70+ cases, 120+ patents.',
   serviceType: 'Routing & Switching Expert Witness',
   keywords: ['routing switching expert witness', 'BGP patent litigation', 'OSPF expert witness', 'MPLS patent PTAB', 'router architecture expert', 'packet switching patent', 'SDN expert', 'network switch expert witness', 'VLAN patent expert', 'OpenFlow SDN patent'],
   breadcrumbLabel: 'Routing & Switching',
@@ -468,7 +468,7 @@ const routingSwitchingDescription = "Routing & switching expert witness — 120+
 const networkMgmtSchema = buildSchema.expertisePage({
   name: 'Network Management Expert Witness',
   slug: 'network-management-expert-witness',
-  description: 'Network management expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in SNMP, MIB, OSS/BSS, network monitoring, configuration management, and NOC systems with 70+ cases and 120+ patents.',
+  description: 'Network management expert witness for patent litigation. SNMP, OSS/BSS, network monitoring, configuration management. 70+ cases, 120+ patents.',
   serviceType: 'Network Management Expert Witness',
   keywords: ['network management expert witness', 'SNMP patent litigation', 'OSS BSS expert', 'IP-PBX patent expert', 'network operations expert witness', 'MIB patent PTAB', 'network monitoring patent', 'configuration management expert', 'device management patent expert', 'NOC systems expert witness'],
   breadcrumbLabel: 'Network Management',
@@ -509,7 +509,7 @@ const networkMgmtDescription = "Network management expert witness — 120+ paten
 const networkingExpertSchema = buildSchema.expertisePage({
   name: 'Networking Expert',
   slug: 'networking-expert',
-  description: 'Networking expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian provides comprehensive computer networking and communications expertise across all protocol layers, architectures, and standards with 70+ cases and 120+ patents.',
+  description: 'Networking expert witness for patent litigation. TCP/IP, LAN/WAN, routing, switching, network security, all protocol layers. 70+ cases, 120+ patents.',
   serviceType: 'Networking Expert Witness',
   keywords: ['networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
   breadcrumbLabel: 'Networking Expert',
@@ -550,7 +550,7 @@ const networkingExpertDescription = "Networking expert witness — 120+ patents,
 const messagingChatSchema = buildSchema.expertisePage({
   name: 'Messaging & Chat Expert Witness',
   slug: 'messaging-and-chat-expert-witness',
-  description: 'Messaging and chat expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in SMS, MMS, instant messaging, XMPP, push notifications, chat protocols, and enterprise collaboration platforms with 70+ cases and 120+ patents.',
+  description: 'Messaging & chat expert witness for patent litigation. SMS, MMS, instant messaging, XMPP, push notifications. 70+ cases, 120+ patents.',
   serviceType: 'Messaging & Chat Expert Witness',
   keywords: ['messaging expert witness', 'chat expert witness', 'SMS patent litigation', 'instant messaging patent', 'messaging protocol expert', 'push notification patent', 'chat platform expert witness', 'MMS patent expert', 'XMPP expert witness', 'enterprise messaging patent'],
   breadcrumbLabel: 'Messaging & Chat',

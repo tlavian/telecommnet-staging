@@ -325,8 +325,8 @@ export const buildSchema = {
           '@type': 'WebPage',
           '@id': hubUrl,
           url: hubUrl,
-          name: 'Expert Witness Services — Dr. Tal Lavian',
-          description: 'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
+          name: 'Telecommunications Expert Witness — Dr. Tal Lavian',
+          description: 'Telecommunications expert witness for patent litigation. Network communications, Internet protocols, VoIP, mobile wireless, computer networking. 70+ cases, 120+ patents.',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -337,12 +337,12 @@ export const buildSchema = {
         },
         {
           '@type': 'ProfessionalService',
-          name: 'Expert Witness Services — Dr. Tal Lavian',
+          name: 'Telecommunications Expert Witness — Dr. Tal Lavian',
           provider: PERSON_REF,
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
           description:
-            'Comprehensive expert witness services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, computer networking, and related fields for patent litigation and ITC proceedings.',
+            'Telecommunications expert witness for patent litigation. Network communications, Internet protocols, VoIP, mobile wireless, computer networking. 70+ cases, 120+ patents.',
           areaServed: { '@type': 'Country', name: 'United States' },
           priceRange: '$$$$',
           hasOfferCatalog: {
@@ -384,7 +384,7 @@ export const buildSchema = {
               name: 'What qualifications does Dr. Lavian have as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley's College of Engineering. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 70 expert witness engagements.',
+                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley\'s College of Engineering. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 70 expert witness engagements.',
               },
             },
             {
