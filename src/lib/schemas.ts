@@ -384,7 +384,7 @@ export const buildSchema = {
               name: 'What qualifications does Dr. Lavian have as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 100 expert witness engagements.',
+                text: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 70 expert witness engagements.',
               },
             },
             {
