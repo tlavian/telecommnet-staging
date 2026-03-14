@@ -20,6 +20,9 @@
 # Cloudflare email protection artifact - redirect to contact page
 /cdn-cgi/l/email-protection /contact/ 301
 
+# PDF file with incorrect subdirectory path (found by Ahrefs audit March 2026)
+/files/cases/IPR2015-00716/Harold-XML-in-a-Nutshell.pdf /files/cases/Harold-XML-in-a-Nutshell.pdf 301
+
 # ============================================================
 # Old WordPress patent URLs (returning 404) -> staging URLs
 # Patent publication/application numbers mapped to granted patent pages
