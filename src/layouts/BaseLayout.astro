@@ -380,7 +380,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .cta-button { display: inline-block; padding: 14px 32px; background: var(--color-gold); color: var(--color-navy); font-family: var(--font-body); font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: all var(--transition-medium); border: 2px solid var(--color-gold); letter-spacing: 0.02em; cursor: pointer; }
     .cta-button:hover { background: var(--color-gold-hover); border-color: var(--color-gold-hover); color: #fff; text-decoration: none; transform: translateY(-1px); box-shadow: 0 4px 15px rgba(201, 168, 76, 0.35); }
     .hero-cta { margin-top: 28px; position: relative; z-index: 1; display: inline-block; padding: 16px 38px; font-size: 17px; }
-    .cta-button-outline { display: inline-block; padding: 14px 32px; background: transparent; color: #fff; font-family: var(--font-body); font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: all var(--transition-medium); border: 2px solid rgba(255,255,255,0.6); letter-spacing: 0.02em; }
+    .cta-button-outline { display: inline-block; padding: 14px 32px; background: transparent; color: #fff; font-family: var(--font-body); font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: all var(--transition-medium); border: 2px solid rgba(255,255,255,0.85); letter-spacing: 0.02em; }
     .cta-button-outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; color: #fff; text-decoration: none; }
 
     /* Bio with sidebar layout (homepage) */
@@ -451,7 +451,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     /* Related resources silo navigation */
     .related-resources { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid var(--color-border); }
     .related-resources h2 { font-family: var(--font-heading); font-size: 1.15rem; color: var(--color-navy-light); margin-bottom: 1rem; font-weight: 700; }
-    .resource-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .resource-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
+    .resource-links li { display: contents; }
     .resource-links a {
       display: inline-block; padding: 7px 16px; font-size: 0.9rem;
       background: var(--color-bg-light); color: var(--color-navy-light); border: 1px solid var(--color-border);
@@ -578,7 +579,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     footer { background: var(--color-navy); color: #fff; }
     .footer-logo-bar { background: rgba(255,255,255,0.05); padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
     .footer-logo-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
-    .footer-logo-bar .tagline { font-size: 14px; color: rgba(255,255,255,0.75); }
+    .footer-logo-bar .tagline { font-size: 14px; color: rgba(255,255,255,0.9); }
     .footer-social { display: flex; gap: 10px; }
     .footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 14px; transition: all var(--transition-fast); text-decoration: none; }
     .footer-social a:hover { background: var(--color-gold); border-color: var(--color-gold); text-decoration: none; }
@@ -593,7 +594,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .footer-contact-item a { display: inline; color: rgba(255,255,255,0.8); text-decoration: none; }
     .footer-contact-item a:hover { text-decoration: none; color: var(--color-gold); }
     .footer-contact-icon { width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
-    .footer-bottom { background: rgba(0,0,0,0.2); text-align: center; padding: 16px 0; font-size: 13px; color: rgba(255,255,255,0.6); }
+    .footer-bottom { background: rgba(0,0,0,0.2); text-align: center; padding: 16px 0; font-size: 13px; color: rgba(255,255,255,0.85); }
 
     h1 { font-family: var(--font-heading); font-size: 2rem; color: var(--color-heading); margin-bottom: 16px; font-weight: 700; letter-spacing: -0.02em; }
     h2 { font-family: var(--font-heading); font-size: 2.1rem; color: var(--color-heading); margin-bottom: 14px; font-weight: 700; letter-spacing: -0.01em; }
@@ -706,7 +707,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <!-- Main Navigation -->
   <nav class="main-nav" aria-label="Main navigation">
     <div class="container">
-      <ul class="nav-links" id="navMenu" role="menubar">
+      <ul class="nav-links" id="navMenu">
         <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
         <li><a href="/about-dr-lavian/" class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
         <li class="has-dropdown">
