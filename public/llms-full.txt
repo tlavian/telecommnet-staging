@@ -356,7 +356,7 @@ Q: What law firms have retained Dr. Lavian?
 A: Dr. Lavian has been retained by 52 law firms including AmLaw 100 firms such as Fish Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, Hogan Lovells, and many other top IP litigation firms. Full list: https://telecommnet.com/law-firm-clients/
 
 Q: What companies has Dr. Lavian worked with or against?
-A: Dr. Lavian has been involved in cases involving Google, Apple, Microsoft, Amazon, Cisco, Samsung, Intel, Qualcomm, AT&T, Verizon, Huawei, Ericsson, Facebook, Netflix, and 30+ other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
+A: Dr. Lavian has been involved in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and 30+ other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
 
 Q: What is Dr. Lavian's background in messaging and chat technology?
 A: Dr. Lavian specializes in SMS, MMS, RCS, instant messaging (XMPP, MQTT, WebSocket), push notifications (APNs, FCM), and enterprise collaboration platforms. He has served as expert witness in messaging-related patent cases. Details: https://telecommnet.com/communications-expert-witness/messaging-and-chat-expert-witness/

@@ -14,7 +14,7 @@ import { buildSchema } from "./schemas";
 const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN, VoIP & Cellular Systems Expert',
   slug: 'pstn-voip-cellular-expert',
-  description: 'Telecommunications expert witness consultant for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in PSTN, VoIP, SONET/SDH, DWDM, telecom switching, cellular systems, and signaling protocols with 70+ cases and 120+ patents.',
+  description: 'PSTN, VoIP, and cellular systems expert witness for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in SONET/SDH, DWDM, telecom switching, signaling protocols (SS7), and carrier network architectures with 70+ cases and 120+ patents.',
   serviceType: 'PSTN, VoIP & Cellular Systems Expert Witness',
   keywords: ['PSTN expert witness', 'VoIP expert witness', 'cellular systems expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
   breadcrumbLabel: 'PSTN, VoIP & Cellular',

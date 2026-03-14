@@ -190,7 +190,7 @@ export const buildSchema = {
           '@id': `${BASE_URL}/#service`,
           name: 'TelecommNet Expert Witness Services',
           description:
-            'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Google, Apple, Microsoft, Amazon, Cisco, Huawei, Ericsson, Qualcomm, Samsung, Netflix, and other major technology companies.',
+            'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and other major technology companies.',
           provider: PERSON_REF,
           url: BASE_URL,
           address: {
@@ -416,7 +416,7 @@ export const buildSchema = {
               name: 'What companies and law firms has Dr. Lavian been retained in cases involving?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Google, Apple, Microsoft, Amazon, Cisco Systems, Huawei, Ericsson, Qualcomm, Samsung, Netflix, T-Mobile, ZTE, Juniper Networks, Arista Networks, Motorola, LG, Avaya, and many others. He has been engaged by leading law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Skadden, Finnegan, Irell & Manella, Perkins Coie, Morgan Lewis, Baker Botts, and more.',
+                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks (HPE), Huawei, Arista Networks, Motorola, LG, Avaya, and many others. He has been engaged by leading law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Skadden, Finnegan, Irell & Manella, Perkins Coie, Morgan Lewis, Baker Botts, and more.',
               },
             },
           ],

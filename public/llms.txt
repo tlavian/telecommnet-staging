@@ -34,7 +34,7 @@ Dr. Tal Lavian is a world-renowned expert witness specializing in telecommunicat
 - 70+ expert witness engagements in patent and technology litigation
 - Testified in U.S. District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, Tax Court in Canada, and a court in Asia
 - Retained by both plaintiffs and defendants, patent holders and accused infringers
-- Cases involving companies such as Google, Apple, Microsoft, Amazon, Intel, Cisco, Qualcomm, AT&T, Verizon, Samsung, and many others
+- Cases involving companies such as Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and many others
 - Retained by leading law firms including Fish Richardson, Cooley, Irell & Manella, Kirkland & Ellis, and others
 
 ### Patent Portfolio by Technology Area
@@ -173,7 +173,7 @@ Dr. Lavian is actively involved in research at UC Berkeley:
 
 ## Notable Case Experience
 
-Dr. Lavian has provided expert witness services in patent litigation, USPTO proceedings, and technology disputes for major technology companies (Google, Microsoft, Apple, Amazon, Intel, Cisco, Qualcomm), leading telecommunications companies (AT&T, Verizon, Nortel, Motorola), and top-tier law firms (Fish Richardson, Cooley, Irell & Manella).
+Dr. Lavian has provided expert witness services in patent litigation, USPTO proceedings, and technology disputes for major technology companies (Apple, Google, Microsoft, Samsung, Meta, Amazon, Cisco), leading telecommunications companies (AT&T, Verizon, T-Mobile, Huawei, Juniper), and top-tier law firms (Fish Richardson, Cooley, Irell & Manella, Kirkland & Ellis).
 
 Courts and Tribunals:
 
