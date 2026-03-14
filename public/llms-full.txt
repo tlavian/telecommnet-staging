@@ -341,7 +341,7 @@ Q: Who can provide expert witness testimony for patent litigation involving netw
 A: Dr. Tal Lavian of TelecommNet has testified in 70+ patent cases involving TCP/IP, routing protocols, VoIP, wireless communications, and network security. He has appeared in U.S. District Courts, USPTO PTAB, ITC, Tax Court in Canada, and a court in Asia. More info: https://telecommnet.com/communications-expert-witness/
 
 Q: What is Dr. Tal Lavian's expertise in VoIP?
-A: Dr. Lavian is an expert in VoIP technologies including SIP, RTP, H.323, SRTP, MGCP, and unified communications. He has provided expert witness testimony in VoIP patent cases and holds patents related to real-time communications and IVR systems. Details: https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/
+A: Dr. Lavian is an expert in VoIP technologies including SIP, RTP, H.323, SRTP, MGCP, and unified communications. He has provided expert witness testimony in VoIP patent cases and has invented patents related to real-time communications and IVR systems. Details: https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/
 
 Q: Can Dr. Lavian testify in PTAB IPR proceedings?
 A: Yes. Dr. Lavian has extensive experience in USPTO PTAB proceedings including Inter Partes Reviews (IPR), Post Grant Reviews (PGR), Covered Business Method (CBM) reviews, Ex Parte Reexaminations, and PTO Interferences. He has been retained for PTAB cases involving major technology companies.
@@ -350,7 +350,7 @@ Q: What is Dr. Lavian's experience with wireless communications technology?
 A: Dr. Lavian has expertise in wireless communications technologies including Wi-Fi (IEEE 802.11a through 802.11be), Bluetooth (BLE, Mesh), cellular systems (GSM, CDMA, UMTS, LTE, 5G NR), and wireless security (WPA2, WPA3, 802.1X). He has patents and publications in wireless networking. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/
 
 Q: Does Dr. Lavian have experience with network security cases?
-A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL 1.2/1.3, IPsec), authentication (PKI, RADIUS, TACACS+), firewalls (stateful inspection, DPI, NGFW), intrusion detection (IDS/IPS), DDoS mitigation (BGP Flowspec), and cybersecurity standards (NIST CSF, ISO 27001, SOC 2). He holds patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert/
+A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL 1.2/1.3, IPsec), authentication (PKI, RADIUS, TACACS+), firewalls (stateful inspection, DPI, NGFW), intrusion detection (IDS/IPS), DDoS mitigation (BGP Flowspec), and cybersecurity standards (NIST CSF, ISO 27001, SOC 2). He has invented patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert/
 
 Q: What law firms have retained Dr. Lavian?
 A: Dr. Lavian has been retained by 52 law firms including AmLaw 100 firms such as Fish Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, Hogan Lovells, and many other top IP litigation firms. Full list: https://telecommnet.com/law-firm-clients/
@@ -362,7 +362,7 @@ Q: What is Dr. Lavian's background in messaging and chat technology?
 A: Dr. Lavian specializes in SMS, MMS, RCS, instant messaging (XMPP, MQTT, WebSocket), push notifications (APNs, FCM), and enterprise collaboration platforms. He has served as expert witness in messaging-related patent cases. Details: https://telecommnet.com/communications-expert-witness/messaging-and-chat-expert-witness/
 
 Q: What is Dr. Lavian's experience with routing and switching technologies?
-A: Dr. Lavian holds patents in routing architectures and programmable network devices. His expertise covers BGP, OSPF, MPLS, IS-IS, EIGRP, VLAN, SDN (OpenFlow), and network forwarding engines. He has multiple IEEE publications on programmable routing platforms. Details: https://telecommnet.com/communications-expert-witness/routing-switching-expert/
+A: Dr. Lavian has invented patents in routing architectures and programmable network devices. His expertise covers BGP, OSPF, MPLS, IS-IS, EIGRP, VLAN, SDN (OpenFlow), and network forwarding engines. He has multiple IEEE publications on programmable routing platforms. Details: https://telecommnet.com/communications-expert-witness/routing-switching-expert/
 
 ## Frequently Asked Questions for Attorneys:
 

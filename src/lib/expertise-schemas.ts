@@ -446,7 +446,7 @@ const routingSwitchingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s industry experience with routing and switching hardware?',
-      a: 'Dr. Lavian was a Senior Research Scientist at Nortel Networks (formerly Bay Networks) where he designed routing and switching software for enterprise and carrier-grade network equipment. He holds 120+ patents, many covering programmable forwarding engines and active network architectures for routers and switches.',
+      a: 'Dr. Lavian was a Senior Research Scientist at Nortel Networks (formerly Bay Networks) where he designed routing and switching software for enterprise and carrier-grade network equipment. He has invented 120+ patents, many covering programmable forwarding engines and active network architectures for routers and switches.',
     },
     {
       q: 'What types of routing and switching patent disputes has Dr. Lavian handled?',
@@ -527,8 +527,8 @@ const networkingExpertSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian has handled patent cases involving network protocols, router and switch architectures, network management systems, packet processing, VoIP implementations, network security mechanisms, and cloud networking technologies for major technology companies.',
     },
     {
-      q: 'How many networking-related patents does Dr. Lavian hold?',
-      a: 'Dr. Lavian holds 120+ issued and filed patents spanning network communications, telecommunications systems, active network architectures, programmable forwarding engines, network management, and data center infrastructure technologies.',
+      q: 'How many networking-related patents has Dr. Lavian invented?',
+      a: 'Dr. Lavian has invented 120+ issued and filed patents spanning network communications, telecommunications systems, active network architectures, programmable forwarding engines, network management, and data center infrastructure technologies.',
     },
     {
       q: 'Why hire a generalist networking expert vs. a specialist for patent cases?',
