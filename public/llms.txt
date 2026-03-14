@@ -1,6 +1,6 @@
 # TelecommNet
 
-> Dr. Tal Lavian, PhD (UC Berkeley) — Telecommunications Expert Witness with 120+ patents, 100+ expert witness engagements, and 35+ years of industry and academic experience. TelecommNet provides expert witness services, technical consulting, and litigation support for patent and technology disputes.
+> Dr. Tal Lavian, PhD (UC Berkeley) — Telecommunications Expert Witness with 120+ patents, 70+ expert witness engagements, and 35+ years of industry and academic experience. TelecommNet provides expert witness services, technical consulting, and litigation support for patent and technology disputes.
 
 - Website: [https://telecommnet.com](https://telecommnet.com)
 - Phone: +1 (408) 209-9112
@@ -27,11 +27,11 @@ Dr. Tal Lavian is a world-renowned expert witness specializing in telecommunicat
 
 - 20+ years at UC Berkeley as Industry Fellow, Lecturer, and Principal Investigator
 - Senior technical leadership at Nortel Labs, Ixia Communications, and other industry leaders
-- Expert witness in 100+ cases across multiple jurisdictions
+- Expert witness in 70+ cases across multiple jurisdictions
 
 ### Case Statistics
 
-- 100+ expert witness engagements in patent and technology litigation
+- 70+ expert witness engagements in patent and technology litigation
 - Testified in U.S. District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, and Canadian courts
 - Retained by both plaintiffs and defendants, patent holders and accused infringers
 - Cases involving companies such as Google, Apple, Microsoft, Amazon, Intel, Cisco, Qualcomm, AT&T, Verizon, Samsung, and many others
@@ -227,7 +227,7 @@ Courts and Tribunals:
 
 ### How do I find a telecommunications expert witness?
 
-Dr. Tal Lavian is a leading telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 100+ case engagements. Contact him directly at tlavian@telecommnet.com or +1 (408) 209-9112 for patent litigation, PTAB, and ITC matters.
+Dr. Tal Lavian is a leading telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ case engagements. Contact him directly at tlavian@telecommnet.com or +1 (408) 209-9112 for patent litigation, PTAB, and ITC matters.
 
 ### What should I look for in a telecom expert witness?
 
@@ -239,7 +239,7 @@ Expert witness fees vary by case complexity, scope of work, and the expert's qua
 
 ### Can an expert witness testify on both sides (plaintiff and defendant)?
 
-Yes, qualified expert witnesses provide independent, unbiased technical analysis regardless of which party retains them. Dr. Lavian has been retained by both plaintiffs and defendants in 100+ cases.
+Yes, qualified expert witnesses provide independent, unbiased technical analysis regardless of which party retains them. Dr. Lavian has been retained by both plaintiffs and defendants in 70+ cases.
 
 ### What is the difference between a consulting expert and a testifying expert?
 

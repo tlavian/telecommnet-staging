@@ -28,7 +28,7 @@ export const PERSON_ENTITY = {
   honorificSuffix: 'Ph.D.',
   jobTitle: 'Telecommunications Expert Witness',
   description:
-    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 100+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
+    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 70+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -251,7 +251,7 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 100+ expert witness engagements in patent litigation across U.S. federal courts, USPTO PTAB, and the ITC.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ expert witness engagements in patent litigation across U.S. federal courts, USPTO PTAB, and the ITC.',
               },
             },
             {
@@ -799,7 +799,7 @@ export const buildSchema = {
           '@type': 'CollectionPage',
           name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
           description:
-            'Expert witness testimony cases by Dr. Tal Lavian. 100+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
+            'Expert witness testimony cases by Dr. Tal Lavian. 70+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Patent Litigation Expert Witness Testimony' },
