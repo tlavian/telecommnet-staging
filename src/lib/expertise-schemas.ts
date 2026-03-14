@@ -9,11 +9,11 @@ import { buildSchema } from "./schemas";
  */
 
 // ─── 1. TELECOMMUNICATIONS EXPERT WITNESS ─────────────────────────────────
-// File: src/pages/communications-expert-witness/telecommunications-expert-witness/index.astro
+// File: src/pages/communications-expert-witness/pstn-voip-cellular-expert/index.astro
 
 const telecomSchema = buildSchema.expertisePage({
-  name: 'Telecommunications Expert Witness',
-  slug: 'telecommunications-expert-witness',
+  name: 'PSTN, VoIP & Cellular Systems Expert',
+  slug: 'pstn-voip-cellular-expert',
   description: 'Telecommunications expert witness consultant for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in PSTN, VoIP, SONET/SDH, DWDM, telecom switching, cellular systems, and signaling protocols with 100+ cases and 120+ patents.',
   serviceType: 'Telecommunications Expert Witness',
   keywords: ['telecommunications expert witness', 'telecom expert witness', 'telecommunications expert witness consultant', 'telecommunications patent expert', 'PTAB telecom expert', 'ITC telecommunications expert', 'PSTN expert witness', 'telecom patent litigation', 'telephony expert witness', 'telecommunications consulting expert'],

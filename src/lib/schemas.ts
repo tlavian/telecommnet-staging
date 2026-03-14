@@ -357,7 +357,7 @@ export const buildSchema = {
             '@type': 'OfferCatalog',
             name: 'Expert Witness Practice Areas',
             itemListElement: [
-              { '@type': 'Service', name: 'Telecommunications Expert Witness', url: `${BASE_URL}/communications-expert-witness/telecommunications-expert-witness/` },
+              { '@type': 'Service', name: 'PSTN, VoIP & Cellular Systems Expert', url: `${BASE_URL}/communications-expert-witness/pstn-voip-cellular-expert/` },
               { '@type': 'Service', name: 'Network Communications Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-communications-expert-witness/` },
               { '@type': 'Service', name: 'Internet Expert Witness', url: `${BASE_URL}/communications-expert-witness/internet-expert-witness/` },
               { '@type': 'Service', name: 'VoIP Expert Witness', url: `${BASE_URL}/communications-expert-witness/voice-over-ip-voip-expert/` },
