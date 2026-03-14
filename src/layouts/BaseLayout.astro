@@ -159,7 +159,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <!-- Self-hosted fonts: eliminates 2 external network requests (fonts.googleapis.com + fonts.gstatic.com) -->
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
-  {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" />}
+  {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" media="(min-width: 769px)" />}
   {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
   <!-- Google Analytics (deferred for performance — loads after browser idle) -->
   <script is:inline>
@@ -190,7 +190,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     if('requestIdleCallback' in window){requestIdleCallback(setupGATracking);}
     else{document.addEventListener('DOMContentLoaded',setupGATracking);}
   </script>
-  <style is:global>
+  <style is:inline>
     /* ── Self-hosted Google Fonts ── */
     @font-face {
       font-family: 'Inter';
@@ -357,7 +357,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .logo-link { display: flex; align-items: center; text-decoration: none; }
     .logo-link:hover { text-decoration: none; }
     .logo-text { font-family: var(--font-heading); font-size: 26px; font-weight: 700; color: var(--color-navy); letter-spacing: -0.5px; }
-    .logo-text .accent { color: #9E7B1C; /* darker gold for WCAG AA contrast on white (3.9:1 for large text) */ }
+    .logo-text .accent { color: #7A6010; /* darkened gold for WCAG AAA contrast on white (5.1:1) */ }
+    footer .logo-text .accent { color: #C9A84C; /* original gold on navy background (high contrast) */ }
     .mobile-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--color-text); padding: 4px; }
 
     .hero-banner { background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-medium) 50%, var(--color-blue) 100%); color: #fff; padding: 70px 0; text-align: center; position: relative; overflow: hidden; }
@@ -633,7 +634,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       .hero-content h1 { font-size: 1.6rem; }
       .hero-content { padding: 50px 20px; }
       .hero-banner { padding: 50px 0; }
-      .hero-banner-img { height: 320px; }
+      .hero-banner-img { height: 320px; background-image: none !important; background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%) !important; }
       .hero-stats { flex-wrap: wrap; gap: 20px; }
       .hero-stat-number { font-size: 1.8rem; }
       .hero-cta { font-size: 15px; padding: 14px 30px; }
