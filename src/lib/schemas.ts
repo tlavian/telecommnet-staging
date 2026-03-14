@@ -278,14 +278,6 @@ export const buildSchema = {
                 text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Tax Court in Canada, and courts in Asia.',
               },
             },
-            {
-              '@type': 'Question',
-              name: 'How do I retain Dr. Lavian as an expert witness?',
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Contact Dr. Lavian directly at tlavian@telecommnet.com or call +1 (408) 209-9112 for a confidential case evaluation and engagement discussion.',
-              },
-            },
           ],
         },
         breadcrumbs([]),
