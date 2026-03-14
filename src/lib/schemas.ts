@@ -275,7 +275,7 @@ export const buildSchema = {
               name: 'What courts and tribunals has Dr. Lavian testified in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), and Canadian federal and provincial courts.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Tax Court in Canada, and courts in Asia.',
               },
             },
             {
@@ -400,7 +400,7 @@ export const buildSchema = {
               name: 'In what courts has Dr. Lavian testified?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, and federal and provincial courts in Canada.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Tax Court in Canada, and courts in Asia.',
               },
             },
             {

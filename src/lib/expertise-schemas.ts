@@ -29,7 +29,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'In which courts has Dr. Lavian testified as a telecommunications expert?',
-      a: 'Dr. Lavian has provided expert testimony in U.S. federal district courts, the USPTO Patent Trial and Appeal Board (PTAB) IPR proceedings, and the International Trade Commission (ITC). He has also testified in courts in Canada.',
+      a: 'Dr. Lavian has provided expert testimony in U.S. federal district courts, the USPTO Patent Trial and Appeal Board (PTAB) IPR proceedings, and the International Trade Commission (ITC). He has also testified in the Tax Court in Canada, and courts in Asia.',
     },
     {
       q: 'What telecommunications patent issues has Dr. Lavian addressed?',
@@ -94,7 +94,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'What courts has Dr. Lavian testified in as a network communications expert?',
-      a: 'Dr. Lavian has provided expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), and courts in Canada.',
+      a: 'Dr. Lavian has provided expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), the Tax Court in Canada, and courts in Asia.',
     },
     {
       q: 'What is a network communications expert witness and when do you need one?',
@@ -315,7 +315,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What courts has Dr. Lavian testified in as a computer networks expert witness?',
-      a: 'Dr. Lavian has provided computer networks expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), and courts in Canada.',
+      a: 'Dr. Lavian has provided computer networks expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), the Tax Court in Canada, and courts in Asia.',
     },
     {
       q: 'What is the role of a computer networking expert witness in patent litigation?',
