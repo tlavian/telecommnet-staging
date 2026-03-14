@@ -267,7 +267,7 @@ export const buildSchema = {
               name: 'How many patents does Dr. Lavian hold?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian holds 120+ issued and filed patents covering network switch architecture, network security, VoIP/IVR systems, grid computing, quality of service, streaming media, and wireless communications.',
+                text: 'Dr. Lavian holds 120+ issued and filed patents covering network switch architecture, network security, VoIP/IVR systems, grid computing, quality of service, streaming media, and wireless communications. He has personally prosecuted over 60 patents pro-se before the USPTO, including drafting, claims, office action responses, and examiner interviews.',
               },
             },
             {
