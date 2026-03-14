@@ -397,6 +397,40 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
 
     .bordered-section { border-left: 4px solid var(--color-gold); padding-left: 20px; margin: 30px 0; }
 
+    /* FAQ accordion section */
+    .faq-section { margin: 40px 0; padding-top: 10px; }
+    .faq-section > h2 {
+      font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy);
+      margin-bottom: 1.2rem; font-weight: 700;
+    }
+    .faq-section details {
+      border: 1px solid var(--color-border); border-radius: 4px;
+      margin-bottom: 8px; background: var(--color-bg-section);
+      transition: background var(--transition-fast);
+    }
+    .faq-section details[open] { background: #fff; border-color: var(--color-gold); }
+    .faq-section details summary {
+      padding: 14px 20px; cursor: pointer; font-weight: 600;
+      font-size: 1rem; color: var(--color-navy); list-style: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .faq-section details summary::before {
+      content: '+'; font-size: 1.3rem; font-weight: 700; color: var(--color-gold-hover);
+      min-width: 20px; text-align: center; transition: transform 0.2s;
+    }
+    .faq-section details[open] summary::before { content: '−'; }
+    .faq-section details summary::-webkit-details-marker { display: none; }
+    .faq-section details p {
+      padding: 0 20px 16px 50px; margin: 0;
+      font-size: 0.95rem; line-height: 1.7; color: var(--color-text);
+    }
+    .faq-section details p a { color: var(--color-navy-light); text-decoration: underline; }
+    .faq-section details p a:hover { color: var(--color-gold-hover); }
+    @media (max-width: 600px) {
+      .faq-section details summary { padding: 12px 14px; font-size: 0.93rem; }
+      .faq-section details p { padding: 0 14px 14px 38px; font-size: 0.9rem; }
+    }
+
     /* Related resources silo navigation */
     .related-resources { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid var(--color-border); }
     .related-resources h2 { font-family: var(--font-heading); font-size: 1.15rem; color: var(--color-navy-light); margin-bottom: 1rem; font-weight: 700; }

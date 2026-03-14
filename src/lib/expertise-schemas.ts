@@ -58,8 +58,8 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
-const telecomDescription = "Telecommunications expert witness — 100+ cases, 120+ patents. PSTN, VoIP, SONET/SDH, cellular systems, telecom switching. Federal court, PTAB & ITC testimony.";
+const telecomTitle = "Telecom Expert Witness Consultant — PSTN, VoIP & Cellular | Dr. Lavian";
+const telecomDescription = "Telecom expert witness consultant for patent litigation — PSTN, VoIP, SONET/SDH, cellular systems, SS7, and telecom switching. 100+ cases, 120+ patents. Federal court, PTAB & ITC.";
 
 // ─── 2. NETWORK COMMUNICATIONS EXPERT WITNESS ────────────────────────────
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro

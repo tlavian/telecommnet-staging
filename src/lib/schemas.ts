@@ -233,7 +233,7 @@ export const buildSchema = {
         {
           '@type': 'WebSite',
           '@id': `${BASE_URL}/#website`,
-          name: 'TelecommNet — Dr. Tal Lavian',
+          name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
           url: BASE_URL,
           publisher: PERSON_REF,
           inLanguage: 'en-US',
