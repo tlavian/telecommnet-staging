@@ -376,7 +376,7 @@ export const buildSchema = {
               name: 'What expert witness services does Dr. Lavian provide?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian provides expert witness services across 14 practice areas including telecommunications, network communications, Internet protocols, VoIP, network security, streaming media, computer networking, data communications, mobile wireless, routing and switching, network management, and messaging technologies.',
+                text: 'Dr. Lavian provides expert witness services in telecommunications, network communications, Internet protocols, VoIP, network security, streaming media, computer networking, data communications, mobile wireless, routing and switching, network management, and messaging technologies.',
               },
             },
             {
