@@ -28,7 +28,7 @@ export const PERSON_ENTITY = {
   honorificSuffix: 'Ph.D.',
   jobTitle: 'Telecommunications Expert Witness',
   description:
-    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 80+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
+    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 100+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -465,6 +465,7 @@ export const buildSchema = {
           },
           areaServed: { '@type': 'Country', name: 'United States' },
           priceRange: '$$$$',
+          dateModified: '2026-03-13',
         },
         breadcrumbs([{ name: opts.breadcrumbLabel, url: `/${opts.slug}/` }]),
       ],
@@ -742,10 +743,17 @@ export const buildSchema = {
           '@type': 'CollectionPage',
           name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
           description:
-            'Expert witness testimony cases by Dr. Tal Lavian. 80+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
+            'Expert witness testimony cases by Dr. Tal Lavian. 100+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Patent Litigation Expert Witness Testimony' },
+          dateModified: '2026-03-13',
+          inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+          },
         },
         breadcrumbs([{ name: 'Cases', url: '/cases-expert-witness-testimony/' }]),
       ],
@@ -810,6 +818,13 @@ export const buildSchema = {
             '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions before the USPTO.',
           url: `${BASE_URL}/patents/`,
           author: PERSON_REF,
+          dateModified: '2026-03-13',
+          inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+          },
         },
         {
           '@type': 'ItemList',
@@ -843,6 +858,12 @@ export const buildSchema = {
           description:
             'Contact Dr. Tal Lavian for telecommunications and network communications expert witness and consulting services.',
           url: `${BASE_URL}/contact/`,
+          dateModified: '2026-03-13',
+          inLanguage: 'en-US',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+          },
           mainEntity: {
             ...PERSON_ENTITY,
             contactPoint: {
