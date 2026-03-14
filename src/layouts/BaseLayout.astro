@@ -156,7 +156,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <!-- Self-hosted fonts: eliminates 2 external network requests (fonts.googleapis.com + fonts.gstatic.com) -->
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
-  {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/wp-content/uploads/2022/10/header-banner.webp" fetchpriority="high" />}
+  {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" />}
   {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
   <!-- Google Analytics (deferred for performance — loads after browser idle) -->
   <script is:inline>
@@ -351,7 +351,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .hero-banner h1 { font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; position: relative; z-index: 1; max-width: 850px; margin: 0 auto; color: #fff; letter-spacing: -0.02em; line-height: 1.3; }
 
     /* Hero with background image (homepage) */
-    .hero-banner-img { position: relative; background: url('/wp-content/uploads/2022/10/header-banner.webp') center center / cover no-repeat, linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%); min-height: 280px; height: 420px; display: flex; align-items: center; justify-content: center; contain: layout style; }
+    .hero-banner-img { position: relative; background: url('/images/heroes/header-banner.webp') center center / cover no-repeat, linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%); min-height: 280px; height: 420px; display: flex; align-items: center; justify-content: center; contain: layout style; }
     .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(11, 29, 58, 0.85) 0%, rgba(26, 54, 93, 0.7) 100%); }
     .hero-content { position: relative; z-index: 1; text-align: center; padding: 70px 20px; width: 100%; }
     .hero-content h1 { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: #fff; max-width: 850px; margin: 0 auto; letter-spacing: -0.02em; line-height: 1.3; }
