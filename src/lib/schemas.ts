@@ -424,7 +424,7 @@ export const buildSchema = {
               name: 'What companies has Dr. Lavian been retained in cases involving?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Google, Apple, Microsoft, Amazon, Cisco Systems, Huawei, Ericsson, Qualcomm, Samsung, Netflix, T-Mobile, ZTE, Juniper Networks, Arista Networks, Motorola, LG, Avaya, and many others.',
+                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Google, Apple, Microsoft, Amazon, Cisco Systems, Huawei, Ericsson, Qualcomm, Samsung, Netflix, T-Mobile, ZTE, Juniper Networks, Arista Networks, Motorola, LG, Avaya, and many others. He has been engaged by leading law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Skadden, Finnegan, Irell & Manella, Perkins Coie, Morgan Lewis, Baker Botts, and more.',
               },
             },
           ],
