@@ -160,6 +160,10 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
   {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" media="(min-width: 769px)" />}
+  <!-- Deferred non-critical CSS (footer, print, expertise cards, client logos, etc.) -->
+  <link rel="preload" as="style" href="/css/deferred.css" />
+  <link rel="stylesheet" href="/css/deferred.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/css/deferred.css" /></noscript>
   {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
   <!-- Google Analytics (deferred for performance — loads after browser idle) -->
   <script is:inline>
@@ -384,22 +388,9 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .cta-button-outline { display: inline-block; padding: 14px 32px; background: transparent; color: #fff; font-family: var(--font-body); font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: all var(--transition-medium); border: 2px solid rgba(255,255,255,0.85); letter-spacing: 0.02em; }
     .cta-button-outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; color: #fff; text-decoration: none; }
 
-    /* Bio with sidebar layout (homepage) */
-    .bio-with-sidebar { display: grid; grid-template-columns: 1fr 200px; gap: 30px; padding: 10px 0 30px; }
-    .bio-main { min-width: 0; }
-    .bio-sidebar { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding-top: 30px; }
-    .bio-social-icons { display: flex; gap: 10px; }
-    .bio-social-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; color: #fff; text-decoration: none; transition: opacity 0.2s; }
-    .bio-social-btn:hover { opacity: 0.85; text-decoration: none; }
-    .bio-social-btn.fb { background: #1877f2; }
-    .bio-social-btn.tw { background: #333; }
-    .bio-social-btn.li { background: #0a66c2; }
-    .cv-download-link { display: flex; align-items: center; gap: 10px; color: #333; text-decoration: none; font-size: 14px; font-weight: 500; }
-    .cv-download-link:hover { color: var(--color-blue-accent); text-decoration: none; }
-    .cv-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: #f0fff4; }
-
-    /* Expertise section with light blue background */
-    .expertise-section { background: var(--color-bg-section); padding: 10px 0; }
+    /* Bio, expertise section, content-full, client logos, expertise cards,
+       social inline, contact grid, credential bar, CTA blocks, related resources,
+       footer, and print styles are in /css/deferred.css (loaded async) */
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
@@ -414,6 +405,9 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .profile-icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; border-radius: 4px; }
 
     .bordered-section { border-left: 4px solid var(--color-gold); padding-left: 20px; margin: 30px 0; }
+
+    /* Content-full basic layout (needed for initial paint on expertise pages) */
+    .content-full { padding: 40px 0; }
 
     /* FAQ accordion section */
     .faq-section { margin: 40px 0; padding-top: 10px; }
@@ -449,154 +443,6 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       .faq-section details p { padding: 0 14px 14px 38px; font-size: 0.9rem; }
     }
 
-    /* Related resources silo navigation */
-    .related-resources { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid var(--color-border); }
-    .related-resources h2 { font-family: var(--font-heading); font-size: 1.15rem; color: var(--color-navy-light); margin-bottom: 1rem; font-weight: 700; }
-    .resource-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
-    .resource-links li { display: contents; }
-    .resource-links a {
-      display: inline-block; padding: 7px 16px; font-size: 0.9rem;
-      background: var(--color-bg-light); color: var(--color-navy-light); border: 1px solid var(--color-border);
-      border-radius: 4px; text-decoration: none; transition: all var(--transition-fast); font-weight: 500;
-    }
-    .resource-links a:hover { background: var(--color-navy-light); color: #fff; text-decoration: none; border-color: var(--color-navy-light); }
-
-    /* Credential trust bar */
-    .credential-bar {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-      background: var(--color-bg-section); border: 1px solid var(--color-border);
-      border-left: 4px solid var(--color-gold); border-radius: 4px;
-      padding: 18px 24px; margin: 30px 0; text-align: center;
-    }
-    .credential-bar .cred-item {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 0.92rem; color: var(--color-navy-light); font-weight: 600;
-    }
-    .credential-bar .cred-item .cred-num {
-      font-size: 1.15rem; font-weight: 800; color: var(--color-gold-hover);
-    }
-    .credential-bar .cred-item a { color: var(--color-navy-light); text-decoration: none; }
-    .credential-bar .cred-item a:hover { color: var(--color-gold-hover); text-decoration: underline; }
-    .credential-bar .cred-companies {
-      width: 100%; text-align: center; font-size: 0.82rem; color: var(--color-text-light);
-      margin-top: 4px; font-weight: 400; line-height: 1.5;
-    }
-    @media (max-width: 600px) {
-      .credential-bar { gap: 12px; padding: 14px 16px; }
-      .credential-bar .cred-item { font-size: 0.85rem; }
-    }
-
-    /* CTA block */
-    .cta-block {
-      background: var(--color-navy); color: #fff; border-radius: 6px;
-      padding: 30px 36px; margin: 35px 0; text-align: center;
-    }
-    .cta-block h3 { color: #fff; font-family: var(--font-heading); font-size: 1.25rem; margin: 0 0 10px 0; border: none; padding: 0; }
-    .cta-block p { color: #cbd5e0; margin: 0 0 18px 0; font-size: 0.95rem; }
-    .cta-block .cta-button {
-      display: inline-block; background: var(--color-gold); color: var(--color-navy);
-      padding: 12px 28px; border-radius: 4px; font-weight: 700; font-size: 0.95rem;
-      text-decoration: none; transition: all var(--transition-fast);
-    }
-    .cta-block .cta-button:hover { background: var(--color-gold-hover); color: #fff; text-decoration: none; }
-
-    /* Subtle contact note (replaces pushy CTAs) */
-    .contact-note { color: #64748b; font-size: 0.9rem; margin: 30px 0; padding: 0; text-align: left; }
-    .contact-note a { color: var(--color-navy); text-decoration: underline; }
-    .contact-note a:hover { color: var(--color-gold); }
-
-    /* Expertise page layouts (no sidebar, multi-column) */
-    .content-full { padding: 40px 0; }
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px; }
-    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-bottom: 30px; }
-    .two-col-text-img { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; margin-bottom: 30px; }
-    .two-col-text-img img { width: 100%; height: auto; border-radius: 4px; }
-
-    /* Expertise sub-page visual blocks */
-    .content-full > h2 {
-      border-left: 4px solid var(--color-gold);
-      padding-left: 20px;
-    }
-    .content-full .three-col > div {
-      border: 1px solid var(--color-border);
-      border-left: 4px solid var(--color-gold);
-      padding: 25px;
-      background: #fff;
-      border-radius: 4px;
-      transition: box-shadow var(--transition-medium);
-    }
-    .content-full .three-col > div:hover { box-shadow: var(--shadow-card); }
-    .content-full .three-col > div > h3 {
-      font-size: 1.25rem;
-    }
-    .content-full .two-col > div {
-      border: 1px solid var(--color-border);
-      border-left: 4px solid var(--color-gold);
-      padding: 25px;
-      background: #fff;
-      border-radius: 4px;
-      transition: box-shadow var(--transition-medium);
-    }
-    .content-full .two-col > div:hover { box-shadow: var(--shadow-card); }
-    .content-full .two-col > div > h3 {
-      font-size: 1.25rem;
-    }
-    .content-full > h3 {
-      border-left: 4px solid var(--color-gold);
-      padding-left: 20px;
-    }
-    .content-full > ul {
-      margin-bottom: 30px;
-    }
-
-    .client-logos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; padding: 20px 0; }
-    .client-logo-item { display: flex; align-items: center; justify-content: center; padding: 12px; min-height: 70px; }
-    .client-logo-item img { max-width: 130px; max-height: 50px; object-fit: contain; }
-    .client-logos a, .client-logo-item a { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
-    .client-logos a:hover, .client-logo-item a:hover { text-decoration: none; opacity: 0.75; transform: scale(1.05); transition: all 0.2s ease; }
-    .client-logos img { max-width: 130px; max-height: 50px; object-fit: contain; }
-    /* Scale up Ericsson logo whose graphic is smaller within the SVG canvas */
-    img[src*="ericsson.svg"] { transform: scale(1.4); }
-
-    .expertise-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 30px 0; }
-    .expertise-card { background: #fff; box-shadow: var(--shadow-card); padding: 22px; padding-left: 26px; border-left: 4px solid var(--color-gold); border-radius: 4px; transition: all var(--transition-medium); }
-    .expertise-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-3px); }
-    .expertise-card h3 { font-family: var(--font-heading); font-size: 22px; color: var(--color-navy); margin-bottom: 8px; font-weight: 700; }
-    .expertise-card h3 a { color: var(--color-navy); text-decoration: none !important; transition: color var(--transition-fast); }
-    .expertise-card h3 a:hover { color: var(--color-blue-accent); text-decoration: none !important; }
-    .expertise-card p { font-size: 17px; color: var(--color-text); line-height: 1.55; margin-bottom: 0; }
-
-    .social-inline { display: flex; gap: 12px; margin: 15px 0; }
-    .social-inline a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; color: #fff; font-size: 16px; text-decoration: none; }
-    .social-inline a:hover { text-decoration: none; opacity: 0.85; }
-    .social-inline a.fb { background: #1877f2; }
-    .social-inline a.tw { background: #333; }
-    .social-inline a.li { background: #0a66c2; }
-
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
-    .contact-item { display: flex; align-items: center; gap: 12px; }
-    .contact-icon { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-
-    footer { background: var(--color-navy); color: #fff; }
-    .footer-logo-bar { background: rgba(255,255,255,0.05); padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .footer-logo-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
-    .footer-logo-bar .tagline { font-size: 14px; color: rgba(255,255,255,0.9); }
-    .footer-social { display: flex; gap: 10px; }
-    .footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 14px; transition: all var(--transition-fast); text-decoration: none; }
-    .footer-social a:hover { background: var(--color-gold); border-color: var(--color-gold); text-decoration: none; }
-    .footer-content { padding: 40px 0; }
-    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr 1.2fr; gap: 40px; }
-    .footer-col h3 { font-family: var(--font-heading); font-size: 18px; font-weight: 700; margin-bottom: 18px; color: #fff; position: relative; padding-bottom: 12px; }
-    .footer-col h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 30px; height: 2px; background: var(--color-gold); }
-    .footer-col a { display: block; color: rgba(255,255,255,0.8); font-size: 14px; padding: 5px 0; transition: color var(--transition-fast); }
-    .footer-col a { text-decoration: none; }
-    .footer-col a:hover { color: var(--color-gold); text-decoration: none; }
-    .footer-contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: rgba(255,255,255,0.8); }
-    .footer-contact-item a { display: inline; color: rgba(255,255,255,0.8); text-decoration: none; }
-    .footer-contact-item a:hover { text-decoration: none; color: var(--color-gold); }
-    .footer-contact-icon { width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
-    .footer-bottom { background: rgba(0,0,0,0.2); text-align: center; padding: 16px 0; font-size: 13px; color: rgba(255,255,255,0.85); }
-
     h1 { font-family: var(--font-heading); font-size: 2rem; color: var(--color-heading); margin-bottom: 16px; font-weight: 700; letter-spacing: -0.02em; }
     h2 { font-family: var(--font-heading); font-size: 2.1rem; color: var(--color-heading); margin-bottom: 14px; font-weight: 700; letter-spacing: -0.01em; }
     h3 { font-family: var(--font-heading); font-size: 1.55rem; color: var(--color-heading); margin-bottom: 10px; font-weight: 700; }
@@ -604,16 +450,13 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .more-link { color: var(--color-link); font-weight: 600; font-size: 18px; text-align: right; display: block; margin-top: 10px; text-decoration: none; transition: color var(--transition-fast); }
     .more-link:hover { text-decoration: underline; color: var(--color-navy); }
 
-    /* Tablet breakpoint */
+    /* Tablet breakpoint (critical elements only) */
     @media (max-width: 1024px) {
-      .expertise-cards { grid-template-columns: repeat(2, 1fr); }
-      .three-col { grid-template-columns: 1fr 1fr; }
-      .client-logos { grid-template-columns: repeat(4, 1fr); }
       .hero-stats { gap: 30px; }
       .hero-stat-number { font-size: 2rem; }
     }
 
-    /* Mobile breakpoint */
+    /* Mobile breakpoint (critical elements only) */
     @media (max-width: 768px) {
       .top-bar { display: none; }
       .mobile-toggle { display: block; }
@@ -628,9 +471,6 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       .dropdown a:first-child { font-weight: 600; }
       .content-with-sidebar { grid-template-columns: 1fr; }
       .sidebar { border-left: none; padding-left: 0; border-top: 1px solid var(--color-border); padding-top: 20px; }
-      .bio-with-sidebar { grid-template-columns: 1fr; }
-      .bio-sidebar { flex-direction: row; flex-wrap: wrap; padding-top: 0; }
-      .expertise-cards { grid-template-columns: 1fr; }
       .hero-content h1 { font-size: 1.6rem; }
       .hero-content { padding: 50px 20px; }
       .hero-banner { padding: 50px 0; }
@@ -638,38 +478,10 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       .hero-stats { flex-wrap: wrap; gap: 20px; }
       .hero-stat-number { font-size: 1.8rem; }
       .hero-cta { font-size: 15px; padding: 14px 30px; }
-      .client-logos { grid-template-columns: repeat(3, 1fr); }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
       .hero-banner h1 { font-size: 1.6rem; }
       .hero-stat { min-width: 80px; }
-      .two-col, .three-col, .two-col-text-img { grid-template-columns: 1fr; }
       .social-icon { width: 44px; height: 44px; }
       .dropdown a { min-height: 44px; display: flex; align-items: center; }
-    }
-    @media (max-width: 480px) {
-      .footer-grid { grid-template-columns: 1fr; }
-    }
-
-    /* Print styles — lawyers frequently print pages */
-    @media print {
-      .top-bar, .main-nav, footer, .skip-to-content, .mobile-toggle,
-      .cta-button, .cta-block, .hero-cta, .footer-logo-bar, .footer-bottom { display: none !important; }
-      body { font-size: 12pt; line-height: 1.5; color: #000; background: #fff; }
-      .hero-banner, .hero-banner-img { background: #1a365d !important; color: #fff !important; padding: 20px 0 !important; min-height: auto !important; height: auto !important; }
-      .hero-banner::before { display: none !important; }
-      .hero-stats { gap: 20px; }
-      .hero-stat-number { font-size: 1.4rem; color: #b8952f !important; }
-      .container { max-width: 100%; padding: 0 15px; }
-      .content-with-sidebar { grid-template-columns: 1fr; }
-      .sidebar { display: none; }
-      a { color: #000; text-decoration: underline; }
-      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
-      a[href^="/"]::after { content: " (telecommnet.com" attr(href) ")"; font-size: 0.8em; color: #555; }
-      .client-logos { grid-template-columns: repeat(4, 1fr); }
-      img { max-width: 100% !important; }
-      h1, h2, h3 { page-break-after: avoid; }
-      p, li { orphans: 3; widows: 3; }
     }
   </style>
 </head>
