@@ -36,8 +36,20 @@ Disallow: /feed/
 Disallow: /comments/
 Crawl-delay: 1
 
-# AI search engine bots - full access including structured data
+# AI search engine bots - full access including structured data (2026 bot names)
 User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Crawl-delay: 1
+
+User-agent: OAI-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
@@ -49,7 +61,25 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 Crawl-delay: 1
 
-User-agent: Claude-Web
+User-agent: Perplexity-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Crawl-delay: 1
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Crawl-delay: 1
+
+User-agent: Claude-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Crawl-delay: 1
+
+User-agent: Claude-User
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
@@ -62,6 +92,12 @@ Allow: /llms-full.txt
 Crawl-delay: 1
 
 User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Crawl-delay: 1
+
+User-agent: Applebot-Extended
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
