@@ -72,6 +72,13 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
           </div>
         </div>
 
+        <div class="contact-about">
+          <h2>About Dr. Tal Lavian</h2>
+          <p>Dr. Tal Lavian is a telecommunications and network communications expert witness with over 25 years of industry experience. He holds a Ph.D. in Computer Science from the University of California, Berkeley, and has been awarded more than 120 U.S. and international patents in telecommunications, networking, and internet protocols.</p>
+          <p>Dr. Lavian has provided expert witness testimony in more than 70 cases before federal courts, the Patent Trial and Appeal Board (PTAB), and the International Trade Commission (ITC). His areas of expertise include <a href="/communications-expert-witness/pstn-voip-cellular-expert/">PSTN, VoIP, and cellular systems</a>, <a href="/communications-expert-witness/network-communications-expert-witness/">network communications</a>, <a href="/communications-expert-witness/internet-expert-witness/">internet protocols (TCP/IP)</a>, <a href="/communications-expert-witness/network-security-expert/">network security</a>, <a href="/communications-expert-witness/mobile-wireless-expert/">mobile and wireless technologies</a>, and <a href="/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/">streaming media</a>.</p>
+          <p>He serves corporate legal departments, AmLaw 100 and AmLaw 200 law firms, and intellectual property boutiques nationwide. For a detailed overview of his qualifications, please download his <a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf">curriculum vitae</a> or visit the <a href="/about-dr-lavian/">About Dr. Lavian</a> page.</p>
+        </div>
+
       </div>
       <Sidebar />
     </div>
@@ -138,6 +145,31 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
     text-decoration: none;
   }
   .contact-icon-content .contact-label a:hover {
+    text-decoration: underline;
+  }
+
+  /* Contact page about section */
+  .contact-about {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #e0e0e0;
+  }
+  .contact-about h2 {
+    font-size: 22px;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+  }
+  .contact-about p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 14px;
+  }
+  .contact-about a {
+    color: var(--color-blue-accent);
+    text-decoration: none;
+  }
+  .contact-about a:hover {
     text-decoration: underline;
   }
 
