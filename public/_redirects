@@ -184,3 +184,21 @@
 # WO-2016203460 "Ultra-Low Phase Noise Frequency Synthesizer" -> ca-2989752
 /wo-2016203460-ultra-low-phase-noise-frequency-synthesizer/ /ca-2989752-ultra-low-phase-noise-frequency-synthesizer/ 301
 /wo-2016203460-ultra-low-phase-noise-frequency-synthesizer /ca-2989752-ultra-low-phase-noise-frequency-synthesizer/ 301
+
+# 8 patent pages linked from /patents/ that have no individual page — redirect to patents index
+/7313608-markup-language-to-access-and-configure-network-elements/ /patents/ 301
+/7313608-markup-language-to-access-and-configure-network-elements /patents/ 301
+/7359993-interfacing-external-resources-with-a-network-element/ /patents/ 301
+/7359993-interfacing-external-resources-with-a-network-element /patents/ 301
+/7734748-enhanced-management-opportunities-to-enable-network-element/ /patents/ 301
+/7734748-enhanced-management-opportunities-to-enable-network-element /patents/ 301
+/7860999-distributed-computation-in-network-devices/ /patents/ 301
+/7860999-distributed-computation-in-network-devices /patents/ 301
+/8146090-using-time-value-curves-for-resource-management/ /patents/ 301
+/8146090-using-time-value-curves-for-resource-management /patents/ 301
+/8161139-network-element-includes-an-intelligent-interface/ /patents/ 301
+/8161139-network-element-includes-an-intelligent-interface /patents/ 301
+/8341257-grid-proxy-architecture-for-network-resources/ /patents/ 301
+/8341257-grid-proxy-architecture-for-network-resources /patents/ 301
+/us-8572303-portable-universal-communication-device/ /patents/ 301
+/us-8572303-portable-universal-communication-device /patents/ 301
