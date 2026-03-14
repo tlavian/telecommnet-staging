@@ -251,7 +251,7 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Tax Court in Canada, and courts in Asia.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
               },
             },
             {
@@ -275,7 +275,7 @@ export const buildSchema = {
               name: 'What courts and tribunals has Dr. Lavian testified in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Tax Court in Canada, and courts in Asia.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Tax Court in Canada, and a court in Asia.',
               },
             },
           ],
@@ -392,7 +392,7 @@ export const buildSchema = {
               name: 'In what courts has Dr. Lavian testified?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Tax Court in Canada, and courts in Asia.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Tax Court in Canada, and a court in Asia.',
               },
             },
             {

@@ -32,7 +32,7 @@ Dr. Tal Lavian is a world-renowned expert witness specializing in telecommunicat
 ### Case Statistics
 
 - 70+ expert witness engagements in patent and technology litigation
-- Testified in U.S. District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, Tax Court in Canada, and courts in Asia
+- Testified in U.S. District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, Tax Court in Canada, and a court in Asia
 - Retained by both plaintiffs and defendants, patent holders and accused infringers
 - Cases involving companies such as Google, Apple, Microsoft, Amazon, Intel, Cisco, Qualcomm, AT&T, Verizon, Samsung, and many others
 - Retained by leading law firms including Fish Richardson, Cooley, Irell & Manella, Kirkland & Ellis, and others
@@ -141,7 +141,7 @@ Each expertise area has a dedicated page with detailed information:
   - PTO Interferences
 - International Trade Commission (ITC) cases
 - Tax Court in Canada testimony
-- Courts in Asia (patent litigation)
+- A court in Asia (patent litigation)
 - Technical expert declarations and reports
 
 ### Litigation Support
@@ -183,7 +183,7 @@ Courts and Tribunals:
 - International Trade Commission (ITC)
 - Canadian Federal Court
 - Tax Court in Canada
-- Courts in Asia
+- A court in Asia
 
 ## Academic Profiles & Publications
 
