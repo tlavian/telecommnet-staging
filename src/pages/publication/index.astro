@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { buildSchema } from '../../lib/schemas';
+
+const schema = buildSchema.publications();
+---
+
+<BaseLayout
+  title="Research Publications by Dr. Tal Lavian | TelecommNet"
+  description="Browse 25+ peer-reviewed research publications by Dr. Tal Lavian in telecommunications, network programming, and grid computing. IEEE, ACM, IETF."
+  schema={schema}
+>
+
+  <div class="hero-banner">
+    <h1>Scientific Publications</h1>
+  </div>
+
+  <div class="container">
+    <div class="content-with-sidebar">
+      <div class="content-main">
+
+        <p>Dr. Tal Lavian has authored and co-authored more than 25 peer-reviewed scientific publications in telecommunications, network communications, and computer science. His research appears in IEEE, ACM, and other leading journals and conference proceedings.</p>
+
+        <p>Dr. Lavian's research spans active networking, programmable network platforms, grid computing over optical networks, network management, and quality of service mechanisms. His publications have been cited in patent litigation and academic research, supporting his credentials as a <a href="/communications-expert-witness/">telecommunications expert witness</a>.</p>
+
+        <p>For a comprehensive listing of all publications with full details, please visit the <a href="/scientific-publications/">Scientific Publications</a> page.</p>
+
+        <h2>Selected Publications</h2>
+
+        <ul class="publication-list">
+          <li><a href="/publication/active-networking-on-a-programmable-network-platform/">Active Networks on A Programmable Network Platform</a></li>
+          <li><a href="/publication/active-networking-on-a-programmable-networking-platform/">Active Networking on a Programmable Networking Platform</a></li>
+          <li><a href="/publication/an-extensible-programmable-commercial-grade-platform-for-internet-service-architecture/">An Extensible Programmable Commercial-Grade Platform for Internet Service Architecture</a></li>
+          <li><a href="/publication/applications-drive-secure-lightpath-creation-across-heterogeneous-domains/">Applications Drive Secure Lightpath Creation Across Heterogeneous Domains</a></li>
+          <li><a href="/publication/communications-architecture-in-support-of-grid-computing/">Communications Architecture in Support of Grid Computing</a></li>
+          <li><a href="/publication/dangerous-liaisons-software-combinations-as-derivative-works/">Dangerous Liaisons — Software Combinations as Derivative Works</a></li>
+          <li><a href="/publication/dwdm-ram-a-data-intensive-grid-service-architecture-enabled-by-dynamic-optical-networks/">DWDM-RAM: A Data Intensive Grid Service Architecture Enabled by Dynamic Optical Networks</a></li>
+          <li><a href="/publication/dwdm-ram-enabling-grid-services-with-dynamic-optical-networks/">DWDM-RAM: Enabling Grid Services with Dynamic Optical Networks</a></li>
+          <li><a href="/publication/dynamic-classification-in-silicon-based-forwarding-engine-environments/">Dynamic Classification in Silicon-Based Forwarding Engine Environments</a></li>
+          <li><a href="/publication/edge-device-multi-unicasting-for-video-streaming/">Edge Device Multi-Unicasting for Video Streaming</a></li>
+          <li><a href="/publication/enabling-active-flow-manipulation-in-silicon-based-network-forwarding-engine/">Enabling Active Flow Manipulation in Silicon-Based Network Forwarding Engine</a></li>
+          <li><a href="/publication/enabling-active-flow-manipulation-in-silicon-based-network-forwarding-engines/">Enabling Active Flow Manipulation in Silicon-Based Network Forwarding Engines</a></li>
+          <li><a href="/publication/enabling-active-networks-services-on-a-gigabit-routing-switch/">Enabling Active Networks Services on a Gigabit Routing Switch</a></li>
+          <li><a href="/publication/grid-network-services-draft-ggf-ghpn-netservices-1-0/">Grid Network Services</a></li>
+          <li><a href="/publication/impact-of-grid-computing-on-network-operators-and-hw-vendors/">Impact of Grid Computing on Network Operators and HW Vendors</a></li>
+          <li><a href="/publication/implementation-of-a-quality-of-service-feedback-control-loop-on-programmable-routers/">Implementation of a Quality of Service Feedback Control Loop on Programmable Routers</a></li>
+          <li><a href="/publication/information-switching-networks/">Information Switching Networks</a></li>
+          <li><a href="/publication/intelligent-network-services-through-active-flow-manipulation/">Intelligent Network Services Through Active Flow Manipulation</a></li>
+          <li><a href="/publication/java-based-open-service-interface-architecture/">Java-Based Open Service Interface Architecture</a></li>
+          <li><a href="/publication/lambda-data-grid-communications-architecture-in-support-of-grid-computing/">Lambda Data Grid: Communications Architecture in Support of Grid Computing</a></li>
+          <li><a href="/publication/large-scale-grid-data-service-on-dynamic-high-performance-networks/">Large-Scale Grid Data Service on Dynamic High-Performance Networks</a></li>
+          <li><a href="/publication/open-java-snmp-mib-api/">Open Java SNMP MIB API</a></li>
+          <li><a href="/publication/open-networking-better-networking-through-programmability/">Open Networking — Better Networking Through Programmability</a></li>
+          <li><a href="/publication/open-programmable-architecture-for-java-enabled-network-devices/">Open Programmable Architecture for Java-Enabled Network Devices</a></li>
+          <li><a href="/publication/optical-network-infrastructure-for-grid-draft-ggf-ghpn-opticalnets-1/">Optical Network Infrastructure for Grid</a></li>
+          <li><a href="/publication/parallel-simd-architecture-for-color-image-processing/">Parallel SIMD Architecture for Color Image Processing</a></li>
+          <li><a href="/publication/popeye-using-fine-grained-network-access-control-to-support-mobile-users-and-protect-intranet-hosts/">Popeye: Using Fine-Grained Network Access Control to Support Mobile Users</a></li>
+          <li><a href="/publication/practical-active-network-services-within-content-aware-gateways/">Practical Active Network Services Within Content-Aware Gateways</a></li>
+          <li><a href="/publication/project-drac-creating-an-applications-aware-network/">Project DRAC: Creating an Applications-Aware Network</a></li>
+          <li><a href="/publication/rd-models-for-advanced-development-corporate-research/">R&amp;D Models for Advanced Development Corporate Research</a></li>
+          <li><a href="/publication/the-sahara-model-for-service-composition-across-multiple-providers/">The SAHARA Model for Service Composition Across Multiple Providers</a></li>
+        </ul>
+
+        <div class="patent-links" style="margin-top:30px;">
+          <a href="/scientific-publications/" class="btn-primary" style="display:inline-block;padding:10px 20px;background:#1a365d;color:#fff;text-decoration:none;border-radius:4px;margin-right:10px;">View Full Publications List</a>
+          <a href="/contact/" class="btn-secondary" style="display:inline-block;padding:10px 20px;background:#e53e3e;color:#fff;text-decoration:none;border-radius:4px;">Contact Dr. Lavian</a>
+        </div>
+
+      </div>
+      <Sidebar />
+    </div>
+  </div>
+
+</BaseLayout>
+
+<style is:global>
+  .publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .publication-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  .publication-list li:last-child {
+    border-bottom: none;
+  }
+  .publication-list a {
+    color: #1a365d;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .publication-list a:hover {
+    color: #4267B2;
+    text-decoration: underline;
+  }
+</style>

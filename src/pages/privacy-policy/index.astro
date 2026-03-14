@@ -3,13 +3,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import { privacySchema, privacyTitle, privacyDescription } from '../../lib/remaining-schemas';
 
-const title = privacyTitle;
-const description = privacyDescription;
 const lastUpdated = "March 2026";
 const effectiveDate = "March 1, 2026";
 ---
 
-<BaseLayout title={title} description={description} schema={privacySchema} robots="noindex, follow">
+<BaseLayout title={privacyTitle} description={privacyDescription} schema={privacySchema} robots="noindex, follow">
   <section class="hero-banner">
     <h1>Privacy Policy</h1>
   </section>
