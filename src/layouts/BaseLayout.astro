@@ -333,10 +333,13 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .nav-links li a { color: var(--color-text); font-family: var(--font-body); font-size: 15px; font-weight: 500; padding: 8px 16px; display: block; transition: color var(--transition-fast); text-decoration: none; letter-spacing: 0.01em; }
     .nav-links li a:hover, .nav-links li a.active { color: var(--color-blue-accent); text-decoration: none; }
     .nav-links li.has-dropdown:hover .dropdown { display: block; }
+    .dropdown-arrow { font-size: 11px; margin-left: 2px; display: inline-block; transition: transform 0.2s; }
+    .has-dropdown.dropdown-open .dropdown-arrow { transform: rotate(180deg); }
     .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 8px 24px rgba(11, 29, 58, 0.12); min-width: 280px; z-index: 200; border-radius: 0 0 6px 6px; }
-    .dropdown a { display: block; padding: 11px 18px; color: var(--color-text); font-size: 14px; border-bottom: 1px solid #f0f0f0; }
-    .dropdown a { text-decoration: none; }
+    .dropdown-right { left: auto; right: 0; }
+    .dropdown a { display: block; padding: 11px 18px; color: var(--color-text); font-size: 14px; border-bottom: 1px solid #f0f0f0; text-decoration: none; }
     .dropdown a:hover { background: var(--color-bg-light); color: var(--color-blue-accent); text-decoration: none; }
+    .dropdown-expertise a:first-child { font-weight: 600; color: var(--color-navy); background: var(--color-bg-light); }
     .logo-link { display: flex; align-items: center; text-decoration: none; }
     .logo-link:hover { text-decoration: none; }
     .logo-text { font-family: var(--font-heading); font-size: 26px; font-weight: 700; color: var(--color-navy); letter-spacing: -0.5px; }
@@ -593,10 +596,15 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     @media (max-width: 768px) {
       .top-bar { display: none; }
       .mobile-toggle { display: block; }
-      .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-height: 80vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
       .nav-links.open { display: flex; }
-      .nav-links li a { padding: 12px 20px; }
+      .nav-links li a { padding: 14px 20px; font-size: 16px; border-bottom: 1px solid #f5f5f5; }
+      .has-dropdown > a { display: flex; justify-content: space-between; align-items: center; }
+      .nav-links li.has-dropdown:hover .dropdown { display: none; }
+      .nav-links li.has-dropdown.dropdown-open .dropdown { display: block; }
       .dropdown { position: static; box-shadow: none; border: none; border-top: 1px solid #f0f0f0; }
+      .dropdown a { padding: 12px 20px 12px 32px; font-size: 15px; }
+      .dropdown a:first-child { font-weight: 600; }
       .content-with-sidebar { grid-template-columns: 1fr; }
       .sidebar { border-left: none; padding-left: 0; border-top: 1px solid var(--color-border); padding-top: 20px; }
       .bio-with-sidebar { grid-template-columns: 1fr; }
@@ -658,10 +666,10 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       <ul class="nav-links" id="navMenu" role="menubar">
         <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
         <li><a href="/about-dr-lavian/" class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
-        <li><a href="/communications-expert-witness/network-communications-expert-witness/" class={currentPath.includes('network-communications') ? 'active' : ''}>Expertise</a></li>
         <li class="has-dropdown">
-          <a href="#">Areas of Expertise ▾</a>
-          <div class="dropdown">
+          <a href="/communications-expert-witness/" class={currentPath.includes('/communications-expert-witness') ? 'active' : ''}>Expertise <span class="dropdown-arrow">▾</span></a>
+          <div class="dropdown dropdown-expertise">
+            <a href="/communications-expert-witness/">All Expert Witness Services</a>
             <a href="/communications-expert-witness/pstn-voip-cellular-expert/">Telecommunications</a>
             <a href="/communications-expert-witness/network-communications-expert-witness/">Network Communications</a>
             <a href="/communications-expert-witness/internet-expert-witness/">Internet and Web</a>
@@ -674,6 +682,17 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
             <a href="/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/">Streaming Media</a>
             <a href="/communications-expert-witness/network-management-expert-witness/">Network Management</a>
             <a href="/communications-expert-witness/networking-expert/">Networking Expert</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class={currentPath.includes('/cases') || currentPath.includes('/patents') || currentPath.includes('/publications') || currentPath.includes('/presentations') || currentPath.includes('/corporate') || currentPath.includes('/law-firm') ? 'active' : ''}>Resources <span class="dropdown-arrow">▾</span></a>
+          <div class="dropdown dropdown-right">
+            <a href="/cases-expert-witness-testimony/">Cases &amp; Testimony</a>
+            <a href="/patents/">Patents (120+)</a>
+            <a href="/scientific-publications/">Scientific Publications</a>
+            <a href="/talks-presentations/">Presentations</a>
+            <a href="/corporate-clients/">Corporate Clients</a>
+            <a href="/law-firm-clients/">Law Firm Clients</a>
           </div>
         </li>
         <li><a href="/contact/" class={currentPath.includes('/contact') ? 'active' : ''}>Contact</a></li>
@@ -782,8 +801,45 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   </footer>
 
   <script>
+    // Hamburger menu toggle
     document.getElementById('mobileToggle')?.addEventListener('click', () => {
       document.getElementById('navMenu')?.classList.toggle('open');
+    });
+
+    // Mobile dropdown toggle — tap to expand/collapse on touch devices
+    function isMobile() {
+      return window.innerWidth <= 768;
+    }
+
+    document.querySelectorAll('.has-dropdown > a').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        if (!isMobile()) return; // Desktop uses hover — don't interfere
+        e.preventDefault();
+        const parentLi = link.parentElement;
+        // Close other open dropdowns
+        document.querySelectorAll('.has-dropdown.dropdown-open').forEach((el) => {
+          if (el !== parentLi) el.classList.remove('dropdown-open');
+        });
+        parentLi?.classList.toggle('dropdown-open');
+      });
+    });
+
+    // Close dropdowns when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+      if (!isMobile()) return;
+      const target = e.target as HTMLElement;
+      if (!target.closest('.has-dropdown') && !target.closest('.mobile-toggle')) {
+        document.querySelectorAll('.has-dropdown.dropdown-open').forEach((el) => {
+          el.classList.remove('dropdown-open');
+        });
+      }
+    });
+
+    // Reset dropdown state on resize (e.g., rotating phone)
+    window.addEventListener('resize', () => {
+      document.querySelectorAll('.has-dropdown.dropdown-open').forEach((el) => {
+        el.classList.remove('dropdown-open');
+      });
     });
   </script>
 </body>
