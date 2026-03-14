@@ -498,6 +498,11 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     }
     .cta-block .cta-button:hover { background: var(--color-gold-hover); color: #fff; text-decoration: none; }
 
+    /* Subtle contact note (replaces pushy CTAs) */
+    .contact-note { color: #64748b; font-size: 0.9rem; margin: 30px 0; padding: 0; text-align: left; }
+    .contact-note a { color: var(--color-navy); text-decoration: underline; }
+    .contact-note a:hover { color: var(--color-gold); }
+
     /* Expertise page layouts (no sidebar, multi-column) */
     .content-full { padding: 40px 0; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px; }
