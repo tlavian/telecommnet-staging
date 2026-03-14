@@ -15,3 +15,172 @@
 
 # Cloudflare email protection artifact - redirect to contact page
 /cdn-cgi/l/email-protection /contact/ 301
+
+# ============================================================
+# Old WordPress patent URLs (returning 404) -> staging URLs
+# Patent publication/application numbers mapped to granted patent pages
+# ============================================================
+
+# Pub 20090313613 "Translation of Computer Programming Language Code" -> Patent 8762962
+/20090313613-translation-of-computer-programming-language-code/ /8762962-automatic-translation-of-a-computer-program-language-code/ 301
+/20090313613-translation-of-computer-programming-language-code /8762962-automatic-translation-of-a-computer-program-language-code/ 301
+
+# Pub 20100146112 "Improving the Efficiency of Communication Network" -> Pub 20100146111 (same family, adjacent number)
+/20100146112-improving-the-efficiency-of-communication-network/ /20100146111-efficient-communication-in-a-network/ 301
+/20100146112-improving-the-efficiency-of-communication-network /20100146111-efficient-communication-in-a-network/ 301
+
+# Pub 20100146492 "Translation of Programming Code" -> Patent 8762962
+/20100146492-translation-of-programming-code/ /8762962-automatic-translation-of-a-computer-program-language-code/ 301
+/20100146492-translation-of-programming-code /8762962-automatic-translation-of-a-computer-program-language-code/ 301
+
+# Pub 20120063574 "Enhancing User Interaction with IVR" -> Patent 8687777
+/20120063574-enhancing-user-interaction-with-ivr/ /8687777-enhancing-user-interactions-with-ivr-menus/ 301
+/20120063574-enhancing-user-interaction-with-ivr /8687777-enhancing-user-interactions-with-ivr-menus/ 301
+
+# Pub 20130022181 "IVR Technology to Detect Voice and Key Inputs" -> Patent 8681951
+/20130022181-ivr-technology-to-detect-voice-and-key-inputs/ /8681951-ivr-technology-used-to-detect-voice-and-key-inputs-from-caller/ 301
+/20130022181-ivr-technology-to-detect-voice-and-key-inputs /8681951-ivr-technology-used-to-detect-voice-and-key-inputs-from-caller/ 301
+
+# Pub 20130022183 "System for Generating Interactive Voice Response Database" -> Patent 8903073
+/20130022183-system-for-generating-interactive-voice-response-database/ /8903073-generating-an-interactive-voice-response-database/ 301
+/20130022183-system-for-generating-interactive-voice-response-database /8903073-generating-an-interactive-voice-response-database/ 301
+
+# Pub 20130022191 "Generating an Interactive Voice Response (IVR) Database" -> Patent 8903073
+/20130022191-generating-an-interactive-voice-response-ivr-database/ /8903073-generating-an-interactive-voice-response-database/ 301
+/20130022191-generating-an-interactive-voice-response-ivr-database /8903073-generating-an-interactive-voice-response-database/ 301
+
+# Pub 20140012991 "Network Services to Utilize Network Resources" -> patents index (no exact match)
+/20140012991-network-services-to-utilize-network-resources/ /patents/ 301
+/20140012991-network-services-to-utilize-network-resources /patents/ 301
+
+# Pub 20140105012 "Dynamic Dssignment Priority Queue" (typo in original) -> Patent 7275115
+/20140105012-dynamic-dssignment-priority-queue/ /7275115-dynamic-assignment-of-traffic-classes-to-a-priority-queue/ 301
+/20140105012-dynamic-dssignment-priority-queue /7275115-dynamic-assignment-of-traffic-classes-to-a-priority-queue/ 301
+
+# Pub 20140105025 "Traffic Classes in a Packet Forwarding Device" -> Patent 7580349
+/20140105025-traffic-classes-in-a-packet-forwarding-device/ /7580349-traffic-classes-on-a-packet-by-packet-basis/ 301
+/20140105025-traffic-classes-in-a-packet-forwarding-device /7580349-traffic-classes-on-a-packet-by-packet-basis/ 301
+
+# Pub 20140156758 "Enhancing the Reliability of Ratings" -> Patent 9955003
+/20140156758-enhancing-the-reliability-of-ratings-provided-to-users/ /9955003-reliable-rating-system/ 301
+/20140156758-enhancing-the-reliability-of-ratings-provided-to-users /9955003-reliable-rating-system/ 301
+
+# Pub 20140379784 "Command Design Pattern to Access Network Elements" -> patents index (no exact match)
+/20140379784-command-design-pattern-to-access-network-elements/ /patents/ 301
+/20140379784-command-design-pattern-to-access-network-elements /patents/ 301
+
+# Pub 20150010136 "Visual Selection of IVR Option" -> Patent 8929517
+/20150010136-visual-selection-of-ivr-option/ /8929517-invention-relates-to-visual-selection-of-ivr-option/ 301
+/20150010136-visual-selection-of-ivr-option /8929517-invention-relates-to-visual-selection-of-ivr-option/ 301
+
+# Pub 20150058490 "Grid Applications to Access Resources" -> Patent 8078708
+/20150058490-grid-applications-to-access-resources/ /8078708-grid-applications-to-access-resources-shared-in-communication-network/ 301
+/20150058490-grid-applications-to-access-resources /8078708-grid-applications-to-access-resources-shared-in-communication-network/ 301
+
+# Pub 20160373117 "Advance Communication System Comprise Frequency Synthesizer" -> frequency synthesizer page
+/20160373117-advance-communication-system-comprise-frequency-synthesizer/ /frequency-synthesizer-determines-the-performance-of-communication/ 301
+/20160373117-advance-communication-system-comprise-frequency-synthesizer /frequency-synthesizer-determines-the-performance-of-communication/ 301
+
+# Pub 20170085708 "Converting the Audible Menus to Visual IVR Menus" -> Patent 7933968
+/20170085708-converting-the-audible-menus-to-visual-ivr-menus/ /7933968-ivr-visual-menu-of-a-called-party/ 301
+/20170085708-converting-the-audible-menus-to-visual-ivr-menus /7933968-ivr-visual-menu-of-a-called-party/ 301
+
+# Pub 20170099058 "Provide a Frequency Output Signal to Other Parts of the Transmitter" -> frequency synthesizer page
+/20170099058-provide-a-frequency-output-signal-to-other-parts-of-the-transmitter/ /frequency-synthesizer-determines-the-performance-of-communication/ 301
+/20170099058-provide-a-frequency-output-signal-to-other-parts-of-the-transmitter /frequency-synthesizer-determines-the-performance-of-communication/ 301
+
+# Pub 20170269797 "Systems and Methods for Electronic Communication" -> Pub 20130080898
+/20170269797-systems-and-methods-for-electronic-communication/ /20130080898-electronic-communications/ 301
+/20170269797-systems-and-methods-for-electronic-communication /20130080898-electronic-communications/ 301
+
+# Pub 20170289332 "IVR Menu in a Visual Form to the Caller" -> Patent 8300777
+/20170289332-ivr-menu-in-a-visual-form-to-the-caller/ /8300777-ivr-menu-system-to-the-calling-party-on-any-visual-display/ 301
+/20170289332-ivr-menu-in-a-visual-form-to-the-caller /8300777-ivr-menu-system-to-the-calling-party-on-any-visual-display/ 301
+
+# Pub 20170302282 "Radar Target Detection System for Autonomous Vehicles" -> us-10598764
+/20170302282-radar-target-detection-system-for-autonomous-vehicles/ /us-10598764-radar-target-detection-and-imaging-system-for-autonomous-car/ 301
+/20170302282-radar-target-detection-system-for-autonomous-vehicles /us-10598764-radar-target-detection-and-imaging-system-for-autonomous-car/ 301
+
+# Pub 20170322687 "Enhancing User Interaction with Objects" -> Patent 8867708
+/20170322687-enhancing-user-interaction-with-objects/ /8867708-interactive-voice-response-for-enhancing-user-interaction/ 301
+/20170322687-enhancing-user-interaction-with-objects /8867708-interactive-voice-response-for-enhancing-user-interaction/ 301
+
+# Pub 20180019755 "Ultra-Low Phase Noise Frequency Generation for Radar Applications" -> Patent 9762251
+/20180019755-ultra-low-phase-noise-frequency-generation-for-radar-applications/ /9762251-ultra-low-phase-noise-frequency-synthesizer/ 301
+/20180019755-ultra-low-phase-noise-frequency-generation-for-radar-applications /9762251-ultra-low-phase-noise-frequency-synthesizer/ 301
+
+# Patent 8155280 "Enable Caller to Directly Interact with Visual IVR Menu" -> Patent 8548135 (closest IVR visual menu)
+/8155280-enable-caller-to-directly-interact-with-visual-ivr-menu/ /8548135-visual-ivr-menu-system-to-a-calling-party/ 301
+/8155280-enable-caller-to-directly-interact-with-visual-ivr-menu /8548135-visual-ivr-menu-system-to-a-calling-party/ 301
+
+# Patent 8160215 "Web Interface for Displaying the IVR Menus" -> Patent 7720087
+/8160215-web-interface-for-displaying-the-ivr-menus/ /7720087-display-of-ivr-menu/ 301
+/8160215-web-interface-for-displaying-the-ivr-menus /7720087-display-of-ivr-menu/ 301
+
+# Patent 8406388 "IVR Detecting Voice and Key Inputs from a Caller" -> Patent 8054952
+/8406388-ivr-detecting-voice-and-key-inputs-from-a-caller/ /8054952-ivr-technology-to-detect-voice-and-key-inputs-from-a-caller/ 301
+/8406388-ivr-detecting-voice-and-key-inputs-from-a-caller /8054952-ivr-technology-to-detect-voice-and-key-inputs-from-a-caller/ 301
+
+# Patent 8537989 "Technology Used to Detect Voice and Key Inputs from a Caller" -> Patent 8681951
+/8537989-technology-used-to-detect-voice-and-key-inputs-from-a-caller/ /8681951-ivr-technology-used-to-detect-voice-and-key-inputs-from-caller/ 301
+/8537989-technology-used-to-detect-voice-and-key-inputs-from-a-caller /8681951-ivr-technology-used-to-detect-voice-and-key-inputs-from-caller/ 301
+
+# Patent 8548131 "Systems and Methods for Communicating with an IVR System" -> Patent 8787536
+/8548131-systems-and-methods-for-communicating-with-an-ivr-system/ /8787536-communicating-with-an-interactive-voice-response-system/ 301
+/8548131-systems-and-methods-for-communicating-with-an-ivr-system /8787536-communicating-with-an-interactive-voice-response-system/ 301
+
+# Patent 8553859 "Device and Method for Providing Enhanced Telephony" -> Patent 8879698
+/8553859-device-and-method-for-providing-enhanced-telephony/ /8879698-enhanced-communications-over-a-network/ 301
+/8553859-device-and-method-for-providing-enhanced-telephony /8879698-enhanced-communications-over-a-network/ 301
+
+# Patent 9021130 "Photonic Line Sharing for High-Speed Routers" -> Patent 7944827
+/9021130-photonic-line-sharing-for-high-speed-routers/ /7944827-content-aware-dynamic-optical-bandwidth-allocation/ 301
+/9021130-photonic-line-sharing-for-high-speed-routers /7944827-content-aware-dynamic-optical-bandwidth-allocation/ 301
+
+# Patent 9083728 "Support Sharing and Exchanging in a Network" -> Patent 7321926
+/9083728-support-sharing-and-exchanging-in-a-network/ /7321926-exchange-of-data-between-communication-devices/ 301
+/9083728-support-sharing-and-exchanging-in-a-network /7321926-exchange-of-data-between-communication-devices/ 301
+
+# Patent 9184989 "Network Domains to Discover and Allocate Network Resources" -> Patent 7460546
+/9184989-network-domains-to-discover-and-allocate-network-resources/ /7460546-system-and-method-for-allocating-network-resources/ 301
+/9184989-network-domains-to-discover-and-allocate-network-resources /7460546-system-and-method-for-allocating-network-resources/ 301
+
+# Patent 9521255 "Enable a User at the Device to Interact with the Visual IVR Menu" -> Patent 8548135
+/9521255-enable-a-user-at-the-device-to-interact-with-the-visual-ivr-menu/ /8548135-visual-ivr-menu-system-to-a-calling-party/ 301
+/9521255-enable-a-user-at-the-device-to-interact-with-the-visual-ivr-menu /8548135-visual-ivr-menu-system-to-a-calling-party/ 301
+
+# Patent 9660655 "System to Operate at the Set Frequency Band" -> frequency synthesizer page
+/9660655-system-to-operate-at-the-set-frequency-band/ /frequency-synthesizer-determines-the-performance-of-communication/ 301
+/9660655-system-to-operate-at-the-set-frequency-band /frequency-synthesizer-determines-the-performance-of-communication/ 301
+
+# Patent 9690877 "Systems and Methods for Electronic Communications" -> Pub 20130080898
+/9690877-systems-and-methods-for-electronic-communications/ /20130080898-electronic-communications/ 301
+/9690877-systems-and-methods-for-electronic-communications /20130080898-electronic-communications/ 301
+
+# Patent 9705511 "Ultra-Low Phase Noise Frequency Synthesizers Using Fractional-N PLL" -> Patent 9762251
+/9705511-ultra-low-phase-noise-frequency-synthesizers-using-fractional-n-pll/ /9762251-ultra-low-phase-noise-frequency-synthesizer/ 301
+/9705511-ultra-low-phase-noise-frequency-synthesizers-using-fractional-n-pll /9762251-ultra-low-phase-noise-frequency-synthesizer/ 301
+
+# Patent 9831881 "Radar Target Detection System with ULPN System" -> us-10205457
+/9831881-radar-target-detection-system-with-ulpn-system/ /us-10205457-radar-target-detection-system/ 301
+/9831881-radar-target-detection-system-with-ulpn-system /us-10205457-radar-target-detection-system/ 301
+
+# US-8745573 "Platform Independent Development Framework for Applications" -> Pub 20090313004
+/us-8745573-platform-independent-development-framework-for-applications/ /20090313004-platform-independent-application-development-framework/ 301
+/us-8745573-platform-independent-development-framework-for-applications /20090313004-platform-independent-application-development-framework/ 301
+
+# WO-2000041368 "Dynamic Assignment of Classes of Traffic to a Priority Queue" -> Patent 7275115
+/wo-2000041368-dynamic-assignment-of-classes-of-traffic-to-a-priority-queue/ /7275115-dynamic-assignment-of-traffic-classes-to-a-priority-queue/ 301
+/wo-2000041368-dynamic-assignment-of-classes-of-traffic-to-a-priority-queue /7275115-dynamic-assignment-of-traffic-classes-to-a-priority-queue/ 301
+
+# WO-2005033899 "Data Transfers over Switched Underlay Networks" -> Pub 20050076173
+/wo-2005033899-data-transfers-over-switched-underlay-networks/ /20050076173-preconditioning-data-to-be-transferred-on-a-switched-underlay-network/ 301
+/wo-2005033899-data-transfers-over-switched-underlay-networks /20050076173-preconditioning-data-to-be-transferred-on-a-switched-underlay-network/ 301
+
+# WO-2007008976 "Authenticating Network Users Prevent Unauthorized Access" -> ep-1905211
+/wo-2007008976-authenticating-network-users-prevent-unauthorized-access/ /ep-1905211-prevent-unauthorized-access-to-authenticate-users/ 301
+/wo-2007008976-authenticating-network-users-prevent-unauthorized-access /ep-1905211-prevent-unauthorized-access-to-authenticate-users/ 301
+
+# WO-2016203460 "Ultra-Low Phase Noise Frequency Synthesizer" -> ca-2989752
+/wo-2016203460-ultra-low-phase-noise-frequency-synthesizer/ /ca-2989752-ultra-low-phase-noise-frequency-synthesizer/ 301
+/wo-2016203460-ultra-low-phase-noise-frequency-synthesizer /ca-2989752-ultra-low-phase-noise-frequency-synthesizer/ 301
