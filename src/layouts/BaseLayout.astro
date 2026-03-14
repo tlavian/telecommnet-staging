@@ -18,10 +18,76 @@ const resolvedOgImage = ogImage
   ? (ogImage.startsWith('http') ? ogImage : `https://telecommnet.com${ogImage}`)
   : `https://telecommnet.com${defaultOgImage}`;
 
-// Generate BreadcrumbList schema from breadcrumbs prop
-const breadcrumbSchema = breadcrumbs ? {
+// Human-readable names for URL slugs
+const SLUG_LABELS: Record<string, string> = {
+  'about-dr-lavian': 'About Dr. Lavian',
+  'communications-expert-witness': 'Expert Witness Services',
+  'telecommunications-expert-witness': 'Telecommunications Expert',
+  'network-communications-expert-witness': 'Network Communications Expert',
+  'internet-expert-witness': 'Internet Expert',
+  'voice-over-ip-voip-expert': 'VoIP Expert',
+  'network-security-expert': 'Network Security Expert',
+  'streaming-media-audio-and-video-conferencing-expert': 'Streaming Media Expert',
+  'computer-networking-expert-witness': 'Computer Networking Expert',
+  'data-communications-expert': 'Data Communications Expert',
+  'mobile-wireless-expert': 'Mobile & Wireless Expert',
+  'routing-switching-expert': 'Routing & Switching Expert',
+  'network-management-expert-witness': 'Network Management Expert',
+  'networking-expert': 'Networking Expert',
+  'messaging-and-chat-expert-witness': 'Messaging & Chat Expert',
+  'corporate-clients': 'Corporate Clients',
+  'law-firm-clients': 'Law Firm Clients',
+  'scientific-publications': 'Scientific Publications',
+  'talks-presentations': 'Talks & Presentations',
+  'cases-expert-witness-testimony': 'Expert Witness Cases',
+  'site-map': 'Site Map',
+  'contact': 'Contact',
+  'privacy-policy': 'Privacy Policy',
+  'terms-and-conditions': 'Terms & Conditions',
+  'patents': 'Patents',
+  'publication': 'Publications',
+  'case': 'Cases',
+  'category': 'Category',
+};
+
+// Convert slug to readable label: check map first, then humanize
+function slugToLabel(slug: string): string {
+  if (SLUG_LABELS[slug]) return SLUG_LABELS[slug];
+  // Capitalize words, replace hyphens with spaces
+  return slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// Auto-generate breadcrumbs from URL path if not explicitly provided
+function autoBreadcrumbs(path: string): Array<{name: string; url: string}> {
+  if (path === '/') return []; // Homepage doesn't need breadcrumbs
+  const segments = path.replace(/^\/|\/$/g, '').split('/');
+  const crumbs: Array<{name: string; url: string}> = [
+    { name: 'Home', url: '/' }
+  ];
+  let builtPath = '';
+  for (const seg of segments) {
+    builtPath += '/' + seg;
+    crumbs.push({ name: slugToLabel(seg), url: builtPath + '/' });
+  }
+  return crumbs;
+}
+
+// Check if page schema already contains a BreadcrumbList
+function schemaHasBreadcrumbs(s: any): boolean {
+  if (!s) return false;
+  if (s['@type'] === 'BreadcrumbList') return true;
+  if (s['@graph']) return s['@graph'].some((node: any) => node?.['@type'] === 'BreadcrumbList');
+  return false;
+}
+
+// Only auto-generate breadcrumbs if page schema doesn't already include them
+const needsAutoBreadcrumbs = !schemaHasBreadcrumbs(schema) && !breadcrumbs;
+const resolvedBreadcrumbs = breadcrumbs || (needsAutoBreadcrumbs ? autoBreadcrumbs(currentPath) : []);
+
+// Generate BreadcrumbList schema from breadcrumbs
+const breadcrumbSchema = resolvedBreadcrumbs.length > 0 ? {
   "@type": "BreadcrumbList",
-  "itemListElement": breadcrumbs.map((crumb, i) => ({
+  "itemListElement": resolvedBreadcrumbs.map((crumb, i) => ({
     "@type": "ListItem",
     "position": i + 1,
     "name": crumb.name,
