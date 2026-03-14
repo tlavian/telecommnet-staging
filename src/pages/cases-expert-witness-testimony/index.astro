@@ -18,19 +18,31 @@ import { casesSchema, casesTitle, casesDescription } from '../../lib/remaining-s
 
       <h2>Served as an Expert in Patent Cases</h2>
 
-        <div class="case-summary-box" role="region" aria-label="Expert witness experience summary">
-          <div class="case-stats">
-            <div class="case-stat">
-              <span class="stat-number">200+</span>
-              <span class="stat-label">Patents Analyzed</span>
+        <div class="cases-hero-stats" role="region" aria-label="Expert witness experience summary">
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number">120+</div>
+              <div class="hero-stat-label">Invented Patents</div>
             </div>
-            <div class="case-stat">
-              <span class="stat-number">80+</span>
-              <span class="stat-label">Depositions</span>
+            <div class="hero-stat">
+              <div class="hero-stat-number">100+</div>
+              <div class="hero-stat-label">Patents Litigated</div>
             </div>
-            <div class="case-stat">
-              <span class="stat-number">100+</span>
-              <span class="stat-label">Expert Reports</span>
+            <div class="hero-stat">
+              <div class="hero-stat-number">80+</div>
+              <div class="hero-stat-label">Depositions</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">70+</div>
+              <div class="hero-stat-label">Cases</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">35+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">Ph.D.</div>
+              <div class="hero-stat-label">UC Berkeley</div>
             </div>
           </div>
         </div>
@@ -627,44 +639,17 @@ import { casesSchema, casesTitle, casesDescription } from '../../lib/remaining-s
 </BaseLayout>
 
 <style is:global>
-  .case-summary-box {
-    background: #F2F7FC;
-    border: 1px solid #D6E4F0;
+  .cases-hero-stats {
+    background: var(--color-navy, #1a2744);
     border-radius: 8px;
     padding: 1.5rem 2rem;
     margin-bottom: 1.5rem;
   }
 
-  .case-stats {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .case-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stat-number {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #1F4E79;
-    line-height: 1.2;
-  }
-
-  .stat-label {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 0.3rem;
-  }
-
   @media (max-width: 768px) {
-    .case-stats {
-      flex-direction: column;
-      gap: 1rem;
+    .cases-hero-stats .hero-stats {
+      flex-wrap: wrap;
+      gap: 20px;
     }
   }
 </style>
