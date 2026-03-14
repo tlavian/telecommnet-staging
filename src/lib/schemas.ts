@@ -186,7 +186,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         ORG_ENTITY,
         {
-          '@type': 'ProfessionalService',
+          '@type': ['ProfessionalService', 'LegalService'],
           '@id': `${BASE_URL}/#service`,
           name: 'TelecommNet Expert Witness Services',
           description:
@@ -241,6 +241,52 @@ export const buildSchema = {
             '@type': 'SpeakableSpecification',
             cssSelector: ['.hero-banner h1', '.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
           },
+        },
+        {
+          '@type': 'FAQPage',
+          '@id': `${BASE_URL}/#faq`,
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Who is Dr. Tal Lavian?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 100+ expert witness engagements in patent litigation across U.S. federal courts, USPTO PTAB, and the ITC.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What types of cases does Dr. Lavian handle as an expert witness?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian provides expert witness services in telecommunications patent infringement cases, ITC Section 337 investigations, USPTO PTAB IPR/PGR proceedings, and technology disputes involving networking, VoIP, wireless communications, and internet protocols.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How many patents does Dr. Lavian hold?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian holds 120+ issued and filed patents covering network switch architecture, network security, VoIP/IVR systems, grid computing, quality of service, streaming media, and wireless communications.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What courts and tribunals has Dr. Lavian testified in?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), and Canadian federal and provincial courts.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How do I retain Dr. Lavian as an expert witness?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Contact Dr. Lavian directly at tlavian@telecommnet.com or call +1 (408) 209-9112 for a confidential case evaluation and engagement discussion.',
+              },
+            },
+          ],
         },
         breadcrumbs([]),
       ],
