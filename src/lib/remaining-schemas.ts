@@ -47,7 +47,7 @@ export const lawFirmClientsDescription =
 export const publicationsSchema = buildSchema.publications();
 
 export const publicationsTitle =
-  "Scientific Publications | Dr. Tal Lavian";
+  "Telecom Research & Publications | Dr. Tal Lavian";
 export const publicationsDescription =
   "Peer-reviewed telecommunications research and scientific publications by Dr. Tal Lavian. IEEE, ACM journals. Supporting expert witness testimony.";
 
@@ -57,7 +57,7 @@ export const publicationsDescription =
 export const talksSchema = buildSchema.talks();
 
 export const talksTitle =
-  "Talks & Presentations | Dr. Tal Lavian";
+  "Expert Witness Talks & Presentations | Dr. Tal Lavian";
 export const talksDescription =
   "View keynote presentations, CLE training sessions, and technical lectures. Demonstrating clear communication of complex telecom technology to judges and juries.";
 
@@ -67,7 +67,7 @@ export const talksDescription =
 export const casesSchema = buildSchema.cases();
 
 export const casesTitle =
-  "Expert Witness Cases | Dr. Tal Lavian";
+  "Telecom Expert Witness Cases | Dr. Tal Lavian";
 export const casesDescription =
   "Expert witness cases by Dr. Tal Lavian. 100+ cases in U.S. federal courts, USPTO PTAB, and ITC. Telecommunications patent disputes.";
 
@@ -83,7 +83,7 @@ export const siteMapSchema = buildSchema.webPage({
 });
 
 export const siteMapTitle =
-  "Site Map — TelecommNet.com | Dr. Tal Lavian";
+  "Site Map | TelecommNet";
 export const siteMapDescription =
   "Complete site map for TelecommNet.com. Navigate all pages of Dr. Tal Lavian's telecommunications expert witness and consulting practice website.";
 
@@ -135,7 +135,7 @@ export const termsDescription =
 export const patentsSchema = buildSchema.patents();
 
 export const patentsTitle =
-  "Patents — Dr. Tal Lavian | TelecommNet";
+  "Telecommunications Patents | Dr. Tal Lavian";
 export const patentsDescription =
   "120+ patents by Dr. Tal Lavian in telecommunications, network communications, and computer science. 60+ pro-se prosecutions before the USPTO.";
 

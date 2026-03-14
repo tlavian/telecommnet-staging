@@ -58,8 +58,8 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "PSTN, VoIP & Cellular Systems Expert Testimony | Dr. Tal Lavian";
-const telecomDescription = "Expert witness for PSTN, VoIP, SONET/SDH, cellular systems, SS7, and telecom switching patent litigation. Dr. Tal Lavian — 100+ cases, 120+ patents. Federal court, PTAB & ITC testimony.";
+const telecomTitle = "PSTN, VoIP & Cellular Expert Witness | Dr. Tal Lavian";
+const telecomDescription = "PSTN, VoIP & cellular systems expert witness. Dr. Tal Lavian — 120+ patents, 100+ cases in federal court, PTAB & ITC. Contact for a consultation.";
 
 // ─── 2. NETWORK COMMUNICATIONS EXPERT WITNESS ────────────────────────────
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
@@ -418,7 +418,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   ],
 });
 
-const mobileWirelessTitle = "Wireless Expert Witness | Dr. Tal Lavian";
+const mobileWirelessTitle = "Mobile & Wireless Expert Witness | Dr. Tal Lavian";
 const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 100+ cases. Wi-Fi, Bluetooth, cellular, 5G, WLAN. Patent litigation in federal court, PTAB & ITC.";
 
 // ─── 10. ROUTING & SWITCHING EXPERT ──────────────────────────────────────

@@ -32,7 +32,7 @@ export const PERSON_ENTITY = {
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
-  image: `${BASE_URL}/wp-content/uploads/dr-tal-lavian.jpg`,
+  image: `${BASE_URL}/images/branding/dr-lavian.svg`,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Encino',
@@ -372,6 +372,62 @@ export const buildSchema = {
               { '@type': 'Service', name: 'Messaging & Chat Expert Witness', url: `${BASE_URL}/communications-expert-witness/messaging-and-chat-expert-witness/` },
             ],
           },
+        },
+        {
+          '@type': 'FAQPage',
+          '@id': `${hubUrl}#faq`,
+          name: 'FAQ — Communications Expert Witness Services',
+          url: hubUrl,
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What expert witness services does Dr. Lavian provide?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian provides expert witness services across 14 practice areas including telecommunications, network communications, Internet protocols, VoIP, network security, streaming media, computer networking, data communications, mobile wireless, routing and switching, network management, and messaging technologies.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What qualifications does Dr. Lavian have as an expert witness?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 100 expert witness engagements.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'In what courts has Dr. Lavian testified?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, and federal and provincial courts in Canada.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What types of cases require a communications expert witness?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'A communications expert witness is needed in patent infringement litigation involving telecom and networking technologies, ITC Section 337 investigations, USPTO PTAB inter partes reviews (IPRs) and post-grant reviews (PGRs), trade secret disputes involving network protocols or communications systems, and breach of contract matters.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How does Dr. Lavian prepare expert reports?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian follows a rigorous methodology that includes reviewing patent claims and prosecution history, analyzing accused products or prior art through documentation and source code review, constructing claim charts, and preparing detailed written reports with clear technical explanations suitable for judges, juries, and PTAB panels.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What companies has Dr. Lavian been retained in cases involving?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Google, Apple, Microsoft, Amazon, Cisco Systems, Huawei, Ericsson, Qualcomm, Samsung, Netflix, T-Mobile, ZTE, Juniper Networks, Arista Networks, Motorola, LG, Avaya, and many others.',
+              },
+            },
+          ],
         },
         breadcrumbs([{ name: 'Expert Witness Services', url: '/communications-expert-witness/' }]),
       ],
