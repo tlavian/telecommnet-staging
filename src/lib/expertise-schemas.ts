@@ -15,9 +15,9 @@ const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN, VoIP & Cellular Systems Expert',
   slug: 'pstn-voip-cellular-expert',
   description: 'Telecommunications expert witness consultant for patent litigation in federal courts, USPTO PTAB, and ITC. Dr. Tal Lavian specializes in PSTN, VoIP, SONET/SDH, DWDM, telecom switching, cellular systems, and signaling protocols with 70+ cases and 120+ patents.',
-  serviceType: 'Telecommunications Expert Witness',
-  keywords: ['telecommunications expert witness', 'telecom expert witness', 'telecommunications expert witness consultant', 'telecommunications patent expert', 'PTAB telecom expert', 'ITC telecommunications expert', 'PSTN expert witness', 'telecom patent litigation', 'telephony expert witness', 'telecommunications consulting expert'],
-  breadcrumbLabel: 'Telecommunications',
+  serviceType: 'PSTN, VoIP & Cellular Systems Expert Witness',
+  keywords: ['PSTN expert witness', 'VoIP expert witness', 'cellular systems expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
+  breadcrumbLabel: 'PSTN, VoIP & Cellular',
   faqs: [
     {
       q: 'What does a telecommunications expert witness do?',
@@ -41,7 +41,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What companies has Dr. Lavian served as a telecom expert witness for?',
-      a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Cisco, AT&T, Verizon, Motorola, T-Mobile, Qualcomm, Ericsson, Huawei, and ZTE, among many others, providing analysis and testimony on telecom protocols and systems.',
+      a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
     },
     {
       q: 'How is a telecommunications expert witness qualified under Daubert?',
