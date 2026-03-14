@@ -32,14 +32,14 @@ export const lawFirmClientsSchema = buildSchema.clientPage({
   name: 'Telecommunications Expert Witness for Law Firms — Patent & IP Litigation',
   slug: 'law-firm-clients',
   description:
-    'Retain a premier telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Daubert-qualified technical testimony and forensic analysis.',
+    'Retain a premier telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Qualified technical testimony and forensic analysis.',
   breadcrumbLabel: 'Law Firm Clients',
 });
 
 export const lawFirmClientsTitle =
   "Telecom Expert Witness for Law Firms | TelecommNet";
 export const lawFirmClientsDescription =
-  "Retain a telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Daubert-qualified testimony.";
+  "Retain a telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Qualified technical testimony.";
 
 // ─── 18. SCIENTIFIC PUBLICATIONS ─────────────────────────────────────────
 // File: src/pages/scientific-publications/index.astro

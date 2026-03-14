@@ -49,7 +49,7 @@
 
 - [x] Research "People Also Ask" questions for each target keyword
 - [x] Add 2–3 more FAQ items per page in `expertise-schemas.ts` (11 new FAQs across 5 pages)
-- [x] Structure as genuine attorney questions (e.g., "How is a telecommunications expert witness qualified under Daubert?")
+- [x] Structure as genuine attorney questions (e.g., "What qualifications should a telecommunications expert witness have?")
 
 ### 5. Core Web Vitals Audit ✅ (Completed 2026-03-13)
 **Impact:** ★★★☆☆ | **Effort:** Low | **Type:** On-site
@@ -90,7 +90,7 @@
 **Impact:** ★★★☆☆ | **Effort:** Medium | **Type:** New content
 
 - [ ] Create "Expert Witness Process" or "How We Work" page at `/expert-witness-process/`
-- [ ] Cover engagement methodology, Daubert qualification, report preparation, deposition/trial
+- [ ] Cover engagement methodology, expert qualification, report preparation, deposition/trial
 - [ ] Internal link from all expertise pages
 - [ ] Add appropriate schema markup
 

@@ -387,8 +387,8 @@ Patent infringement cases (both offensive and defensive), ITC Section 337 invest
 ### How does an expert witness help with patent claim construction?
 An expert witness interprets patent claims based on their understanding of the technology and relevant prior art, providing claim construction opinions (Markman hearing testimony) that help the court determine the scope and meaning of patent claims.
 
-### What is the Daubert standard and how does it apply to expert witnesses?
-The Daubert standard (Daubert v. Merrell Dow Pharmaceuticals) requires that expert testimony be based on sufficient facts, reliable principles and methods, and that those principles are reliably applied. Dr. Lavian's testimony has been consistently admitted under the Daubert standard across 70+ engagements.
+### What qualifications should an expert witness have?
+An expert witness must demonstrate testimony based on sufficient facts, reliable principles and methods, and show that those principles are reliably applied. Dr. Lavian's testimony has been consistently admitted across 70+ engagements in federal courts, PTAB panels, and the ITC.
 
 ### What is PTAB and how does it relate to expert witnesses?
 The Patent Trial and Appeal Board (PTAB) is a body within the USPTO that conducts Inter Partes Reviews (IPRs), Post Grant Reviews (PGRs), and other patent proceedings. Expert witnesses provide technical declarations and may testify at oral hearings. Dr. Lavian has extensive PTAB experience.

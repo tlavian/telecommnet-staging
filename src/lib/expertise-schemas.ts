@@ -44,8 +44,8 @@ const telecomSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
     },
     {
-      q: 'How is a telecommunications expert witness qualified under Daubert?',
-      a: 'Under the Daubert standard, a telecommunications expert witness must demonstrate reliable methodology and relevant expertise. Dr. Lavian qualifies through his Ph.D. from UC Berkeley, 120+ patents, 25+ peer-reviewed publications, and 70+ cases where his methodology and opinions have been accepted by federal courts, PTAB panels, and the ITC.',
+      q: 'What qualifications should a telecommunications expert witness have?',
+      a: 'A telecommunications expert witness must demonstrate reliable methodology and relevant expertise. Dr. Lavian qualifies through his Ph.D. from UC Berkeley, 120+ patents, 25+ peer-reviewed publications, and 70+ cases where his methodology and opinions have been accepted by federal courts, PTAB panels, and the ITC.',
     },
     {
       q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
