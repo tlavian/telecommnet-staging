@@ -251,7 +251,7 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 70+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
               },
             },
             {
