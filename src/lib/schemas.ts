@@ -124,18 +124,6 @@ export const PERSON_ENTITY = {
     'Toastmasters International Best Speaker Award',
     'IEEE & ICE Best Paper Award',
   ],
-  inventorOf: {
-    '@type': 'CreativeWork',
-    name: 'Patent Portfolio — Dr. Tal Lavian',
-    url: `${BASE_URL}/patents/`,
-    description: '120+ patents in telecommunications, network communications, and computer science.',
-  },
-  authorOf: {
-    '@type': 'CreativeWork',
-    name: 'Scientific Publications — Dr. Tal Lavian',
-    url: `${BASE_URL}/scientific-publications/`,
-    description: '25+ peer-reviewed publications in IEEE, ACM, and related venues.',
-  },
 };
 
 export const ORG_ENTITY = {
@@ -343,6 +331,13 @@ export const buildSchema = {
           mainEntityOfPage: { '@id': hubUrl },
           description:
             'Telecommunications expert witness for patent litigation. Network communications, Internet protocols, VoIP, mobile wireless, computer networking. 70+ cases, 120+ patents.',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Encino',
+            addressRegion: 'CA',
+            addressCountry: 'US',
+          },
+          telephone: '+1-408-209-9112',
           areaServed: { '@type': 'Country', name: 'United States' },
           priceRange: '$$$$',
           hasOfferCatalog: {
@@ -511,6 +506,7 @@ export const buildSchema = {
             addressRegion: 'CA',
             addressCountry: 'US',
           },
+          telephone: '+1-408-209-9112',
           areaServed: { '@type': 'Country', name: 'United States' },
           priceRange: '$$$$',
           dateModified: '2026-03-13',
