@@ -30,7 +30,6 @@ const CORE_PATHS = new Set([
   '/site-map/',
   '/contact/',
   '/patents/',
-  '/publication/',
 ]);
 
 export default defineConfig({
@@ -52,6 +51,7 @@ export default defineConfig({
   trailingSlash: 'always',
   redirects: {
     '/case/': '/cases-expert-witness-testimony/',
+    '/publication/': '/scientific-publications/',
     // Redirect legacy WordPress sitemaps to Astro sitemap (fixes GSC 404 errors)
     '/case-sitemap.xml': '/sitemap-index.xml',
     '/post-sitemap.xml': '/sitemap-index.xml',
