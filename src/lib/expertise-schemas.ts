@@ -58,7 +58,7 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "Telecommunications Expert Witness Consultant | Dr. Tal Lavian, Ph.D.";
+const telecomTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
 const telecomDescription = "Telecommunications expert witness — 80+ cases, 120+ patents. PSTN, VoIP, SONET/SDH, cellular systems, telecom switching. Federal court, PTAB & ITC testimony.";
 
 // ─── 2. NETWORK COMMUNICATIONS EXPERT WITNESS ────────────────────────────
@@ -107,7 +107,7 @@ const networkCommsSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkCommsTitle = "Network Communications Expert Witness Consultant | Dr. Tal Lavian, Ph.D.";
+const networkCommsTitle = "Network Communications Expert Witness | Dr. Tal Lavian";
 const networkCommsDescription = "Network communications expert witness — 120+ patents, 80+ cases. TCP/IP, routing protocols, LAN/WAN, OSI model. Patent litigation in federal court, PTAB & ITC.";
 
 // ─── 3. INTERNET EXPERT WITNESS ───────────────────────────────────────────
@@ -156,7 +156,7 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Technologies & TCP/IP Expert Witness | Dr. Tal Lavian, Ph.D.";
+const internetTitle = "Internet & TCP/IP Expert Witness | Dr. Tal Lavian";
 const internetDescription = "Internet technologies expert witness — TCP/IP, protocols, HTTP, DNS. 120+ patents, 80+ cases. Patent litigation in federal court, PTAB & ITC. Ph.D. UC Berkeley.";
 
 // ─── 4. VOIP EXPERT WITNESS ───────────────────────────────────────────────
@@ -328,7 +328,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
   ],
 });
 
-const computerNetworkingTitle = "Computer Networks Expert Witness Consultant | Dr. Tal Lavian, Ph.D.";
+const computerNetworkingTitle = "Computer Networking Expert Witness | Dr. Tal Lavian";
 const computerNetworkingDescription = "Computer networks expert witness — 120+ patents, 80+ cases. LAN/WAN, Ethernet, SDN, routers, switches, network architecture. Federal court, PTAB & ITC.";
 
 // ─── 8. DATA COMMUNICATIONS EXPERT ───────────────────────────────────────
@@ -377,7 +377,7 @@ const dataCommsSchema = buildSchema.expertisePage({
   ],
 });
 
-const dataCommsTitle = "Data Communications Expert Witness Consultant | Dr. Tal Lavian, Ph.D.";
+const dataCommsTitle = "Data Communications Expert Witness | Dr. Tal Lavian";
 const dataCommsDescription = "Data communications expert witness — 120+ patents, 80+ cases. Data networking, cloud computing, data centers, protocol stacks. Federal court, PTAB & ITC.";
 
 // ─── 9. MOBILE WIRELESS EXPERT ───────────────────────────────────────────
