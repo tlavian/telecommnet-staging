@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "astro-preview",
+      "name": "astro-dev",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["astro", "preview"],
+      "runtimeArgs": ["astro", "dev"],
       "port": 4321
     }
   ]
