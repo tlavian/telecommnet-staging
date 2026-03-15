@@ -188,7 +188,7 @@ const voipSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in voice communications technology?',
-      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley with research in network communications including real-time protocols. He has 120+ patents covering VoIP and communications systems, extensive industry experience at Nortel Networks developing voice and data systems, and 70+ expert witness engagements.',
+      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications and network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, extensive industry experience at Nortel Networks developing voice and data systems, and 70+ expert witness engagements.',
     },
     {
       q: 'Can Dr. Lavian testify on unified communications and WebRTC patents?',
@@ -274,7 +274,7 @@ const streamingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in multimedia communications?',
-      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley in computer science specializing in network communications. His 120+ patents include innovations in real-time media delivery and network streaming, and he has served as a principal investigator on DARPA-funded multimedia network research projects.',
+      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications and network communication, and Internet technologies. His 120+ patents include innovations in real-time media delivery and network streaming, and he has served as a principal investigator on DARPA-funded multimedia network research projects.',
     },
   ],
 });
