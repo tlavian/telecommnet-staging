@@ -17,6 +17,76 @@
 /communications-expert-witness/streaming-media-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 /communications-expert-witness/streaming-media-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 
+# ============================================================
+# Old /expert-witness-services/ URLs with backlinks (Ahrefs March 2026)
+# These old WordPress URL patterns have referring domains pointing to them
+# ============================================================
+
+# Internet protocols expert (8 ref domains, 20 backlinks — was 404)
+/expert-witness-services/internet-protocols-expert/ /communications-expert-witness/internet-expert-witness/ 301
+/expert-witness-services/internet-protocols-expert /communications-expert-witness/internet-expert-witness/ 301
+
+# VoIP expert (6 ref domains, 20 backlinks — was 503/404)
+/expert-witness-services/voice-over-ip-voip-expert/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/expert-witness-services/voice-over-ip-voip-expert /communications-expert-witness/voice-over-ip-voip-expert/ 301
+
+# Network communications expert (12 ref domains — was redirecting to hub instead of sub-page)
+/expert-witness-services/network-communications-expert/ /communications-expert-witness/network-communications-expert-witness/ 301
+/expert-witness-services/network-communications-expert /communications-expert-witness/network-communications-expert-witness/ 301
+
+# Streaming media expert (2 ref domains — was 404)
+/expert-witness-services/streaming-media-expert/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/expert-witness-services/streaming-media-expert /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+
+# Routing & switching expert (1 ref domain, 4 backlinks)
+/expert-witness-services/routing-and-switching-expert-witness/ /communications-expert-witness/routing-switching-expert/ 301
+/expert-witness-services/routing-and-switching-expert-witness /communications-expert-witness/routing-switching-expert/ 301
+
+# VoIP/streaming combo URL
+/expert-witness-services/voip-streaming-expert/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/expert-witness-services/voip-streaming-expert /communications-expert-witness/voice-over-ip-voip-expert/ 301
+
+# Mobile wireless expert (fix chain redirect — was going through /communications-expert-witness-services/)
+/expert-witness-services/mobile-wireless-expert-witness/ /communications-expert-witness/mobile-wireless-expert/ 301
+/expert-witness-services/mobile-wireless-expert-witness /communications-expert-witness/mobile-wireless-expert/ 301
+
+# Telecommunications expert (fix chain redirect — was going through 404 intermediary)
+/expert-witness-services/telecommunications-expert/ /communications-expert-witness/pstn-voip-cellular-expert/ 301
+/expert-witness-services/telecommunications-expert /communications-expert-witness/pstn-voip-cellular-expert/ 301
+
+# Catch-all for remaining /expert-witness-services/ paths
+/expert-witness-services/ /communications-expert-witness/ 301
+
+# ============================================================
+# Old /communications-expert-witness-services/ URLs with backlinks
+# ============================================================
+
+# Mobile wireless (5 ref domains)
+/communications-expert-witness-services/mobile-wireless-expert/ /communications-expert-witness/mobile-wireless-expert/ 301
+/communications-expert-witness-services/mobile-wireless-expert /communications-expert-witness/mobile-wireless-expert/ 301
+
+# Telecommunications expert witness (2 ref domains — was 404)
+/communications-expert-witness-services/telecommunications-expert-witness/ /communications-expert-witness/pstn-voip-cellular-expert/ 301
+/communications-expert-witness-services/telecommunications-expert-witness /communications-expert-witness/pstn-voip-cellular-expert/ 301
+
+# Catch-all for remaining /communications-expert-witness-services/ paths
+/communications-expert-witness-services/ /communications-expert-witness/ 301
+
+# ============================================================
+# Old /telecommunications-expert-witness-services/ URLs with backlinks
+# ============================================================
+
+# Internet expert witness (redirecting to hub instead of sub-page)
+/telecommunications-expert-witness-services/internet-expert-witness/ /communications-expert-witness/internet-expert-witness/ 301
+/telecommunications-expert-witness-services/internet-expert-witness /communications-expert-witness/internet-expert-witness/ 301
+
+# Catch-all for remaining /telecommunications-expert-witness-services/ paths
+/telecommunications-expert-witness-services/ /communications-expert-witness/ 301
+
+# Patents list (1 ref domain, 8 backlinks — was 404)
+/patents-list/ /patents/ 301
+/patents-list /patents/ 301
+
 # Cloudflare email protection artifact - redirect to contact page
 /cdn-cgi/l/email-protection /contact/ 301
 

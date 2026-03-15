@@ -313,8 +313,8 @@ export const buildSchema = {
           '@type': 'WebPage',
           '@id': hubUrl,
           url: hubUrl,
-          name: 'Telecommunications Expert Witness — Dr. Tal Lavian',
-          description: 'Telecommunications expert witness for patent litigation. Network communications, Internet protocols, VoIP, mobile wireless, computer networking. 70+ cases, 120+ patents.',
+          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
+          description: 'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 70+ cases, 120+ patents.',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -325,12 +325,12 @@ export const buildSchema = {
         },
         {
           '@type': 'ProfessionalService',
-          name: 'Telecommunications Expert Witness — Dr. Tal Lavian',
+          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           provider: PERSON_REF,
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
           description:
-            'Telecommunications expert witness for patent litigation. Network communications, Internet protocols, VoIP, mobile wireless, computer networking. 70+ cases, 120+ patents.',
+            'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 70+ cases, 120+ patents.',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',

@@ -58,8 +58,8 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "PSTN, VoIP & Cellular Expert Witness | Dr. Tal Lavian";
-const telecomDescription = "PSTN, VoIP & cellular systems expert witness. Dr. Tal Lavian — 120+ patents, 70+ cases in federal court, PTAB & ITC. Contact for a consultation.";
+const telecomTitle = "Telecommunications Expert Witness — PSTN, VoIP & Cellular | Dr. Tal Lavian";
+const telecomDescription = "Telecommunications expert witness for PSTN, VoIP & cellular systems. Dr. Tal Lavian — Ph.D. UC Berkeley, 120+ patents, 70+ federal court, PTAB & ITC cases.";
 
 // ─── 2. NETWORK COMMUNICATIONS EXPERT WITNESS ────────────────────────────
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
@@ -156,8 +156,8 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet & TCP/IP Expert Witness | Dr. Tal Lavian";
-const internetDescription = "Internet technologies expert witness — TCP/IP, protocols, HTTP, DNS. 120+ patents, 70+ cases. Patent litigation in federal court, PTAB & ITC. Ph.D. UC Berkeley.";
+const internetTitle = "Internet Expert Witness — TCP/IP, Protocols & Web Technologies | Dr. Tal Lavian";
+const internetDescription = "Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, web technologies, internet protocols. Dr. Tal Lavian — Ph.D. UC Berkeley, 120+ patents, 70+ cases.";
 
 // ─── 4. VOIP EXPERT WITNESS ───────────────────────────────────────────────
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
@@ -197,8 +197,8 @@ const voipSchema = buildSchema.expertisePage({
   ],
 });
 
-const voipTitle = "VoIP Expert Witness | Dr. Tal Lavian";
-const voipDescription = "VoIP expert witness — 120+ patents, 70+ cases. SIP, RTP, H.323, unified communications, IP telephony, WebRTC. Patent litigation, federal court, PTAB & ITC.";
+const voipTitle = "VoIP Expert Witness — Voice over IP Patent Litigation | Dr. Tal Lavian";
+const voipDescription = "VoIP expert witness for patent litigation. SIP, RTP, H.323, IP telephony, WebRTC. Dr. Tal Lavian — 120+ patents, 70+ cases in federal court, PTAB & ITC.";
 
 // ─── 5. NETWORK SECURITY EXPERT WITNESS ──────────────────────────────────
 // File: src/pages/communications-expert-witness/network-security-expert/index.astro
@@ -328,8 +328,8 @@ const computerNetworkingSchema = buildSchema.expertisePage({
   ],
 });
 
-const computerNetworkingTitle = "Computer Networking Expert Witness | Dr. Tal Lavian";
-const computerNetworkingDescription = "Computer networks expert witness — 120+ patents, 70+ cases. LAN/WAN, Ethernet, SDN, routers, switches, network architecture. Federal court, PTAB & ITC.";
+const computerNetworkingTitle = "Computer Networking Expert Witness — LAN/WAN & Network Architecture | Dr. Tal Lavian";
+const computerNetworkingDescription = "Computer networking expert witness for patent litigation. LAN/WAN, Ethernet, SDN, routers, switches, network architecture. Dr. Tal Lavian — 120+ patents, 70+ cases.";
 
 // ─── 8. DATA COMMUNICATIONS EXPERT ───────────────────────────────────────
 // File: src/pages/communications-expert-witness/data-communications-expert/index.astro
