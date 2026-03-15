@@ -1,9 +1,9 @@
 # Redirects from old WordPress URLs to new Astro staging URLs
 # Format: /old-path /new-path [status-code]
 
-# Telecommunications Expert Witness - URL renamed to eliminate keyword cannibalization with homepage
-/communications-expert-witness/telecommunications-expert-witness/ /communications-expert-witness/pstn-voip-cellular-expert/ 301
-/communications-expert-witness/telecommunications-expert-witness /communications-expert-witness/pstn-voip-cellular-expert/ 301
+# Telecommunications Expert Witness - redirect to homepage (homepage owns this keyword, vol 4,200)
+/communications-expert-witness/telecommunications-expert-witness/ / 301
+/communications-expert-witness/telecommunications-expert-witness / 301
 
 # VoIP Expert Witness - old production URL returned 404 in Neil Patel audit
 /communications-expert-witness/voip-expert-witness/ /communications-expert-witness/voice-over-ip-voip-expert/ 301

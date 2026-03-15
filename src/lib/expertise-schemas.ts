@@ -58,8 +58,8 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "Telecommunications Expert Witness — PSTN, VoIP & Cellular | Dr. Tal Lavian";
-const telecomDescription = "Telecommunications expert witness for PSTN, VoIP & cellular systems. Dr. Tal Lavian — Ph.D. UC Berkeley, 120+ patents, 70+ federal court, PTAB & ITC cases.";
+const telecomTitle = "PSTN, VoIP & Cellular Systems Expert Witness | Dr. Tal Lavian";
+const telecomDescription = "PSTN, VoIP & cellular systems expert witness for patent litigation. Telecom switching, SS7 signaling, SONET/SDH. Dr. Tal Lavian — Ph.D. UC Berkeley, 120+ patents, 70+ cases.";
 
 // ─── 2. NETWORK COMMUNICATIONS EXPERT WITNESS ────────────────────────────
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
@@ -114,10 +114,10 @@ const networkCommsDescription = "Network communications expert witness — 120+ 
 // File: src/pages/communications-expert-witness/internet-expert-witness/index.astro
 
 const internetSchema = buildSchema.expertisePage({
-  name: 'Internet Technologies Expert Witness',
+  name: 'Internet Expert Witness',
   slug: 'internet-expert-witness',
-  description: 'Internet technologies expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies. 70+ cases, 120+ patents. Ph.D. UC Berkeley.',
-  serviceType: 'Internet Technologies Expert Witness',
+  description: 'Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies, internet protocols. 70+ cases, 120+ patents. Ph.D. UC Berkeley.',
+  serviceType: 'Internet Expert Witness',
   keywords: ['internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'internet protocols expert witness', 'TCP/IP patent litigation', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
   breadcrumbLabel: 'Internet & TCP/IP',
   faqs: [
@@ -425,7 +425,7 @@ const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ pat
 // File: src/pages/communications-expert-witness/routing-switching-expert/index.astro
 
 const routingSwitchingSchema = buildSchema.expertisePage({
-  name: 'Routing & Switching Expert',
+  name: 'Routing & Switching Expert Witness',
   slug: 'routing-switching-expert',
   description: 'Routing & switching expert witness for patent litigation. BGP, OSPF, MPLS, packet switching, SDN, router/switch architectures. 70+ cases, 120+ patents.',
   serviceType: 'Routing & Switching Expert Witness',
@@ -507,9 +507,9 @@ const networkMgmtDescription = "Network management expert witness — 120+ paten
 // File: src/pages/communications-expert-witness/networking-expert/index.astro
 
 const networkingExpertSchema = buildSchema.expertisePage({
-  name: 'Networking Expert',
+  name: 'Networking Expert Witness',
   slug: 'networking-expert',
-  description: 'Networking expert witness for patent litigation. TCP/IP, LAN/WAN, routing, switching, network security, all protocol layers. 70+ cases, 120+ patents.',
+  description: 'Networking expert witness for patent litigation. Enterprise networking, protocol architecture, network design and infrastructure. 70+ cases, 120+ patents.',
   serviceType: 'Networking Expert Witness',
   keywords: ['networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
   breadcrumbLabel: 'Networking Expert',
@@ -541,8 +541,8 @@ const networkingExpertSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkingExpertTitle = "Networking Expert Witness | Dr. Tal Lavian";
-const networkingExpertDescription = "Networking expert witness — 120+ patents, 70+ cases. TCP/IP, LAN/WAN, routing, switching, network security, protocol architecture. Federal court, PTAB & ITC.";
+const networkingExpertTitle = "Networking Expert Witness — Enterprise & Protocol Architecture | Dr. Tal Lavian";
+const networkingExpertDescription = "Networking expert witness for patent litigation. Enterprise networking, protocol architecture, network design. Dr. Tal Lavian — 120+ patents, 70+ cases in federal court, PTAB & ITC.";
 
 // ─── 13. MESSAGING AND CHAT EXPERT WITNESS ──────────────────────────────
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
