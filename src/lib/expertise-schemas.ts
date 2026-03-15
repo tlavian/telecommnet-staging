@@ -208,7 +208,7 @@ const networkSecuritySchema = buildSchema.expertisePage({
   slug: 'network-security-expert',
   description: 'Network security expert witness for patent litigation. Encryption, firewalls, IDS/IPS, authentication, cybersecurity. 70+ cases, 120+ patents.',
   serviceType: 'Network Security Expert Witness',
-  keywords: ['network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'network access control expert', 'cybersecurity expert witness'],
+  keywords: ['internet security expert witness', 'network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'cybersecurity expert witness'],
   breadcrumbLabel: 'Network Security',
   faqs: [
     {
@@ -238,8 +238,8 @@ const networkSecuritySchema = buildSchema.expertisePage({
   ],
 });
 
-const networkSecurityTitle = "Network Security Expert Witness | Dr. Tal Lavian";
-const networkSecurityDescription = "Network security expert witness — 120+ patents, 70+ cases. Encryption, TLS/SSL, firewalls, IDS/IPS, VPN. Patent litigation in federal courts, PTAB & ITC.";
+const networkSecurityTitle = "Internet Security Expert Witness — Network Security | Dr. Tal Lavian";
+const networkSecurityDescription = "Internet security expert witness & network security expert witness — encryption, TLS/SSL, firewalls, IDS/IPS, VPN. Dr. Tal Lavian — 120+ patents, 70+ cases.";
 
 // ─── 6. STREAMING MEDIA EXPERT WITNESS ───────────────────────────────────
 // File: src/pages/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/index.astro
@@ -388,7 +388,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   slug: 'mobile-wireless-expert',
   description: 'Wireless & mobile expert witness for patent litigation. Wi-Fi, Bluetooth, cellular, 5G, WLAN, RF technology. 70+ cases, 120+ patents.',
   serviceType: 'Wireless Expert Witness',
-  keywords: ['wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'Bluetooth patent expert', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness', 'RF technology patent expert'],
+  keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'Bluetooth patent expert', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
   breadcrumbLabel: 'Mobile Wireless',
   faqs: [
     {
@@ -418,8 +418,8 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   ],
 });
 
-const mobileWirelessTitle = "Mobile & Wireless Expert Witness | Dr. Tal Lavian";
-const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 70+ cases. Wi-Fi, Bluetooth, cellular, 5G, WLAN. Patent litigation in federal court, PTAB & ITC.";
+const mobileWirelessTitle = "Cell Phone & Wireless Expert Witness | Dr. Tal Lavian";
+const mobileWirelessDescription = "Cell phone expert witness & wireless expert witness — Wi-Fi, Bluetooth, cellular, 5G, WLAN. Dr. Tal Lavian — 120+ patents, 70+ cases in federal court, PTAB & ITC.";
 
 // ─── 10. ROUTING & SWITCHING EXPERT ──────────────────────────────────────
 // File: src/pages/communications-expert-witness/routing-switching-expert/index.astro
