@@ -327,7 +327,8 @@
 
 # AMP URLs → clean versions (GSC: "Referenced AMP URL is not an AMP")
 /amp/ / 301
-/*?amp / 301
+# Note: /*?amp removed — Cloudflare Pages ignores query params in matching,
+# so /*?amp was interpreted as /* (catch-all), causing infinite redirect loop
 
 # Old WordPress sitemaps → new sitemap
 /case-sitemap.xml /sitemap-index.xml 301
