@@ -19,6 +19,8 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 Disallow: /private/
 Disallow: /admin/
+# Block PDF/PPT case files and presentations — irrelevant to expert witness SEO
+Disallow: /files/
 # Block legacy WordPress AMP URLs (GSC: "Referenced AMP URL is not an AMP")
 Disallow: /amp/
 Disallow: /*?amp
