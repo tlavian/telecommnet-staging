@@ -17,6 +17,10 @@
 /communications-expert-witness/streaming-media-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 /communications-expert-witness/streaming-media-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 
+# Streaming Media Expert - old WordPress URL with "-witness" suffix (190 impressions in GSC)
+/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+
 # ============================================================
 # Old /expert-witness-services/ URLs with backlinks (Ahrefs March 2026)
 # These old WordPress URL patterns have referring domains pointing to them
@@ -68,6 +72,14 @@
 # Telecommunications expert witness (2 ref domains — was 404)
 /communications-expert-witness-services/telecommunications-expert-witness/ /communications-expert-witness/pstn-voip-cellular-expert/ 301
 /communications-expert-witness-services/telecommunications-expert-witness /communications-expert-witness/pstn-voip-cellular-expert/ 301
+
+# Messaging and chats (181 impressions — note plural "chats" vs singular "chat")
+/communications-expert-witness-services/messaging-and-chats-expert-witness/ /communications-expert-witness/messaging-and-chat-expert-witness/ 301
+/communications-expert-witness-services/messaging-and-chats-expert-witness /communications-expert-witness/messaging-and-chat-expert-witness/ 301
+
+# Routing switching
+/communications-expert-witness-services/routing-switching-expert/ /communications-expert-witness/routing-switching-expert/ 301
+/communications-expert-witness-services/routing-switching-expert /communications-expert-witness/routing-switching-expert/ 301
 
 # Catch-all for remaining /communications-expert-witness-services/ paths
 /communications-expert-witness-services/ /communications-expert-witness/ 301
@@ -279,3 +291,50 @@
 /8341257-grid-proxy-architecture-for-network-resources /patents/ 301
 /us-8572303-portable-universal-communication-device/ /patents/ 301
 /us-8572303-portable-universal-communication-device /patents/ 301
+
+# ============================================================
+# Migration redirects — old WordPress URLs still in GSC index
+# ============================================================
+
+# Case pages beyond staging range (67-83) → cases hub
+/case/67-ymax-corporation-v-focal-ip-llc/ /cases-expert-witness-testimony/ 301
+/case/67-ymax-corporation-v-focal-ip-llc /cases-expert-witness-testimony/ 301
+/case/68-ymax-corporation-v-focal-ip-llc/ /cases-expert-witness-testimony/ 301
+/case/68-ymax-corporation-v-focal-ip-llc /cases-expert-witness-testimony/ 301
+/case/74-fedex-corp-and-fedex-corporate-services-inc-v-intellectual-ventures/ /cases-expert-witness-testimony/ 301
+/case/74-fedex-corp-and-fedex-corporate-services-inc-v-intellectual-ventures /cases-expert-witness-testimony/ 301
+/case/81-facebook-ipr-ptab-v-windy-city/ /cases-expert-witness-testimony/ 301
+/case/81-facebook-ipr-ptab-v-windy-city /cases-expert-witness-testimony/ 301
+/case/82-facebook-ipr-ptab-v-windy-city/ /cases-expert-witness-testimony/ 301
+/case/82-facebook-ipr-ptab-v-windy-city /cases-expert-witness-testimony/ 301
+/case/83-facebook-ipr-ptab-v-windy-city/ /cases-expert-witness-testimony/ 301
+/case/83-facebook-ipr-ptab-v-windy-city /cases-expert-witness-testimony/ 301
+
+# Old /slides/ URLs → talks-presentations (files now under /files/presentations/)
+/slides/69_Lavian1.ppt /talks-presentations/ 301
+/slides/AN-ore_ants.ppt /talks-presentations/ 301
+/slides/GW2004-2%20jan%206%20final1.ppt /talks-presentations/ 301
+/slides/lanman99-final.ppt /talks-presentations/ 301
+
+# CV/Resume PDF → about page
+/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet/ /about-dr-lavian/ 301
+
+# WordPress feed/admin paths → homepage
+/feed/ / 301
+/comments/ / 301
+/wp-json/* / 301
+/wp-admin/ / 301
+
+# AMP URLs → clean versions (GSC: "Referenced AMP URL is not an AMP")
+/amp/ / 301
+/*?amp / 301
+
+# Old WordPress sitemaps → new sitemap
+/case-sitemap.xml /sitemap-index.xml 301
+/post-sitemap.xml /sitemap-index.xml 301
+/page-sitemap.xml /sitemap-index.xml 301
+/patent-sitemap.xml /sitemap-index.xml 301
+/publication-sitemap.xml /sitemap-index.xml 301
+
+# Tag pages → expertise hub (blocked + removal requested, but redirect as safety net)
+/tag/* /communications-expert-witness/ 301
