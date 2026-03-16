@@ -52,11 +52,5 @@ export default defineConfig({
   redirects: {
     '/case/': '/cases-expert-witness-testimony/',
     '/publication/': '/scientific-publications/',
-    // Redirect legacy WordPress sitemaps to Astro sitemap (fixes GSC 404 errors)
-    '/case-sitemap.xml': '/sitemap-index.xml',
-    '/post-sitemap.xml': '/sitemap-index.xml',
-    '/page-sitemap.xml': '/sitemap-index.xml',
-    '/patent-sitemap.xml': '/sitemap-index.xml',
-    '/publication-sitemap.xml': '/sitemap-index.xml',
   },
 });
