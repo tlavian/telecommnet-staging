@@ -58,8 +58,8 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "PSTN, VoIP & Cellular Systems Expert Witness | Dr. Tal Lavian";
-const telecomDescription = "PSTN, VoIP & cellular systems expert witness for patent litigation. Telecom switching, SS7 signaling, SONET/SDH. Dr. Tal Lavian — Ph.D. UC Berkeley, 120+ patents, 70+ cases.";
+const telecomTitle = "Telecommunications Expert Witness | Dr. Tal Lavian, Ph.D.";
+const telecomDescription = "Telecommunications expert witness for patent litigation — PSTN, VoIP, cellular systems, SS7 signaling. Dr. Tal Lavian, Ph.D. UC Berkeley. 120+ patents, 70+ cases.";
 
 // ─── 2. NETWORK COMMUNICATIONS EXPERT WITNESS ────────────────────────────
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
@@ -156,8 +156,8 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Expert Witness — TCP/IP, Protocols & Web Technologies | Dr. Tal Lavian";
-const internetDescription = "Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, web technologies, internet protocols. Dr. Tal Lavian — Ph.D. UC Berkeley, 120+ patents, 70+ cases.";
+const internetTitle = "Internet Expert Witness | Dr. Tal Lavian, Ph.D.";
+const internetDescription = "Internet expert witness for patent litigation — TCP/IP, HTTP, DNS, BGP, web technologies. Dr. Tal Lavian, Ph.D. UC Berkeley. 120+ patents, 70+ cases.";
 
 // ─── 4. VOIP EXPERT WITNESS ───────────────────────────────────────────────
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
@@ -328,8 +328,8 @@ const computerNetworkingSchema = buildSchema.expertisePage({
   ],
 });
 
-const computerNetworkingTitle = "Computer Networking Expert Witness — LAN/WAN & Network Architecture | Dr. Tal Lavian";
-const computerNetworkingDescription = "Computer networking expert witness for patent litigation. LAN/WAN, Ethernet, SDN, routers, switches, network architecture. Dr. Tal Lavian — 120+ patents, 70+ cases.";
+const computerNetworkingTitle = "Computer Networking Expert Witness | Dr. Tal Lavian, Ph.D.";
+const computerNetworkingDescription = "Computer networking expert witness for patent litigation — LAN/WAN, Ethernet, SDN, routers, switches, network architecture. Dr. Tal Lavian, Ph.D. UC Berkeley. 120+ patents, 70+ cases.";
 
 // ─── 8. DATA COMMUNICATIONS EXPERT ───────────────────────────────────────
 // File: src/pages/communications-expert-witness/data-communications-expert/index.astro
@@ -418,8 +418,8 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   ],
 });
 
-const mobileWirelessTitle = "Cell Phone & Wireless Expert Witness | Dr. Tal Lavian";
-const mobileWirelessDescription = "Cell phone expert witness & wireless expert witness — Wi-Fi, Bluetooth, cellular, 5G, WLAN. Dr. Tal Lavian — 120+ patents, 70+ cases in federal court, PTAB & ITC.";
+const mobileWirelessTitle = "Wireless Expert Witness | Dr. Tal Lavian, Ph.D.";
+const mobileWirelessDescription = "Wireless expert witness for patent litigation — Wi-Fi, Bluetooth, cellular, 5G, WLAN. Dr. Tal Lavian, Ph.D. UC Berkeley. 120+ patents, 70+ cases.";
 
 // ─── 10. ROUTING & SWITCHING EXPERT ──────────────────────────────────────
 // File: src/pages/communications-expert-witness/routing-switching-expert/index.astro
@@ -459,8 +459,8 @@ const routingSwitchingSchema = buildSchema.expertisePage({
   ],
 });
 
-const routingSwitchingTitle = "Routing & Switching Expert Witness | Dr. Tal Lavian";
-const routingSwitchingDescription = "Routing & switching expert witness — 120+ patents, 70+ cases. BGP, OSPF, MPLS, SDN, router/switch architectures. Federal court, PTAB & ITC testimony.";
+const routingSwitchingTitle = "Routing & Switching Expert Witness | Dr. Tal Lavian, Ph.D.";
+const routingSwitchingDescription = "Routing & switching expert witness — BGP, OSPF, MPLS, SDN, router/switch architectures. Dr. Tal Lavian, Ph.D. UC Berkeley. 120+ patents, 70+ cases.";
 
 // ─── 11. NETWORK MANAGEMENT EXPERT WITNESS ───────────────────────────────
 // File: src/pages/communications-expert-witness/network-management-expert-witness/index.astro
