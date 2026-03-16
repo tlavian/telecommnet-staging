@@ -31,6 +31,8 @@ Disallow: /post-sitemap.xml
 Disallow: /page-sitemap.xml
 Disallow: /patent-sitemap.xml
 Disallow: /publication-sitemap.xml
+# Block legacy WordPress tag pages — cannibalizing real expertise pages
+Disallow: /tag/
 # Block WordPress admin/feed/internal paths
 Disallow: /wp-admin/
 Disallow: /wp-json/

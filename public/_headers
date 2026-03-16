@@ -46,6 +46,10 @@
 /sitemap-index.xml
   Cache-Control: public, max-age=3600
 
+# Block legacy WordPress tag pages — cannibalizing real expertise pages
+/tag/*
+  X-Robots-Tag: noindex, nofollow
+
 /privacy-policy/
   X-Robots-Tag: noindex, follow
 
