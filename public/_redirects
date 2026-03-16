@@ -20,3 +20,7 @@
 # Streaming Media Expert - alternate URL with "-witness" suffix (190 GSC impressions)
 /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+
+# AMP URLs → non-AMP versions (site has no AMP pages, fixes GSC "Referenced AMP URL is not an AMP")
+/*/amp/ /:splat/ 301
+/amp/ / 301
