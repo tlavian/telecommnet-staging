@@ -778,7 +778,7 @@ export const buildSchema = {
     };
   },
 
-  /** Cases: CollectionPage + BreadcrumbList */
+  /** Cases: CollectionPage + FAQPage + BreadcrumbList */
   cases() {
     return {
       '@context': 'https://schema.org',
@@ -791,13 +791,66 @@ export const buildSchema = {
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Patent Litigation Expert Witness Testimony' },
-          dateModified: '2026-03-13',
+          dateModified: '2026-03-15',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+            cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
           },
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'How many expert witness cases has Dr. Lavian handled?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has served as an expert witness in over 70 cases involving more than 200 patents. He has written expert reports and testified in over 80 depositions in U.S. federal courts, USPTO PTAB, and the ITC.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What courts and tribunals has Dr. Lavian testified in?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has testified in the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), the Tax Court in Canada, and a court in Asia. He has also served in USPTO PTAB proceedings, including Inter Partes Reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: "What companies have been involved in Dr. Lavian's expert witness cases?",
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has been retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks, Huawei, Motorola, HP, LG, Avaya, Netflix, LinkedIn, Ericsson, Sprint, ZTE, WhatsApp, Instagram, and Polycom.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What expert witness services does Dr. Lavian provide in patent cases?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian provides technical education for claim constructions and Markman hearings, writes expert reports that include analyses, claim term definitions, and claim construction, and offers product and technical analyses on patent portfolios, claim charts, prior art investigations, and patentability research.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Has Dr. Lavian worked for both plaintiff and defendant in patent cases?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Dr. Lavian has been retained by both plaintiff and defendant parties in patent cases, providing independent technical analysis based on his expertise and review of the relevant prior art and claim constructions.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What technology areas does Dr. Lavian cover as an expert witness?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: "Dr. Lavian's expert witness testimony covers telecommunications, network communications, computer networking, internet protocols, routing and switching, VoIP, mobile wireless, streaming media, network systems, LAN/WAN, cloud computing, cellular technology, web technologies, and internet technology patents.",
+              },
+            },
+          ],
         },
         breadcrumbs([{ name: 'Cases', url: '/cases-expert-witness-testimony/' }]),
       ],
