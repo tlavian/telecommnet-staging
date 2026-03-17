@@ -21,6 +21,40 @@
 /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
 
+# Legacy /expert-witness-services/ URLs (old site structure, found via Ahrefs 4XX audit)
+/expert-witness-services/internet-protocols-expert/ /communications-expert-witness/internet-expert-witness/ 301
+/expert-witness-services/internet-protocols-expert /communications-expert-witness/internet-expert-witness/ 301
+/expert-witness-services/mobile-wireless-expert-witness/ /communications-expert-witness/mobile-wireless-expert/ 301
+/expert-witness-services/mobile-wireless-expert-witness /communications-expert-witness/mobile-wireless-expert/ 301
+/expert-witness-services/network-communications-expert/ /communications-expert-witness/network-communications-expert-witness/ 301
+/expert-witness-services/network-communications-expert /communications-expert-witness/network-communications-expert-witness/ 301
+/expert-witness-services/voip-streaming-expert/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/expert-witness-services/voip-streaming-expert /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/expert-witness-services/routing-and-switching-expert-witness/ /communications-expert-witness/routing-switching-expert/ 301
+/expert-witness-services/routing-and-switching-expert-witness /communications-expert-witness/routing-switching-expert/ 301
+/expert-witness-services/telecommunications-expert/ /communications-expert-witness/ 301
+/expert-witness-services/telecommunications-expert /communications-expert-witness/ 301
+/expert-witness-services/voice-over-ip-voip-expert/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/expert-witness-services/voice-over-ip-voip-expert /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/expert-witness-services/streaming-media-expert/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/expert-witness-services/streaming-media-expert /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/expert-witness-services/ /communications-expert-witness/ 301
+/expert-witness-services /communications-expert-witness/ 301
+
+# Legacy /communications-expert-witness-services/ URLs (old site structure)
+/communications-expert-witness-services/mobile-wireless-expert/ /communications-expert-witness/mobile-wireless-expert/ 301
+/communications-expert-witness-services/mobile-wireless-expert /communications-expert-witness/mobile-wireless-expert/ 301
+/communications-expert-witness-services/telecommunications-expert-witness/ /communications-expert-witness/ 301
+/communications-expert-witness-services/telecommunications-expert-witness /communications-expert-witness/ 301
+/communications-expert-witness-services/ /communications-expert-witness/ 301
+/communications-expert-witness-services /communications-expert-witness/ 301
+
+# Legacy /telecommunications-expert-witness-services/ URLs (old site structure)
+/telecommunications-expert-witness-services/internet-expert-witness/ /communications-expert-witness/internet-expert-witness/ 301
+/telecommunications-expert-witness-services/internet-expert-witness /communications-expert-witness/internet-expert-witness/ 301
+/telecommunications-expert-witness-services/ /communications-expert-witness/ 301
+/telecommunications-expert-witness-services /communications-expert-witness/ 301
+
 # AMP URLs → non-AMP versions (site has no AMP pages, fixes GSC "Referenced AMP URL is not an AMP")
 /*/amp/ /:splat/ 301
 /amp/ / 301
