@@ -58,3 +58,91 @@
 # AMP URLs → non-AMP versions (site has no AMP pages, fixes GSC "Referenced AMP URL is not an AMP")
 /*/amp/ /:splat/ 301
 /amp/ / 301
+
+# ─── GSC 404 fixes (52 Not Found pages) ─────────────────────────────────────
+
+# Missing /expert-witness-services/ redirects (not covered above)
+/expert-witness-services/network-security-expert/ /communications-expert-witness/network-security-expert/ 301
+/expert-witness-services/network-security-expert /communications-expert-witness/network-security-expert/ 301
+/expert-witness-services/routing-switching-expert/ /communications-expert-witness/routing-switching-expert/ 301
+/expert-witness-services/routing-switching-expert /communications-expert-witness/routing-switching-expert/ 301
+/expert-witness-services/streaming-media-audio-and-video-conferencing-expert/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/expert-witness-services/streaming-media-audio-and-video-conferencing-expert /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/expert-witness-services/routing-and-switching-expert/ /communications-expert-witness/routing-switching-expert/ 301
+/expert-witness-services/routing-and-switching-expert /communications-expert-witness/routing-switching-expert/ 301
+
+# /expertise-telecommunications-expert-communication-networks-internet/* (old WordPress structure)
+/expertise-telecommunications-expert-communication-networks-internet/* /communications-expert-witness/ 301
+
+# /telecommunications-expert-witness-services/ missing slugs
+/telecommunications-expert-witness-services/computer-networking-expert/ /communications-expert-witness/computer-networking-expert-witness/ 301
+/telecommunications-expert-witness-services/computer-networking-expert /communications-expert-witness/computer-networking-expert-witness/ 301
+/telecommunications-expert-witness-services/* /communications-expert-witness/ 301
+
+# Root-level expertise pages (missing /communications-expert-witness/ prefix)
+/streaming-media-audio-and-video-conferencing-expert/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/streaming-media-audio-and-video-conferencing-expert /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
+/network-security-expert/ /communications-expert-witness/network-security-expert/ 301
+/network-security-expert /communications-expert-witness/network-security-expert/ 301
+/unified-communications-expert-witness/ /communications-expert-witness/ 301
+/unified-communications-expert-witness /communications-expert-witness/ 301
+
+# Old utility pages
+/contact-us/ /contact/ 301
+/contact-us /contact/ 301
+/about /about-dr-lavian/ 301
+/about/ /about-dr-lavian/ 301
+/terms-of-use/ /terms-and-conditions/ 301
+/terms-of-use /terms-and-conditions/ 301
+/download/ / 301
+/download / 301
+
+# Pagination → main pages
+/talks-presentations/page/* /talks-presentations/ 301
+/scientific-publications/page/* /scientific-publications/ 301
+/patents/page/* /patents/ 301
+
+# Old /presentations_talks/ path → talks page
+/presentations_talks/* /talks-presentations/ 301
+
+# Old /patents/ sub-paths → current patent detail pages or patents index
+/patents/ep-3311493-ulpn-frequency-synthesize/ /ep-3311493-ulpn-frequency-synthesize/ 301
+/patents/ep-3311493-an-ultra-low-phase-noise-frequency-synthesize/ /ep-3311493-ulpn-frequency-synthesize/ 301
+/patents/ep_3311493_ulpn_frequency_synthesize/ /ep-3311493-ulpn-frequency-synthesize/ 301
+/patents/us-20180130102-reliable-rating-system-and-method-thereof /us-20180130102-reliable-rating-system-and-method-thereof/ 301
+/patents/us-20190128998-radar-target-detection-and-imaging-system-for-autonomous-car /us-20190128998-radar-target-detection-and-imaging/ 301
+/patents/us-9762251-ultra-low-phase-noise-frequency-synthesizer/ /us-9762251-upln-frequency-synthesizer/ 301
+/patents/us-20180130102-reliable-rating-system-and-method-thereof/ /us-20180130102-reliable-rating-system-and-method-thereof/ 301
+/patents/us-20190128998-radar-target-detection-and-imaging-system-for-autonomous-car/ /us-20190128998-radar-target-detection-and-imaging/ 301
+/patents/us-9762251-ultra-low-phase-noise-frequency-synthesizer /us-9762251-upln-frequency-synthesizer/ 301
+# Catch-all for any /patents/* legacy URLs → patents index
+/patents/*/feed/ /patents/ 301
+/patents/*/feed /patents/ 301
+
+# Old slide files → talks page
+/slides/* /talks-presentations/ 301
+
+# Old files paths → relevant sections
+/files/publications/* /scientific-publications/ 301
+/files/cases/* /cases-expert-witness-testimony/ 301
+/files/patents/* /patents/ 301
+
+# WordPress artifacts
+/wps/* / 301
+/wp-*.php / 301
+/category/patents/ /patents/ 301
+/category/patents /patents/ 301
+/category/* / 301
+
+# WordPress tag pages → homepage
+/tag/* / 301
+
+# Root-level patent slug without prefix
+/7313608-markup-language-to-access-and-configure-network-elements/ /patents/ 301
+/7313608-markup-language-to-access-and-configure-network-elements /patents/ 301
+
+# Legacy patent/publication slugs that don't have pages on the new site
+/20140156758-enhancing-the-reliability-of-ratings-provided-to-users/ /patents/ 301
+/20140156758-enhancing-the-reliability-of-ratings-provided-to-users /patents/ 301
+/wo-2007008976-authenticating-network-users-prevent-unauthorized-access/ /patents/ 301
+/wo-2007008976-authenticating-network-users-prevent-unauthorized-access /patents/ 301

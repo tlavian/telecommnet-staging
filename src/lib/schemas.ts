@@ -103,7 +103,7 @@ export const PERSON_ENTITY = {
     'https://www.linkedin.com/in/tallavian',
     'https://x.com/tlavian',
     'https://www.facebook.com/tal.lavianwork',
-    'https://scholar.google.com/citations?user=Do_JNPQAAAAJ',
+    'https://scholar.google.com/citations?user=DDVtnHEAAAAJ',
     'https://www.researchgate.net/profile/Tal-Lavian',
     'https://berkeley.academia.edu/TalLavian',
     'https://patents.justia.com/inventor/tal-lavian',
