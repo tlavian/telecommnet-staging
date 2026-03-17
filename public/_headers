@@ -56,8 +56,3 @@
 /tag/*
   X-Robots-Tag: noindex, nofollow
 
-/privacy-policy/
-  X-Robots-Tag: noindex, follow
-
-/terms-and-conditions/
-  X-Robots-Tag: noindex, follow
