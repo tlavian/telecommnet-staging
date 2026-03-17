@@ -154,10 +154,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={resolvedOgImage} />
-  <!-- DNS prefetch for deferred external resources -->
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-  <!-- Self-hosted fonts: eliminates 2 external network requests (fonts.googleapis.com + fonts.gstatic.com) -->
-  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
+  <!-- Self-hosted fonts: only preload the LCP font (heading) -->
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
   {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" media="(min-width: 769px)" />}
   <!-- Deferred non-critical CSS (footer, print, expertise cards, client logos, etc.) -->
@@ -226,14 +223,6 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       font-weight: 700;
       font-display: swap;
       src: url('/fonts/inter-700.woff2') format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    @font-face {
-      font-family: 'Merriweather';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url('/fonts/merriweather-400.woff2') format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     @font-face {
