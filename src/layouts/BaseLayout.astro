@@ -500,7 +500,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
         </span>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 151 151" fill="none" aria-hidden="true"><circle cx="75.5" cy="75.5" r="75" fill="white"/><path d="M103 48.5H48v54.75h55V48.5z" fill="#F1F1F1"/><path d="M75.5 82.875L48 63.25v40h55v-40L75.5 82.875z" fill="#D54B3D"/><path d="M75.5 78.125L48 58.5v4.75l27.5 19.625L103 63.25V58.5L75.5 78.125z" fill="#B63524"/><path d="M103 48.5H48l27.5 29.625L103 48.5z" fill="#DE5B49"/></svg>
-          <a href="mailto:tlavian@telecommnet.com" aria-label="Email tlavian@telecommnet.com">tlavian@telecommnet.com</a>
+          <span class="js-email" data-u="tlavian" data-d="telecommnet.com"></span>
         </span>
       </div>
       <div class="top-bar-right">
@@ -642,7 +642,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
               <span class="footer-contact-icon" style="background:#e53e3e;color:#fff;" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="white" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               </span>
-              <a href="mailto:tlavian@telecommnet.com" aria-label="Email tlavian@telecommnet.com">tlavian@telecommnet.com</a>
+              <span class="js-email" data-u="tlavian" data-d="telecommnet.com"></span>
             </div>
             <div class="footer-contact-item">
               <span class="footer-contact-icon" style="background:#48bb78;color:#fff;" aria-hidden="true">
@@ -699,6 +699,20 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       document.querySelectorAll('.has-dropdown.dropdown-open').forEach((el) => {
         el.classList.remove('dropdown-open');
       });
+    });
+
+    // Render email addresses via JS to prevent Cloudflare email obfuscation
+    document.querySelectorAll('.js-email').forEach((el) => {
+      const u = el.getAttribute('data-u');
+      const d = el.getAttribute('data-d');
+      if (u && d) {
+        const addr = u + '@' + d;
+        const a = document.createElement('a');
+        a.href = 'mailto:' + addr;
+        a.textContent = addr;
+        a.setAttribute('aria-label', 'Email ' + addr);
+        el.replaceWith(a);
+      }
     });
   </script>
 </body>
