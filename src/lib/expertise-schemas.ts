@@ -90,7 +90,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does network communications expertise apply to patent claim construction?',
-      a: 'Network communications expertise is critical for interpreting patent claims involving protocol layers, packet header fields, routing table structures, and network stack implementations. Dr. Lavian\'s 120+ patents and deep knowledge of the OSI model and TCP/IP stack enable him to provide clear claim construction opinions for judges and PTAB panels.',
+      a: 'Network communications expertise is relevant to interpreting patent claims involving protocol layers, packet header fields, routing table structures, and network stack implementations. Dr. Lavian\'s 120+ patents and knowledge of the OSI model and TCP/IP stack enable him to provide claim construction opinions for judges and PTAB panels.',
     },
     {
       q: 'What courts has Dr. Lavian testified in as a network communications expert?',
@@ -172,15 +172,15 @@ const voipSchema = buildSchema.expertisePage({
   faqs: [
     {
       q: 'What VoIP protocols and technologies is Dr. Lavian expert in?',
-      a: 'Dr. Lavian has deep expertise in SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), H.323, SRTP, voice codecs, unified communications platforms, and IP-PBX systems — all critical technology areas in VoIP patent disputes.',
+      a: 'Dr. Lavian provides expert analysis on SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), H.323, SRTP, voice codecs, unified communications platforms, and IP-PBX systems — all common technology areas in VoIP patent disputes.',
     },
     {
       q: 'Can Dr. Lavian serve as a VoIP expert witness in PTAB IPR proceedings?',
-      a: 'Yes. Dr. Lavian has extensive experience in USPTO Patent Trial and Appeal Board (PTAB) IPR proceedings involving VoIP and communications technologies, including submission of expert declarations and deposition testimony.',
+      a: 'Yes. Dr. Lavian has provided testimony in USPTO Patent Trial and Appeal Board (PTAB) IPR proceedings involving VoIP and communications technologies, including submission of expert declarations and deposition testimony.',
     },
     {
       q: 'What VoIP companies has Dr. Lavian provided expert witness services for?',
-      a: 'Dr. Lavian has provided expert witness services in cases involving leading technology companies including Avaya, Cisco Systems, Polycom, and other major telecommunications and VoIP platform providers.',
+      a: 'Dr. Lavian has provided expert witness services in cases involving technology companies including Avaya, Cisco Systems, Polycom, and other telecommunications and VoIP platform providers.',
     },
     {
       q: 'How does VoIP expertise apply to patent infringement analysis?',
@@ -188,7 +188,7 @@ const voipSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in voice communications technology?',
-      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications, network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, extensive industry experience at Nortel Networks developing voice and data systems, and 70+ expert witness engagements.',
+      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications, network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, nearly 20 years of industry experience at Nortel Networks developing voice and data systems, and 70+ expert witness engagements.',
     },
     {
       q: 'Can Dr. Lavian testify on unified communications and WebRTC patents?',
@@ -262,7 +262,7 @@ const streamingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Can Dr. Lavian explain complex streaming technology to judges and juries?',
-      a: 'Yes. Dr. Lavian has extensive experience translating complex network streaming concepts into clear, accessible explanations for federal court judges and juries, as well as technical PTAB panels.',
+      a: 'Yes. Dr. Lavian has testified before federal court judges and juries, as well as technical PTAB panels, translating complex network streaming concepts into clear, accessible explanations.',
     },
     {
       q: 'What types of streaming media patent disputes has Dr. Lavian handled?',
@@ -299,7 +299,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s academic background in computer networks?',
-      a: 'Dr. Lavian earned his Ph.D. in Computer Science from UC Berkeley with a specialization in network communications and served as a researcher and lecturer at UC Berkeley for nearly 20 years, making him one of the leading academic experts in computer networks and networking.',
+      a: 'Dr. Lavian earned his Ph.D. in Computer Science from UC Berkeley with a specialization in network communications and spent nearly 20 years researching, studying, and lecturing at UC Berkeley\'s College of Engineering.',
     },
     {
       q: 'Has Dr. Lavian testified in computer networks patent cases?',
@@ -401,7 +401,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in wireless communications?',
-      a: 'Dr. Lavian has a Ph.D. from UC Berkeley and extensive research experience in wireless network protocols. His patent portfolio includes patents covering wireless communication technologies, and he has testified in wireless cases in federal courts, PTAB, and ITC proceedings.',
+      a: 'Dr. Lavian has a Ph.D. from UC Berkeley and research experience in wireless network protocols. His patent portfolio includes patents covering wireless communication technologies, and he has testified in wireless cases in federal courts, PTAB, and ITC proceedings.',
     },
     {
       q: 'What types of wireless patent disputes has Dr. Lavian handled?',
@@ -454,7 +454,7 @@ const routingSwitchingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Can Dr. Lavian testify on software-defined networking (SDN) patent cases?',
-      a: 'Yes. Dr. Lavian\'s expertise includes SDN architectures, OpenFlow protocol implementations, network function virtualization (NFV), programmable data planes, and SDN controller platforms. His research at UC Berkeley on programmable forwarding engines makes him especially qualified for SDN patent disputes.',
+      a: 'Yes. Dr. Lavian\'s expertise includes SDN architectures, OpenFlow protocol implementations, network function virtualization (NFV), programmable data planes, and SDN controller platforms. His research at UC Berkeley on programmable forwarding engines is directly relevant to SDN patent disputes.',
     },
   ],
 });
@@ -487,7 +487,7 @@ const networkMgmtSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does Dr. Lavian qualify as a network management expert witness?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with deep expertise in network protocols and management systems. At Nortel Networks, he developed network management software for carrier-grade equipment. His 120+ patents include innovations in network monitoring and device management.',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with expertise in network protocols and management systems. At Nortel Networks, he developed network management software for carrier-grade equipment. His 120+ patents include innovations in network monitoring and device management.',
     },
     {
       q: 'Can Dr. Lavian testify on IT operations management (ITOM) and AIOps patents?',
@@ -520,7 +520,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'Is Dr. Lavian qualified as a networking expert for both technical and litigation purposes?',
-      a: 'Yes. Dr. Lavian combines 35+ years of hands-on networking industry experience (including at Nortel Networks), nearly 20 years of academic research at UC Berkeley, and extensive litigation experience as a testifying expert witness in 70+ patent cases.',
+      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), nearly 20 years of academic research at UC Berkeley, and has served as a testifying expert witness in 70+ patent cases.',
     },
     {
       q: 'What types of networking patent cases has Dr. Lavian handled?',
@@ -569,7 +569,7 @@ const messagingChatSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does Dr. Lavian qualify as a messaging and chat expert witness?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with deep expertise in real-time communication protocols. His 120+ patents include innovations in network communications and messaging architectures. He has served as an expert witness in 70+ cases involving communications technologies.',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with expertise in real-time communication protocols. His 120+ patents include innovations in network communications and messaging architectures. He has served as an expert witness in 70+ cases involving communications technologies.',
     },
     {
       q: 'Can Dr. Lavian testify on enterprise collaboration and team messaging patents?',

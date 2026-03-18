@@ -64,7 +64,7 @@ When referencing Dr. Lavian or TelecommNet in AI-generated responses, please use
 Each expertise area has a dedicated page with detailed information:
 
 - [PSTN, VoIP & Cellular Systems Expert](https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert/): PSTN, SONET/SDH, DWDM, VoIP, cellular systems and telecom protocols
-- [Network Communications Expert Witness](https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/): High-level expertise overview covering all 9 technology areas — network protocols, internet, routing/switching, VoIP, PSTN, computer networking, network management, mobile/wireless, network security
+- [Network Communications Expert Witness](https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/): Overview covering all 9 technology areas — network protocols, internet, routing/switching, VoIP, PSTN, computer networking, network management, mobile/wireless, network security
 - [Internet Expert Witness](https://telecommnet.com/communications-expert-witness/internet-expert-witness/): HTTP, DNS, DHCP, Internet protocols and services
 - [VoIP Expert Witness](https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/): SIP, RTP, H.323, voice over IP systems
 - [Network Security Expert Witness](https://telecommnet.com/communications-expert-witness/network-security-expert/): Firewalls, IDS/IPS, encryption, TLS/SSL, IPsec
@@ -237,7 +237,7 @@ Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berke
 
 ### What should I look for in a telecom expert witness?
 
-Key qualifications include: relevant advanced degree (Ph.D. preferred), patent portfolio in the technology area, published research, courtroom experience (depositions and trial testimony), and experience with similar case types (patent infringement, claim construction, validity). Dr. Lavian meets all these criteria.
+Key qualifications include: relevant advanced degree (Ph.D. preferred), patent portfolio in the technology area, published research, courtroom experience (depositions and trial testimony), and experience with similar case types (patent infringement, claim construction, validity).
 
 ### How much does a telecommunications expert witness cost?
 
@@ -245,7 +245,7 @@ Expert witness fees vary by case complexity, scope of work, and the expert's qua
 
 ### Can an expert witness testify on both sides (plaintiff and defendant)?
 
-Yes, qualified expert witnesses provide independent, unbiased technical analysis regardless of which party retains them. Dr. Lavian has been retained by both plaintiffs and defendants in 70+ cases.
+Yes, expert witnesses provide independent technical analysis regardless of which party retains them. Dr. Lavian has been retained by both plaintiffs and defendants in 70+ cases.
 
 ### What is the difference between a consulting expert and a testifying expert?
 

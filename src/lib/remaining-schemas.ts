@@ -16,14 +16,14 @@ export const corporateClientsSchema = buildSchema.clientPage({
   name: 'Telecom Consulting Expert for Corporate Counsel & Enterprises',
   slug: 'corporate-clients',
   description:
-    'Strategic telecommunications consulting, FCC compliance advisory, and technical due diligence for corporate legal teams and telecom enterprises.',
+    'Telecommunications expert witness services and technical consulting for corporate legal teams and enterprises in patent litigation and IP disputes.',
   breadcrumbLabel: 'Corporate Clients',
 });
 
 export const corporateClientsTitle =
   "Telecom Expert for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Strategic telecommunications consulting, FCC compliance advisory, and technical due diligence for corporate legal teams and telecom enterprises.";
+  "Telecommunications expert witness services and technical consulting for corporate legal teams and enterprises in patent litigation and IP disputes.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
@@ -32,7 +32,7 @@ export const lawFirmClientsSchema = buildSchema.clientPage({
   name: 'Telecommunications Expert Witness for Law Firms — Patent & IP Litigation',
   slug: 'law-firm-clients',
   description:
-    'Retain a premier telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Qualified technical testimony and forensic analysis.',
+    'Retain a telecommunications expert witness for patent litigation, IP disputes, and technical analysis. Testimony in federal courts, USPTO PTAB, and ITC.',
   breadcrumbLabel: 'Law Firm Clients',
 });
 
@@ -59,7 +59,7 @@ export const talksSchema = buildSchema.talks();
 export const talksTitle =
   "Expert Witness Talks & Presentations | Dr. Tal Lavian";
 export const talksDescription =
-  "View keynote presentations, CLE training sessions, and technical lectures. Demonstrating clear communication of complex telecom technology to judges and juries.";
+  "View presentations, technical lectures, and conference talks by Dr. Tal Lavian on telecommunications, network architecture, and Internet protocols.";
 
 // ─── 20. CASES / EXPERT WITNESS TESTIMONY ────────────────────────────────
 // File: src/pages/cases-expert-witness-testimony/index.astro
@@ -104,14 +104,14 @@ export const privacySchema = buildSchema.webPage({
   name: 'Privacy Policy & Data Security Protocols — TelecommNet',
   slug: 'privacy-policy',
   description:
-    'TelecommNet\'s privacy policy outlining rigorous data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.',
+    'TelecommNet\'s privacy policy outlining data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.',
   breadcrumbLabel: 'Privacy Policy',
 });
 
 export const privacyTitle =
   "Privacy Policy & Data Security Protocols | TelecommNet";
 export const privacyDescription =
-  "TelecommNet's privacy policy outlining rigorous data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.";
+  "TelecommNet's privacy policy outlining data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.";
 
 // ─── 24. TERMS AND CONDITIONS ─────────────────────────────────────────────
 // File: src/pages/terms-and-conditions/index.astro

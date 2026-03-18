@@ -30,6 +30,8 @@ const CORE_PATHS = new Set([
   '/site-map/',
   '/contact/',
   '/patents/',
+  '/privacy-policy/',
+  '/terms-and-conditions/',
 ]);
 
 export default defineConfig({

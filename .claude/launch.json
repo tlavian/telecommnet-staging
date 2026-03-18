@@ -4,7 +4,7 @@
     {
       "name": "astro-dev",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["astro", "dev"],
+      "runtimeArgs": ["astro", "dev", "--root", "C:/dev/telecommnet-git"],
       "port": 4321
     }
   ]
