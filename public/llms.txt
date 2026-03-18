@@ -9,24 +9,25 @@
 
 ## About Dr. Tal Lavian
 
-Dr. Tal Lavian is a world-renowned expert witness specializing in telecommunications, networking, and computer science. With over 35 years of combined industry and academic experience, he brings unparalleled technical expertise and courtroom experience to complex technology litigation.
+Dr. Tal Lavian is a telecommunications expert witness based in California, specializing in network communications, internet protocols, and wireless technologies. He has over 35 years of combined industry and academic experience.
 
 ### Key Qualifications
 
-- PhD in Computer Science from UC Berkeley (specialization in network communications)
-- 120+ issued and filed patents
+- Ph.D. in Computer Science from UC Berkeley (specialization in network communications)
+- M.Sc. in Electrical Engineering from Tel Aviv University
+- B.Sc. in Mathematics and Computer Science
+- 120+ issued and filed patents, 60+ prosecuted pro-se
 - 25+ peer-reviewed scientific publications
 - 35+ years of industry and academic experience
-- Senior Member of IEEE
-- Active Member of ACM
-- Industry Fellow and Lecturer at UC Berkeley IEOR and SCET
-- Technical Co-Chair for IEEE Interconnects at Stanford University
-- Principal Investigator for DARPA/AFRL research projects
+- Senior Member of IEEE; IEEE-WCET Certified
+- Active Member of ACM (SIGCOM, SIGWEB)
+- Industry Fellow and Lecturer at UC Berkeley SCET
+- Technical Co-Chair for IEEE Hot Interconnects at Stanford University
 
 ### Professional Experience
 
-- 20+ years at UC Berkeley as Industry Fellow, Lecturer, and Principal Investigator
-- Senior technical leadership at Nortel Labs, Ixia Communications, and other industry leaders
+- Nearly 20 years researching, studying, and lecturing at UC Berkeley's College of Engineering
+- Principal Scientist and Principal Architect at Nortel Networks (1996-2007); DARPA PI for 3 projects
 - Expert witness in 70+ cases across multiple jurisdictions
 
 ### Case Statistics
@@ -164,12 +165,14 @@ Each expertise area has a dedicated page with detailed information:
 
 ## Research & Academic Work
 
-Dr. Lavian is actively involved in research at UC Berkeley:
+Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley's College of Engineering:
 
-- Principal Investigator on DARPA/AFRL funded projects
-- Leadership in UC Berkeley RAD Lab, SAHARA, and ICEBERG projects
-- Research on network architecture, protocols, and telecommunications systems
-- Publications in leading IEEE, ACM, and telecommunications journals
+- Conducted research in data centers (RAD Labs), network communication service architecture (SAHARA), and wireless systems (ICEBERG)
+- Served as industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET)
+- Scientific liaison between Nortel Research Lab and UC Berkeley
+- Part of UC Berkeley's SkyDeck start-ups (CRadar.Ai, Aybell/VisuMenu)
+- Principal Investigator for three DARPA/AFRL projects at Nortel Networks
+- Publications in IEEE Transactions, ACM conferences, and Global Grid Forum standards
 
 ## Notable Case Experience
 
@@ -199,13 +202,14 @@ Courts and Tribunals:
 
 ## Career History
 
-- UC Berkeley (20+ years) — Industry Fellow, Lecturer, Principal Investigator
-- CRadar.Ai — Technology Officer
-- Ixia Communications — Senior Technical Leadership
-- Nortel Labs — Senior Research Scientist
-- Bay Architecture Labs — Senior Research Engineer
-- Aptel Communications — Technical Leadership
-- Scitex & Shalev — Early career positions
+- UC Berkeley (nearly 20 years) — Researching, studying, and lecturing at the College of Engineering; Industry Fellow and Lecturer at SCET; SkyDeck startups
+- CRadar.Ai — CTO / Principal Investigator (UC Berkeley SkyDeck)
+- Aybell / VisuMenu Inc. — CEO/CTO and Co-Founder
+- Ixia — Network Communications Consultant
+- Nortel Networks / Bay Networks (1996-2007) — Principal Scientist, Principal Architect, Principal Engineer
+- Aptel Communications — Software Engineer, Team Leader
+- Scitex — Software Engineer, Team Leader
+- Shalev — Software Engineer
 
 ## Professional Memberships
 
@@ -229,7 +233,7 @@ Courts and Tribunals:
 
 ### How do I find a telecommunications expert witness?
 
-Dr. Tal Lavian is a leading telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ case engagements. Contact him directly at tlavian@telecommnet.com or +1 (408) 209-9112 for patent litigation, PTAB, and ITC matters.
+Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ case engagements. He can be reached at tlavian@telecommnet.com or +1 (408) 209-9112.
 
 ### What should I look for in a telecom expert witness?
 
