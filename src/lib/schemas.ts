@@ -32,7 +32,7 @@ export const PERSON_ENTITY = {
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
-  image: `${BASE_URL}/images/branding/dr-lavian.svg`,
+  image: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Encino',
@@ -181,6 +181,8 @@ export const buildSchema = {
             'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and other major technology companies.',
           founder: PERSON_REF,
           url: BASE_URL,
+          telephone: '+1-408-209-9112',
+          logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',
