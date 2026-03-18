@@ -1,26 +1,2 @@
-# Redirects for telecommnet.com (Astro/Cloudflare Pages)
-# Only redirects for URL slug changes on the new site
-
-# Telecommunications Expert Witness keyword → homepage (homepage owns this keyword)
-/communications-expert-witness/telecommunications-expert-witness/ / 301
-/communications-expert-witness/telecommunications-expert-witness / 301
-
-# VoIP Expert Witness - URL slug was changed on the new site
-/communications-expert-witness/voip-expert-witness/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
-/communications-expert-witness/voip-expert-witness /communications-expert-witness/voice-over-ip-voip-expert/ 301
-
-# Network Security Expert - URL slug was changed on the new site
-/communications-expert-witness/network-security-expert-witness/ /communications-expert-witness/network-security-expert/ 301
-/communications-expert-witness/network-security-expert-witness /communications-expert-witness/network-security-expert/ 301
-
-# Streaming Media Expert - URL slug was changed on the new site
-/communications-expert-witness/streaming-media-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
-/communications-expert-witness/streaming-media-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
-
-# Streaming Media Expert - alternate URL with "-witness" suffix (190 GSC impressions)
-/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness/ /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
-/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert-witness /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/ 301
-
-# AMP URLs → non-AMP versions (site has no AMP pages)
-/*/amp/ /:splat/ 301
-/amp/ / 301
+# Redirects for telecommnet.com (Cloudflare Pages)
+# No legacy WordPress redirects — clean start
