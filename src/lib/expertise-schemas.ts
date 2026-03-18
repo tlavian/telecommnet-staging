@@ -53,7 +53,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'How much does a telecommunications expert witness cost?',
-      a: 'Telecommunications expert witness fees vary based on case complexity, scope of analysis, and whether testimony is needed at deposition or trial. Dr. Lavian provides competitive expert witness rates commensurate with his credentials (Ph.D. UC Berkeley, 120+ patents, 70+ cases). Contact Dr. Lavian directly for a fee schedule and case evaluation.',
+      a: 'Telecommunications expert witness fees vary based on case complexity, scope of analysis, and whether testimony is needed at deposition or trial. Dr. Lavian provides expert witness rates commensurate with his credentials (Ph.D. UC Berkeley, 120+ patents, 70+ cases). Contact Dr. Lavian directly for a fee schedule and case evaluation.',
     },
   ],
 });
@@ -221,7 +221,7 @@ const networkSecuritySchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in network security?',
-      a: 'Dr. Lavian\'s Ph.D. research at UC Berkeley covered network protocols and architecture, with significant work on secure communications. His 120+ patents include innovations in network security and authentication systems.',
+      a: 'Dr. Lavian\'s Ph.D. research at UC Berkeley covered network protocols and architecture, with work on secure communications. His 120+ patents include innovations in network security and authentication systems.',
     },
     {
       q: 'What security protocols and standards can Dr. Lavian analyze in patent disputes?',
@@ -310,8 +310,8 @@ const computerNetworkingSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian handles computer networks patent disputes involving network routers and switches, network interface cards, Ethernet implementations, network protocols, SDN controllers, network virtualization, load balancing, and data center network architectures.',
     },
     {
-      q: 'What makes Dr. Lavian uniquely qualified as a computer networks expert witness?',
-      a: 'Dr. Lavian combines hands-on industry experience designing network switch software at Nortel Networks and Bay Networks with 120+ networking patents and nearly 20 years of research at UC Berkeley. His blend of engineering practice, patent innovation, and academic rigor makes him exceptionally qualified as a computer networks expert witness.',
+      q: 'What qualifies Dr. Lavian as a computer networks expert witness?',
+      a: 'Dr. Lavian has hands-on industry experience designing network switch software at Nortel Networks and Bay Networks, 120+ networking patents, and nearly 20 years of researching, studying, and lecturing at UC Berkeley. He has been retained in over 70 cases and given 80+ depositions.',
     },
     {
       q: 'What courts has Dr. Lavian testified in as a computer networks expert witness?',
@@ -516,7 +516,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
   faqs: [
     {
       q: 'What broad networking expertise does Dr. Lavian provide for patent litigation?',
-      a: 'Dr. Lavian provides comprehensive expert witness services across all computer networking domains including LAN/WAN, wireless, Internet protocols, network security, VoIP, streaming, routing, switching, and network management in patent litigation and technical disputes.',
+      a: 'Dr. Lavian provides expert witness services across computer networking domains including LAN/WAN, wireless, Internet protocols, network security, VoIP, streaming, routing, switching, and network management in patent litigation and technical disputes.',
     },
     {
       q: 'Is Dr. Lavian qualified as a networking expert for both technical and litigation purposes?',
@@ -532,7 +532,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'Why hire a generalist networking expert vs. a specialist for patent cases?',
-      a: 'Many patent cases span multiple networking domains — a VoIP patent may involve network security, routing, and QoS. Dr. Lavian\'s comprehensive expertise across all networking disciplines allows him to address cross-domain patent claims that specialists in a single area cannot. His 120+ patents and Ph.D. from UC Berkeley demonstrate depth across the full networking stack.',
+      a: 'Many patent cases span multiple networking domains — a VoIP patent may involve network security, routing, and QoS. Dr. Lavian\'s expertise across networking disciplines allows him to address cross-domain patent claims. His 120+ patents and Ph.D. from UC Berkeley span the full networking stack.',
     },
     {
       q: 'What companies has Dr. Lavian served as a networking expert witness for?',
