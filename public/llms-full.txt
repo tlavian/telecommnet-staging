@@ -11,18 +11,20 @@ Location: Encino, California, USA
 
 ## Who is Dr. Tal Lavian?
 
-Dr. Tal Lavian is a world-renowned expert witness specializing in telecommunications, networking, and computer science. With over 35 years of combined industry and academic experience, he brings unparalleled technical expertise and courtroom experience to complex technology litigation.
+Dr. Tal Lavian is a telecommunications expert witness based in California, specializing in network communications, internet protocols, and wireless technologies. He has over 35 years of combined industry and academic experience.
 
 ### Key Qualifications:
-- PhD in Computer Science from UC Berkeley (specialization in network communications)
-- 120+ issued and filed patents
+- Ph.D. in Computer Science from UC Berkeley (specialization in network communications)
+- M.Sc. in Electrical Engineering from Tel Aviv University
+- B.Sc. in Mathematics and Computer Science
+- 120+ issued and filed patents, 60+ prosecuted pro-se
 - 25+ peer-reviewed scientific publications
 - 35+ years of industry and academic experience
-- Senior Member of IEEE
-- Active Member of ACM
-- Industry Fellow and Lecturer at UC Berkeley IEOR and SCET
-- Technical Co-Chair for IEEE Interconnects at Stanford University
-- Principal Investigator for DARPA/AFRL research projects
+- Senior Member of IEEE; IEEE-WCET Certified
+- Active Member of ACM (SIGCOM, SIGWEB)
+- Industry Fellow and Lecturer at UC Berkeley SCET
+- Technical Co-Chair for IEEE Hot Interconnects at Stanford University
+- Principal Investigator for three DARPA/AFRL projects at Nortel Networks
 
 ### Case Statistics:
 - 70+ expert witness engagements in patent and technology litigation
