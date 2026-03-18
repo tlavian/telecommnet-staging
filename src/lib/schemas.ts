@@ -222,6 +222,8 @@ export const buildSchema = {
           name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
           url: BASE_URL,
           publisher: PERSON_REF,
+          datePublished: '2022-05-01T00:00:00+00:00',
+          dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',
@@ -271,7 +273,7 @@ export const buildSchema = {
     };
   },
 
-  /** About page: Person (expanded) + ProfilePage + BreadcrumbList */
+  /** About page: Person (expanded) + ProfilePage + FAQPage + BreadcrumbList */
   about() {
     return {
       '@context': 'https://schema.org',
@@ -290,10 +292,56 @@ export const buildSchema = {
           url: `${BASE_URL}/about-dr-lavian/`,
           name: 'About Dr. Tal Lavian — Telecommunications Expert Witness',
           dateCreated: '2022-05-01T00:00:00+00:00',
-          dateModified: '2026-03-16T00:00:00+00:00',
+          dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           mainEntity: PERSON_REF,
+        },
+        {
+          '@type': 'FAQPage',
+          '@id': `${BASE_URL}/about-dr-lavian/#faq`,
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What are Dr. Lavian\'s academic credentials?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, an M.Sc. in Electrical Engineering from Tel Aviv University, and a B.Sc. in Mathematics and Computer Science. He is an IEEE Senior Member and an ACM member.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How long has Dr. Lavian been at UC Berkeley?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian spent nearly 20 years researching, studying, and lecturing at UC Berkeley\'s College of Engineering, where he conducted research projects in data centers (RAD Labs), telecommunication infrastructure (SAHARA), and wireless systems (ICEBERG), and served as an industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET).',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How many expert witness cases has Dr. Lavian handled?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has served as an expert witness in over 70 cases involving more than 140 patents, providing expert reports and testimony in over 80 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What companies has Dr. Lavian been retained in cases involving?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has been retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks, Huawei, Arista Networks, Motorola, LG, Avaya, Netflix, LinkedIn, Ericsson, and others. He has been engaged by over 50 law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Cooley, and Finnegan.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What are Dr. Lavian\'s research accomplishments?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian was a principal investigator for three DARPA projects and one US Air Force Research Lab project. He led the development of the first network resource-scheduling service for grid computing, the first demonstrated dynamic transatlantic allocation of 10Gbs Lambdas, and the first wire-speed active network device on commercial hardware.',
+              },
+            },
+          ],
         },
         breadcrumbs([{ name: 'About Dr. Lavian', url: '/about-dr-lavian/' }]),
       ],
@@ -313,6 +361,8 @@ export const buildSchema = {
           url: hubUrl,
           name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           description: 'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 70+ cases, 120+ patents.',
+          datePublished: '2023-06-01T00:00:00+00:00',
+          dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -322,13 +372,14 @@ export const buildSchema = {
           },
         },
         {
-          '@type': 'ProfessionalService',
+          '@type': ['ProfessionalService', 'LegalService'],
           name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           founder: PERSON_REF,
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
           description:
             'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 70+ cases, 120+ patents.',
+          logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',
@@ -481,17 +532,36 @@ export const buildSchema = {
     };
   },
 
-  /** Client pages (Law Firm / Corporate): ProfessionalService + BreadcrumbList */
+  /** Client pages (Law Firm / Corporate): Person + ProfessionalService + WebPage + BreadcrumbList */
   clientPage(opts: { name: string; slug: string; description: string; breadcrumbLabel: string }) {
+    const pageUrl = `${BASE_URL}/${opts.slug}/`;
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
         {
-          '@type': 'ProfessionalService',
+          '@type': 'WebPage',
+          '@id': pageUrl,
+          url: pageUrl,
+          name: opts.name,
+          description: opts.description,
+          datePublished: '2023-06-01T00:00:00+00:00',
+          dateModified: '2026-03-18T00:00:00+00:00',
+          inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
+          about: PERSON_REF,
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
+          },
+        },
+        {
+          '@type': ['ProfessionalService', 'LegalService'],
           name: opts.name,
           description: opts.description,
           founder: PERSON_REF,
-          url: `${BASE_URL}/${opts.slug}/`,
+          url: pageUrl,
+          logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',
@@ -594,6 +664,7 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Scientific Publications — Dr. Tal Lavian',
@@ -602,7 +673,10 @@ export const buildSchema = {
           url: `${BASE_URL}/scientific-publications/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Telecommunications and Network Communications Research' },
+          datePublished: '2023-06-01T00:00:00+00:00',
+          dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
             '@type': 'SpeakableSpecification',
             cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
@@ -731,6 +805,7 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Talks & Presentations — Dr. Tal Lavian',
@@ -739,7 +814,10 @@ export const buildSchema = {
           url: `${BASE_URL}/talks-presentations/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Telecommunications and Network Communications Research Presentations' },
+          datePublished: '2023-06-01T00:00:00+00:00',
+          dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
+          isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
             '@type': 'SpeakableSpecification',
             cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
@@ -769,11 +847,12 @@ export const buildSchema = {
     };
   },
 
-  /** Cases: CollectionPage + FAQPage + BreadcrumbList */
+  /** Cases: Person + CollectionPage + FAQPage + BreadcrumbList */
   cases() {
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
@@ -899,6 +978,7 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Patents — Dr. Tal Lavian',
