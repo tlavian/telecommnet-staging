@@ -13,7 +13,7 @@ import { buildSchema } from "./schemas";
 
 const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN, VoIP & Cellular Systems Expert',
-  slug: 'pstn-voip-cellular-expert',
+  slug: 'pstn-voip-cellular-expert-witness',
   description: 'PSTN, VoIP & cellular systems expert witness for patent litigation. SONET/SDH, DWDM, telecom switching, SS7 signaling. 70+ cases, 120+ patents.',
   serviceType: 'PSTN, VoIP & Cellular Systems Expert Witness',
   keywords: ['PSTN expert witness', 'VoIP expert witness', 'cellular systems expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
@@ -205,7 +205,7 @@ const voipDescription = "VoIP expert witness — 120+ patents, 70+ cases. SIP, R
 
 const networkSecuritySchema = buildSchema.expertisePage({
   name: 'Network Security Expert Witness',
-  slug: 'network-security-expert',
+  slug: 'network-security-expert-witness',
   description: 'Network security expert witness for patent litigation. Encryption, firewalls, IDS/IPS, authentication, cybersecurity. 70+ cases, 120+ patents.',
   serviceType: 'Network Security Expert Witness',
   keywords: ['internet security expert witness', 'network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'cybersecurity expert witness'],
@@ -336,7 +336,7 @@ const computerNetworkingDescription = "Computer networking expert witness — 12
 
 const dataCommsSchema = buildSchema.expertisePage({
   name: 'Data Communications Expert Witness',
-  slug: 'data-communications-expert',
+  slug: 'data-communications-expert-witness',
   description: 'Data communications expert witness for patent litigation. Data networking, cloud computing, data centers, protocol stacks. 70+ cases, 120+ patents.',
   serviceType: 'Data Communications Expert Witness',
   keywords: ['data communications expert witness', 'data communications expert', 'data networking expert witness', 'data network expert witness', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
@@ -385,7 +385,7 @@ const dataCommsDescription = "Data communications expert witness — 120+ patent
 
 const mobileWirelessSchema = buildSchema.expertisePage({
   name: 'Mobile & Wireless Expert Witness',
-  slug: 'mobile-wireless-expert',
+  slug: 'mobile-wireless-expert-witness',
   description: 'Wireless & mobile expert witness for patent litigation. Wi-Fi, Bluetooth, cellular, 5G, WLAN, RF technology. 70+ cases, 120+ patents.',
   serviceType: 'Wireless Expert Witness',
   keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'Bluetooth patent expert', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
@@ -426,7 +426,7 @@ const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ pat
 
 const routingSwitchingSchema = buildSchema.expertisePage({
   name: 'Routing & Switching Expert Witness',
-  slug: 'routing-switching-expert',
+  slug: 'routing-switching-expert-witness',
   description: 'Routing & switching expert witness for patent litigation. BGP, OSPF, MPLS, packet switching, SDN, router/switch architectures. 70+ cases, 120+ patents.',
   serviceType: 'Routing & Switching Expert Witness',
   keywords: ['routing switching expert witness', 'BGP patent litigation', 'OSPF expert witness', 'MPLS patent PTAB', 'router architecture expert', 'packet switching patent', 'SDN expert', 'network switch expert witness', 'VLAN patent expert', 'OpenFlow SDN patent'],
@@ -508,7 +508,7 @@ const networkMgmtDescription = "Network management expert witness — 120+ paten
 
 const networkingExpertSchema = buildSchema.expertisePage({
   name: 'Networking Expert Witness',
-  slug: 'networking-expert',
+  slug: 'networking-expert-witness',
   description: 'Networking expert witness for patent litigation. Enterprise networking, protocol architecture, network design and infrastructure. 70+ cases, 120+ patents.',
   serviceType: 'Networking Expert Witness',
   keywords: ['networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
