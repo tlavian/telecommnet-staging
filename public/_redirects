@@ -1,2 +1,9 @@
 # Redirects for telecommnet.com (Cloudflare Pages)
-# Clean start — no legacy redirects
+# 301 redirects for renamed expertise page slugs
+/communications-expert-witness/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-cellular-expert-witness/:splat 301
+/communications-expert-witness/data-communications-expert/* /communications-expert-witness/data-communications-expert-witness/:splat 301
+/communications-expert-witness/mobile-wireless-expert/* /communications-expert-witness/mobile-wireless-expert-witness/:splat 301
+/communications-expert-witness/routing-switching-expert/* /communications-expert-witness/routing-switching-expert-witness/:splat 301
+/communications-expert-witness/network-security-expert/* /communications-expert-witness/network-security-expert-witness/:splat 301
+/communications-expert-witness/networking-expert/* /communications-expert-witness/networking-expert-witness/:splat 301
+/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/* /communications-expert-witness/streaming-media-expert-witness/:splat 301

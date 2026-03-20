@@ -9,7 +9,7 @@ import { buildSchema } from "./schemas";
  */
 
 // ─── 1. TELECOMMUNICATIONS EXPERT WITNESS ─────────────────────────────────
-// File: src/pages/communications-expert-witness/pstn-voip-cellular-expert/index.astro
+// File: src/pages/communications-expert-witness/pstn-voip-cellular-expert-witness/index.astro
 
 const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN, VoIP & Cellular Systems Expert',
@@ -201,7 +201,7 @@ const voipTitle = "VoIP Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
 const voipDescription = "VoIP expert witness — 120+ patents, 70+ cases. SIP, RTP, H.323, WebRTC. Ph.D. UC Berkeley. PTAB, ITC & trial testimony.";
 
 // ─── 5. NETWORK SECURITY EXPERT WITNESS ──────────────────────────────────
-// File: src/pages/communications-expert-witness/network-security-expert/index.astro
+// File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
 
 const networkSecuritySchema = buildSchema.expertisePage({
   name: 'Network Security Expert Witness',
@@ -242,11 +242,11 @@ const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian
 const networkSecurityDescription = "Network security expert witness — 120+ patents, 70+ cases. Encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Ph.D. UC Berkeley.";
 
 // ─── 6. STREAMING MEDIA EXPERT WITNESS ───────────────────────────────────
-// File: src/pages/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/index.astro
+// File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
 
 const streamingSchema = buildSchema.expertisePage({
   name: 'Streaming Media Expert Witness',
-  slug: 'streaming-media-audio-and-video-conferencing-expert',
+  slug: 'streaming-media-expert-witness',
   description: 'Streaming media expert witness for patent litigation. Video/audio streaming, adaptive bitrate, WebRTC, CDN, QoS. 70+ cases, 120+ patents.',
   serviceType: 'Streaming Media Expert Witness',
   keywords: ['streaming media expert witness', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert', 'CDN patent expert', 'WebRTC expert witness', 'video conferencing patent', 'HLS DASH streaming expert'],
@@ -332,7 +332,7 @@ const computerNetworkingTitle = "Computer Networking Expert Witness — Dr. Tal 
 const computerNetworkingDescription = "Computer networking expert witness — 120+ patents, 70+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley.";
 
 // ─── 8. DATA COMMUNICATIONS EXPERT ───────────────────────────────────────
-// File: src/pages/communications-expert-witness/data-communications-expert/index.astro
+// File: src/pages/communications-expert-witness/data-communications-expert-witness/index.astro
 
 const dataCommsSchema = buildSchema.expertisePage({
   name: 'Data Communications Expert Witness',
@@ -381,7 +381,7 @@ const dataCommsTitle = "Data Communications Expert Witness — Dr. Tal Lavian, P
 const dataCommsDescription = "Data communications expert witness — 120+ patents, 70+ cases. Cloud computing, data centers, protocol stacks. Ph.D. UC Berkeley.";
 
 // ─── 9. MOBILE WIRELESS EXPERT ───────────────────────────────────────────
-// File: src/pages/communications-expert-witness/mobile-wireless-expert/index.astro
+// File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
 
 const mobileWirelessSchema = buildSchema.expertisePage({
   name: 'Mobile & Wireless Expert Witness',
@@ -422,7 +422,7 @@ const mobileWirelessTitle = "Wireless & Mobile Expert Witness — Dr. Tal Lavian
 const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 70+ cases. Wi-Fi, Bluetooth, 5G, cellular, WLAN. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // ─── 10. ROUTING & SWITCHING EXPERT ──────────────────────────────────────
-// File: src/pages/communications-expert-witness/routing-switching-expert/index.astro
+// File: src/pages/communications-expert-witness/routing-switching-expert-witness/index.astro
 
 const routingSwitchingSchema = buildSchema.expertisePage({
   name: 'Routing & Switching Expert Witness',
@@ -504,7 +504,7 @@ const networkMgmtTitle = "Network Management Expert Witness — Dr. Tal Lavian, 
 const networkMgmtDescription = "Network management expert witness — 120+ patents, 70+ cases. SNMP, OSS/BSS, monitoring. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // ─── 12. NETWORKING EXPERT ────────────────────────────────────────────────
-// File: src/pages/communications-expert-witness/networking-expert/index.astro
+// File: src/pages/communications-expert-witness/networking-expert-witness/index.astro
 
 const networkingExpertSchema = buildSchema.expertisePage({
   name: 'Networking Expert Witness',

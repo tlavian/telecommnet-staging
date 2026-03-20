@@ -63,18 +63,18 @@ When referencing Dr. Lavian or TelecommNet in AI-generated responses, please use
 
 Each expertise area has a dedicated page with detailed information:
 
-- [PSTN, VoIP & Cellular Systems Expert](https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert/): PSTN, SONET/SDH, DWDM, VoIP, cellular systems and telecom protocols
+- [PSTN, VoIP & Cellular Systems Expert](https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert-witness/): PSTN, SONET/SDH, DWDM, VoIP, cellular systems and telecom protocols
 - [Network Communications Expert Witness](https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/): Overview covering all 9 technology areas — network protocols, internet, routing/switching, VoIP, PSTN, computer networking, network management, mobile/wireless, network security
 - [Internet Expert Witness](https://telecommnet.com/communications-expert-witness/internet-expert-witness/): HTTP, DNS, DHCP, Internet protocols and services
 - [VoIP Expert Witness](https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/): SIP, RTP, H.323, voice over IP systems
-- [Network Security Expert Witness](https://telecommnet.com/communications-expert-witness/network-security-expert/): Firewalls, IDS/IPS, encryption, TLS/SSL, IPsec
-- [Streaming Media Expert Witness](https://telecommnet.com/communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/): RTSP, HLS, WebRTC, video conferencing
+- [Network Security Expert Witness](https://telecommnet.com/communications-expert-witness/network-security-expert-witness/): Firewalls, IDS/IPS, encryption, TLS/SSL, IPsec
+- [Streaming Media Expert Witness](https://telecommnet.com/communications-expert-witness/streaming-media-expert-witness/): RTSP, HLS, WebRTC, video conferencing
 - [Computer Networking Expert Witness](https://telecommnet.com/communications-expert-witness/computer-networking-expert-witness/): Ethernet, routing, switching, LAN/WAN
-- [Data Communications Expert](https://telecommnet.com/communications-expert-witness/data-communications-expert/): Data transmission, Frame Relay, ATM
-- [Mobile Wireless Expert](https://telecommnet.com/communications-expert-witness/mobile-wireless-expert/): Wi-Fi, Bluetooth, wireless LAN, mobile systems
-- [Routing & Switching Expert](https://telecommnet.com/communications-expert-witness/routing-switching-expert/): BGP, OSPF, MPLS, VLAN, SDN
+- [Data Communications Expert](https://telecommnet.com/communications-expert-witness/data-communications-expert-witness/): Data transmission, Frame Relay, ATM
+- [Mobile Wireless Expert](https://telecommnet.com/communications-expert-witness/mobile-wireless-expert-witness/): Wi-Fi, Bluetooth, wireless LAN, mobile systems
+- [Routing & Switching Expert](https://telecommnet.com/communications-expert-witness/routing-switching-expert-witness/): BGP, OSPF, MPLS, VLAN, SDN
 - [Network Management Expert Witness](https://telecommnet.com/communications-expert-witness/network-management-expert-witness/): SNMP, MIB, RMON, network monitoring
-- [Networking Expert](https://telecommnet.com/communications-expert-witness/networking-expert/): Comprehensive networking technology expertise
+- [Networking Expert](https://telecommnet.com/communications-expert-witness/networking-expert-witness/): Comprehensive networking technology expertise
 - [Messaging and Chat Expert Witness](https://telecommnet.com/communications-expert-witness/messaging-and-chat-expert-witness/): Messaging protocols and chat systems
 
 ## Core Areas of Expertise
