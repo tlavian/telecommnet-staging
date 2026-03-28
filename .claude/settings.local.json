@@ -10,6 +10,21 @@
       "WebFetch",
       "WebSearch",
       "Agent",
+      "TodoWrite",
+      "Skill",
+      "NotebookEdit",
+      "AskUserQuestion",
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "EnterWorktree",
+      "ExitWorktree",
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "TaskOutput",
+      "TaskStop",
+      "ListMcpResourcesTool",
+      "ReadMcpResourceTool",
       "mcp__*__*"
     ]
   }

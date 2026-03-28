@@ -78,7 +78,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does Dr. Lavian qualify as a network communications expert?',
-      a: 'Dr. Lavian has a Ph.D. in Computer Science from UC Berkeley specializing in network communications, nearly 20 years of research and lecturing at UC Berkeley\'s College of Engineering, and over 35 years of industry experience at Nortel Networks and as a startup founder.',
+      a: 'Dr. Lavian has a Ph.D. in Computer Science from UC Berkeley specializing in network communications, nearly 20 years of research and lecturing at UC Berkeley, and over 35 years of industry experience at Nortel Networks and as a startup founder.',
     },
     {
       q: 'Can Dr. Lavian serve as an expert witness in both plaintiff and defendant cases?',
@@ -299,7 +299,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s academic background in computer networks?',
-      a: 'Dr. Lavian earned his Ph.D. in Computer Science from UC Berkeley with a specialization in network communications and spent nearly 20 years researching, studying, and lecturing at UC Berkeley\'s College of Engineering.',
+      a: 'Dr. Lavian earned his Ph.D. in Computer Science from UC Berkeley with a specialization in network communications and spent nearly 20 years researching, studying, and lecturing at UC Berkeley.',
     },
     {
       q: 'Has Dr. Lavian testified in computer networks patent cases?',

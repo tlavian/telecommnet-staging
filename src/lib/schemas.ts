@@ -314,7 +314,7 @@ export const buildSchema = {
               name: 'How long has Dr. Lavian been at UC Berkeley?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian spent nearly 20 years researching, studying, and lecturing at UC Berkeley\'s College of Engineering, where he conducted research projects in data centers (RAD Labs), telecommunication infrastructure (SAHARA), and wireless systems (ICEBERG), and served as an industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET).',
+                text: 'Dr. Lavian spent nearly 20 years researching, studying, and lecturing at UC Berkeley, where he conducted research projects in data centers (RAD Labs), telecommunication infrastructure (SAHARA), and wireless systems (ICEBERG), and served as an industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET).',
               },
             },
             {
@@ -424,7 +424,7 @@ export const buildSchema = {
               name: 'What qualifications does Dr. Lavian have as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley\'s College of Engineering. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 70 expert witness engagements.',
+                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 70 expert witness engagements.',
               },
             },
             {

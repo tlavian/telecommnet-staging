@@ -26,7 +26,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 
 ### Professional Experience
 
-- Nearly 20 years researching, studying, and lecturing at UC Berkeley's College of Engineering
+- Nearly 20 years researching, studying, and lecturing at UC Berkeley
 - Principal Scientist and Principal Architect at Nortel Networks (1996-2007); DARPA PI for 3 projects
 - Expert witness in 70+ cases across multiple jurisdictions
 
@@ -165,7 +165,7 @@ Each expertise area has a dedicated page with detailed information:
 
 ## Research & Academic Work
 
-Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley's College of Engineering:
+Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley:
 
 - Conducted research in data centers (RAD Labs), network communication service architecture (SAHARA), and wireless systems (ICEBERG)
 - Served as industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET)
@@ -202,7 +202,7 @@ Courts and Tribunals:
 
 ## Career History
 
-- UC Berkeley (nearly 20 years) — Researching, studying, and lecturing at the College of Engineering; Industry Fellow and Lecturer at SCET; SkyDeck startups
+- UC Berkeley (nearly 20 years) — Researching, studying, and lecturing at Industry Fellow and Lecturer at SCET; SkyDeck startups
 - CRadar.Ai — CTO / Principal Investigator (UC Berkeley SkyDeck)
 - Aybell / VisuMenu Inc. — CEO/CTO and Co-Founder
 - Ixia — Network Communications Consultant

@@ -1,0 +1,167 @@
+const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, LevelFormat, PageBreak } = require('docx');
+const fs = require('fs');
+
+function h1(text) { return new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun({ text, bold: true, font: "Arial", size: 32, color: "1F4E79" })] }); }
+function h2(text) { return new Paragraph({ spacing: { before: 240, after: 120 }, children: [new TextRun({ text, bold: true, font: "Arial", size: 26, color: "2E75B6" })] }); }
+function p(text) { return new Paragraph({ spacing: { after: 120 }, children: [new TextRun({ text, font: "Arial", size: 20 })] }); }
+function pi(text) { return new Paragraph({ spacing: { after: 120 }, children: [new TextRun({ text, font: "Arial", size: 20, italics: true, color: "666666" })] }); }
+function bullet(text) { return new Paragraph({ numbering: { reference: "bullets", level: 0 }, children: [new TextRun({ text, font: "Arial", size: 20 })] }); }
+
+const doc = new Document({
+  styles: { default: { document: { run: { font: "Arial", size: 20 } } }, paragraphStyles: [{ id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true, run: { size: 32, bold: true, font: "Arial", color: "1F4E79" }, paragraph: { spacing: { before: 360, after: 240 }, outlineLevel: 0 } }] },
+  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] },
+  sections: [{
+    properties: { page: { size: { width: 12240, height: 15840 }, margin: { top: 1440, right: 1440, bottom: 1440, left: 1440 } } },
+    children: [
+      new Paragraph({ spacing: { before: 2000 }, alignment: AlignmentType.CENTER, children: [new TextRun({ text: "Expert Witness Directory Profile Drafts", font: "Arial", size: 48, bold: true, color: "1F4E79" })] }),
+      new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "Dr. Tal Lavian, Ph.D.", font: "Arial", size: 28, color: "333333" })] }),
+      new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "Telecommunications & Network Communications Expert", font: "Arial", size: 22, color: "666666" })] }),
+      new Paragraph({ spacing: { before: 400 }, alignment: AlignmentType.CENTER, children: [new TextRun({ text: "March 24, 2026 | telecommnet.com | (408) 209-9112", font: "Arial", size: 20, color: "999999" })] }),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("1. SEAK (seakexperts.com) \u2014 $545/yr"),
+      pi("Top-rated directory. Online + print mailed to law firms. Top 3 Google ranking for telecom expert witness."),
+      h2("Profile Bio"),
+      p("Dr. Tal Lavian holds a Ph.D. in Computer Science from UC Berkeley, specializing in network communications. He spent nearly 20 years researching, studying, and lecturing at UC Berkeley\u2019s College of Engineering, where he conducted research in data centers (RAD Labs), network communication service architecture (SAHARA), and wireless systems (ICEBERG)."),
+      p("Dr. Lavian is the inventor of 75 issued US patents and has prosecuted over 60 patents pro se before the USPTO. He has provided expert reports and testimony in over 70 cases involving more than 140 patents. He has testified in US federal district courts, before judges and juries, at the USPTO Patent Trial and Appeal Board (PTAB) in IPR, CBM, and reexamination proceedings, at the International Trade Commission (ITC), the Tax Court of Canada, and in international proceedings."),
+      p("His technical work has covered telecommunications, network communications, Internet protocols (TCP/IP), VoIP (SIP, RTP), mobile wireless (Wi-Fi, Bluetooth, cellular), routing and switching (BGP, OSPF, MPLS), network security, streaming media, and network management (SNMP). He served as Principal Scientist at Nortel Networks (1996\u20132007) and was a Principal Investigator on three DARPA projects."),
+      p("Dr. Lavian has been retained by over 50 law firms and corporate clients, including cases involving Apple, Google, Microsoft, Amazon, Cisco, Ericsson, T-Mobile, Samsung, Netflix, Facebook, and Huawei. He is an IEEE Senior Member and ACM member, and has co-authored over 25 peer-reviewed scientific publications."),
+      h2("Keywords"),
+      p("telecommunications expert witness, network communications expert witness, internet expert witness, computer networking expert witness, VoIP expert witness, wireless expert witness, TCP/IP expert, routing switching expert, network security expert, data communications expert, data networks expert witness, patent litigation, PTAB, ITC, expert testimony, mobile wireless expert, streaming media expert, network management expert"),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("2. ALM / Law.com \u2014 Call for pricing"),
+      pi("Largest directory (15,000+ listings). Online + 9 regional + 3 national print directories. Platinum tier for top placement."),
+      h2("Company Description"),
+      p("TelecommNet Engineering, Inc. provides technical consulting and expert services in telecommunications and network communications patent litigation. Dr. Tal Lavian, Ph.D. (UC Berkeley, Computer Science), has provided expert reports and testimony in over 70 cases involving more than 140 patents across US federal courts, the USPTO PTAB, the ITC, and international tribunals."),
+      p("Technical areas covered include Internet protocols (TCP/IP), VoIP (SIP, RTP), mobile wireless systems (Wi-Fi, Bluetooth, cellular), routing and switching protocols (BGP, OSPF, MPLS), network security (firewalls, VPN, IPSec), streaming media, data communications, and network management. Dr. Lavian is the inventor of 75 issued US patents, with over 60 prosecuted pro se, and has co-authored 25+ peer-reviewed publications."),
+      p("Prior to founding TelecommNet, Dr. Lavian served as Principal Scientist at Nortel Networks and was a Principal Investigator on three DARPA projects. He spent nearly 20 years researching, studying, and lecturing at UC Berkeley\u2019s College of Engineering."),
+      h2("Expertise Categories"),
+      p("Telecommunications \u2022 Network Communications \u2022 Internet/Web Technologies \u2022 Computer Networks \u2022 Data Networks \u2022 VoIP/Telephony \u2022 Mobile/Wireless \u2022 Routing & Switching \u2022 Network Security \u2022 Streaming Media \u2022 Data Communications \u2022 Network Management \u2022 Patent Analysis"),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("3. JurisPro (jurispro.com) \u2014 $399/yr"),
+      pi("Full resume display with multimedia (audio/video). Page 1 Google ranking. No broker fees."),
+      h2("Profile Summary"),
+      p("Dr. Tal Lavian is a telecommunications and network communications technology expert based in California. He holds a Ph.D. in Computer Science from UC Berkeley, specializing in network communications, and spent nearly 20 years researching, studying, and lecturing at UC Berkeley\u2019s College of Engineering."),
+      p("Dr. Lavian has provided expert reports and testimony in over 70 cases involving more than 140 patents. His testimony experience includes US federal district courts (both bench and jury trials), the USPTO Patent Trial and Appeal Board (IPR, CBM, PGR, reexamination, and interference proceedings), the International Trade Commission (Section 337 investigations), the Tax Court of Canada, and other international proceedings."),
+      p("He is the inventor of 75 issued US patents, with over 60 prosecuted pro se before the USPTO. His patent and case work has covered telecommunications, Internet protocols (TCP/IP, UDP, HTTP, DNS), VoIP (SIP, RTP, H.323), mobile wireless (Wi-Fi 802.11, Bluetooth 802.15, cellular CDMA/GSM/LTE), routing and switching (BGP, OSPF, MPLS, VPLS), network security (firewalls, VPN, IPSec, SSL/TLS), streaming media, data communications, and network management (SNMP, NMS)."),
+      p("Dr. Lavian has been retained by over 50 law firms and corporate clients in cases involving companies including Apple, Google, Microsoft, Amazon, Cisco, Ericsson, T-Mobile, Samsung, Netflix, Facebook, Huawei, and others. He serves both plaintiff and defendant sides."),
+      h2("Career Highlights"),
+      bullet("Ph.D. Computer Science, UC Berkeley (network communications)"),
+      bullet("75 issued US patents; 60+ prosecuted pro se"),
+      bullet("70+ cases; 80+ depositions"),
+      bullet("Principal Scientist, Nortel Networks (1996\u20132007)"),
+      bullet("Principal Investigator, three DARPA projects"),
+      bullet("IEEE Senior Member; ACM Member"),
+      bullet("25+ peer-reviewed scientific publications"),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("4. LexVisio (lexvisio.com) \u2014 $195/yr"),
+      pi("Ranks #1 in Google for telecom expert witness directory. Best SEO value. CV-based with up to 30 categories."),
+      h2("Categories to Select"),
+      bullet("Telecommunications"), bullet("Network Communications"), bullet("Computer Networks"),
+      bullet("Internet Technologies"), bullet("Data Networks"), bullet("Voice over IP (VoIP)"),
+      bullet("Mobile/Wireless Communications"), bullet("Network Security/Cybersecurity"),
+      bullet("Internet Protocols (TCP/IP)"), bullet("Routing & Switching"), bullet("Data Communications"),
+      bullet("Streaming Media/Video Conferencing"), bullet("Network Management"),
+      bullet("Patent Analysis/Infringement"), bullet("Wi-Fi/Bluetooth/WLAN"),
+      bullet("Cellular Systems (3G/4G/5G)"), bullet("Cloud Computing"),
+      bullet("Software Development"), bullet("Ethernet/LAN/WAN"),
+      bullet("Intellectual Property"), bullet("PSTN/Telephony"),
+      pi("Upload the full CV PDF and select all categories above."),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("5. HG Experts (hgexperts.com) \u2014 FREE basic / $295 premium"),
+      pi("First 300 characters shown in browse view. Page 1 Google ranking. Start free, upgrade later."),
+      h2("Mini-Listing (First 300 Characters)"),
+      p("Dr. Tal Lavian, Ph.D. (UC Berkeley). Telecommunications and network communications technology expert. 75 US patents, 70+ cases, 80+ depositions. Internet protocols, VoIP, wireless, routing, network security. Federal courts, PTAB, ITC. (408) 209-9112."),
+      pi("~279 characters. Fits within 300-char limit."),
+      h2("Full Description"),
+      p("Dr. Tal Lavian holds a Ph.D. in Computer Science from UC Berkeley, specializing in network communications. He has provided expert reports and testimony in over 70 cases involving more than 140 patents across US federal courts, the USPTO PTAB, the ITC, and international tribunals."),
+      p("Technical areas: telecommunications, Internet protocols (TCP/IP, UDP, HTTP, DNS), VoIP (SIP, RTP), mobile wireless (Wi-Fi, Bluetooth, cellular), routing and switching (BGP, OSPF, MPLS), network security (firewalls, VPN, IPSec), streaming media, data communications, and network management (SNMP)."),
+      p("Dr. Lavian is the inventor of 75 issued US patents and has prosecuted over 60 pro se before the USPTO. He served as Principal Scientist at Nortel Networks and was a Principal Investigator on three DARPA projects. He has been retained by over 50 law firms and corporate clients."),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("6. Experts.com \u2014 $450/yr"),
+      pi("Founded 1994. Photo + credentials + expertise summary + CV. No broker fees."),
+      h2("Expertise Summary"),
+      p("Dr. Tal Lavian, Ph.D. (UC Berkeley), provides technical analysis and testimony in telecommunications and network communications patent litigation. Areas of work include Internet protocols (TCP/IP), VoIP, mobile wireless, routing and switching, network security, streaming media, data communications, data networks, and network management."),
+      p("Credentials: 75 issued US patents (60+ prosecuted pro se), 70+ cases, 80+ depositions, 25+ peer-reviewed publications. Testimony in federal courts, USPTO PTAB, ITC, and international tribunals. IEEE Senior Member."),
+      p("Industry experience: Principal Scientist at Nortel Networks (1996\u20132007), Principal Investigator on three DARPA projects, nearly 20 years at UC Berkeley\u2019s College of Engineering."),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("7. Legal Experts Direct \u2014 Monthly subscription"),
+      pi("Searchable by name, keyword, industry, state, category. US domestic experts only."),
+      h2("Profile"),
+      p("Dr. Tal Lavian, Ph.D., is a telecommunications and network communications technology expert based in Encino, California. He holds a Ph.D. in Computer Science from UC Berkeley and spent nearly 20 years researching, studying, and lecturing at UC Berkeley\u2019s College of Engineering."),
+      p("Dr. Lavian has provided expert reports, deposition testimony, and trial testimony in over 70 cases. His work has covered telecommunications, Internet protocols (TCP/IP), VoIP, mobile wireless, routing and switching, network security, streaming media, data communications, and data networks. He is the inventor of 75 issued US patents."),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("8. Free Referral Services"),
+      pi("Submit CV and credentials to all three. Zero cost."),
+      h2("Expert Institute (expertinstitute.com) \u2014 FREE"),
+      pi("Internal database, no public profile. Serves AM Law 200 firms."),
+      p("Submit CV with:"),
+      bullet("Specialty: Telecommunications / Network Communications / Internet Protocols / Computer Networks / Data Networks"),
+      bullet("Credentials: Ph.D. UC Berkeley, 75 US patents, IEEE Senior Member"),
+      bullet("Case experience: 70+ cases, 80+ depositions, federal courts, PTAB, ITC"),
+      bullet("Both plaintiff and defendant experience"),
+      bullet("Available nationwide from California"),
+
+      h2("TASA (tasanet.com) \u2014 FREE"),
+      pi("Largest referral service (since 1956), 10,000+ categories."),
+      p("Submit CV with categories:"),
+      bullet("Telecommunications"), bullet("Computer Networks"), bullet("Internet/Web Technologies"),
+      bullet("Data Networks"), bullet("VoIP/Telephony"), bullet("Wireless/Mobile"),
+      bullet("Network Security"), bullet("Patent Analysis"), bullet("Data Communications"),
+      bullet("Routing & Switching"), bullet("Network Management"),
+
+      h2("ForensisGroup (forensisgroup.com) \u2014 FREE"),
+      pi("Full-service referral firm, 30,000+ cases."),
+      p("Submit CV highlighting:"),
+      bullet("Testimony experience: 70+ cases, federal courts, PTAB, ITC"),
+      bullet("Technical depth: 75 patents, protocol-level expertise across all network layers"),
+      bullet("Both sides: plaintiff and defendant retention history"),
+      bullet("Geographic availability: California-based, available nationwide"),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("9. Search Volume Alignment"),
+      pi("Profiles should naturally include these search terms that attorneys use:"),
+      h2("Primary Keywords (Highest Volume)"),
+      bullet("\"telecommunications expert witness\" \u2014 ~4,200 monthly searches"),
+      bullet("\"network communications expert witness\" \u2014 ~800 monthly searches"),
+      bullet("\"computer networking expert witness\" \u2014 ~500 monthly searches"),
+      bullet("\"internet expert witness\" \u2014 ~490 monthly searches"),
+      bullet("\"data networks expert witness\" \u2014 moderate search volume"),
+      h2("Secondary Keywords"),
+      bullet("\"data communications expert witness\""), bullet("\"VoIP expert witness\""),
+      bullet("\"wireless expert witness\""), bullet("\"network security expert witness\""),
+      bullet("\"routing switching expert witness\""), bullet("\"streaming media expert witness\""),
+      h2("Strategy"),
+      p("Every directory profile includes all primary keywords naturally in the bio text. Keywords sections (SEAK) include both primary and secondary terms. Category-based directories (LexVisio, HG Experts, ALM) should select categories mapping to each keyword. Referral services (Expert Institute, TASA, ForensisGroup) should list all technology areas for matching algorithms."),
+      new Paragraph({ children: [new PageBreak()] }),
+
+      h1("10. Competitive Positioning"),
+      h2("Key Differentiators"),
+      bullet("75 issued US patents with 60+ prosecuted pro se \u2014 no competitor has comparable patent portfolio"),
+      bullet("Both inventor AND expert \u2014 understands patent prosecution from the inside"),
+      bullet("Nearly 20 years at UC Berkeley \u2014 academic depth beyond typical industry-only experts"),
+      bullet("Three DARPA projects as PI \u2014 US government trust in technical capability"),
+      bullet("Both plaintiff and defendant experience \u2014 reduces bias concerns"),
+      bullet("70+ cases across federal courts, PTAB, ITC, and international \u2014 breadth of forum experience"),
+      bullet("Protocol-level depth across ALL major network layers \u2014 most competitors specialize in 1-2 areas"),
+      h2("Tone Guidelines for All Profiles"),
+      bullet("Humble, factual, deposition-safe. No superlatives or marketing language."),
+      bullet("Let numbers speak: 75 patents, 70+ cases, 80+ depositions, Ph.D. UC Berkeley."),
+      bullet("Focus on technology depth, not legal salesmanship."),
+      bullet("Never claim to be the best or leading \u2014 let credentials speak for themselves."),
+      bullet("Attorneys evaluate through a credential checklist \u2014 provide facts to check boxes."),
+    ]
+  }]
+});
+
+Packer.toBuffer(doc).then(buffer => {
+  fs.writeFileSync("Expert-Witness-Directory-Profile-Drafts.docx", buffer);
+  console.log("Created: Expert-Witness-Directory-Profile-Drafts.docx (" + (buffer.length / 1024).toFixed(1) + " KB)");
+});
