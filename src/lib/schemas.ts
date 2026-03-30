@@ -322,7 +322,7 @@ export const buildSchema = {
               name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has served as an expert witness in over 70 cases involving more than 140 patents, providing expert reports and testimony in over 80 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
+                text: 'Dr. Lavian has been retained as an expert in over 70 cases. He has served as an expert on over 100 patents litigated and has analyzed over 200 patents. He has provided expert reports and testimony in over 80 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
               },
             },
             {
@@ -877,7 +877,7 @@ export const buildSchema = {
               name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has served as an expert witness in over 70 cases involving more than 200 patents. He has written expert reports and testified in over 80 depositions in U.S. federal courts, USPTO PTAB, and the ITC.',
+                text: 'Dr. Lavian has been retained as an expert in over 70 cases. He has served as an expert on over 100 patents litigated and has analyzed over 200 patents. He has provided expert reports and testimony in over 80 depositions in U.S. federal courts, USPTO PTAB, and the ITC.',
               },
             },
             {

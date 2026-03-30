@@ -69,7 +69,7 @@ export const casesSchema = buildSchema.cases();
 export const casesTitle =
   "Expert Witness Testimony Cases | Dr. Tal Lavian, Ph.D.";
 export const casesDescription =
-  "70+ expert witness cases in U.S. federal courts, USPTO PTAB, and ITC. 80+ depositions, 200+ patents. Apple, Google, Cisco & more.";
+  "70+ cases. 100+ patents litigated. 200+ patents analyzed. 80+ depositions. U.S. federal courts, USPTO PTAB, ITC. Apple, Google, Cisco & more.";
 
 // ─── 21. SITE MAP ─────────────────────────────────────────────────────────
 // File: src/pages/site-map/index.astro

@@ -27,8 +27,9 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 - Principal Investigator for three DARPA/AFRL projects at Nortel Networks
 
 ### Case Statistics:
-- 70+ expert witness engagements in patent and technology litigation
-- 140+ patents analyzed across litigation cases
+- 70+ cases (patent, non-patent, technology, and other cases)
+- 100+ patents litigated (served as expert on)
+- 200+ patents analyzed (including patents worked, patents opposed, prior art, and patent family references)
 - 80+ depositions provided
 - 70+ expert reports written
 - Testified in U.S. District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, Tax Court in Canada, and a court in Asia
