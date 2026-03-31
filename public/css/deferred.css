@@ -60,11 +60,10 @@
 /* Client logos */
 .client-logos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; padding: 20px 0; }
 .client-logo-item { display: flex; align-items: center; justify-content: center; padding: 12px; min-height: 70px; }
-.client-logo-item img { max-width: 130px; max-height: 50px; object-fit: contain; }
+.client-logo-item img { max-width: 150px; max-height: 60px; object-fit: contain; }
 .client-logos a, .client-logo-item a { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
 .client-logos a:hover, .client-logo-item a:hover { text-decoration: none; opacity: 0.75; transform: scale(1.05); transition: all 0.2s ease; }
-.client-logos img { max-width: 130px; max-height: 50px; object-fit: contain; }
-img[src*="ericsson.svg"] { transform: scale(1.4); }
+.client-logos img { max-width: 150px; max-height: 60px; object-fit: contain; }
 
 /* Expertise cards */
 .expertise-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 30px 0; }
