@@ -1,4 +1,8 @@
 # Redirects for telecommnet.com (Cloudflare Pages)
+
+# CV PDF — redirect old cached URL to new versioned URL (cache-busting)
+/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf 301
+
 # 301 redirects for renamed expertise page slugs
 /communications-expert-witness/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-cellular-expert-witness/:splat 301
 /communications-expert-witness/data-communications-expert/* /communications-expert-witness/data-communications-expert-witness/:splat 301

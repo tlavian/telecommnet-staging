@@ -26,9 +26,14 @@
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
 
-# Allow indexing of Dr. Lavian's resume/CV
+# Allow indexing of Dr. Lavian's resume/CV — short cache so updates propagate within 1 hour
+/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: index, follow
+
+# Legacy CV URL — kept for backward compatibility (redirected via _redirects)
 /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf
-  Cache-Control: public, max-age=604800
+  Cache-Control: no-store, no-cache, must-revalidate
   X-Robots-Tag: index, follow
 
 # Block all other PDFs from indexing
