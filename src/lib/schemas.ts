@@ -1,5 +1,5 @@
-/**
- * TelecommNet.com — Centralized Schema Factory
+﻿/**
+ * TelecommNet.com â€” Centralized Schema Factory
  * Phase 2: Full JSON-LD @graph implementation for all 27 pages
  * 
  * Architecture: Person entity is the central @id node.
@@ -14,7 +14,7 @@ const BASE_URL = 'https://telecommnet.com';
 const PERSON_ID = `${BASE_URL}/#person`;
 const ORG_ID    = `${BASE_URL}/#org`;
 
-// ─── Shared sub-objects ──────────────────────────────────────────────────────
+// â”€â”€â”€ Shared sub-objects â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export const PERSON_REF = { '@id': PERSON_ID };
 
@@ -28,7 +28,7 @@ export const PERSON_ENTITY = {
   honorificSuffix: 'Ph.D.',
   jobTitle: 'Telecommunications Expert Witness',
   description:
-    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 70+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
+    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 90+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -67,7 +67,7 @@ export const PERSON_ENTITY = {
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'Expert Witness — Telecommunications and Network Communications',
+    name: 'Expert Witness â€” Telecommunications and Network Communications',
     occupationalCategory: 'Legal Services',
     skills: [
       'Patent Litigation',
@@ -145,7 +145,7 @@ export const ORG_ENTITY = {
   },
 };
 
-// ─── BreadcrumbList builder ──────────────────────────────────────────────────
+// â”€â”€â”€ BreadcrumbList builder â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export function breadcrumbs(items: { name: string; url: string }[]) {
   return {
@@ -162,7 +162,7 @@ export function breadcrumbs(items: { name: string; url: string }[]) {
   };
 }
 
-// ─── Schema builders by page type ────────────────────────────────────────────
+// â”€â”€â”€ Schema builders by page type â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export const buildSchema = {
 
@@ -219,7 +219,7 @@ export const buildSchema = {
         {
           '@type': 'WebSite',
           '@id': `${BASE_URL}/#website`,
-          name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
+          name: 'TelecommNet â€” Telecommunications Expert Witness | Dr. Tal Lavian',
           url: BASE_URL,
           publisher: PERSON_REF,
           datePublished: '2022-05-01T00:00:00+00:00',
@@ -239,7 +239,7 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 70+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Asia.',
               },
             },
             {
@@ -263,7 +263,7 @@ export const buildSchema = {
               name: 'What courts and tribunals has Dr. Lavian testified in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Tax Court in Canada, and a court in Asia.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Canadian Federal Court, and a court in Asia.',
               },
             },
           ],
@@ -290,7 +290,7 @@ export const buildSchema = {
           '@type': 'ProfilePage',
           '@id': `${BASE_URL}/about-dr-lavian/`,
           url: `${BASE_URL}/about-dr-lavian/`,
-          name: 'About Dr. Tal Lavian — Telecommunications Expert Witness',
+          name: 'About Dr. Tal Lavian â€” Telecommunications Expert Witness',
           dateCreated: '2022-05-01T00:00:00+00:00',
           dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
@@ -322,7 +322,7 @@ export const buildSchema = {
               name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained as an expert in over 70 cases. He has served as an expert on over 100 patents litigated and has analyzed over 200 patents. He has provided expert reports and testimony in over 80 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Tax Court in Canada, and a court in Asia.',
+                text: 'Dr. Lavian has been retained as an expert in over 90 cases. He has served as an expert on over 100 patents litigated and has analyzed over 200 patents. He has provided expert reports and testimony in over 60 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Asia.',
               },
             },
             {
@@ -359,8 +359,8 @@ export const buildSchema = {
           '@type': 'WebPage',
           '@id': hubUrl,
           url: hubUrl,
-          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
-          description: 'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 70+ cases, 120+ patents.',
+          name: 'Communications Expert Witness Services â€” Dr. Tal Lavian',
+          description: 'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
           datePublished: '2023-06-01T00:00:00+00:00',
           dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
@@ -373,12 +373,12 @@ export const buildSchema = {
         },
         {
           '@type': ['ProfessionalService', 'LegalService'],
-          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
+          name: 'Communications Expert Witness Services â€” Dr. Tal Lavian',
           founder: PERSON_REF,
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
           description:
-            'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 70+ cases, 120+ patents.',
+            'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
           logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
           address: {
             '@type': 'PostalAddress',
@@ -408,7 +408,7 @@ export const buildSchema = {
         {
           '@type': 'FAQPage',
           '@id': `${hubUrl}#faq`,
-          name: 'FAQ — Communications Expert Witness Services',
+          name: 'FAQ â€” Communications Expert Witness Services',
           url: hubUrl,
           mainEntity: [
             {
@@ -432,7 +432,7 @@ export const buildSchema = {
               name: 'In what courts has Dr. Lavian testified?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Tax Court in Canada, and a court in Asia in patent litigation involving Apple.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Canadian Federal Court, and a court in Asia in patent litigation involving Apple.',
               },
             },
             {
@@ -516,7 +516,7 @@ export const buildSchema = {
         {
           '@type': 'FAQPage',
           '@id': `${pageUrl}#faq`,
-          name: `FAQ — ${opts.name}`,
+          name: `FAQ â€” ${opts.name}`,
           url: pageUrl,
           mainEntity: opts.faqs.map(faq => ({
             '@type': 'Question',
@@ -582,7 +582,7 @@ export const buildSchema = {
     const publicationEntries = [
       {
         position: 1,
-        name: 'Communications Architecture — Grid Computing',
+        name: 'Communications Architecture â€” Grid Computing',
         datePublished: '2013',
         publisher: "Scholar's Press",
         isbn: '978-3-639-51098-0',
@@ -613,7 +613,7 @@ export const buildSchema = {
         position: 5,
         name: 'Information Switching Networks',
         datePublished: '2005-12',
-        publisher: 'WITSP 2005 — 4th Workshop on Internet, Telecommunications and Signal Processing',
+        publisher: 'WITSP 2005 â€” 4th Workshop on Internet, Telecommunications and Signal Processing',
         coAuthors: ['Doan B. Hoang'],
       },
       {
@@ -624,7 +624,7 @@ export const buildSchema = {
       },
       {
         position: 7,
-        name: 'Grid Computing — Impact on Network Operators',
+        name: 'Grid Computing â€” Impact on Network Operators',
         datePublished: '2005',
         publisher: 'IEEE Hot Interconnects, Stanford University',
       },
@@ -645,7 +645,7 @@ export const buildSchema = {
         position: 10,
         name: 'Quality of Control Loop on Programmable Routers',
         datePublished: '2004-11',
-        publisher: 'IEEE ICON 2004 — 12th IEEE International Conference on Networks',
+        publisher: 'IEEE ICON 2004 â€” 12th IEEE International Conference on Networks',
       },
       {
         position: 11,
@@ -667,7 +667,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Scientific Publications — Dr. Tal Lavian',
+          name: 'Scientific Publications â€” Dr. Tal Lavian',
           description:
             'Peer-reviewed scientific publications by Dr. Tal Lavian in IEEE, ACM, and other journals, covering telecommunications, network communications, and computer science.',
           url: `${BASE_URL}/scientific-publications/`,
@@ -766,7 +766,7 @@ export const buildSchema = {
       },
       {
         position: 10,
-        name: 'Optical Networks — UC Berkeley Seminar',
+        name: 'Optical Networks â€” UC Berkeley Seminar',
         organizer: 'University of California, Berkeley',
         about: 'Optical Networks, Telecommunications',
       },
@@ -784,7 +784,7 @@ export const buildSchema = {
       },
       {
         position: 13,
-        name: 'Technologies Shaped Our Society — UC Berkeley Seminar',
+        name: 'Technologies Shaped Our Society â€” UC Berkeley Seminar',
         organizer: 'University of California, Berkeley',
         about: 'Technology and Society, Telecommunications History',
       },
@@ -808,7 +808,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Talks & Presentations — Dr. Tal Lavian',
+          name: 'Talks & Presentations â€” Dr. Tal Lavian',
           description:
             'Conference presentations and technical talks by Dr. Tal Lavian at IEEE, ACM, UC Berkeley, DARPA events, and industry conferences on telecommunications and networking.',
           url: `${BASE_URL}/talks-presentations/`,
@@ -855,9 +855,9 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
+          name: 'Expert Witness Testimony Cases â€” Dr. Tal Lavian',
           description:
-            'Expert witness testimony cases by Dr. Tal Lavian. 70+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
+            'Expert witness testimony cases by Dr. Tal Lavian. 90+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Patent Litigation Expert Witness Testimony' },
@@ -877,7 +877,7 @@ export const buildSchema = {
               name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained as an expert in over 70 cases. He has served as an expert on over 100 patents litigated and has analyzed over 200 patents. He has provided expert reports and testimony in over 80 depositions in U.S. federal courts, USPTO PTAB, and the ITC.',
+                text: 'Dr. Lavian has been retained as an expert in over 90 cases. He has served as an expert on over 100 patents litigated and has analyzed over 200 patents. He has provided expert reports and testimony in over 60 depositions in U.S. federal courts, USPTO PTAB, and the ITC.',
               },
             },
             {
@@ -885,7 +885,7 @@ export const buildSchema = {
               name: 'What courts and tribunals has Dr. Lavian testified in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), the Tax Court in Canada, and a court in Asia. He has also served in USPTO PTAB proceedings, including Inter Partes Reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.',
+                text: 'Dr. Lavian has testified in the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), the Canadian Federal Court, and a court in Asia. He has also served in USPTO PTAB proceedings, including Inter Partes Reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.',
               },
             },
             {
@@ -981,7 +981,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Patents — Dr. Tal Lavian',
+          name: 'Patents â€” Dr. Tal Lavian',
           description:
             '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions before the USPTO.',
           url: `${BASE_URL}/patents/`,
@@ -996,7 +996,7 @@ export const buildSchema = {
         },
         {
           '@type': 'ItemList',
-          name: 'Patent Portfolio — Dr. Tal Lavian',
+          name: 'Patent Portfolio â€” Dr. Tal Lavian',
           description: '120+ patents spanning network switch architecture, network security, VoIP/IVR systems, grid computing, QoS, streaming media, and wireless communications.',
           numberOfItems: 120,
           itemListElement: patentEntries.map(pat => ({
@@ -1004,7 +1004,7 @@ export const buildSchema = {
             position: pat.position,
             item: {
               '@type': 'CreativeWork',
-              name: `${pat.number} — ${pat.name}`,
+              name: `${pat.number} â€” ${pat.name}`,
               creator: PERSON_REF,
               about: { '@type': 'Thing', name: pat.about },
             },
@@ -1022,7 +1022,7 @@ export const buildSchema = {
       '@graph': [
         {
           '@type': 'ContactPage',
-          name: 'Contact Dr. Tal Lavian — Expert Witness Services',
+          name: 'Contact Dr. Tal Lavian â€” Expert Witness Services',
           description:
             'Contact Dr. Tal Lavian for telecommunications and network communications expert witness and consulting services.',
           url: `${BASE_URL}/contact/`,
@@ -1096,3 +1096,4 @@ export const buildSchema = {
 export function schemaScript(schema: object): string {
   return `<script type="application/ld+json">${JSON.stringify(schema, null, 0)}</script>`;
 }
+
