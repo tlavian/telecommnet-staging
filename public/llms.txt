@@ -1,6 +1,6 @@
 # TelecommNet
 
-> Dr. Tal Lavian, PhD (UC Berkeley) — Telecommunications Expert Witness with 120+ patents, 70+ expert witness engagements, and 35+ years of industry and academic experience. TelecommNet provides expert witness services, technical consulting, and litigation support for patent and technology disputes.
+> Dr. Tal Lavian, PhD (UC Berkeley) — Telecommunications Expert Witness with 120+ patents, 90+ expert witness engagements, and 35+ years of industry and academic experience. TelecommNet provides expert witness services, technical consulting, and litigation support for patent and technology disputes.
 
 - Website: [https://telecommnet.com](https://telecommnet.com)
 - Phone: +1 (408) 209-9112
@@ -28,12 +28,12 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 
 - Nearly 20 years researching, studying, and lecturing at UC Berkeley
 - Principal Scientist and Principal Architect at Nortel Networks (1996-2007); DARPA PI for 3 projects
-- Expert witness in 70+ cases across multiple jurisdictions
+- Expert witness in 90+ cases across multiple jurisdictions, including 60+ depositions
 
 ### Case Statistics
 
-- 70+ expert witness engagements in patent and technology litigation
-- Testified in U.S. District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, Tax Court in Canada, and a court in Asia
+- 90+ expert witness engagements in patent and technology litigation, including 60+ depositions
+- Testified in U.S. Federal District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, the Canadian Federal Court, and a court in Asia
 - Retained by both plaintiffs and defendants, patent holders and accused infringers
 - Cases involving companies such as Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and many others
 - Retained by leading law firms including Fish Richardson, Cooley, Irell & Manella, Kirkland & Ellis, and others
@@ -140,8 +140,8 @@ Each expertise area has a dedicated page with detailed information:
   - Covered Business Method (CBM) reviews
   - Ex Parte Re-examinations
   - PTO Interferences
-- International Trade Commission (ITC) cases
-- Tax Court in Canada testimony
+- International Trade Commission (ITC) Section 337 investigations
+- Canadian Federal Court (patent litigation)
 - A court in Asia (patent litigation)
 - Technical expert declarations and reports
 
@@ -180,17 +180,16 @@ Dr. Lavian has provided expert witness services in patent litigation, USPTO proc
 
 Courts and Tribunals:
 
-- U.S. District Courts across multiple jurisdictions
+- U.S. Federal District Courts across multiple jurisdictions
 - U.S. Court of Appeals
 - USPTO Patent Trial & Appeal Board (PTAB)
 - International Trade Commission (ITC)
 - Canadian Federal Court
-- Tax Court in Canada
 - A court in Asia
 
 ## Academic Profiles & Publications
 
-- [Google Scholar](https://scholar.google.com/citations?user=Do_JNPQAAAAJ): Citations and publications
+- [Google Scholar](https://scholar.google.com/citations?user=DDVtnHEAAAAJ): Citations and publications
 - [Academia.edu](https://berkeley.academia.edu/TalLavian): Research papers
 - [ResearchGate](https://www.researchgate.net/profile/Tal-Lavian): Research network
 - [Justia Patents](https://patents.justia.com/inventor/tal-lavian): Patent portfolio
@@ -233,7 +232,7 @@ Courts and Tribunals:
 
 ### How do I find a telecommunications expert witness?
 
-Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 70+ case engagements. He can be reached at tlavian@telecommnet.com or +1 (408) 209-9112.
+Dr. Tal Lavian is a telecommunications expert witness with a Ph.D. from UC Berkeley, 120+ patents, and 90+ case engagements. He can be reached at tlavian@telecommnet.com or +1 (408) 209-9112.
 
 ### What should I look for in a telecom expert witness?
 
@@ -245,7 +244,7 @@ Expert witness fees vary by case complexity, scope of work, and the expert's qua
 
 ### Can an expert witness testify on both sides (plaintiff and defendant)?
 
-Yes, expert witnesses provide independent technical analysis regardless of which party retains them. Dr. Lavian has been retained by both plaintiffs and defendants in 70+ cases.
+Yes, expert witnesses provide independent technical analysis regardless of which party retains them. Dr. Lavian has been retained by both plaintiffs and defendants in 90+ cases.
 
 ### What is the difference between a consulting expert and a testifying expert?
 
