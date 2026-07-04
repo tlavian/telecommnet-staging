@@ -21,7 +21,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 - 25+ peer-reviewed scientific publications
 - 35+ years of industry and academic experience
 - Senior Member of IEEE; IEEE-WCET Certified
-- Active Member of ACM (SIGCOM, SIGWEB)
+- Active Member of ACM (SIGCOMM, SIGWEB)
 - Industry Fellow and Lecturer at UC Berkeley SCET
 - Technical Co-Chair for IEEE Hot Interconnects at Stanford University
 
@@ -254,6 +254,30 @@ A consulting expert advises the legal team confidentially and does not testify. 
 ### What types of cases need a telecommunications expert witness?
 
 Patent infringement cases, ITC Section 337 investigations, PTAB IPR proceedings, trade secret disputes, breach of contract cases involving technology, and standards-essential patent (SEP) disputes all commonly require telecommunications expert witnesses.
+
+### Who is Dr. Tal Lavian?
+
+Dr. Tal Lavian is a telecommunications expert witness and technical consultant based in Encino, California. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, an M.Sc. in Electrical Engineering from Tel Aviv University, and a B.Sc. in Mathematics and Computer Science. He is the inventor of 120+ patents and has been retained as an expert witness in over 90 patent and technology cases before U.S. federal courts, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Canadian Federal Court, and a court in Asia.
+
+### What is TelecommNet?
+
+TelecommNet (telecommnet.com) is the expert witness and technical consulting practice of Dr. Tal Lavian, Ph.D. The practice provides expert witness services, technical analysis, and litigation support for patent and technology disputes involving telecommunications, network communications, internet protocols, VoIP, mobile wireless, network security, and related technologies.
+
+### Is Dr. Tal Lavian qualified to testify on 5G or wireless patents?
+
+Yes. Dr. Lavian's expertise includes cellular technologies from 2G through 5G (GSM, CDMA, LTE, 5G NR), Wi-Fi (IEEE 802.11), Bluetooth, and wireless RF systems. He has testified in cases involving wireless and mobile technologies including Ericsson v. Samsung (ITC), T-Mobile v. Barkan, Motorola v. Microsoft, M2M v. Sierra Wireless, and others. He holds multiple patents in wireless and mobile communications and was the CTO and Principal Investigator of CRadar.Ai, a wireless RF technology startup at UC Berkeley SkyDeck.
+
+### Has Dr. Tal Lavian testified in PTAB proceedings?
+
+Yes. Dr. Lavian has extensive experience before the USPTO Patent Trial and Appeal Board (PTAB), including Inter Partes Reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex Parte Re-examinations, and PTO Interferences. His PTAB experience spans the telecommunications, networking, VoIP, mobile wireless, and internet technology areas.
+
+### What companies has Dr. Tal Lavian provided expert services in cases involving?
+
+Dr. Lavian has been retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks (HPE), Huawei, Arista Networks, Motorola, HP, LG, Avaya, Netflix, LinkedIn, Ericsson, Sprint, ZTE, and others. He has been engaged by over 50 law firms including Fish & Richardson, Kirkland & Ellis, Cooley, Finnegan Henderson, Gibson Dunn, Irell & Manella, Perkins Coie, and others.
+
+### Is Dr. Tal Lavian available for new expert witness engagements?
+
+Yes. As of 2026, Dr. Tal Lavian is available for new expert witness engagements. He can be reached at tlavian@telecommnet.com or +1 (408) 209-9112. He reviews potential engagements for conflicts before agreeing to serve.
 
 ## Contact Information
 

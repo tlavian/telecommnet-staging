@@ -21,7 +21,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 - 25+ peer-reviewed scientific publications
 - 35+ years of industry and academic experience
 - Senior Member of IEEE; IEEE-WCET Certified
-- Active Member of ACM (SIGCOM, SIGWEB)
+- Active Member of ACM (SIGCOMM, SIGWEB)
 - Industry Fellow and Lecturer at UC Berkeley SCET
 - Technical Co-Chair for IEEE Hot Interconnects at Stanford University
 - Principal Investigator for three DARPA/AFRL projects at Nortel Networks

@@ -619,8 +619,8 @@ const telecomEWSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomEWTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
-const telecomEWDescription = "Telecommunications expert witness -- Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, LTE, 5G, cellular. Fish & Richardson, Kirkland & Ellis, Gibson Dunn. PTAB, ITC & federal court.";
+const telecomEWTitle = "Telecommunications Expert Witness — 90+ Cases | Dr. Tal Lavian";
+const telecomEWDescription = "Telecommunications expert witness — Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, LTE, 5G. PTAB, ITC & federal court testimony.";
 
 export {
   telecomSchema, telecomTitle, telecomDescription,
