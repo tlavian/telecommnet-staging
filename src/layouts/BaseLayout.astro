@@ -552,7 +552,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
         </li>
         <li><a href="/contact/" class={currentPath.includes('/contact') ? 'active' : ''}>Contact</a></li>
       </ul>
-      <a href="/" class="logo-link">
+      <a href="/" class="logo-link" aria-label="Telecommunications Expert Witness — TelecommNet">
         <span class="logo-text">Telecomm<span class="accent">|N</span>et</span>
       </a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
@@ -574,7 +574,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     <div class="footer-logo-bar">
       <div class="container">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
-          <span class="logo-text" style="color:#fff;font-size:22px;">Telecomm<span class="accent">|N</span>et</span>
+          <a href="/" aria-label="Telecommunications Expert Witness — TelecommNet" style="text-decoration:none;color:inherit;"><span class="logo-text" style="color:#fff;font-size:22px;">Telecomm<span class="accent">|N</span>et</span></a>
           <span class="tagline">Network Communications, Telecommunications, Internet Protocols (TCP/IP), and Computer Networks</span>
         </div>
         <div class="footer-social">

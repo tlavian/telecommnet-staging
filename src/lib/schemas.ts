@@ -179,7 +179,7 @@ export function breadcrumbs(items: { name: string; url: string }[]) {
   return {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL + '/' },
+      { '@type': 'ListItem', position: 1, name: 'Telecommunications Expert Witness', item: BASE_URL + '/' },
       ...items.map((crumb, i) => ({
         '@type': 'ListItem',
         position: i + 2,
