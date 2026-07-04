@@ -112,9 +112,6 @@ export const PERSON_ENTITY = {
     { '@type': 'Thing', name: 'Patent infringement', sameAs: 'https://en.wikipedia.org/wiki/Patent_infringement' },
     { '@type': 'Thing', name: 'Expert witness', sameAs: 'https://en.wikipedia.org/wiki/Expert_witness' },
     { '@type': 'Thing', name: 'Public switched telephone network', sameAs: 'https://en.wikipedia.org/wiki/Public_switched_telephone_network' },
-    { '@type': 'Thing', name: 'Cellular network', sameAs: 'https://en.wikipedia.org/wiki/Cellular_network' },
-    { '@type': 'Thing', name: '5G', sameAs: 'https://en.wikipedia.org/wiki/5G' },
-    { '@type': 'Thing', name: 'LTE (telecommunication)', sameAs: 'https://en.wikipedia.org/wiki/LTE_(telecommunication)' },
     { '@type': 'Thing', name: 'Patent Trial and Appeal Board', sameAs: 'https://en.wikipedia.org/wiki/Patent_Trial_and_Appeal_Board' },
     { '@type': 'Thing', name: 'Inter partes review', sameAs: 'https://en.wikipedia.org/wiki/Inter_partes_review' },
     { '@type': 'Thing', name: 'Multiprotocol Label Switching', sameAs: 'https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching' },
@@ -160,6 +157,7 @@ export const ORG_ENTITY = {
   '@type': 'Organization',
   '@id': ORG_ID,
   name: 'TelecommNet Engineering, Inc.',
+  description: 'TelecommNet Engineering, Inc. provides telecommunications expert witness and consulting services for patent litigation, specializing in telecommunications, network communications, Internet protocols, and VoIP.',
   url: BASE_URL,
   founder: PERSON_REF,
   logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
@@ -201,7 +199,10 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
-        PERSON_ENTITY,
+        {
+          ...PERSON_ENTITY,
+          mainEntityOfPage: BASE_URL + '/',
+        },
         ORG_ENTITY,
         {
           '@type': ['ProfessionalService', 'LegalService'],
@@ -210,6 +211,7 @@ export const buildSchema = {
           description:
             'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and other major technology companies.',
           founder: PERSON_REF,
+          provider: PERSON_REF,
           url: BASE_URL,
           telephone: '+1-408-209-9112',
           logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
@@ -253,11 +255,11 @@ export const buildSchema = {
           url: BASE_URL,
           publisher: PERSON_REF,
           datePublished: '2022-05-01T00:00:00+00:00',
-          dateModified: '2026-03-18T00:00:00+00:00',
+          dateModified: '2026-07-03T00:00:00+00:00',
           inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.hero-banner h1', '.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+            cssSelector: ['.hero-content h1', '.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
           },
         },
         {
