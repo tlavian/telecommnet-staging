@@ -93,7 +93,7 @@ export const siteMapDescription =
 export const contactSchema = buildSchema.contact();
 
 export const contactTitle =
-  "Contact Dr. Tal Lavian | Telecom Expert Witness";
+  "Contact Dr. Tal Lavian — Telecommunications Expert Witness";
 export const contactDescription =
   "Contact Dr. Tal Lavian for telecommunications and network communications expert witness services. Phone: +1 (408) 209-9112. Based in Encino, California.";
 
