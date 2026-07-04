@@ -1,4 +1,5 @@
 /*
+  Link: <https://telecommnet.com/llms.txt>; rel="llmstxt"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
@@ -34,7 +35,6 @@
 # Legacy CV URL — kept for backward compatibility (redirected via _redirects)
 /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf
   Cache-Control: no-store, no-cache, must-revalidate
-  X-Robots-Tag: index, follow
 
 # Block all other PDFs from indexing
 /*.pdf

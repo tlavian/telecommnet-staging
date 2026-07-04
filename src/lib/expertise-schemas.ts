@@ -1,14 +1,14 @@
-﻿import { buildSchema } from "./schemas";
+import { buildSchema } from "./schemas";
 /**
  * ============================================================
- * Phase 2 Schema â€” All 12 Expertise Sub-Pages
+ * Phase 2 Schema — All 12 Expertise Sub-Pages
  * 
  * For each page, copy the `schema` const and the BaseLayout
  * title/description into the existing page's frontmatter.
  * ============================================================
  */
 
-// â”€â”€â”€ 1. TELECOMMUNICATIONS EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 1. TELECOMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/pstn-voip-cellular-expert-witness/index.astro
 
 const telecomSchema = buildSchema.expertisePage({
@@ -49,7 +49,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
-      a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies â€” PSTN, VoIP, cellular systems, signaling protocols, and telecom standards (ITU-T, 3GPP). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
+      a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies — PSTN, VoIP, cellular systems, signaling protocols, and telecom standards (ITU-T, 3GPP). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
     },
     {
       q: 'How much does a telecommunications expert witness cost?',
@@ -58,10 +58,10 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "PSTN, VoIP & Cellular Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const telecomDescription = "PSTN, VoIP & cellular expert witness â€” 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH. Ph.D. UC Berkeley.";
+const telecomTitle = "PSTN, VoIP & Cellular Expert Witness — Dr. Tal Lavian, Ph.D.";
+const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH. Ph.D. UC Berkeley.";
 
-// â”€â”€â”€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
 
 const networkCommsSchema = buildSchema.expertisePage({
@@ -102,15 +102,15 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does a network communications expert witness help in patent claim construction?',
-      a: 'A network communications expert witness helps courts interpret technical patent terms â€” such as "packet header," "routing table," "protocol stack," and "network interface" â€” by providing definitions grounded in industry standards (IEEE, IETF RFCs) and the OSI model. Dr. Lavian\'s 120+ patents in networking give him firsthand insight into how these terms are used by inventors.',
+      a: 'A network communications expert witness helps courts interpret technical patent terms — such as "packet header," "routing table," "protocol stack," and "network interface" — by providing definitions grounded in industry standards (IEEE, IETF RFCs) and the OSI model. Dr. Lavian\'s 120+ patents in networking give him firsthand insight into how these terms are used by inventors.',
     },
   ],
 });
 
-const networkCommsTitle = "Network Communications Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const networkCommsDescription = "Network communications expert witness â€” 120+ patents, 90+ cases. TCP/IP, routing, LAN/WAN. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkCommsTitle = "Network Communications Expert Witness — Dr. Tal Lavian, Ph.D.";
+const networkCommsDescription = "Network communications expert witness — 120+ patents, 90+ cases. TCP/IP, routing, LAN/WAN. Ph.D. UC Berkeley. PTAB & ITC.";
 
-// â”€â”€â”€ 3. INTERNET EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 3. INTERNET EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/internet-expert-witness/index.astro
 
 const internetSchema = buildSchema.expertisePage({
@@ -151,15 +151,15 @@ const internetSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does an Internet technologies expert witness analyze protocol-level patent claims?',
-      a: 'An Internet technologies expert witness analyzes patent claims by mapping claim elements to specific protocol behaviors â€” such as TCP handshake sequences, HTTP request/response flows, DNS resolution steps, or BGP route advertisements. Dr. Lavian\'s 120+ patents and academic research in TCP/IP enable him to provide protocol-level infringement and validity analyses.',
+      a: 'An Internet technologies expert witness analyzes patent claims by mapping claim elements to specific protocol behaviors — such as TCP handshake sequences, HTTP request/response flows, DNS resolution steps, or BGP route advertisements. Dr. Lavian\'s 120+ patents and academic research in TCP/IP enable him to provide protocol-level infringement and validity analyses.',
     },
   ],
 });
 
-const internetTitle = "Internet Expert Witness â€” Dr. Tal Lavian, Ph.D. UC Berkeley";
-const internetDescription = "Internet & TCP/IP expert witness â€” 120+ patents, 90+ cases. HTTP, DNS, BGP, web technologies. Ph.D. UC Berkeley. PTAB & ITC.";
+const internetTitle = "Internet Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
+const internetDescription = "Internet & TCP/IP expert witness — 120+ patents, 90+ cases. HTTP, DNS, BGP, web technologies. Ph.D. UC Berkeley. PTAB & ITC.";
 
-// â”€â”€â”€ 4. VOIP EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
 
 const voipSchema = buildSchema.expertisePage({
@@ -172,7 +172,7 @@ const voipSchema = buildSchema.expertisePage({
   faqs: [
     {
       q: 'What VoIP protocols and technologies is Dr. Lavian expert in?',
-      a: 'Dr. Lavian provides expert analysis on SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), H.323, SRTP, voice codecs, unified communications platforms, and IP-PBX systems â€” all common technology areas in VoIP patent disputes.',
+      a: 'Dr. Lavian provides expert analysis on SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), H.323, SRTP, voice codecs, unified communications platforms, and IP-PBX systems — all common technology areas in VoIP patent disputes.',
     },
     {
       q: 'Can Dr. Lavian serve as a VoIP expert witness in PTAB IPR proceedings?',
@@ -192,15 +192,15 @@ const voipSchema = buildSchema.expertisePage({
     },
     {
       q: 'Can Dr. Lavian testify on unified communications and WebRTC patents?',
-      a: 'Yes. Dr. Lavian\'s expertise extends beyond traditional VoIP to include unified communications platforms, WebRTC browser-based communications, SIP trunking, video conferencing integration, and cloud-based communications services â€” all common subjects in modern VoIP patent disputes.',
+      a: 'Yes. Dr. Lavian\'s expertise extends beyond traditional VoIP to include unified communications platforms, WebRTC browser-based communications, SIP trunking, video conferencing integration, and cloud-based communications services — all common subjects in modern VoIP patent disputes.',
     },
   ],
 });
 
-const voipTitle = "VoIP Expert Witness â€” Dr. Tal Lavian, Ph.D. UC Berkeley";
-const voipDescription = "VoIP expert witness â€” 120+ patents, 90+ cases. SIP, RTP, H.323, WebRTC. Ph.D. UC Berkeley. PTAB, ITC & trial testimony.";
+const voipTitle = "VoIP Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
+const voipDescription = "VoIP expert witness — 120+ patents, 90+ cases. SIP, RTP, H.323, WebRTC. Ph.D. UC Berkeley. PTAB, ITC & trial testimony.";
 
-// â”€â”€â”€ 5. NETWORK SECURITY EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 5. NETWORK SECURITY EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
 
 const networkSecuritySchema = buildSchema.expertisePage({
@@ -238,10 +238,10 @@ const networkSecuritySchema = buildSchema.expertisePage({
   ],
 });
 
-const networkSecurityTitle = "Network Security Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const networkSecurityDescription = "Network security expert witness â€” 120+ patents, 90+ cases. Encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Ph.D. UC Berkeley.";
+const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian, Ph.D.";
+const networkSecurityDescription = "Network security expert witness — 120+ patents, 90+ cases. Encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Ph.D. UC Berkeley.";
 
-// â”€â”€â”€ 6. STREAMING MEDIA EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 6. STREAMING MEDIA EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
 
 const streamingSchema = buildSchema.expertisePage({
@@ -279,10 +279,10 @@ const streamingSchema = buildSchema.expertisePage({
   ],
 });
 
-const streamingTitle = "Streaming Media Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const streamingDescription = "Streaming media expert witness â€” 120+ patents, 90+ cases. Video streaming, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley.";
+const streamingTitle = "Streaming Media Expert Witness — Dr. Tal Lavian, Ph.D.";
+const streamingDescription = "Streaming media expert witness — 120+ patents, 90+ cases. Video streaming, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley.";
 
-// â”€â”€â”€ 7. COMPUTER NETWORKING EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 7. COMPUTER NETWORKING EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/computer-networking-expert-witness/index.astro
 
 const computerNetworkingSchema = buildSchema.expertisePage({
@@ -323,15 +323,15 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does a computer networking expert witness explain technical concepts to a jury?',
-      a: 'An effective computer networking expert witness translates complex networking concepts â€” like packet switching, routing algorithms, and protocol handshakes â€” into clear, relatable explanations for judges and juries. Dr. Lavian\'s nearly 20 years of teaching at UC Berkeley and experience in 90+ cases equip him to present network technology concepts accessibly and persuasively.',
+      a: 'An effective computer networking expert witness translates complex networking concepts — like packet switching, routing algorithms, and protocol handshakes — into clear, relatable explanations for judges and juries. Dr. Lavian\'s nearly 20 years of teaching at UC Berkeley and experience in 90+ cases equip him to present network technology concepts accessibly and persuasively.',
     },
   ],
 });
 
-const computerNetworkingTitle = "Computer Networking Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const computerNetworkingDescription = "Computer networking expert witness â€” 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley.";
+const computerNetworkingTitle = "Computer Networking Expert Witness — Dr. Tal Lavian, Ph.D.";
+const computerNetworkingDescription = "Computer networking expert witness — 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley.";
 
-// â”€â”€â”€ 8. DATA COMMUNICATIONS EXPERT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 8. DATA COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/data-communications-expert-witness/index.astro
 
 const dataCommsSchema = buildSchema.expertisePage({
@@ -364,7 +364,7 @@ const dataCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'Can Dr. Lavian testify on enterprise software and API communication patents?',
-      a: 'Yes. Dr. Lavian\'s expertise extends to enterprise software architectures, RESTful API communications, microservices patterns, message queuing systems, and data serialization protocols â€” all common subjects in modern data communications patent litigation.',
+      a: 'Yes. Dr. Lavian\'s expertise extends to enterprise software architectures, RESTful API communications, microservices patterns, message queuing systems, and data serialization protocols — all common subjects in modern data communications patent litigation.',
     },
     {
       q: 'What is a data communications expert witness and when is one needed?',
@@ -377,10 +377,10 @@ const dataCommsSchema = buildSchema.expertisePage({
   ],
 });
 
-const dataCommsTitle = "Data Communications Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const dataCommsDescription = "Data communications expert witness â€” 120+ patents, 90+ cases. Cloud computing, data centers, protocol stacks. Ph.D. UC Berkeley.";
+const dataCommsTitle = "Data Communications Expert Witness — Dr. Tal Lavian, Ph.D.";
+const dataCommsDescription = "Data communications expert witness — 120+ patents, 90+ cases. Cloud computing, data centers, protocol stacks. Ph.D. UC Berkeley.";
 
-// â”€â”€â”€ 9. MOBILE WIRELESS EXPERT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 9. MOBILE WIRELESS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
 
 const mobileWirelessSchema = buildSchema.expertisePage({
@@ -418,10 +418,10 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   ],
 });
 
-const mobileWirelessTitle = "Wireless & Mobile Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const mobileWirelessDescription = "Wireless & mobile expert witness â€” 120+ patents, 90+ cases. Wi-Fi, Bluetooth, 5G, cellular, WLAN. Ph.D. UC Berkeley. PTAB & ITC.";
+const mobileWirelessTitle = "Wireless & Mobile Expert Witness — Dr. Tal Lavian, Ph.D.";
+const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 90+ cases. Wi-Fi, Bluetooth, 5G, cellular, WLAN. Ph.D. UC Berkeley. PTAB & ITC.";
 
-// â”€â”€â”€ 10. ROUTING & SWITCHING EXPERT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 10. ROUTING & SWITCHING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/routing-switching-expert-witness/index.astro
 
 const routingSwitchingSchema = buildSchema.expertisePage({
@@ -459,10 +459,10 @@ const routingSwitchingSchema = buildSchema.expertisePage({
   ],
 });
 
-const routingSwitchingTitle = "Routing & Switching Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const routingSwitchingDescription = "Routing & switching expert witness â€” 120+ patents, 90+ cases. BGP, OSPF, MPLS, SDN. Ph.D. UC Berkeley. PTAB, ITC & federal court.";
+const routingSwitchingTitle = "Routing & Switching Expert Witness — Dr. Tal Lavian, Ph.D.";
+const routingSwitchingDescription = "Routing & switching expert witness — 120+ patents, 90+ cases. BGP, OSPF, MPLS, SDN. Ph.D. UC Berkeley. PTAB, ITC & federal court.";
 
-// â”€â”€â”€ 11. NETWORK MANAGEMENT EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 11. NETWORK MANAGEMENT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-management-expert-witness/index.astro
 
 const networkMgmtSchema = buildSchema.expertisePage({
@@ -491,7 +491,7 @@ const networkMgmtSchema = buildSchema.expertisePage({
     },
     {
       q: 'Can Dr. Lavian testify on IT operations management (ITOM) and AIOps patents?',
-      a: 'Yes. Dr. Lavian\'s network management expertise extends to modern IT operations management platforms, automated network orchestration, AIOps event correlation, and infrastructure monitoring systems â€” all increasingly common subjects in patent litigation.',
+      a: 'Yes. Dr. Lavian\'s network management expertise extends to modern IT operations management platforms, automated network orchestration, AIOps event correlation, and infrastructure monitoring systems — all increasingly common subjects in patent litigation.',
     },
     {
       q: 'What is the role of a network management expert witness in patent litigation?',
@@ -500,10 +500,10 @@ const networkMgmtSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkMgmtTitle = "Network Management Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const networkMgmtDescription = "Network management expert witness â€” 120+ patents, 90+ cases. SNMP, OSS/BSS, monitoring. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkMgmtTitle = "Network Management Expert Witness — Dr. Tal Lavian, Ph.D.";
+const networkMgmtDescription = "Network management expert witness — 120+ patents, 90+ cases. SNMP, OSS/BSS, monitoring. Ph.D. UC Berkeley. PTAB & ITC.";
 
-// â”€â”€â”€ 12. NETWORKING EXPERT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 12. NETWORKING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/networking-expert-witness/index.astro
 
 const networkingExpertSchema = buildSchema.expertisePage({
@@ -532,7 +532,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'Why hire a generalist networking expert vs. a specialist for patent cases?',
-      a: 'Many patent cases span multiple networking domains â€” a VoIP patent may involve network security, routing, and QoS. Dr. Lavian\'s expertise across networking disciplines allows him to address cross-domain patent claims. His 120+ patents and Ph.D. from UC Berkeley span the full networking stack.',
+      a: 'Many patent cases span multiple networking domains — a VoIP patent may involve network security, routing, and QoS. Dr. Lavian\'s expertise across networking disciplines allows him to address cross-domain patent claims. His 120+ patents and Ph.D. from UC Berkeley span the full networking stack.',
     },
     {
       q: 'What companies has Dr. Lavian served as a networking expert witness for?',
@@ -541,10 +541,10 @@ const networkingExpertSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkingExpertTitle = "Networking Expert Witness â€” Dr. Tal Lavian, Ph.D. UC Berkeley";
-const networkingExpertDescription = "Networking expert witness â€” 120+ patents, 90+ cases. Enterprise networking, protocol architecture, network design. Ph.D. UC Berkeley.";
+const networkingExpertTitle = "Networking Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
+const networkingExpertDescription = "Networking expert witness — 120+ patents, 90+ cases. Enterprise networking, protocol architecture, network design. Ph.D. UC Berkeley.";
 
-// â”€â”€â”€ 13. MESSAGING AND CHAT EXPERT WITNESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
 
 const messagingChatSchema = buildSchema.expertisePage({
@@ -573,7 +573,7 @@ const messagingChatSchema = buildSchema.expertisePage({
     },
     {
       q: 'Can Dr. Lavian testify on enterprise collaboration and team messaging patents?',
-      a: 'Yes. Dr. Lavian\'s messaging expertise extends to enterprise collaboration platforms, team chat architectures, channel-based messaging systems, file sharing integrations, presence and status protocols, and API-based messaging bots â€” all common subjects in modern patent litigation.',
+      a: 'Yes. Dr. Lavian\'s messaging expertise extends to enterprise collaboration platforms, team chat architectures, channel-based messaging systems, file sharing integrations, presence and status protocols, and API-based messaging bots — all common subjects in modern patent litigation.',
     },
     {
       q: 'What is the role of a messaging expert witness in patent litigation?',
@@ -582,8 +582,45 @@ const messagingChatSchema = buildSchema.expertisePage({
   ],
 });
 
-const messagingChatTitle = "Messaging & Chat Expert Witness â€” Dr. Tal Lavian, Ph.D.";
-const messagingChatDescription = "Messaging & chat expert witness â€” 120+ patents, 90+ cases. SMS, MMS, XMPP, push notifications. Ph.D. UC Berkeley. PTAB & ITC.";
+const messagingChatTitle = "Messaging & Chat Expert Witness — Dr. Tal Lavian, Ph.D.";
+const messagingChatDescription = "Messaging & chat expert witness — 120+ patents, 90+ cases. SMS, MMS, XMPP, push notifications. Ph.D. UC Berkeley. PTAB & ITC.";
+
+// --- 14. TELECOMMUNICATIONS EXPERT WITNESS (primary keyword landing page) ---
+// File: src/pages/communications-expert-witness/telecommunications-expert-witness/index.astro
+
+const telecomEWSchema = buildSchema.expertisePage({
+  name: 'Telecommunications Expert Witness',
+  slug: 'telecommunications-expert-witness',
+  description: 'Telecommunications expert witness for patent litigation. PSTN, VoIP, cellular, LTE, 5G. Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Telecommunications Expert Witness',
+  keywords: ['telecommunications expert witness', 'telecom expert witness', 'PSTN expert witness', 'VoIP expert witness', 'cellular expert witness', 'LTE expert witness', '5G expert witness', 'PTAB telecommunications expert', 'ITC telecom expert', 'telecom patent litigation'],
+  breadcrumbLabel: 'Telecommunications',
+  faqs: [
+    {
+      q: 'What makes Dr. Lavian qualified as a telecommunications expert witness?',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as Principal Scientist at Nortel Networks, holds 120+ issued and filed patents in telecommunications and networking, has authored 25+ peer-reviewed publications, and has provided expert testimony in numerous cases before federal courts, PTAB, and the ITC.',
+    },
+    {
+      q: 'What telecommunications technologies can Dr. Lavian address as an expert witness?',
+      a: 'Dr. Lavian addresses PSTN architecture, VoIP (SIP, H.323, RTP, SRTP), cellular systems (GSM, CDMA, LTE, 5G NR), SONET/SDH optical transmission, SS7 signaling, network switching and routing, Internet protocols (TCP/IP, BGP, OSPF, MPLS), and wireless communications standards in patent litigation contexts.',
+    },
+    {
+      q: 'In which courts has Dr. Lavian testified as a telecommunications expert witness?',
+      a: 'Dr. Lavian has provided telecommunications expert witness testimony in U.S. federal district courts, the USPTO Patent Trial and Appeal Board (PTAB) in IPR, CBM, and PGR proceedings, the International Trade Commission (ITC) Section 337 investigations, the Canadian Federal Court, and international arbitration proceedings.',
+    },
+    {
+      q: 'What types of telecommunications patent cases has Dr. Lavian handled?',
+      a: 'Dr. Lavian has handled telecommunications patent cases involving PSTN switching and signaling, VoIP protocol implementations, cellular network architectures, wireless communications standards including SEP/FRAND disputes, network management systems, and Internet infrastructure technologies.',
+    },
+    {
+      q: 'What law firms retain Dr. Lavian as a telecommunications expert witness?',
+      a: 'Dr. Lavian has been retained by law firms including Fish & Richardson, Kirkland & Ellis, Cooley, Finnegan Henderson, Gibson Dunn, Irell & Manella, Skadden Arps, Perkins Coie, Baker Botts, and many others in telecommunications patent matters.',
+    },
+  ],
+});
+
+const telecomEWTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
+const telecomEWDescription = "Telecommunications expert witness -- Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, LTE, 5G, cellular. Fish & Richardson, Kirkland & Ellis, Gibson Dunn. PTAB, ITC & federal court.";
 
 export {
   telecomSchema, telecomTitle, telecomDescription,
@@ -599,5 +636,6 @@ export {
   networkMgmtSchema, networkMgmtTitle, networkMgmtDescription,
   networkingExpertSchema, networkingExpertTitle, networkingExpertDescription,
   messagingChatSchema, messagingChatTitle, messagingChatDescription,
+  telecomEWSchema, telecomEWTitle, telecomEWDescription,
 };
 

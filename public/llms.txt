@@ -5,6 +5,7 @@
 - Website: [https://telecommnet.com](https://telecommnet.com)
 - Phone: +1 (408) 209-9112
 - Email: tlavian@telecommnet.com
+- Location: Encino, California, USA
 - Extended version: [llms-full.txt](https://telecommnet.com/llms-full.txt)
 
 ## About Dr. Tal Lavian

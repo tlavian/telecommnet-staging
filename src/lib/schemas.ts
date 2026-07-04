@@ -64,6 +64,19 @@ export const PERSON_ENTITY = {
       name: 'IEEE Senior Member',
       recognizedBy: { '@type': 'Organization', name: 'IEEE' },
     },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'degree',
+      name: 'M.Sc. in Electrical Engineering',
+      educationalLevel: 'Masters',
+      recognizedBy: { '@type': 'Organization', name: 'Tel Aviv University', url: 'https://www.tau.ac.il' },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'degree',
+      name: 'B.Sc. in Mathematics and Computer Science',
+      educationalLevel: 'Bachelors',
+    },
   ],
   hasOccupation: {
     '@type': 'Occupation',
@@ -104,7 +117,7 @@ export const PERSON_ENTITY = {
     { '@type': 'Thing', name: 'LTE (telecommunication)', sameAs: 'https://en.wikipedia.org/wiki/LTE_(telecommunication)' },
     { '@type': 'Thing', name: 'Patent Trial and Appeal Board', sameAs: 'https://en.wikipedia.org/wiki/Patent_Trial_and_Appeal_Board' },
     { '@type': 'Thing', name: 'Inter partes review', sameAs: 'https://en.wikipedia.org/wiki/Inter_partes_review' },
-    { '@type': 'Thing', name: 'Software-defined networking', sameAs: 'https://en.wikipedia.org/wiki/Software-defined_networking' },
+    { '@type': 'Thing', name: 'Multiprotocol Label Switching', sameAs: 'https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching' },
     { '@type': 'Thing', name: 'SONET', sameAs: 'https://en.wikipedia.org/wiki/Synchronous_optical_networking' },
     { '@type': 'Thing', name: 'Signalling System No. 7', sameAs: 'https://en.wikipedia.org/wiki/Signalling_System_No._7' },
     { '@type': 'Thing', name: 'Packet switching', sameAs: 'https://en.wikipedia.org/wiki/Packet_switching' },
@@ -130,6 +143,9 @@ export const PERSON_ENTITY = {
   memberOf: [
     { '@type': 'Organization', name: 'IEEE', url: 'https://www.ieee.org' },
     { '@type': 'Organization', name: 'ACM', url: 'https://www.acm.org' },
+    { '@type': 'Organization', name: 'IEEE Communications, Networks & Services Committee (IEEE-CNSV)', url: 'https://californiaconsultants.org/members/tal-lavian/' },
+    { '@type': 'Organization', name: 'ACM SIGCOMM', url: 'https://www.acm.org/special-interest-groups/sigs/sigcomm' },
+    { '@type': 'Organization', name: 'ACM SIGWEB', url: 'https://www.sigweb.org/' },
   ],
   award: [
     'Nortel Networks Top Talent Award',

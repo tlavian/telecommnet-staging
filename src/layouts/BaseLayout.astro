@@ -146,7 +146,6 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Dr. Tal Lavian — Telecommunications Expert Witness" />
-  <meta property="article:modified_time" content="2026-06-02T00:00:00+00:00" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@tlavian" />
@@ -154,6 +153,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={resolvedOgImage} />
+  <meta name="twitter:image:alt" content="Dr. Tal Lavian — Telecommunications Expert Witness" />
   <!-- Self-hosted fonts: preload both above-fold fonts -->
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
@@ -376,6 +376,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .cta-button { display: inline-block; padding: 14px 32px; background: var(--color-gold); color: var(--color-navy); font-family: var(--font-body); font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: all var(--transition-medium); border: 2px solid var(--color-gold); letter-spacing: 0.02em; cursor: pointer; }
     .cta-button:hover { background: var(--color-gold-hover); border-color: var(--color-gold-hover); color: #fff; text-decoration: none; transform: translateY(-1px); box-shadow: 0 4px 15px rgba(201, 168, 76, 0.35); }
     .hero-cta { margin-top: 28px; position: relative; z-index: 1; display: inline-block; padding: 16px 38px; font-size: 17px; }
+    .hero-cta-row { margin-top: 28px; position: relative; z-index: 1; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .mobile-contact-bar { display: none; }
     .cta-button-outline { display: inline-block; padding: 14px 32px; background: transparent; color: #fff; font-family: var(--font-body); font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: all var(--transition-medium); border: 2px solid rgba(255,255,255,0.85); letter-spacing: 0.02em; }
     .cta-button-outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; color: #fff; text-decoration: none; }
 
@@ -473,6 +475,10 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       .hero-stat { min-width: 80px; }
       .social-icon { width: 44px; height: 44px; }
       .dropdown a { min-height: 44px; display: flex; align-items: center; }
+      .hero-cta-row { gap: 12px; }
+      .mobile-contact-bar { display: flex; align-items: center; justify-content: center; background: var(--color-navy); padding: 10px 20px; gap: 20px; flex-wrap: wrap; }
+      .mobile-contact-bar a { color: #fff; text-decoration: none; font-size: 15px; font-weight: 600; }
+      .mobile-contact-bar .mobile-cta-btn { background: var(--color-gold); color: var(--color-navy); padding: 8px 18px; border-radius: 4px; font-size: 14px; font-weight: 700; }
     }
   </style>
 </head>
@@ -527,6 +533,10 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
             <a href="/communications-expert-witness/voice-over-ip-voip-expert/">Voice over IP (VoIP)</a>
             <a href="/communications-expert-witness/mobile-wireless-expert-witness/">Mobile Wireless</a>
             <a href="/communications-expert-witness/network-management-expert-witness/">Network Management</a>
+            <a href="/communications-expert-witness/routing-switching-expert-witness/">Routing &amp; Switching</a>
+            <a href="/communications-expert-witness/network-security-expert-witness/">Network Security</a>
+            <a href="/communications-expert-witness/streaming-media-expert-witness/">Streaming Media</a>
+            <a href="/communications-expert-witness/networking-expert-witness/">Networking Expert</a>
           </div>
         </li>
         <li class="has-dropdown">
@@ -548,6 +558,12 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
     </div>
   </nav>
+
+  <!-- Mobile contact bar — visible only on mobile (top bar is hidden at 768px) -->
+  <div class="mobile-contact-bar" aria-label="Contact information">
+    <a href="tel:+14082099112">+1 (408) 209-9112</a>
+    <a href="/contact/" class="mobile-cta-btn">Get in Touch</a>
+  </div>
 
   <main id="main-content">
     <slot />
