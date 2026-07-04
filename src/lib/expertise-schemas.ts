@@ -197,8 +197,8 @@ const voipSchema = buildSchema.expertisePage({
   ],
 });
 
-const voipTitle = "VoIP Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
-const voipDescription = "VoIP expert witness — 120+ patents, 90+ cases. SIP, RTP, H.323, WebRTC. Ph.D. UC Berkeley. PTAB, ITC & trial testimony.";
+const voipTitle = "VoIP Expert Witness for Patent Litigation | Dr. Tal Lavian";
+const voipDescription = "VoIP expert witness for SIP, RTP, H.323, WebRTC patent disputes. 90+ cases, 120+ patents. Ph.D. UC Berkeley. Federal court, PTAB & ITC testimony.";
 
 // â"€â"€â"€ 5. NETWORK SECURITY EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
