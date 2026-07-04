@@ -295,7 +295,39 @@ export const buildSchema = {
               name: 'What courts and tribunals has Dr. Lavian testified in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB), the International Trade Commission (ITC), the Canadian Federal Court, and a court in Asia.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts including the District of Delaware, the Central District of California, the Northern District of California, the Eastern District of Texas, and the Western District of Texas; the USPTO Patent Trial and Appeal Board (PTAB); the International Trade Commission (ITC); the Canadian Federal Court; and a court in Malaysia. He has provided live testimony at trial before judges and juries in multiple federal court proceedings.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is a telecommunications expert witness?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'A telecommunications expert witness is a qualified technical professional retained by attorneys to provide independent technical opinions in patent litigation, ITC investigations, and other legal proceedings involving telecommunications technologies — including VoIP, wireless networks, internet protocols, and network communications systems. They analyze patent claims, prepare technical reports, provide deposition testimony, and — when cases proceed to trial — provide live testimony before judges and juries.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How many law firms has Dr. Lavian been retained by?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has been retained by over 50 law firms and corporate clients in telecommunications patent matters, including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Cooley, and Finnegan, among many others. He has also been retained in cases involving Apple, Google, Microsoft, Samsung, Cisco, AT&T, Verizon, T-Mobile, and other major technology companies.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How many years of experience does Dr. Lavian have in telecommunications?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and over two decades as an expert witness with 90+ cases and 60+ depositions.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What PTAB and ITC proceedings has Dr. Lavian participated in?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Dr. Lavian has served as a technical expert in USPTO Patent Trial and Appeal Board (PTAB) proceedings including inter partes review (IPR), post-grant review (PGR), and covered business method (CBM) proceedings; International Trade Commission (ITC) Section 337 investigations involving telecommunications technologies; U.S. federal district court patent infringement trials; and international arbitration proceedings, including the Canadian Federal Court.',
               },
             },
           ],
