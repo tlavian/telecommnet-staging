@@ -606,7 +606,7 @@ const telecomEWSchema = buildSchema.expertisePage({
     },
     {
       q: 'What types of telecommunications patent cases has Dr. Lavian handled?',
-      a: 'Dr. Lavian has handled telecommunications patent cases involving PSTN switching and signaling, VoIP protocol implementations, cellular network architectures, wireless communications standards including SEP/FRAND disputes, network management systems, and Internet infrastructure technologies.',
+      a: 'Dr. Lavian has handled telecommunications patent cases involving PSTN switching and signaling, VoIP protocol implementations, wireless communications standards including SEP/FRAND disputes, network management systems, and Internet infrastructure technologies.',
     },
     {
       q: 'What law firms retain Dr. Lavian as a telecommunications expert witness?',
