@@ -156,8 +156,8 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
-const internetDescription = "Internet & TCP/IP expert witness — 120+ patents, 90+ cases. HTTP, DNS, BGP, web technologies. Ph.D. UC Berkeley. PTAB & ITC.";
+const internetTitle = "Internet Expert Witness | HTTP, DNS, TCP/IP Protocols | Dr. Tal Lavian";
+const internetDescription = "Internet protocols expert witness — HTTP, DNS, TCP/IP, BGP. Ph.D. UC Berkeley, 90+ cases, 120+ patents. Federal court, PTAB & ITC testimony.";
 
 // â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
@@ -197,8 +197,8 @@ const voipSchema = buildSchema.expertisePage({
   ],
 });
 
-const voipTitle = "VoIP Expert Witness for Patent Litigation | Dr. Tal Lavian";
-const voipDescription = "VoIP expert witness for SIP, RTP, H.323, WebRTC patent disputes. 90+ cases, 120+ patents. Ph.D. UC Berkeley. Federal court, PTAB & ITC testimony.";
+const voipTitle = "VoIP Expert Witness — SIP, RTP, H.323 | 90+ Cases | Dr. Tal Lavian";
+const voipDescription = "VoIP patent expert witness — SIP, RTP, H.323, WebRTC. Ph.D. UC Berkeley, 90+ expert witness cases, 120+ patents. PTAB, ITC & federal court.";
 
 // â"€â"€â"€ 5. NETWORK SECURITY EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
@@ -611,6 +611,14 @@ const telecomEWSchema = buildSchema.expertisePage({
     {
       q: 'What law firms retain Dr. Lavian as a telecommunications expert witness?',
       a: 'Dr. Lavian has been retained by law firms including Fish & Richardson, Kirkland & Ellis, Cooley, Finnegan Henderson, Gibson Dunn, Irell & Manella, Skadden Arps, Perkins Coie, Baker Botts, and many others in telecommunications patent matters.',
+    },
+    {
+      q: 'How much does a telecommunications expert witness cost?',
+      a: "Telecommunications expert witness fees depend on case complexity, the scope of analysis required, and whether testimony is needed at deposition or trial. Dr. Lavian's fees reflect his Ph.D. credentials, 120+ patents, and 90+ case engagements. Contact Dr. Lavian at tlavian@telecommnet.com for a confidential case evaluation and fee schedule.",
+    },
+    {
+      q: 'How do I retain Dr. Lavian as a telecommunications expert witness?',
+      a: 'To retain Dr. Lavian, contact him at tlavian@telecommnet.com. He will review the case for potential conflicts, assess the relevant technology areas, and provide a fee estimate for the scope of work required. Dr. Lavian is available for engagements in U.S. federal courts, USPTO PTAB, the International Trade Commission (ITC), and international arbitration.',
     },
   ],
 });

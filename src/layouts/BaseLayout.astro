@@ -154,9 +154,11 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={resolvedOgImage} />
   <meta name="twitter:image:alt" content="Dr. Tal Lavian — Telecommunications Expert Witness" />
-  <!-- Self-hosted fonts: preload both above-fold fonts -->
+  <!-- Self-hosted fonts: preload above-fold font weights -->
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-500.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-900.woff2" crossorigin />
   {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" media="(min-width: 769px)" />}
   <!-- Deferred non-critical CSS (footer, print, expertise cards, client logos, etc.) -->
   <link rel="preload" as="style" href="/css/deferred.css" />
