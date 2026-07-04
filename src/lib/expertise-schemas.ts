@@ -59,7 +59,7 @@ const telecomSchema = buildSchema.expertisePage({
 });
 
 const telecomTitle = "PSTN, VoIP & Cellular Expert Witness — Dr. Tal Lavian, Ph.D.";
-const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH. Ph.D. UC Berkeley.";
+const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH. Ph.D. UC Berkeley, 35+ years.";
 
 // â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro

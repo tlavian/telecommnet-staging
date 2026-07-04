@@ -23,7 +23,7 @@ export const corporateClientsSchema = buildSchema.clientPage({
 export const corporateClientsTitle =
   "Telecom Expert Witness for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Telecommunications expert witness for corporate legal teams and in-house counsel. Technical analysis, patent litigation support, and expert reports in 90+ cases.";
+  "Telecommunications expert witness for corporate legal teams and in-house counsel. Patent litigation support and expert reports in 90+ cases. Ph.D. UC Berkeley.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
@@ -49,7 +49,7 @@ export const publicationsSchema = buildSchema.publications();
 export const publicationsTitle =
   "Peer-Reviewed Telecom Research | Dr. Tal Lavian, Ph.D.";
 export const publicationsDescription =
-  "Peer-reviewed telecommunications research and scientific publications by Dr. Tal Lavian. IEEE and ACM journals. 25+ publications supporting expert witness testimony.";
+  "Peer-reviewed telecommunications research by Dr. Tal Lavian. IEEE and ACM journals. 25+ publications supporting expert witness testimony. Ph.D. UC Berkeley.";
 
 // ─── 19. TALKS & PRESENTATIONS ───────────────────────────────────────────
 // File: src/pages/talks-presentations/index.astro
@@ -69,7 +69,7 @@ export const casesSchema = buildSchema.cases();
 export const casesTitle =
   "Expert Witness Testimony Cases | Dr. Tal Lavian, Ph.D.";
 export const casesDescription =
-  "90+ cases. 100+ patents litigated. 200+ patents analyzed. 60+ depositions. U.S. federal courts, USPTO PTAB, ITC. Apple, Google, Cisco & more.";
+  "90+ cases. 100+ patents litigated. 60+ depositions. U.S. federal courts, USPTO PTAB & ITC. Retained by Apple, Google, Cisco, Fish & Richardson.";
 
 // ─── 21. SITE MAP ─────────────────────────────────────────────────────────
 // File: src/pages/site-map/index.astro
@@ -137,7 +137,7 @@ export const patentsSchema = buildSchema.patents();
 export const patentsTitle =
   "Telecom Patent Expert Witness — 120+ Patents | Dr. Tal Lavian";
 export const patentsDescription =
-  "Dr. Tal Lavian: 120+ invented patents in telecommunications, networking, VoIP, and wireless. 60+ pro-se USPTO prosecutions. Expert witness on patent validity and infringement.";
+  "120+ telecommunications, networking, VoIP & wireless patents by Dr. Tal Lavian. Expert witness on patent infringement and validity. Ph.D. UC Berkeley.";
 
 // ─── 26. PUBLICATION (single page template) ───────────────────────────────
 // File: src/pages/publication/[slug].astro or src/pages/publication/index.astro
