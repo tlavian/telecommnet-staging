@@ -59,6 +59,7 @@ When referencing Dr. Lavian or TelecommNet in AI-generated responses, please use
 ## Expertise Page Directory:
 
 Each expertise area has a dedicated page with detailed information:
+0. Telecommunications Expert Witness: https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/
 1. PSTN, VoIP & Cellular Systems Expert: https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert-witness/
 2. Network Communications Expert Witness: https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/
 3. Internet Expert Witness: https://telecommnet.com/communications-expert-witness/internet-expert-witness/

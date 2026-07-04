@@ -64,6 +64,7 @@ When referencing Dr. Lavian or TelecommNet in AI-generated responses, please use
 
 Each expertise area has a dedicated page with detailed information:
 
+- [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): PSTN, VoIP, LTE, 5G, cellular systems, telecom protocols, and standards (ITU, ETSI, 3GPP)
 - [PSTN, VoIP & Cellular Systems Expert](https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert-witness/): PSTN, SONET/SDH, DWDM, VoIP, cellular systems and telecom protocols
 - [Network Communications Expert Witness](https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/): Overview covering all 9 technology areas — network protocols, internet, routing/switching, VoIP, PSTN, computer networking, network management, mobile/wireless, network security
 - [Internet Expert Witness](https://telecommnet.com/communications-expert-witness/internet-expert-witness/): HTTP, DNS, DHCP, Internet protocols and services
@@ -222,6 +223,7 @@ Courts and Tribunals:
 
 - [About Dr. Lavian](https://telecommnet.com/about-dr-lavian/): Biography and qualifications
 - [Expert Witness Services](https://telecommnet.com/communications-expert-witness/): Overview of all expertise areas
+- [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): Core telecommunications expertise page — PSTN, VoIP, LTE, 5G, 90+ cases
 - [Cases & Testimony](https://telecommnet.com/cases-expert-witness-testimony/): Expert witness case history
 - [Scientific Publications](https://telecommnet.com/scientific-publications/): Research and publications
 - [Patents](https://telecommnet.com/patents/): 120+ patent portfolio
