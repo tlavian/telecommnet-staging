@@ -25,7 +25,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What telecom qualifications does Dr. Lavian have?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as a Senior Researcher at Nortel Networks, has 120+ patents in telecom, 25+ peer-reviewed publications, and has testified in 70+ federal court, PTAB, and ITC proceedings.',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as Principal Scientist and Principal Architect at Nortel Networks, has 120+ patents in telecom, 25+ peer-reviewed publications, and has testified in 90+ federal court, PTAB, and ITC proceedings.',
     },
     {
       q: 'In which courts has Dr. Lavian testified as a telecommunications expert?',
@@ -139,7 +139,7 @@ const internetSchema = buildSchema.expertisePage({
     },
     {
       q: 'Why do attorneys choose Dr. Lavian as an Internet technologies expert witness?',
-      a: 'Attorneys choose Dr. Lavian because he combines deep academic credentials (Ph.D. UC Berkeley, 25+ publications on Internet protocols and TCP/IP) with practical industry experience building Internet systems and 120+ patents. His ability to explain complex Internet technologies clearly to judges and juries, backed by 70+ case track record, makes him a compelling and credible expert witness.',
+      a: 'Attorneys choose Dr. Lavian because he combines deep academic credentials (Ph.D. UC Berkeley, 25+ publications on Internet protocols and TCP/IP) with practical industry experience building Internet systems and 120+ patents. His ability to explain complex Internet technologies clearly to judges and juries, backed by 90+ case track record, makes him a compelling and credible expert witness.',
     },
     {
       q: 'Can Dr. Lavian testify on Internet of Things (IoT) patent cases?',
@@ -616,7 +616,7 @@ const telecomEWSchema = buildSchema.expertisePage({
 });
 
 const telecomEWTitle = "Telecommunications Expert Witness — 90+ Cases | Dr. Tal Lavian";
-const telecomEWDescription = "Telecommunications expert witness — Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, LTE, 5G. PTAB, ITC & federal court testimony.";
+const telecomEWDescription = "Telecommunications expert witness — Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, SS7, SONET/SDH. PTAB, ITC & federal court testimony.";
 
 export {
   telecomSchema, telecomTitle, telecomDescription,

@@ -555,7 +555,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       <a href="/" class="logo-link" aria-label="Telecommunications Expert Witness — TelecommNet">
         <span class="logo-text">Telecomm<span class="accent">|N</span>et</span>
       </a>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">☰</button>
     </div>
   </nav>
 
@@ -666,7 +666,11 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <script>
     // Hamburger menu toggle
     document.getElementById('mobileToggle')?.addEventListener('click', () => {
-      document.getElementById('navMenu')?.classList.toggle('open');
+      const menu = document.getElementById('navMenu');
+      const btn = document.getElementById('mobileToggle');
+      menu?.classList.toggle('open');
+      const expanded = menu?.classList.contains('open') ?? false;
+      btn?.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
 
     // Mobile dropdown toggle — tap to expand/collapse on touch devices

@@ -259,7 +259,7 @@ export const buildSchema = {
           inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.hero-content h1', '.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+            cssSelector: ['.hero-content h1', '.bio-main > p:first-of-type', 'h2:first-of-type'],
           },
         },
         {
