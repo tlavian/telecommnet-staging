@@ -21,9 +21,9 @@ export const corporateClientsSchema = buildSchema.clientPage({
 });
 
 export const corporateClientsTitle =
-  "Telecom Expert for Corporate Counsel | TelecommNet";
+  "Telecom Expert Witness for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Telecommunications expert witness services and technical consulting for corporate legal teams and enterprises in patent litigation and IP disputes.";
+  "Telecommunications expert witness for corporate legal teams and in-house counsel. Technical analysis, patent litigation support, and expert reports in 90+ cases.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
@@ -47,9 +47,9 @@ export const lawFirmClientsDescription =
 export const publicationsSchema = buildSchema.publications();
 
 export const publicationsTitle =
-  "Telecom Research & Publications | Dr. Tal Lavian";
+  "Peer-Reviewed Telecom Research | Dr. Tal Lavian, Ph.D.";
 export const publicationsDescription =
-  "Peer-reviewed telecommunications research and scientific publications by Dr. Tal Lavian. IEEE, ACM journals. Supporting expert witness testimony.";
+  "Peer-reviewed telecommunications research and scientific publications by Dr. Tal Lavian. IEEE and ACM journals. 25+ publications supporting expert witness testimony.";
 
 // ─── 19. TALKS & PRESENTATIONS ───────────────────────────────────────────
 // File: src/pages/talks-presentations/index.astro
