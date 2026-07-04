@@ -135,9 +135,9 @@ export const termsDescription =
 export const patentsSchema = buildSchema.patents();
 
 export const patentsTitle =
-  "Telecommunications Patents | Dr. Tal Lavian";
+  "Telecom Patent Expert Witness — 120+ Patents | Dr. Tal Lavian";
 export const patentsDescription =
-  "120+ patents by Dr. Tal Lavian in telecommunications, network communications, and computer science. 60+ pro-se prosecutions before the USPTO.";
+  "Dr. Tal Lavian: 120+ invented patents in telecommunications, networking, VoIP, and wireless. 60+ pro-se USPTO prosecutions. Expert witness on patent validity and infringement.";
 
 // ─── 26. PUBLICATION (single page template) ───────────────────────────────
 // File: src/pages/publication/[slug].astro or src/pages/publication/index.astro
