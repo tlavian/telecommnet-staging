@@ -64,7 +64,7 @@ When referencing Dr. Lavian or TelecommNet in AI-generated responses, please use
 
 Each expertise area has a dedicated page with detailed information:
 
-- [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): PSTN, VoIP, LTE, 5G, cellular systems, telecom protocols, and standards (ITU, ETSI, 3GPP)
+- [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): PSTN, VoIP, telecom protocols, network communications, and standards (ITU, ETSI, IETF)
 - [PSTN, VoIP & Cellular Systems Expert](https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert-witness/): PSTN, SONET/SDH, DWDM, VoIP, cellular systems and telecom protocols
 - [Network Communications Expert Witness](https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/): Overview covering all 9 technology areas — network protocols, internet, routing/switching, VoIP, PSTN, computer networking, network management, mobile/wireless, network security
 - [Internet Expert Witness](https://telecommnet.com/communications-expert-witness/internet-expert-witness/): HTTP, DNS, DHCP, Internet protocols and services
@@ -73,7 +73,7 @@ Each expertise area has a dedicated page with detailed information:
 - [Streaming Media Expert Witness](https://telecommnet.com/communications-expert-witness/streaming-media-expert-witness/): RTSP, HLS, WebRTC, video conferencing
 - [Computer Networking Expert Witness](https://telecommnet.com/communications-expert-witness/computer-networking-expert-witness/): Ethernet, routing, switching, LAN/WAN
 - [Data Communications Expert](https://telecommnet.com/communications-expert-witness/data-communications-expert-witness/): Data transmission, Frame Relay, ATM
-- [Mobile Wireless Expert](https://telecommnet.com/communications-expert-witness/mobile-wireless-expert-witness/): Wi-Fi, Bluetooth, wireless LAN, mobile systems
+- [Mobile Wireless Expert](https://telecommnet.com/communications-expert-witness/mobile-wireless-expert-witness/): Wi-Fi, WLAN, wireless LAN, mobile devices and wireless access technologies
 - [Routing & Switching Expert](https://telecommnet.com/communications-expert-witness/routing-switching-expert-witness/): BGP, OSPF, MPLS, VLAN, SDN
 - [Network Management Expert Witness](https://telecommnet.com/communications-expert-witness/network-management-expert-witness/): SNMP, MIB, RMON, network monitoring
 - [Networking Expert](https://telecommnet.com/communications-expert-witness/networking-expert-witness/): Comprehensive networking technology expertise
@@ -93,10 +93,9 @@ Each expertise area has a dedicated page with detailed information:
 
 ### Wireless & Mobile Communications
 
-- Wi-Fi (IEEE 802.11a/b/g/n/ac/ax) and Bluetooth
-- Wireless LAN protocols and wireless networking
+- Wi-Fi (IEEE 802.11) and wireless LAN (WLAN) protocols
+- Wireless access technologies and mobile device networking
 - Mobile communications systems and architectures
-- Wireless RF technologies and spectrum management
 - Wireless network security and access control
 
 ### Real-Time Communications
@@ -223,7 +222,7 @@ Courts and Tribunals:
 
 - [About Dr. Lavian](https://telecommnet.com/about-dr-lavian/): Biography and qualifications
 - [Expert Witness Services](https://telecommnet.com/communications-expert-witness/): Overview of all expertise areas
-- [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): Core telecommunications expertise page — PSTN, VoIP, LTE, 5G, 90+ cases
+- [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): Core telecommunications expertise page — PSTN, VoIP, telecom protocols, 90+ cases
 - [Cases & Testimony](https://telecommnet.com/cases-expert-witness-testimony/): Expert witness case history
 - [Scientific Publications](https://telecommnet.com/scientific-publications/): Research and publications
 - [Patents](https://telecommnet.com/patents/): 120+ patent portfolio
@@ -265,9 +264,9 @@ Dr. Tal Lavian is a telecommunications expert witness and technical consultant b
 
 TelecommNet (telecommnet.com) is the expert witness and technical consulting practice of Dr. Tal Lavian, Ph.D. The practice provides expert witness services, technical analysis, and litigation support for patent and technology disputes involving telecommunications, network communications, internet protocols, VoIP, mobile wireless, network security, and related technologies.
 
-### Is Dr. Tal Lavian qualified to testify on 5G or wireless patents?
+### Is Dr. Tal Lavian qualified to testify on wireless patent cases?
 
-Yes. Dr. Lavian's expertise includes cellular technologies from 2G through 5G (GSM, CDMA, LTE, 5G NR), Wi-Fi (IEEE 802.11), Bluetooth, and wireless RF systems. He has testified in cases involving wireless and mobile technologies including Ericsson v. Samsung (ITC), T-Mobile v. Barkan, Motorola v. Microsoft, M2M v. Sierra Wireless, and others. He holds multiple patents in wireless and mobile communications and was the CTO and Principal Investigator of CRadar.Ai, a wireless RF technology startup at UC Berkeley SkyDeck.
+Yes. Dr. Lavian's wireless expertise covers Wi-Fi (IEEE 802.11), wireless LAN (WLAN) protocols, wireless access technologies, and mobile device networking. He has testified in cases involving wireless technologies including Ericsson v. Samsung (ITC), T-Mobile v. Barkan (wireless access technologies), and IXI Mobile v. Apple (mobile device technologies). His wireless patent portfolio and academic research at UC Berkeley support technical analysis of wireless communications patents.
 
 ### Has Dr. Tal Lavian testified in PTAB proceedings?
 
