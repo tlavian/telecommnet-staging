@@ -39,7 +39,7 @@ export const lawFirmClientsSchema = buildSchema.clientPage({
 export const lawFirmClientsTitle =
   "Telecom Expert Witness for Law Firms | TelecommNet";
 export const lawFirmClientsDescription =
-  "Retain a telecommunications expert witness for patent litigation, IP disputes, and infrastructure failures. Qualified technical testimony.";
+  "Retain Dr. Tal Lavian as telecommunications expert witness for patent litigation, PTAB IPR, and ITC proceedings. 90+ cases, 60+ depositions, Ph.D. UC Berkeley.";
 
 // ─── 18. SCIENTIFIC PUBLICATIONS ─────────────────────────────────────────
 // File: src/pages/scientific-publications/index.astro
