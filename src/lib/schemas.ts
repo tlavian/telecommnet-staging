@@ -102,7 +102,7 @@ export const PERSON_ENTITY = {
     { '@type': 'Thing', name: 'Cloud computing', sameAs: 'https://en.wikipedia.org/wiki/Cloud_computing' },
     { '@type': 'Thing', name: 'Wireless network', sameAs: 'https://en.wikipedia.org/wiki/Wireless_network' },
     { '@type': 'Thing', name: 'Wi-Fi', sameAs: 'https://en.wikipedia.org/wiki/Wi-Fi' },
-    { '@type': 'Thing', name: 'Bluetooth', sameAs: 'https://en.wikipedia.org/wiki/Bluetooth' },
+
     { '@type': 'Thing', name: 'Routing', sameAs: 'https://en.wikipedia.org/wiki/Routing' },
     { '@type': 'Thing', name: 'Network switch', sameAs: 'https://en.wikipedia.org/wiki/Network_switch' },
     { '@type': 'Thing', name: 'Software-defined networking', sameAs: 'https://en.wikipedia.org/wiki/Software-defined_networking' },

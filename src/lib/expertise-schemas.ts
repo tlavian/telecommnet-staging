@@ -386,14 +386,14 @@ const dataCommsDescription = "Data communications expert witness — 120+ patent
 const mobileWirelessSchema = buildSchema.expertisePage({
   name: 'Mobile & Wireless Expert Witness',
   slug: 'mobile-wireless-expert-witness',
-  description: 'Wireless & mobile expert witness for patent litigation. Wi-Fi, Bluetooth, cellular, 5G, WLAN, RF technology. 90+ cases, 120+ patents.',
+  description: 'Wireless & mobile expert witness for patent litigation. Wi-Fi, WLAN, wireless access technologies, mobile devices. 90+ cases, 120+ patents.',
   serviceType: 'Wireless Expert Witness',
-  keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'Bluetooth patent expert', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
+  keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
   breadcrumbLabel: 'Mobile Wireless',
   faqs: [
     {
       q: 'What wireless technologies is Dr. Lavian expert in?',
-      a: 'Dr. Lavian is expert in Wi-Fi (802.11a/b/g/n/ac/ax), Bluetooth, wireless LAN protocols, mobile communications systems, wireless network architecture, and wireless device networking in the context of patent litigation.',
+      a: 'Dr. Lavian is expert in Wi-Fi (IEEE 802.11), wireless LAN protocols, mobile wireless network architecture, wireless access technologies, and mobile device networking in the context of patent litigation.',
     },
     {
       q: 'Has Dr. Lavian testified in ITC wireless cases?',
@@ -405,21 +405,17 @@ const mobileWirelessSchema = buildSchema.expertisePage({
     },
     {
       q: 'What types of wireless patent disputes has Dr. Lavian handled?',
-      a: 'Dr. Lavian has handled patent disputes involving Wi-Fi implementations, wireless network access control, Bluetooth communication protocols, wireless roaming and handoff mechanisms, WLAN security, and mobile device connectivity architectures.',
-    },
-    {
-      q: 'Can Dr. Lavian provide expert witness services for cellular and 5G patent cases?',
-      a: 'Yes. Dr. Lavian\'s wireless expertise covers cellular network technologies including LTE and 5G NR architectures, carrier aggregation, MIMO antenna systems, and mobile network infrastructure. He can provide expert reports and testimony on cellular standard-essential patents (SEPs) and FRAND licensing disputes.',
+      a: 'Dr. Lavian has handled patent disputes involving Wi-Fi implementations, wireless network access control, wireless roaming and handoff mechanisms, WLAN security, and mobile device connectivity architectures.',
     },
     {
       q: 'What wireless companies has Dr. Lavian served as an expert witness for?',
-      a: 'Dr. Lavian has been retained in wireless patent cases involving companies including Apple, Samsung, Qualcomm, Motorola, and other major wireless device manufacturers and semiconductor companies, providing analysis and testimony on Wi-Fi, Bluetooth, and cellular technologies.',
+      a: 'Dr. Lavian has been retained in wireless patent cases involving companies including Apple, Samsung, Motorola, T-Mobile, and Ericsson, providing analysis and testimony on Wi-Fi and wireless access technologies.',
     },
   ],
 });
 
 const mobileWirelessTitle = "Wireless & Mobile Expert Witness — Dr. Tal Lavian, Ph.D.";
-const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 90+ cases. Wi-Fi, Bluetooth, 5G, cellular, WLAN. Ph.D. UC Berkeley. PTAB & ITC.";
+const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 90+ cases. Wi-Fi, WLAN, wireless access technologies, mobile devices. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 10. ROUTING & SWITCHING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/routing-switching-expert-witness/index.astro
@@ -591,9 +587,9 @@ const messagingChatDescription = "Messaging & chat expert witness — 120+ paten
 const telecomEWSchema = buildSchema.expertisePage({
   name: 'Telecommunications Expert Witness',
   slug: 'telecommunications-expert-witness',
-  description: 'Telecommunications expert witness for patent litigation. PSTN, VoIP, cellular, LTE, 5G. Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  description: 'Telecommunications expert witness for patent litigation. PSTN, VoIP, SONET/SDH, SS7 signaling. Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Telecommunications Expert Witness',
-  keywords: ['telecommunications expert witness', 'telecom expert witness', 'PSTN expert witness', 'VoIP expert witness', 'cellular expert witness', 'LTE expert witness', '5G expert witness', 'PTAB telecommunications expert', 'ITC telecom expert', 'telecom patent litigation'],
+  keywords: ['telecommunications expert witness', 'telecom expert witness', 'PSTN expert witness', 'VoIP expert witness', 'PTAB telecommunications expert', 'ITC telecom expert', 'telecom patent litigation'],
   breadcrumbLabel: 'Telecommunications',
   faqs: [
     {
@@ -602,7 +598,7 @@ const telecomEWSchema = buildSchema.expertisePage({
     },
     {
       q: 'What telecommunications technologies can Dr. Lavian address as an expert witness?',
-      a: 'Dr. Lavian addresses PSTN architecture, VoIP (SIP, H.323, RTP, SRTP), cellular systems (GSM, CDMA, LTE, 5G NR), SONET/SDH optical transmission, SS7 signaling, network switching and routing, Internet protocols (TCP/IP, BGP, OSPF, MPLS), and wireless communications standards in patent litigation contexts.',
+      a: 'Dr. Lavian addresses PSTN architecture, VoIP (SIP, H.323, RTP, SRTP), SONET/SDH optical transmission, DWDM, SS7 signaling, network switching and routing, Internet protocols (TCP/IP, BGP, OSPF, MPLS), and wireless communications in patent litigation contexts.',
     },
     {
       q: 'In which courts has Dr. Lavian testified as a telecommunications expert witness?',
