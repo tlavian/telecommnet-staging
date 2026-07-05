@@ -53,7 +53,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'How much does a telecommunications expert witness cost?',
-      a: 'Telecommunications expert witness fees vary based on case complexity, scope of analysis, and whether testimony is needed at deposition or trial. Dr. Lavian provides expert witness rates commensurate with his credentials (Ph.D. UC Berkeley, 120+ patents, 90+ cases). Contact Dr. Lavian directly for a fee schedule and case evaluation.',
+      a: 'Telecommunications expert witness fees vary based on case complexity, scope of analysis, and whether testimony is needed at deposition or trial. Dr. Lavian provides expert witness rates commensurate with his credentials (Ph.D. UC Berkeley, 120+ patents, 90+ cases).',
     },
   ],
 });
@@ -614,11 +614,11 @@ const telecomEWSchema = buildSchema.expertisePage({
     },
     {
       q: 'How much does a telecommunications expert witness cost?',
-      a: "Telecommunications expert witness fees depend on case complexity, the scope of analysis required, and whether testimony is needed at deposition or trial. Dr. Lavian's fees reflect his Ph.D. credentials, 120+ patents, and 90+ case engagements. Contact Dr. Lavian at tlavian@telecommnet.com for a confidential case evaluation and fee schedule.",
+      a: "Telecommunications expert witness fees depend on case complexity, the scope of analysis required, and whether testimony is needed at deposition or trial. Dr. Lavian's fees reflect his Ph.D. credentials, 120+ patents, and 90+ case engagements.",
     },
     {
       q: 'How do I retain Dr. Lavian as a telecommunications expert witness?',
-      a: 'To retain Dr. Lavian, contact him at tlavian@telecommnet.com. He will review the case for potential conflicts, assess the relevant technology areas, and provide a fee estimate for the scope of work required. Dr. Lavian is available for engagements in U.S. federal courts, USPTO PTAB, the International Trade Commission (ITC), and international arbitration.',
+      a: 'Retention begins with a review of the technical subject matter and relevant patents to confirm there are no conflicts of interest. Dr. Lavian assesses the technology areas involved and provides a fee estimate based on the scope of work. He accepts engagements in U.S. federal courts, USPTO PTAB, the International Trade Commission (ITC), and international proceedings.',
     },
   ],
 });
