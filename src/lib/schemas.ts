@@ -271,7 +271,7 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Asia.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Asia.',
               },
             },
             {
@@ -319,7 +319,7 @@ export const buildSchema = {
               name: 'How many years of experience does Dr. Lavian have in telecommunications?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and over two decades as an expert witness with 90+ cases and 60+ depositions.',
+                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and over two decades as an expert witness with 90+ cases and 60+ depositions.',
               },
             },
             {
@@ -378,7 +378,7 @@ export const buildSchema = {
               name: 'How long has Dr. Lavian been at UC Berkeley?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian spent nearly 20 years researching, studying, and lecturing at UC Berkeley, where he conducted research projects in data centers (RAD Labs), telecommunication infrastructure (SAHARA), and wireless systems (ICEBERG), and served as an industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET).',
+                text: 'Dr. Lavian spent 20 years researching, studying, and lecturing at UC Berkeley, where he conducted research projects in data centers (RAD Labs), telecommunication infrastructure (SAHARA), and wireless systems (ICEBERG), and served as an industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET).',
               },
             },
             {
@@ -488,7 +488,7 @@ export const buildSchema = {
               name: 'What qualifications does Dr. Lavian have as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 70 expert witness engagements.',
+                text: 'Dr. Lavian has spent 20 years researching, studying, and lecturing at UC Berkeley. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 90 expert witness engagements.',
               },
             },
             {

@@ -1,4 +1,4 @@
-# TelecommNet
+﻿# TelecommNet
 
 > Dr. Tal Lavian, PhD (UC Berkeley) — Telecommunications Expert Witness with 120+ invented patents, 100+ patents litigated, 90+ expert witness engagements, 60+ depositions, and 35+ years of industry and academic experience. TelecommNet provides expert witness services, technical consulting, and litigation support for patent and technology disputes.
 
@@ -14,7 +14,7 @@
 - 60+ depositions as expert witness
 - 120+ invented patents; 100+ patents litigated
 - 25+ peer-reviewed publications (IEEE, ACM)
-- Nearly 20 years researching, studying, and lecturing at UC Berkeley
+- 20 years researching, studying, and lecturing at UC Berkeley
 - Retained by over 50 law firms and corporate clients
 - Ph.D. Computer Science, UC Berkeley (specialization: network communications)
 - 35+ years of industry and academic experience
@@ -39,7 +39,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 
 ### Professional Experience
 
-- Nearly 20 years researching, studying, and lecturing at UC Berkeley
+- 20 years researching, studying, and lecturing at UC Berkeley
 - Principal Scientist and Principal Architect at Nortel Networks (1996-2007); DARPA PI for 3 projects
 - Expert witness in 90+ cases across multiple jurisdictions, including 60+ depositions
 
@@ -178,7 +178,7 @@ Each expertise area has a dedicated page with detailed information:
 
 ## Research & Academic Work
 
-Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley:
+Dr. Lavian has spent 20 years researching, studying, and lecturing at UC Berkeley:
 
 - Conducted research in data centers (RAD Labs), network communication service architecture (SAHARA), and wireless systems (ICEBERG)
 - Served as industry fellow and lecturer at the Sutardja Center for Entrepreneurship and Technology (SCET)
@@ -214,7 +214,7 @@ Courts and Tribunals:
 
 ## Career History
 
-- UC Berkeley (nearly 20 years) — Researching, studying, and lecturing at Industry Fellow and Lecturer at SCET; SkyDeck startups
+- UC Berkeley (20 years) — Researching, studying, and lecturing at Industry Fellow and Lecturer at SCET; SkyDeck startups
 - CRadar.Ai — CTO / Principal Investigator (UC Berkeley SkyDeck)
 - Aybell / VisuMenu Inc. — CEO/CTO and Co-Founder
 - Ixia — Network Communications Consultant
