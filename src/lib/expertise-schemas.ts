@@ -78,7 +78,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does Dr. Lavian qualify as a network communications expert?',
-      a: 'Dr. Lavian has a Ph.D. in Computer Science from UC Berkeley specializing in network communications, 20 years of research and lecturing at UC Berkeley, and over 35 years of industry experience at Nortel Networks and as a startup founder.',
+      a: 'Dr. Lavian has a Ph.D. in Computer Science from UC Berkeley specializing in network communications, nearly 20 years of research and lecturing at UC Berkeley, and over 35 years of industry experience at Nortel Networks and as a startup founder.',
     },
     {
       q: 'Can Dr. Lavian serve as an expert witness in both plaintiff and defendant cases?',
@@ -131,7 +131,7 @@ const internetSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in Internet technologies and TCP/IP?',
-      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley and has published peer-reviewed research on Internet protocols, TCP/IP, and network architecture. He has 120+ patents, many covering Internet communication systems, and has 20 years of research experience at UC Berkeley.',
+      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley and has published peer-reviewed research on Internet protocols, TCP/IP, and network architecture. He has 120+ patents, many covering Internet communication systems, and has nearly 20 years of research experience at UC Berkeley.',
     },
     {
       q: 'What types of Internet patent disputes has Dr. Lavian handled?',
@@ -299,7 +299,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s academic background in computer networks?',
-      a: 'Dr. Lavian earned his Ph.D. in Computer Science from UC Berkeley with a specialization in network communications and spent 20 years researching, studying, and lecturing at UC Berkeley.',
+      a: 'Dr. Lavian earned his Ph.D. in Computer Science from UC Berkeley with a specialization in network communications and spent nearly 20 years researching, studying, and lecturing at UC Berkeley.',
     },
     {
       q: 'Has Dr. Lavian testified in computer networks patent cases?',
@@ -311,7 +311,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What qualifies Dr. Lavian as a computer networks expert witness?',
-      a: 'Dr. Lavian has hands-on industry experience designing network switch software at Nortel Networks and Bay Networks, 120+ networking patents, and 20 years of researching, studying, and lecturing at UC Berkeley. He has been retained in over 90 cases and given 60+ depositions.',
+      a: 'Dr. Lavian has hands-on industry experience designing network switch software at Nortel Networks and Bay Networks, 120+ networking patents, and nearly 20 years of researching, studying, and lecturing at UC Berkeley. He has been retained in over 90 cases and given 60+ depositions.',
     },
     {
       q: 'What courts has Dr. Lavian testified in as a computer networks expert witness?',
@@ -323,7 +323,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'How does a computer networking expert witness explain technical concepts to a jury?',
-      a: 'An effective computer networking expert witness translates complex networking concepts — like packet switching, routing algorithms, and protocol handshakes — into clear, relatable explanations for judges and juries. Dr. Lavian\'s 20 years of teaching at UC Berkeley and experience in 90+ cases equip him to present network technology concepts accessibly and persuasively.',
+      a: 'An effective computer networking expert witness translates complex networking concepts — like packet switching, routing algorithms, and protocol handshakes — into clear, relatable explanations for judges and juries. Dr. Lavian\'s nearly 20 years of teaching at UC Berkeley and experience in 90+ cases equip him to present network technology concepts accessibly and persuasively.',
     },
   ],
 });
@@ -516,7 +516,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'Is Dr. Lavian qualified as a networking expert for both technical and litigation purposes?',
-      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), 20 years of academic research at UC Berkeley, and has served as a testifying expert witness in 90+ patent cases.',
+      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), nearly 20 years of academic research at UC Berkeley, and has served as a testifying expert witness in 90+ patent cases.',
     },
     {
       q: 'What types of networking patent cases has Dr. Lavian handled?',
