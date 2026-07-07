@@ -328,7 +328,7 @@ export const buildSchema = {
               name: 'What PTAB and ITC proceedings has Dr. Lavian participated in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has served as a technical expert in USPTO Patent Trial and Appeal Board (PTAB) proceedings including inter partes review (IPR), post-grant review (PGR), and covered business method (CBM) proceedings; International Trade Commission (ITC) Section 337 investigations involving telecommunications technologies; U.S. federal district court patent infringement trials; and international arbitration proceedings, including the Canadian Federal Court.',
+                text: 'Dr. Lavian has served as a technical expert in USPTO Patent Trial and Appeal Board (PTAB) proceedings including inter partes review (IPR), post-grant review (PGR), and covered business method (CBM) proceedings; International Trade Commission (ITC) Section 337 investigations involving telecommunications technologies; U.S. federal district court patent infringement trials; and international patent litigation, including the Canadian Federal Court and a court in Malaysia.',
               },
             },
           ],

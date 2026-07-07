@@ -602,7 +602,7 @@ const telecomEWSchema = buildSchema.expertisePage({
     },
     {
       q: 'In which courts has Dr. Lavian testified as a telecommunications expert witness?',
-      a: 'Dr. Lavian has provided telecommunications expert witness testimony in U.S. federal district courts, the USPTO Patent Trial and Appeal Board (PTAB) in IPR, CBM, and PGR proceedings, the International Trade Commission (ITC) Section 337 investigations, the Canadian Federal Court, and international arbitration proceedings.',
+      a: 'Dr. Lavian has provided telecommunications expert witness testimony in U.S. federal district courts, the USPTO Patent Trial and Appeal Board (PTAB) in IPR, CBM, and PGR proceedings, the International Trade Commission (ITC) Section 337 investigations, the Canadian Federal Court, and a court in Malaysia.',
     },
     {
       q: 'What types of telecommunications patent cases has Dr. Lavian handled?',
