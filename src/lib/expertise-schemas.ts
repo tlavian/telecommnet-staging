@@ -117,7 +117,7 @@ const internetSchema = buildSchema.expertisePage({
   name: 'Internet Expert Witness',
   slug: 'internet-expert-witness',
   description: 'Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies, internet protocols. 90+ cases, 120+ patents. Ph.D. UC Berkeley.',
-  serviceType: 'Internet Expert Witness',
+  serviceType: 'Internet Protocols Expert Witness',
   keywords: ['internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'internet protocols expert witness', 'TCP/IP patent litigation', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
   breadcrumbLabel: 'Internet & TCP/IP',
   faqs: [
@@ -156,8 +156,8 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Expert Witness — TCP/IP, HTTP, DNS | Dr. Tal Lavian";
-const internetDescription = "Internet expert witness — TCP/IP, HTTP, DNS, BGP, broadband. Ph.D. UC Berkeley, 120+ patents, 90+ cases. Federal court, PTAB & ITC testimony.";
+const internetTitle = "Internet Protocols Expert Witness — TCP/IP, DNS | Dr. Lavian";
+const internetDescription = "Internet protocols expert witness — TCP/IP, HTTP, DNS, BGP. Ph.D. UC Berkeley, 120+ patents, 90+ cases. Federal court, PTAB & ITC testimony.";
 
 // â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
@@ -338,8 +338,8 @@ const dataCommsSchema = buildSchema.expertisePage({
   name: 'Data Communications Expert Witness',
   slug: 'data-communications-expert-witness',
   description: 'Data communications expert witness for patent litigation. Data networking, cloud computing, data centers, protocol stacks. 90+ cases, 120+ patents.',
-  serviceType: 'Data Communications Expert Witness',
-  keywords: ['data communications expert witness', 'data communications expert', 'data networking expert witness', 'data network expert witness', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
+  serviceType: 'Data Networks Expert Witness',
+  keywords: ['data communications expert witness', 'data communications expert', 'data networks expert witness', 'data networking expert witness', 'data network expert witness', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
   breadcrumbLabel: 'Data Communications',
   faqs: [
     {
@@ -377,8 +377,8 @@ const dataCommsSchema = buildSchema.expertisePage({
   ],
 });
 
-const dataCommsTitle = "Data Communications Expert Witness — Dr. Tal Lavian, Ph.D.";
-const dataCommsDescription = "Data communications expert witness — 120+ patents, 90+ cases. Cloud computing, data centers, protocol stacks. Ph.D. UC Berkeley. PTAB & ITC.";
+const dataCommsTitle = "Data Networks Expert Witness | Dr. Tal Lavian, Ph.D.";
+const dataCommsDescription = "Data networks expert witness — 120+ patents, 90+ cases. Data centers, cloud computing, protocol stacks. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 9. MOBILE WIRELESS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
