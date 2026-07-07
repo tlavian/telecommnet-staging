@@ -310,7 +310,7 @@ Dr. Lavian is involved in research at UC Berkeley:
 - UC Berkeley (nearly 20 years) — Industry Fellow, Lecturer, Principal Investigator (IEOR, SCET)
 - CRadar.Ai — Technology Officer
 - Ixia Communications — Senior Technical Leadership
-- Nortel Labs — Senior Research Scientist
+- Nortel Labs — Principal Scientist and Principal Architect
 - Bay Architecture Labs — Senior Research Engineer
 - Aptel Communications — Technical Leadership
 - Scitex & Shalev — Early career positions

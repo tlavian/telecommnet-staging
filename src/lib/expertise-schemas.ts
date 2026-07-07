@@ -442,7 +442,7 @@ const routingSwitchingSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s industry experience with routing and switching hardware?',
-      a: 'Dr. Lavian was a Senior Research Scientist at Nortel Networks (formerly Bay Networks) where he designed routing and switching software for enterprise and carrier-grade network equipment. He has invented 120+ patents, many covering programmable forwarding engines and active network architectures for routers and switches.',
+      a: 'Dr. Lavian was a Principal Scientist and Principal Architect at Nortel Networks (formerly Bay Networks) where he designed routing and switching software for enterprise and carrier-grade network equipment. He has invented 120+ patents, many covering programmable forwarding engines and active network architectures for routers and switches.',
     },
     {
       q: 'What types of routing and switching patent disputes has Dr. Lavian handled?',
