@@ -1,5 +1,5 @@
 ﻿/**
- * TelecommNet.com â€” Centralized Schema Factory
+ * TelecommNet.com — Centralized Schema Factory
  * Phase 2: Full JSON-LD @graph implementation for all 27 pages
  * 
  * Architecture: Person entity is the central @id node.
@@ -80,7 +80,7 @@ export const PERSON_ENTITY = {
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'Expert Witness â€” Telecommunications and Network Communications',
+    name: 'Expert Witness — Telecommunications and Network Communications',
     occupationalCategory: 'Legal Services',
     skills: [
       'Patent Litigation',
@@ -251,7 +251,7 @@ export const buildSchema = {
         {
           '@type': 'WebSite',
           '@id': `${BASE_URL}/#website`,
-          name: 'TelecommNet â€” Telecommunications Expert Witness | Dr. Tal Lavian',
+          name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
           url: BASE_URL,
           publisher: PERSON_REF,
           datePublished: '2022-05-01T00:00:00+00:00',
@@ -354,7 +354,7 @@ export const buildSchema = {
           '@type': 'ProfilePage',
           '@id': `${BASE_URL}/about-dr-lavian/`,
           url: `${BASE_URL}/about-dr-lavian/`,
-          name: 'About Dr. Tal Lavian â€” Telecommunications Expert Witness',
+          name: 'About Dr. Tal Lavian — Telecommunications Expert Witness',
           dateCreated: '2022-05-01T00:00:00+00:00',
           dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
@@ -423,7 +423,7 @@ export const buildSchema = {
           '@type': 'WebPage',
           '@id': hubUrl,
           url: hubUrl,
-          name: 'Communications Expert Witness Services â€” Dr. Tal Lavian',
+          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           description: 'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
           datePublished: '2023-06-01T00:00:00+00:00',
           dateModified: '2026-03-18T00:00:00+00:00',
@@ -437,7 +437,7 @@ export const buildSchema = {
         },
         {
           '@type': ['ProfessionalService', 'LegalService'],
-          name: 'Communications Expert Witness Services â€” Dr. Tal Lavian',
+          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           founder: PERSON_REF,
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
@@ -472,7 +472,7 @@ export const buildSchema = {
         {
           '@type': 'FAQPage',
           '@id': `${hubUrl}#faq`,
-          name: 'FAQ â€” Communications Expert Witness Services',
+          name: 'FAQ — Communications Expert Witness Services',
           url: hubUrl,
           mainEntity: [
             {
@@ -580,7 +580,7 @@ export const buildSchema = {
         {
           '@type': 'FAQPage',
           '@id': `${pageUrl}#faq`,
-          name: `FAQ â€” ${opts.name}`,
+          name: `FAQ — ${opts.name}`,
           url: pageUrl,
           mainEntity: opts.faqs.map(faq => ({
             '@type': 'Question',
@@ -646,7 +646,7 @@ export const buildSchema = {
     const publicationEntries = [
       {
         position: 1,
-        name: 'Communications Architecture â€” Grid Computing',
+        name: 'Communications Architecture — Grid Computing',
         datePublished: '2013',
         publisher: "Scholar's Press",
         isbn: '978-3-639-51098-0',
@@ -677,7 +677,7 @@ export const buildSchema = {
         position: 5,
         name: 'Information Switching Networks',
         datePublished: '2005-12',
-        publisher: 'WITSP 2005 â€” 4th Workshop on Internet, Telecommunications and Signal Processing',
+        publisher: 'WITSP 2005 — 4th Workshop on Internet, Telecommunications and Signal Processing',
         coAuthors: ['Doan B. Hoang'],
       },
       {
@@ -688,7 +688,7 @@ export const buildSchema = {
       },
       {
         position: 7,
-        name: 'Grid Computing â€” Impact on Network Operators',
+        name: 'Grid Computing — Impact on Network Operators',
         datePublished: '2005',
         publisher: 'IEEE Hot Interconnects, Stanford University',
       },
@@ -709,7 +709,7 @@ export const buildSchema = {
         position: 10,
         name: 'Quality of Control Loop on Programmable Routers',
         datePublished: '2004-11',
-        publisher: 'IEEE ICON 2004 â€” 12th IEEE International Conference on Networks',
+        publisher: 'IEEE ICON 2004 — 12th IEEE International Conference on Networks',
       },
       {
         position: 11,
@@ -731,7 +731,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Scientific Publications â€” Dr. Tal Lavian',
+          name: 'Scientific Publications — Dr. Tal Lavian',
           description:
             'Peer-reviewed scientific publications by Dr. Tal Lavian in IEEE, ACM, and other journals, covering telecommunications, network communications, and computer science.',
           url: `${BASE_URL}/scientific-publications/`,
@@ -830,7 +830,7 @@ export const buildSchema = {
       },
       {
         position: 10,
-        name: 'Optical Networks â€” UC Berkeley Seminar',
+        name: 'Optical Networks — UC Berkeley Seminar',
         organizer: 'University of California, Berkeley',
         about: 'Optical Networks, Telecommunications',
       },
@@ -848,7 +848,7 @@ export const buildSchema = {
       },
       {
         position: 13,
-        name: 'Technologies Shaped Our Society â€” UC Berkeley Seminar',
+        name: 'Technologies Shaped Our Society — UC Berkeley Seminar',
         organizer: 'University of California, Berkeley',
         about: 'Technology and Society, Telecommunications History',
       },
@@ -872,7 +872,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Talks & Presentations â€” Dr. Tal Lavian',
+          name: 'Talks & Presentations — Dr. Tal Lavian',
           description:
             'Conference presentations and technical talks by Dr. Tal Lavian at IEEE, ACM, UC Berkeley, DARPA events, and industry conferences on telecommunications and networking.',
           url: `${BASE_URL}/talks-presentations/`,
@@ -919,7 +919,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Expert Witness Testimony Cases â€” Dr. Tal Lavian',
+          name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
           description:
             'Expert witness testimony cases by Dr. Tal Lavian. 90+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
@@ -1045,7 +1045,7 @@ export const buildSchema = {
         PERSON_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Patents â€” Dr. Tal Lavian',
+          name: 'Patents — Dr. Tal Lavian',
           description:
             '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions before the USPTO.',
           url: `${BASE_URL}/patents/`,
@@ -1060,7 +1060,7 @@ export const buildSchema = {
         },
         {
           '@type': 'ItemList',
-          name: 'Patent Portfolio â€” Dr. Tal Lavian',
+          name: 'Patent Portfolio — Dr. Tal Lavian',
           description: '120+ patents spanning network switch architecture, network security, VoIP/IVR systems, grid computing, QoS, streaming media, and wireless communications.',
           numberOfItems: 120,
           itemListElement: patentEntries.map(pat => ({
@@ -1068,7 +1068,7 @@ export const buildSchema = {
             position: pat.position,
             item: {
               '@type': 'CreativeWork',
-              name: `${pat.number} â€” ${pat.name}`,
+              name: `${pat.number} — ${pat.name}`,
               creator: PERSON_REF,
               about: { '@type': 'Thing', name: pat.about },
             },
@@ -1086,7 +1086,7 @@ export const buildSchema = {
       '@graph': [
         {
           '@type': 'ContactPage',
-          name: 'Contact Dr. Tal Lavian â€” Expert Witness Services',
+          name: 'Contact Dr. Tal Lavian — Expert Witness Services',
           description:
             'Contact Dr. Tal Lavian for telecommunications and network communications expert witness and consulting services.',
           url: `${BASE_URL}/contact/`,

@@ -9,6 +9,7 @@ const CORE_PATHS = new Set([
   '/',
   '/about-dr-lavian/',
   '/communications-expert-witness/',
+  '/communications-expert-witness/telecommunications-expert-witness/',
   '/communications-expert-witness/pstn-voip-cellular-expert-witness/',
   '/communications-expert-witness/network-communications-expert-witness/',
   '/communications-expert-witness/internet-expert-witness/',
