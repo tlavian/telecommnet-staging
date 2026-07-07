@@ -59,7 +59,7 @@ export const talksSchema = buildSchema.talks();
 export const talksTitle =
   "Expert Witness Talks & Presentations | Dr. Tal Lavian";
 export const talksDescription =
-  "View presentations, technical lectures, and conference talks by Dr. Tal Lavian on telecommunications, network architecture, and Internet protocols.";
+  "Presentations, technical lectures, and conference talks by Dr. Tal Lavian on telecommunications, network architecture, and Internet protocols. 25+ publications.";
 
 // ─── 20. CASES / EXPERT WITNESS TESTIMONY ────────────────────────────────
 // File: src/pages/cases-expert-witness-testimony/index.astro
@@ -83,7 +83,7 @@ export const siteMapSchema = buildSchema.webPage({
 });
 
 export const siteMapTitle =
-  "Site Map | TelecommNet";
+  "Site Map — Telecommunications Expert Witness | TelecommNet";
 export const siteMapDescription =
   "Complete site map for TelecommNet.com. Navigate all pages of Dr. Tal Lavian's telecommunications expert witness and consulting practice website.";
 
@@ -125,7 +125,7 @@ export const termsSchema = buildSchema.webPage({
 });
 
 export const termsTitle =
-  "Terms and Conditions | TelecommNet";
+  "Terms and Conditions — Expert Witness Services | TelecommNet";
 export const termsDescription =
   "Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet's telecommunications expert witness website.";
 
@@ -135,9 +135,9 @@ export const termsDescription =
 export const patentsSchema = buildSchema.patents();
 
 export const patentsTitle =
-  "Telecom Patent Expert Witness — 120+ Patents | Dr. Tal Lavian";
+  "Telecom Patent Expert Witness | 120+ Patents | Dr. Lavian";
 export const patentsDescription =
-  "120+ telecommunications, networking, VoIP & wireless patents by Dr. Tal Lavian. Expert witness on patent infringement and validity. Ph.D. UC Berkeley.";
+  "120+ patents invented, 100+ litigated. Dr. Tal Lavian, telecom patent expert witness on infringement & validity. Ph.D. UC Berkeley, 90+ cases, PTAB & ITC.";
 
 // ─── 26. PUBLICATION (single page template) ───────────────────────────────
 // File: src/pages/publication/[slug].astro or src/pages/publication/index.astro

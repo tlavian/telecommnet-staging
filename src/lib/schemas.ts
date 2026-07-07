@@ -212,6 +212,7 @@ export const buildSchema = {
             'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and other major technology companies.',
           founder: PERSON_REF,
           provider: PERSON_REF,
+          serviceType: 'Expert Witness Services',
           url: BASE_URL,
           telephone: '+1-408-209-9112',
           logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
@@ -439,6 +440,8 @@ export const buildSchema = {
           '@type': ['ProfessionalService', 'LegalService'],
           name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           founder: PERSON_REF,
+          provider: PERSON_REF,
+          serviceType: 'Expert Witness Services',
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
           description:
@@ -624,6 +627,8 @@ export const buildSchema = {
           name: opts.name,
           description: opts.description,
           founder: PERSON_REF,
+          provider: PERSON_REF,
+          serviceType: 'Expert Witness Services',
           url: pageUrl,
           logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
           address: {
@@ -750,7 +755,7 @@ export const buildSchema = {
           '@type': 'ItemList',
           name: 'Publications by Dr. Tal Lavian',
           description: '25+ peer-reviewed publications in IEEE, ACM, and related venues.',
-          numberOfItems: 25,
+          numberOfItems: 12,
           itemListElement: publicationEntries.map(pub => ({
             '@type': 'ListItem',
             position: pub.position,
@@ -891,7 +896,7 @@ export const buildSchema = {
           '@type': 'ItemList',
           name: 'Presentations by Dr. Tal Lavian',
           description: '30+ conference presentations and technical talks at IEEE, ACM, DARPA, and UC Berkeley.',
-          numberOfItems: 30,
+          numberOfItems: 15,
           itemListElement: presentationEntries.map(pres => ({
             '@type': 'ListItem',
             position: pres.position,
@@ -1062,7 +1067,7 @@ export const buildSchema = {
           '@type': 'ItemList',
           name: 'Patent Portfolio — Dr. Tal Lavian',
           description: '120+ patents spanning network switch architecture, network security, VoIP/IVR systems, grid computing, QoS, streaming media, and wireless communications.',
-          numberOfItems: 120,
+          numberOfItems: 35,
           itemListElement: patentEntries.map(pat => ({
             '@type': 'ListItem',
             position: pat.position,
@@ -1156,8 +1161,4 @@ export const buildSchema = {
 
 };
 
-/** Serialize schema to script tag string for Astro <Fragment> */
-export function schemaScript(schema: object): string {
-  return `<script type="application/ld+json">${JSON.stringify(schema, null, 0)}</script>`;
-}
 

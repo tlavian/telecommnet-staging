@@ -58,8 +58,8 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "PSTN, VoIP & Cellular Expert Witness — Dr. Tal Lavian, Ph.D.";
-const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH. Ph.D. UC Berkeley, 35+ years.";
+const telecomTitle = "PSTN, VoIP & Cellular Expert Witness | Dr. Tal Lavian";
+const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH, DWDM. Ph.D. UC Berkeley, 35+ years.";
 
 // â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
@@ -107,8 +107,8 @@ const networkCommsSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkCommsTitle = "Network Communications Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkCommsDescription = "Network communications expert witness — 120+ patents, 90+ cases. TCP/IP, routing, LAN/WAN. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkCommsTitle = "Network Communications Expert Witness | Dr. Lavian";
+const networkCommsDescription = "Network communications expert witness — 120+ patents, 90+ cases, 60+ depositions. TCP/IP, routing, LAN/WAN. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 3. INTERNET EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/internet-expert-witness/index.astro
@@ -156,8 +156,8 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Expert Witness | HTTP, DNS, TCP/IP Protocols | Dr. Tal Lavian";
-const internetDescription = "Internet protocols expert witness — HTTP, DNS, TCP/IP, BGP. Ph.D. UC Berkeley, 90+ cases, 120+ patents. Federal court, PTAB & ITC testimony.";
+const internetTitle = "Internet Expert Witness — TCP/IP, HTTP, DNS | Dr. Tal Lavian";
+const internetDescription = "Internet expert witness — TCP/IP, HTTP, DNS, BGP, broadband. Ph.D. UC Berkeley, 120+ patents, 90+ cases. Federal court, PTAB & ITC testimony.";
 
 // â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
@@ -197,8 +197,8 @@ const voipSchema = buildSchema.expertisePage({
   ],
 });
 
-const voipTitle = "VoIP Expert Witness — SIP, RTP, H.323 | 90+ Cases | Dr. Tal Lavian";
-const voipDescription = "VoIP patent expert witness — SIP, RTP, H.323, WebRTC. Ph.D. UC Berkeley, 90+ expert witness cases, 120+ patents. PTAB, ITC & federal court.";
+const voipTitle = "VoIP Expert Witness — SIP, RTP, H.323 | Dr. Tal Lavian";
+const voipDescription = "VoIP expert witness — SIP, RTP, H.323, WebRTC, IP telephony. Ph.D. UC Berkeley, 120+ patents, 90+ cases. PTAB, ITC & federal court testimony.";
 
 // â"€â"€â"€ 5. NETWORK SECURITY EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
@@ -239,7 +239,7 @@ const networkSecuritySchema = buildSchema.expertisePage({
 });
 
 const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkSecurityDescription = "Network security expert witness — 120+ patents, 90+ cases. Encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Ph.D. UC Berkeley.";
+const networkSecurityDescription = "Network security expert witness — 120+ patents, 90+ cases. Encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 6. STREAMING MEDIA EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
@@ -280,7 +280,7 @@ const streamingSchema = buildSchema.expertisePage({
 });
 
 const streamingTitle = "Streaming Media Expert Witness — Dr. Tal Lavian, Ph.D.";
-const streamingDescription = "Streaming media expert witness — 120+ patents, 90+ cases. Video streaming, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley.";
+const streamingDescription = "Streaming media expert witness — 120+ patents, 90+ cases. Video/audio streaming, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 7. COMPUTER NETWORKING EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/computer-networking-expert-witness/index.astro
@@ -329,7 +329,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
 });
 
 const computerNetworkingTitle = "Computer Networking Expert Witness — Dr. Tal Lavian, Ph.D.";
-const computerNetworkingDescription = "Computer networking expert witness — 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley.";
+const computerNetworkingDescription = "Computer networking expert witness — 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 8. DATA COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/data-communications-expert-witness/index.astro
@@ -378,7 +378,7 @@ const dataCommsSchema = buildSchema.expertisePage({
 });
 
 const dataCommsTitle = "Data Communications Expert Witness — Dr. Tal Lavian, Ph.D.";
-const dataCommsDescription = "Data communications expert witness — 120+ patents, 90+ cases. Cloud computing, data centers, protocol stacks. Ph.D. UC Berkeley.";
+const dataCommsDescription = "Data communications expert witness — 120+ patents, 90+ cases. Cloud computing, data centers, protocol stacks. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 9. MOBILE WIRELESS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
@@ -497,7 +497,7 @@ const networkMgmtSchema = buildSchema.expertisePage({
 });
 
 const networkMgmtTitle = "Network Management Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkMgmtDescription = "Network management expert witness — 120+ patents, 90+ cases. SNMP, OSS/BSS, monitoring. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkMgmtDescription = "Network management expert witness — 120+ patents, 90+ cases. SNMP, OSS/BSS, network monitoring, configuration. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 12. NETWORKING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/networking-expert-witness/index.astro
@@ -537,8 +537,8 @@ const networkingExpertSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkingExpertTitle = "Networking Expert Witness — Dr. Tal Lavian, Ph.D. UC Berkeley";
-const networkingExpertDescription = "Networking expert witness — 120+ patents, 90+ cases. Enterprise networking, protocol architecture, network design. Ph.D. UC Berkeley.";
+const networkingExpertTitle = "Networking Expert Witness — Dr. Tal Lavian, Ph.D.";
+const networkingExpertDescription = "Networking expert witness — 120+ patents, 90+ cases. Enterprise networking, protocol architecture, network design. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
@@ -623,7 +623,7 @@ const telecomEWSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomEWTitle = "Telecommunications Expert Witness — 90+ Cases | Dr. Tal Lavian";
+const telecomEWTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
 const telecomEWDescription = "Telecommunications expert witness — Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, SS7, SONET/SDH. PTAB, ITC & federal court testimony.";
 
 export {
