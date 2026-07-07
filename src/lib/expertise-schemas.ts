@@ -118,7 +118,7 @@ const internetSchema = buildSchema.expertisePage({
   slug: 'internet-expert-witness',
   description: 'Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies, internet protocols. 90+ cases, 120+ patents. Ph.D. UC Berkeley.',
   serviceType: 'Internet Protocols Expert Witness',
-  keywords: ['internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'internet protocols expert witness', 'TCP/IP patent litigation', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
+  keywords: ['internet protocols expert witness', 'internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'transmission control protocol expert witness', 'TCP expert witness', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
   breadcrumbLabel: 'Internet & TCP/IP',
   faqs: [
     {
@@ -248,7 +248,7 @@ const streamingSchema = buildSchema.expertisePage({
   name: 'Streaming Media Expert Witness',
   slug: 'streaming-media-expert-witness',
   description: 'Streaming media expert witness for patent litigation. Video/audio streaming, adaptive bitrate, WebRTC, CDN, QoS. 90+ cases, 120+ patents.',
-  serviceType: 'Streaming Media Expert Witness',
+  serviceType: 'Video Streaming Expert Witness',
   keywords: ['streaming media expert witness', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert', 'CDN patent expert', 'WebRTC expert witness', 'video conferencing patent', 'HLS DASH streaming expert'],
   breadcrumbLabel: 'Streaming Media',
   faqs: [
@@ -279,8 +279,8 @@ const streamingSchema = buildSchema.expertisePage({
   ],
 });
 
-const streamingTitle = "Streaming Media Expert Witness — Dr. Tal Lavian, Ph.D.";
-const streamingDescription = "Streaming media expert witness — 120+ patents, 90+ cases. Video/audio streaming, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley. PTAB & ITC.";
+const streamingTitle = "Video Streaming Expert Witness | Dr. Tal Lavian, Ph.D.";
+const streamingDescription = "Video streaming expert witness — 120+ patents, 90+ cases. Streaming media, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 7. COMPUTER NETWORKING EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/computer-networking-expert-witness/index.astro
@@ -328,8 +328,8 @@ const computerNetworkingSchema = buildSchema.expertisePage({
   ],
 });
 
-const computerNetworkingTitle = "Computer Networking Expert Witness — Dr. Tal Lavian, Ph.D.";
-const computerNetworkingDescription = "Computer networking expert witness — 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley. PTAB & ITC.";
+const computerNetworkingTitle = "Computer Networks Expert Witness | Dr. Tal Lavian, Ph.D.";
+const computerNetworkingDescription = "Computer networks expert witness — 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 8. DATA COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/data-communications-expert-witness/index.astro
@@ -507,7 +507,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
   slug: 'networking-expert-witness',
   description: 'Networking expert witness for patent litigation. Enterprise networking, protocol architecture, network design and infrastructure. 90+ cases, 120+ patents.',
   serviceType: 'Networking Expert Witness',
-  keywords: ['networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
+  keywords: ['network expert witness', 'network architecture expert witness', 'networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
   breadcrumbLabel: 'Networking Expert',
   faqs: [
     {
@@ -537,8 +537,8 @@ const networkingExpertSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkingExpertTitle = "Networking Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkingExpertDescription = "Networking expert witness — 120+ patents, 90+ cases. Enterprise networking, protocol architecture, network design. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkingExpertTitle = "Network Expert Witness & Network Architecture | Dr. Lavian";
+const networkingExpertDescription = "Network expert witness — 120+ patents, 90+ cases. Network architecture, enterprise networking, protocol design. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
