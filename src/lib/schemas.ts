@@ -14,6 +14,13 @@ const BASE_URL = 'https://telecommnet.com';
 const PERSON_ID = `${BASE_URL}/#person`;
 const ORG_ID    = `${BASE_URL}/#org`;
 
+const ORG_LOGO_IMG = {
+  '@type': 'ImageObject',
+  url: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+  width: 400,
+  height: 100,
+};
+
 // â”€â”€â”€ Shared sub-objects â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export const PERSON_REF = { '@id': PERSON_ID };
@@ -160,7 +167,11 @@ export const ORG_ENTITY = {
   description: 'TelecommNet Engineering, Inc. provides telecommunications expert witness and consulting services for patent litigation, specializing in telecommunications, network communications, Internet protocols, and VoIP.',
   url: BASE_URL,
   founder: PERSON_REF,
-  logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+  logo: ORG_LOGO_IMG,
+  image: {
+    '@type': 'ImageObject',
+    url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+  },
   hasMap: 'https://maps.app.goo.gl/YKkzUgJggPWzsDjX6',
   areaServed: { '@type': 'Country', name: 'United States' },
   contactPoint: {
@@ -215,7 +226,11 @@ export const buildSchema = {
           serviceType: 'Expert Witness Services',
           url: BASE_URL,
           telephone: '+1-408-209-9112',
-          logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+          logo: ORG_LOGO_IMG,
+          image: {
+            '@type': 'ImageObject',
+            url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+          },
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',
@@ -254,7 +269,7 @@ export const buildSchema = {
           '@id': `${BASE_URL}/#website`,
           name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
           url: BASE_URL,
-          publisher: PERSON_REF,
+          publisher: { '@id': ORG_ID },
           datePublished: '2022-05-01T00:00:00+00:00',
           dateModified: '2026-07-03T00:00:00+00:00',
           inLanguage: 'en-US',
@@ -446,7 +461,11 @@ export const buildSchema = {
           mainEntityOfPage: { '@id': hubUrl },
           description:
             'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
-          logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+          logo: ORG_LOGO_IMG,
+          image: {
+            '@type': 'ImageObject',
+            url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+          },
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',
@@ -630,7 +649,11 @@ export const buildSchema = {
           provider: PERSON_REF,
           serviceType: 'Expert Witness Services',
           url: pageUrl,
-          logo: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+          logo: ORG_LOGO_IMG,
+          image: {
+            '@type': 'ImageObject',
+            url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+          },
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Encino',
