@@ -82,7 +82,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'What network protocols does Dr. Lavian have expertise in?',
-      a: 'Dr. Lavian\'s network protocol expertise includes TCP/IP, UDP, HTTP, DNS, BGP, OSPF, MPLS, VLAN, SIP, RTP, SNMP, Ethernet, and Wi-Fi 802.11. He has litigated 100+ patents involving these and related networking technologies.',
+      a: 'Dr. Lavian\'s network protocol expertise includes TCP/IP, UDP, HTTP, DNS, BGP, OSPF, MPLS, VLAN, SIP, RTP, SNMP, Ethernet, and Wi-Fi 802.11. He has served as testifying expert on 100+ patents involving these and related networking technologies.',
     },
     {
       q: 'Does Dr. Lavian serve as expert for both plaintiffs and defendants?',

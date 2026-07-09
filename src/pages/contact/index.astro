@@ -92,16 +92,21 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
 
           <p>Remote deposition and trial testimony are available nationwide via video conference.</p>
 
-          <h3>Engagement Process</h3>
-          <p>To retain Dr. Lavian as an expert witness, contact him directly by phone or email. Initial consultations typically include a review of the technical subject matter, relevant patents, and case timeline. Dr. Lavian works with both plaintiff and defendant parties and has been retained by companies including Apple, Google, Microsoft, Samsung, Cisco, AT&amp;T, and many others.</p>
-          <p>Dr. Lavian is based in Encino, California and is available for cases nationwide. He has testified in federal courts across multiple jurisdictions, at the USPTO Patent Trial and Appeal Board (PTAB), and at the International Trade Commission (ITC) in Washington, D.C.</p>
+          <h2>How to Retain Dr. Lavian</h2>
+          <ul class="retain-list">
+            <li><strong>Initial Inquiry</strong> — Contact by phone (<a href="tel:+14082099112">+1 408-209-9112</a>) or email (<a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a>). Dr. Lavian typically responds within one business day.</li>
+            <li><strong>Conflict Check</strong> — Dr. Lavian reviews all matters for conflicts of interest before agreeing to serve. Provide a brief description of the technology area and parties involved.</li>
+            <li><strong>Confidentiality</strong> — An NDA or confidentiality agreement is available before detailed case information is shared.</li>
+            <li><strong>Engagement Timeline</strong> — Dr. Lavian aims to complete the conflict review and issue an engagement letter promptly, subject to scheduling and the complexity of the conflict review.</li>
+          </ul>
+          <p>Dr. Lavian is based in Encino, California and available for engagements nationwide, including testimony before federal courts in all jurisdictions, USPTO PTAB hearings, ITC proceedings in Washington, D.C., and international proceedings.</p>
         </div>
 
         <div class="faq-section">
           <h2>Frequently Asked Questions</h2>
           <details open>
             <summary>What information should I include in an initial inquiry?</summary>
-            <p>A brief description of the technology area, the relevant patents, the opposing parties, and the anticipated timeline is sufficient for an initial review. Dr. Lavian will conduct a conflict check and typically responds within one business day.</p>
+            <p>A brief description of the technology area, the relevant patents, the opposing parties, and the anticipated timeline is sufficient for an initial review. Dr. Lavian reviews all engagements for potential conflicts of interest before agreeing to serve as an expert. He typically responds within one business day.</p>
           </details>
           <details>
             <summary>Does Dr. Lavian serve as both plaintiff and defense expert?</summary>
@@ -215,6 +220,28 @@ import { contactSchema, contactTitle, contactDescription } from '../../lib/remai
     text-decoration: none;
   }
   .contact-about a:hover {
+    text-decoration: underline;
+  }
+
+  /* How to Retain list */
+  .retain-list {
+    margin: 16px 0 20px 0;
+    padding-left: 22px;
+  }
+  .retain-list li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 12px;
+  }
+  .retain-list li strong {
+    color: #1a1a2e;
+  }
+  .retain-list a {
+    color: var(--color-blue-accent);
+    text-decoration: none;
+  }
+  .retain-list a:hover {
     text-decoration: underline;
   }
 
