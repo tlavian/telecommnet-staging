@@ -537,8 +537,8 @@ const networkingExpertSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkingExpertTitle = "Network Expert Witness & Network Architecture | Dr. Lavian";
-const networkingExpertDescription = "Network expert witness — 120+ patents, 90+ cases. Network architecture, enterprise networking, protocol design. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkingExpertTitle = "Networking Expert Witness — Network Architecture | Dr. Lavian";
+const networkingExpertDescription = "Networking expert witness — 120+ patents, 90+ cases. Enterprise networking, protocol design, multi-layer architecture. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
