@@ -46,10 +46,7 @@ const schema = buildSchema.about();
     <div class="content-with-sidebar">
       <div class="content-main">
 
-        <div class="about-intro-photo-row">
-          <img src="/images/branding/dr-lavian-photo.jpg" alt="Dr. Tal Lavian, Ph.D. — Telecommunications Expert Witness" width="160" height="213" loading="eager" itemprop="image" style="border-radius:4px;flex-shrink:0;" />
-          <p class="about-summary">Dr. Tal Lavian is a <a href="/communications-expert-witness/telecommunications-expert-witness/">telecommunications expert witness</a> and technical consultant based in Encino, California. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, and has spent nearly 20 years researching, studying, and lecturing at UC Berkeley. As an inventor of 120+ patents and expert witness in 90+ cases before U.S. federal courts — including the Northern District of California (NDCA), Eastern District of Texas (EDTX), Western District of Texas (WDTX), and the District of Delaware — the USPTO Patent Trial and Appeal Board (PTAB), and the International Trade Commission (ITC), Dr. Lavian provides testimony and technical analysis in patent disputes involving telecommunications, network communications, internet protocols, VoIP, mobile wireless, network security, and streaming media.</p>
-        </div>
+        <p class="about-summary">Dr. Tal Lavian is a <a href="/communications-expert-witness/telecommunications-expert-witness/">telecommunications expert witness</a> and technical consultant based in Encino, California. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, and has spent nearly 20 years researching, studying, and lecturing at UC Berkeley. As an inventor of 120+ patents and expert witness in 90+ cases before U.S. federal courts — including the Northern District of California (NDCA), Eastern District of Texas (EDTX), Western District of Texas (WDTX), and the District of Delaware — the USPTO Patent Trial and Appeal Board (PTAB), and the International Trade Commission (ITC), Dr. Lavian provides testimony and technical analysis in patent disputes involving telecommunications, network communications, internet protocols, VoIP, mobile wireless, network security, and streaming media.</p>
 
         <h2>Technical Background</h2>
 
@@ -206,25 +203,14 @@ const schema = buildSchema.about();
 
       </div>
 
-      <Sidebar />
+      <div class="right-col">
+        <img src="/images/branding/dr-lavian-photo.jpg" alt="Dr. Tal Lavian, Ph.D. — Telecommunications Expert Witness" width="250" height="333" loading="eager" itemprop="image" class="sidebar-portrait" />
+        <Sidebar />
+      </div>
     </div>
   </div>
 
   <style is:global>
-    .about-intro-photo-row {
-      display: flex;
-      gap: 24px;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
-    .about-intro-photo-row img {
-      border-radius: 4px;
-      flex-shrink: 0;
-    }
-    @media (max-width: 600px) {
-      .about-intro-photo-row { flex-direction: column; }
-      .about-intro-photo-row img { width: 120px; height: auto; }
-    }
     .experience-box {
       background: #f5f5f5;
       padding: 25px;

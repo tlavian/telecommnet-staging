@@ -197,6 +197,7 @@ footer { background: #0B1D3A; color: #fff; }
   .container { max-width: 100%; padding: 0 15px; }
   .content-with-sidebar { grid-template-columns: 1fr; }
   .sidebar { display: none; }
+  .right-col { display: none; }
   a { color: #000; text-decoration: underline; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
   a[href^="/"]::after { content: " (telecommnet.com" attr(href) ")"; font-size: 0.8em; color: #555; }
