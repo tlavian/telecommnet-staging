@@ -268,6 +268,15 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     img { max-width: 100%; height: auto; content-visibility: auto; }
     img[width][height] { aspect-ratio: attr(width) / attr(height); }
 
+    /* Breadcrumb navigation */
+    .breadcrumb-nav { background: #f5f7fa; border-bottom: 1px solid #e4e8ee; padding: 7px 0; font-size: 13px; }
+    .breadcrumb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0; align-items: center; }
+    .breadcrumb-item { display: flex; align-items: center; color: #666; }
+    .breadcrumb-item + .breadcrumb-item::before { content: '›'; margin: 0 7px; color: #999; }
+    .breadcrumb-item a { color: var(--color-blue-accent, #1a6faf); text-decoration: none; }
+    .breadcrumb-item a:hover { text-decoration: underline; }
+    .breadcrumb-item span[aria-current="page"] { color: #444; font-weight: 500; }
+
     /* Skip-to-content accessibility link (WCAG 2.2 AA) */
     .skip-to-content {
       position: absolute;
@@ -465,8 +474,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
         </span>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 151 151" fill="none" aria-hidden="true"><circle cx="75.5" cy="75.5" r="75" fill="white"/><path d="M103 48.5H48v54.75h55V48.5z" fill="#F1F1F1"/><path d="M75.5 82.875L48 63.25v40h55v-40L75.5 82.875z" fill="#D54B3D"/><path d="M75.5 78.125L48 58.5v4.75l27.5 19.625L103 63.25V58.5L75.5 78.125z" fill="#B63524"/><path d="M103 48.5H48l27.5 29.625L103 48.5z" fill="#DE5B49"/></svg>
-          <span class="js-email" data-u="tlavian" data-d="telecommnet.com"></span>
-          <noscript><a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></noscript>
+          <a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a>
         </span>
       </div>
       <div class="top-bar-right">
@@ -489,7 +497,6 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       <ul class="nav-links" id="navMenu">
         <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
         <li><a href="/about-dr-lavian/" class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
-        <li><a href="/communications-expert-witness/network-communications-expert-witness/" class={currentPath === '/communications-expert-witness/network-communications-expert-witness/' ? 'active' : ''}>Expertise</a></li>
         <li class="has-dropdown">
           <a href="/communications-expert-witness/" class={currentPath.includes('/communications-expert-witness') ? 'active' : ''}>Areas of Expertise <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown dropdown-expertise">
@@ -535,6 +542,23 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   </div>
 
   <main id="main-content">
+    {resolvedBreadcrumbs.length > 0 && (
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+          <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            {resolvedBreadcrumbs.map((crumb, i) => (
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                {i < resolvedBreadcrumbs.length - 1
+                  ? <a href={crumb.url} itemprop="item"><span itemprop="name">{crumb.name}</span></a>
+                  : <span itemprop="name" aria-current="page">{crumb.name}</span>
+                }
+                <meta itemprop="position" content={String(i + 1)} />
+              </li>
+            ))}
+          </ol>
+        </div>
+      </nav>
+    )}
     <slot />
   </main>
 
