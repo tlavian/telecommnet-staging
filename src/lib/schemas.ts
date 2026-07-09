@@ -17,8 +17,8 @@ const ORG_ID    = `${BASE_URL}/#org`;
 const ORG_LOGO_IMG = {
   '@type': 'ImageObject',
   url: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
-  width: 400,
-  height: 100,
+  width: 1768,
+  height: 296,
 };
 
 // â”€â”€â”€ Shared sub-objects â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
