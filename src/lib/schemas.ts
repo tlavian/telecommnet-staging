@@ -287,7 +287,7 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Asia.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Malaysia.',
               },
             },
             {
@@ -402,7 +402,7 @@ export const buildSchema = {
               name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained as an expert in over 90 cases. He has served as an expert on over 100 patents litigated. He has provided expert reports and testimony in over 60 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Asia.',
+                text: 'Dr. Lavian has been retained as an expert in over 90 cases. He has served as an expert on over 100 patents litigated. He has provided expert reports and testimony in over 60 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Malaysia.',
               },
             },
             {
@@ -518,7 +518,7 @@ export const buildSchema = {
               name: 'In what courts has Dr. Lavian testified?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Canadian Federal Court, and a court in Asia in patent litigation involving Apple.',
+                text: 'Dr. Lavian has testified in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC) in Section 337 investigations, the Canadian Federal Court, and a court in Malaysia in patent litigation involving Apple.',
               },
             },
             {
@@ -977,7 +977,7 @@ export const buildSchema = {
               name: 'What courts and tribunals has Dr. Lavian testified in?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has testified in the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), the Canadian Federal Court, and a court in Asia. He has also served in USPTO PTAB proceedings, including Inter Partes Reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.',
+                text: 'Dr. Lavian has testified in the United States District Court, the United States Patent and Trademark Office (USPTO), the International Trade Commission (ITC), the Canadian Federal Court, and a court in Malaysia. He has also served in USPTO PTAB proceedings, including Inter Partes Reviews (IPRs), Covered Business Method (CBM) reviews, Post Grant Reviews (PGRs), Ex-Parte Re-Examinations, and PTO Interferences.',
               },
             },
             {
