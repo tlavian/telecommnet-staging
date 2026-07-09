@@ -142,6 +142,7 @@ export const PERSON_ENTITY = {
     'https://www.ratemyprofessors.com/professor/1813887',
     'https://scholargps.com/scholars/98050981746055/tal-lavian',
     'https://ieee-collabratec.ieee.org/app/myprofile/about',
+    'https://www.wikidata.org/wiki/Q102325896',
   ],
   knowsLanguage: ['en', 'he'],
   memberOf: [
