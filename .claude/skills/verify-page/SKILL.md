@@ -26,7 +26,7 @@ Compare the staging Astro page against its production counterpart on telecommnet
    - Heading hierarchy (H1, H2, H3) must match exactly
    - Body text content must match (allow minor formatting differences)
    - All internal links must point to correct destinations
-   - All images must use local paths (`/wp-content/uploads/...`), not production URLs
+   - All images must use local paths under `/images/...`, not production URLs (the old `/wp-content/uploads/` scheme was removed)
    - Meta title and description should match production intent
 
 4. **Report:**
