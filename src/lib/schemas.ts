@@ -16,7 +16,7 @@ const ORG_ID    = `${BASE_URL}/#org`;
 
 const ORG_LOGO_IMG = {
   '@type': 'ImageObject',
-  url: `${BASE_URL}/wp-content/uploads/2022/05/telecommnet-logo.webp`,
+  url: `${BASE_URL}/images/branding/telecommnet-logo.webp`,
   width: 1768,
   height: 296,
 };

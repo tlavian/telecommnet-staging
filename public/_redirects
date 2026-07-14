@@ -1,5 +1,10 @@
 # Redirects for telecommnet.com (Cloudflare Pages)
 
+# Old WordPress media folder removed. Logo relocated to /images/branding/;
+# any other stale /wp-content/* URL (old image deep-links, Google Images) 301s home.
+/wp-content/uploads/2022/05/telecommnet-logo.webp /images/branding/telecommnet-logo.webp 301
+/wp-content/* / 301
+
 # CV PDF — all old URLs redirect to the single canonical CV
 /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf 301
 /resume-cv/dr-tal-lavian-cv-expert-witness-network-communications-telecommunications-internet-protocols-mobile-wireless.pdf /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf 301
