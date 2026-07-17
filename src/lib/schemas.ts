@@ -874,13 +874,6 @@ export const buildSchema = {
         datePublished: '1995-11',
         publisher: 'Tel Aviv University',
       },
-      {
-        position: 31,
-        name: 'Dangerous Liaisons — Software Combinations as Derivative Works?',
-        datePublished: '2006',
-        publisher: 'Berkeley Technology Law Journal, Volume 21, Issue 4',
-        coAuthors: ['Determann L.'],
-      },
     ];
 
     return {
@@ -907,8 +900,8 @@ export const buildSchema = {
         {
           '@type': 'ItemList',
           name: 'Publications by Dr. Tal Lavian',
-          description: '31 peer-reviewed publications in IEEE, ACM, Berkeley Technology Law Journal, and related venues.',
-          numberOfItems: 31,
+          description: '30 peer-reviewed publications in IEEE, ACM, and related venues.',
+          numberOfItems: 30,
           itemListElement: publicationEntries.map(pub => ({
             '@type': 'ListItem',
             position: pub.position,
