@@ -1043,16 +1043,18 @@ export const buildSchema = {
           name: 'Presentations by Dr. Tal Lavian',
           description: '30+ conference presentations and technical talks at IEEE, ACM, DARPA, and UC Berkeley.',
           numberOfItems: 15,
+          // Typed as CreativeWork, not EducationEvent: Google requires startDate
+          // and location for Event rich results, and we have no verified dates or
+          // venues for these past talks. Event markup without them fails validation.
           itemListElement: presentationEntries.map(pres => ({
             '@type': 'ListItem',
             position: pres.position,
             item: {
-              '@type': 'EducationEvent',
+              '@type': 'CreativeWork',
               name: pres.name,
-              performer: PERSON_REF,
-              organizer: { '@type': 'Organization', name: pres.organizer },
+              author: PERSON_REF,
+              publisher: { '@type': 'Organization', name: pres.organizer },
               about: { '@type': 'Thing', name: pres.about },
-              eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
               inLanguage: 'en-US',
             },
           })),
