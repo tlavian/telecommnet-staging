@@ -35,7 +35,7 @@ export const PERSON_ENTITY = {
   honorificSuffix: 'Ph.D.',
   jobTitle: 'Telecommunications Expert Witness',
   description:
-    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has testified in 90+ patent cases in U.S. federal courts, USPTO PTAB, and the ITC, with 120+ patents and 25+ peer-reviewed publications.',
+    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has been retained in 90+ patent cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC, and holds 120+ patents and 25+ peer-reviewed publications.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -147,7 +147,7 @@ export const PERSON_ENTITY = {
   memberOf: [
     { '@type': 'Organization', name: 'IEEE', url: 'https://www.ieee.org' },
     { '@type': 'Organization', name: 'ACM', url: 'https://www.acm.org' },
-    { '@type': 'Organization', name: 'IEEE Communications, Networks & Services Committee (IEEE-CNSV)', url: 'https://californiaconsultants.org/members/tal-lavian/' },
+    { '@type': 'Organization', name: "IEEE Consultants' Network of Silicon Valley (IEEE-CNSV)", url: 'https://californiaconsultants.org/members/tal-lavian/' },
     { '@type': 'Organization', name: 'ACM SIGCOMM', url: 'https://www.acm.org/special-interest-groups/sigs/sigcomm' },
     { '@type': 'Organization', name: 'ACM SIGWEB', url: 'https://www.sigweb.org/' },
   ],
@@ -271,7 +271,7 @@ export const buildSchema = {
           url: BASE_URL,
           publisher: { '@id': ORG_ID },
           datePublished: '2022-05-01T00:00:00+00:00',
-          dateModified: '2026-07-03T00:00:00+00:00',
+          dateModified: '2026-10-05T00:00:00+00:00',
           inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',
@@ -575,7 +575,7 @@ export const buildSchema = {
           name: opts.name,
           description: opts.description,
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-03-16T00:00:00+00:00',
+          dateModified: '2026-10-05T00:00:00+00:00',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -632,7 +632,7 @@ export const buildSchema = {
           name: opts.name,
           description: opts.description,
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-03-18T00:00:00+00:00',
+          dateModified: '2026-10-05T00:00:00+00:00',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -1269,7 +1269,7 @@ export const buildSchema = {
             '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions before the USPTO.',
           url: `${BASE_URL}/patents/`,
           author: PERSON_REF,
-          dateModified: '2026-03-16T00:00:00+00:00',
+          dateModified: '2026-10-05T00:00:00+00:00',
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
@@ -1309,7 +1309,7 @@ export const buildSchema = {
           description:
             'Contact Dr. Tal Lavian for telecommunications and network communications expert witness and consulting services.',
           url: `${BASE_URL}/contact/`,
-          dateModified: '2026-03-16T00:00:00+00:00',
+          dateModified: '2026-10-05T00:00:00+00:00',
           inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',

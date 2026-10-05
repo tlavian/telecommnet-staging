@@ -1,3 +1,9 @@
+# Staging / preview host (telecommnet.pages.dev and *.telecommnet.pages.dev) must never be indexed.
+# ":project" is Cloudflare's placeholder for this project's pages.dev subdomain, so this rule also
+# covers preview deployments. Production (telecommnet.com) is not matched by it.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
 /*
   Link: <https://telecommnet.com/llms.txt>; rel="llmstxt"
   X-Content-Type-Options: nosniff
@@ -38,11 +44,6 @@
 /css/deferred.css
   Cache-Control: public, max-age=86400, must-revalidate
 
-# Allow indexing of Dr. Lavian's resume/CV — short cache so updates propagate within 1 hour
-/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf
-  Cache-Control: public, max-age=3600
-  X-Robots-Tag: index, follow
-
 # Legacy CV URL — kept for backward compatibility (redirected via _redirects)
 /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless.pdf
   Cache-Control: no-store, no-cache, must-revalidate
@@ -54,6 +55,17 @@
 
 /files/*
   X-Robots-Tag: noindex, nofollow
+
+# Allow indexing of Dr. Lavian's resume/CV — short cache so updates propagate within 1 hour.
+# ORDER MATTERS: Cloudflare Pages combines the headers of EVERY matching rule, so this rule must
+# come AFTER the "/*.pdf" catch-all above. The "! Header" lines detach the X-Robots-Tag and
+# Cache-Control values already attached by "/*.pdf" (otherwise the CV would be served with both
+# "index, follow" and "noindex, nofollow"), and the lines after them re-attach the CV-only values.
+/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf
+  ! X-Robots-Tag
+  ! Cache-Control
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: index, follow
 
 # AI crawler files — short cache so updates propagate quickly
 /llms.txt
@@ -71,4 +83,10 @@
 # Block legacy WordPress tag pages — cannibalizing real expertise pages
 /tag/*
   X-Robots-Tag: noindex, nofollow
+
+# Staging copy of the CV: the CV rule above detaches X-Robots-Tag on every host, which would also
+# remove the staging "noindex" set at the top of this file. Re-apply it here (last, so it wins).
+https://:project.pages.dev/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf
+  ! X-Robots-Tag
+  X-Robots-Tag: noindex
 

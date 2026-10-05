@@ -22,15 +22,15 @@ import { routingSwitchingSchema, routingSwitchingTitle, routingSwitchingDescript
 
         <p>Dr. Tal Lavian serves as a routing and switching expert witness in patent litigation, PTAB inter partes review (IPR) proceedings, and ITC Section 337 investigations involving routers, switches, network protocols, and network infrastructure. His expertise covers routing protocols, switch architecture and design, standards, and network communications systems, LAN, WAN, and networking infrastructure.</p>
 
-        <p>Dr. Lavian has conducted <a href="/communications-expert-witness/telecommunications-expert-witness/">research in telecommunications</a>, <a href="/us-20130080898-electronic-communications/">network communications</a>, and Internet technologies. He designed software for switches, routers, and network communications equipment and developed systems and architectures for managing them. Dr. Lavian offers consulting services regarding routing, switching, and communication equipment architectures and design.</p>
+        <p>Dr. Lavian has conducted <a href="/communications-expert-witness/telecommunications-expert-witness/">research in telecommunications</a>, <a href="/communications-expert-witness/network-communications-expert-witness/">network communications</a>, and Internet technologies. He designed software for switches, routers, and network communications equipment and developed systems and architectures for managing them. Dr. Lavian offers consulting services regarding routing, switching, and communication equipment architectures and design.</p>
 
         <p>His research and development background covers the technical aspects of routing and switching within the broader contexts of <a href="/communications-expert-witness/network-communications-expert-witness/">network communications systems and Internet architecture and protocols.</a></p>
 
         <p>A router is a networking device that forwards data packets between computer networks. The router switching fabric is the heart of the router; it connects the input and output ports. Router architecture is designed in such a way that the routers are equipped to perform two main functions:</p>
 
-        <ul>
-          <li><h4>Process routable protocols.</h4></li>
-          <li><h4>Use routing protocols to determine the best path.</h4></li>
+        <ul class="router-functions">
+          <li><h3>Process routable protocols.</h3></li>
+          <li><h3>Use routing protocols to determine the best path.</h3></li>
         </ul>
 
         <p>Network infrastructure comprises the hardware and software resources that enable network connectivity, communication, operations, and management of enterprise and service provider networks. Therefore, It provides the communication path and services between users, processes, applications, services, and devices.</p>
@@ -55,11 +55,11 @@ import { routingSwitchingSchema, routingSwitchingTitle, routingSwitchingDescript
 
         <ul>
           <li>Wired networking: core and edge routers, switches, load balancers, and SD-WAN.</li>
-          <li><a href="/us-20180130102-reliable-rating-system-and-method-thereof/">Wireless</a> networking: Access Points, Wireless Controllers, and Data and Control Planes.</li>
+          <li><a href="/communications-expert-witness/mobile-wireless-expert-witness/">Wireless</a> networking: Access Points, Wireless Controllers, and Data and Control Planes.</li>
           <li>Networking principles, software, and hardware architectures, ASIC, firmware, high-speed backplanes, switch fabric, control planes, data planes, blocking and non-blocking architectures, priority queuing, time-to-live, packet addressing, and routing/switching table structures.</li>
           <li>Routers, switches, gateways, routing and switching, IETF RFC standards that define relevant functional architectures, protocol specifications, and forwarding.</li>
           <li>Enterprise and service provider cable networks, such as modems, headend, and fiber optic DWDM infrastructure.</li>
-          <li><a href="/us-10598764-radar-target-detection-and-imaging-system-for-autonomous-car/">Network Security</a>: Firewalls, VPNs, IPSec, Tunneling, Content Filtering, and Security Gateways.</li>
+          <li><a href="/communications-expert-witness/network-security-expert-witness/">Network Security</a>: Firewalls, VPNs, IPSec, Tunneling, Content Filtering, and Security Gateways.</li>
           <li>Bandwidth throttling, Quality of Service, QoS, Priority queuing, and Traffic Classification.</li>
           <li><a href="/communications-expert-witness/network-management-expert-witness/">Network Management</a>: MIBs, Traps, Logs, SNMP, FCAPS, Monitoring, and Troubleshooting.</li>
           <li>Industry standards: IETF, IEEE, ITU-T, 3GPP, Wi-Fi, ISO, and IEC.</li>
@@ -149,6 +149,7 @@ import { routingSwitchingSchema, routingSwitchingTitle, routingSwitchingDescript
           <li><a href="/patents/">Patents Invented (120+)</a></li>
           <li><a href="/scientific-publications/">Scientific Publications &amp; Research</a></li>
           <li><a href="/about-dr-lavian/">About Dr. Tal Lavian, Ph.D.</a></li>
+          <li><a href="/Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf">Curriculum Vitae (PDF)</a></li>
           <li><a href="/contact/">Contact Dr. Lavian</a></li>
         </ul>
       </nav>
@@ -168,6 +169,20 @@ import { routingSwitchingSchema, routingSwitchingTitle, routingSwitchingDescript
   border-left: 4px solid var(--color-gold);
   padding-left: 20px;
   margin-top: 0;
+}
+/* Router functions list — items are <h3> (directly under the page <h2>, no skipped level).
+   Keep the exact rendering the previous <h4> markup had (browser defaults, margins zeroed
+   by the global reset) instead of the site-wide h3 styling. */
+.content-full .router-functions > li > h3 {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+  color: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 </style>
 

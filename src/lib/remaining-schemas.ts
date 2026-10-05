@@ -104,14 +104,14 @@ export const privacySchema = buildSchema.webPage({
   name: 'Privacy Policy & Data Security Protocols — TelecommNet',
   slug: 'privacy-policy',
   description:
-    'TelecommNet\'s privacy policy outlining data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.',
+    'Privacy policy for telecommnet.com: no personal information collected directly, Google Analytics cookies only, no data sharing or sale, and CCPA rights.',
   breadcrumbLabel: 'Privacy Policy',
 });
 
 export const privacyTitle =
   "Privacy Policy & Data Security Protocols | TelecommNet";
 export const privacyDescription =
-  "TelecommNet's privacy policy outlining data protection protocols, GDPR/CCPA compliance, and commitment to maintaining attorney-client privilege.";
+  "Privacy policy for telecommnet.com: no personal information collected directly, Google Analytics cookies only, no data sharing or sale, and CCPA rights.";
 
 // ─── 24. TERMS AND CONDITIONS ─────────────────────────────────────────────
 // File: src/pages/terms-and-conditions/index.astro

@@ -25,7 +25,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What telecom qualifications does Dr. Lavian have?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as Principal Scientist and Principal Architect at Nortel Networks, has 120+ patents in telecom, 25+ peer-reviewed publications, and has testified in 90+ federal court, PTAB, and ITC proceedings.',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as Principal Scientist and Principal Architect at Nortel Networks, has 120+ patents in telecom, 25+ peer-reviewed publications, and has been retained in 90+ cases, with testimony before federal courts, the PTAB, and the ITC.',
     },
     {
       q: 'In which courts has Dr. Lavian testified as a telecommunications expert?',
@@ -279,7 +279,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian testified in computer networks patent cases?',
-      a: 'Yes. Dr. Lavian has provided expert reports and testimony in 90+ patent cases involving computer networks technologies for companies including Cisco, Juniper Networks, Google, Amazon, Microsoft, and Apple.',
+      a: 'Yes. Dr. Lavian has been retained in 90+ patent cases, providing expert reports and testimony in matters involving computer networks technologies for companies including Cisco, Juniper Networks, Google, Amazon, Microsoft, and Apple.',
     },
     {
       q: 'What types of computer networks patent disputes does Dr. Lavian handle?',
@@ -362,9 +362,9 @@ const dataCommsDescription = "Data communications expert witness — 120+ patent
 const mobileWirelessSchema = buildSchema.expertisePage({
   name: 'Mobile & Wireless Expert Witness',
   slug: 'mobile-wireless-expert-witness',
-  description: 'Wireless & mobile expert witness for patent litigation. Wi-Fi, WLAN, wireless access technologies, mobile devices. 90+ cases, 120+ patents.',
+  description: 'Mobile & wireless expert witness for patent litigation. Wi-Fi 802.11, WLAN, wireless access technologies, mobile devices. 90+ cases, 120+ patents.',
   serviceType: 'Wireless Expert Witness',
-  keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
+  keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi 802.11 patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
   breadcrumbLabel: 'Mobile Wireless',
   faqs: [
     {
@@ -390,8 +390,8 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   ],
 });
 
-const mobileWirelessTitle = "Wireless & Mobile Expert Witness — Dr. Tal Lavian, Ph.D.";
-const mobileWirelessDescription = "Wireless & mobile expert witness — 120+ patents, 90+ cases. Wi-Fi, WLAN, wireless access technologies, mobile devices. Ph.D. UC Berkeley. PTAB & ITC.";
+const mobileWirelessTitle = "Mobile & Wireless Expert Witness — Dr. Tal Lavian, Ph.D.";
+const mobileWirelessDescription = "Mobile & wireless expert witness — 120+ patents, 90+ cases. Wi-Fi 802.11, wireless access technologies, mobile devices. Ph.D. UC Berkeley. PTAB & ITC.";
 
 // â"€â"€â"€ 10. ROUTING & SWITCHING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/routing-switching-expert-witness/index.astro
@@ -492,7 +492,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'Is Dr. Lavian qualified as a networking expert for both technical and litigation purposes?',
-      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), nearly 20 years of academic research at UC Berkeley, and has served as a testifying expert witness in 90+ patent cases.',
+      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), nearly 20 years researching, studying, and lecturing at UC Berkeley, and has been retained in 90+ patent cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC.',
     },
     {
       q: 'What types of networking patent cases has Dr. Lavian handled?',

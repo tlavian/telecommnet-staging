@@ -1,5 +1,11 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { execSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+
+const PROJECT_ROOT = fileURLToPath(new URL('.', import.meta.url));
 
 // ── 27 core pages that belong in the sitemap ──
 // All other pages (patents, cases, publications, categories) are
@@ -35,6 +41,55 @@ const CORE_PATHS = new Set([
   '/terms-and-conditions/',
 ]);
 
+// ── Sitemap <lastmod> from git history ──
+// lastmod = committer date of the last commit that touched the page's source file
+// (src/pages/<pathname>/index.astro; "/" -> src/pages/index.astro). The date is read
+// from git at build time. If git is unavailable, the clone is shallow (a shallow clone
+// would report the same truncated date for every file), or git has no commit for the
+// file, lastmod is simply left unset. Build time is never used as a fallback.
+let gitLastmodUsable = null;
+function gitHistoryUsable() {
+  if (gitLastmodUsable !== null) return gitLastmodUsable;
+  try {
+    const shallow = execSync('git rev-parse --is-shallow-repository', {
+      cwd: PROJECT_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+    gitLastmodUsable = shallow === 'false';
+    if (!gitLastmodUsable) {
+      console.warn('[sitemap] shallow git clone detected; <lastmod> will be omitted.');
+    }
+  } catch {
+    console.warn('[sitemap] git not available; <lastmod> will be omitted.');
+    gitLastmodUsable = false;
+  }
+  return gitLastmodUsable;
+}
+
+function sourceFileForPath(pathname) {
+  const rel = pathname.replace(/^\/+/, '');
+  const candidates = [
+    path.join('src', 'pages', rel, 'index.astro'),
+    path.join('src', 'pages', rel.replace(/\/+$/, '') + '.astro'),
+  ];
+  return candidates.find((c) => existsSync(path.join(PROJECT_ROOT, c)));
+}
+
+function gitLastmod(pathname) {
+  try {
+    if (!gitHistoryUsable()) return undefined;
+    const file = sourceFileForPath(pathname);
+    if (!file) return undefined;
+    const out = execSync(`git log -1 --format=%cI -- "${file}"`, {
+      cwd: PROJECT_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+    // %cI is strict ISO 8601; reject anything else rather than emit a bad date.
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:[+-]\d{2}:\d{2}|Z)$/.test(out)) return undefined;
+    return out;
+  } catch {
+    return undefined;
+  }
+}
+
 export default defineConfig({
   site: 'https://telecommnet.com',
   integrations: [
@@ -47,6 +102,15 @@ export default defineConfig({
         } catch {
           return false;
         }
+      },
+      serialize: (item) => {
+        try {
+          const lastmod = gitLastmod(new URL(item.url).pathname);
+          if (lastmod) item.lastmod = lastmod;
+        } catch {
+          // leave lastmod unset
+        }
+        return item;
       },
     }),
   ],

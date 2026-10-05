@@ -17,3 +17,10 @@
 /communications-expert-witness/network-security-expert/* /communications-expert-witness/network-security-expert-witness/:splat 301
 /communications-expert-witness/networking-expert/* /communications-expert-witness/networking-expert-witness/:splat 301
 /communications-expert-witness/streaming-media-audio-and-video-conferencing-expert/* /communications-expert-witness/streaming-media-expert-witness/:splat 301
+
+# 301 redirects for dead legacy URLs (old "-services" section and old patents slug)
+# Cloudflare matches rules in order: specific rules first, then the "-services/*" catch-all.
+/communications-expert-witness-services/routing-switching-expert/ /communications-expert-witness/routing-switching-expert-witness/ 301
+/telecommunications-expert-witness-services/ /communications-expert-witness/telecommunications-expert-witness/ 301
+/patents-list/ /patents/ 301
+/communications-expert-witness-services/* /communications-expert-witness/:splat 301
