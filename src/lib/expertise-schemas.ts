@@ -356,12 +356,12 @@ const dataCommsDescription = "Data communications expert witness for patent liti
 // File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
 
 const mobileWirelessSchema = buildSchema.expertisePage({
-  name: 'Mobile & Wireless Expert Witness',
+  name: 'Wireless Expert Witness',
   slug: 'mobile-wireless-expert-witness',
-  description: 'Mobile & wireless expert witness for patent litigation. Wi-Fi 802.11, WLAN, wireless access technologies, mobile devices. 90+ cases, 120+ patents.',
+  description: 'Wireless expert witness for patent litigation: Wi-Fi 802.11, WLAN, mobile device networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Wireless Expert Witness',
-  keywords: ['cell phone expert witness', 'wireless expert witness', 'Wi-Fi 802.11 patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
-  breadcrumbLabel: 'Mobile Wireless',
+  keywords: ['wireless expert witness', 'Wi-Fi 802.11 patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
+  breadcrumbLabel: 'Wireless',
   faqs: [
     {
       q: 'What wireless technologies is Dr. Lavian expert in?',
@@ -386,8 +386,8 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   ],
 });
 
-const mobileWirelessTitle = "Mobile & Wireless Expert Witness — Dr. Tal Lavian, Ph.D.";
-const mobileWirelessDescription = "Mobile & wireless expert witness — 120+ patents, 90+ cases. Wi-Fi 802.11, wireless access technologies, mobile devices. Ph.D. UC Berkeley. PTAB & ITC.";
+const mobileWirelessTitle = "Wireless Expert Witness — Wi-Fi 802.11 & WLAN | Dr. Lavian";
+const mobileWirelessDescription = "Wireless expert witness for patent litigation: Wi-Fi 802.11, WLAN, mobile device networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 10. ROUTING & SWITCHING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/routing-switching-expert-witness/index.astro

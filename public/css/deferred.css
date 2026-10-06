@@ -183,7 +183,7 @@ footer { background: #0B1D3A; color: #fff; }
 }
 
 /* In-main contact block (expertise pages, hub, About, Cases) and expertise facet line */
-.cta-block h2 { color: #fff; font-family: 'Merriweather', 'Georgia', serif; font-size: 1.25rem; margin: 0 0 10px 0; border: none; padding: 0; }
+.cta-block h2, .content-full .cta-block h2, .content-main .cta-block h2, .bio-main .cta-block h2 { color: #fff; font-family: 'Merriweather', 'Georgia', serif; font-size: 1.25rem; margin: 0 0 10px 0; border: none; padding: 0; }
 .cta-block p a { color: #fff; text-decoration: underline; }
 .cta-block .cta-links { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
 .cta-block .cta-link { color: #fff; text-decoration: underline; font-weight: 600; }
