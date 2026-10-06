@@ -238,6 +238,7 @@ Courts and Tribunals:
 - [Telecommunications Expert Witness](https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/): Core telecommunications expertise page — PSTN, VoIP, telecom protocols, 90+ cases
 - [Cases & Testimony](https://telecommnet.com/cases-expert-witness-testimony/): Expert witness case history
 - [Scientific Publications](https://telecommnet.com/scientific-publications/): Research and publications
+- [Talks & Presentations](https://telecommnet.com/talks-presentations/): Conference talks and presentations
 - [Patents](https://telecommnet.com/patents/): 120+ patent portfolio
 - [Contact](https://telecommnet.com/contact/): Get in touch
 - [For Law Firms](https://telecommnet.com/law-firm-clients/): Law firm client information

@@ -427,7 +427,7 @@ const routingSwitchingSchema = buildSchema.expertisePage({
   ],
 });
 
-const routingSwitchingTitle = "Routing & Switching Expert Witness — Dr. Tal Lavian, Ph.D.";
+const routingSwitchingTitle = "Routing & Switching Expert Witness | Dr. Tal Lavian, Ph.D.";
 const routingSwitchingDescription = "Routing and switching expert witness for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 11. NETWORK MANAGEMENT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
@@ -509,7 +509,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
   ],
 });
 
-const networkingExpertTitle = "Networking Expert Witness — Network Architecture | Dr. Lavian";
+const networkingExpertTitle = "Networking Expert Witness | Dr. Tal Lavian, Ph.D.";
 const networkingExpertDescription = "Networking expert witness for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
