@@ -104,7 +104,15 @@ function schemaHasBreadcrumbs(s: any): boolean {
 // Visible breadcrumb trail on every page except the homepage (built from the URL path unless the
 // page passes its own). The BreadcrumbList schema is only generated here when the page schema
 // does not already carry one (the expertise/hub/collection graphs do), so no page emits two.
-const resolvedBreadcrumbs = breadcrumbs || autoBreadcrumbs(currentPath);
+// When the page schema already carries a BreadcrumbList, the visible trail uses its names, so the
+// two never disagree (Google asks for the markup to correspond to the visible breadcrumb).
+function crumbsFromSchema(s: any): Array<{name: string; url: string}> | null {
+  const nodes = s?.['@graph'] ?? (s ? [s] : []);
+  const bc = nodes.find((n: any) => n?.['@type'] === 'BreadcrumbList');
+  if (!bc?.itemListElement?.length) return null;
+  return bc.itemListElement.map((li: any) => ({ name: String(li.name), url: String(li.item).replace(/^https:\/\/telecommnet\.com/, '') }));
+}
+const resolvedBreadcrumbs = breadcrumbs || crumbsFromSchema(schema) || autoBreadcrumbs(currentPath);
 
 // Generate BreadcrumbList schema from breadcrumbs
 const breadcrumbSchema = (resolvedBreadcrumbs.length > 0 && !schemaHasBreadcrumbs(schema)) ? {

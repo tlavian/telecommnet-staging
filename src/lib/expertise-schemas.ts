@@ -66,7 +66,7 @@ const networkCommsSchema = buildSchema.expertisePage({
   description: 'Network communications expert witness for patent litigation. TCP/IP, routing protocols, LAN/WAN, OSI model. 90+ cases, 120+ patents.',
   serviceType: 'Network Communications Expert Witness',
   keywords: ['network communications expert witness', 'TCP/IP expert witness', 'routing protocols litigation', 'LAN WAN patent expert', 'network architecture expert witness', 'OSI model patent', 'network protocol expert', 'distributed systems expert witness'],
-  breadcrumbLabel: 'Network Comms',
+  breadcrumbLabel: 'Network Communications',
   faqs: [
     {
       q: 'What is a network communications expert witness?',

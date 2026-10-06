@@ -221,7 +221,7 @@ export function breadcrumbs(items: { name: string; url: string }[]) {
   return {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Telecommunications Expert Witness', item: BASE_URL + '/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL + '/' },
       ...items.map((crumb, i) => ({
         '@type': 'ListItem',
         position: i + 2,
@@ -576,7 +576,7 @@ export const buildSchema = {
             },
           ],
         },
-        breadcrumbs([{ name: 'Expert Witness Services', url: '/communications-expert-witness/' }]),
+        breadcrumbs([{ name: 'Communications Expert Witness', url: '/communications-expert-witness/' }]),
       ],
     };
   },
@@ -641,7 +641,7 @@ export const buildSchema = {
           })),
         },
         breadcrumbs([
-          { name: 'Expert Witness Services', url: '/communications-expert-witness/' },
+          { name: 'Communications Expert Witness', url: '/communications-expert-witness/' },
           { name: opts.breadcrumbLabel, url: `/communications-expert-witness/${opts.slug}/` },
         ]),
       ],
