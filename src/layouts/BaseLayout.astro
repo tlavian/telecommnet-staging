@@ -1,4 +1,21 @@
 ---
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+// Cache-busting for the unhashed deferred stylesheet: Cloudflare's edge and
+// browsers cache /css/deferred.css for a day, so CSS edits did not propagate
+// on deploy. A content hash in the query string gives every edit a new URL.
+const deferredCssHref = (() => {
+  try {
+    const cssPath = fileURLToPath(new URL('../../public/css/deferred.css', import.meta.url));
+    const hash = createHash('md5').update(readFileSync(cssPath)).digest('hex').slice(0, 8);
+    return `/css/deferred.css?v=${hash}`;
+  } catch {
+    return '/css/deferred.css';
+  }
+})();
+
 interface Props {
   title: string;
   description?: string;
@@ -159,9 +176,9 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
   <link rel="preload" as="font" type="font/woff2" href="/fonts/merriweather-700.woff2" crossorigin />
   {currentPath === '/' && <link rel="preload" as="image" type="image/webp" href="/images/heroes/header-banner.webp" fetchpriority="high" media="(min-width: 769px)" />}
   <!-- Deferred non-critical CSS (footer, print, expertise cards, client logos, etc.) -->
-  <link rel="preload" as="style" href="/css/deferred.css" />
-  <link rel="stylesheet" href="/css/deferred.css" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="/css/deferred.css" /></noscript>
+  <link rel="preload" as="style" href={deferredCssHref} />
+  <link rel="stylesheet" href={deferredCssHref} media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href={deferredCssHref} /></noscript>
   {fullSchema && <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />}
   <!-- Google Analytics (deferred for performance — loads after browser idle) -->
   <script is:inline>
