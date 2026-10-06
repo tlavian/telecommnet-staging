@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { execSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -74,6 +74,22 @@ function sourceFileForPath(pathname) {
   return candidates.find((c) => existsSync(path.join(PROJECT_ROOT, c)));
 }
 
+// Fallback when the build has no usable git history (Cloudflare Pages builds from a shallow
+// clone): src/data/lastmod.json, generated locally from full git history by `npm run lastmod`.
+let lastmodFile = null;
+function fileLastmod(pathname) {
+  try {
+    if (lastmodFile === null) {
+      const p = path.join(PROJECT_ROOT, 'src', 'data', 'lastmod.json');
+      lastmodFile = existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : {};
+    }
+    const v = lastmodFile[pathname];
+    return typeof v === 'string' && /^\d{4}-\d{2}-\d{2}T/.test(v) ? v : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 function gitLastmod(pathname) {
   try {
     if (!gitHistoryUsable()) return undefined;
@@ -105,7 +121,8 @@ export default defineConfig({
       },
       serialize: (item) => {
         try {
-          const lastmod = gitLastmod(new URL(item.url).pathname);
+          const pathname = new URL(item.url).pathname;
+          const lastmod = gitLastmod(pathname) || fileLastmod(pathname);
           if (lastmod) item.lastmod = lastmod;
         } catch {
           // leave lastmod unset
