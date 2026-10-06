@@ -305,7 +305,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
 });
 
 const computerNetworkingTitle = "Computer Networks Expert Witness | Dr. Tal Lavian, Ph.D.";
-const computerNetworkingDescription = "Computer networks expert witness — 120+ patents, 90+ cases. LAN/WAN, Ethernet, SDN, routers, switches. Ph.D. UC Berkeley. PTAB & ITC.";
+const computerNetworkingDescription = "Computer networking expert witness for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 8. DATA COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/data-communications-expert-witness/index.astro
@@ -354,7 +354,7 @@ const dataCommsSchema = buildSchema.expertisePage({
 });
 
 const dataCommsTitle = "Data Communications Expert Witness | Dr. Tal Lavian, Ph.D.";
-const dataCommsDescription = "Data communications expert witness — 120+ patents, 90+ cases. Data centers, cloud computing, protocol stacks. Ph.D. UC Berkeley. PTAB & ITC.";
+const dataCommsDescription = "Data communications expert witness for patent litigation: data networks, protocol stacks, cloud. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 9. MOBILE WIRELESS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
@@ -432,7 +432,7 @@ const routingSwitchingSchema = buildSchema.expertisePage({
 });
 
 const routingSwitchingTitle = "Routing & Switching Expert Witness — Dr. Tal Lavian, Ph.D.";
-const routingSwitchingDescription = "Routing & switching expert witness — 120+ patents, 90+ cases. BGP, OSPF, MPLS, SDN. Ph.D. UC Berkeley. PTAB, ITC & federal court.";
+const routingSwitchingDescription = "Routing and switching expert witness for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 11. NETWORK MANAGEMENT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-management-expert-witness/index.astro
@@ -514,7 +514,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
 });
 
 const networkingExpertTitle = "Networking Expert Witness — Network Architecture | Dr. Lavian";
-const networkingExpertDescription = "Networking expert witness — 120+ patents, 90+ cases. Enterprise networking, protocol design, multi-layer architecture. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkingExpertDescription = "Networking expert witness for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
