@@ -770,9 +770,6 @@ import { patentsSchema, patentsTitle, patentsDescription } from '../../lib/remai
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #eee;
-    /* 100+ entries: let the browser skip layout/paint for off-screen ones (Lighthouse mobile TBT 2.1 s) */
-    content-visibility: auto;
-    contain-intrinsic-size: auto 200px;
   }
   .patent-entry h3 {
     margin-bottom: 0.5rem;
