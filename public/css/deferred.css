@@ -90,27 +90,6 @@
 .contact-item { display: flex; align-items: center; gap: 12px; }
 .contact-icon { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
 
-/* Credential trust bar */
-.credential-bar {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-  background: #EEF3F9; border: 1px solid #E2E8F0;
-  border-left: 4px solid #C9A84C; border-radius: 4px;
-  padding: 18px 24px; margin: 30px 0; text-align: center;
-}
-.credential-bar .cred-item {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 0.92rem; color: #1a365d; font-weight: 600;
-}
-.credential-bar .cred-item .cred-num {
-  /* #B8952F was 2.55:1 on #EEF3F9 (axe color-contrast). #7D6219 = 5.18:1 (WCAG AA). */
-  font-size: 1.15rem; font-weight: 800; color: #7D6219;
-}
-.credential-bar .cred-item a { color: #1a365d; text-decoration: none; }
-.credential-bar .cred-item a:hover { color: #7D6219; text-decoration: underline; }
-.credential-bar .cred-companies {
-  width: 100%; text-align: center; font-size: 0.82rem; color: #4A5568;
-  margin-top: 4px; font-weight: 400; line-height: 1.5;
-}
 
 /* CTA block */
 .cta-block {
@@ -182,8 +161,6 @@ footer { background: #0B1D3A; color: #fff; }
   .two-col, .three-col, .two-col-text-img { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
-  .credential-bar { gap: 12px; padding: 14px 16px; }
-  .credential-bar .cred-item { font-size: 0.85rem; }
 }
 @media (max-width: 480px) {
   .footer-grid { grid-template-columns: 1fr; }
@@ -217,8 +194,6 @@ footer { background: #0B1D3A; color: #fff; }
 .cta-block .cta-links { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
 .cta-block .cta-link { color: #fff; text-decoration: underline; font-weight: 600; }
 .cta-block .cta-link:hover { color: #C9A84C; }
-.facet-line { font-size: 0.95rem; color: #4A5568; margin: 0 0 1.25rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #E2E8F0; }
-.facet-line a { color: #1a6faf; }
 /* Homepage bio column: phone + contact button beside the CV link */
 .bio-phone { display: inline-block; color: #1a365d; font-weight: 600; text-decoration: none; font-size: 15px; }
 .bio-phone:hover { text-decoration: underline; }

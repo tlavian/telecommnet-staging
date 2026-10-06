@@ -301,6 +301,31 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
 
     /* Skip-to-content accessibility link (WCAG 2.2 AA) */
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    /* Credential bar + facet line: above the fold on expertise pages, so they live in the critical CSS (no late reflow) */
+    /* Credential trust bar */
+    .credential-bar {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+    background: #EEF3F9; border: 1px solid #E2E8F0;
+    border-left: 4px solid #C9A84C; border-radius: 4px;
+    padding: 18px 24px; margin: 30px 0; text-align: center;
+    }
+    .credential-bar .cred-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.92rem; color: #1a365d; font-weight: 600;
+    }
+    .credential-bar .cred-item .cred-num {
+    /* #B8952F was 2.55:1 on #EEF3F9 (axe color-contrast). #7D6219 = 5.18:1 (WCAG AA). */
+    font-size: 1.15rem; font-weight: 800; color: #7D6219;
+    }
+    .credential-bar .cred-item a { color: #1a365d; text-decoration: none; }
+    .credential-bar .cred-item a:hover { color: #7D6219; text-decoration: underline; }
+    .credential-bar .cred-companies {
+    width: 100%; text-align: center; font-size: 0.82rem; color: #4A5568;
+    margin-top: 4px; font-weight: 400; line-height: 1.5;
+    }
+    .facet-line { font-size: 0.95rem; color: #4A5568; margin: 0 0 1.25rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #E2E8F0; }
+    .facet-line a { color: #1a6faf; }
+
     .skip-to-content {
       position: absolute;
       top: -100%;
@@ -465,6 +490,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     /* Mobile breakpoint (critical elements only) */
     @media (max-width: 768px) {
       h2 { font-size: 1.5rem; }
+      .credential-bar { gap: 12px; padding: 14px 16px; }
+      .credential-bar .cred-item { font-size: 0.85rem; }
       .content-full > h2:first-of-type, .content-main > h2:first-of-type, .bio-main > h2:first-of-type { font-size: 1.35rem; }
       .top-bar { display: none; }
       .mobile-toggle { display: block; }
