@@ -23,7 +23,23 @@
 /communications-expert-witness-services/routing-switching-expert/ /communications-expert-witness/routing-switching-expert-witness/ 301
 /telecommunications-expert-witness-services/ /communications-expert-witness/telecommunications-expert-witness/ 301
 /patents-list/ /patents/ 301
+# Old "-services" slugs whose target slug was itself renamed: send them to the final URL in one hop
+# (the catch-all below would otherwise chain through the renamed-slug rules above).
+/communications-expert-witness-services/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-cellular-expert-witness/:splat 301
+/communications-expert-witness-services/data-communications-expert/* /communications-expert-witness/data-communications-expert-witness/:splat 301
+/communications-expert-witness-services/mobile-wireless-expert/* /communications-expert-witness/mobile-wireless-expert-witness/:splat 301
+/communications-expert-witness-services/network-security-expert/* /communications-expert-witness/network-security-expert-witness/:splat 301
+/communications-expert-witness-services/networking-expert/* /communications-expert-witness/networking-expert-witness/:splat 301
+/communications-expert-witness-services/streaming-media-audio-and-video-conferencing-expert/* /communications-expert-witness/streaming-media-expert-witness/:splat 301
+/communications-expert-witness-services/messaging-and-chats-expert-witness/* /communications-expert-witness/messaging-and-chat-expert-witness/:splat 301
 /communications-expert-witness-services/* /communications-expert-witness/:splat 301
+# Two legacy slugs still in Search Console's crawled-not-indexed list (404 until 2026-10-05)
+/expert-witness-services/unified-communications-expert/ /communications-expert-witness/voice-over-ip-voip-expert/ 301
+/telecommunications-expert-witness-services/network-communications-expert-witness/ /communications-expert-witness/network-communications-expert-witness/ 301
+/telecommunications-expert-witness-services/* /communications-expert-witness/:splat 301
+# Old WordPress tag archives that still earn impressions (GSC, 16 months): send to the matching expertise page
+/tag/wireless-expert-witness/ /communications-expert-witness/mobile-wireless-expert-witness/ 301
+/tag/router-architecture/ /communications-expert-witness/routing-switching-expert-witness/ 301
 
 # Base64-JPEG-wrapper SVGs and oversized JPEGs replaced by WebP (performance W4.3)
 /images/heroes/globe-applications.svg /images/heroes/globe-applications.webp 301

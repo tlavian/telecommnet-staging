@@ -16,6 +16,10 @@ const deferredCssHref = (() => {
   }
 })();
 
+// Footer "Last updated" is the site build date (month and year), so the visible
+// date can no longer contradict the per-page sitemap lastmod / schema dateModified.
+const siteLastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'America/Los_Angeles' });
+
 interface Props {
   title: string;
   description?: string;
@@ -689,7 +693,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
       </div>
     </div>
     <div class="footer-bottom">
-      ©2026 TelecommNet Engineering &nbsp;|&nbsp; Last updated: July 2026
+      ©{new Date().getFullYear()} TelecommNet Engineering &nbsp;|&nbsp; Last updated: {siteLastUpdated}
     </div>
   </footer>
 
