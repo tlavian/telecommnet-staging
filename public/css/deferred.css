@@ -57,13 +57,16 @@
 }
 .content-full > ul { margin-bottom: 30px; }
 
-/* Client logos */
-.client-logos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; padding: 20px 0; }
+/* Client logos
+   minmax(0, 1fr) tracks: a plain 1fr has an auto minimum, so the 150px logo + padding
+   forced 164px tracks at 390px viewport and the page scrolled horizontally.
+   (Structural grid rules are duplicated in BaseLayout's critical CSS for CLS.) */
+.client-logos { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 15px; padding: 20px 0; }
 .client-logo-item { display: flex; align-items: center; justify-content: center; padding: 12px; min-height: 70px; }
-.client-logo-item img { max-width: 150px; max-height: 60px; object-fit: contain; }
+.client-logo-item img { max-width: min(150px, 100%); max-height: 60px; height: auto; object-fit: contain; }
 .client-logos a, .client-logo-item a { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
 .client-logos a:hover, .client-logo-item a:hover { text-decoration: none; opacity: 0.75; transform: scale(1.05); transition: all 0.2s ease; }
-.client-logos img { max-width: 150px; max-height: 60px; object-fit: contain; }
+.client-logos img { max-width: min(150px, 100%); max-height: 60px; height: auto; object-fit: contain; }
 
 /* Expertise cards */
 .expertise-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 30px 0; }
@@ -99,10 +102,11 @@
   font-size: 0.92rem; color: #1a365d; font-weight: 600;
 }
 .credential-bar .cred-item .cred-num {
-  font-size: 1.15rem; font-weight: 800; color: #B8952F;
+  /* #B8952F was 2.55:1 on #EEF3F9 (axe color-contrast). #7D6219 = 5.18:1 (WCAG AA). */
+  font-size: 1.15rem; font-weight: 800; color: #7D6219;
 }
 .credential-bar .cred-item a { color: #1a365d; text-decoration: none; }
-.credential-bar .cred-item a:hover { color: #B8952F; text-decoration: underline; }
+.credential-bar .cred-item a:hover { color: #7D6219; text-decoration: underline; }
 .credential-bar .cred-companies {
   width: 100%; text-align: center; font-size: 0.82rem; color: #718096;
   margin-top: 4px; font-weight: 400; line-height: 1.5;
@@ -164,7 +168,7 @@ footer { background: #0B1D3A; color: #fff; }
 @media (max-width: 1024px) {
   .expertise-cards { grid-template-columns: repeat(2, 1fr); }
   .three-col { grid-template-columns: 1fr 1fr; }
-  .client-logos { grid-template-columns: repeat(4, 1fr); }
+  .client-logos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* Mobile breakpoint (deferred elements) */
@@ -172,7 +176,7 @@ footer { background: #0B1D3A; color: #fff; }
   .bio-with-sidebar { grid-template-columns: 1fr; }
   .bio-sidebar { flex-direction: row; flex-wrap: wrap; padding-top: 0; }
   .expertise-cards { grid-template-columns: 1fr; }
-  .client-logos { grid-template-columns: repeat(3, 1fr); }
+  .client-logos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .two-col, .three-col, .two-col-text-img { grid-template-columns: 1fr; }
@@ -201,7 +205,7 @@ footer { background: #0B1D3A; color: #fff; }
   a { color: #000; text-decoration: underline; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
   a[href^="/"]::after { content: " (telecommnet.com" attr(href) ")"; font-size: 0.8em; color: #555; }
-  .client-logos { grid-template-columns: repeat(4, 1fr); }
+  .client-logos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   img { max-width: 100% !important; }
   h1, h2, h3 { page-break-after: avoid; }
   p, li { orphans: 3; widows: 3; }

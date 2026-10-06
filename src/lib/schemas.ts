@@ -164,8 +164,17 @@ export const ORG_ENTITY = {
   '@type': 'Organization',
   '@id': ORG_ID,
   name: 'TelecommNet Engineering, Inc.',
+  legalName: 'TelecommNet Engineering, Inc.',
   description: 'TelecommNet Engineering, Inc. provides telecommunications expert witness and consulting services for patent litigation, specializing in telecommunications, network communications, Internet protocols, and VoIP.',
   url: BASE_URL,
+  telephone: '+1-408-209-9112',
+  email: 'tlavian@telecommnet.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Encino',
+    addressRegion: 'CA',
+    addressCountry: 'US',
+  },
   founder: PERSON_REF,
   logo: ORG_LOGO_IMG,
   image: {
@@ -173,6 +182,9 @@ export const ORG_ENTITY = {
     url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
   },
   hasMap: 'https://maps.app.goo.gl/YKkzUgJggPWzsDjX6',
+  // Organization-level profile: the Google Business Profile / Maps listing
+  // (same URL as hasMap). Dr. Lavian's personal profiles stay on the Person node.
+  sameAs: ['https://maps.app.goo.gl/YKkzUgJggPWzsDjX6'],
   areaServed: { '@type': 'Country', name: 'United States' },
   contactPoint: {
     '@type': 'ContactPoint',
@@ -182,6 +194,20 @@ export const ORG_ENTITY = {
     areaServed: { '@type': 'Country', name: 'United States' },
     availableLanguage: 'English',
   },
+};
+
+/**
+ * Site-wide WebSite node. Every page graph whose WebPage/CollectionPage/ProfilePage
+ * node says `isPartOf: { '@id': .../#website }` must include this node so the
+ * reference resolves on that page (previously only the homepage defined it).
+ */
+export const WEBSITE_ENTITY = {
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
+  url: BASE_URL,
+  publisher: { '@id': ORG_ID },
+  inLanguage: 'en-US',
 };
 
 // â”€â”€â”€ BreadcrumbList builder â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -265,14 +291,9 @@ export const buildSchema = {
           },
         },
         {
-          '@type': 'WebSite',
-          '@id': `${BASE_URL}/#website`,
-          name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
-          url: BASE_URL,
-          publisher: { '@id': ORG_ID },
+          ...WEBSITE_ENTITY,
           datePublished: '2022-05-01T00:00:00+00:00',
           dateModified: '2026-10-05T00:00:00+00:00',
-          inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',
             cssSelector: ['.hero-content h1', '.bio-main > p:first-of-type', 'h2:first-of-type'],
@@ -348,7 +369,8 @@ export const buildSchema = {
             },
           ],
         },
-        breadcrumbs([]),
+        // No BreadcrumbList on the homepage: a one-item list ("Home" only) is
+        // below Google's two-item minimum for the breadcrumb rich result.
       ],
     };
   },
@@ -366,6 +388,7 @@ export const buildSchema = {
             cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
           },
         },
+        WEBSITE_ENTITY,
         {
           '@type': 'ProfilePage',
           '@id': `${BASE_URL}/about-dr-lavian/`,
@@ -435,12 +458,13 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'WebPage',
           '@id': hubUrl,
           url: hubUrl,
           name: 'Communications Expert Witness Services — Dr. Tal Lavian',
-          description: 'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
+          description: 'Communications expert witness for patent litigation: telecommunications, VoIP, internet, networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
           datePublished: '2023-06-01T00:00:00+00:00',
           dateModified: '2026-03-18T00:00:00+00:00',
           inLanguage: 'en-US',
@@ -568,6 +592,7 @@ export const buildSchema = {
       '@graph': [
         PERSON_ENTITY,
         ORG_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'WebPage',
           '@id': pageUrl,
@@ -625,6 +650,7 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'WebPage',
           '@id': pageUrl,
@@ -880,6 +906,7 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Scientific Publications — Dr. Tal Lavian',
@@ -1021,6 +1048,7 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Talks & Presentations — Dr. Tal Lavian',
@@ -1070,6 +1098,7 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
@@ -1262,6 +1291,7 @@ export const buildSchema = {
       '@context': 'https://schema.org',
       '@graph': [
         PERSON_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'CollectionPage',
           name: 'Patents — Dr. Tal Lavian',
@@ -1337,6 +1367,10 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
+        // These utility pages carry no Person node, so ORG_ENTITY is included to
+        // resolve WEBSITE_ENTITY.publisher (#org) within the same graph.
+        ORG_ENTITY,
+        WEBSITE_ENTITY,
         {
           '@type': 'WebPage',
           name: opts.name,

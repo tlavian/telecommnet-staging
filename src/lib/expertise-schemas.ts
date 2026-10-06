@@ -264,7 +264,7 @@ const streamingDescription = "Streaming media expert witness — 120+ patents, 9
 const computerNetworkingSchema = buildSchema.expertisePage({
   name: 'Computer Networks Expert Witness',
   slug: 'computer-networking-expert-witness',
-  description: 'Computer networks expert witness for patent litigation. LAN/WAN, Ethernet, routers, switches, SDN, cloud networking. 90+ cases, 120+ patents.',
+  description: 'Computer networking expert witness for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Computer Networks Expert Witness',
   keywords: ['computer networks expert witness', 'computer networking expert witness', 'computer network expert witness', 'LAN WAN patent expert', 'Ethernet patent litigation', 'network architecture expert witness', 'distributed systems patent', 'cloud networking expert', 'network infrastructure expert witness', 'SDN expert witness'],
   breadcrumbLabel: 'Computer Networks',
@@ -313,7 +313,7 @@ const computerNetworkingDescription = "Computer networks expert witness — 120+
 const dataCommsSchema = buildSchema.expertisePage({
   name: 'Data Communications Expert Witness',
   slug: 'data-communications-expert-witness',
-  description: 'Data communications expert witness for patent litigation. Data networking, cloud computing, data centers, protocol stacks. 90+ cases, 120+ patents.',
+  description: 'Data communications expert witness for patent litigation: data networks, protocol stacks, cloud. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Data Communications Expert Witness',
   keywords: ['data communications expert witness', 'data communications expert', 'data networks expert witness', 'data networking expert witness', 'data network expert witness', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
   breadcrumbLabel: 'Data Communications',
@@ -399,7 +399,7 @@ const mobileWirelessDescription = "Mobile & wireless expert witness — 120+ pat
 const routingSwitchingSchema = buildSchema.expertisePage({
   name: 'Routing & Switching Expert Witness',
   slug: 'routing-switching-expert-witness',
-  description: 'Routing & switching expert witness for patent litigation. BGP, OSPF, MPLS, packet switching, SDN, router/switch architectures. 90+ cases, 120+ patents.',
+  description: 'Routing and switching expert witness for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Routing & Switching Expert Witness',
   keywords: ['routing switching expert witness', 'BGP patent litigation', 'OSPF expert witness', 'MPLS patent PTAB', 'router architecture expert', 'packet switching patent', 'SDN expert', 'network switch expert witness', 'VLAN patent expert', 'OpenFlow SDN patent'],
   breadcrumbLabel: 'Routing & Switching',
@@ -481,7 +481,7 @@ const networkMgmtDescription = "Network management expert witness — 120+ paten
 const networkingExpertSchema = buildSchema.expertisePage({
   name: 'Networking Expert Witness',
   slug: 'networking-expert-witness',
-  description: 'Networking expert witness for patent litigation. Enterprise networking, protocol architecture, network design and infrastructure. 90+ cases, 120+ patents.',
+  description: 'Networking expert witness for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Networking Expert Witness',
   keywords: ['network expert witness', 'network architecture expert witness', 'networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
   breadcrumbLabel: 'Networking Expert',
