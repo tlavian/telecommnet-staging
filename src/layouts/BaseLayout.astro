@@ -101,12 +101,13 @@ function schemaHasBreadcrumbs(s: any): boolean {
   return false;
 }
 
-// Only auto-generate breadcrumbs if page schema doesn't already include them
-const needsAutoBreadcrumbs = !schemaHasBreadcrumbs(schema) && !breadcrumbs;
-const resolvedBreadcrumbs = breadcrumbs || (needsAutoBreadcrumbs ? autoBreadcrumbs(currentPath) : []);
+// Visible breadcrumb trail on every page except the homepage (built from the URL path unless the
+// page passes its own). The BreadcrumbList schema is only generated here when the page schema
+// does not already carry one (the expertise/hub/collection graphs do), so no page emits two.
+const resolvedBreadcrumbs = breadcrumbs || autoBreadcrumbs(currentPath);
 
 // Generate BreadcrumbList schema from breadcrumbs
-const breadcrumbSchema = resolvedBreadcrumbs.length > 0 ? {
+const breadcrumbSchema = (resolvedBreadcrumbs.length > 0 && !schemaHasBreadcrumbs(schema)) ? {
   "@type": "BreadcrumbList",
   "itemListElement": resolvedBreadcrumbs.map((crumb, i) => ({
     "@type": "ListItem",
@@ -299,6 +300,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     .breadcrumb-item span[aria-current="page"] { color: #444; font-weight: 500; }
 
     /* Skip-to-content accessibility link (WCAG 2.2 AA) */
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     .skip-to-content {
       position: absolute;
       top: -100%;
@@ -462,6 +464,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
 
     /* Mobile breakpoint (critical elements only) */
     @media (max-width: 768px) {
+      h2 { font-size: 1.5rem; }
+      .content-full > h2:first-of-type, .content-main > h2:first-of-type, .bio-main > h2:first-of-type { font-size: 1.35rem; }
       .top-bar { display: none; }
       .mobile-toggle { display: block; }
       .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-height: 80vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
@@ -566,8 +570,8 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
         </li>
         <li><a href="/contact/" class={currentPath.includes('/contact') ? 'active' : ''}>Contact</a></li>
       </ul>
-      <a href="/" class="logo-link" aria-label="TelecommNet — Telecommunications Expert Witness home">
-        <span class="logo-text">Telecomm<span class="accent" aria-hidden="true">|</span><span class="accent">N</span>et</span>
+      <a href="/" class="logo-link">
+        <span class="logo-text">Telecomm<span class="accent" aria-hidden="true">|</span><span class="accent">N</span>et</span><span class="sr-only"> — Telecommunications Expert Witness, home</span>
       </a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">☰</button>
     </div>
@@ -585,14 +589,13 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     {resolvedBreadcrumbs.length > 0 && (
       <nav aria-label="Breadcrumb" class="breadcrumb-nav">
         <div class="container">
-          <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <ol class="breadcrumb-list">
             {resolvedBreadcrumbs.map((crumb, i) => (
-              <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <li class="breadcrumb-item">
                 {i < resolvedBreadcrumbs.length - 1
-                  ? <a href={crumb.url} itemprop="item"><span itemprop="name">{crumb.name}</span></a>
-                  : <span itemprop="name" aria-current="page">{crumb.name}</span>
+                  ? <a href={crumb.url}>{crumb.name}</a>
+                  : <span aria-current="page">{crumb.name}</span>
                 }
-                <meta itemprop="position" content={String(i + 1)} />
               </li>
             ))}
           </ol>
@@ -607,7 +610,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
     <div class="footer-logo-bar">
       <div class="container">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
-          <a href="/" aria-label="TelecommNet — Telecommunications Expert Witness home" style="text-decoration:none;color:inherit;"><span class="logo-text" style="color:#fff;font-size:22px;">Telecomm<span class="accent" aria-hidden="true">|</span><span class="accent">N</span>et</span></a>
+          <a href="/" style="text-decoration:none;color:inherit;"><span class="logo-text" style="color:#fff;font-size:22px;">Telecomm<span class="accent" aria-hidden="true">|</span><span class="accent">N</span>et</span><span class="sr-only"> — Telecommunications Expert Witness, home</span></a>
           <span class="tagline">Network Communications, Telecommunications, Internet Protocols (TCP/IP), and Computer Networks</span>
         </div>
         <div class="footer-social">

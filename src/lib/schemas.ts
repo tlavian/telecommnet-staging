@@ -10,6 +10,11 @@
  *   const schema = buildSchema.service({ name: '...', url: '...', ... });
  */
 
+
+import lastmod from '../data/lastmod.json';
+
+/** dateModified for a page: last git commit touching its source (src/data/lastmod.json, refreshed by `npm run lastmod`); build time if unknown. */
+const modifiedDate = (path: string): string => (lastmod as Record<string, string>)[path] ?? new Date().toISOString();
 const BASE_URL = 'https://telecommnet.com';
 const PERSON_ID = `${BASE_URL}/#person`;
 const ORG_ID    = `${BASE_URL}/#org`;
@@ -293,7 +298,7 @@ export const buildSchema = {
         {
           ...WEBSITE_ENTITY,
           datePublished: '2022-05-01T00:00:00+00:00',
-          dateModified: '2026-10-05T00:00:00+00:00',
+          dateModified: modifiedDate('/'),
           speakable: {
             '@type': 'SpeakableSpecification',
             cssSelector: ['.hero-content h1', '.bio-main > p:first-of-type', 'h2:first-of-type'],
@@ -356,7 +361,7 @@ export const buildSchema = {
               name: 'How many years of experience does Dr. Lavian have in telecommunications?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and over two decades as an expert witness with 90+ cases and 60+ depositions.',
+                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and 90+ patent cases and 60+ depositions as an expert witness.',
               },
             },
             {
@@ -395,7 +400,7 @@ export const buildSchema = {
           url: `${BASE_URL}/about-dr-lavian/`,
           name: 'About Dr. Tal Lavian — Telecommunications Expert Witness',
           dateCreated: '2022-05-01T00:00:00+00:00',
-          dateModified: '2026-03-18T00:00:00+00:00',
+          dateModified: modifiedDate('/about-dr-lavian/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           mainEntity: PERSON_REF,
@@ -466,7 +471,7 @@ export const buildSchema = {
           name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           description: 'Communications expert witness for patent litigation: telecommunications, VoIP, internet, networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-03-18T00:00:00+00:00',
+          dateModified: modifiedDate('/communications-expert-witness/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -566,7 +571,7 @@ export const buildSchema = {
               name: 'What companies and law firms has Dr. Lavian been retained in cases involving?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks (HPE), Huawei, Arista Networks, Motorola, LG, Avaya, and many others. He has been engaged by leading law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Skadden, Finnegan, Irell & Manella, Perkins Coie, Morgan Lewis, Baker Botts, and more.',
+                text: 'Dr. Lavian has been retained in telecommunications patent cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks (HPE), Huawei, Arista Networks, Motorola, LG, Avaya, and many others. He has been retained by law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Skadden, Finnegan, Irell & Manella, Perkins Coie, Morgan Lewis, Baker Botts, and more.',
               },
             },
           ],
@@ -600,7 +605,7 @@ export const buildSchema = {
           name: opts.name,
           description: opts.description,
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-10-05T00:00:00+00:00',
+          dateModified: modifiedDate(pageUrl.replace(BASE_URL, '')),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -658,7 +663,7 @@ export const buildSchema = {
           name: opts.name,
           description: opts.description,
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-10-05T00:00:00+00:00',
+          dateModified: modifiedDate(pageUrl.replace(BASE_URL, '')),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           about: PERSON_REF,
@@ -916,7 +921,7 @@ export const buildSchema = {
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Telecommunications and Network Communications Research' },
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-03-18T00:00:00+00:00',
+          dateModified: modifiedDate('/scientific-publications/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
@@ -1058,7 +1063,7 @@ export const buildSchema = {
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Telecommunications and Network Communications Research Presentations' },
           datePublished: '2023-06-01T00:00:00+00:00',
-          dateModified: '2026-03-18T00:00:00+00:00',
+          dateModified: modifiedDate('/talks-presentations/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
@@ -1107,7 +1112,7 @@ export const buildSchema = {
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Patent Litigation Expert Witness Testimony' },
-          dateModified: '2026-03-16T00:00:00+00:00',
+          dateModified: modifiedDate('/cases-expert-witness-testimony/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
@@ -1299,7 +1304,7 @@ export const buildSchema = {
             '120+ patents by Dr. Tal Lavian covering telecommunications, network communications, and computer science innovations including 60+ pro-se prosecutions before the USPTO.',
           url: `${BASE_URL}/patents/`,
           author: PERSON_REF,
-          dateModified: '2026-10-05T00:00:00+00:00',
+          dateModified: modifiedDate('/patents/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
@@ -1339,7 +1344,7 @@ export const buildSchema = {
           description:
             'Contact Dr. Tal Lavian for telecommunications and network communications expert witness and consulting services.',
           url: `${BASE_URL}/contact/`,
-          dateModified: '2026-10-05T00:00:00+00:00',
+          dateModified: modifiedDate('/contact/'),
           inLanguage: 'en-US',
           speakable: {
             '@type': 'SpeakableSpecification',
@@ -1378,7 +1383,7 @@ export const buildSchema = {
           url: `${BASE_URL}/${opts.slug}/`,
           isPartOf: { '@id': `${BASE_URL}/#website` },
           inLanguage: 'en-US',
-          dateModified: '2026-03-16T00:00:00+00:00',
+          dateModified: modifiedDate(`/${opts.slug}/`),
         },
         breadcrumbs([{ name: opts.breadcrumbLabel, url: `/${opts.slug}/` }]),
       ],

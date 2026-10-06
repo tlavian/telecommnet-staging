@@ -51,10 +51,6 @@ const telecomSchema = buildSchema.expertisePage({
       q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
       a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies — PSTN, VoIP, cellular systems, signaling protocols, and telecom standards (ITU-T, 3GPP). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
     },
-    {
-      q: 'How much does a telecommunications expert witness cost?',
-      a: 'Telecommunications expert witness fees vary based on case complexity, scope of analysis, and whether testimony is needed at deposition or trial. Dr. Lavian provides expert witness rates commensurate with his credentials (Ph.D. UC Berkeley, 120+ patents, 90+ cases).',
-    },
   ],
 });
 
@@ -164,7 +160,7 @@ const voipSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in voice communications technology?',
-      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications, network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, over a decade of industry experience at Nortel Networks developing voice and data systems, and 90+ expert witness engagements.',
+      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications, network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, industry experience at Nortel Networks (1996–2007) developing voice and data systems, and 90+ expert witness engagements.',
     },
     {
       q: 'Can Dr. Lavian testify on unified communications and WebRTC patents?',

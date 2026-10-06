@@ -108,7 +108,7 @@
 .credential-bar .cred-item a { color: #1a365d; text-decoration: none; }
 .credential-bar .cred-item a:hover { color: #7D6219; text-decoration: underline; }
 .credential-bar .cred-companies {
-  width: 100%; text-align: center; font-size: 0.82rem; color: #718096;
+  width: 100%; text-align: center; font-size: 0.82rem; color: #4A5568;
   margin-top: 4px; font-weight: 400; line-height: 1.5;
 }
 
@@ -210,3 +210,18 @@ footer { background: #0B1D3A; color: #fff; }
   h1, h2, h3 { page-break-after: avoid; }
   p, li { orphans: 3; widows: 3; }
 }
+
+/* In-main contact block (expertise pages, hub, About, Cases) and expertise facet line */
+.cta-block h2 { color: #fff; font-family: 'Merriweather', 'Georgia', serif; font-size: 1.25rem; margin: 0 0 10px 0; border: none; padding: 0; }
+.cta-block p a { color: #fff; text-decoration: underline; }
+.cta-block .cta-links { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.cta-block .cta-link { color: #fff; text-decoration: underline; font-weight: 600; }
+.cta-block .cta-link:hover { color: #C9A84C; }
+.facet-line { font-size: 0.95rem; color: #4A5568; margin: 0 0 1.25rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #E2E8F0; }
+.facet-line a { color: #1a6faf; }
+/* Homepage bio column: phone + contact button beside the CV link */
+.bio-phone { display: inline-block; color: #1a365d; font-weight: 600; text-decoration: none; font-size: 15px; }
+.bio-phone:hover { text-decoration: underline; }
+.bio-contact-btn { padding: 10px 20px; font-size: 14px; }
+/* Wide tables (Cases page) scroll inside their own box on narrow screens */
+.case-table { display: block; max-width: 100%; overflow-x: auto; }

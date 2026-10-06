@@ -87,7 +87,7 @@ Each expertise area has a dedicated page with detailed information:
 - 5G NR and LTE cellular architecture (3GPP standards)
 
 ### Wireless & Mobile Communications
-- Wi-Fi (IEEE 802.11a/b/g/n/ac/ax/be) and Bluetooth (BLE, Mesh)
+- Wi-Fi 802.11 and Bluetooth (IEEE 802.15) (BLE, Mesh)
 - Wireless LAN protocols and wireless networking
 - Mobile communications systems (GSM, CDMA, UMTS, LTE, 5G NR)
 - Wireless RF technologies and spectrum management
@@ -200,7 +200,7 @@ LG, Samsung, Alacritech, Aten, Backweb, Emblaze, Human Eyes, IP Innovation, IXI 
 
 ## Law Firm Clients (52 firms):
 
-### AmLaw 100 / Major IP Firms
+### Law Firms
 Fish Richardson, Cooley, Finnegan, Gibson Dunn, Ropes Gray, Baker Botts, Irell & Manella LLP, Kirkland & Ellis, Morgan Lewis, Skadden, Simpson Thacher & Bartlett LLP, Hogan Lovells LLP, Perkins Coie, Winston & Strawn LLP, Greenberg Traurig
 
 ### Specialty IP Litigation Firms
@@ -303,7 +303,7 @@ Dr. Lavian is involved in research at UC Berkeley:
 - Principal Investigator on DARPA/AFRL funded projects (DWDM-RAM)
 - Leadership in UC Berkeley RAD Lab, SAHARA, and ICEBERG projects
 - Research on network architecture, protocols, and telecommunications systems
-- Publications in leading IEEE, ACM, and telecommunications journals and conferences
+- Publications in IEEE, ACM, and telecommunications journals and conferences
 
 ## Career History:
 
@@ -350,13 +350,13 @@ Q: Can Dr. Lavian testify in PTAB IPR proceedings?
 A: Yes. Dr. Lavian has extensive experience in USPTO PTAB proceedings including Inter Partes Reviews (IPR), Post Grant Reviews (PGR), Covered Business Method (CBM) reviews, Ex Parte Reexaminations, and PTO Interferences. He has been retained for PTAB cases involving major technology companies.
 
 Q: What is Dr. Lavian's experience with wireless communications technology?
-A: Dr. Lavian has expertise in wireless communications technologies including Wi-Fi (IEEE 802.11a through 802.11be), Bluetooth (BLE, Mesh), cellular systems (GSM, CDMA, UMTS, LTE, 5G NR), and wireless security (WPA2, WPA3, 802.1X). He has patents and publications in wireless networking. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert-witness/
+A: Dr. Lavian has expertise in wireless communications technologies including Wi-Fi 802.11, Bluetooth (IEEE 802.15) (BLE, Mesh), WLAN, and wireless security (WPA2, WPA3, 802.1X). He has patents and publications in wireless networking. Details: https://telecommnet.com/communications-expert-witness/mobile-wireless-expert-witness/
 
 Q: Does Dr. Lavian have experience with network security cases?
 A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL 1.2/1.3, IPsec), authentication (PKI, RADIUS, TACACS+), firewalls (stateful inspection, DPI, NGFW), intrusion detection (IDS/IPS), DDoS mitigation (BGP Flowspec), and cybersecurity standards (NIST CSF, ISO 27001, SOC 2). He has invented patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert-witness/
 
 Q: What law firms have retained Dr. Lavian?
-A: Dr. Lavian has been retained by 52 law firms including AmLaw 100 firms such as Fish Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, Hogan Lovells, and many other top IP litigation firms. Full list: https://telecommnet.com/law-firm-clients/
+A: Dr. Lavian has been retained by over 50 law firms and corporate clients, including Fish Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, and Hogan Lovells. Full list: https://telecommnet.com/law-firm-clients/
 
 Q: What companies has Dr. Lavian worked with or against?
 A: Dr. Lavian has been involved in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and 30+ other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
@@ -391,7 +391,7 @@ Patent infringement cases (both offensive and defensive), ITC Section 337 invest
 An expert witness interprets patent claims based on their understanding of the technology and relevant prior art, providing claim construction opinions (Markman hearing testimony) that help the court determine the scope and meaning of patent claims.
 
 ### What qualifications should an expert witness have?
-An expert witness must demonstrate testimony based on sufficient facts, reliable principles and methods, and show that those principles are reliably applied. Dr. Lavian's testimony has been consistently admitted across 90+ engagements in federal courts, PTAB panels, and the ITC.
+Dr. Lavian has been retained in 90+ patent cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC.
 
 ### What is PTAB and how does it relate to expert witnesses?
 The Patent Trial and Appeal Board (PTAB) is a body within the USPTO that conducts Inter Partes Reviews (IPRs), Post Grant Reviews (PGRs), and other patent proceedings. Expert witnesses provide technical declarations and may testify at oral hearings. Dr. Lavian has extensive PTAB experience.
