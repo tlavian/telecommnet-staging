@@ -49,7 +49,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
-      a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies — PSTN, VoIP, cellular systems, signaling protocols, and telecom standards (ITU-T, 3GPP). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
+      a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies — PSTN, VoIP, signaling protocols, and telecom standards (ITU-T, ETSI). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
     },
   ],
 });
