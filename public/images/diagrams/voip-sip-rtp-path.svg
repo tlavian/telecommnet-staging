@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">Simplified SIP signaling and RTP media path</title>
+  <desc id="d">Two SIP phones. Call setup messages pass through a SIP proxy. Once the call is set up, RTP media flows directly between the two phones.</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto-start-reverse"><path d="M0,0 L8,3 L0,6 Z" fill="#0f2744"/></marker></defs>
+  <rect width="1200" height="520" fill="#fff"/>
+  <g fill="none" stroke="#0f2744" stroke-width="2"><rect x="60" y="150" width="240" height="110" rx="8"/><rect x="480" y="150" width="240" height="110" rx="8"/><rect x="900" y="150" width="240" height="110" rx="8"/></g>
+  <g fill="#0f2744" font-family="Georgia, serif" font-size="28" text-anchor="middle"><text x="180" y="215">SIP phone A</text><text x="600" y="215">SIP proxy</text><text x="1020" y="215">SIP phone B</text></g>
+  <g fill="#0f2744" font-family="Georgia, serif" font-size="20" text-anchor="middle"><text x="390" y="165">INVITE</text><text x="810" y="165">INVITE</text><text x="390" y="286" font-size="18">180 Ringing, 200 OK</text><text x="810" y="286" font-size="18">180 Ringing, 200 OK</text><text x="600" y="130" font-style="italic">SIP signaling (call setup)</text><text x="600" y="395">RTP media (voice), direct between the phones</text></g>
+  <g fill="none" stroke="#0f2744" stroke-width="2"><path d="M300 180 H480" marker-end="url(#a)"/><path d="M480 235 H300" marker-end="url(#a)"/><path d="M720 180 H900" marker-end="url(#a)"/><path d="M900 235 H720" marker-end="url(#a)"/>
+  <path d="M180 260 V340 H1020 V260" stroke-dasharray="8 6" marker-start="url(#a)" marker-end="url(#a)"/></g>
+  <text x="600" y="480" fill="#475569" font-family="Georgia, serif" font-size="20" text-anchor="middle">Illustration, not an exhibit. Simplified; ACK and BYE omitted.</text>
+</svg>
