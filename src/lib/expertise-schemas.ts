@@ -14,9 +14,9 @@
 const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN, VoIP & Cellular Systems Expert',
   slug: 'pstn-voip-cellular-expert-witness',
-  description: 'PSTN, VoIP & cellular systems expert witness for patent litigation. SONET/SDH, DWDM, telecom switching, SS7 signaling. 90+ cases, 120+ patents.',
+  description: 'PSTN and VoIP systems expert witness for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'PSTN, VoIP & Cellular Systems Expert Witness',
-  keywords: ['PSTN expert witness', 'VoIP expert witness', 'cellular systems expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
+  keywords: ['PSTN expert witness', 'VoIP expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
   breadcrumbLabel: 'PSTN, VoIP & Cellular',
   faqs: [
     {
@@ -55,7 +55,7 @@ const telecomSchema = buildSchema.expertisePage({
 });
 
 const telecomTitle = "PSTN, VoIP & Cellular Expert Witness | Dr. Tal Lavian";
-const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patents, 90+ cases. Telecom switching, SS7, SONET/SDH, DWDM. Ph.D. UC Berkeley, 35+ years.";
+const telecomDescription = "PSTN and VoIP systems expert witness for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
@@ -63,7 +63,7 @@ const telecomDescription = "PSTN, VoIP & cellular expert witness — 120+ patent
 const networkCommsSchema = buildSchema.expertisePage({
   name: 'Network Communications Expert Witness',
   slug: 'network-communications-expert-witness',
-  description: 'Network communications expert witness for patent litigation. TCP/IP, routing protocols, LAN/WAN, OSI model. 90+ cases, 120+ patents.',
+  description: 'Network communications expert witness for patent litigation: TCP/IP, routing, LAN/WAN, protocols. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Network Communications Expert Witness',
   keywords: ['network communications expert witness', 'TCP/IP expert witness', 'routing protocols litigation', 'LAN WAN patent expert', 'network architecture expert witness', 'OSI model patent', 'network protocol expert', 'distributed systems expert witness'],
   breadcrumbLabel: 'Network Communications',
@@ -92,7 +92,7 @@ const networkCommsSchema = buildSchema.expertisePage({
 });
 
 const networkCommsTitle = "Network Communications Expert Witness | Dr. Lavian";
-const networkCommsDescription = "Network communications expert witness — 120+ patents, 90+ cases, 60+ depositions. TCP/IP, routing, LAN/WAN. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkCommsDescription = "Network communications expert witness for patent litigation: TCP/IP, routing, LAN/WAN, protocols. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 3. INTERNET EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/internet-expert-witness/index.astro
@@ -137,7 +137,7 @@ const internetDescription = "Internet protocols expert witness — TCP/IP, HTTP,
 const voipSchema = buildSchema.expertisePage({
   name: 'VoIP Expert Witness',
   slug: 'voice-over-ip-voip-expert',
-  description: 'VoIP expert witness for patent litigation. SIP, RTP, H.323, unified communications, IP telephony, voice codecs. 90+ cases, 120+ patents.',
+  description: 'VoIP expert witness for patent litigation: SIP, RTP, H.323, IP telephony, unified communications. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'VoIP Expert Witness',
   keywords: ['VoIP expert witness', 'SIP protocol expert', 'RTP patent litigation', 'voice over IP PTAB', 'unified communications expert', 'H.323 patent', 'IP telephony expert witness', 'voice codec patent expert', 'SIP trunking patent', 'WebRTC expert witness'],
   breadcrumbLabel: 'VoIP',
@@ -170,7 +170,7 @@ const voipSchema = buildSchema.expertisePage({
 });
 
 const voipTitle = "VoIP Expert Witness — SIP, RTP, H.323 | Dr. Tal Lavian";
-const voipDescription = "VoIP expert witness — SIP, RTP, H.323, WebRTC, IP telephony. Ph.D. UC Berkeley, 120+ patents, 90+ cases. PTAB, ITC & federal court testimony.";
+const voipDescription = "VoIP expert witness for patent litigation: SIP, RTP, H.323, IP telephony, unified communications. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 5. NETWORK SECURITY EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
@@ -178,7 +178,7 @@ const voipDescription = "VoIP expert witness — SIP, RTP, H.323, WebRTC, IP tel
 const networkSecuritySchema = buildSchema.expertisePage({
   name: 'Network Security Expert Witness',
   slug: 'network-security-expert-witness',
-  description: 'Network security expert witness for patent litigation. Encryption, firewalls, IDS/IPS, authentication, cybersecurity. 90+ cases, 120+ patents.',
+  description: 'Network security expert witness for patent litigation: encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Network Security Expert Witness',
   keywords: ['internet security expert witness', 'network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'cybersecurity expert witness'],
   breadcrumbLabel: 'Network Security',
@@ -211,7 +211,7 @@ const networkSecuritySchema = buildSchema.expertisePage({
 });
 
 const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkSecurityDescription = "Network security expert witness — 120+ patents, 90+ cases. Encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkSecurityDescription = "Network security expert witness for patent litigation: encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 6. STREAMING MEDIA EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
@@ -219,7 +219,7 @@ const networkSecurityDescription = "Network security expert witness — 120+ pat
 const streamingSchema = buildSchema.expertisePage({
   name: 'Streaming Media Expert Witness',
   slug: 'streaming-media-expert-witness',
-  description: 'Streaming media expert witness for patent litigation. Video/audio streaming, adaptive bitrate, WebRTC, CDN, QoS. 90+ cases, 120+ patents.',
+  description: 'Streaming media expert witness for patent litigation: video/audio streaming, CDN, adaptive bitrate. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Streaming Media Expert Witness',
   keywords: ['streaming media expert witness', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert', 'CDN patent expert', 'WebRTC expert witness', 'video conferencing patent', 'HLS DASH streaming expert'],
   breadcrumbLabel: 'Streaming Media',
@@ -252,7 +252,7 @@ const streamingSchema = buildSchema.expertisePage({
 });
 
 const streamingTitle = "Streaming Media Expert Witness | Dr. Tal Lavian, Ph.D.";
-const streamingDescription = "Streaming media expert witness — 120+ patents, 90+ cases. Streaming media, WebRTC, CDN, adaptive bitrate. Ph.D. UC Berkeley. PTAB & ITC.";
+const streamingDescription = "Streaming media expert witness for patent litigation: video/audio streaming, CDN, adaptive bitrate. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 7. COMPUTER NETWORKING EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/computer-networking-expert-witness/index.astro
@@ -436,7 +436,7 @@ const routingSwitchingDescription = "Routing and switching expert witness for pa
 const networkMgmtSchema = buildSchema.expertisePage({
   name: 'Network Management Expert Witness',
   slug: 'network-management-expert-witness',
-  description: 'Network management expert witness for patent litigation. SNMP, OSS/BSS, network monitoring, configuration management. 90+ cases, 120+ patents.',
+  description: 'Network management expert witness for patent litigation: SNMP, OSS/BSS, network monitoring. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Network Management Expert Witness',
   keywords: ['network management expert witness', 'SNMP patent litigation', 'OSS BSS expert', 'IP-PBX patent expert', 'network operations expert witness', 'MIB patent PTAB', 'network monitoring patent', 'configuration management expert', 'device management patent expert', 'NOC systems expert witness'],
   breadcrumbLabel: 'Network Management',
@@ -469,7 +469,7 @@ const networkMgmtSchema = buildSchema.expertisePage({
 });
 
 const networkMgmtTitle = "Network Management Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkMgmtDescription = "Network management expert witness — 120+ patents, 90+ cases. SNMP, OSS/BSS, network monitoring, configuration. Ph.D. UC Berkeley. PTAB & ITC.";
+const networkMgmtDescription = "Network management expert witness for patent litigation: SNMP, OSS/BSS, network monitoring. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 12. NETWORKING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/networking-expert-witness/index.astro
@@ -518,7 +518,7 @@ const networkingExpertDescription = "Networking expert witness for patent litiga
 const messagingChatSchema = buildSchema.expertisePage({
   name: 'Messaging & Chat Expert Witness',
   slug: 'messaging-and-chat-expert-witness',
-  description: 'Messaging & chat expert witness for patent litigation. SMS, MMS, instant messaging, XMPP, push notifications. 90+ cases, 120+ patents.',
+  description: 'Messaging and chat expert witness for patent litigation: SMS, MMS, instant messaging, chat. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Messaging & Chat Expert Witness',
   keywords: ['messaging expert witness', 'chat expert witness', 'SMS patent litigation', 'instant messaging patent', 'messaging protocol expert', 'push notification patent', 'chat platform expert witness', 'MMS patent expert', 'XMPP expert witness', 'enterprise messaging patent'],
   breadcrumbLabel: 'Messaging & Chat',
@@ -551,7 +551,7 @@ const messagingChatSchema = buildSchema.expertisePage({
 });
 
 const messagingChatTitle = "Messaging & Chat Expert Witness — Dr. Tal Lavian, Ph.D.";
-const messagingChatDescription = "Messaging & chat expert witness — 120+ patents, 90+ cases. SMS, MMS, XMPP, push notifications. Ph.D. UC Berkeley. PTAB & ITC.";
+const messagingChatDescription = "Messaging and chat expert witness for patent litigation: SMS, MMS, instant messaging, chat. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // --- 14. TELECOMMUNICATIONS EXPERT WITNESS (primary keyword landing page) ---
 // File: src/pages/communications-expert-witness/telecommunications-expert-witness/index.astro
@@ -559,7 +559,7 @@ const messagingChatDescription = "Messaging & chat expert witness — 120+ paten
 const telecomEWSchema = buildSchema.expertisePage({
   name: 'Telecommunications Expert Witness',
   slug: 'telecommunications-expert-witness',
-  description: 'Telecommunications expert witness for patent litigation. PSTN, VoIP, SONET/SDH, SS7 signaling. Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  description: 'Telecommunications expert witness for patent litigation: PSTN, VoIP, SS7, SONET/SDH. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
   serviceType: 'Telecommunications Expert Witness',
   keywords: ['telecommunications expert witness', 'telecom expert witness', 'PSTN expert witness', 'VoIP expert witness', 'PTAB telecommunications expert', 'ITC telecom expert', 'telecom patent litigation'],
   breadcrumbLabel: 'Telecommunications',
@@ -588,7 +588,7 @@ const telecomEWSchema = buildSchema.expertisePage({
 });
 
 const telecomEWTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
-const telecomEWDescription = "Telecommunications expert witness — Ph.D. UC Berkeley, 120+ patents, 90+ cases. PSTN, VoIP, SS7, SONET/SDH. PTAB, ITC & federal court testimony.";
+const telecomEWDescription = "Telecommunications expert witness for patent litigation: PSTN, VoIP, SS7, SONET/SDH. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 export {
   telecomSchema, telecomTitle, telecomDescription,

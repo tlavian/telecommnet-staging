@@ -198,3 +198,11 @@ footer { background: #0B1D3A; color: #fff; }
 /* Scientific Publications: publisher-record (DOI) link under each matched entry */
 .pub-links { font-size: 0.85rem; margin: 2px 0 12px 0; }
 .pub-links a { color: #1E4D8C; }
+
+/* Court treatment block: verbatim Federal Circuit sentence with citation (homepage, Cases) */
+.court-quote { margin: 2rem 0; padding: 1rem 1.25rem; background: #f7fafc; border-left: 4px solid #C9A84C; border-radius: 4px; }
+.court-quote h2 { font-size: 1.15rem; margin: 0 0 0.6rem 0; color: #1a365d; border: none; padding: 0; }
+.court-quote blockquote { margin: 0 0 0.6rem 0; padding: 0; border: none; }
+.court-quote blockquote p { margin: 0; font-style: italic; color: #2d3748; font-size: 1rem; line-height: 1.6; }
+.court-quote .court-cite { font-size: 0.88rem; margin: 0; color: #4A5568; }
+.court-quote .court-cite a { color: #1E4D8C; }
