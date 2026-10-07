@@ -194,3 +194,7 @@ footer { background: #0B1D3A; color: #fff; }
 .bio-contact-btn { padding: 10px 20px; font-size: 14px; }
 /* Wide tables (Cases page) scroll inside their own box on narrow screens */
 .case-table { display: block; max-width: 100%; overflow-x: auto; }
+
+/* Scientific Publications: publisher-record (DOI) link under each matched entry */
+.pub-links { font-size: 0.85rem; margin: 2px 0 12px 0; }
+.pub-links a { color: #1E4D8C; }
