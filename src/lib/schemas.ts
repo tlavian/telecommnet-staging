@@ -51,11 +51,17 @@ export const PERSON_ENTITY = {
     addressRegion: 'CA',
     addressCountry: 'US',
   },
-  alumniOf: {
-    '@type': 'CollegeOrUniversity',
-    '@id': 'https://berkeley.edu',
-    name: 'University of California, Berkeley',
-  },
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      '@id': 'https://berkeley.edu',
+      name: 'University of California, Berkeley',
+    },
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Tel Aviv University',
+    },
+  ],
   worksFor: {
     '@type': 'Organization',
     '@id': ORG_ID,
@@ -113,7 +119,7 @@ export const PERSON_ENTITY = {
     { '@type': 'Thing', name: 'Data communication', sameAs: 'https://en.wikipedia.org/wiki/Data_communication' },
     { '@type': 'Thing', name: 'Cloud computing', sameAs: 'https://en.wikipedia.org/wiki/Cloud_computing' },
     { '@type': 'Thing', name: 'Wireless network', sameAs: 'https://en.wikipedia.org/wiki/Wireless_network' },
-    { '@type': 'Thing', name: 'Wi-Fi', sameAs: 'https://en.wikipedia.org/wiki/Wi-Fi' },
+    { '@type': 'Thing', name: 'Wi-Fi 802.11', sameAs: 'https://en.wikipedia.org/wiki/Wi-Fi' },
 
     { '@type': 'Thing', name: 'Routing', sameAs: 'https://en.wikipedia.org/wiki/Routing' },
     { '@type': 'Thing', name: 'Network switch', sameAs: 'https://en.wikipedia.org/wiki/Network_switch' },
@@ -148,7 +154,6 @@ export const PERSON_ENTITY = {
     'https://www.ratemyprofessors.com/professor/1813887',
     'https://scholargps.com/scholars/98050981746055/tal-lavian',
   ],
-  knowsLanguage: ['en', 'he'],
   memberOf: [
     { '@type': 'Organization', name: 'IEEE', url: 'https://www.ieee.org' },
     { '@type': 'Organization', name: 'ACM', url: 'https://www.acm.org' },
@@ -157,11 +162,10 @@ export const PERSON_ENTITY = {
     { '@type': 'Organization', name: 'ACM SIGWEB', url: 'https://www.sigweb.org/' },
   ],
   award: [
-    'Nortel Networks Top Talent Award',
-    'Nortel Networks Top Inventor Award',
+    'Top Talent Award - Nortel Networks',
+    'Top Inventors Award - Nortel EDN',
     'IEEE Certified Wireless Communications Engineer (WCET)',
-    'Toastmasters International Best Speaker Award',
-    'IEEE & ICE Best Paper Award',
+    'Best Paper Presentation Award - ICE/IEEE Conference',
   ],
 };
 
@@ -269,7 +273,6 @@ export const buildSchema = {
             addressCountry: 'US',
           },
           areaServed: { '@type': 'Country', name: 'United States' },
-          priceRange: '$$$$',
           makesOffer: [
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Telecommunications Expert Witness' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert Witness' } },
@@ -438,7 +441,7 @@ export const buildSchema = {
               name: 'What companies has Dr. Lavian been retained in cases involving?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has been retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks, Huawei, Arista Networks, Motorola, LG, Avaya, Netflix, LinkedIn, Ericsson, and others. He has been engaged by over 50 law firms including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Cooley, and Finnegan.',
+                text: 'Dr. Lavian has been retained in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco Systems, AT&T, Verizon, T-Mobile, Juniper Networks, Huawei, Arista Networks, Motorola, LG, Avaya, Netflix, LinkedIn, Ericsson, and others. He has been retained by over 50 law firms and corporate clients, including Fish & Richardson, Kirkland & Ellis, Gibson Dunn, Cooley, and Finnegan.',
               },
             },
             {
@@ -503,7 +506,6 @@ export const buildSchema = {
           },
           telephone: '+1-408-209-9112',
           areaServed: { '@type': 'Country', name: 'United States' },
-          priceRange: '$$$$',
           makesOffer: [
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'PSTN, VoIP & Cellular Systems Expert', url: `${BASE_URL}/communications-expert-witness/pstn-voip-cellular-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-communications-expert-witness/` } },
@@ -693,7 +695,6 @@ export const buildSchema = {
           },
           telephone: '+1-408-209-9112',
           areaServed: { '@type': 'Country', name: 'United States' },
-          priceRange: '$$$$',
         },
         breadcrumbs([{ name: opts.breadcrumbLabel, url: `/${opts.slug}/` }]),
       ],
@@ -932,7 +933,7 @@ export const buildSchema = {
         {
           '@type': 'ItemList',
           name: 'Publications by Dr. Tal Lavian',
-          description: '30 peer-reviewed publications in IEEE, ACM, and related venues.',
+          description: 'A list of 30 publications, including 25+ peer-reviewed works in IEEE, ACM, and related venues.',
           numberOfItems: 30,
           itemListElement: publicationEntries.map(pub => ({
             '@type': 'ListItem',

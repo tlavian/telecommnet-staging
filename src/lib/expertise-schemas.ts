@@ -578,7 +578,7 @@ const telecomEWSchema = buildSchema.expertisePage({
     },
     {
       q: 'How do I retain Dr. Lavian as a telecommunications expert witness?',
-      a: 'Contact Dr. Lavian directly at tlavian@telecommnet.com or +1 (408) 209-9112. He reviews all inquiries for conflicts before agreeing to serve. He has been retained by both plaintiffs and defendants across more than 50 law firms.',
+      a: 'Contact Dr. Lavian directly at tlavian@telecommnet.com or +1 (408) 209-9112. He reviews all inquiries for conflicts before agreeing to serve. He has been retained by both plaintiffs and defendants across over 50 law firms and corporate clients.',
     },
     {
       q: 'What are Dr. Lavian\'s qualifications as a telecommunications expert witness?',

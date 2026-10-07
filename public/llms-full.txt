@@ -184,7 +184,7 @@ Each expertise area has a dedicated page with detailed information:
 - Canadian Federal Court
 - A court in Asia
 
-## Corporate Clients (48 companies):
+## Corporate Clients:
 
 ### Major Technology Companies
 Google, Apple, Microsoft, Amazon, Facebook, Instagram, WhatsApp, LinkedIn, Netflix, Cisco Systems, Juniper Networks, Huawei, Broadcom, Arista, Palo Alto Networks, ServiceNow
@@ -198,7 +198,7 @@ FedEx, Morgan Stanley, Vanguard Bank, Guaranteed Rate
 ### Additional Companies
 LG, Samsung, Alacritech, Aten, Backweb, Emblaze, Human Eyes, IP Innovation, IXI Mobile, Linksmart Technologies, Mobotix, Nomadix, Avi Networks, RPX, TCL, Ticket Network, Unified Patents, Walker Digital, Ymax Corp, Government of Canada
 
-## Law Firm Clients (52 firms):
+## Law Firm Clients:
 
 ### Law Firms
 Fish Richardson, Cooley, Finnegan, Gibson Dunn, Ropes Gray, Baker Botts, Irell & Manella LLP, Kirkland & Ellis, Morgan Lewis, Skadden, Simpson Thacher & Bartlett LLP, Hogan Lovells LLP, Perkins Coie, Winston & Strawn LLP, Greenberg Traurig
@@ -209,7 +209,7 @@ Holland & Knight LLP, Oblon LLP, Venable LLP, Keker Van Nest, Wolf Greenfield LL
 ### Regional & Boutique Firms
 Foley Lardner LLP, Hopkins Carley, Akerman, Hausfeld, Hovey Williams LLP, Kenyon & Kenyon, Klarquist Sparkman LLP, Mei & Mark LLP, Niro Scavone Haller Niro, Nixon Peabody, Novack Macey, Faegre Baker Daniels, Warner Norcross & Judd, Armstrong Teasdale LLP, SlaterMatsil LLP, The Simon Law Firm, The WEBB Law Firm, Fisch Sigler LLP, White and Williams LLP, Devlin Law Firm LLC, Hosie Rice LLP, Erise IP, Cozen O'Connor, Unified Patents
 
-## Patent Portfolio (133 Inventions):
+## Patent Portfolio (120+ patents):
 
 ### Network Communications & Programmable Networks (~30 patents)
 US 8,341,257 (Grid proxy architecture), US 8,161,139 (Intelligent network interface), US 7,944,827 (Content-aware optical bandwidth), US 7,860,999 (Distributed computation), US 7,433,941 (SNMP network access), US 7,359,993 (External resources interface), US 7,313,608 (Markup language network config), US 7,260,621 (OO network management), US 7,237,012 (Java RMI traffic classification), US 7,127,526 (Dynamic software services), US 7,047,536 (DiffServ traffic classification), US 7,039,724 (Programmable CLI API), US 6,976,054 (Low-level resource access), US 6,970,943 (High-speed routing architecture), US 6,850,989 (Auto-configuring data ports), US 6,845,397 (Network protocol interface), US 6,842,781 (Network management app), US 6,772,205 (Proxy network device), US 6,175,868 (Auto-configuring network switch), US 6,170,015 (Network switch with co-processor)
@@ -235,7 +235,7 @@ US 9,690,877 (Electronic communications), US 9,083,728 (Support sharing in netwo
 ### International Patents
 EP 3,311,493 (ULPN synthesizers), EP 1,905,211 (Authentication), EP 1,671,460 (Underlay network scheduling), EP 1,142,213 (Traffic class assignment), CA 2,989,752 (Ultra low phase-noise synthesizer), CA 2,358,525 (Packet flow), WO 2006/063052 (Network immunization), WO 2005/033899 (Underlay network data transfers), WO 2000/041368 (Dynamic traffic assignment), WO 2000/054460 (Network device information access)
 
-## Scientific Publications (31 peer-reviewed works):
+## Scientific Publications (25+ peer-reviewed works):
 
 ### Books
 1. "Communications Architecture - Grid Computing" — Tal Lavian, Scholar's Press, 2013, ISBN 978-3-639-51098-0
@@ -276,7 +276,7 @@ EP 3,311,493 (ULPN synthesizers), EP 1,905,211 (Authentication), EP 1,671,460 (U
 28. "Grid Network Services, Draft-ggf-ghpn-netservices-1.0" — Global Grid Forum (GGF)
 29. "Optical Network ggf-ghpn-opticalnets standard" — Global Grid Forum GFD-I.036, August 2004
 
-## Talks & Presentations (64 presentations at IEEE, ACM, Stanford, UC Berkeley, and other venues):
+## Talks & Presentations (at IEEE, ACM, Stanford, UC Berkeley, and other venues):
 
 Notable presentations include:
 - Lambda Data Grid: An Agile Optical Platform for Grid Computing and Data-intensive Applications
@@ -301,19 +301,19 @@ Notable presentations include:
 
 Dr. Lavian is involved in research at UC Berkeley:
 - Principal Investigator on DARPA/AFRL funded projects (DWDM-RAM)
-- Leadership in UC Berkeley RAD Lab, SAHARA, and ICEBERG projects
+- Research projects at UC Berkeley: RAD Lab, SAHARA, and ICEBERG
 - Research on network architecture, protocols, and telecommunications systems
 - Publications in IEEE, ACM, and telecommunications journals and conferences
 
 ## Career History:
 
 - UC Berkeley (nearly 20 years) — Industry Fellow, Lecturer, Principal Investigator (IEOR, SCET)
-- CRadar.Ai — Technology Officer
-- Ixia Communications — Senior Technical Leadership
+- CRadar.Ai — CTO and Principal Investigator (UC Berkeley SkyDeck)
+- Ixia
 - Nortel Labs — Principal Scientist and Principal Architect
 - Bay Architecture Labs — Senior Research Engineer
-- Aptel Communications — Technical Leadership
-- Scitex & Shalev — Early career positions
+- Aptel Communications
+- Scitex and Shalev
 
 ## Academic Profiles & Publications:
 

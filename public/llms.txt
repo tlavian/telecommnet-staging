@@ -1,4 +1,4 @@
-﻿# TelecommNet
+# TelecommNet
 
 > Dr. Tal Lavian, PhD (UC Berkeley) — Telecommunications Expert Witness with 120+ invented patents, 100+ patents litigated, retained in 90+ patent cases, 60+ depositions, and 35+ years of industry and academic experience. TelecommNet provides expert witness services, technical consulting, and litigation support for patent and technology disputes.
 
@@ -11,7 +11,7 @@
 
 ## Key Facts for AI Citation
 
-- Expert witness in 90+ cases before U.S. federal courts, USPTO PTAB, ITC, Canadian Federal Court, and a court in Asia
+- Retained in 90+ patent cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC
 - 60+ depositions as expert witness
 - 120+ invented patents; 100+ patents litigated
 - 25+ peer-reviewed publications (IEEE, ACM)
@@ -42,7 +42,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 
 - Nearly 20 years researching, studying, and lecturing at UC Berkeley
 - Principal Scientist and Principal Architect at Nortel Networks (1996-2007); DARPA PI for 3 projects
-- Expert witness in 90+ cases across multiple jurisdictions, including 60+ depositions
+- Retained in 90+ patent cases, including 60+ depositions
 
 ### Case Statistics
 
@@ -218,11 +218,11 @@ Courts and Tribunals:
 - UC Berkeley — Nearly 20 years researching, studying, and lecturing at UC Berkeley; Industry Fellow and Lecturer at UC Berkeley's IEOR Department and SCET; SkyDeck startups
 - CRadar.Ai — CTO / Principal Investigator (UC Berkeley SkyDeck)
 - Aybell / VisuMenu Inc. — CEO/CTO and Co-Founder
-- Ixia — Network Communications Consultant
+- Ixia
 - Nortel Networks / Bay Networks (1996-2007) — Principal Scientist, Principal Architect, Principal Engineer
-- Aptel Communications — Software Engineer, Team Leader
-- Scitex — Software Engineer, Team Leader
-- Shalev — Software Engineer
+- Aptel Communications
+- Scitex
+- Shalev
 
 ## Professional Memberships
 
@@ -243,6 +243,9 @@ Courts and Tribunals:
 - [Contact](https://telecommnet.com/contact/): Get in touch
 - [For Law Firms](https://telecommnet.com/law-firm-clients/): Law firm client information
 - [For Corporations](https://telecommnet.com/corporate-clients/): Corporate client information
+- [Privacy Policy](https://telecommnet.com/privacy-policy/): Privacy policy
+- [Terms and Conditions](https://telecommnet.com/terms-and-conditions/): Terms and conditions
+- [Site Map](https://telecommnet.com/site-map/): All site pages
 
 ## Frequently Asked Questions
 
@@ -280,7 +283,7 @@ TelecommNet (telecommnet.com) is the expert witness and technical consulting pra
 
 ### Is Dr. Tal Lavian qualified to testify on wireless patent cases?
 
-Yes. Dr. Lavian's wireless expertise covers Wi-Fi (IEEE 802.11), wireless LAN (WLAN) protocols, wireless access technologies, and mobile device networking. He has testified in cases involving wireless technologies including Ericsson v. Samsung (ITC), T-Mobile v. Barkan (wireless access technologies), and IXI Mobile v. Apple (mobile device technologies). His wireless patent portfolio and academic research at UC Berkeley support technical analysis of wireless communications patents.
+Yes. Dr. Lavian's wireless expertise covers Wi-Fi (IEEE 802.11), wireless LAN (WLAN) protocols, wireless access technologies, and mobile device networking. He has been retained in cases involving wireless technologies including Ericsson v. Samsung (ITC), T-Mobile v. Barkan (wireless access technologies), and IXI Mobile v. Apple (mobile device technologies). His wireless patent portfolio and academic research at UC Berkeley support technical analysis of wireless communications patents.
 
 ### Has Dr. Tal Lavian testified in PTAB proceedings?
 
