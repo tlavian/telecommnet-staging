@@ -30,6 +30,8 @@ const ORG_LOGO_IMG = {
 
 export const PERSON_REF = { '@id': PERSON_ID };
 
+const PORTRAIT_IMG = `${BASE_URL}/images/branding/dr-tal-lavian-portrait-1200.webp`;
+
 export const PERSON_ENTITY = {
   '@type': 'Person',
   '@id': PERSON_ID,
@@ -44,7 +46,7 @@ export const PERSON_ENTITY = {
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
-  image: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+  image: PORTRAIT_IMG,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Encino',
@@ -188,7 +190,7 @@ export const ORG_ENTITY = {
   logo: ORG_LOGO_IMG,
   image: {
     '@type': 'ImageObject',
-    url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+    url: PORTRAIT_IMG,
   },
   hasMap: 'https://maps.app.goo.gl/YKkzUgJggPWzsDjX6',
   // Organization-level profile: the Google Business Profile / Maps listing
@@ -264,7 +266,7 @@ export const buildSchema = {
           logo: ORG_LOGO_IMG,
           image: {
             '@type': 'ImageObject',
-            url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+            url: PORTRAIT_IMG,
           },
           address: {
             '@type': 'PostalAddress',
@@ -496,7 +498,7 @@ export const buildSchema = {
           logo: ORG_LOGO_IMG,
           image: {
             '@type': 'ImageObject',
-            url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+            url: PORTRAIT_IMG,
           },
           address: {
             '@type': 'PostalAddress',
@@ -685,7 +687,7 @@ export const buildSchema = {
           logo: ORG_LOGO_IMG,
           image: {
             '@type': 'ImageObject',
-            url: `${BASE_URL}/images/branding/dr-lavian-photo.jpg`,
+            url: PORTRAIT_IMG,
           },
           address: {
             '@type': 'PostalAddress',
