@@ -99,7 +99,8 @@
   padding: 12px 28px; border-radius: 4px; font-weight: 700; font-size: 0.95rem;
   text-decoration: none; transition: all 0.2s ease;
 }
-.cta-block .cta-button:hover { background: #B8952F; color: #fff; text-decoration: none; }
+.cta-block .cta-button:hover { background: #B8952F; color: #0B1D3A; text-decoration: none; }
+html { scroll-padding-top: 80px; }
 
 /* Subtle contact note */
 .contact-note { color: #64748b; font-size: 0.9rem; margin: 30px 0; padding: 0; text-align: left; }
