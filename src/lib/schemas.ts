@@ -480,7 +480,7 @@ export const buildSchema = {
           about: PERSON_REF,
           speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+            cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
           },
         },
         {
@@ -1310,7 +1310,7 @@ export const buildSchema = {
           isPartOf: { '@id': `${BASE_URL}/#website` },
           speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.content-main > p:first-of-type', '.content-main > h2:first-of-type'],
+            cssSelector: ['.content-full > p:first-of-type', '.content-full > h2:first-of-type'],
           },
         },
         {
@@ -1373,8 +1373,9 @@ export const buildSchema = {
     return {
       '@context': 'https://schema.org',
       '@graph': [
-        // These utility pages carry no Person node, so ORG_ENTITY is included to
-        // resolve WEBSITE_ENTITY.publisher (#org) within the same graph.
+        // Person and Organization nodes are included so #person (Organization.founder)
+        // and #org (WEBSITE_ENTITY.publisher) resolve within the same graph.
+        PERSON_ENTITY,
         ORG_ENTITY,
         WEBSITE_ENTITY,
         {
