@@ -307,7 +307,6 @@ const fullSchema = completeGraph(buildFullSchema(schema, breadcrumbSchema));
     a:hover { text-decoration: underline; color: var(--color-navy); }
     a:focus-visible { outline: 2px solid var(--color-blue-accent); outline-offset: 2px; border-radius: 2px; }
     img { max-width: 100%; height: auto; content-visibility: auto; }
-    img[width][height] { aspect-ratio: attr(width) / attr(height); }
 
     /* Breadcrumb navigation */
     .breadcrumb-nav { background: #f5f7fa; border-bottom: 1px solid #e4e8ee; padding: 7px 0; font-size: 13px; }
@@ -736,7 +735,7 @@ const fullSchema = completeGraph(buildFullSchema(schema, breadcrumbSchema));
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="white" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               </span>
               <span class="js-email" data-u="tlavian" data-d="telecommnet.com"></span>
-              <noscript><a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a></noscript>
+              <noscript><!--email_off--><a href="mailto:tlavian@telecommnet.com">tlavian@telecommnet.com</a><!--/email_off--></noscript>
             </div>
             <div class="footer-contact-item">
               <span class="footer-contact-icon" style="background:#48bb78;color:#fff;" aria-hidden="true">
