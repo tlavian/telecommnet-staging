@@ -1321,10 +1321,9 @@ export const buildSchema = {
       { position: 103, number: 'US 9,660,655', name: 'Ultra-low phase noise frequency synthesizer', about: 'Wireless Communications' },
       { position: 104, number: 'US 9,690,877', name: 'Systems and methods for electronic communications', about: 'Network Communications' },
       { position: 105, number: 'US 9,705,511', name: 'Ultra low phase noise frequency synthesizer', about: 'Wireless Communications' },
-      { position: 106, number: 'US 9,729,158', name: 'Ultra low phase noise frequency synthesizer', about: 'Wireless Communications' },
-      { position: 107, number: 'US 9,831,881', name: 'Radar target detection system for autonomous vehicles with ultra-low phase noise frequency synthesizer', about: 'Autonomous Vehicle Radar' },
-      { position: 108, number: 'US 2022/0043108', name: 'Systems, methods and apparatus for deep-learning multidimensional detection, segmentation and classification', about: 'Network Communications' },
-      { position: 109, number: 'WO 2005033899', name: 'Method and apparatus for scheduling resources on a switched underlay network', about: 'Grid Computing and Optical Networks' },
+      { position: 106, number: 'US 9,831,881', name: 'Radar target detection system for autonomous vehicles with ultra-low phase noise frequency synthesizer', about: 'Autonomous Vehicle Radar' },
+      { position: 107, number: 'US 2022/0043108', name: 'Systems, methods and apparatus for deep-learning multidimensional detection, segmentation and classification', about: 'Network Communications' },
+      { position: 108, number: 'WO 2005033899', name: 'Method and apparatus for scheduling resources on a switched underlay network', about: 'Grid Computing and Optical Networks' },
     ];
 
     return {
@@ -1350,8 +1349,8 @@ export const buildSchema = {
         {
           '@type': 'ItemList',
           name: 'Patent Portfolio — Dr. Tal Lavian',
-          description: '109 enumerated patents and published applications (a representative selection of Dr. Lavian\'s 120+ inventions) spanning network switch architecture, network security, VoIP/IVR systems, grid computing, QoS, autonomous-vehicle radar, and wireless communications.',
-          numberOfItems: 109,
+          description: '108 enumerated patents and published applications (a representative selection of Dr. Lavian\'s 120+ inventions) spanning network switch architecture, network security, VoIP/IVR systems, grid computing, QoS, autonomous-vehicle radar, and wireless communications.',
+          numberOfItems: 108,
           itemListElement: patentEntries.map(pat => ({
             '@type': 'ListItem',
             position: pat.position,
