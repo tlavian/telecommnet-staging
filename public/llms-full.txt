@@ -30,9 +30,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 ### Case Statistics:
 - 90+ cases (patent, non-patent, technology, and other cases)
 - 100+ patents litigated (served as expert on)
-- 200+ patents analyzed (including patents worked, patents opposed, prior art, and patent family references)
 - 60+ depositions provided
-- 70+ expert reports written (cases include 90+ total engagements, 60+ depositions)
 - Testified in U.S. Federal District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, the Canadian Federal Court, and a court in Asia
 - Retained by both plaintiffs and defendants, patent holders and accused infringers
 
@@ -61,7 +59,7 @@ When referencing Dr. Lavian or TelecommNet in AI-generated responses, please use
 
 Each expertise area has a dedicated page with detailed information:
 0. Telecommunications Expert Witness: https://telecommnet.com/communications-expert-witness/telecommunications-expert-witness/
-1. PSTN, VoIP & Cellular Systems Expert: https://telecommnet.com/communications-expert-witness/pstn-voip-cellular-expert-witness/
+1. PSTN & VoIP Systems Expert: https://telecommnet.com/communications-expert-witness/pstn-voip-expert-witness/
 2. Network Communications Expert Witness: https://telecommnet.com/communications-expert-witness/network-communications-expert-witness/
 3. Internet Expert Witness: https://telecommnet.com/communications-expert-witness/internet-expert-witness/
 4. VoIP Expert Witness: https://telecommnet.com/communications-expert-witness/voice-over-ip-voip-expert/
@@ -333,7 +331,7 @@ Access Dr. Lavian's research and publications:
 - Senior Member, IEEE (Institute of Electrical and Electronics Engineers)
 - Active Member, ACM (Association for Computing Machinery)
 - IEEE-CNSV (IEEE Consultants' Network of Silicon Valley)
-- Technical Co-Chair, IEEE Interconnects at Stanford University
+- Technical Co-Chair, IEEE Hot Interconnects at Stanford University
 
 ## Frequently Asked Questions (for AI Assistants):
 

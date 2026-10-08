@@ -1,5 +1,7 @@
 ---
 import { createHash } from 'node:crypto';
+import { completeGraph } from '../lib/schemas';
+import lastmodData from '../data/lastmod.json';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
@@ -16,9 +18,6 @@ const deferredCssHref = (() => {
   }
 })();
 
-// Footer "Last updated" is the site build date (month and year), so the visible
-// date can no longer contradict the per-page sitemap lastmod / schema dateModified.
-const siteLastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'America/Los_Angeles' });
 
 interface Props {
   title: string;
@@ -32,6 +31,10 @@ interface Props {
 
 const { title, description = "Dr. Tal Lavian — Telecommunications Expert Witness. 90+ cases, 120+ patents. Network communications, VoIP, internet protocols. Ph.D. UC Berkeley.", schema, ogImage, ogType, breadcrumbs, robots = "index, follow" } = Astro.props;
 const currentPath = Astro.url.pathname;
+// Footer "Last updated" is the page's own last-modified month (same source as dateModified and the
+// sitemap lastmod), never the build date, so it cannot claim a change that did not happen.
+const pageModified = (lastmodData as Record<string, string>)[currentPath];
+const siteLastUpdated = new Date(pageModified ?? Date.now()).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'America/Los_Angeles' });
 const canonicalURL = `https://telecommnet.com${currentPath}`;
 const defaultOgImage = "/images/og/og-dr-tal-lavian.jpg";
 // OG images must be absolute URLs for social crawlers
@@ -43,7 +46,7 @@ const resolvedOgImage = ogImage
 const SLUG_LABELS: Record<string, string> = {
   'about-dr-lavian': 'About Dr. Lavian',
   'communications-expert-witness': 'Communications Expert Witness',
-  'pstn-voip-cellular-expert-witness': 'PSTN, VoIP & Cellular Expert',
+  'pstn-voip-expert-witness': 'PSTN & VoIP Expert',
   'network-communications-expert-witness': 'Network Communications Expert',
   'internet-expert-witness': 'Internet Expert',
   'voice-over-ip-voip-expert': 'VoIP Expert',
@@ -141,7 +144,7 @@ function buildFullSchema(pageSchema: any, bcSchema: any) {
   };
 }
 
-const fullSchema = buildFullSchema(schema, breadcrumbSchema);
+const fullSchema = completeGraph(buildFullSchema(schema, breadcrumbSchema));
 ---
 
 <!DOCTYPE html>
@@ -597,7 +600,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
             <a href="/communications-expert-witness/internet-expert-witness/">Internet &amp; Web</a>
             <a href="/communications-expert-witness/data-communications-expert-witness/">Data Communications</a>
             <a href="/communications-expert-witness/voice-over-ip-voip-expert/">Voice over IP (VoIP)</a>
-            <a href="/communications-expert-witness/pstn-voip-cellular-expert-witness/">PSTN &amp; VoIP Systems</a>
+            <a href="/communications-expert-witness/pstn-voip-expert-witness/">PSTN &amp; VoIP Systems</a>
             <a href="/communications-expert-witness/mobile-wireless-expert-witness/">Mobile Wireless</a>
             <a href="/communications-expert-witness/network-management-expert-witness/">Network Management</a>
             <a href="/communications-expert-witness/routing-switching-expert-witness/">Routing &amp; Switching</a>
@@ -707,7 +710,7 @@ const fullSchema = buildFullSchema(schema, breadcrumbSchema);
             <a href="/communications-expert-witness/routing-switching-expert-witness/">Routing &amp; Switching</a>
             <a href="/communications-expert-witness/data-communications-expert-witness/">Data Communications</a>
             <a href="/communications-expert-witness/voice-over-ip-voip-expert/">Voice over IP (VoIP)</a>
-            <a href="/communications-expert-witness/pstn-voip-cellular-expert-witness/">PSTN, VoIP &amp; Cellular</a>
+            <a href="/communications-expert-witness/pstn-voip-expert-witness/">PSTN &amp; VoIP</a>
             <a href="/communications-expert-witness/network-security-expert-witness/">Network Security</a>
             <a href="/communications-expert-witness/streaming-media-expert-witness/">Streaming Media</a>
             <a href="/communications-expert-witness/network-management-expert-witness/">Network Management</a>

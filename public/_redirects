@@ -10,7 +10,8 @@
 /resume-cv/dr-tal-lavian-cv-expert-witness-network-communications-telecommunications-internet-protocols-mobile-wireless.pdf /Dr-Tal-Lavian-CV-Expert-Witness-Network-Communications-Telecommunications-Internet-Protocols-Mobile-Wireless-2026.pdf 301
 
 # 301 redirects for renamed expertise page slugs
-/communications-expert-witness/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-cellular-expert-witness/:splat 301
+/communications-expert-witness/pstn-voip-cellular-expert-witness/* /communications-expert-witness/pstn-voip-expert-witness/:splat 301
+/communications-expert-witness/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-expert-witness/:splat 301
 /communications-expert-witness/data-communications-expert/* /communications-expert-witness/data-communications-expert-witness/:splat 301
 /communications-expert-witness/mobile-wireless-expert/* /communications-expert-witness/mobile-wireless-expert-witness/:splat 301
 /communications-expert-witness/routing-switching-expert/* /communications-expert-witness/routing-switching-expert-witness/:splat 301
@@ -25,7 +26,7 @@
 /patents-list/ /patents/ 301
 # Old "-services" slugs whose target slug was itself renamed: send them to the final URL in one hop
 # (the catch-all below would otherwise chain through the renamed-slug rules above).
-/communications-expert-witness-services/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-cellular-expert-witness/:splat 301
+/communications-expert-witness-services/pstn-voip-cellular-expert/* /communications-expert-witness/pstn-voip-expert-witness/:splat 301
 /communications-expert-witness-services/data-communications-expert/* /communications-expert-witness/data-communications-expert-witness/:splat 301
 /communications-expert-witness-services/mobile-wireless-expert/* /communications-expert-witness/mobile-wireless-expert-witness/:splat 301
 /communications-expert-witness-services/network-security-expert/* /communications-expert-witness/network-security-expert-witness/:splat 301
