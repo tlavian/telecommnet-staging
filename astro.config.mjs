@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import faqSync from './scripts/faq-sync.mjs';
 import { execSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -16,7 +17,7 @@ const CORE_PATHS = new Set([
   '/about-dr-lavian/',
   '/communications-expert-witness/',
   '/communications-expert-witness/telecommunications-expert-witness/',
-  '/communications-expert-witness/pstn-voip-cellular-expert-witness/',
+  '/communications-expert-witness/pstn-voip-expert-witness/',
   '/communications-expert-witness/network-communications-expert-witness/',
   '/communications-expert-witness/internet-expert-witness/',
   '/communications-expert-witness/voice-over-ip-voip-expert/',
@@ -130,6 +131,7 @@ export default defineConfig({
         return item;
       },
     }),
+    faqSync(),
   ],
   output: 'static',
   trailingSlash: 'always',

@@ -240,6 +240,38 @@ export function breadcrumbs(items: { name: string; url: string }[]) {
 
 // â”€â”€â”€ Schema builders by page type â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
+/**
+ * Safety net for every page graph: if a node references #person, #org or #website by id only
+ * and no node on the page defines it, append the shared entity so the graph resolves in-page.
+ * (Nested nodes that carry an @id plus other properties count as defined.)
+ */
+export function completeGraph(schema: any): any {
+  if (!schema || !Array.isArray(schema['@graph'])) return schema;
+  const shared: Record<string, any> = {
+    [PERSON_ENTITY['@id'] as string]: PERSON_ENTITY,
+    [ORG_ENTITY['@id'] as string]: ORG_ENTITY,
+    [WEBSITE_ENTITY['@id'] as string]: WEBSITE_ENTITY,
+  };
+  const graph = [...schema['@graph']];
+  for (let pass = 0; pass < 4; pass++) {
+    const defined = new Set<string>();
+    const refs = new Set<string>();
+    const walk = (n: any) => {
+      if (Array.isArray(n)) return n.forEach(walk);
+      if (n && typeof n === 'object') {
+        const id = n['@id'];
+        if (typeof id === 'string') (Object.keys(n).length > 1 ? defined : refs).add(id);
+        Object.values(n).forEach(walk);
+      }
+    };
+    walk(graph);
+    const missing = [...refs].filter((id) => shared[id] && !defined.has(id));
+    if (!missing.length) break;
+    missing.forEach((id) => graph.push(shared[id]));
+  }
+  return { ...schema, '@graph': graph };
+}
+
 export const buildSchema = {
 
   /** Homepage: Person + ProfessionalService + WebSite + BreadcrumbList */
@@ -509,7 +541,7 @@ export const buildSchema = {
           telephone: '+1-408-209-9112',
           areaServed: { '@type': 'Country', name: 'United States' },
           makesOffer: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'PSTN, VoIP & Cellular Systems Expert', url: `${BASE_URL}/communications-expert-witness/pstn-voip-cellular-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'PSTN & VoIP Systems Expert', url: `${BASE_URL}/communications-expert-witness/pstn-voip-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-communications-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Internet Expert Witness', url: `${BASE_URL}/communications-expert-witness/internet-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VoIP Expert Witness', url: `${BASE_URL}/communications-expert-witness/voice-over-ip-voip-expert/` } },
@@ -1171,7 +1203,7 @@ export const buildSchema = {
               name: 'What technology areas does Dr. Lavian cover as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Dr. Lavian's expert witness testimony covers telecommunications, network communications, computer networking, internet protocols, routing and switching, VoIP, mobile wireless, streaming media, network systems, LAN/WAN, cloud computing, cellular technology, web technologies, and internet technology patents.",
+                text: "Dr. Lavian's expert witness testimony covers telecommunications, network communications, computer networking, internet protocols, routing and switching, VoIP, mobile wireless, streaming media, network systems, LAN/WAN, cloud computing, web technologies, and internet technology patents.",
               },
             },
           ],

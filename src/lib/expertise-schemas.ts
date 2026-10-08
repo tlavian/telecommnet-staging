@@ -9,15 +9,15 @@
  */
 
 // â"€â"€â"€ 1. TELECOMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
-// File: src/pages/communications-expert-witness/pstn-voip-cellular-expert-witness/index.astro
+// File: src/pages/communications-expert-witness/pstn-voip-expert-witness/index.astro
 
 const telecomSchema = buildSchema.expertisePage({
-  name: 'PSTN, VoIP & Cellular Systems Expert',
-  slug: 'pstn-voip-cellular-expert-witness',
+  name: 'PSTN & VoIP Systems Expert',
+  slug: 'pstn-voip-expert-witness',
   description: 'PSTN and VoIP systems expert witness for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'PSTN, VoIP & Cellular Systems Expert Witness',
+  serviceType: 'PSTN & VoIP Systems Expert Witness',
   keywords: ['PSTN expert witness', 'VoIP expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
-  breadcrumbLabel: 'PSTN, VoIP & Cellular',
+  breadcrumbLabel: 'PSTN & VoIP',
   faqs: [
     {
       q: 'What does a telecommunications expert witness do?',
@@ -33,7 +33,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What telecommunications patent issues has Dr. Lavian addressed?',
-      a: 'Dr. Lavian has addressed claim construction, infringement, and invalidity issues involving telephony protocols, cellular systems, VoIP, PSTN interfaces, network switching, and wireless communications standards.',
+      a: 'Dr. Lavian has addressed claim construction, infringement, and invalidity issues involving telephony protocols, VoIP, PSTN interfaces, network switching, and wireless communications standards.',
     },
     {
       q: 'How is a telecommunications expert witness used in patent litigation?',
@@ -54,7 +54,7 @@ const telecomSchema = buildSchema.expertisePage({
   ],
 });
 
-const telecomTitle = "PSTN, VoIP & Cellular Expert Witness | Dr. Tal Lavian";
+const telecomTitle = "PSTN & VoIP Expert Witness | Dr. Tal Lavian";
 const telecomDescription = "PSTN and VoIP systems expert witness for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
@@ -258,12 +258,12 @@ const streamingDescription = "Streaming media expert witness for patent litigati
 // File: src/pages/communications-expert-witness/computer-networking-expert-witness/index.astro
 
 const computerNetworkingSchema = buildSchema.expertisePage({
-  name: 'Computer Networks Expert Witness',
+  name: 'Computer Networking Expert Witness',
   slug: 'computer-networking-expert-witness',
   description: 'Computer networking expert witness for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Computer Networks Expert Witness',
+  serviceType: 'Computer Networking Expert Witness',
   keywords: ['computer networks expert witness', 'computer networking expert witness', 'computer network expert witness', 'LAN WAN patent expert', 'Ethernet patent litigation', 'network architecture expert witness', 'distributed systems patent', 'cloud networking expert', 'network infrastructure expert witness', 'SDN expert witness'],
-  breadcrumbLabel: 'Computer Networks',
+  breadcrumbLabel: 'Computer Networking',
   faqs: [
     {
       q: 'What computer networks expertise does Dr. Lavian offer for patent cases?',
@@ -300,7 +300,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
   ],
 });
 
-const computerNetworkingTitle = "Computer Networks Expert Witness | Dr. Tal Lavian, Ph.D.";
+const computerNetworkingTitle = "Computer Networking Expert Witness | Dr. Tal Lavian, Ph.D.";
 const computerNetworkingDescription = "Computer networking expert witness for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 8. DATA COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
