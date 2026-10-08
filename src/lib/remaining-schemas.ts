@@ -23,7 +23,7 @@ export const corporateClientsSchema = buildSchema.clientPage({
 export const corporateClientsTitle =
   "Telecom Expert Witness for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Telecommunications expert witness for corporate legal teams and in-house counsel. Patent litigation support and expert reports in 90+ cases. Ph.D. UC Berkeley.";
+  "Telecommunications expert witness for corporate legal teams and in-house counsel. Dr. Tal Lavian, Ph.D. UC Berkeley, retained in 90+ patent cases.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
@@ -69,7 +69,7 @@ export const casesSchema = buildSchema.cases();
 export const casesTitle =
   "Expert Witness Testimony Cases | Dr. Tal Lavian, Ph.D.";
 export const casesDescription =
-  "90+ cases. 100+ patents litigated. 60+ depositions. U.S. federal courts, USPTO PTAB & ITC. Retained by Apple, Google, Cisco, Fish & Richardson.";
+  "90+ cases. 100+ patents litigated. 60+ depositions. U.S. federal courts, USPTO PTAB & ITC. Retained by attorneys at Fish & Richardson and other firms.";
 
 // ─── 21. SITE MAP ─────────────────────────────────────────────────────────
 // File: src/pages/site-map/index.astro
