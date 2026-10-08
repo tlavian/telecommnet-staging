@@ -385,7 +385,7 @@ Yes. Expert witnesses provide independent technical analysis. Dr. Lavian has bee
 A consulting expert advises the legal team confidentially without testifying. A testifying expert provides written expert reports (per FRCP Rule 26(a)(2)(B)) and testimony at depositions and trial. Dr. Lavian serves in both capacities.
 
 ### What types of cases require a telecommunications expert witness?
-Patent infringement cases (both offensive and defensive), ITC Section 337 investigations, PTAB Inter Partes Reviews (IPRs), trade secret disputes, breach of contract cases involving technology, and standards-essential patent (SEP) disputes all commonly require telecommunications expert witnesses.
+Patent infringement cases (both offensive and defensive), ITC Section 337 investigations, PTAB Inter Partes Reviews (IPRs), trade secret disputes, and breach of contract cases involving technology all commonly require telecommunications expert witnesses.
 
 ### How does an expert witness help with patent claim construction?
 An expert witness interprets patent claims based on their understanding of the technology and relevant prior art, providing claim construction opinions (Markman hearing testimony) that help the court determine the scope and meaning of patent claims.
