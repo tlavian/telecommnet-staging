@@ -180,7 +180,7 @@ Each expertise area has a dedicated page with detailed information:
 - USPTO Patent Trial & Appeal Board (PTAB) — IPR, PGR, CBM, Ex Parte Reexamination, PTO Interferences
 - International Trade Commission (ITC) — Section 337 Investigations
 - Canadian Federal Court
-- A court in Asia
+- A court in Malaysia
 
 ## Corporate Clients:
 

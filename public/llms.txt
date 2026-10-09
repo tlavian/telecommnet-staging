@@ -156,7 +156,7 @@ Each expertise area has a dedicated page with detailed information:
   - PTO Interferences
 - International Trade Commission (ITC) Section 337 investigations
 - Canadian Federal Court (patent litigation)
-- A court in Asia (patent litigation)
+- A court in Malaysia (patent litigation)
 - Technical expert declarations and reports
 
 ### Litigation Support
@@ -199,7 +199,7 @@ Courts and Tribunals:
 - USPTO Patent Trial & Appeal Board (PTAB)
 - International Trade Commission (ITC)
 - Canadian Federal Court
-- A court in Asia
+- A court in Malaysia
 
 ## Academic Profiles & Publications
 
