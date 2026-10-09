@@ -27,6 +27,12 @@ const RULES = [
   [/source code review/i, "source-code review content is on the hold list"],
 ];
 
+// Owner-approved exceptions (Dr. Lavian, 2026-10-09): [file fragment, rule message fragment]
+const ALLOW = [
+  ["cases-expert-witness-testimony", "5G/LTE"],   // Ericsson v. Samsung matter lists LTE; real past case
+  ["communications-expert-witness/index.html", "source-code"], // hub FAQ mention approved
+];
+
 const files = [];
 (function walk(d) {
   for (const e of fs.readdirSync(d, { withFileTypes: true })) {
@@ -50,7 +56,7 @@ for (const f of files) {
   const text = f.endsWith(".html") ? strip(raw) : raw;
   for (const [re, msg] of RULES) {
     const m = text.match(re);
-    if (m) {
+    if (m && !ALLOW.some(([a, b]) => f.split(String.fromCharCode(92)).join("/").includes(a) && msg.includes(b))) {
       const i = m.index;
       console.log(`FAIL ${f.split(String.fromCharCode(92)).join("/")}: ${msg}\n     ...${text.slice(Math.max(0, i - 60), i + 90)}...`);
       hits++;
