@@ -239,7 +239,7 @@ EP 3,311,493 (ULPN synthesizers), EP 1,905,211 (Authentication), EP 1,671,460 (U
 1. "Communications Architecture - Grid Computing" — Tal Lavian, Scholar's Press, 2013, ISBN 978-3-639-51098-0
 
 ### Doctoral Thesis
-2. "Data communications architecture grid computing" — Tal Lavian, Randy H. Katz, University of California at Berkeley, January 2006
+2. "Lambda Data Grid: Communications Architecture in Support of Grid Computing" — Tal Lavian, Randy H. Katz, University of California at Berkeley, December 2006
 
 ### Journal Articles
 3. "Secure Lightpath Creation Across Heterogeneous Domains" — IEEE Communications Magazine, vol. 44, no. 3, March 2006, pp. 100-106
@@ -256,7 +256,7 @@ EP 3,311,493 (ULPN synthesizers), EP 1,905,211 (Authentication), EP 1,671,460 (U
 12. "Large-Scale Grid Data Networks" — GridNets 2004, San Jose, CA
 13. "Enabling Grid Services with Dynamic Optical Networks" — IEEE/ACM Cluster Computing and the Grid 2004
 14. "Edge device multi-unicasting for video streaming" — ICT 2003, Tahiti, Vol 2, pp. 1441-1447
-15. "Service Composition Across Multiple Providers" — ACM Pervasive 2002, pp. 1-14
+15. "Service Composition Across Multiple Providers" — Pervasive 2002 (Springer LNCS), pp. 1-14
 16. "Active Flow Network Forwarding Engines" — DANCE 2002, pp. 65-76
 17. "Active Network Services Content Gateways" — DANCE 2002, pp. 344-354
 18. "Active Networks on A Programmable Network Platform" — IEEE OPENARCH 2002

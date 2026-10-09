@@ -749,7 +749,7 @@ export const buildSchema = {
         position: 2,
         name: 'Understanding Six Models of Advanced R&D',
         datePublished: '2015-06',
-        publisher: 'ASEE Annual Conference and Exposition',
+        publisher: 'IEEE International Conference on Engineering, Technology and Innovation / International Technology Management Conference (ICE/ITMC)',
         coAuthors: ['Ikhlaq Sidhu', 'Victoria Howell'],
       },
       {
@@ -842,8 +842,8 @@ export const buildSchema = {
         position: 16,
         name: 'The SAHARA Model for Service Composition Across Multiple Providers',
         datePublished: '2002',
-        publisher: 'First International Conference on Pervasive Computing (ACM Pervasive 2002)',
-        coAuthors: ['Raman B.', 'Agarwal S.', 'Chen Y.', 'Caesar M.', 'Stoica I.', 'Katz Y.H.'],
+        publisher: 'First International Conference on Pervasive Computing (Pervasive 2002), Springer Lecture Notes in Computer Science',
+        coAuthors: ['Raman B.', 'Agarwal S.', 'Chen Y.', 'Caesar M.', 'Stoica I.', 'Katz R.H.'],
       },
       {
         position: 17,
