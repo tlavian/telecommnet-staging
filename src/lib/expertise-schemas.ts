@@ -101,7 +101,7 @@ const internetSchema = buildSchema.expertisePage({
   name: 'Internet Expert Witness',
   slug: 'internet-expert-witness',
   description: 'Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies, internet protocols. 90+ cases, 120+ patents. Ph.D. UC Berkeley.',
-  serviceType: 'Internet Protocols Expert Witness',
+  serviceType: 'Internet Expert Witness',
   keywords: ['internet protocols expert witness', 'internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'transmission control protocol expert witness', 'TCP expert witness', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
   breadcrumbLabel: 'Internet & TCP/IP',
   faqs: [
@@ -128,7 +128,7 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Protocols Expert Witness — TCP/IP, DNS | Dr. Lavian";
+const internetTitle = "Internet Expert Witness — Internet Protocols, TCP/IP, DNS | Dr. Lavian";
 const internetDescription = "Internet protocols expert witness — TCP/IP, HTTP, DNS, BGP. Ph.D. UC Berkeley, 120+ patents, 90+ cases. Federal court, PTAB & ITC testimony.";
 
 // â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
