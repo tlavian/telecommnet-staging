@@ -25,7 +25,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What telecom qualifications does Dr. Lavian have?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as Principal Scientist and Principal Architect at Nortel Networks, has 120+ patents in telecom, 25+ peer-reviewed publications, and has been retained in 90+ cases, with testimony before federal courts, the PTAB, and the ITC.',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, served as Principal Scientist and Principal Architect at Nortel Networks, has 120+ patents in telecom, 25+ scientific publications, and has been retained in 90+ cases, with testimony before federal courts, the PTAB, and the ITC.',
     },
     {
       q: 'In which courts has Dr. Lavian testified as a telecommunications expert?',
@@ -45,7 +45,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What qualifications should a telecommunications expert witness have?',
-      a: 'A telecommunications expert witness must demonstrate reliable methodology and relevant expertise. Dr. Lavian qualifies through his Ph.D. from UC Berkeley, 120+ patents, 25+ peer-reviewed publications, and 90+ cases where his methodology and opinions have been accepted by federal courts, PTAB panels, and the ITC.',
+      a: 'Dr. Lavian\'s qualifications include his Ph.D. from UC Berkeley, 120+ patents, 25+ scientific publications, and retention in 90+ cases.',
     },
     {
       q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
@@ -275,7 +275,7 @@ const computerNetworkingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian testified in computer networks patent cases?',
-      a: 'Yes. Dr. Lavian has been retained in 90+ patent cases, providing expert reports and testimony in matters involving computer networks technologies for companies including Cisco, Juniper Networks, Google, Amazon, Microsoft, and Apple.',
+      a: 'Yes. Dr. Lavian has been retained in 90+ cases, providing expert reports and testimony in matters involving computer networks technologies for companies including Cisco, Juniper Networks, Google, Amazon, Microsoft, and Apple.',
     },
     {
       q: 'What types of computer networks patent disputes does Dr. Lavian handle?',
@@ -488,7 +488,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'Is Dr. Lavian qualified as a networking expert for both technical and litigation purposes?',
-      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), nearly 20 years researching, studying, and lecturing at UC Berkeley, and has been retained in 90+ patent cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC.',
+      a: 'Yes. Dr. Lavian has 35+ years of networking industry experience (including at Nortel Networks), nearly 20 years researching, studying, and lecturing at UC Berkeley, and has been retained in 90+ cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC.',
     },
     {
       q: 'What types of networking patent cases has Dr. Lavian handled?',
@@ -582,7 +582,7 @@ const telecomEWSchema = buildSchema.expertisePage({
     },
     {
       q: 'What are Dr. Lavian\'s qualifications as a telecommunications expert witness?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, is the inventor of 120+ patents, has 25+ peer-reviewed publications, and has nearly 20 years of experience researching, studying, and lecturing at UC Berkeley. He is an IEEE Senior Member and IEEE-WCET Certified.',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, is the inventor of 120+ patents, has 25+ scientific publications, and has nearly 20 years of experience researching, studying, and lecturing at UC Berkeley. He is an IEEE Senior Member and IEEE-WCET Certified.',
     },
   ],
 });

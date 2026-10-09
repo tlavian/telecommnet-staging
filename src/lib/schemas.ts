@@ -42,7 +42,7 @@ export const PERSON_ENTITY = {
   honorificSuffix: 'Ph.D.',
   jobTitle: 'Telecommunications Expert Witness',
   description:
-    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has been retained in 90+ patent cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC, and holds 120+ patents and 25+ peer-reviewed publications.',
+    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has been retained in 90+ cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC, and holds 120+ patents and 25+ scientific publications.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -398,7 +398,7 @@ export const buildSchema = {
               name: 'How many years of experience does Dr. Lavian have in telecommunications?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and 90+ patent cases and 60+ depositions as an expert witness.',
+                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and 90+ cases and 60+ depositions as an expert witness.',
               },
             },
             {
@@ -967,7 +967,7 @@ export const buildSchema = {
         {
           '@type': 'ItemList',
           name: 'Publications by Dr. Tal Lavian',
-          description: 'A list of 30 publications, including 25+ peer-reviewed works in IEEE, ACM, and related venues.',
+          description: 'A list of 30 publications, including 25+ scientific publications in IEEE, ACM, and related venues.',
           numberOfItems: 30,
           itemListElement: publicationEntries.map(pub => ({
             '@type': 'ListItem',

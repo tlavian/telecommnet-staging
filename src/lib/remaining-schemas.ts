@@ -23,7 +23,7 @@ export const corporateClientsSchema = buildSchema.clientPage({
 export const corporateClientsTitle =
   "Telecom Expert Witness for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Telecommunications expert witness for corporate legal teams and in-house counsel. Dr. Tal Lavian, Ph.D. UC Berkeley, retained in 90+ patent cases.";
+  "Telecommunications expert witness for corporate legal teams and in-house counsel. Dr. Tal Lavian, Ph.D. UC Berkeley, retained in 90+ cases.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
@@ -137,7 +137,7 @@ export const patentsSchema = buildSchema.patents();
 export const patentsTitle =
   "Patent Expert Witness | 120+ Patents Invented | Dr. Lavian";
 export const patentsDescription =
-  "Dr. Tal Lavian, Ph.D. UC Berkeley: inventor of 120+ patents, retained in 90+ patent cases with testimony before federal courts, the PTAB, and the ITC.";
+  "Dr. Tal Lavian, Ph.D. UC Berkeley: inventor of 120+ patents, retained in 90+ cases with testimony before federal courts, the PTAB, and the ITC.";
 
 // ─── 26. PUBLICATION (single page template) ───────────────────────────────
 // File: src/pages/publication/[slug].astro or src/pages/publication/index.astro
