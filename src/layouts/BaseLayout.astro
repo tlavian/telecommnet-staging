@@ -207,8 +207,11 @@ const fullSchema = completeGraph(buildFullSchema(schema, breadcrumbSchema));
         gtag('js',new Date());
         gtag('config','G-GCHFJ79Q1P');
       }
-      if('requestIdleCallback' in window){requestIdleCallback(loadGA);}
-      else{setTimeout(loadGA,2000);}
+      var started=false;
+      function start(){if(started)return;started=true;['pointerdown','keydown','scroll','touchstart'].forEach(function(e){removeEventListener(e,start)});loadGA();}
+      ['pointerdown','keydown','scroll','touchstart'].forEach(function(e){addEventListener(e,start,{passive:true,once:true})});
+      addEventListener('load',function(){setTimeout(start,3500)});
+      addEventListener('pagehide',start);
     })();
   </script>
   <!-- GA4 Event Tracking (deferred to idle for performance) -->
