@@ -951,7 +951,7 @@ export const buildSchema = {
           '@type': 'CollectionPage',
           name: 'Scientific Publications — Dr. Tal Lavian',
           description:
-            'Peer-reviewed scientific publications by Dr. Tal Lavian in IEEE, ACM, and other journals, covering telecommunications, network communications, and computer science.',
+            'Scientific publications by Dr. Tal Lavian in IEEE, ACM, and other venues, covering telecommunications, network communications, and computer science.',
           url: `${BASE_URL}/scientific-publications/`,
           author: PERSON_REF,
           about: { '@type': 'Thing', name: 'Telecommunications and Network Communications Research' },

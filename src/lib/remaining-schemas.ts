@@ -47,9 +47,9 @@ export const lawFirmClientsDescription =
 export const publicationsSchema = buildSchema.publications();
 
 export const publicationsTitle =
-  "Peer-Reviewed Telecom Research | Dr. Tal Lavian, Ph.D.";
+  "Scientific Publications — Telecom Research | Dr. Tal Lavian, Ph.D.";
 export const publicationsDescription =
-  "Peer-reviewed telecommunications research by Dr. Tal Lavian. IEEE and ACM journals. 25+ publications supporting expert witness testimony. Ph.D. UC Berkeley.";
+  "Scientific publications by Dr. Tal Lavian in IEEE, ACM and other venues. 25+ publications supporting expert witness testimony. Ph.D. UC Berkeley.";
 
 // ─── 19. TALKS & PRESENTATIONS ───────────────────────────────────────────
 // File: src/pages/talks-presentations/index.astro
