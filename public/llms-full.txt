@@ -145,17 +145,17 @@ Each expertise area has a dedicated page with detailed information:
 - EIT v. YELP! INC. — US RE40,683; US 8,060,504; US 7,298,271; US 6,594,765; US 6,249,868; US 6,188,988; US 6,081,786; US 5,828,837
 - Software Research Inc. v. HP — US 7,757,175; US 7,231,606
 - Backweb Technologies v. Microsoft — US 7,512,943; US 7,325,068; US 7,216,180; US 7,139,815; US 6,920,110; US 6,539,429; US 6,493,758; US 6,374,289; US 6,317,789; US 5,913,040
-- Proxyconn, Inc. v. Microsoft et al. — US 6,757,717; US 6,370,646
+- Proxyconn, Inc. v. Microsoft et al. — US 6,757,717
 - HP v. Alacritech — USPTO Interference No. 105,775; US 6,697,868; US 6,246,683; US 6,226,680
 
 ### Networking & Telecom Cases
 - Spherix v. Cisco Systems — 15 patents including US RE40,467; US 8,607,323; US 7,664,123; US 6,879,594; US 6,661,788
-- Rockstar Technologies v. Cisco Systems — US 6,778,653; US 6,684,241; US 6,636,508; US 6,233,245; US 6,069,895; US 5,732,080
+- Bockstar Technologies v. Cisco Systems — US 6,778,653; US 6,684,241; US 6,636,508; US 6,233,245; US 6,069,895; US 5,732,080
 - Cisco Systems, Inc. — USPTO IPR — US 5,583,862
 - Juniper Networks, Inc. v. Brixham Solutions — US 7,535,895; US 7,940,652
 - Fortinet v. Palo Alto Networks — US 7,519,990; US 7,376,125; US 7,177,311; US 6,930,978
 - Ericsson v. Samsung (ITC) — US 6,772,215; US 6,519,223
-- High Point SARL v. Sprint Nextel — US 5,884,272; US 5,884,270; US 5,832,497; US 5,824,082; US 5,136,501
+- High Point SARL v. Sprint Nextel — US 5,195,090; US 5,195,091; US 5,305,308; US 5,184,347
 - M2M Solutions LLC vs. Sierra Wireless — US 8,094,010; US 7,583,197
 
 ### Media & Communications Cases
@@ -171,7 +171,7 @@ Each expertise area has a dedicated page with detailed information:
 - RPX IPR PTAB filing — US 8,788,090; US 7,933,968; US 7,477,950
 - NetAirus Systems LLC v. Kappos — US 5,589,849; US 5,280,583
 - Teradici — USPTO Reexamination — US 6,012,101; US 5,604,509; US 5,577,205
-- Maxim v. Vangard Bank and PNC Bank — US 6,237,095; US 6,105,013; US 5,949,880; US 5,940,510
+- Vanguard and PNC v. Maxim — US 6,237,095; US 6,105,013; US 5,949,880; US 5,940,510
 - Site Update Solutions v. Accor America — US RE40,683; US 6,253,198
 
 ## Courts and Tribunals:

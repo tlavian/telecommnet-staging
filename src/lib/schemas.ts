@@ -1109,7 +1109,7 @@ export const buildSchema = {
         {
           '@type': 'ItemList',
           name: 'Presentations by Dr. Tal Lavian',
-          description: '30+ conference presentations and technical talks at IEEE, ACM, DARPA, and UC Berkeley.',
+          description: '60+ conference presentations and technical talks at IEEE, ACM, DARPA, and UC Berkeley.',
           numberOfItems: 15,
           // Typed as CreativeWork, not EducationEvent: Google requires startDate
           // and location for Event rich results, and we have no verified dates or
