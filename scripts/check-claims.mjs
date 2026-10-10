@@ -24,6 +24,13 @@ const RULES = [
   [/\b(expired|abandoned|lapsed|withdrawn) patents?\b/i, "never state patent legal status"],
   [/\b(world-class|renowned|premier|leading expert|best expert|top expert|#1)\b/i, "no superlatives"],
   [/8\+ trial testimon/i, "unsupported count"],
+  // Never-publish figures and spellings (V11.5; registry/CLAUDE.md)
+  [/\b140\+/, "140+ is never published (registry: 120+ patents, 90+ cases)"],
+  [/\b130\+ patents/i, "130+ patents is never published"],
+  [/\b(80|70)\+ depositions/i, "depositions: 60+ only"],
+  [/\b25\+ years/i, "years: 35+ years experience / nearly 20 years at UC Berkeley"],
+  [/Ph\.D\.?\s+(in\s+)?(EE\b|Electrical)/i, "Ph.D. is in Computer Science (M.Sc. is Electrical Engineering)"],
+  [/Laivan/i, "misspelling of Lavian"],
   [/200\+ patents analyzed|70\+ expert reports/i, "unsupported count"],
   [/source code review/i, "source-code review content is on the hold list"],
 ];
