@@ -211,7 +211,7 @@ const networkSecuritySchema = buildSchema.expertisePage({
 });
 
 const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkSecurityDescription = "Network security expert witness for patent litigation: encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const networkSecurityDescription = "Network security & cybersecurity expert witness for patent litigation: TLS/SSL, firewalls, VPN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 6. STREAMING MEDIA EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
