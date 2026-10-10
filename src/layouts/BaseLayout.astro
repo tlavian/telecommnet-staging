@@ -548,9 +548,10 @@ const fullSchema = completeGraph(buildFullSchema(schema, breadcrumbSchema));
       .social-icon { width: 44px; height: 44px; }
       .dropdown a { min-height: 44px; display: flex; align-items: center; }
       .hero-cta-row { gap: 12px; }
-      .mobile-contact-bar { display: flex; align-items: center; justify-content: center; background: var(--color-navy); padding: 10px 20px; gap: 20px; flex-wrap: wrap; }
-      .mobile-contact-bar a { color: #fff; text-decoration: none; font-size: 15px; font-weight: 600; }
-      .mobile-contact-bar .mobile-cta-btn { background: var(--color-gold); color: var(--color-navy); padding: 8px 18px; border-radius: 4px; font-size: 14px; font-weight: 700; }
+      .mobile-contact-bar { display: flex; align-items: center; justify-content: center; background: var(--color-navy); padding: 8px 16px calc(8px + env(safe-area-inset-bottom, 0px)); gap: 20px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; box-shadow: 0 -2px 8px rgba(0,0,0,0.25); }
+      .mobile-contact-bar a { color: #fff; text-decoration: none; font-size: 16px; font-weight: 600; display: inline-flex; align-items: center; min-height: 44px; }
+      .mobile-contact-bar .mobile-cta-btn { background: var(--color-gold); color: var(--color-navy); padding: 0 20px; border-radius: 4px; font-size: 15px; font-weight: 700; }
+      body { padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
     }
   </style>
 </head>
