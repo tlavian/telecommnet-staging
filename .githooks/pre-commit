@@ -1,0 +1,4 @@
+#!/bin/sh
+# Keep page dates (sitemap lastmod, footer, dateModified) in step with real content changes.
+node scripts/lastmod-manifest.mjs || exit 1
+git add src/data/lastmod.json src/data/lastmod-hashes.json

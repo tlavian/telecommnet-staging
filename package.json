@@ -12,11 +12,12 @@
     "check:links": "node scripts/check-links.mjs",
     "check:schema": "node scripts/check-schema.mjs",
     "check:seo": "node scripts/check-seo.mjs",
-    "lastmod": "node scripts/update-lastmod.mjs",
+    "lastmod": "node scripts/lastmod-manifest.mjs",
+    "check:lastmod": "node scripts/lastmod-manifest.mjs --check",
     "audit:phrase": "node scripts/check-phrase-parity.mjs",
     "audit:claims": "node scripts/check-claims.mjs",
     "audit:live": "node scripts/check-live.mjs",
-    "audit:build": "astro build && node scripts/check-seo.mjs && node scripts/check-links.mjs"
+    "audit:build": "node scripts/lastmod-manifest.mjs --check && astro build && node scripts/check-seo.mjs && node scripts/check-links.mjs"
   },
   "author": "Dr. Tal Lavian",
   "license": "UNLICENSED",

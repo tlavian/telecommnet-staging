@@ -1,0 +1,866 @@
+{
+  "/": {
+    "hash": "206f498edfd9f181",
+    "date": "2026-10-10T01:32:09-07:00"
+  },
+  "/20020021701-bandwidth-consumption-of-packet-traffic-in-packet-forwarding-device/": {
+    "hash": "3dfe5a3d14b7eab9",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20040076161-traffic-classes-to-queues-different-priority-levels/": {
+    "hash": "33b8edcfc581328e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20050074529-transporting-visualization-information-on-a-switched-underlay-network/": {
+    "hash": "5d84d8865511e7ac",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20050076099-live-streaming-media-replication-in-a-communication-network/": {
+    "hash": "d74daa160df3ce8e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20050076173-preconditioning-data-to-be-transferred-on-a-switched-underlay-network/": {
+    "hash": "7f7e765c7083d622",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20050076336-network-resources-comprising-the-switched-underlay-network/": {
+    "hash": "d4813c8a72294361",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20050076339-automated-negotiation-for-resources-on-a-switched-underlay-network/": {
+    "hash": "94d37ddd85ddac48",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20050083960-transporting-parcels-of-data-using-network-elements/": {
+    "hash": "551839277ea40612",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20060075042-messaging-between-user-applications-and-network-elements/": {
+    "hash": "66325bed3d6826d9",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20060123481-method-and-apparatus-for-network-immunization/": {
+    "hash": "99ae14a3e864004f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20070169171-technique-for-authenticating-network-users/": {
+    "hash": "2723de09b60a0d7f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20080040630-time-value-curves-to-provide-dynamic-qos-for-time-sensitive-file/": {
+    "hash": "8b92ba8b9b022fed",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20090279562-network-resources-allocated-for-particular-application-traffic/": {
+    "hash": "5c0a950ab10462f1",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20090313004-platform-independent-application-development-framework/": {
+    "hash": "1c031919fcae0055",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20100146111-efficient-communication-in-a-network/": {
+    "hash": "6c25eda031691f41",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20100217854-intelligent-management-of-a-network-element/": {
+    "hash": "5cccd374066d1625",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20100220616-optimizing-network-connections-by-a-computing-device/": {
+    "hash": "6c5ff49574ff410e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20110225330-provide-portable-device-comprising-one-processor/": {
+    "hash": "3eb6c91845d9628b",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20120180059-time-value-curves-to-provide-dynamic-qos/": {
+    "hash": "fbac6784648cf568",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/20130080898-electronic-communications/": {
+    "hash": "481b432705edf96b",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6170015-automatically-configuring-a-network-switch-with-a-co-processor/": {
+    "hash": "bb6fb0a3f6f3fe7c",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6175868-automatically-configuring-a-network-switch/": {
+    "hash": "f6b0ac0f275959c7",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6564325-providing-multi-level-security-access-to-system/": {
+    "hash": "dcb7a67c24d69715",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6772205-executing-applications-using-a-proxy-network-device/": {
+    "hash": "7c774131a95e411a",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6842781-download-and-processing-of-a-network-management-application/": {
+    "hash": "08b301fc7d68471e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6845397-interface-for-accessing-inner-layers-of-a-network-protocol/": {
+    "hash": "a508ed3f6937e16e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6850989-automatically-configuring-with-external-network-data-ports/": {
+    "hash": "df4a5d32b1c63fda",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6950932-security-association-mediator-for-java-enabled-devices/": {
+    "hash": "1ed7c570bb72863e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6970943-routing-architecture-for-high-speed-packet-processing/": {
+    "hash": "0c71bc5e240a3898",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/6976054-accessing-low-level-resources-in-a-network-device/": {
+    "hash": "51bccbc3b2ac636b",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7039724-programmable-command-line-interface-api-for-managing-operation/": {
+    "hash": "87b4dd06d6b160b5",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7047536-diffserv-classifying-remote-procedure-call-transport-traffic/": {
+    "hash": "7de69ef76813920c",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7127526-dynamically-loading-and-managing-software-services-on-network/": {
+    "hash": "764296b71304c999",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7237012-classifying-java-remote-method-invocations/": {
+    "hash": "9866e47eb33bf65c",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7260621-object-oriented-network-management-interface/": {
+    "hash": "bc1a29e2b5356225",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7310335-scheduling-resources-on-a-switched-underlay-network/": {
+    "hash": "fc4cf73702bd499f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7313608-markup-language-to-access-and-configure-network-elements/": {
+    "hash": "4e3ca886e3a6424c",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7359993-interfacing-external-resources-with-a-network-element/": {
+    "hash": "e2ba9076043bc54b",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7433941-snmp-accessing-network-information-on-a-network-device/": {
+    "hash": "390b25384c2841be",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7580349-traffic-classes-on-a-packet-by-packet-basis/": {
+    "hash": "7333f091a2e87c99",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7710871-dynamic-assignment-of-traffic-classes-to-priority-queue/": {
+    "hash": "dea0c4fcdcfa6502",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7734748-enhanced-management-opportunities-to-enable-network-element/": {
+    "hash": "87c3e39214237254",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7788086-text-and-voice-data-aggregation-on-the-internet/": {
+    "hash": "cc8f92b5be34551f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7860999-distributed-computation-in-network-devices/": {
+    "hash": "b05f72e09377b181",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/7944827-content-aware-dynamic-optical-bandwidth-allocation/": {
+    "hash": "d83fa7a59806ee8e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8000454-displaying-graphical-elements-on-the-device-of-the-caller/": {
+    "hash": "85db2faf6c736b0e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8054952-ivr-technology-to-detect-voice-and-key-inputs-from-a-caller/": {
+    "hash": "17c907a41c0df966",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8078708-grid-applications-to-access-resources-shared-in-communication-network/": {
+    "hash": "354bfb47c6be660f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8146090-using-time-value-curves-for-resource-management/": {
+    "hash": "b05986eda676a78e",
+    "date": "2026-07-05T19:09:41-07:00"
+  },
+  "/8155280-enable-caller-to-directly-interact-with-visual-ivr-menu/": {
+    "hash": "d223892eb3752f54",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8160215-web-interface-for-displaying-the-ivr-menus/": {
+    "hash": "f40d4f26bae69db6",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8161139-network-element-includes-an-intelligent-interface/": {
+    "hash": "15bd3db5aa1901f9",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8223931-ivr-menu-system-which-may-include-advertising-to-calling-party/": {
+    "hash": "6ccecfe32a7858ec",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8345835-ivr-menu-to-a-mobile-handset/": {
+    "hash": "917bef5d1150b128",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8548135-visual-ivr-menu-system-to-a-calling-party/": {
+    "hash": "b4b9248ab079925f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8594280-technology-to-display-ivr-menu-on-the-caller-phone/": {
+    "hash": "7f3e55a6a6303184",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8619793-assignment-of-classes-of-traffic-priority-queue/": {
+    "hash": "4841de890dec7ed4",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8625756-display-visual-menu-for-ivr-and-the-associated-advertisements/": {
+    "hash": "59d95ae9c6568441",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8681951-ivr-technology-used-to-detect-voice-and-key-inputs-from-caller/": {
+    "hash": "983f291cbcec4594",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8687777-enhancing-user-interactions-with-ivr-menus/": {
+    "hash": "6f25b11af237870a",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8688796-rating-system-for-determining-user-in-social-network/": {
+    "hash": "f67ccebccd1fe1a4",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8731148-visual-presentation-and-selection-of-ivr-menu/": {
+    "hash": "18b7944c00e2376e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8762962-automatic-translation-of-a-computer-program-language-code/": {
+    "hash": "ee111cd2854455fe",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8762963-translation-of-connected-limited-device-configuration/": {
+    "hash": "a27bd1af7ce99078",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8782230-xml-encoded-request-transmitted-over-a-network/": {
+    "hash": "b7426427b58e4519",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8787536-communicating-with-an-interactive-voice-response-system/": {
+    "hash": "045014985ae221b3",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8867708-interactive-voice-response-for-enhancing-user-interaction/": {
+    "hash": "42a0dff087be855c",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8879698-enhanced-communications-over-a-network/": {
+    "hash": "c8f6d191ccd8ca61",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8879698-enhancing-user-interactions-with-ivr-menus-caller-display/": {
+    "hash": "735f749fde51a2d0",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8879703-providing-tailored-services-when-call-is-on-hold/": {
+    "hash": "caf36b0de56117c6",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8880120-ivr-system-provide-the-customer-with-quick-and-good-experience/": {
+    "hash": "e59df19bb51702d2",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8898274-grid-proxy-architecture-to-access-resources/": {
+    "hash": "442043a6b8a603fb",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8903073-generating-an-interactive-voice-response-database/": {
+    "hash": "777fa51b53dbdb2b",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8929517-invention-relates-to-visual-selection-of-ivr-option/": {
+    "hash": "54d00330ab54e2df",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/8949846-generating-and-using-time-value-curves-for-resource-management/": {
+    "hash": "61f2c7d77f5ddd9a",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/9001819-ivr-menu-instructions-to-provide-instant-services/": {
+    "hash": "14623efa93ae5dfa",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/9762251-ultra-low-phase-noise-frequency-synthesizer-2/": {
+    "hash": "ab85b6aca816218c",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/9762251-ultra-low-phase-noise-frequency-synthesizer/": {
+    "hash": "898c11f49963a2fa",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/about-dr-lavian/": {
+    "hash": "90d85837d9698a18",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/ca-2358525-flow-of-packets-through-packet-switched-networks/": {
+    "hash": "525ed935221cab76",
+    "date": "2026-07-05T19:09:41-07:00"
+  },
+  "/ca-2989752-ultra-low-phase-noise-frequency-synthesizer/": {
+    "hash": "4514a3f62531ad05",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/case/": {
+    "hash": "83beacc0831fcfd3",
+    "date": "2026-03-14T05:24:32-07:00"
+  },
+  "/case/01-rpx-ipr-ptab-filing/": {
+    "hash": "b51f46568dc83c09",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/02-servicenow-inc-petitioner-v-bmc-software-inc-patent-owner/": {
+    "hash": "c1ee5d3267c5c98d",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/03-servicenow-inc-petitioner-v-bmc-software-inc-patent-owner/": {
+    "hash": "eb55feb7c4e24c72",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/04-servicenow-inc-petitioner-v-bmc-software-inc-patent-owner/": {
+    "hash": "0141309335658083",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/05-service-now-inc-petitioner-v-bmc-software-inc-patent-owner/": {
+    "hash": "6a953436e0cb7e60",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/06-service-now-inc-petitioner-v-bmc-software-inc-patent-owner/": {
+    "hash": "79503efdee2437ea",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/07-servicenow-inc-petitioner-v-hewlett-packard-company/": {
+    "hash": "5a6e2d1866127564",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/08-servicenow-inc-petitioner-v-hewlett-packard-company/": {
+    "hash": "8b6e030674f9e989",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/09-servicenow-inc-petitioner-v-hewlett-packard-company/": {
+    "hash": "f60ab6a1755af7f3",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/10-servicenow-inc-petitioner-v-hewlett-packard-company/": {
+    "hash": "936f523a82db803e",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/11-service-now-inc-petitioner-v-hewlett-packard-company/": {
+    "hash": "d500c6dc49260257",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/12-servicenow-inc-petitioner-v-hewlett-packard-company/": {
+    "hash": "cc65d271f9ea3c7c",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/14-directv-petitioner-v-qurio-holdings-patent-owner/": {
+    "hash": "fe644e81f3e2dbd7",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/15-fedex-corporation-and-fedex-corporate-services-inc-petitioner-v-loramax-llc-patent-owner/": {
+    "hash": "4c50d5bba1e19de3",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/17-rpx-petitioner-v-md-security-solutions-llc-patent-owner/": {
+    "hash": "558de0bf8cf328e5",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/18-ixi-mobile-v-apple-inc/": {
+    "hash": "483aeddbcc8fdf1c",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/20-spherix-v-cisco-systems/": {
+    "hash": "bec65a93ea6c0df7",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/21-rockstar-technologies-v-cisco-systems/": {
+    "hash": "9f917b2c0a38a09c",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/37-proxyconn-inc-v-microsoft-et-al/": {
+    "hash": "780cf886df3dcf65",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/38-walker-digital-v-google/": {
+    "hash": "374f82123a47a06e",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/40-high-point-sarl-v-sprint-nextel/": {
+    "hash": "437b7192366a1f2e",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/41-emblaze-v-apple/": {
+    "hash": "333732c27b620f8d",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/42-motorola-mobility-inc-v-microsoft/": {
+    "hash": "c8b095b3a8327955",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/43-eit-v-yelp-inc/": {
+    "hash": "9f7403c83ad65e79",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/44-software-research-inc-v-hp/": {
+    "hash": "a85f5044b85275b4",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/46-hp-v-alacritech-uspto-interference-no-105775/": {
+    "hash": "556eecef90f2fa78",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/47-fortinet-v-palo-alto-networks/": {
+    "hash": "ebbec4afd52bfce3",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/48-backweb-technologies-v-microsoft/": {
+    "hash": "5d8cba9cdf8c0a57",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/49-linksmart-wireless-v-cisco-systems-t-mobile/": {
+    "hash": "78f5496b73301343",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/case/51-teleconference-system-v-tandberg/": {
+    "hash": "cf503150be3028d1",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/52-f5-networks-v-a10-networks/": {
+    "hash": "29f85e779c181bd3",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/53-ip-innovation-v-google/": {
+    "hash": "142eea9440445748",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/54-trace-wilco-inc-v-cisco/": {
+    "hash": "79be0d56a24732d8",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/55-t-mobile-v-barkan-wireless-access-technologies/": {
+    "hash": "2c143951b737e8a3",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/56-t-mobile-v-barkan-wireless-access-technologies/": {
+    "hash": "eca9a1aa2eb3a977",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/57-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "f2c941fe1289a83b",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/58-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "49d9b751dfb0325e",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/59-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "d132684738a6c0c1",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/60-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "6f0cd854e53df090",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/61-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "7066d2fc1df56d03",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/62-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "c65f35643a926420",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/63-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "9947b8e4986151a7",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/64-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "1d0fe4856ba32659",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/65-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "f7cae1699ae63922",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/case/66-facebook-inc-instagram-llc-v-skky-llc/": {
+    "hash": "9926f4e320737cfe",
+    "date": "2026-07-14T14:24:48-07:00"
+  },
+  "/cases-expert-witness-testimony/": {
+    "hash": "3a3511c28c6a50c2",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/category/patents/": {
+    "hash": "a0bd65b9b591f5d9",
+    "date": "2026-03-13T18:07:35-07:00"
+  },
+  "/communications-expert-witness/": {
+    "hash": "358fa6525e5078e0",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/computer-networking-expert-witness/": {
+    "hash": "559cfbbe1ea14c08",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/data-communications-expert-witness/": {
+    "hash": "1ff35b3f40a0f05c",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/internet-expert-witness/": {
+    "hash": "8742ccbde7d782a0",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/messaging-and-chat-expert-witness/": {
+    "hash": "b10f8bb33b933b9c",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/mobile-wireless-expert-witness/": {
+    "hash": "777c4f6d8a611adf",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/network-communications-expert-witness/": {
+    "hash": "a0193085ef6e26c5",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/network-management-expert-witness/": {
+    "hash": "9c0610d6ad4225ae",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/network-security-expert-witness/": {
+    "hash": "72ee3f8d7d13b98f",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/networking-expert-witness/": {
+    "hash": "0f6ea10605ff9144",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/pstn-voip-expert-witness/": {
+    "hash": "4c4c69fb01e242ab",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/routing-switching-expert-witness/": {
+    "hash": "9d85a354a134a374",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/streaming-media-expert-witness/": {
+    "hash": "e6b0df5c5fb8701a",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/telecommunications-expert-witness/": {
+    "hash": "8f8b4a6d6a88dc78",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/communications-expert-witness/voice-over-ip-voip-expert/": {
+    "hash": "d877f170f8bb23e3",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/contact/": {
+    "hash": "64e372fd27ef2078",
+    "date": "2026-10-09T02:32:32-07:00"
+  },
+  "/corporate-clients/": {
+    "hash": "ff26c8862240f273",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/ep-1142213-dynamic-assignment-traffic-classes-to-a-priority-queue/": {
+    "hash": "6885baa4e3629513",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1636952-exchange-of-data-between-communication-devices/": {
+    "hash": "338d8edb60abf700",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1661303-scheduling-of-resources-on-a-switched-underlay-network/": {
+    "hash": "2952519c7a0c3edf",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1665070-automated-resources-on-a-switched-underlay-network/": {
+    "hash": "8748ee5f0333c96d",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1665661-scheduling-of-resources-on-a-switched-underlay-network/": {
+    "hash": "9d39833977ef36c5",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1671460-scheduling-resources-on-a-switched-underlay-network/": {
+    "hash": "7b73fd537c56127d",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1673879-scheduling-of-resources-on-a-switched-underlay-network/": {
+    "hash": "71ec20b1cabcb9ef",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-1905211-prevent-unauthorized-access-to-authenticate-users/": {
+    "hash": "fd1ac44c1e1d30b7",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-3311493-ulpn-frequency-synthesize/": {
+    "hash": "75841e1c53312608",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/ep-3311493-upln-frequency-synthesizer/": {
+    "hash": "d9f40af7fe273c9a",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/frequency-synthesizer-determines-the-performance-of-communication/": {
+    "hash": "76e4ba2482bbf476",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/law-firm-clients/": {
+    "hash": "681b852e83d50ce3",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/patents/": {
+    "hash": "4cf5f3c455424610",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/privacy-policy/": {
+    "hash": "431fba333970889c",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/publication/": {
+    "hash": "abb092579cfaec45",
+    "date": "2026-10-09T02:32:32-07:00"
+  },
+  "/publication/active-networking-on-a-programmable-network-platform/": {
+    "hash": "d6ad5ebdf05e2697",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/active-networking-on-a-programmable-networking-platform/": {
+    "hash": "a59794467b5aace8",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/an-extensible-programmable-commercial-grade-platform-for-internet-service-architecture/": {
+    "hash": "edd7642a0c8d32ec",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/applications-drive-secure-lightpath-creation-across-heterogeneous-domains/": {
+    "hash": "54ff5743c3db4432",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/communications-architecture-in-support-of-grid-computing/": {
+    "hash": "3260126322d7c834",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/dangerous-liaisons-software-combinations-as-derivative-works/": {
+    "hash": "d4a033f6dee127bc",
+    "date": "2026-07-17T03:35:19-07:00"
+  },
+  "/publication/dwdm-ram-a-data-intensive-grid-service-architecture-enabled-by-dynamic-optical-networks/": {
+    "hash": "c2615db69f1eba5a",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/dwdm-ram-enabling-grid-services-with-dynamic-optical-networks/": {
+    "hash": "3aae84772cf387b2",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/dynamic-classification-in-silicon-based-forwarding-engine-environments/": {
+    "hash": "634aaa6d7b266f8d",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/edge-device-multi-unicasting-for-video-streaming/": {
+    "hash": "5c19073fdb61c584",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/enabling-active-flow-manipulation-in-silicon-based-network-forwarding-engine/": {
+    "hash": "59b61c6d15a223f0",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/enabling-active-flow-manipulation-in-silicon-based-network-forwarding-engines/": {
+    "hash": "0ef855d223e1d63a",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/enabling-active-networks-services-on-a-gigabit-routing-switch/": {
+    "hash": "68c914d6125c09db",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/grid-network-services-draft-ggf-ghpn-netservices-1-0/": {
+    "hash": "dbd8e6830715d606",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/impact-of-grid-computing-on-network-operators-and-hw-vendors/": {
+    "hash": "72f75d84d16dc079",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/implementation-of-a-quality-of-service-feedback-control-loop-on-programmable-routers/": {
+    "hash": "e7d6f4a5ff1340cb",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/information-switching-networks/": {
+    "hash": "4ea440604a27a153",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/intelligent-network-services-through-active-flow-manipulation/": {
+    "hash": "a06c64e91b090658",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/java-based-open-service-interface-architecture/": {
+    "hash": "9930e23f684f523d",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/lambda-data-grid-communications-architecture-in-support-of-grid-computing/": {
+    "hash": "bc8d314cec08b070",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/large-scale-grid-data-service-on-dynamic-high-performance-networks/": {
+    "hash": "d8c309fdd73ba0d5",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/open-java-snmp-mib-api/": {
+    "hash": "fc3766d35b8a9cb7",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/open-networking-better-networking-through-programmability/": {
+    "hash": "d40cf2c8510e9f93",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/open-programmable-architecture-for-java-enabled-network-devices/": {
+    "hash": "c67562d51c6299e9",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/optical-network-infrastructure-for-grid-draft-ggf-ghpn-opticalnets-1/": {
+    "hash": "a8dfd48ea6bc8627",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/parallel-simd-architecture-for-color-image-processing/": {
+    "hash": "a9d173f0b5d84dde",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/popeye-using-fine-grained-network-access-control-to-support-mobile-users-and-protect-intranet-hosts/": {
+    "hash": "a383bfc13902bae5",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/practical-active-network-services-within-content-aware-gateways/": {
+    "hash": "99c58f351db89bd1",
+    "date": "2026-10-09T14:51:41-07:00"
+  },
+  "/publication/project-drac-creating-an-applications-aware-network/": {
+    "hash": "60545e61544d9852",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/rd-models-for-advanced-development-corporate-research/": {
+    "hash": "0898ebbf99f0bb25",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/publication/the-sahara-model-for-service-composition-across-multiple-providers/": {
+    "hash": "037806924762160b",
+    "date": "2026-10-10T09:50:37-07:00"
+  },
+  "/scientific-publications/": {
+    "hash": "bf46c5df5b523406",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/site-map/": {
+    "hash": "1536b5559e255df9",
+    "date": "2026-10-10T09:58:40-07:00"
+  },
+  "/talks-presentations/": {
+    "hash": "8273d957938476a0",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/terms-and-conditions/": {
+    "hash": "cd11dbe745fb7b54",
+    "date": "2026-10-10T10:06:40-07:00"
+  },
+  "/us-10205457-radar-target-detection-system/": {
+    "hash": "1622b0d4af723c86",
+    "date": "2026-05-08T14:18:36-07:00"
+  },
+  "/us-10348313-radar-target-detection-system/": {
+    "hash": "09bf657afb98f90e",
+    "date": "2026-05-08T14:18:36-07:00"
+  },
+  "/us-10404261-radar-target-detection-system/": {
+    "hash": "e092b2a53e869c95",
+    "date": "2026-05-08T14:18:36-07:00"
+  },
+  "/us-10598764-radar-target-detection-and-imaging-system-for-autonomous-car/": {
+    "hash": "bcce3782f1cd2a76",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-10764264-authenticating-network-user/": {
+    "hash": "e342042ea9b69746",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20130080898-electronic-communications/": {
+    "hash": "244e8bfe19bf4a62",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20130080898a1-an-electronic-communication-system/": {
+    "hash": "fea7f6b53f811fca",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20180130102-reliable-rating-system-and-method-thereof/": {
+    "hash": "dca1e33a526f2ed5",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20180130102-reliable-rating-system/": {
+    "hash": "595e0457d1be7d52",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20180146090-visual-presentation-and-selection-of-ivr-menu/": {
+    "hash": "2d9293b48022085e",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20190082043-ui-selection-of-ivr-menu/": {
+    "hash": "5911ce466aabae92",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-20190128998-radar-target-detection-and-imaging/": {
+    "hash": "fb80a60d0eb699aa",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/us-9762251-upln-frequency-synthesizer/": {
+    "hash": "4345e334b59a74b8",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/wo-2000052879-configuring-a-network-switch/": {
+    "hash": "6f2431344d106a3a",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/wo-2000054460-accessing-network-information-on-a-network-device/": {
+    "hash": "67efab034f53bf3f",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/wo-2004034632-system-and-method-for-a-notification-server-that-manage-communication/": {
+    "hash": "87817db48d3e3de5",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/wo-2005033899-method-and-apparatus-for-scheduling-resources-on-a-switched-underlay-network/": {
+    "hash": "30ec5e5c5605d8db",
+    "date": "2026-07-05T19:09:41-07:00"
+  },
+  "/wo-2006063052-computer-network-security-by-network-immunization/": {
+    "hash": "f5e9411ed0e706e1",
+    "date": "2026-07-05T16:49:01-07:00"
+  },
+  "/wo-2016203460-ultra-low-phase-noise-frequency-synthesizer/": {
+    "hash": "1ddce91d5642a3f3",
+    "date": "2026-07-05T16:49:01-07:00"
+  }
+}

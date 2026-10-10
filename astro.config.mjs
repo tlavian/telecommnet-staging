@@ -123,7 +123,7 @@ export default defineConfig({
       serialize: (item) => {
         try {
           const pathname = new URL(item.url).pathname;
-          const lastmod = gitLastmod(pathname) || fileLastmod(pathname);
+          const lastmod = fileLastmod(pathname) || gitLastmod(pathname);
           if (lastmod) item.lastmod = lastmod;
         } catch {
           // leave lastmod unset
