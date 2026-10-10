@@ -14,10 +14,11 @@
     "check:seo": "node scripts/check-seo.mjs",
     "lastmod": "node scripts/lastmod-manifest.mjs",
     "check:lastmod": "node scripts/lastmod-manifest.mjs --check",
+    "check:protected": "node scripts/check-protected.mjs",
     "audit:phrase": "node scripts/check-phrase-parity.mjs",
     "audit:claims": "node scripts/check-claims.mjs",
     "audit:live": "node scripts/check-live.mjs",
-    "audit:build": "node scripts/lastmod-manifest.mjs --check && astro build && node scripts/check-seo.mjs && node scripts/check-links.mjs"
+    "audit:build": "node scripts/lastmod-manifest.mjs --check && astro build && node scripts/check-seo.mjs && node scripts/check-links.mjs && node scripts/check-protected.mjs"
   },
   "author": "Dr. Tal Lavian",
   "license": "UNLICENSED",
