@@ -11,6 +11,7 @@ const RULES = [
   [/\bDaubert\b|FRE 702|Rule 702/i, "Daubert / FRE 702 content is prohibited"],
   [/\b5G\b|\bFRAND\b|\bSEPs?\b|standards-essential|\bmmWave\b|network slicing|\bLTE\b/i, "5G/LTE/SEP/FRAND content is prohibited"],
   // Registry wording
+  [/Wi-Fi\s*\(IEEE\s*802\.11\)/i, "write Wi-Fi 802.11 (no parenthetical IEEE form)"],
   [/Wi-Fi\s*802\.11\s*(a|b|g|n|ac|ax|be)\b/i, "Wi-Fi must be written 'Wi-Fi 802.11' without variant suffix"],
   [/\b(90\+|over 90) patent cases\b/i, "use '90+ cases' (registry wording)"],
   [/\b(25\+|over 25|more than 25) peer-reviewed (publications|works)\b/i, "use '25+ scientific publications' (registry wording)"],

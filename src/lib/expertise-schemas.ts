@@ -365,7 +365,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
   faqs: [
     {
       q: 'What wireless technologies is Dr. Lavian expert in?',
-      a: 'Dr. Lavian is expert in Wi-Fi (IEEE 802.11), Bluetooth (IEEE 802.15), wireless LAN protocols, ARQ and HARQ error control protocols, mobile wireless network architecture, wireless access technologies, and mobile device networking in the context of patent litigation.',
+      a: 'Dr. Lavian is expert in Wi-Fi 802.11, Bluetooth (IEEE 802.15), wireless LAN protocols, ARQ and HARQ error control protocols, mobile wireless network architecture, wireless access technologies, and mobile device networking in the context of patent litigation.',
     },
     {
       q: 'Has Dr. Lavian testified in ITC wireless cases?',
