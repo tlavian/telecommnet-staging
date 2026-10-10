@@ -15,6 +15,7 @@
     "lastmod": "node scripts/update-lastmod.mjs",
     "audit:phrase": "node scripts/check-phrase-parity.mjs",
     "audit:claims": "node scripts/check-claims.mjs",
+    "audit:live": "node scripts/check-live.mjs",
     "audit:build": "astro build && node scripts/check-seo.mjs && node scripts/check-links.mjs"
   },
   "author": "Dr. Tal Lavian",
