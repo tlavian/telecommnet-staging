@@ -128,7 +128,7 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Expert Witness — Internet Protocols, TCP/IP, DNS | Dr. Lavian";
+const internetTitle = "Internet Expert Witness — Internet Protocols, TCP/IP, DNS";
 const internetDescription = "Internet protocols expert witness — TCP/IP, HTTP, DNS, BGP. Ph.D. UC Berkeley, 120+ patents, 90+ cases. Federal court, PTAB & ITC testimony.";
 
 // â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€

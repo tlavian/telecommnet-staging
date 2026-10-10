@@ -47,7 +47,7 @@ export const lawFirmClientsDescription =
 export const publicationsSchema = buildSchema.publications();
 
 export const publicationsTitle =
-  "Scientific Publications — Telecom Research | Dr. Tal Lavian, Ph.D.";
+  "Scientific Publications | Dr. Tal Lavian, Ph.D.";
 export const publicationsDescription =
   "Scientific publications by Dr. Tal Lavian in IEEE, ACM and other venues. 25+ publications supporting expert witness testimony. Ph.D. UC Berkeley.";
 
