@@ -35,7 +35,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 - 35+ years of industry and academic experience
 - Senior Member of IEEE; IEEE-WCET Certified
 - Active Member of ACM (SIGCOMM, SIGWEB)
-- Industry Fellow and Lecturer at UC Berkeley SCET
+- Industry Fellow and Lecturer at UC Berkeley's IEOR Department and SCET
 - Technical Co-Chair for IEEE Hot Interconnects at Stanford University
 
 ### Professional Experience
@@ -50,7 +50,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 - Testified in U.S. Federal District Courts, USPTO PTAB (IPR/PGR/CBM), ITC, the Canadian Federal Court, and a court in Malaysia
 - Retained by both plaintiffs and defendants, patent holders and accused infringers
 - Cases involving companies such as Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and many others
-- Retained by law firms including Fish Richardson, Cooley, Irell & Manella, Kirkland & Ellis, and others
+- Retained by law firms including Fish & Richardson, Cooley, Irell & Manella, Kirkland & Ellis, and others
 
 ### Patent Portfolio by Technology Area
 
@@ -190,7 +190,7 @@ Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC 
 
 ## Notable Case Experience
 
-Dr. Lavian has provided expert witness services in patent litigation, USPTO proceedings, and technology disputes for major technology companies (Apple, Google, Microsoft, Samsung, Meta, Amazon, Cisco), telecommunications companies (AT&T, Verizon, T-Mobile, Huawei, Juniper), and top-tier law firms (Fish Richardson, Cooley, Irell & Manella, Kirkland & Ellis).
+Dr. Lavian has provided expert witness services in patent litigation, USPTO proceedings, and technology disputes for major technology companies (Apple, Google, Microsoft, Samsung, Meta, Amazon, Cisco), telecommunications companies (AT&T, Verizon, T-Mobile, Huawei, Juniper), and top-tier law firms (Fish & Richardson, Cooley, Irell & Manella, Kirkland & Ellis).
 
 Courts and Tribunals:
 
@@ -216,7 +216,7 @@ Courts and Tribunals:
 ## Career History
 
 - UC Berkeley — Nearly 20 years researching, studying, and lecturing at UC Berkeley; Industry Fellow and Lecturer at UC Berkeley's IEOR Department and SCET; SkyDeck startups
-- CRadar.Ai — CTO / Principal Investigator (UC Berkeley SkyDeck)
+- CRadar.Ai — CTO and Principal Investigator (UC Berkeley SkyDeck)
 - Aybell / VisuMenu Inc. — CEO/CTO and Co-Founder
 - Ixia
 - Nortel Networks / Bay Networks (1996-2007) — Principal Scientist, Principal Architect, Principal Engineer

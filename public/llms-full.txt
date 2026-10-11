@@ -23,7 +23,7 @@ Dr. Tal Lavian is a telecommunications expert witness based in California, speci
 - 35+ years of industry and academic experience
 - Senior Member of IEEE; IEEE-WCET Certified
 - Active Member of ACM (SIGCOMM, SIGWEB)
-- Industry Fellow and Lecturer at UC Berkeley SCET
+- Industry Fellow and Lecturer at UC Berkeley's IEOR Department and SCET
 - Technical Co-Chair for IEEE Hot Interconnects at Stanford University
 - Principal Investigator for three DARPA/AFRL projects at Nortel Networks
 
@@ -199,13 +199,13 @@ LG, Samsung, Alacritech, Aten, Backweb, Emblaze, Human Eyes, IP Innovation, IXI 
 ## Law Firm Clients:
 
 ### Law Firms
-Fish Richardson, Cooley, Finnegan, Gibson Dunn, Ropes Gray, Baker Botts, Irell & Manella LLP, Kirkland & Ellis, Morgan Lewis, Skadden, Simpson Thacher & Bartlett LLP, Hogan Lovells LLP, Perkins Coie, Winston & Strawn LLP, Greenberg Traurig
+Fish & Richardson, Cooley, Finnegan, Gibson Dunn, Ropes & Gray, Baker Botts, Irell & Manella LLP, Kirkland & Ellis, Morgan Lewis, Skadden, Simpson Thacher & Bartlett LLP, Hogan Lovells LLP, Perkins Coie, Winston & Strawn LLP, Greenberg Traurig
 
 ### Specialty IP Litigation Firms
 Holland & Knight LLP, Oblon LLP, Venable LLP, Keker Van Nest, Wolf Greenfield LLP, Desmarais LLP, Durie Tangri, Duane Morris, Pepper Hamilton LLP, McGuireWoods, McKool Smith, Sterne Kessler Goldstein & Fox, Knobbe Martens LLP
 
 ### Regional & Boutique Firms
-Foley Lardner LLP, Hopkins Carley, Akerman, Hausfeld, Hovey Williams LLP, Kenyon & Kenyon, Klarquist Sparkman LLP, Mei & Mark LLP, Niro Scavone Haller Niro, Nixon Peabody, Novack Macey, Faegre Baker Daniels, Warner Norcross & Judd, Armstrong Teasdale LLP, SlaterMatsil LLP, The Simon Law Firm, The WEBB Law Firm, Fisch Sigler LLP, White and Williams LLP, Devlin Law Firm LLC, Hosie Rice LLP, Erise IP, Cozen O'Connor, Unified Patents
+Foley & Lardner LLP, Hopkins Carley, Akerman, Hausfeld, Hovey Williams LLP, Kenyon & Kenyon, Klarquist Sparkman LLP, Mei & Mark LLP, Niro Scavone Haller Niro, Nixon Peabody, Novack Macey, Faegre Baker Daniels, Warner Norcross & Judd, Armstrong Teasdale LLP, SlaterMatsil LLP, The Simon Law Firm, The WEBB Law Firm, Fisch Sigler LLP, White and Williams LLP, Devlin Law Firm LLC, Hosie Rice LLP, Erise IP, Cozen O'Connor, Unified Patents
 
 ## Patent Portfolio (120+ patents):
 
@@ -354,7 +354,7 @@ Q: Does Dr. Lavian have experience with network security cases?
 A: Yes. Dr. Lavian's network security expertise covers encryption (TLS/SSL 1.2/1.3, IPsec), authentication (PKI, RADIUS, TACACS+), firewalls (stateful inspection, DPI, NGFW), intrusion detection (IDS/IPS), DDoS mitigation (BGP Flowspec), and cybersecurity standards (NIST CSF, ISO 27001, SOC 2). He has invented patents in network security. Details: https://telecommnet.com/communications-expert-witness/network-security-expert-witness/
 
 Q: What law firms have retained Dr. Lavian?
-A: Dr. Lavian has been retained by over 50 law firms and corporate clients, including Fish Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, and Hogan Lovells. Full list: https://telecommnet.com/law-firm-clients/
+A: Dr. Lavian has been retained by over 50 law firms and corporate clients, including Fish & Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, and Hogan Lovells. Full list: https://telecommnet.com/law-firm-clients/
 
 Q: What companies has Dr. Lavian worked with or against?
 A: Dr. Lavian has been involved in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
