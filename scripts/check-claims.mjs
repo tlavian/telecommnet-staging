@@ -57,7 +57,7 @@ const strip = (h) =>
   h.replace(/<script(?![^>]*ld\+json)[\s\S]*?<\/script>/g, " ")
    .replace(/<style[\s\S]*?<\/style>/g, " ")
    .replace(/<[^>]+>/g, " ")
-   .replace(/&mdash;|&rsquo;|&amp;|&nbsp;/g, " ")
+   .replace(/&(amp|#38);/g, "&").replace(/&mdash;|&rsquo;|&nbsp;/g, " ")
    .replace(/\s+/g, " ");
 
 let hits = 0;
