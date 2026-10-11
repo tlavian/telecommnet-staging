@@ -91,7 +91,12 @@ function autoBreadcrumbs(path: string): Array<{name: string; url: string}> {
   let builtPath = '';
   for (const seg of segments) {
     builtPath += '/' + seg;
-    crumbs.push({ name: slugToLabel(seg), url: builtPath + '/' });
+    // /case/ and /publication/ are 301 stubs; their parent crumb points at the real indexed page.
+    const legacy: Record<string, {name: string; url: string}> = {
+      '/case': { name: 'Cases', url: '/cases-expert-witness-testimony/' },
+      '/publication': { name: 'Scientific Publications', url: '/scientific-publications/' },
+    };
+    crumbs.push(legacy[builtPath] ?? { name: slugToLabel(seg), url: builtPath + '/' });
   }
   return crumbs;
 }
@@ -552,6 +557,7 @@ const fullSchema = completeGraph(buildFullSchema(schema, breadcrumbSchema));
       .mobile-contact-bar a { color: #fff; text-decoration: none; font-size: 16px; font-weight: 600; display: inline-flex; align-items: center; min-height: 44px; }
       .mobile-contact-bar .mobile-cta-btn { background: var(--color-gold); color: var(--color-navy); padding: 0 20px; border-radius: 4px; font-size: 15px; font-weight: 700; }
       body { padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
+      html { scroll-padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
     }
   </style>
 </head>
