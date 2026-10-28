@@ -8,20 +8,20 @@
  * ============================================================
  */
 
-// â"€â"€â"€ 1. TELECOMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 1. TELECOMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/pstn-voip-expert-witness/index.astro
 
 const telecomSchema = buildSchema.expertisePage({
   name: 'PSTN & VoIP Systems Expert',
   slug: 'pstn-voip-expert-witness',
-  description: 'PSTN and VoIP systems expert witness for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'PSTN & VoIP Systems Expert Witness',
-  keywords: ['PSTN expert witness', 'VoIP expert witness', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert witness', 'SS7 signaling expert', 'telephony expert witness', 'circuit switching expert witness'],
+  description: 'PSTN and VoIP systems expert for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'PSTN & VoIP Systems Expert',
+  keywords: ['PSTN expert', 'VoIP expert', 'telecom protocol expert', 'PTAB telecom expert', 'ITC telecom expert', 'SONET SDH expert', 'SS7 signaling expert', 'telephony expert', 'circuit switching expert'],
   breadcrumbLabel: 'PSTN & VoIP',
   faqs: [
     {
-      q: 'What does a telecommunications expert witness do?',
-      a: 'A telecommunications expert witness provides technical analysis and testimony in patent litigation, ITC Section 337 proceedings, and federal court cases involving telecom technologies such as PSTN, VoIP, network communications, and Internet protocols.',
+      q: 'What does a telecommunications expert do?',
+      a: 'A telecommunications expert provides technical analysis and testimony in patent litigation, ITC Section 337 proceedings, and federal court cases involving telecom technologies such as PSTN, VoIP, network communications, and Internet protocols.',
     },
     {
       q: 'What telecom qualifications does Dr. Lavian have?',
@@ -36,45 +36,45 @@ const telecomSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian has addressed claim construction, infringement, and invalidity issues involving telephony protocols, VoIP, PSTN interfaces, network switching, and wireless communications standards.',
     },
     {
-      q: 'How is a telecommunications expert witness used in patent litigation?',
-      a: 'In patent litigation, a telecommunications expert witness like Dr. Lavian provides expert reports analyzing patent claims, claim construction opinions, infringement and validity analyses, deposition testimony, and trial testimony. Attorneys retain telecom experts to explain complex technology to judges, juries, and PTAB panels.',
+      q: 'How is a telecommunications expert used in patent litigation?',
+      a: 'In patent litigation, a telecommunications expert like Dr. Lavian provides expert reports analyzing patent claims, claim construction opinions, infringement and validity analyses, deposition testimony, and trial testimony. Attorneys retain telecom experts to explain complex technology to judges, juries, and PTAB panels.',
     },
     {
-      q: 'What companies has Dr. Lavian served as a telecom expert witness for?',
+      q: 'What companies has Dr. Lavian served as a telecom expert for?',
       a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Meta (Facebook), Cisco, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
     },
     {
-      q: 'What qualifications should a telecommunications expert witness have?',
+      q: 'What qualifications should a telecommunications expert have?',
       a: 'Dr. Lavian\'s qualifications include his Ph.D. from UC Berkeley, 120+ patents, 25+ scientific publications, and retention in 90+ cases.',
     },
     {
-      q: 'What is the difference between a telecommunications expert witness and a general technology expert?',
-      a: 'A telecommunications expert witness has specialized knowledge in telecom-specific technologies — PSTN, VoIP, signaling protocols, and telecom standards (ITU-T, ETSI). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
+      q: 'What is the difference between a telecommunications expert and a general technology expert?',
+      a: 'A telecommunications expert has specialized knowledge in telecom-specific technologies — PSTN, VoIP, signaling protocols, and telecom standards (ITU-T, ETSI). Unlike a general technology expert, a telecom expert can analyze protocol-level details, carrier network architectures, and telecom-specific patent claims with the depth required for credible testimony.',
     },
   ],
 });
 
-const telecomTitle = "PSTN & VoIP Expert Witness | Dr. Tal Lavian";
-const telecomDescription = "PSTN and VoIP systems expert witness for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const telecomTitle = "PSTN & VoIP Expert | Dr. Tal Lavian";
+const telecomDescription = "PSTN and VoIP systems expert for patent litigation: telecom switching, SS7, SONET/SDH, DWDM. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 2. NETWORK COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-communications-expert-witness/index.astro
 
 const networkCommsSchema = buildSchema.expertisePage({
-  name: 'Network Communications Expert Witness',
+  name: 'Network Communications Expert',
   slug: 'network-communications-expert-witness',
-  description: 'Network communications expert witness for patent litigation: TCP/IP, routing, LAN/WAN, protocols. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Network Communications Expert Witness',
-  keywords: ['network communications expert witness', 'TCP/IP expert witness', 'routing protocols litigation', 'LAN WAN patent expert', 'network architecture expert witness', 'OSI model patent', 'network protocol expert', 'distributed systems expert witness'],
+  description: 'Network communications expert for patent litigation: TCP/IP, routing, LAN/WAN, protocols. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Network Communications Expert',
+  keywords: ['network communications expert', 'TCP/IP expert', 'routing protocols litigation', 'LAN WAN patent expert', 'network architecture expert', 'OSI model patent', 'network protocol expert', 'distributed systems expert'],
   breadcrumbLabel: 'Network Communications',
   faqs: [
     {
-      q: 'What is a network communications expert witness?',
-      a: 'A network communications expert witness provides technical analysis and testimony in patent disputes involving network protocols, architectures, and communications systems. Dr. Lavian covers network communications including routing and switching, Internet protocols, VoIP, network security, and wireless networking.',
+      q: 'What is a network communications expert?',
+      a: 'A network communications expert provides technical analysis and testimony in patent disputes involving network protocols, architectures, and communications systems. Dr. Lavian covers network communications including routing and switching, Internet protocols, VoIP, network security, and wireless networking.',
     },
     {
       q: 'What network communications cases has Dr. Lavian handled?',
-      a: 'Dr. Lavian has been retained in 90+ cases involving network communications technologies, including cases for Apple, Google, Microsoft, Cisco, T-Mobile, Huawei, Juniper Networks, and others. He has provided 60+ depositions as expert witness.',
+      a: 'Dr. Lavian has been retained in 90+ cases involving network communications technologies, including cases for Apple, Google, Microsoft, Cisco, T-Mobile, Huawei, Juniper Networks, and others. He has provided 60+ depositions as expert.',
     },
     {
       q: 'What network protocols does Dr. Lavian have expertise in?',
@@ -85,40 +85,40 @@ const networkCommsSchema = buildSchema.expertisePage({
       a: 'Yes. Dr. Lavian has been retained by both plaintiffs and defendants in network communications patent disputes. He provides independent technical analysis regardless of which party retains him.',
     },
     {
-      q: 'How do I contact a network communications expert witness?',
+      q: 'How do I contact a network communications expert?',
       a: 'Contact Dr. Tal Lavian at tlavian@telecommnet.com or +1 (408) 209-9112. He is based in Encino, California and available for engagements nationwide including before federal courts, USPTO PTAB, and the ITC.',
     },
   ],
 });
 
-const networkCommsTitle = "Network Communications Expert Witness | Dr. Lavian";
-const networkCommsDescription = "Network communications expert witness for patent litigation: TCP/IP, routing, LAN/WAN, protocols. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const networkCommsTitle = "Network Communications Expert | Dr. Lavian";
+const networkCommsDescription = "Network communications expert for patent litigation: TCP/IP, routing, LAN/WAN, protocols. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 3. INTERNET EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 3. INTERNET EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/internet-expert-witness/index.astro
 
 const internetSchema = buildSchema.expertisePage({
-  name: 'Internet Expert Witness',
+  name: 'Internet Expert',
   slug: 'internet-expert-witness',
-  description: 'Internet expert witness for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies, internet protocols. 90+ cases, 120+ patents. Ph.D. UC Berkeley.',
-  serviceType: 'Internet Expert Witness',
-  keywords: ['internet protocols expert witness', 'internet technologies expert witness', 'internet expert witness', 'TCP/IP expert witness', 'transmission control protocol expert witness', 'TCP expert witness', 'HTTP protocol expert', 'DNS expert witness', 'web technology patent expert', 'BGP routing expert witness', 'internet infrastructure expert witness'],
+  description: 'Internet expert for patent litigation. TCP/IP, HTTP, DNS, BGP, web technologies, internet protocols. 90+ cases, 120+ patents. Ph.D. UC Berkeley.',
+  serviceType: 'Internet Expert',
+  keywords: ['internet protocols expert', 'internet technologies expert', 'internet expert', 'TCP/IP expert', 'transmission control protocol expert', 'TCP expert', 'HTTP protocol expert', 'DNS expert', 'web technology patent expert', 'BGP routing expert', 'internet infrastructure expert'],
   breadcrumbLabel: 'Internet & TCP/IP',
   faqs: [
     {
-      q: 'What does an internet expert witness do?',
-      a: 'An internet expert witness provides technical analysis and testimony in patent disputes involving Internet technologies, protocols, and systems. Dr. Lavian\'s Internet expertise covers TCP/IP, HTTP, DNS, DHCP, Internet routing, web technologies, and related protocols.',
+      q: 'What does an internet expert do?',
+      a: 'An internet expert provides technical analysis and testimony in patent disputes involving Internet technologies, protocols, and systems. Dr. Lavian\'s Internet expertise covers TCP/IP, HTTP, DNS, DHCP, Internet routing, web technologies, and related protocols.',
     },
     {
       q: 'What internet protocol cases has Dr. Lavian handled?',
       a: 'Dr. Lavian has been retained in 90+ cases involving Internet and networking technologies, providing expert reports, deposition testimony, and trial testimony in cases before U.S. federal courts, PTAB, and the ITC involving Internet protocols and systems.',
     },
     {
-      q: 'What qualifications make Dr. Lavian an internet expert witness?',
+      q: 'What qualifications make Dr. Lavian an internet expert?',
       a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has 120+ patents in telecommunications and networking, 25+ scientific publications, and 35+ years of experience with Internet protocols and systems. He is an IEEE Senior Member and IEEE-WCET Certified.',
     },
     {
-      q: 'What types of Internet patent cases require an expert witness?',
+      q: 'What types of Internet patent cases require an expert?',
       a: 'Internet patent cases commonly involve HTTP protocol implementations, DNS and routing technologies, web application architectures, cloud computing infrastructure, content delivery networks, and Internet security protocols such as TLS/SSL. Dr. Lavian has provided expert testimony in cases involving all of these technology areas.',
     },
     {
@@ -128,18 +128,18 @@ const internetSchema = buildSchema.expertisePage({
   ],
 });
 
-const internetTitle = "Internet Expert Witness — Internet Protocols, TCP/IP, DNS";
-const internetDescription = "Internet expert witness — TCP/IP, HTTP, DNS, BGP. Ph.D. UC Berkeley, 120+ patents, 90+ cases, 60+ depositions.";
+const internetTitle = "Internet Expert — Internet Protocols, TCP/IP, DNS";
+const internetDescription = "Internet expert — TCP/IP, HTTP, DNS, BGP. Ph.D. UC Berkeley, 120+ patents, 90+ cases, 60+ depositions.";
 
-// â"€â"€â"€ 4. VOIP EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 4. VOIP EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/voice-over-ip-voip-expert/index.astro
 
 const voipSchema = buildSchema.expertisePage({
-  name: 'VoIP Expert Witness',
+  name: 'VoIP Expert',
   slug: 'voice-over-ip-voip-expert',
-  description: 'VoIP expert witness for patent litigation: SIP, RTP, H.323, IP telephony, unified communications. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'VoIP Expert Witness',
-  keywords: ['VoIP expert witness', 'SIP protocol expert', 'RTP patent litigation', 'voice over IP PTAB', 'unified communications expert', 'H.323 patent', 'IP telephony expert witness', 'voice codec patent expert', 'SIP trunking patent', 'WebRTC expert witness'],
+  description: 'VoIP expert for patent litigation: SIP, RTP, H.323, IP telephony, unified communications. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'VoIP Expert',
+  keywords: ['VoIP expert', 'SIP protocol expert', 'RTP patent litigation', 'voice over IP PTAB', 'unified communications expert', 'H.323 patent', 'IP telephony expert', 'voice codec patent expert', 'SIP trunking patent', 'WebRTC expert'],
   breadcrumbLabel: 'VoIP',
   faqs: [
     {
@@ -147,12 +147,12 @@ const voipSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian provides expert analysis on SIP (Session Initiation Protocol), RTP (Real-time Transport Protocol), H.323, SRTP, voice codecs, unified communications platforms, and IP-PBX systems — all common technology areas in VoIP patent disputes.',
     },
     {
-      q: 'Can Dr. Lavian serve as a VoIP expert witness in PTAB IPR proceedings?',
+      q: 'Can Dr. Lavian serve as a VoIP expert in PTAB IPR proceedings?',
       a: 'Yes. Dr. Lavian has provided testimony in USPTO Patent Trial and Appeal Board (PTAB) IPR proceedings involving VoIP and communications technologies, including submission of expert declarations and deposition testimony.',
     },
     {
-      q: 'What VoIP companies has Dr. Lavian provided expert witness services for?',
-      a: 'Dr. Lavian has provided expert witness services in cases involving technology companies including Avaya, Cisco Systems, Polycom, and other telecommunications and VoIP platform providers.',
+      q: 'What VoIP companies has Dr. Lavian provided expert services for?',
+      a: 'Dr. Lavian has provided expert services in cases involving technology companies including Avaya, Cisco Systems, Polycom, and other telecommunications and VoIP platform providers.',
     },
     {
       q: 'How does VoIP expertise apply to patent infringement analysis?',
@@ -160,7 +160,7 @@ const voipSchema = buildSchema.expertisePage({
     },
     {
       q: 'What is Dr. Lavian\'s background in voice communications technology?',
-      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications, network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, industry experience at Nortel Networks (1996–2007) developing voice and data systems, and 90+ expert witness engagements.',
+      a: 'Dr. Lavian holds a Ph.D. from UC Berkeley, specializing in telecommunications, network communication, and Internet technologies. He has 120+ patents covering VoIP and communications systems, industry experience at Nortel Networks (1996–2007) developing voice and data systems, and 90+ engagements.',
     },
     {
       q: 'Can Dr. Lavian testify on unified communications and WebRTC patents?',
@@ -169,22 +169,22 @@ const voipSchema = buildSchema.expertisePage({
   ],
 });
 
-const voipTitle = "VoIP Expert Witness — SIP, RTP, H.323 | Dr. Tal Lavian";
-const voipDescription = "VoIP expert witness for patent litigation: SIP, RTP, H.323, IP telephony, unified communications. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const voipTitle = "VoIP Expert — SIP, RTP, H.323 | Dr. Tal Lavian";
+const voipDescription = "VoIP expert for patent litigation: SIP, RTP, H.323, IP telephony, unified communications. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 5. NETWORK SECURITY EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 5. NETWORK SECURITY EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-security-expert-witness/index.astro
 
 const networkSecuritySchema = buildSchema.expertisePage({
-  name: 'Network Security Expert Witness',
+  name: 'Network Security Expert',
   slug: 'network-security-expert-witness',
-  description: 'Network security expert witness for patent litigation: encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Network Security Expert Witness',
-  keywords: ['internet security expert witness', 'network security expert witness', 'cybersecurity patent litigation', 'encryption expert witness', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'cybersecurity expert witness'],
+  description: 'Network security expert for patent litigation: encryption, TLS/SSL, firewalls, VPN, IDS/IPS. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Network Security Expert',
+  keywords: ['internet security expert', 'network security expert', 'cybersecurity patent litigation', 'encryption expert', 'firewall patent', 'intrusion detection expert', 'authentication protocol patent', 'TLS SSL patent expert', 'VPN patent litigation', 'cybersecurity expert'],
   breadcrumbLabel: 'Network Security',
   faqs: [
     {
-      q: 'What network security topics can Dr. Lavian address as an expert witness?',
+      q: 'What network security topics can Dr. Lavian address as an expert?',
       a: 'Dr. Lavian can address encryption protocols (TLS/SSL, IPsec), authentication systems, firewall architectures, intrusion detection and prevention systems (IDS/IPS), network access control, VPN technologies, and cybersecurity standards in patent litigation.',
     },
     {
@@ -210,18 +210,18 @@ const networkSecuritySchema = buildSchema.expertisePage({
   ],
 });
 
-const networkSecurityTitle = "Network Security Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkSecurityDescription = "Network security & cybersecurity expert witness for patent litigation: TLS/SSL, firewalls, VPN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const networkSecurityTitle = "Network Security Expert — Dr. Tal Lavian, Ph.D.";
+const networkSecurityDescription = "Network security & cybersecurity expert for patent litigation: TLS/SSL, firewalls, VPN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 6. STREAMING MEDIA EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 6. STREAMING MEDIA EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/streaming-media-expert-witness/index.astro
 
 const streamingSchema = buildSchema.expertisePage({
-  name: 'Streaming Media Expert Witness',
+  name: 'Streaming Media Expert',
   slug: 'streaming-media-expert-witness',
-  description: 'Streaming media expert witness for patent litigation: video/audio streaming, CDN, adaptive bitrate. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Streaming Media Expert Witness',
-  keywords: ['streaming media expert witness', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert', 'CDN patent expert', 'WebRTC expert witness', 'video conferencing patent', 'HLS DASH streaming expert'],
+  description: 'Streaming media expert for patent litigation: video/audio streaming, CDN, adaptive bitrate. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Streaming Media Expert',
+  keywords: ['streaming media expert', 'video streaming patent', 'audio streaming litigation', 'adaptive bitrate expert', 'multimedia patent PTAB', 'conferencing protocol expert', 'CDN patent expert', 'WebRTC expert', 'video conferencing patent', 'HLS DASH streaming expert'],
   breadcrumbLabel: 'Streaming Media',
   faqs: [
     {
@@ -230,7 +230,7 @@ const streamingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian handled streaming media patent cases involving major technology companies?',
-      a: 'Yes. Dr. Lavian has provided expert witness services in cases involving streaming media companies including DirectTV, Emblaze, and others in federal court and ITC proceedings.',
+      a: 'Yes. Dr. Lavian has provided expert services in cases involving streaming media companies including DirectTV, Emblaze, and others in federal court and ITC proceedings.',
     },
     {
       q: 'Can Dr. Lavian explain complex streaming technology to judges and juries?',
@@ -251,23 +251,23 @@ const streamingSchema = buildSchema.expertisePage({
   ],
 });
 
-const streamingTitle = "Streaming Media Expert Witness | Dr. Tal Lavian, Ph.D.";
-const streamingDescription = "Streaming media expert witness for patent litigation: video/audio streaming, CDN, adaptive bitrate. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const streamingTitle = "Streaming Media Expert | Dr. Tal Lavian, Ph.D.";
+const streamingDescription = "Streaming media expert for patent litigation: video/audio streaming, CDN, adaptive bitrate. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 7. COMPUTER NETWORKING EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 7. COMPUTER NETWORKING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/computer-networking-expert-witness/index.astro
 
 const computerNetworkingSchema = buildSchema.expertisePage({
-  name: 'Computer Networking Expert Witness',
+  name: 'Computer Networking Expert',
   slug: 'computer-networking-expert-witness',
-  description: 'Computer networking expert witness for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Computer Networking Expert Witness',
-  keywords: ['computer networks expert witness', 'computer networking expert witness', 'computer network expert witness', 'LAN WAN patent expert', 'Ethernet patent litigation', 'network architecture expert witness', 'distributed systems patent', 'cloud networking expert', 'network infrastructure expert witness', 'SDN expert witness'],
+  description: 'Computer networking expert for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Computer Networking Expert',
+  keywords: ['computer networks expert', 'computer networking expert', 'computer network expert', 'LAN WAN patent expert', 'Ethernet patent litigation', 'network architecture expert', 'distributed systems patent', 'cloud networking expert', 'network infrastructure expert', 'SDN expert'],
   breadcrumbLabel: 'Computer Networking',
   faqs: [
     {
       q: 'What computer networks expertise does Dr. Lavian offer for patent cases?',
-      a: 'Dr. Lavian offers computer networks expert witness services in LAN/WAN architecture, Ethernet standards (10GbE, 40GbE, 100GbE), network switching and routing, software-defined networking (SDN), cloud networking, and distributed computer network systems.',
+      a: 'Dr. Lavian offers computer networks expert services in LAN/WAN architecture, Ethernet standards (10GbE, 40GbE, 100GbE), network switching and routing, software-defined networking (SDN), cloud networking, and distributed computer network systems.',
     },
     {
       q: 'What is Dr. Lavian\'s academic background in computer networks?',
@@ -282,36 +282,36 @@ const computerNetworkingSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian handles computer networks patent disputes involving network routers and switches, network interface cards, Ethernet implementations, network protocols, SDN controllers, network virtualization, load balancing, and data center network architectures.',
     },
     {
-      q: 'What qualifies Dr. Lavian as a computer networks expert witness?',
+      q: 'What qualifies Dr. Lavian as a computer networks expert?',
       a: 'Dr. Lavian has hands-on industry experience designing network switch software at Nortel Networks and Bay Networks, 120+ networking patents, and nearly 20 years of researching, studying, and lecturing at UC Berkeley. He has been retained in over 90 cases and given 60+ depositions.',
     },
     {
-      q: 'What courts has Dr. Lavian testified in as a computer networks expert witness?',
+      q: 'What courts has Dr. Lavian testified in as a computer networks expert?',
       a: 'Dr. Lavian has provided computer networks expert testimony in U.S. federal district courts across multiple jurisdictions, the USPTO Patent Trial and Appeal Board (PTAB) in IPR and PGR proceedings, the International Trade Commission (ITC), the Canadian Federal Court, and a court in Malaysia.',
     },
     {
-      q: 'What is the role of a computer networking expert witness in patent litigation?',
-      a: 'A computer networking expert witness analyzes patent claims involving network hardware (routers, switches, NICs), network protocols (Ethernet, TCP/IP, OSPF, BGP), and network architectures (LAN/WAN, SDN, cloud networking). They provide claim construction opinions, infringement analyses, and validity assessments, and testify at depositions, PTAB hearings, and trials.',
+      q: 'What is the role of a computer networking expert in patent litigation?',
+      a: 'A computer networking expert analyzes patent claims involving network hardware (routers, switches, NICs), network protocols (Ethernet, TCP/IP, OSPF, BGP), and network architectures (LAN/WAN, SDN, cloud networking). They provide claim construction opinions, infringement analyses, and validity assessments, and testify at depositions, PTAB hearings, and trials.',
     },
     {
-      q: 'How does a computer networking expert witness explain technical concepts to a jury?',
-      a: 'An effective computer networking expert witness translates complex networking concepts — like packet switching, routing algorithms, and protocol handshakes — into clear, relatable explanations for judges and juries. Dr. Lavian\'s nearly 20 years of teaching at UC Berkeley and experience in 90+ cases equip him to present network technology concepts accessibly and persuasively.',
+      q: 'How does a computer networking expert explain technical concepts to a jury?',
+      a: 'An effective computer networking expert translates complex networking concepts — like packet switching, routing algorithms, and protocol handshakes — into clear, relatable explanations for judges and juries. Dr. Lavian\'s nearly 20 years of teaching at UC Berkeley and experience in 90+ cases equip him to present network technology concepts accessibly and persuasively.',
     },
   ],
 });
 
-const computerNetworkingTitle = "Computer Networking Expert Witness | Dr. Tal Lavian, Ph.D.";
-const computerNetworkingDescription = "Computer networking expert witness for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const computerNetworkingTitle = "Computer Networking Expert | Dr. Tal Lavian, Ph.D.";
+const computerNetworkingDescription = "Computer networking expert for patent litigation: LAN/WAN, Ethernet, routers, switches, SDN. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 8. DATA COMMUNICATIONS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/data-communications-expert-witness/index.astro
 
 const dataCommsSchema = buildSchema.expertisePage({
-  name: 'Data Communications Expert Witness',
+  name: 'Data Communications Expert',
   slug: 'data-communications-expert-witness',
-  description: 'Data communications expert witness for patent litigation: data networks, protocol stacks, cloud. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Data Communications Expert Witness',
-  keywords: ['data communications expert witness', 'data communications expert', 'data networks expert witness', 'data networking expert witness', 'data network expert witness', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
+  description: 'Data communications expert for patent litigation: data networks, protocol stacks, cloud. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Data Communications Expert',
+  keywords: ['data communications expert', 'data communications expert', 'data networks expert', 'data networking expert', 'data network expert', 'cloud computing patent', 'data center patent litigation', 'enterprise networking expert', 'communication protocol patent', 'network protocol stack expert', 'data communications consulting expert'],
   breadcrumbLabel: 'Data Communications',
   faqs: [
     {
@@ -327,8 +327,8 @@ const dataCommsSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian provides expert analysis on OSI model protocol layers, TCP/IP data communications, Ethernet frame processing, data serialization protocols, API communication patterns, and application-layer data exchange mechanisms in patent disputes.',
     },
     {
-      q: 'How does Dr. Lavian qualify as a data communications expert witness?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with research focused on data communications architectures. He has 120+ patents in networking and communications technologies and has served as an expert witness in 90+ cases at federal courts, PTAB, and the ITC.',
+      q: 'How does Dr. Lavian qualify as a data communications expert?',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with research focused on data communications architectures. He has 120+ patents in networking and communications technologies and has served as an expert in 90+ cases at federal courts, PTAB, and the ITC.',
     },
     {
       q: 'What types of data center patent disputes has Dr. Lavian handled?',
@@ -339,28 +339,28 @@ const dataCommsSchema = buildSchema.expertisePage({
       a: 'Yes. Dr. Lavian\'s expertise extends to enterprise software architectures, RESTful API communications, microservices patterns, message queuing systems, and data serialization protocols — all common subjects in modern data communications patent litigation.',
     },
     {
-      q: 'What is a data communications expert witness and when is one needed?',
-      a: 'A data communications expert witness is a specialist in data transmission technologies, networking protocols, and communication system architectures who provides testimony in legal proceedings. One is needed in patent disputes involving data networking equipment, cloud computing infrastructure, data center technologies, protocol implementations, and enterprise communication systems.',
+      q: 'What is a data communications expert and when is one needed?',
+      a: 'A data communications expert is a specialist in data transmission technologies, networking protocols, and communication system architectures who provides testimony in legal proceedings. One is needed in patent disputes involving data networking equipment, cloud computing infrastructure, data center technologies, protocol implementations, and enterprise communication systems.',
     },
     {
-      q: 'How does a data communications expert witness differ from a networking expert witness?',
+      q: 'How does a data communications expert differ from a networking expert?',
       a: 'While both fields overlap, a data communications expert focuses specifically on data transmission methods, protocol stacks, data encoding/decoding, and end-to-end data delivery mechanisms. A networking expert has broader scope including network hardware and topology. Dr. Lavian covers both areas with 120+ patents spanning data communications protocols and computer networking technologies.',
     },
   ],
 });
 
-const dataCommsTitle = "Data Communications Expert Witness | Dr. Tal Lavian, Ph.D.";
-const dataCommsDescription = "Data communications expert witness for patent litigation: data networks, protocol stacks, cloud. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const dataCommsTitle = "Data Communications Expert | Dr. Tal Lavian, Ph.D.";
+const dataCommsDescription = "Data communications expert for patent litigation: data networks, protocol stacks, cloud. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 9. MOBILE WIRELESS EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/mobile-wireless-expert-witness/index.astro
 
 const mobileWirelessSchema = buildSchema.expertisePage({
-  name: 'Wireless Expert Witness',
+  name: 'Wireless Expert',
   slug: 'mobile-wireless-expert-witness',
-  description: 'Wireless expert witness for patent litigation: Wi-Fi 802.11, WLAN, mobile device networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Wireless Expert Witness',
-  keywords: ['wireless expert witness', 'Wi-Fi 802.11 patent litigation', 'wireless networking expert witness', 'mobile communications expert witness', 'WLAN expert witness', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert witness'],
+  description: 'Wireless expert for patent litigation: Wi-Fi 802.11, WLAN, mobile device networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Wireless Expert',
+  keywords: ['wireless expert', 'Wi-Fi 802.11 patent litigation', 'wireless networking expert', 'mobile communications expert', 'WLAN expert', 'wireless protocol expert', 'ITC wireless Section 337', 'mobile wireless expert'],
   breadcrumbLabel: 'Wireless',
   faqs: [
     {
@@ -369,7 +369,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian testified in ITC wireless cases?',
-      a: 'Yes. Dr. Lavian has provided expert witness services in International Trade Commission (ITC) Section 337 investigations involving wireless communications technologies, including smartphones and wireless networking equipment.',
+      a: 'Yes. Dr. Lavian has provided expert services in International Trade Commission (ITC) Section 337 investigations involving wireless communications technologies, including smartphones and wireless networking equipment.',
     },
     {
       q: 'What is Dr. Lavian\'s background in wireless communications?',
@@ -380,24 +380,24 @@ const mobileWirelessSchema = buildSchema.expertisePage({
       a: 'Dr. Lavian has handled patent disputes involving Wi-Fi implementations, wireless network access control, wireless roaming and handoff mechanisms, WLAN security, and mobile device connectivity architectures.',
     },
     {
-      q: 'What wireless companies has Dr. Lavian served as an expert witness for?',
+      q: 'What wireless companies has Dr. Lavian served as an expert for?',
       a: 'Dr. Lavian has been retained in wireless patent cases involving companies including Apple, Motorola, T-Mobile, and Ericsson, providing analysis and testimony on Wi-Fi and wireless access technologies.',
     },
   ],
 });
 
-const mobileWirelessTitle = "Wireless Expert Witness — Wi-Fi 802.11 & WLAN | Dr. Lavian";
-const mobileWirelessDescription = "Wireless expert witness for patent litigation: Wi-Fi 802.11, WLAN, mobile device networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const mobileWirelessTitle = "Wireless Expert — Wi-Fi 802.11 & WLAN | Dr. Lavian";
+const mobileWirelessDescription = "Wireless expert for patent litigation: Wi-Fi 802.11, WLAN, mobile device networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 10. ROUTING & SWITCHING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/routing-switching-expert-witness/index.astro
 
 const routingSwitchingSchema = buildSchema.expertisePage({
-  name: 'Routing & Switching Expert Witness',
+  name: 'Routing & Switching Expert',
   slug: 'routing-switching-expert-witness',
-  description: 'Routing and switching expert witness for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Routing & Switching Expert Witness',
-  keywords: ['routing switching expert witness', 'BGP patent litigation', 'OSPF expert witness', 'MPLS patent PTAB', 'router architecture expert', 'packet switching patent', 'SDN expert', 'network switch expert witness', 'VLAN patent expert', 'OpenFlow SDN patent'],
+  description: 'Routing and switching expert for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Routing & Switching Expert',
+  keywords: ['routing switching expert', 'BGP patent litigation', 'OSPF expert', 'MPLS patent PTAB', 'router architecture expert', 'packet switching patent', 'SDN expert', 'network switch expert', 'VLAN patent expert', 'OpenFlow SDN patent'],
   breadcrumbLabel: 'Routing & Switching',
   faqs: [
     {
@@ -406,7 +406,7 @@ const routingSwitchingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian testified in routing and switching patent cases?',
-      a: 'Yes. Dr. Lavian has provided expert witness services in patent litigation involving routing and switching technologies at companies including Cisco Systems, Juniper Networks, Arista Networks, and other major networking equipment providers.',
+      a: 'Yes. Dr. Lavian has provided expert services in patent litigation involving routing and switching technologies at companies including Cisco Systems, Juniper Networks, Arista Networks, and other major networking equipment providers.',
     },
     {
       q: 'Can Dr. Lavian handle router patent cases for both plaintiff and defendant?',
@@ -427,18 +427,18 @@ const routingSwitchingSchema = buildSchema.expertisePage({
   ],
 });
 
-const routingSwitchingTitle = "Routing & Switching Expert Witness | Dr. Tal Lavian, Ph.D.";
-const routingSwitchingDescription = "Routing and switching expert witness for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const routingSwitchingTitle = "Routing & Switching Expert | Dr. Tal Lavian, Ph.D.";
+const routingSwitchingDescription = "Routing and switching expert for patent litigation: BGP, OSPF, MPLS, packet switching. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 11. NETWORK MANAGEMENT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 11. NETWORK MANAGEMENT EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/network-management-expert-witness/index.astro
 
 const networkMgmtSchema = buildSchema.expertisePage({
-  name: 'Network Management Expert Witness',
+  name: 'Network Management Expert',
   slug: 'network-management-expert-witness',
-  description: 'Network management expert witness for patent litigation: SNMP, OSS/BSS, network monitoring. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Network Management Expert Witness',
-  keywords: ['network management expert witness', 'SNMP patent litigation', 'OSS BSS expert', 'IP-PBX patent expert', 'network operations expert witness', 'MIB patent PTAB', 'network monitoring patent', 'configuration management expert', 'device management patent expert', 'NOC systems expert witness'],
+  description: 'Network management expert for patent litigation: SNMP, OSS/BSS, network monitoring. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Network Management Expert',
+  keywords: ['network management expert', 'SNMP patent litigation', 'OSS BSS expert', 'IP-PBX patent expert', 'network operations expert', 'MIB patent PTAB', 'network monitoring patent', 'configuration management expert', 'device management patent expert', 'NOC systems expert'],
   breadcrumbLabel: 'Network Management',
   faqs: [
     {
@@ -447,14 +447,14 @@ const networkMgmtSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian worked on network management patent cases at major companies?',
-      a: 'Yes. Dr. Lavian has provided expert witness services in network management patent cases involving companies including Avaya, Cisco, ServiceNow, and other major enterprise networking and management software providers.',
+      a: 'Yes. Dr. Lavian has provided expert services in network management patent cases involving companies including Avaya, Cisco, ServiceNow, and other major enterprise networking and management software providers.',
     },
     {
       q: 'What types of network management patent disputes has Dr. Lavian handled?',
       a: 'Dr. Lavian has handled patent disputes involving SNMP polling and trap-based monitoring, MIB object definitions, network configuration management systems, automated provisioning, performance threshold alerting, fault correlation engines, and IT service management platforms.',
     },
     {
-      q: 'How does Dr. Lavian qualify as a network management expert witness?',
+      q: 'How does Dr. Lavian qualify as a network management expert?',
       a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with expertise in network protocols and management systems. At Nortel Networks, he developed network management software for carrier-grade equipment. His 120+ patents include innovations in network monitoring and device management.',
     },
     {
@@ -462,29 +462,29 @@ const networkMgmtSchema = buildSchema.expertisePage({
       a: 'Yes. Dr. Lavian\'s network management expertise extends to modern IT operations management platforms, automated network orchestration, AIOps event correlation, and infrastructure monitoring systems — all increasingly common subjects in patent litigation.',
     },
     {
-      q: 'What is the role of a network management expert witness in patent litigation?',
-      a: 'A network management expert witness analyzes patent claims involving monitoring protocols, management information bases, configuration databases, and operations support systems. Dr. Lavian provides claim construction opinions, infringement analyses, and validity assessments for network management patents in federal courts and PTAB proceedings.',
+      q: 'What is the role of a network management expert in patent litigation?',
+      a: 'A network management expert analyzes patent claims involving monitoring protocols, management information bases, configuration databases, and operations support systems. Dr. Lavian provides claim construction opinions, infringement analyses, and validity assessments for network management patents in federal courts and PTAB proceedings.',
     },
   ],
 });
 
-const networkMgmtTitle = "Network Management Expert Witness — Dr. Tal Lavian, Ph.D.";
-const networkMgmtDescription = "Network management expert witness for patent litigation: SNMP, OSS/BSS, network monitoring. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const networkMgmtTitle = "Network Management Expert — Dr. Tal Lavian, Ph.D.";
+const networkMgmtDescription = "Network management expert for patent litigation: SNMP, OSS/BSS, network monitoring. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 // â"€â"€â"€ 12. NETWORKING EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/networking-expert-witness/index.astro
 
 const networkingExpertSchema = buildSchema.expertisePage({
-  name: 'Networking Expert Witness',
+  name: 'Networking Expert',
   slug: 'networking-expert-witness',
-  description: 'Networking expert witness for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Networking Expert Witness',
-  keywords: ['network expert witness', 'network architecture expert witness', 'networking expert witness', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert witness', 'communications networking patent', 'network expert consultant'],
+  description: 'Networking expert for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Networking Expert',
+  keywords: ['network expert', 'network architecture expert', 'networking expert', 'computer network patent litigation', 'networking consultant expert', 'network protocol patent', 'network standards expert', 'telecommunications networking expert', 'network technology expert', 'communications networking patent', 'network expert consultant'],
   breadcrumbLabel: 'Networking Expert',
   faqs: [
     {
       q: 'What broad networking expertise does Dr. Lavian provide for patent litigation?',
-      a: 'Dr. Lavian provides expert witness services across computer networking domains including LAN/WAN, wireless, Internet protocols, network security, VoIP, streaming, routing, switching, and network management in patent litigation and technical disputes.',
+      a: 'Dr. Lavian provides expert services across computer networking domains including LAN/WAN, wireless, Internet protocols, network security, VoIP, streaming, routing, switching, and network management in patent litigation and technical disputes.',
     },
     {
       q: 'Is Dr. Lavian qualified as a networking expert for both technical and litigation purposes?',
@@ -503,24 +503,24 @@ const networkingExpertSchema = buildSchema.expertisePage({
       a: 'Many patent cases span multiple networking domains — a VoIP patent may involve network security, routing, and QoS. Dr. Lavian\'s expertise across networking disciplines allows him to address cross-domain patent claims. His 120+ patents and Ph.D. from UC Berkeley span the full networking stack.',
     },
     {
-      q: 'What companies has Dr. Lavian served as a networking expert witness for?',
+      q: 'What companies has Dr. Lavian served as a networking expert for?',
       a: 'Dr. Lavian has been retained in networking patent cases involving companies including Google, Apple, Microsoft, Amazon, Cisco, and many other major technology companies, providing analysis and testimony across the full range of networking technologies.',
     },
   ],
 });
 
-const networkingExpertTitle = "Networking Expert Witness | Dr. Tal Lavian, Ph.D.";
-const networkingExpertDescription = "Networking expert witness for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const networkingExpertTitle = "Networking Expert | Dr. Tal Lavian, Ph.D.";
+const networkingExpertDescription = "Networking expert for patent litigation: TCP/IP, Ethernet, LAN/WAN, protocol architecture. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT WITNESS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
+// â"€â"€â"€ 13. MESSAGING AND CHAT EXPERT â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€
 // File: src/pages/communications-expert-witness/messaging-and-chat-expert-witness/index.astro
 
 const messagingChatSchema = buildSchema.expertisePage({
-  name: 'Messaging & Chat Expert Witness',
+  name: 'Messaging & Chat Expert',
   slug: 'messaging-and-chat-expert-witness',
-  description: 'Messaging and chat expert witness for patent litigation: SMS, MMS, instant messaging, chat. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Messaging & Chat Expert Witness',
-  keywords: ['messaging expert witness', 'chat expert witness', 'SMS patent litigation', 'instant messaging patent', 'messaging protocol expert', 'push notification patent', 'chat platform expert witness', 'MMS patent expert', 'XMPP expert witness', 'enterprise messaging patent'],
+  description: 'Messaging and chat expert for patent litigation: SMS, MMS, instant messaging, chat. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Messaging & Chat Expert',
+  keywords: ['messaging expert', 'chat expert', 'SMS patent litigation', 'instant messaging patent', 'messaging protocol expert', 'push notification patent', 'chat platform expert', 'MMS patent expert', 'XMPP expert', 'enterprise messaging patent'],
   breadcrumbLabel: 'Messaging & Chat',
   faqs: [
     {
@@ -529,66 +529,66 @@ const messagingChatSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian testified in messaging patent cases?',
-      a: 'Yes. Dr. Lavian has provided expert witness services in patent cases involving messaging technologies, chat applications, and real-time communication systems in federal courts and USPTO PTAB proceedings.',
+      a: 'Yes. Dr. Lavian has provided expert services in patent cases involving messaging technologies, chat applications, and real-time communication systems in federal courts and USPTO PTAB proceedings.',
     },
     {
       q: 'What types of messaging patent disputes has Dr. Lavian handled?',
       a: 'Dr. Lavian has handled patent disputes involving SMS/MMS message delivery, instant messaging protocols, chat application architectures, push notification systems, message queuing, presence detection, and group messaging implementations.',
     },
     {
-      q: 'How does Dr. Lavian qualify as a messaging and chat expert witness?',
-      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with expertise in real-time communication protocols. His 120+ patents include innovations in network communications and messaging architectures. He has served as an expert witness in 90+ cases involving communications technologies.',
+      q: 'How does Dr. Lavian qualify as a messaging and chat expert?',
+      a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley with expertise in real-time communication protocols. His 120+ patents include innovations in network communications and messaging architectures. He has served as an expert in 90+ cases involving communications technologies.',
     },
     {
       q: 'Can Dr. Lavian testify on enterprise collaboration and team messaging patents?',
       a: 'Yes. Dr. Lavian\'s messaging expertise extends to enterprise collaboration platforms, team chat architectures, channel-based messaging systems, file sharing integrations, presence and status protocols, and API-based messaging bots — all common subjects in modern patent litigation.',
     },
     {
-      q: 'What is the role of a messaging expert witness in patent litigation?',
-      a: 'A messaging expert witness analyzes patent claims involving message routing, delivery protocols, chat session management, notification systems, and messaging platform architectures. Dr. Lavian provides claim construction opinions, infringement analyses, and validity assessments for messaging patents in federal courts and PTAB proceedings.',
+      q: 'What is the role of a messaging expert in patent litigation?',
+      a: 'A messaging expert analyzes patent claims involving message routing, delivery protocols, chat session management, notification systems, and messaging platform architectures. Dr. Lavian provides claim construction opinions, infringement analyses, and validity assessments for messaging patents in federal courts and PTAB proceedings.',
     },
   ],
 });
 
-const messagingChatTitle = "Messaging & Chat Expert Witness — Dr. Tal Lavian, Ph.D.";
-const messagingChatDescription = "Messaging and chat expert witness for patent litigation: SMS, MMS, instant messaging, chat. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const messagingChatTitle = "Messaging & Chat Expert — Dr. Tal Lavian, Ph.D.";
+const messagingChatDescription = "Messaging and chat expert for patent litigation: SMS, MMS, instant messaging, chat. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
-// --- 14. TELECOMMUNICATIONS EXPERT WITNESS (primary keyword landing page) ---
+// --- 14. TELECOMMUNICATIONS EXPERT (primary keyword landing page) ---
 // File: src/pages/communications-expert-witness/telecommunications-expert-witness/index.astro
 
 const telecomEWSchema = buildSchema.expertisePage({
-  name: 'Telecommunications Expert Witness',
+  name: 'Telecommunications Expert',
   slug: 'telecommunications-expert-witness',
-  description: 'Telecommunications expert witness for patent litigation: PSTN, VoIP, SS7, SONET/SDH. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
-  serviceType: 'Telecommunications Expert Witness',
-  keywords: ['telecommunications expert witness', 'telecom expert witness', 'PSTN expert witness', 'VoIP expert witness', 'PTAB telecommunications expert', 'ITC telecom expert', 'telecom patent litigation'],
+  description: 'Telecommunications expert for patent litigation: PSTN, VoIP, SS7, SONET/SDH. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+  serviceType: 'Telecommunications Expert',
+  keywords: ['telecommunications expert', 'telecom expert', 'PSTN expert', 'VoIP expert', 'PTAB telecommunications expert', 'ITC telecom expert', 'telecom patent litigation'],
   breadcrumbLabel: 'Telecommunications',
   faqs: [
     {
-      q: 'What does a telecommunications expert witness do?',
-      a: 'A telecommunications expert witness analyzes technical issues in patent and technology disputes involving telecommunications systems, protocols, and standards. Dr. Lavian provides infringement analysis, claim construction opinions, expert declarations, deposition testimony, and trial testimony in cases involving telecommunications technologies.',
+      q: 'What does a telecommunications expert do?',
+      a: 'A telecommunications expert analyzes technical issues in patent and technology disputes involving telecommunications systems, protocols, and standards. Dr. Lavian provides infringement analysis, claim construction opinions, expert declarations, deposition testimony, and trial testimony in cases involving telecommunications technologies.',
     },
     {
       q: 'What telecommunications technologies does Dr. Lavian cover?',
       a: 'Dr. Lavian\'s telecommunications expertise covers PSTN, VoIP, SIP, RTP, telecom protocols, network communications, Internet protocols (TCP/IP), routing and switching, wireless systems (Wi-Fi 802.11), network security, streaming media, and data communications.',
     },
     {
-      q: 'How many expert witness cases has Dr. Lavian handled in telecommunications?',
-      a: 'Dr. Lavian has served as expert witness in more than 90 patent and technology cases before U.S. federal courts, the USPTO Patent Trial and Appeal Board (PTAB), and the International Trade Commission (ITC), involving telecommunications and networking technologies.',
+      q: 'How many cases has Dr. Lavian handled in telecommunications?',
+      a: 'Dr. Lavian has served as expert in more than 90 patent and technology cases before U.S. federal courts, the USPTO Patent Trial and Appeal Board (PTAB), and the International Trade Commission (ITC), involving telecommunications and networking technologies.',
     },
     {
-      q: 'How do I retain Dr. Lavian as a telecommunications expert witness?',
+      q: 'How do I retain Dr. Lavian as a telecommunications expert?',
       a: 'Contact Dr. Lavian directly at tlavian@telecommnet.com or +1 (408) 209-9112. He reviews all inquiries for conflicts before agreeing to serve. He has been retained by both plaintiffs and defendants across over 50 law firms and corporate clients.',
     },
     {
-      q: 'What are Dr. Lavian\'s qualifications as a telecommunications expert witness?',
+      q: 'What are Dr. Lavian\'s qualifications as a telecommunications expert?',
       a: 'Dr. Lavian holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, is the inventor of 120+ patents, has 25+ scientific publications, and has nearly 20 years of experience researching, studying, and lecturing at UC Berkeley. He is an IEEE Senior Member and IEEE-WCET Certified.',
     },
   ],
 });
 
-const telecomEWTitle = "Telecommunications Expert Witness | Dr. Tal Lavian";
-const telecomEWDescription = "Telecommunications expert witness for patent litigation: PSTN, VoIP, SS7, SONET/SDH. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
+const telecomEWTitle = "Telecommunications Expert | Dr. Tal Lavian";
+const telecomEWDescription = "Telecommunications expert for patent litigation: PSTN, VoIP, SS7, SONET/SDH. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.";
 
 export {
   telecomSchema, telecomTitle, telecomDescription,
