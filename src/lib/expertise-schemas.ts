@@ -41,7 +41,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What companies has Dr. Lavian served as a telecom expert witness for?',
-      a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
+      a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
     },
     {
       q: 'What qualifications should a telecommunications expert witness have?',
@@ -74,7 +74,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'What network communications cases has Dr. Lavian handled?',
-      a: 'Dr. Lavian has been retained in 90+ cases involving network communications technologies, including cases for Apple, Google, Microsoft, Samsung, Cisco, AT&T, Verizon, T-Mobile, Huawei, Juniper Networks, and others. He has provided 60+ depositions as expert witness.',
+      a: 'Dr. Lavian has been retained in 90+ cases involving network communications technologies, including cases for Apple, Google, Microsoft, Samsung, Cisco, T-Mobile, Huawei, Juniper Networks, and others. He has provided 60+ depositions as expert witness.',
     },
     {
       q: 'What network protocols does Dr. Lavian have expertise in?',
@@ -504,7 +504,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'What companies has Dr. Lavian served as a networking expert witness for?',
-      a: 'Dr. Lavian has been retained in networking patent cases involving companies including Google, Apple, Microsoft, Amazon, Intel, Cisco, Qualcomm, AT&T, Verizon, Samsung, and many other major technology companies, providing analysis and testimony across the full range of networking technologies.',
+      a: 'Dr. Lavian has been retained in networking patent cases involving companies including Google, Apple, Microsoft, Amazon, Cisco, Samsung, and many other major technology companies, providing analysis and testimony across the full range of networking technologies.',
     },
   ],
 });
