@@ -16,71 +16,75 @@
     {
       "date": "2026-10-28",
       "reason": "Core pages: replaced the term 'expert witness' in titles and H1s with 'expert' (owner instruction 2026-10-27; URLs and non-core pages unchanged)"
+    },
+    {
+      "date": "2026-10-28",
+      "reason": "Core pages: visible H1s say 'Expert' instead of 'Expert Witness'; titles, meta, structured data, menus and llms files keep the term (owner instruction 2026-10-27)"
     }
   ],
   "pages": {
     "/": {
-      "title": "Telecommunications Expert | Dr. Tal Lavian, Ph.D.",
+      "title": "Telecommunications Expert Witness | Dr. Tal Lavian, Ph.D.",
       "h1": "Dr. Tal Lavian, Ph.D.: Telecommunications and Network Communications Technologist"
     },
     "/communications-expert-witness/": {
-      "title": "Communications Expert — Dr. Tal Lavian, Ph.D.",
+      "title": "Communications Expert Witness — Dr. Tal Lavian, Ph.D.",
       "h1": "Dr. Tal Lavian, Ph.D.: Communications Technology Expertise for Patent Litigation"
     },
     "/communications-expert-witness/telecommunications-expert-witness/": {
-      "title": "Telecommunications Expert | Dr. Tal Lavian",
+      "title": "Telecommunications Expert Witness | Dr. Tal Lavian",
       "h1": "Telecommunications Expert"
     },
     "/communications-expert-witness/internet-expert-witness/": {
-      "title": "Internet Expert — Internet Protocols, TCP/IP, DNS",
+      "title": "Internet Expert Witness — Internet Protocols, TCP/IP, DNS",
       "h1": "Internet Expert"
     },
     "/communications-expert-witness/network-communications-expert-witness/": {
-      "title": "Network Communications Expert | Dr. Lavian",
+      "title": "Network Communications Expert Witness | Dr. Lavian",
       "h1": "Dr. Tal Lavian, Ph.D.: Network Communications Protocols, Architectures and Systems"
     },
     "/communications-expert-witness/computer-networking-expert-witness/": {
-      "title": "Computer Networking Expert | Dr. Tal Lavian, Ph.D.",
+      "title": "Computer Networking Expert Witness | Dr. Tal Lavian, Ph.D.",
       "h1": "Computer Networking Expert"
     },
     "/communications-expert-witness/data-communications-expert-witness/": {
-      "title": "Data Communications Expert | Dr. Tal Lavian, Ph.D.",
+      "title": "Data Communications Expert Witness | Dr. Tal Lavian, Ph.D.",
       "h1": "Data Communications Expert"
     },
     "/communications-expert-witness/networking-expert-witness/": {
-      "title": "Networking Expert | Dr. Tal Lavian, Ph.D.",
+      "title": "Networking Expert Witness | Dr. Tal Lavian, Ph.D.",
       "h1": "Networking Expert"
     },
     "/communications-expert-witness/routing-switching-expert-witness/": {
-      "title": "Routing & Switching Expert | Dr. Tal Lavian, Ph.D.",
+      "title": "Routing & Switching Expert Witness | Dr. Tal Lavian, Ph.D.",
       "h1": "Routing & Switching Expert"
     },
     "/communications-expert-witness/streaming-media-expert-witness/": {
-      "title": "Streaming Media Expert | Dr. Tal Lavian, Ph.D.",
+      "title": "Streaming Media Expert Witness | Dr. Tal Lavian, Ph.D.",
       "h1": "Streaming Media Expert"
     },
     "/communications-expert-witness/network-management-expert-witness/": {
-      "title": "Network Management Expert — Dr. Tal Lavian, Ph.D.",
+      "title": "Network Management Expert Witness — Dr. Tal Lavian, Ph.D.",
       "h1": "Network Management Expert"
     },
     "/communications-expert-witness/network-security-expert-witness/": {
-      "title": "Network Security Expert — Dr. Tal Lavian, Ph.D.",
+      "title": "Network Security Expert Witness — Dr. Tal Lavian, Ph.D.",
       "h1": "Network Security Expert"
     },
     "/communications-expert-witness/mobile-wireless-expert-witness/": {
-      "title": "Wireless Expert — Wi-Fi 802.11 & WLAN | Dr. Lavian",
+      "title": "Wireless Expert Witness — Wi-Fi 802.11 & WLAN | Dr. Lavian",
       "h1": "Wireless Expert — Wi-Fi 802.11, WLAN & Mobile Devices"
     },
     "/communications-expert-witness/messaging-and-chat-expert-witness/": {
-      "title": "Messaging & Chat Expert — Dr. Tal Lavian, Ph.D.",
+      "title": "Messaging & Chat Expert Witness — Dr. Tal Lavian, Ph.D.",
       "h1": "Messaging & Chat Expert"
     },
     "/communications-expert-witness/pstn-voip-expert-witness/": {
-      "title": "PSTN & VoIP Expert | Dr. Tal Lavian",
+      "title": "PSTN & VoIP Expert Witness | Dr. Tal Lavian",
       "h1": "PSTN & VoIP Expert"
     },
     "/communications-expert-witness/voice-over-ip-voip-expert/": {
-      "title": "VoIP Expert — SIP, RTP, H.323 | Dr. Tal Lavian",
+      "title": "VoIP Expert Witness — SIP, RTP, H.323 | Dr. Tal Lavian",
       "h1": "VoIP Expert — Voice Over IP"
     }
   }

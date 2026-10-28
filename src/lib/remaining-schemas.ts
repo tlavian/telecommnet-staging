@@ -16,30 +16,30 @@ export const corporateClientsSchema = buildSchema.clientPage({
   name: 'Telecom Consulting Expert for Corporate Counsel & Enterprises',
   slug: 'corporate-clients',
   description:
-    'Telecommunications expert services and technical consulting for corporate legal teams and enterprises in patent litigation and IP disputes.',
+    'Telecommunications expert witness services and technical consulting for corporate legal teams and enterprises in patent litigation and IP disputes.',
   breadcrumbLabel: 'Corporate Clients',
 });
 
 export const corporateClientsTitle =
-  "Telecom Expert for Corporate Counsel | TelecommNet";
+  "Telecom Expert Witness for Corporate Counsel | TelecommNet";
 export const corporateClientsDescription =
-  "Telecommunications expert for corporate legal teams and in-house counsel. Dr. Tal Lavian, Ph.D. UC Berkeley, retained in 90+ cases.";
+  "Telecommunications expert witness for corporate legal teams and in-house counsel. Dr. Tal Lavian, Ph.D. UC Berkeley, retained in 90+ cases.";
 
 // ─── 17. LAW FIRM CLIENTS ────────────────────────────────────────────────
 // File: src/pages/law-firm-clients/index.astro
 
 export const lawFirmClientsSchema = buildSchema.clientPage({
-  name: 'Telecommunications Expert for Law Firms — Patent & IP Litigation',
+  name: 'Telecommunications Expert Witness for Law Firms — Patent & IP Litigation',
   slug: 'law-firm-clients',
   description:
-    'Retain a telecommunications expert for patent litigation, IP disputes, and technical analysis. Testimony in federal courts, USPTO PTAB, and ITC.',
+    'Retain a telecommunications expert witness for patent litigation, IP disputes, and technical analysis. Testimony in federal courts, USPTO PTAB, and ITC.',
   breadcrumbLabel: 'Law Firm Clients',
 });
 
 export const lawFirmClientsTitle =
-  "Telecom Expert for Law Firms | TelecommNet";
+  "Telecom Expert Witness for Law Firms | TelecommNet";
 export const lawFirmClientsDescription =
-  "Retain Dr. Tal Lavian as telecommunications expert for patent litigation, PTAB IPR, and ITC proceedings. 90+ cases, 60+ depositions, Ph.D. UC Berkeley.";
+  "Retain Dr. Tal Lavian as telecommunications expert witness for patent litigation, PTAB IPR, and ITC proceedings. 90+ cases, 60+ depositions, Ph.D. UC Berkeley.";
 
 // ─── 18. SCIENTIFIC PUBLICATIONS ─────────────────────────────────────────
 // File: src/pages/scientific-publications/index.astro
@@ -49,7 +49,7 @@ export const publicationsSchema = buildSchema.publications();
 export const publicationsTitle =
   "Scientific Publications | Dr. Tal Lavian, Ph.D.";
 export const publicationsDescription =
-  "Scientific publications by Dr. Tal Lavian in IEEE, ACM and other venues. 25+ publications supporting expert testimony. Ph.D. UC Berkeley.";
+  "Scientific publications by Dr. Tal Lavian in IEEE, ACM and other venues. 25+ publications supporting expert witness testimony. Ph.D. UC Berkeley.";
 
 // ─── 19. TALKS & PRESENTATIONS ───────────────────────────────────────────
 // File: src/pages/talks-presentations/index.astro
@@ -57,17 +57,17 @@ export const publicationsDescription =
 export const talksSchema = buildSchema.talks();
 
 export const talksTitle =
-  "Expert Talks & Presentations | Dr. Tal Lavian";
+  "Expert Witness Talks & Presentations | Dr. Tal Lavian";
 export const talksDescription =
   "Presentations, technical lectures, and conference talks by Dr. Tal Lavian on telecommunications, network architecture, and Internet protocols. 25+ publications.";
 
-// ─── 20. CASES / EXPERT TESTIMONY ────────────────────────────────
+// ─── 20. CASES / EXPERT WITNESS TESTIMONY ────────────────────────────────
 // File: src/pages/cases-expert-witness-testimony/index.astro
 
 export const casesSchema = buildSchema.cases();
 
 export const casesTitle =
-  "Expert Testimony Cases | Dr. Tal Lavian, Ph.D.";
+  "Expert Witness Testimony Cases | Dr. Tal Lavian, Ph.D.";
 export const casesDescription =
   "90+ cases. 100+ patents litigated. 60+ depositions. U.S. federal courts, USPTO PTAB & ITC. Retained by attorneys at Fish & Richardson and other firms.";
 
@@ -78,14 +78,14 @@ export const siteMapSchema = buildSchema.webPage({
   name: 'Site Map — TelecommNet.com',
   slug: 'site-map',
   description:
-    'Complete site map for TelecommNet.com — navigate all pages of Dr. Tal Lavian\'s telecommunications expert consulting practice website.',
+    'Complete site map for TelecommNet.com — navigate all pages of Dr. Tal Lavian\'s telecommunications expert witness consulting practice website.',
   breadcrumbLabel: 'Site Map',
 });
 
 export const siteMapTitle =
-  "Site Map — Telecommunications Expert | TelecommNet";
+  "Site Map — Telecommunications Expert Witness | TelecommNet";
 export const siteMapDescription =
-  "Complete site map for TelecommNet.com. Navigate all pages of Dr. Tal Lavian's telecommunications expert and consulting practice website.";
+  "Complete site map for TelecommNet.com. Navigate all pages of Dr. Tal Lavian's telecommunications expert witness and consulting practice website.";
 
 // ─── 22. CONTACT ──────────────────────────────────────────────────────────
 // File: src/pages/contact/index.astro
@@ -93,9 +93,9 @@ export const siteMapDescription =
 export const contactSchema = buildSchema.contact();
 
 export const contactTitle =
-  "Contact Dr. Tal Lavian — Telecommunications Expert";
+  "Contact Dr. Tal Lavian — Telecommunications Expert Witness";
 export const contactDescription =
-  "Contact Dr. Tal Lavian for telecommunications and network communications expert services. Phone: +1 (408) 209-9112. Based in Encino, California.";
+  "Contact Dr. Tal Lavian for telecommunications and network communications expert witness services. Phone: +1 (408) 209-9112. Based in Encino, California.";
 
 // ─── 23. PRIVACY POLICY ───────────────────────────────────────────────────
 // File: src/pages/privacy-policy/index.astro
@@ -117,17 +117,17 @@ export const privacyDescription =
 // File: src/pages/terms-and-conditions/index.astro
 
 export const termsSchema = buildSchema.webPage({
-  name: 'Terms and Conditions of Use — TelecommNet Expert Services',
+  name: 'Terms and Conditions of Use — TelecommNet Expert Witness Services',
   slug: 'terms-and-conditions',
   description:
-    'Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet\'s telecommunications expert website.',
+    'Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet\'s telecommunications expert witness website.',
   breadcrumbLabel: 'Terms and Conditions',
 });
 
 export const termsTitle =
-  "Terms and Conditions — Expert Services | TelecommNet";
+  "Terms and Conditions — Expert Witness Services | TelecommNet";
 export const termsDescription =
-  "Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet's telecommunications expert website.";
+  "Terms of engagement, conflict of interest policies, and legal disclaimers for utilizing TelecommNet's telecommunications expert witness website.";
 
 // ─── 25. PATENTS ──────────────────────────────────────────────────────────
 // File: src/pages/patents/index.astro
@@ -135,7 +135,7 @@ export const termsDescription =
 export const patentsSchema = buildSchema.patents();
 
 export const patentsTitle =
-  "Patent Expert | 120+ Patents Invented | Dr. Lavian";
+  "Patent Expert Witness | 120+ Patents Invented | Dr. Lavian";
 export const patentsDescription =
   "Dr. Tal Lavian, Ph.D. UC Berkeley: inventor of 120+ patents, retained in 90+ cases with testimony before federal courts, the PTAB, and the ITC.";
 

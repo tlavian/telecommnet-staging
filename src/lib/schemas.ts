@@ -40,9 +40,9 @@ export const PERSON_ENTITY = {
   familyName: 'Lavian',
   honorificPrefix: 'Dr.',
   honorificSuffix: 'Ph.D.',
-  jobTitle: 'Telecommunications Expert',
+  jobTitle: 'Telecommunications Expert Witness',
   description:
-    'Dr. Tal Lavian is a telecommunications and network communications expert with a Ph.D. from UC Berkeley. He has been retained in 90+ cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC, and holds 120+ patents and 25+ scientific publications.',
+    'Dr. Tal Lavian is a telecommunications and network communications expert witness with a Ph.D. from UC Berkeley. He has been retained in 90+ cases, with testimony before U.S. federal courts, the USPTO PTAB, and the ITC, and holds 120+ patents and 25+ scientific publications.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -100,7 +100,7 @@ export const PERSON_ENTITY = {
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'Expert — Telecommunications and Network Communications',
+    name: 'Expert Witness — Telecommunications and Network Communications',
     occupationalCategory: 'Legal Services',
     skills: [
       'Patent Litigation',
@@ -130,7 +130,7 @@ export const PERSON_ENTITY = {
     { '@type': 'Thing', name: 'Network management', sameAs: 'https://en.wikipedia.org/wiki/Network_management' },
     { '@type': 'Thing', name: 'Instant messaging', sameAs: 'https://en.wikipedia.org/wiki/Instant_messaging' },
     { '@type': 'Thing', name: 'Patent infringement', sameAs: 'https://en.wikipedia.org/wiki/Patent_infringement' },
-    { '@type': 'Thing', name: 'Expert', sameAs: 'https://en.wikipedia.org/wiki/Expert_witness' },
+    { '@type': 'Thing', name: 'Expert witness', sameAs: 'https://en.wikipedia.org/wiki/Expert_witness' },
     { '@type': 'Thing', name: 'Public switched telephone network', sameAs: 'https://en.wikipedia.org/wiki/Public_switched_telephone_network' },
     { '@type': 'Thing', name: 'Patent Trial and Appeal Board', sameAs: 'https://en.wikipedia.org/wiki/Patent_Trial_and_Appeal_Board' },
     { '@type': 'Thing', name: 'Inter partes review', sameAs: 'https://en.wikipedia.org/wiki/Inter_partes_review' },
@@ -176,7 +176,7 @@ export const ORG_ENTITY = {
   '@id': ORG_ID,
   name: 'TelecommNet Engineering, Inc.',
   legalName: 'TelecommNet Engineering, Inc.',
-  description: 'TelecommNet Engineering, Inc. provides telecommunications expert and consulting services for patent litigation, specializing in telecommunications, network communications, Internet protocols, and VoIP.',
+  description: 'TelecommNet Engineering, Inc. provides telecommunications expert witness and consulting services for patent litigation, specializing in telecommunications, network communications, Internet protocols, and VoIP.',
   url: BASE_URL,
   telephone: '+1-408-209-9112',
   email: 'tlavian@telecommnet.com',
@@ -201,7 +201,7 @@ export const ORG_ENTITY = {
     '@type': 'ContactPoint',
     telephone: '+1-408-209-9112',
     email: 'tlavian@telecommnet.com',
-    contactType: 'Expert Engagement',
+    contactType: 'Expert Witness Engagement',
     areaServed: { '@type': 'Country', name: 'United States' },
     availableLanguage: 'English',
   },
@@ -215,7 +215,7 @@ export const ORG_ENTITY = {
 export const WEBSITE_ENTITY = {
   '@type': 'WebSite',
   '@id': `${BASE_URL}/#website`,
-  name: 'TelecommNet — Telecommunications Expert | Dr. Tal Lavian',
+  name: 'TelecommNet — Telecommunications Expert Witness | Dr. Tal Lavian',
   url: BASE_URL,
   publisher: { '@id': ORG_ID },
   inLanguage: 'en-US',
@@ -287,12 +287,12 @@ export const buildSchema = {
         {
           '@type': ['ProfessionalService', 'LegalService'],
           '@id': `${BASE_URL}/#service`,
-          name: 'TelecommNet Expert Services',
+          name: 'TelecommNet Expert Witness Services',
           description:
-            'Expert and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Apple, Google, Microsoft, Meta (Facebook), Cisco, T-Mobile, Juniper (HPE), Huawei, and other major technology companies.',
+            'Expert witness and consulting services in telecommunications, network communications, Internet protocols, VoIP, mobile wireless, and computer networking for patent litigation in federal courts, USPTO PTAB, and ITC. Retained in cases involving Apple, Google, Microsoft, Meta (Facebook), Cisco, T-Mobile, Juniper (HPE), Huawei, and other major technology companies.',
           founder: PERSON_REF,
           provider: PERSON_REF,
-          serviceType: 'Expert Services',
+          serviceType: 'Expert Witness Services',
           url: BASE_URL,
           telephone: '+1-408-209-9112',
           logo: ORG_LOGO_IMG,
@@ -308,23 +308,23 @@ export const buildSchema = {
           },
           areaServed: { '@type': 'Country', name: 'United States' },
           makesOffer: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Telecommunications Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Internet Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VoIP Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Security Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Streaming Media Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Computer Networking Expert' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Telecommunications Expert Witness' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert Witness' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Internet Expert Witness' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VoIP Expert Witness' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Security Expert Witness' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Streaming Media Expert Witness' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Computer Networking Expert Witness' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Data Communications Expert' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Mobile Wireless Expert' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Routing & Switching Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Management Expert' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Management Expert Witness' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Networking Expert' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Messaging & Chat Expert' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Messaging & Chat Expert Witness' } },
           ],
           potentialAction: {
             '@type': 'AskAction',
-            name: 'Request Expert Engagement',
+            name: 'Request Expert Witness Engagement',
             target: {
               '@type': 'EntryPoint',
               urlTemplate: `${BASE_URL}/contact/`,
@@ -350,15 +350,15 @@ export const buildSchema = {
               name: 'Who is Dr. Tal Lavian?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Tal Lavian is a telecommunications expert with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Malaysia.',
+                text: 'Dr. Tal Lavian is a telecommunications expert witness with nearly 20 years at UC Berkeley, a Ph.D. from UC Berkeley, 120+ patents, and 90+ expert witness engagements in patent litigation across U.S. Federal and District Courts, USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Malaysia.',
               },
             },
             {
               '@type': 'Question',
-              name: 'What types of cases does Dr. Lavian handle as an expert?',
+              name: 'What types of cases does Dr. Lavian handle as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian provides expert services in telecommunications patent infringement cases, ITC Section 337 investigations, USPTO PTAB IPR/PGR proceedings, and technology disputes involving networking, VoIP, wireless communications, and internet protocols.',
+                text: 'Dr. Lavian provides expert witness services in telecommunications patent infringement cases, ITC Section 337 investigations, USPTO PTAB IPR/PGR proceedings, and technology disputes involving networking, VoIP, wireless communications, and internet protocols.',
               },
             },
             {
@@ -379,10 +379,10 @@ export const buildSchema = {
             },
             {
               '@type': 'Question',
-              name: 'What is a telecommunications expert?',
+              name: 'What is a telecommunications expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'A telecommunications expert is a qualified technical professional retained by attorneys to provide independent technical opinions in patent litigation, ITC investigations, and other legal proceedings involving telecommunications technologies — including VoIP, wireless networks, internet protocols, and network communications systems. They analyze patent claims, prepare technical reports, provide deposition testimony, and — when cases proceed to trial — provide live testimony before judges and juries.',
+                text: 'A telecommunications expert witness is a qualified technical professional retained by attorneys to provide independent technical opinions in patent litigation, ITC investigations, and other legal proceedings involving telecommunications technologies — including VoIP, wireless networks, internet protocols, and network communications systems. They analyze patent claims, prepare technical reports, provide deposition testimony, and — when cases proceed to trial — provide live testimony before judges and juries.',
               },
             },
             {
@@ -398,7 +398,7 @@ export const buildSchema = {
               name: 'How many years of experience does Dr. Lavian have in telecommunications?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and 90+ cases and 60+ depositions as an expert.',
+                text: 'Dr. Lavian has over 35 years of experience in telecommunications and network communications, spanning nearly 20 years researching, studying, and lecturing at UC Berkeley; engineering leadership as Principal Scientist and Principal Architect at Nortel Networks (1996–2007); service as a DARPA Principal Investigator for three federally funded research projects; and 90+ cases and 60+ depositions as an expert witness.',
               },
             },
             {
@@ -435,7 +435,7 @@ export const buildSchema = {
           '@type': 'ProfilePage',
           '@id': `${BASE_URL}/about-dr-lavian/`,
           url: `${BASE_URL}/about-dr-lavian/`,
-          name: 'About Dr. Tal Lavian — Telecommunications Expert',
+          name: 'About Dr. Tal Lavian — Telecommunications Expert Witness',
           dateCreated: '2022-05-01T00:00:00+00:00',
           dateModified: modifiedDate('/about-dr-lavian/'),
           inLanguage: 'en-US',
@@ -464,7 +464,7 @@ export const buildSchema = {
             },
             {
               '@type': 'Question',
-              name: 'How many cases has Dr. Lavian handled?',
+              name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'Dr. Lavian has been retained as an expert in over 90 cases. He has served as an expert on over 100 patents litigated. He has provided expert reports and testimony in over 60 depositions before U.S. federal district courts, the USPTO PTAB, the ITC, the Canadian Federal Court, and a court in Malaysia.',
@@ -493,7 +493,7 @@ export const buildSchema = {
     };
   },
 
-  /** Expert hub: Person + WebPage + ProfessionalService + Service[] + BreadcrumbList */
+  /** Expert Witness hub: Person + WebPage + ProfessionalService + Service[] + BreadcrumbList */
   expertWitnessHub() {
     const hubUrl = `${BASE_URL}/communications-expert-witness/`;
     return {
@@ -505,8 +505,8 @@ export const buildSchema = {
           '@type': 'WebPage',
           '@id': hubUrl,
           url: hubUrl,
-          name: 'Communications Expert Services — Dr. Tal Lavian',
-          description: 'Communications expert for patent litigation: telecommunications, VoIP, internet, networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
+          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
+          description: 'Communications expert witness for patent litigation: telecommunications, VoIP, internet, networking. Dr. Tal Lavian, Ph.D. UC Berkeley, 120+ patents, 90+ cases.',
           datePublished: '2023-06-01T00:00:00+00:00',
           dateModified: modifiedDate('/communications-expert-witness/'),
           inLanguage: 'en-US',
@@ -519,14 +519,14 @@ export const buildSchema = {
         },
         {
           '@type': ['ProfessionalService', 'LegalService'],
-          name: 'Communications Expert Services — Dr. Tal Lavian',
+          name: 'Communications Expert Witness Services — Dr. Tal Lavian',
           founder: PERSON_REF,
           provider: PERSON_REF,
-          serviceType: 'Expert Services',
+          serviceType: 'Expert Witness Services',
           url: hubUrl,
           mainEntityOfPage: { '@id': hubUrl },
           description:
-            'Communications expert services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
+            'Communications expert witness services for patent litigation. Telecommunications, VoIP, internet, networking, mobile wireless. 90+ cases, 120+ patents.',
           logo: ORG_LOGO_IMG,
           image: {
             '@type': 'ImageObject',
@@ -542,40 +542,40 @@ export const buildSchema = {
           areaServed: { '@type': 'Country', name: 'United States' },
           makesOffer: [
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'PSTN & VoIP Systems Expert', url: `${BASE_URL}/communications-expert-witness/pstn-voip-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert', url: `${BASE_URL}/communications-expert-witness/network-communications-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Internet Expert', url: `${BASE_URL}/communications-expert-witness/internet-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VoIP Expert', url: `${BASE_URL}/communications-expert-witness/voice-over-ip-voip-expert/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Security Expert', url: `${BASE_URL}/communications-expert-witness/network-security-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Streaming Media Expert', url: `${BASE_URL}/communications-expert-witness/streaming-media-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Computer Networking Expert', url: `${BASE_URL}/communications-expert-witness/computer-networking-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Communications Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-communications-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Internet Expert Witness', url: `${BASE_URL}/communications-expert-witness/internet-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VoIP Expert Witness', url: `${BASE_URL}/communications-expert-witness/voice-over-ip-voip-expert/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Security Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-security-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Streaming Media Expert Witness', url: `${BASE_URL}/communications-expert-witness/streaming-media-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Computer Networking Expert Witness', url: `${BASE_URL}/communications-expert-witness/computer-networking-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Data Communications Expert', url: `${BASE_URL}/communications-expert-witness/data-communications-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Mobile Wireless Expert', url: `${BASE_URL}/communications-expert-witness/mobile-wireless-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Routing & Switching Expert', url: `${BASE_URL}/communications-expert-witness/routing-switching-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Management Expert', url: `${BASE_URL}/communications-expert-witness/network-management-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Management Expert Witness', url: `${BASE_URL}/communications-expert-witness/network-management-expert-witness/` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Networking Expert', url: `${BASE_URL}/communications-expert-witness/networking-expert-witness/` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Messaging & Chat Expert', url: `${BASE_URL}/communications-expert-witness/messaging-and-chat-expert-witness/` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Messaging & Chat Expert Witness', url: `${BASE_URL}/communications-expert-witness/messaging-and-chat-expert-witness/` } },
           ],
         },
         {
           '@type': 'FAQPage',
           '@id': `${hubUrl}#faq`,
-          name: 'FAQ — Communications Expert Services',
+          name: 'FAQ — Communications Expert Witness Services',
           url: hubUrl,
           mainEntity: [
             {
               '@type': 'Question',
-              name: 'What expert services does Dr. Lavian provide?',
+              name: 'What expert witness services does Dr. Lavian provide?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian provides expert services in telecommunications, network communications, Internet protocols, VoIP, network security, streaming media, computer networking, data communications, mobile wireless, routing and switching, network management, and messaging technologies.',
+                text: 'Dr. Lavian provides expert witness services in telecommunications, network communications, Internet protocols, VoIP, network security, streaming media, computer networking, data communications, mobile wireless, routing and switching, network management, and messaging technologies.',
               },
             },
             {
               '@type': 'Question',
-              name: 'What qualifications does Dr. Lavian have as an expert?',
+              name: 'What qualifications does Dr. Lavian have as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 90 engagements.',
+                text: 'Dr. Lavian has spent nearly 20 years researching, studying, and lecturing at UC Berkeley. He holds a Ph.D. in Computer Science from UC Berkeley specializing in network communications, has invented over 120 patents in telecommunications and networking, and has been retained in more than 90 expert witness engagements.',
               },
             },
             {
@@ -588,10 +588,10 @@ export const buildSchema = {
             },
             {
               '@type': 'Question',
-              name: 'What types of cases require a communications expert?',
+              name: 'What types of cases require a communications expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'A communications expert is needed in patent infringement litigation involving telecom and networking technologies, ITC Section 337 investigations, USPTO PTAB inter partes reviews (IPRs) and post-grant reviews (PGRs), trade secret disputes involving network protocols or communications systems, and breach of contract matters.',
+                text: 'A communications expert witness is needed in patent infringement litigation involving telecom and networking technologies, ITC Section 337 investigations, USPTO PTAB inter partes reviews (IPRs) and post-grant reviews (PGRs), trade secret disputes involving network protocols or communications systems, and breach of contract matters.',
               },
             },
             {
@@ -612,7 +612,7 @@ export const buildSchema = {
             },
           ],
         },
-        breadcrumbs([{ name: 'Communications Expert', url: '/communications-expert-witness/' }]),
+        breadcrumbs([{ name: 'Communications Expert Witness', url: '/communications-expert-witness/' }]),
       ],
     };
   },
@@ -662,7 +662,7 @@ export const buildSchema = {
           areaServed: { '@type': 'Country', name: 'United States' },
           audience: {
             '@type': 'Audience',
-            audienceType: 'Attorneys and law firms seeking expert services',
+            audienceType: 'Attorneys and law firms seeking expert witness services',
           },
         },
         {
@@ -677,7 +677,7 @@ export const buildSchema = {
           })),
         },
         breadcrumbs([
-          { name: 'Communications Expert', url: '/communications-expert-witness/' },
+          { name: 'Communications Expert Witness', url: '/communications-expert-witness/' },
           { name: opts.breadcrumbLabel, url: `/communications-expert-witness/${opts.slug}/` },
         ]),
       ],
@@ -714,7 +714,7 @@ export const buildSchema = {
           description: opts.description,
           founder: PERSON_REF,
           provider: PERSON_REF,
-          serviceType: 'Expert Services',
+          serviceType: 'Expert Witness Services',
           url: pageUrl,
           logo: ORG_LOGO_IMG,
           image: {
@@ -1141,12 +1141,12 @@ export const buildSchema = {
         WEBSITE_ENTITY,
         {
           '@type': 'CollectionPage',
-          name: 'Expert Testimony Cases — Dr. Tal Lavian',
+          name: 'Expert Witness Testimony Cases — Dr. Tal Lavian',
           description:
-            'Expert testimony cases by Dr. Tal Lavian. 90+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
+            'Expert witness testimony cases by Dr. Tal Lavian. 90+ cases in U.S. federal district courts, USPTO PTAB, and ITC involving telecommunications and network communications patent disputes.',
           url: `${BASE_URL}/cases-expert-witness-testimony/`,
           author: PERSON_REF,
-          about: { '@type': 'Thing', name: 'Patent Litigation Expert Testimony' },
+          about: { '@type': 'Thing', name: 'Patent Litigation Expert Witness Testimony' },
           dateModified: modifiedDate('/cases-expert-witness-testimony/'),
           inLanguage: 'en-US',
           isPartOf: { '@id': `${BASE_URL}/#website` },
@@ -1160,7 +1160,7 @@ export const buildSchema = {
           mainEntity: [
             {
               '@type': 'Question',
-              name: 'How many cases has Dr. Lavian handled?',
+              name: 'How many expert witness cases has Dr. Lavian handled?',
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'Dr. Lavian has been retained as an expert in over 90 cases. He has served as an expert on over 100 patents litigated. He has provided expert reports and testimony in over 60 depositions in U.S. federal courts, USPTO PTAB, and the ITC.',
@@ -1176,7 +1176,7 @@ export const buildSchema = {
             },
             {
               '@type': 'Question',
-              name: "What companies have been involved in Dr. Lavian's cases?",
+              name: "What companies have been involved in Dr. Lavian's expert witness cases?",
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'Dr. Lavian has been retained in cases involving Apple, Google, Microsoft, Meta (Facebook), Amazon, Cisco Systems, T-Mobile, Juniper Networks, Huawei, Motorola, LG, Avaya, LinkedIn, Ericsson, Sprint, ZTE, WhatsApp, Instagram, and Polycom.',
@@ -1184,7 +1184,7 @@ export const buildSchema = {
             },
             {
               '@type': 'Question',
-              name: 'What expert services does Dr. Lavian provide in patent cases?',
+              name: 'What expert witness services does Dr. Lavian provide in patent cases?',
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'Dr. Lavian provides technical education for claim constructions and Markman hearings, writes expert reports that include analyses, claim term definitions, and claim construction, and offers product and technical analyses on patent portfolios, claim charts, prior art investigations, and patentability research.',
@@ -1200,10 +1200,10 @@ export const buildSchema = {
             },
             {
               '@type': 'Question',
-              name: 'What technology areas does Dr. Lavian cover as an expert?',
+              name: 'What technology areas does Dr. Lavian cover as an expert witness?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Dr. Lavian's expert testimony covers telecommunications, network communications, computer networking, internet protocols, routing and switching, VoIP, mobile wireless, streaming media, network systems, LAN/WAN, cloud computing, web technologies, and internet technology patents.",
+                text: "Dr. Lavian's expert witness testimony covers telecommunications, network communications, computer networking, internet protocols, routing and switching, VoIP, mobile wireless, streaming media, network systems, LAN/WAN, cloud computing, web technologies, and internet technology patents.",
               },
             },
           ],
@@ -1374,9 +1374,9 @@ export const buildSchema = {
       '@graph': [
         {
           '@type': 'ContactPage',
-          name: 'Contact Dr. Tal Lavian — Expert Services',
+          name: 'Contact Dr. Tal Lavian — Expert Witness Services',
           description:
-            'Contact Dr. Tal Lavian for telecommunications and network communications expert and consulting services.',
+            'Contact Dr. Tal Lavian for telecommunications and network communications expert witness and consulting services.',
           url: `${BASE_URL}/contact/`,
           dateModified: modifiedDate('/contact/'),
           inLanguage: 'en-US',
@@ -1390,7 +1390,7 @@ export const buildSchema = {
               '@type': 'ContactPoint',
               telephone: '+1-408-209-9112',
               email: 'tlavian@telecommnet.com',
-              contactType: 'Expert Engagement',
+              contactType: 'Expert Witness Engagement',
               areaServed: { '@type': 'Country', name: 'United States' },
               availableLanguage: 'English',
             },
