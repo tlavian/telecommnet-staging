@@ -41,7 +41,7 @@ const telecomSchema = buildSchema.expertisePage({
     },
     {
       q: 'What companies has Dr. Lavian served as a telecom expert witness for?',
-      a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Samsung, Meta (Facebook), Cisco, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
+      a: 'Dr. Lavian has been retained in telecommunications patent cases involving major companies including Apple, Google, Microsoft, Meta (Facebook), Cisco, T-Mobile, Juniper (HPE), Huawei, and many others, providing analysis and testimony on telecom protocols and systems.',
     },
     {
       q: 'What qualifications should a telecommunications expert witness have?',
@@ -74,7 +74,7 @@ const networkCommsSchema = buildSchema.expertisePage({
     },
     {
       q: 'What network communications cases has Dr. Lavian handled?',
-      a: 'Dr. Lavian has been retained in 90+ cases involving network communications technologies, including cases for Apple, Google, Microsoft, Samsung, Cisco, T-Mobile, Huawei, Juniper Networks, and others. He has provided 60+ depositions as expert witness.',
+      a: 'Dr. Lavian has been retained in 90+ cases involving network communications technologies, including cases for Apple, Google, Microsoft, Cisco, T-Mobile, Huawei, Juniper Networks, and others. He has provided 60+ depositions as expert witness.',
     },
     {
       q: 'What network protocols does Dr. Lavian have expertise in?',
@@ -230,7 +230,7 @@ const streamingSchema = buildSchema.expertisePage({
     },
     {
       q: 'Has Dr. Lavian handled streaming media patent cases involving major technology companies?',
-      a: 'Yes. Dr. Lavian has provided expert witness services in cases involving streaming media companies including Netflix, DirectTV, Emblaze, and others in federal court and ITC proceedings.',
+      a: 'Yes. Dr. Lavian has provided expert witness services in cases involving streaming media companies including DirectTV, Emblaze, and others in federal court and ITC proceedings.',
     },
     {
       q: 'Can Dr. Lavian explain complex streaming technology to judges and juries?',
@@ -381,7 +381,7 @@ const mobileWirelessSchema = buildSchema.expertisePage({
     },
     {
       q: 'What wireless companies has Dr. Lavian served as an expert witness for?',
-      a: 'Dr. Lavian has been retained in wireless patent cases involving companies including Apple, Samsung, Motorola, T-Mobile, and Ericsson, providing analysis and testimony on Wi-Fi and wireless access technologies.',
+      a: 'Dr. Lavian has been retained in wireless patent cases involving companies including Apple, Motorola, T-Mobile, and Ericsson, providing analysis and testimony on Wi-Fi and wireless access technologies.',
     },
   ],
 });
@@ -504,7 +504,7 @@ const networkingExpertSchema = buildSchema.expertisePage({
     },
     {
       q: 'What companies has Dr. Lavian served as a networking expert witness for?',
-      a: 'Dr. Lavian has been retained in networking patent cases involving companies including Google, Apple, Microsoft, Amazon, Cisco, Samsung, and many other major technology companies, providing analysis and testimony across the full range of networking technologies.',
+      a: 'Dr. Lavian has been retained in networking patent cases involving companies including Google, Apple, Microsoft, Amazon, Cisco, and many other major technology companies, providing analysis and testimony across the full range of networking technologies.',
     },
   ],
 });
