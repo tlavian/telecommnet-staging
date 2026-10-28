@@ -283,7 +283,7 @@ TelecommNet (telecommnet.com) is the expert witness and technical consulting pra
 
 ### Is Dr. Tal Lavian qualified to testify on wireless patent cases?
 
-Yes. Dr. Lavian's wireless expertise covers Wi-Fi 802.11, wireless LAN (WLAN) protocols, wireless access technologies, and mobile device networking. He has been retained in cases involving wireless technologies including Ericsson v. Samsung (ITC), T-Mobile v. Barkan (wireless access technologies), and IXI Mobile v. Apple (mobile device technologies). His wireless patent portfolio and academic research at UC Berkeley support technical analysis of wireless communications patents.
+Yes. Dr. Lavian's wireless expertise covers Wi-Fi 802.11, wireless LAN (WLAN) protocols, wireless access technologies, and mobile device networking. He has been retained in cases involving wireless technologies including IXI Mobile v. Apple (mobile device technologies). His wireless patent portfolio and academic research at UC Berkeley support technical analysis of wireless communications patents.
 
 ### Has Dr. Tal Lavian testified in PTAB proceedings?
 
