@@ -1,7 +1,7 @@
 {
   "/": {
-    "hash": "b089b6f8fbdb9c0a",
-    "date": "2026-10-11T10:44:53.136Z"
+    "hash": "2e873d92e8a8ff4f",
+    "date": "2026-10-28T03:54:47.575Z"
   },
   "/20020021701-bandwidth-consumption-of-packet-traffic-in-packet-forwarding-device/": {
     "hash": "3dfe5a3d14b7eab9",
@@ -316,8 +316,8 @@
     "date": "2026-07-05T16:49:01-07:00"
   },
   "/about-dr-lavian/": {
-    "hash": "091b3dde88994e57",
-    "date": "2026-10-11T10:44:53.136Z"
+    "hash": "1ea76b86dca732f5",
+    "date": "2026-10-28T03:54:47.575Z"
   },
   "/ca-2358525-flow-of-packets-through-packet-switched-networks/": {
     "hash": "525ed935221cab76",
@@ -512,80 +512,80 @@
     "date": "2026-07-14T14:24:48-07:00"
   },
   "/cases-expert-witness-testimony/": {
-    "hash": "bcbd62c37827e94c",
-    "date": "2026-10-28T01:57:20.170Z"
+    "hash": "9ea9b553cdd5be5b",
+    "date": "2026-10-28T03:21:11.170Z"
   },
   "/category/patents/": {
     "hash": "a0bd65b9b591f5d9",
     "date": "2026-03-13T18:07:35-07:00"
   },
   "/communications-expert-witness/": {
-    "hash": "99a96ec50b59b20f",
-    "date": "2026-10-28T01:57:20.170Z"
+    "hash": "20944d55c90d52b9",
+    "date": "2026-10-28T03:54:47.575Z"
   },
   "/communications-expert-witness/computer-networking-expert-witness/": {
-    "hash": "21dd893dab3f08da",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "fdd999c7b188ad57",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/data-communications-expert-witness/": {
-    "hash": "778d25820efee3f0",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "3d4b784241e1cda4",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/internet-expert-witness/": {
-    "hash": "baa26396d0197b48",
-    "date": "2026-10-10T18:43:03.073Z"
+    "hash": "97079b504f790910",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/messaging-and-chat-expert-witness/": {
-    "hash": "a2f08de91a6a3693",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "d1f2d17e9421836e",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/mobile-wireless-expert-witness/": {
-    "hash": "b752ff8d3f929fbd",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "c76a9f26f19c6f1d",
+    "date": "2026-10-28T03:21:11.170Z"
   },
   "/communications-expert-witness/network-communications-expert-witness/": {
-    "hash": "61dee9a51725b1ba",
-    "date": "2026-10-11T10:44:53.136Z"
+    "hash": "fe9a55931065eb29",
+    "date": "2026-10-28T03:54:47.575Z"
   },
   "/communications-expert-witness/network-management-expert-witness/": {
-    "hash": "a19906ad39803149",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "a79f25bddd233301",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/network-security-expert-witness/": {
-    "hash": "060b74dfb67c3078",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "8b8f7588b78c1b10",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/networking-expert-witness/": {
-    "hash": "65541aabde1bf241",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "300020f1e9c2612b",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/pstn-voip-expert-witness/": {
-    "hash": "5368c23c9f298e77",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "31650bac289d25fd",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/routing-switching-expert-witness/": {
-    "hash": "601cc24c7aaa34b0",
-    "date": "2026-10-10T01:59:41-07:00"
+    "hash": "0bc4b208cace2bcf",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/streaming-media-expert-witness/": {
-    "hash": "369879a5728a8367",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "c93e941a79ec2f14",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/telecommunications-expert-witness/": {
-    "hash": "26353809a51142a4",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "33246e48901860a7",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/communications-expert-witness/voice-over-ip-voip-expert/": {
-    "hash": "e3bcf3c0e941c1c4",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "ca87841ef8ecd5f4",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/contact/": {
-    "hash": "64e372fd27ef2078",
-    "date": "2026-10-09T02:32:32-07:00"
+    "hash": "a4fc1147b50d353f",
+    "date": "2026-10-28T03:54:47.575Z"
   },
   "/corporate-clients/": {
-    "hash": "ceb2126c8410f09a",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "c7a4e33a19e82930",
+    "date": "2026-10-28T03:21:41.582Z"
   },
   "/ep-1142213-dynamic-assignment-traffic-classes-to-a-priority-queue/": {
     "hash": "6885baa4e3629513",
@@ -632,12 +632,12 @@
     "date": "2026-07-05T16:49:01-07:00"
   },
   "/law-firm-clients/": {
-    "hash": "13ba5a495cf86a03",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "8a243159cfc67921",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/patents/": {
-    "hash": "0675b65628aeafdd",
-    "date": "2026-10-10T01:32:09-07:00"
+    "hash": "e77c4b6f2d71ea7d",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/privacy-policy/": {
     "hash": "e379df758ce03f74",
@@ -780,8 +780,8 @@
     "date": "2026-10-11T10:44:53.136Z"
   },
   "/talks-presentations/": {
-    "hash": "c863d9051292237a",
-    "date": "2026-10-11T10:44:53.136Z"
+    "hash": "67e97d103ddfeaf3",
+    "date": "2026-10-28T03:15:57.209Z"
   },
   "/terms-and-conditions/": {
     "hash": "2ceec50aa2bda6ab",

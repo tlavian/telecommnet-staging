@@ -4,16 +4,24 @@
     {
       "date": "2026-10-10",
       "reason": "initial snapshot of live titles/H1s (after owner-approved 2026-10-09/10 changes)"
+    },
+    {
+      "date": "2026-10-28",
+      "reason": "Home H1 changed to credential-first for Top-30/223 counsel redesign (owner request and approval 2026-10-27); title unchanged; first descriptive line keeps 'telecommunications expert witness'"
+    },
+    {
+      "date": "2026-10-28",
+      "reason": "Hub and Network Communications H1 changed to credential-first for Top-30/223 counsel redesign (owner request and approval 2026-10-27)"
     }
   ],
   "pages": {
     "/": {
       "title": "Telecommunications Expert Witness | Dr. Tal Lavian, Ph.D.",
-      "h1": "Telecommunications Expert Witness Consulting"
+      "h1": "Dr. Tal Lavian, Ph.D.: Telecommunications and Network Communications Technologist"
     },
     "/communications-expert-witness/": {
       "title": "Communications Expert Witness — Dr. Tal Lavian, Ph.D.",
-      "h1": "Communications Expert Witness Services"
+      "h1": "Dr. Tal Lavian, Ph.D.: Communications Technology Expertise for Patent Litigation"
     },
     "/communications-expert-witness/telecommunications-expert-witness/": {
       "title": "Telecommunications Expert Witness | Dr. Tal Lavian",
@@ -25,7 +33,7 @@
     },
     "/communications-expert-witness/network-communications-expert-witness/": {
       "title": "Network Communications Expert Witness | Dr. Lavian",
-      "h1": "Network Communications Expert Witness"
+      "h1": "Dr. Tal Lavian, Ph.D.: Network Communications Protocols, Architectures and Systems"
     },
     "/communications-expert-witness/computer-networking-expert-witness/": {
       "title": "Computer Networking Expert Witness | Dr. Tal Lavian, Ph.D.",

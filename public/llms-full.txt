@@ -185,16 +185,16 @@ Each expertise area has a dedicated page with detailed information:
 ## Corporate Clients:
 
 ### Major Technology Companies
-Google, Apple, Microsoft, Amazon, Facebook, Instagram, WhatsApp, LinkedIn, Netflix, Cisco Systems, Juniper Networks, Huawei, Broadcom, Arista, Palo Alto Networks, ServiceNow
+Google, Apple, Microsoft, Amazon, Facebook, Instagram, WhatsApp, LinkedIn, Cisco Systems, Juniper Networks, Huawei, Broadcom, Arista, Palo Alto Networks, ServiceNow
 
 ### Telecommunications Companies
-AT&T, T-Mobile, Ericsson, Motorola Mobility, ZTE, Avaya, Polycom, Comcast, DirecTV, GTT
+T-Mobile, Ericsson, Motorola Mobility, ZTE, Avaya, Polycom, Comcast, DirecTV, GTT
 
 ### Financial, Shipping & Other
 FedEx, Morgan Stanley, Vanguard Bank, Guaranteed Rate
 
 ### Additional Companies
-LG, Samsung, Alacritech, Aten, Backweb, Emblaze, Human Eyes, IP Innovation, IXI Mobile, Linksmart Technologies, Mobotix, Nomadix, Avi Networks, RPX, TCL, Ticket Network, Unified Patents, Walker Digital, Ymax Corp, Government of Canada
+LG, Alacritech, Aten, Backweb, Emblaze, Human Eyes, IP Innovation, IXI Mobile, Linksmart Technologies, Mobotix, Nomadix, Avi Networks, RPX, TCL, Ticket Network, Unified Patents, Walker Digital, Ymax Corp, Government of Canada
 
 ## Law Firm Clients:
 
@@ -357,7 +357,7 @@ Q: What law firms have retained Dr. Lavian?
 A: Dr. Lavian has been retained by over 50 law firms and corporate clients, including Fish & Richardson, Cooley, Finnegan, Gibson Dunn, Kirkland & Ellis, Skadden, and Hogan Lovells. Full list: https://telecommnet.com/law-firm-clients/
 
 Q: What companies has Dr. Lavian worked with or against?
-A: Dr. Lavian has been involved in cases involving Apple, Google, Microsoft, Samsung, Meta (Facebook), Amazon, Cisco, AT&T, Verizon, T-Mobile, Juniper (HPE), Huawei, and other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
+A: Dr. Lavian has been involved in cases involving Apple, Google, Microsoft, Meta (Facebook), Amazon, Cisco, T-Mobile, Juniper (HPE), Huawei, and other major technology and telecommunications companies. Full list: https://telecommnet.com/corporate-clients/
 
 Q: What is Dr. Lavian's background in messaging and chat technology?
 A: Dr. Lavian specializes in SMS, MMS, RCS, instant messaging (XMPP, MQTT, WebSocket), push notifications (APNs, FCM), and enterprise collaboration platforms. He has served as expert witness in messaging-related patent cases. Details: https://telecommnet.com/communications-expert-witness/messaging-and-chat-expert-witness/
